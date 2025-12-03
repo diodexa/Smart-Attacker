@@ -12,9 +12,9 @@ const MandatoryDisplay = ({ selectedId }: Props) => {
 
   return (
   
-    <p className="mt-4 text-lg font-medium whitespace-pre-line"
-    dangerouslySetInnerHTML={{ __html: selected.Mandatory }}>
-    </p>
+    <p className="mt-4  text-lg font-medium" style={{whiteSpace:"pre-line"}}>
+    {selected.Mandatory}
+  </p>
   );
 };
 
