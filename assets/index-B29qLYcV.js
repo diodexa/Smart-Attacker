@@ -24,6 +24,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         7. Capture hasil speedtest : 
         8. Nomor atau info kontak lain yang bisa dihubungi : 
         9. Sisa kuota yang dimiliki oleh pelanggan : 
+        
+        Ticket by Dio Deska
 
         3x24 jam`},{id:2,case:`Error Lain`,Mandatory:`
         LC ${e()} 
@@ -35,6 +37,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         4. NOKK : 
         5. Serial Number di cangkang SIM Card : 
         6. Capture gagal aktivasi : 
+        
+        Ticket by Dio Deska
 
         1x24 jam`},{id:3,case:`Bugs Lain`,Mandatory:`
         LC ${e()} 
@@ -48,7 +52,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         6. Apakah bisa akses website byu.id di device yang sama menggunakan jaringan by.U atau jaringan lain? YA 
         7. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
         8. Waktu dan Lama Kejadian : 
-        9. Lokasi Kejadian :  `},{id:4,case:`Bugs Ganti Sim Card`,Mandatory:`
+        9. Lokasi Kejadian : 
+        
+        Ticket by Dio Deska
+         `},{id:4,case:`Bugs Ganti Sim Card`,Mandatory:`
         LC ${e()} 
         Bugs Ganti Sim Card 
 
@@ -59,7 +66,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         5. Versi aplikasi by.U : 
         6. Detail keluhan yang disampaikan customer apakah bisa akses menggunakan wifi/jaringan lain : YA 
         7. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :  
-        8. Waktu dan Lama Kejadian : `},{id:5,case:`Tidak bisa Kirim/Terima SMS`,Mandatory:`
+        8. Waktu dan Lama Kejadian : 
+        
+        Ticket by Dio Deska
+        `},{id:5,case:`Tidak bisa Kirim/Terima SMS`,Mandatory:`
         LC ${e()} 
         Tidak bisa kirim / Terima SMS 
 
@@ -71,6 +81,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         6. Kendala yang terjadi tidak bisa terima SMS, kirim SMS atau keduanya? :
         7. Kendala terjadi hanya saat menerima SMS atau mengirim SMS ke nomor tertentu atau semua? :
         8. Nomor lain yang bisa dihubungi : 
+        
+        Ticket by Dio Deska
         
         1x24 jam`},{id:6,case:`Panggilan Telepon Masuk / Telepon Keluar`,Mandatory:`
         LC ${e()} 
@@ -85,6 +97,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         7. Kendala terjadi hanya ke nomor tertentu atau semua nomor :
         8. Nomor lain yang bisa dihubungi : 
         
+        Ticket by Dio Deska
+        
         1x24 jam`},{id:7,case:`Tidak bisa request OTP Meta Product`,Mandatory:`
         LC ${e()} 
         TIDAK BISA REQUEST OTP META PRODUCT
@@ -97,6 +111,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         6. Capture dashboard di apps dan keterangan sinyal :
         7. Keterangan gagal yang muncul saat melakukan request/menerima OTP :
         
+        Ticket by Dio Deska
+        
         1x24 jam`},{id:8,case:`Unreg hapus NIK`,Mandatory:`
         LC ${e()} 
         Permintaan Deaktivasi SIM Card dan Hapus NIK
@@ -108,6 +124,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         5. Nomor Kartu Keluarga :
         6. Foto KTP :
         7. Foto Selfie dengan KTP :
+        
+        Ticket by Dio Deska
         
         1x24 jam`},{id:9,case:`Unreg hapus NIK lupa nomor`,Mandatory:`
         LC ${e()} 
@@ -123,6 +141,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         8. Capture hasil pengecekan dari *444# :
         9. CP yang bisa dihubungi :
         
+        Ticket by Dio Deska
+        
         1x24 jam`},{id:10,case:`Gagal Aktivasi eSIM Account Status Tidak Sesuai`,Mandatory:`
         LC ${e()} 
         Gagal Aktivasi eSIM Account Status Tidak Sesuai
@@ -132,6 +152,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         3.Nomor yang bisa dihubungi :
         4.Email yang bisa dihubungi :
         5.Capture gagal aktivasi di apps :
+        
+        Ticket by Dio Deska
         
         1x24 jam`},{id:11,case:`Sinyal`,Mandatory:`
         LC ${e()} 
@@ -149,6 +171,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         10. Jumlah sinyal bar atau titik yang didapat :
         11. Nomor atau info kontak lain yang bisa dihubungi :
         
+        Ticket by Dio Deska
+        
         1x24 jam`},{id:12,case:`Ganti SIM Card`,Mandatory:`
         LC ${e()} 
         Permintaan Ganti SIM Card Active
@@ -161,6 +185,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         6. Nama & nomor penerima :
         7. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) :
         
+        Ticket by Dio Deska
+        
         `},{id:13,case:`Miskoordinasi JNE (AWB)`,Mandatory:`
         LC ${e()} 
         Keluhan SIM Card Tidak Sampai via JNE ada AWB
@@ -172,6 +198,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         5. Capture pengecekan nomor resi di web tracking JNE :
         6. Konfirmasi dari JNE (jika customer sempat komplain ke JNE) :
         
+        Ticket by Dio Deska
+        
         `},{id:14,case:`Miskoordinasi JNE `,Mandatory:`
         LC ${e()} 
         Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
@@ -182,6 +210,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         4. Nama Penerima :
         5. Nomor Penerima :
         6. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) :
+        
+        Ticket by Dio Deska
                 
         `}]};var Ja=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),Ya=e(((e,t)=>{t.exports=Ja()}))(),Xa=({onSelect:e})=>(0,Ya.jsx)(Ka,{options:qa().map(e=>({value:e.id,label:e.case})),className:`w-full`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,width:`100%`})}}),Za=({selectedId:e})=>{let t=qa().find(t=>t.id===e);return t?(0,Ya.jsx)(`p`,{className:`mt-4  text-lg font-medium`,style:{whiteSpace:`pre-line`},children:t.Mandatory}):(0,Ya.jsx)(`p`,{className:`mt-4 text-gray-500`,children:`Silakan pilih case terlebih dahulu`})},Qa={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},$a=l.createContext&&l.createContext(Qa),eo=[`attr`,`size`,`title`];function to(e,t){if(e==null)return{};var n=no(e,t),r,i;if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(i=0;i<a.length;i++)r=a[i],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function no(e,t){if(e==null)return{};var n={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}function ro(){return ro=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},ro.apply(this,arguments)}function io(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function ao(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?io(Object(n),!0).forEach(function(t){oo(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):io(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function oo(e,t,n){return t=so(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function so(e){var t=co(e,`string`);return typeof t==`symbol`?t:t+``}function co(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function lo(e){return e&&e.map((e,t)=>l.createElement(e.tag,ao({key:t},e.attr),lo(e.child)))}function uo(e){return t=>l.createElement(fo,ro({attr:ao({},e.attr)},t),lo(e.child))}function fo(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=to(e,eo),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),l.createElement(`svg`,ro({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:ao(ao({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&l.createElement(`title`,null,i),e.children)};return $a===void 0?t(Qa):l.createElement($a.Consumer,null,e=>t(e))}function po(e){return uo({tag:`svg`,attr:{viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`2`,strokeLinecap:`round`,strokeLinejoin:`round`},child:[{tag:`rect`,attr:{x:`9`,y:`9`,width:`13`,height:`13`,rx:`2`,ry:`2`},child:[]},{tag:`path`,attr:{d:`M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1`},child:[]}]})(e)}var mo=({text:e})=>{let[t,n]=(0,l.useState)(!1);return(0,Ya.jsx)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
