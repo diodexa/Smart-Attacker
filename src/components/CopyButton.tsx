@@ -9,17 +9,24 @@ const CopyButton = ({ text }: CopyButtonProps) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(text);
+    const cleanedText = text
+      .split("\n")
+      .map(line => line.trim())
+      .join("\n")
+      .trim();
+
+    navigator.clipboard.writeText(cleanedText);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
 
+
   return (
     <button
       onClick={handleCopy}
-      className="mb-3 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+      className="flex mb-3 px-4 py-2 items-center justify-center text-center rounded-md hover:bg-blue-700 transition border-2 border-solid"
     >
-        <FiCopy> {copied ? "Copied!" : "Copy"}</FiCopy>
+        <FiCopy > {copied ? "Copied!" : "Copy"}</FiCopy>
     </button>
   );
 };

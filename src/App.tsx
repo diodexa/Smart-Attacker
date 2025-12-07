@@ -4,6 +4,8 @@ import List from './components/SelectItems'
 import MandatoryDisplay from './components/MandatoryDisplay'
 import CopyButton from './components/CopyButton';
 import { DataMandatory } from './components/Mandatory';
+import ButtonDownload from "./components/Sublime";
+
 
 
 
@@ -15,10 +17,11 @@ function App() {
   const selected = Mandatory.find(item => item.id === selectedId);
 
   return (
-    <div className='flex items-center justify-center'>
+    <div className='flex flex-col w-screen h-screen '>
       <List onSelect={(id) => setSelectedId(id)} />
       <MandatoryDisplay selectedId={selectedId} />
       {selected && <CopyButton text={selected.Mandatory} />}
+      <ButtonDownload/>
     </div>
     
   )
