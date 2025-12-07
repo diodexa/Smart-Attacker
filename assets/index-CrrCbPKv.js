@@ -213,7 +213,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         
         Ticket by Dio Deska
                 
-        `},{id:15,case:`IRENEW paket tidak masuk (paid) `,Mandatory:`
+        `},{id:15,case:`IRENEW virtual account Paid `,Mandatory:`
         IGDM ${e()} 
         Masalah Pembelian Kuota/Pulsa I RENEW Via
 
@@ -225,6 +225,49 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         pending payment
         BSS : 
         TRX ID : 
+        No VA :
+
+        Ticket by Dio Deska
+                
+        `},{id:16,case:`Penyalahgunaan NIK `,Mandatory:`
+        IGDM ${e()} 
+        Penyalahgunaan NIK
+
+        1. Email Aktif :
+        2. Nomor aktif lainnya yang bisa dihubungi :
+        3. Nomor Identitas KTP :
+        4. Nomor Kartu Keluarga :
+        5. Nomor by.U yang ingin di UNREGISTRASI : 
+        5. Capture SMS cek registrasi dari 4444 :
+
+        Ticket by Dio Deska
+                
+        `},{id:17,case:`Irenew virtual account Unpaid `,Mandatory:`
+        IGDM ${e()} 
+        Masalah Pembelian Kuota/Pulsa I RENEW Via Virtual Account
+
+        1. Nomor by.U
+        2. Email by.U
+        3. Bukti pembayaran yang tercantum waktu transaksinya : terlampir
+        4. Rincian Keluhan : kuota belum masuk, pembayaran berhasil
+        5. Norek :
+        6. Atas nama :
+        7. Cabang pembuka rekening refund :
+
+        TRX ID :
+        No VA : 
+        Unpaid
+
+        Ticket by Dio Deska
+                
+        `},{id:18,case:`Permintaan Refund karena kesalahan sistem `,Mandatory:`
+        [REFUND]
+        IGDM ${e()} 
+        Permintaan Refund karena kesalahan sistem
+
+        1.Nomor by.U :
+        2.Email by.U :
+        3.Capture bukti pembayaran :
 
         Ticket by Dio Deska
                 
