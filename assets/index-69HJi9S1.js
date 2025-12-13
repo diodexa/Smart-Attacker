@@ -24,32 +24,49 @@ Semoga membantu :)`,Mandatory:`
 IGDM ${e()} 
 Internet Lambat  
 
-1. Nomor dan email by.U : 
-2. Lokasi detail (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) : 
-3. Jenis device yang digunakan : 
-4. Tanggal dan waktu kendala : 
-5. Kendala terjadi sepanjang hari atau pada waktu tertentu aja? : 
-6. Jaringan yang diterima (2G, 4G, atau 5G) dan jumlah bar/titik sinyal yang didapat? : 
-7. Capture hasil speedtest : terlampir
-8. Nomor atau info kontak lain yang bisa dihubungi : 
-9. Sisa kuota yang dimiliki oleh pelanggan : 
+1. Nomor dan akun by.U :
+2. Lokasi detail (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) :
+3. Jenis device yang digunakan :
+4. Tanggal dan waktu kendala :
+5. Kendala terjadi sepanjang hari atau pada waktu tertentu aja?
+6. Jaringan yang diterima (2G, 4G, atau 5G) dan jumlah bar/titik sinyal yang didapat?
+7. Capture hasil speedtest :
+8. Nomor atau info kontak lain yang bisa dihubungi :
+9. Sisa kuota yang dimiliki oleh pelanggan :
 
 Ticket by Dio Deska
 
-3x24 jam`},{id:2,case:`Error Lain`,Solusi:`-`,Mandatory:`
+3x24 jam`},{id:2,case:`Error Lain`,Solusi:` Makasih udah nunggu. Kak maaf, kalau aku cek ada  masalah di nomor atau SIM Card by.U Kakak. Untuk pengecekan lebih lanjut, boleh infoin data ini ya :
+
+1. Nomor Identitas KTP valid :
+2. NOKK :
+3. Serial Number di cangkang SIM Card :
+4. Capture gagal aktivasi yang menggunakan 1 SIM card di HP dan pastiin ga pakai wifi :
+
+Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U! `,Mandatory:`
 IGDM ${e()} 
 Tidak bisa aktivasi Error Lain 
 
-1. Nomor by.U : 
-2. Email by.U : 
-3. Nomor Identitas KTP valid : 
-4. NOKK : 
-5. Serial Number di cangkang SIM Card : 
-6. Capture gagal aktivasi :  terlampir
+1. Nomor by.U :
+2. Akun by.U :
+3. Nomor Identitas KTP valid :
+4. NOKK :
+5. Serial Number di cangkang SIM Card :
+6. Capture gagal aktivasi  :
+7. Order ID CXT/CXO (Pengecekan OperatorX) :
 
 Ticket by Dio Deska
 
-1x24 jam`},{id:3,case:`Bugs Lain`,Solusi:`Makasih udah nunggu. Kak maaf, aku cek ga ada info gangguan. Boleh coba dulu untuk ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih gak bisa, boleh coba install ulang aplikasi by.U kakak dan pastikan koneksi internet ada. Kalau di aplikasi masih berkendala, Kakak bisa coba akses di website by.U ya`,Mandatory:`
+1x24 jam`},{id:3,case:`Bugs Lain`,Solusi:`Makasih udah nunggu. Kak maaf, aku cek ga ada info gangguan. Boleh coba dulu untuk ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih gak bisa, boleh coba install ulang aplikasi by.U kakak dan pastikan koneksi internet ada. Kalau di aplikasi masih berkendala, Kakak bisa coba akses di website by.U ya. Kalau udah tapi masih berkendala, boleh infoin data ini ya :
+1. Email by.U : 
+2. Nomor by.U : 
+3. Tipe/merek Gadget : 
+4. Versi OS Gadget : 
+5. Versi aplikasi by.U : 
+6. Apakah bisa akses website byu.id di device yang sama menggunakan jaringan by.U atau jaringan lain? 
+7. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
+8. Waktu dan Lama Kejadian : 
+9. Lokasi Kejadian :  `,Mandatory:`
 IGDM ${e()} 
 Bugs Lain 
 
@@ -64,7 +81,15 @@ Bugs Lain
 9. Lokasi Kejadian : 
 
 Ticket by Dio Deska
-`},{id:4,case:`Bugs Ganti Sim Card`,Solusi:`Kak maaf, boleh coba dulu clear cache apps by.U nya dan pastiin pakai apps versi terbaru ya. Boleh coba juga pada HP lain sebagai perbandingan. Kalau udah tapi masih berkendala, boleh infoin data ini ya :`,Mandatory:`
+`},{id:4,case:`Bugs Ganti Sim Card`,Solusi:`Oke Kak maaf. Ini SIM card Kakak harusnya bisa lanjut dengan Kakak pilih menu ganti SIM card di apps, nantinya bakal muncul halaman pengambilan/pengantaran. Coba di clear cache dulu apps nya dan pastiin pakai apps versi terbaru ya. Kalau udah tapi masih ga muncul halaman pengambilan/pengantarannya boleh diinfoin data ini :
+1. Email by.U :
+2. Nomor by.U :
+3. Tipe/merek Gadget :
+4. Versi OS Gadget :
+5. Versi aplikasi by.U :
+6. Apakah bisa akses menggunakan wifi/jaringan lain :
+7. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :
+8. Waktu dan Lama Kejadian :`,Mandatory:`
 IGDM ${e()} 
 Bugs Ganti Sim Card 
 
@@ -163,7 +188,7 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 3. Nomor KTP :
 4. Alasan tidak ingin menggunakan by.U lagi :
 5. Nomor Kartu Keluarga :
-6. Foto identita :
+6. Foto identitas :
 7. Foto Selfie KTP : 
 8. Capture hasil pengecekan dari *444# : terlampir
 9. CP yang bisa dihubungi :
@@ -182,7 +207,7 @@ Gagal Aktivasi eSIM Account Status Tidak Sesuai
 
 Ticket by Dio Deska
 
-1x24 jam`},{id:11,case:`Sinyal`,Solusi:`Makasih udah nunggu. Kak maaf, kalau aku cek nomor xxxxxxxxxxxx  statusnya aktif dan tidak ada info gangguan di lokasi Kakak. Bisa dicoba dulu langkah-langkah di bawah ini ya kak :
+1x24 jam`},{id:11,case:`Sinyal lemah/tidak stabil`,Solusi:`Makasih udah nunggu. Kak maaf, kalau aku cek nomor xxxxxxxxxxxx  statusnya aktif dan tidak ada info gangguan di lokasi Kakak. Bisa dicoba dulu langkah-langkah di bawah ini ya kak :
 1. Ubah mode jaringan dari otomatis ke manual 2g only, kemudian kembalikan lagi ke mode otomatis
 2. Lakukan refresh jaringan :
 Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih by.U (Telkomsel).
@@ -195,16 +220,17 @@ IGDM ${e()}
 Tidak Ada Sinyal/Blankspot & Sinyal Lemah/Tidak Stabil
 
 1. Nomor by.U :
-2. Email by.U :
+2. Akun by.U :
 3. Lokasi detail kendala (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
 4. Tanggal dan waktu kejadian sejak kapan :
 5. Nomor by.U lain yang berkendala sama :
-6. Jenis device yang dipakai saat gangguan sinyal terjadi :
-7. Kendala sinyal terjadi sepanjang hari atau pada waktu tertentu aja :
-8. Kendala terjadi di satu lokasi atau semua lokasi :
-9. Jaringan yang digunakan 2G, 4G, 5G :
-10. Jumlah sinyal bar atau titik yang didapat :
-11. Nomor atau info kontak lain yang bisa dihubungi :
+6. Jenis device yang dipakai saat gangguan sinyal terjadi?
+7. Kendala sinyal terjadi sepanjang hari atau pada waktu tertentu aja?
+8. Kendala terjadi di satu lokasi atau semua lokasi?
+9. Jaringan yang digunakan 2G, 4G, 5G?
+10. Jumlah sinyal bar atau titik yang didapat?
+11. Capture keterangan bar sinyal :
+12. Nomor atau info kontak lain yang bisa dihubungi?
 
 Ticket by Dio Deska
 
@@ -264,6 +290,8 @@ Masalah Pembelian Kuota/Pulsa I RENEW Via
 2. Email by.U : 
 3. Printscreen halaman bukti pembayaran : terlampir
 4. Rincian Keluhan : kuota belum masuk
+5. Order detail ID (CXO) (Pengecekan OperatorX) 
+6. Transaction ID (CXT) (Pengecekan OperatorX)
 
 pending payment
 TRX ID : 
@@ -293,9 +321,11 @@ Masalah Pembelian Kuota/Pulsa I RENEW Via Virtual Account
 2. Email by.U
 3. Bukti pembayaran yang tercantum waktu transaksinya : terlampir
 4. Rincian Keluhan : kuota belum masuk, pembayaran berhasil
-5. Norek :
-6. Atas nama :
-7. Cabang pembuka rekening refund :
+5. Order detail ID (CXO) (Pengecekan OperatorX) :
+6. Transaction ID (CXT) (Pengecekan OperatorX) :
+7. Norek :
+8. Atas nama :
+9. Cabang pembuka rekening refund :
 
 TRX ID :
 No VA : 
@@ -340,6 +370,139 @@ SMS - Gagal Aktivasi M-Banking
 5. Capture dashboard apps :
 6. Capture kirim atau terima SMS ke nomor lain berhasil :
 7. Capture keterangan gagal aktivasi fitur banking :
+
+Ticket by Dio Deska
+        
+`},{id:21,case:`IRENEW OVO/DANA/ShopeePay `,Solusi:``,Mandatory:`
+IGDM ${e()} 
+Masalah Pembelian Kuota/Pulsa I RENEW Via 
+
+1. Nomor by.U :
+2. Email by.U :
+3. Capture bukti pembayaran :
+4. Order detail ID (CXO) (Pengecekan OperatorX)  : 
+5. Transaction ID (CXT) (Pengecekan OperatorX) :
+6. Rincian Keluhan : kuota/pulsa belum masuk
+
+Ticket by Dio Deska
+        
+`},{id:22,case:`Tidak Bisa Aktivasi SIM Card Legacy `,Solusi:`Maaf, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
+1. Nomor by.U (yang sesuai di bungkus SIM card)
+2. NIK & NOKK
+3. Capture Gagal Aktivasi
+4. SN barcode yang ada di cangkang SIM Card
+5. CP dan Email yang bisa dihubungi`,Mandatory:`
+IGDM ${e()} 
+Tidak Bisa Aktivasi SIM Card Legacy
+
+1. Nomor by.U :
+2. Capture berhasil aktivasi via SMS :
+3. Nomor Identitas KTP :
+4. Nomor Kartu Keluarga :
+5. CP dan Email yang bisa dihubungi :
+6. SN barcode yang ada di cangkang SIM Card :
+7. Order ID CXT/CXO (Pengecekan OperatorX) :
+8. Keterangan pengecekan :
+
+Ticket by Dio Deska
+        
+`},{id:23,case:`Cara Aktivasi SIM card Digital `,Solusi:`Aku bantu infoin untuk cara aktivasinya Kakak bisa coba cara berikut ya Kak:
+1. Buka apps, lalu login dengan menggunakan akun yang digunakan pada saat pemesanan kartu by.U > klik tombol aktifin SIM Card,
+2. Pastiin SIM Card di HP hanya ada SIM by.U,
+3. Pastiin settingan HP jaringan internet terkoneksi ke jaringan by.U,
+4. Saat masukkan NIK dan No.KK pastikan sudah sesuai, cek secara manual kembali ya.
+5. Pastiin saat masukkan NIK dan no.KK pakai jaringan by.U aja yang ingin di aktivasi ya
+Semoga berhasil ya Kak, kalau berkendala bisa Kakak coba aktivasi via web byu.id/aktivasi dan bisa gunakan jaringan lain untuk perbandingan ya Kak.`,Mandatory:`
+
+`},{id:24,case:`Tidak bisa internet`,Solusi:`Makasih udah nunggu. Kak maaf, aku cek nomor xxxx aktif dan lokasi Kakak ga ada masalah nih. Boleh coba panduan ini ya :
+Hai Kak, aku cek nomor xxx (sebutkan nomornya) aktif dan memiliki kuota, kami cek kondisi jaringan di lokasi kakak tidak ada masalah. Bisa dicoba langkah-langkah ini ya kak :
+1. Ubah mode jaringan dari otomatis ke manual 2g only, kemudian kembalikan lagi ke mode otomatis
+2. Lakukan refresh jaringan :
+Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih by.U (Telkomsel).
+iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
+3. Coba ON-kan airplane mode dan OFF-kan kembali, OFF-kan mobile data dan ON-kan kembali.
+4. Isi APN dengan "byu", username dan password kosongkan.
+5. Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.`,Mandatory:`
+IGDM ${e()} 
+Tidak Bisa akses internet
+
+1. Nomor by.U :
+2. Akun by.U :
+3. Lokasi detail (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) :
+4. Jenis device yang digunakan :
+5. Tanggal dan waktu kendala :
+6. Kendala terjadi sepanjang hari atau pada waktu tertentu aja :
+7. Jaringan yang digunakan apa? 4G,5G? 
+8. Jumlah sinyal bar yang didapat :
+9. Capture tidak bisa akses internet :
+10. Nomor atau info kontak lain yang bisa dihubungi :
+11. Sisa kuota yang dimiliki oleh pelanggan :
+
+Ticket by Dio Deska
+        
+`},{id:25,case:`Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy`,Solusi:``,Mandatory:`
+IGDM ${e()} 
+Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy
+
+1. Nomor by.U : 
+2. Akun by.U :
+3. Capture Keterangan Gagal Aktivasi :
+4. Serial Number di cangkang SIM Card :
+5. Foto bungkus SIM Card bagian depan :
+6. Nama penerima :
+7. Nomor penerima :
+8. Alamat pengiriman :
+9. Order ID CXT/CXO (Pengecekan OperatorX) :
+
+Ticket by Dio Deska
+        
+`},{id:26,case:`Tidak Bisa Aktivasi SIM Card Dengan Kode Error Asset Not Found `,Solusi:`Makasih udah nunggu ya Kak. Maaf banget nih, Kalau sudah mencoba lagi dan masih tidak bisa, boleh diinfokan beberapa data berikut ya supaya kami bisa melakukan pengecekan lebih lanjut :
+1. Akun by.U :
+2. Nomor by.U :
+3. NIK :
+4. NOKK :
+5. Serial Number di cangkang SIM Card :
+6. Capture gagal aktivasi SIM Card :
+
+
+Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U!`,Mandatory:`
+IGDM ${e()} 
+Tidak Bisa Aktivasi SIM Card Dengan Kode Error "Asset Not Found" 
+
+1. Akun by.U :
+2. Nomor by.U :
+3. Nomor identitas :
+4. NOKK :
+5. Serial Number di cangkang SIM Card :
+6. Capture gagal aktivasi SIM Card :
+7. Order ID CXT/CXO (Pengecekan OperatorX) :
+
+
+
+Ticket by Dio Deska
+        
+`},{id:27,case:`Ketidaksesuaian Penggunaan Kuota `,Solusi:`
+1. Lakukan update lokasi dengan cara:
+a. Android : Switch 'manual network' pada menu mobile networks, pilih operator lain terlebih dulu, kemudian pilih Telkomsel.
+b. iOS : Pilih settings - general - reset - reset network setting.
+2. OFF-kan data seluler beberapa saat, lalu ON-kan kembali
+3. Pastikan tidak ada aplikasi lain yang berjalan/running bersamaan di latar belakang/background smartphone`,Mandatory:`
+IGDM ${e()} 
+Ketidaksesuaian Penggunaan Kuota 
+
+1. Nomor by.U :
+2. Email :
+3. Tanggal waktu kejadian :
+4. Lokasi Kejadian ( Cukup Kec, Kabupaten atau Kota ) :
+5. Tipe hp/gadget :
+6. Paket yang dikeluhkan :
+7. Jumlah kuota awal dan kuota akhir :
+8. Capture data usage :
+9. Capture dashboard apps by.U (yang ada detail pemakaian Data) :
+10. Apakah customer pernah mencoba di gadget lain dan mengalami masalah yang sama? TIDAK
+11. Apakah ada VPN dsb di gadget customer? TIDAK
+
+
 
 Ticket by Dio Deska
         
