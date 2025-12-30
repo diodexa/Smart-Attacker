@@ -17,16 +17,17 @@ const CopyButton = ({ text }: CopyButtonProps) => {
 
     navigator.clipboard.writeText(cleanedText);
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    setTimeout(() => setCopied(false), 500);
   };
 
 
   return (
     <button
       onClick={handleCopy}
-      className="flex mb-3 px-4 py-2 items-center justify-center text-center rounded-md hover:bg-blue-700 transition border-2 border-solid"
+      className="flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid"
     >
-        <FiCopy > {copied ? "Copied!" : "Copy"}</FiCopy>
+      <FiCopy className= {` ${copied ? "invisible!" : "visible"}`}>` ${copied ? "copy!" : "tidak"}`</FiCopy>
+      <p className=" m-0 text-center"> {copied? "anjay" : ""} </p>
     </button>
   );
 };

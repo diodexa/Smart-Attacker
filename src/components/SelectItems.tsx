@@ -14,13 +14,12 @@ const MandatorySelect = ({ onSelect }: Props) => {
         value: item.id,
         label: item.case,
       }))}
-      className="w-full"
+      className="w-full  dark:text-black"
       onChange={(option) => onSelect(option?.value || null)}
       styles={{
-        control: (base) => ({
-          ...base,
-          width: "100%",
-        }),
+        control: (base) => ({ ...base, backgroundColor: "#f6fbe0ff" }),
+        menu: (base) => ({ ...base, backgroundColor: "#f6fbe0ff" }),
+        
       }}
     />
   );
