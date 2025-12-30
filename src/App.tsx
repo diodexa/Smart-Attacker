@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import TiketPages from "./pages/Tiket";
 import TemplatePages from "./pages/Template";
+import DarkMode from "./components/ButtonDarkLight";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState("notepad");
@@ -23,6 +24,45 @@ export default function App() {
       textareaRef.current.setSelectionRange(textareaRef.current.value.length,textareaRef.current.value.length)
     }
   }, [activeTab]);
+
+  useEffect(() => {
+    if (activeTab === "notepad" && note === "") {
+      setNote("1. ");
+    }
+  }, [activeTab]);
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+  if (e.key !== "Enter") return;
+
+  const textarea = e.currentTarget;
+  const cursorPos = textarea.selectionStart;
+  const textBeforeCursor = note.slice(0, cursorPos);
+  const lines = textBeforeCursor.split("\n");
+  const lastLine = lines[lines.length - 1];
+
+
+  const match = lastLine.match(/^(\d+)\./);
+
+  if (!match) return; // Enter normal
+
+  e.preventDefault();
+
+  const nextNumber = Number(match[1]) + 1;
+
+  const newText =
+    note.slice(0, cursorPos) +
+    `\n${nextNumber}. ` +
+    note.slice(cursorPos);
+
+  setNote(newText);
+
+  // jaga cursor tetap di posisi benar
+  requestAnimationFrame(() => {
+    const pos = cursorPos + (`\n${nextNumber}. `.length);
+    textareaRef.current?.setSelectionRange(pos, pos);
+  });
+};
+
 
   return (
     <div className="flex flex-col ">
@@ -47,6 +87,10 @@ export default function App() {
         >
           Template
         </button>
+        <div className="absolute right-10 flex gap-1">
+          <DarkMode/>
+          <h1 className="text-3xl tracking-[.25em]">di<span className="text-red-600">N</span></h1>
+        </div>
       </div>
 
       {/* TAB CONTENT */}
@@ -58,6 +102,7 @@ export default function App() {
           placeholder="Tulis catatan kamu…"
           value={note}
           onChange={(e) => setNote(e.target.value)}
+          onKeyDown={handleKeyDown}
           />
         )}
 

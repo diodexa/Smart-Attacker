@@ -14,7 +14,7 @@ const MandatorySelect = ({ onSelect }: Props) => {
         value: item.id,
         label: item.case,
       }))}
-      className="w-full  dark:text-black"
+      className="w-full  listText"
       onChange={(option) => onSelect(option?.value || null)}
       styles={{
         control: (base) => ({ ...base, backgroundColor: "#f6fbe0ff" }),

@@ -13,18 +13,39 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --text: #213547;
+  --bg: #cdd2b0;
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
+h1 {
+  font-family: Anton;
+}
 
+.dark {
+  --bg: #213547;
+  --text: #ffffff;
+}
+
+.listText {
+  color: black;
+}
+
+/* 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #cdd2b0;
+    color: var(--text);
+    background-color: var(--bg);
   }
 
 }
@@ -34,4 +55,4 @@ body {
     background-color: #213547;
   }
 
-}
+} */

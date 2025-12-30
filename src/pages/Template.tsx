@@ -40,7 +40,7 @@ const TemplatePages = () => {
                                 // setCopied(true);
                                 // setTimeout(() => setCopied(false), 500);
                             }}
-                            className = {`h-30 w-full border-1 border-solid hover:bg-yellow-200 dark:hover:text-black `}  
+                            className = {`h-30 w-full border-1 border-solid hover:bg-yellow-200 hover:text-black `}  
                             />
                             {activeIndex===index && (
                                 <p className="absolute left-1/2 top-1/2 -translate-1/2 bg-black text-white px-2 py-1 rounded shadow">anjay</p>
