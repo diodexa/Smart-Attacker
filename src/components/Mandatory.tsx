@@ -37,7 +37,10 @@ iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
 6. Coba akses secara berkala selama 1x24 jam khawatir gangguan sementara.
 Semoga membantu :)`,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Internet Lambat  
 
 1. Nomor dan akun by.U :
@@ -50,7 +53,7 @@ Internet Lambat
 8. Nomor atau info kontak lain yang bisa dihubungi :
 9. Sisa kuota yang dimiliki oleh pelanggan :
 
-Ticket by Dio Deska
+
 
 3x24 jam` 
 },
@@ -67,7 +70,10 @@ Solusi : ` Makasih udah nunggu. Kak maaf, kalau aku cek ada  masalah di nomor at
 
 Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U! `,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Tidak bisa aktivasi Error Lain 
 
 1. Nomor by.U :
@@ -78,7 +84,7 @@ Tidak bisa aktivasi Error Lain
 6. Capture gagal aktivasi  :
 7. Order ID CXT/CXO (Pengecekan OperatorX) :
 
-Ticket by Dio Deska
+
 
 1x24 jam`
 },
@@ -97,7 +103,10 @@ Solusi : `Makasih udah nunggu. Kak maaf, aku cek ga ada info gangguan. Boleh cob
 8. Waktu dan Lama Kejadian : 
 9. Lokasi Kejadian :  `,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Bugs Lain 
 
 1. Email by.U : 
@@ -110,7 +119,7 @@ Bugs Lain
 8. Waktu dan Lama Kejadian : 
 9. Lokasi Kejadian : 
 
-Ticket by Dio Deska
+
 `   
 },
 
@@ -127,7 +136,10 @@ Solusi : `Oke Kak maaf. Ini SIM card Kakak harusnya bisa lanjut dengan Kakak pil
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :
 8. Waktu dan Lama Kejadian :`,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Bugs Ganti Sim Card 
 
 1. Email by.U : 
@@ -139,7 +151,7 @@ Bugs Ganti Sim Card
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :  
 8. Waktu dan Lama Kejadian : 
 
-Ticket by Dio Deska
+
 `   
 },
 
@@ -154,7 +166,10 @@ Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan be
 
 `,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Tidak bisa kirim / Terima SMS 
 
 1. Email dan nomor by.U :
@@ -166,7 +181,7 @@ Tidak bisa kirim / Terima SMS
 7. Kendala terjadi hanya saat menerima SMS atau mengirim SMS ke nomor tertentu atau semua? :
 8. Nomor lain yang bisa dihubungi : 
 
-Ticket by Dio Deska
+
 
 1x24 jam`   
 },
@@ -177,7 +192,10 @@ case : "Panggilan Telepon Masuk / Telepon Keluar",
 Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala teleponnya, boleh  pastiin dulu kakak berada dalam lokasi yang mendapatkan sinyal by.U dan sudah mencoba on-off-kan airplane mode. kalau masih gabisa, boleh infoin data ini ya :
 :`,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Tidak bisa melakukan panggilan on-net & off-net
 
 1. Email dan nomor by.U :
@@ -189,7 +207,7 @@ Tidak bisa melakukan panggilan on-net & off-net
 7. Kendala terjadi hanya ke nomor tertentu atau semua nomor :
 8. Nomor lain yang bisa dihubungi : 
 
-Ticket by Dio Deska
+
 
 1x24 jam`   
 },
@@ -199,12 +217,15 @@ id: 7,
 case : "Tidak bisa request OTP Meta Product",
 Solusi : `Kak maaf banget nih untuk kendala SMS nya. Boleh coba panduan ini dulu ya :
 1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
-2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 *Note: hanya ada di HP android, jika pelanggan sudah infokan tipe HP dan bukan HP android maka settingan ini tidak perlu di infokan ke pelanggan
+2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 
 3. Coba on-off-kan airplane mode
 Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan beberapa data berikut supaya kami bisa bantu pengecekan ya Kak :
 `,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 TIDAK BISA REQUEST OTP META PRODUCT
 
 1. Email by.U :
@@ -215,7 +236,7 @@ TIDAK BISA REQUEST OTP META PRODUCT
 6. Capture dashboard di apps dan keterangan sinyal : 
 7. Keterangan gagal yang muncul saat melakukan request/menerima OTP :
 
-Ticket by Dio Deska
+
 
 1x24 jam`   
 },
@@ -231,7 +252,10 @@ Solusi : `Makasih udah nunggu. Kak maaf untuk unreg/deaktivasi SIM card by.U, bi
 5. Kemudian akan muncul halaman disclaimer yang berisi syarat dan ketentuan terkait unreg SIM Card, pelanggan perlu menandai tanda checklist dibagian bawah sebagai tanda bahwa pelanggan sudah membaca dan menyetujui syarat & ketentuan unreg SIM Card. Lalu klik Unreg SIM Card
 6. Unreg SIM Card akan diproses jika data sesuai dan keterangan berhasil unreg akan muncul di aplikasi by.U :)`,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Permintaan Deaktivasi SIM Card dan Hapus NIK
 
 1. Email by.U :
@@ -242,7 +266,7 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 6. Foto KTP : 
 7. Foto Selfie dengan KTP : 
 
-Ticket by Dio Deska
+
 
 1x24 jam`   
 },
@@ -252,7 +276,10 @@ id: 9,
 case : "Unreg hapus NIK lupa nomor",
 Solusi : "Restart HP",
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Permintaan Deaktivasi SIM Card dan Hapus NIK
 
 1. Nomor by.U :
@@ -265,7 +292,7 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 8. Capture hasil pengecekan dari *444# : 
 9. CP yang bisa dihubungi :
 
-Ticket by Dio Deska
+
 
 1x24 jam`   
 },
@@ -275,7 +302,10 @@ id: 10,
 case : "Gagal Aktivasi eSIM Account Status Tidak Sesuai",
 Solusi : "",
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Gagal Aktivasi eSIM Account Status Tidak Sesuai
 
 1.Email by.U :
@@ -284,7 +314,7 @@ Gagal Aktivasi eSIM Account Status Tidak Sesuai
 4.Email yang bisa dihubungi :
 5.Capture gagal aktivasi di apps : 
 
-Ticket by Dio Deska
+
 
 1x24 jam`   
 },
@@ -313,7 +343,10 @@ iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
 5. Dicoba akses/cek secara berkala selama 1x24 jam khawatir gangguan sementara.
 Semoga membantu :)`,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Tidak Ada Sinyal/Blankspot & Sinyal Lemah/Tidak Stabil
 
 1. Nomor by.U :
@@ -329,7 +362,7 @@ Tidak Ada Sinyal/Blankspot & Sinyal Lemah/Tidak Stabil
 11. Capture keterangan bar sinyal :
 12. Nomor atau info kontak lain yang bisa dihubungi?
 
-Ticket by Dio Deska
+
 
 1x24 jam`   
 },
@@ -347,7 +380,10 @@ Solusi : `Makasih udah nunggu. Kak untuk permintaan ganti SIM Card, bisa dilakuk
 7. Tunggu proses validasi dari tim by.U
 8. Kalo rikuesmu di terima, lanjutin prosesnya dan bisa Pilih Ambil (GraPARI)/Indomaret tanpa biaya pengambilan atau SIM Card diantar (Kurir JNE) dengan biaya Rp10.000 dan estimasi sampai makismal 7 hari kerja sesudah melakukan pembayaran.`,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Permintaan Ganti SIM Card Active
 
 1. Nomor by.U :
@@ -358,7 +394,7 @@ Permintaan Ganti SIM Card Active
 6. Nama & nomor penerima :
 7. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) :
 
-Ticket by Dio Deska
+
 
 `   
 },
@@ -368,7 +404,10 @@ id: 13,
 case : "Miskoordinasi JNE (AWB)",
 Solusi : "",
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Keluhan SIM Card Tidak Sampai via JNE ada AWB
 
 1. Nomor by.U :
@@ -378,7 +417,7 @@ Keluhan SIM Card Tidak Sampai via JNE ada AWB
 5. Capture pengecekan nomor resi di web tracking JNE : 
 6. Konfirmasi dari JNE (jika customer sempat komplain ke JNE) : -
 
-Ticket by Dio Deska
+
 
 `   
 },
@@ -388,7 +427,10 @@ id: 14,
 case : "Miskoordinasi JNE ",
 Solusi : "",
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
 
 1. Nomor by.U :
@@ -398,7 +440,7 @@ Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
 5. Nomor Penerima :
 6. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) :
 
-Ticket by Dio Deska
+
         
 `   
 },
@@ -408,7 +450,10 @@ id: 15,
 case : "IRENEW virtual account Paid ",
 Solusi : "",
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Masalah Pembelian Kuota/Pulsa I RENEW Via VA
 
 1. Nomor by.U :
@@ -423,7 +468,7 @@ TRX ID :
 No VA :
 paid
 
-Ticket by Dio Deska
+
         
 `   
 },
@@ -433,7 +478,10 @@ id: 16,
 case : "Penyalahgunaan NIK ",
 Solusi : "",
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Penyalahgunaan NIK
 
 1. Email Aktif :
@@ -443,7 +491,7 @@ Penyalahgunaan NIK
 5. Nomor by.U yang ingin di UNREGISTRASI : 
 5. Capture SMS cek registrasi dari 4444 :
 
-Ticket by Dio Deska
+
         
 `   
 },
@@ -453,7 +501,10 @@ id: 17,
 case : "Irenew virtual account Unpaid ",
 Solusi : "",
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Masalah Pembelian Kuota/Pulsa I RENEW Via Virtual Account
 
 1. Nomor by.U
@@ -470,7 +521,7 @@ TRX ID :
 No VA : 
 Unpaid
 
-Ticket by Dio Deska
+
         
 `   
 },
@@ -481,14 +532,17 @@ case : "Permintaan Refund karena kesalahan sistem ",
 Solusi : "",
 Mandatory : `
 [REFUND]
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Permintaan Refund karena kesalahan sistem
 
 1.Nomor by.U :
 2.Email by.U :
 3.Capture bukti pembayaran :
 
-Ticket by Dio Deska
+
         
 `   
 },
@@ -498,7 +552,10 @@ id: 19,
 case : "Tidak Mendapatkan Kuota Monthversary  ",
 Solusi : "",
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Tidak Mendapatkan Kuota Monthversary 
 
 1. MSISDN by.U :
@@ -509,7 +566,7 @@ Tidak Mendapatkan Kuota Monthversary
 6. Bukti bayar (jika kendalanya pelanggan sudah bayar tapi belum menerima paket Monthiversary Reward) :-
 7. Hasil pengecekan Add Ons di CRM (berupa text dan tidak boleh printscreen) :
 
-Ticket by Dio Deska
+
         
 `   
 },
@@ -517,10 +574,20 @@ Ticket by Dio Deska
 {
 id: 20,
 case : "SMS - Gagal Aktivasi M-Banking ",
-Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala fitur banking nya, pastiin cuma ada SIM Card by.U di hp saat aktivasi fitur banking tersebut dan terkoneksi dengan jaringan by.U. Kalau masih tidak bisa, boleh tolong infokan beberapa data berikut agar dapat dibantu pengecekan :
+Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala fitur banking nya di nomor xxxxxx, pastiin cuma ada SIM Card by.U di hp saat aktivasi fitur banking tersebut dan terkoneksi dengan jaringan by.U. Kalau masih tidak bisa, boleh tolong infokan beberapa data berikut agar dapat dibantu pengecekan :
+1. Email akun by.U :
+2. Rincian keluhan :
+3. Tipe HP :
+4. Capture dashboard apps :
+5. Capture kirim atau terima SMS ke nomor lain berhasil :
+6. Capture keterangan gagal aktivasi fitur banking :
+
 `,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 SMS - Gagal Aktivasi M-Banking
 
 1. Nomor by.U :
@@ -531,7 +598,7 @@ SMS - Gagal Aktivasi M-Banking
 6. Capture kirim atau terima SMS ke nomor lain berhasil :
 7. Capture keterangan gagal aktivasi fitur banking :
 
-Ticket by Dio Deska
+
         
 `   
 },
@@ -541,7 +608,10 @@ id: 21,
 case : "IRENEW OVO/DANA/ShopeePay ",
 Solusi : ``,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Masalah Pembelian Kuota/Pulsa I RENEW Via 
 
 1. Nomor by.U :
@@ -551,7 +621,7 @@ Masalah Pembelian Kuota/Pulsa I RENEW Via
 5. Transaction ID (CXT) (Pengecekan OperatorX) :
 6. Rincian Keluhan : kuota/pulsa belum masuk
 
-Ticket by Dio Deska
+
         
 `   
 },
@@ -566,7 +636,10 @@ Solusi : `Maaf, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card 
 4. SN barcode yang ada di cangkang SIM Card
 5. CP dan Email yang bisa dihubungi`,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Tidak Bisa Aktivasi SIM Card Legacy
 
 1. Nomor by.U :
@@ -578,7 +651,7 @@ Tidak Bisa Aktivasi SIM Card Legacy
 7. Order ID CXT/CXO (Pengecekan OperatorX) :
 8. Keterangan pengecekan :
 
-Ticket by Dio Deska
+
         
 `   
 },
@@ -601,8 +674,7 @@ Mandatory : `
 {
 id: 24,
 case : "Tidak bisa internet",
-Solusi : `Makasih udah nunggu. Kak maaf, aku cek nomor xxxx aktif dan lokasi Kakak ga ada masalah nih. Boleh coba panduan ini ya :
-Hai Kak, aku cek nomor xxx (sebutkan nomornya) aktif dan memiliki kuota, kami cek kondisi jaringan di lokasi kakak tidak ada masalah. Bisa dicoba langkah-langkah ini ya kak :
+Solusi : `Makasih udah nunggu. Kak maaf, aku cek nomor xxxx aktif, punya kuota dan lokasi Kakak ga ada masalah nih. Boleh coba panduan ini ya :
 1. Ubah mode jaringan dari otomatis ke manual 2g only, kemudian kembalikan lagi ke mode otomatis
 2. Lakukan refresh jaringan :
 Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih by.U (Telkomsel).
@@ -611,7 +683,10 @@ iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
 4. Isi APN dengan "byu", username dan password kosongkan.
 5. Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.`,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Tidak Bisa akses internet
 
 1. Nomor by.U :
@@ -626,7 +701,7 @@ Tidak Bisa akses internet
 10. Nomor atau info kontak lain yang bisa dihubungi :
 11. Sisa kuota yang dimiliki oleh pelanggan :
 
-Ticket by Dio Deska
+
         
 `   
 },
@@ -636,7 +711,10 @@ id: 25,
 case : "Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy",
 Solusi : ``,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy
 
 1. Nomor by.U : 
@@ -649,7 +727,7 @@ Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy
 8. Alamat pengiriman :
 9. Order ID CXT/CXO (Pengecekan OperatorX) :
 
-Ticket by Dio Deska
+
         
 `   
 },
@@ -668,7 +746,10 @@ Solusi : `Makasih udah nunggu ya Kak. Maaf banget nih, Kalau sudah mencoba lagi 
 
 Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U!`,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Tidak Bisa Aktivasi SIM Card Dengan Kode Error "Asset Not Found" 
 
 1. Akun by.U :
@@ -681,7 +762,7 @@ Tidak Bisa Aktivasi SIM Card Dengan Kode Error "Asset Not Found"
 
 
 
-Ticket by Dio Deska
+
         
 `   
 },
@@ -696,7 +777,10 @@ b. iOS : Pilih settings - general - reset - reset network setting.
 2. OFF-kan data seluler beberapa saat, lalu ON-kan kembali
 3. Pastikan tidak ada aplikasi lain yang berjalan/running bersamaan di latar belakang/background smartphone`,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Ketidaksesuaian Penggunaan Kuota 
 
 1. Nomor by.U :
@@ -713,7 +797,7 @@ Ketidaksesuaian Penggunaan Kuota
 
 
 
-Ticket by Dio Deska
+
         
 `   
 },
@@ -725,17 +809,16 @@ Solusi : `
 Makasih udah nunggu. Kak maaf untuk kendala gabisa login apps by.U, jika SIM Card dan aplikasi by.U berada di gadget yang sama dan menggunakan jaringan by.U, seharusnya login akan terjadi otomatis, kecuali jika tidak ada koneksi. Jika memang diperlukan login manual, boleh dipastikan bahwa OS gadget yang Kakak pake adalah OS yang terupdate dan pastikan juga koneksi internetnya berjalan dengan baik. Dicoba ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih ga bisa, dicoba install ulang aplikasi by.U kakak dan di cek juga di HP lain sebagai perbandingan ya :) Pastiin setting dengan memilih menu Setting > pilih manager aplikasi > all > messaging > send premium sms > always allow dan pastikan juga untuk nomor pusat sudah diisi dengan angka +6281100000 disettingan sms HP ya, karena kalau belum disetting itu akan berpengaruh terhadap diterimanya OTP.
 Kakak bisa juga coba login menggunakan email akun by.U ya :) Semoga membantu :)`,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Tidak Menerima OTP untuk login aplikasi byU
 
 1. Nomor by.U :
 2. Nomor yang digunakan untuk login aplikasi :
 3. Capture keterangan gagal di aplikasi :
 4. Tanggal dan waktu kejadian :
-
-
-
-Ticket by Dio Deska
         
 `   
 },
@@ -745,7 +828,10 @@ id: 29,
 case : "Tidak Mendapatkan Voucher Non-Telco",
 Solusi : ``,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Tidak Mendapatkan Voucher Non-Telco
 
 1. Nomor by.U :
@@ -755,7 +841,7 @@ Tidak Mendapatkan Voucher Non-Telco
 5. Capture bukti redeem di halaman Reward Saya :
 6. Capture kendala penukaran : 
 
-Ticket by Dio Deska
+
         
 `   
 },
@@ -765,7 +851,10 @@ id: 30,
 case : "Pergantian SIM Card Legacy ditolak GraPARI",
 Solusi : ``,
 Mandatory : `
-IGDM ${getCurrentDateTime()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
 Pergantian SIM Card Legacy ditolak GraPARI
 
 1.Nama Pelanggan :
@@ -779,8 +868,79 @@ Pergantian SIM Card Legacy ditolak GraPARI
 9. Foto KTP :
 10. Foto selfie KTP :
 11. Alasan ganti SIM Card : SIM Card Hilang
+        
+`   
+},
 
-Ticket by Dio Deska
+{
+id: 31,
+case : "Esim Sinyal hilang",
+Solusi : ``,
+Mandatory : `
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
+eSIM sinyal hilang
+
+1. Nomor by.U :
+2. Akun by.U :
+3. Tipe/Merek Gadget :
+4. Nomor yang bisa dihubungi :
+5. Email yang bisa dihubungi : 
+6. Capture Sinyal :
+7. Capture settingan eSIM di handphone :
+8. Capture bukti pembayaran : 
+9. Order ID CXT/CXO (Pengecekan OperatorX):
+        
+`   
+},
+
+{
+id: 32,
+case : "eSIM  QR tidak tersimpan ",
+Solusi : ``,
+Mandatory : `
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
+eSIM  QR tidak tersimpan 
+
+1. Nomor by.U :
+2. Akun by.U :
+3. Nomor yang bisa dihubungi :
+4. Email yang bisa dihubungi :
+5. Bukti pembayaran :
+6. Keterangan gagal : (KHUSUS APABILA QR YANG DIMILIKI PELANGGAN TIDAK VALID)
+7. Order ID CXT/CXO (Pengecekan OperatorX) :
+        
+`   
+},
+
+{
+id: 33,
+case : "Bugs Ganti SIM card (mandatory E)",
+Solusi : ``,
+Mandatory : `
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
+Bugs Ganti SIM card
+
+1. Nomor by.U :
+2. Email by.U :
+3. Nomor Identitas KTP :
+4. Scan/Foto KTP Asli :
+5. Foto selfie dengan KTP Asli :
+6. Screen record terbaru :
+7. Nama penerima :
+8. Nomor penerima :
+9. Alamat pengiriman :
+10. Tipe/merek Gadget :
+11. Versi OS Gadget :
+12. Versi aplikasi by.U :
         
 `   
 },

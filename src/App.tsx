@@ -6,6 +6,7 @@ import DarkMode from "./components/ButtonDarkLight";
 export default function App() {
   const [activeTab, setActiveTab] = useState("notepad");
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
+  const initializedRef = useRef(false);
 
   // Konten notepad tetap disimpan saat pindah tab
   const [note, setNote] = useState(() => {
@@ -26,14 +27,13 @@ export default function App() {
   }, [activeTab]);
 
   useEffect(() => {
-    if (activeTab === "notepad" && note === "") {
-      setNote("1. ");
+    if (activeTab === "notepad" && note === "" && !initializedRef.current) {
+      initializedRef.current=true;
     }
   }, [activeTab]);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
   if (e.key !== "Enter") return;
-
   const textarea = e.currentTarget;
   const cursorPos = textarea.selectionStart;
   const textBeforeCursor = note.slice(0, cursorPos);
@@ -42,8 +42,8 @@ export default function App() {
 
 
   const match = lastLine.match(/^(\d+)\./);
-
-  if (!match) return; // Enter normal
+  if (lastLine.trim() === "") return;
+  if (!match) return; 
 
   e.preventDefault();
 
@@ -87,7 +87,7 @@ export default function App() {
         >
           Template
         </button>
-        <div className="absolute right-10 flex gap-1">
+        <div className="absolute right-0 flex gap-1">
           <DarkMode/>
           <h1 className="text-3xl tracking-[.25em]">di<span className="text-red-600">N</span></h1>
         </div>
