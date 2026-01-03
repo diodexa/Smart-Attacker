@@ -34,7 +34,10 @@ iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
 5. Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.
 6. Coba akses secara berkala selama 1x24 jam khawatir gangguan sementara.
 Semoga membantu :)`,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Internet Lambat  
 
 1. Nomor dan akun by.U :
@@ -47,7 +50,7 @@ Internet Lambat
 8. Nomor atau info kontak lain yang bisa dihubungi :
 9. Sisa kuota yang dimiliki oleh pelanggan :
 
-Ticket by Dio Deska
+
 
 3x24 jam`},{id:2,case:`Error Lain`,Solusi:` Makasih udah nunggu. Kak maaf, kalau aku cek ada  masalah di nomor atau SIM Card by.U Kakak. Untuk pengecekan lebih lanjut, boleh infoin data ini ya :
 
@@ -57,7 +60,10 @@ Ticket by Dio Deska
 4. Capture gagal aktivasi yang menggunakan 1 SIM card di HP dan pastiin ga pakai wifi :
 
 Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U! `,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Tidak bisa aktivasi Error Lain 
 
 1. Nomor by.U :
@@ -68,7 +74,7 @@ Tidak bisa aktivasi Error Lain
 6. Capture gagal aktivasi  :
 7. Order ID CXT/CXO (Pengecekan OperatorX) :
 
-Ticket by Dio Deska
+
 
 1x24 jam`},{id:3,case:`Bugs Lain`,Solusi:`Makasih udah nunggu. Kak maaf, aku cek ga ada info gangguan. Boleh coba dulu untuk ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih gak bisa, boleh coba install ulang aplikasi by.U kakak dan pastikan koneksi internet ada. Kalau di aplikasi masih berkendala, Kakak bisa coba akses di website by.U ya. Kalau udah tapi masih berkendala, boleh infoin data ini ya :
 1. Email by.U : 
@@ -80,7 +86,10 @@ Ticket by Dio Deska
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
 8. Waktu dan Lama Kejadian : 
 9. Lokasi Kejadian :  `,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Bugs Lain 
 
 1. Email by.U : 
@@ -93,7 +102,7 @@ Bugs Lain
 8. Waktu dan Lama Kejadian : 
 9. Lokasi Kejadian : 
 
-Ticket by Dio Deska
+
 `},{id:4,case:`Bugs Ganti Sim Card`,Solusi:`Oke Kak maaf. Ini SIM card Kakak harusnya bisa lanjut dengan Kakak pilih menu ganti SIM card di apps, nantinya bakal muncul halaman pengambilan/pengantaran. Coba di clear cache dulu apps nya dan pastiin pakai apps versi terbaru ya. Kalau udah tapi masih ga muncul halaman pengambilan/pengantarannya boleh diinfoin data ini :
 1. Email by.U :
 2. Nomor by.U :
@@ -103,7 +112,10 @@ Ticket by Dio Deska
 6. Apakah bisa akses menggunakan wifi/jaringan lain :
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :
 8. Waktu dan Lama Kejadian :`,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Bugs Ganti Sim Card 
 
 1. Email by.U : 
@@ -115,7 +127,7 @@ Bugs Ganti Sim Card
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :  
 8. Waktu dan Lama Kejadian : 
 
-Ticket by Dio Deska
+
 `},{id:5,case:`Tidak bisa Kirim/Terima SMS`,Solusi:`Kak maaf banget nih untuk kendala SMS nya. Boleh coba panduan ini dulu ya :
 1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
 2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 *Note: hanya ada di HP android, jika pelanggan sudah infokan tipe HP dan bukan HP android maka settingan ini tidak perlu di infokan ke pelanggan
@@ -123,7 +135,10 @@ Ticket by Dio Deska
 Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan beberapa data berikut supaya kami bisa bantu pengecekan ya Kak :
 
 `,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Tidak bisa kirim / Terima SMS 
 
 1. Email dan nomor by.U :
@@ -135,11 +150,14 @@ Tidak bisa kirim / Terima SMS
 7. Kendala terjadi hanya saat menerima SMS atau mengirim SMS ke nomor tertentu atau semua? :
 8. Nomor lain yang bisa dihubungi : 
 
-Ticket by Dio Deska
+
 
 1x24 jam`},{id:6,case:`Panggilan Telepon Masuk / Telepon Keluar`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala teleponnya, boleh  pastiin dulu kakak berada dalam lokasi yang mendapatkan sinyal by.U dan sudah mencoba on-off-kan airplane mode. kalau masih gabisa, boleh infoin data ini ya :
 :`,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Tidak bisa melakukan panggilan on-net & off-net
 
 1. Email dan nomor by.U :
@@ -151,15 +169,18 @@ Tidak bisa melakukan panggilan on-net & off-net
 7. Kendala terjadi hanya ke nomor tertentu atau semua nomor :
 8. Nomor lain yang bisa dihubungi : 
 
-Ticket by Dio Deska
+
 
 1x24 jam`},{id:7,case:`Tidak bisa request OTP Meta Product`,Solusi:`Kak maaf banget nih untuk kendala SMS nya. Boleh coba panduan ini dulu ya :
 1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
-2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 *Note: hanya ada di HP android, jika pelanggan sudah infokan tipe HP dan bukan HP android maka settingan ini tidak perlu di infokan ke pelanggan
+2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 
 3. Coba on-off-kan airplane mode
 Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan beberapa data berikut supaya kami bisa bantu pengecekan ya Kak :
 `,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 TIDAK BISA REQUEST OTP META PRODUCT
 
 1. Email by.U :
@@ -170,7 +191,7 @@ TIDAK BISA REQUEST OTP META PRODUCT
 6. Capture dashboard di apps dan keterangan sinyal : 
 7. Keterangan gagal yang muncul saat melakukan request/menerima OTP :
 
-Ticket by Dio Deska
+
 
 1x24 jam`},{id:8,case:`Unreg hapus NIK`,Solusi:`Makasih udah nunggu. Kak maaf untuk unreg/deaktivasi SIM card by.U, bisa melalui aplikasi. Silakan kakak buka halaman profil, pilih menu bantuan, pilih topik Isu SIM, lalu Kakak pilih faq Gimana sih cara unreg SIM Card by.U? Selanjutnya ikuti langkah-langkah pada aplikasi ya.
 1. Masukan SIM Card by.U ke gadget kamu
@@ -179,7 +200,10 @@ Ticket by Dio Deska
 4. Selanjutnya akan muncul halaman data unreg SIM Card. Pada halaman ini Kakak perlu meng-input NIK yang sama ketika nomor diaktivasi dan alasan unreg SIM Card, lalu klik button Kirim
 5. Kemudian akan muncul halaman disclaimer yang berisi syarat dan ketentuan terkait unreg SIM Card, pelanggan perlu menandai tanda checklist dibagian bawah sebagai tanda bahwa pelanggan sudah membaca dan menyetujui syarat & ketentuan unreg SIM Card. Lalu klik Unreg SIM Card
 6. Unreg SIM Card akan diproses jika data sesuai dan keterangan berhasil unreg akan muncul di aplikasi by.U :)`,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Permintaan Deaktivasi SIM Card dan Hapus NIK
 
 1. Email by.U :
@@ -190,10 +214,13 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 6. Foto KTP : 
 7. Foto Selfie dengan KTP : 
 
-Ticket by Dio Deska
+
 
 1x24 jam`},{id:9,case:`Unreg hapus NIK lupa nomor`,Solusi:`Restart HP`,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Permintaan Deaktivasi SIM Card dan Hapus NIK
 
 1. Nomor by.U :
@@ -206,10 +233,13 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 8. Capture hasil pengecekan dari *444# : 
 9. CP yang bisa dihubungi :
 
-Ticket by Dio Deska
+
 
 1x24 jam`},{id:10,case:`Gagal Aktivasi eSIM Account Status Tidak Sesuai`,Solusi:``,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Gagal Aktivasi eSIM Account Status Tidak Sesuai
 
 1.Email by.U :
@@ -218,7 +248,7 @@ Gagal Aktivasi eSIM Account Status Tidak Sesuai
 4.Email yang bisa dihubungi :
 5.Capture gagal aktivasi di apps : 
 
-Ticket by Dio Deska
+
 
 1x24 jam`},{id:11,case:`Sinyal lemah/tidak stabil`,Solusi:`
 Makasih udah nunggu. Kak maaf, untuk kendala sinyalnya di nomor xxxxx ,boleh infoin data ini ya biar bisa aku cek :
@@ -229,7 +259,7 @@ Makasih udah nunggu. Kak maaf, untuk kendala sinyalnya di nomor xxxxx ,boleh inf
 
 Sekedar info, Kak. Karena kita pake jaringan Telkomsel, jadi kualitas jaringan by.U mengikuti kualitas jaringan Telkomsel di lokasi kakak ya. Makasih :)
 
-============================================================================
+==============
 
 Makasih udah nunggu. Kak maaf, kalau aku cek nomor xxxxxxxxxxxx  statusnya aktif dan tidak ada info gangguan di lokasi Kakak. Bisa dicoba dulu langkah-langkah di bawah ini ya kak :
 1. Ubah mode jaringan dari otomatis ke manual 2g only, kemudian kembalikan lagi ke mode otomatis
@@ -240,7 +270,10 @@ iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
 4. Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau coba ke HP lain untuk perbandingan.
 5. Dicoba akses/cek secara berkala selama 1x24 jam khawatir gangguan sementara.
 Semoga membantu :)`,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Tidak Ada Sinyal/Blankspot & Sinyal Lemah/Tidak Stabil
 
 1. Nomor by.U :
@@ -256,7 +289,7 @@ Tidak Ada Sinyal/Blankspot & Sinyal Lemah/Tidak Stabil
 11. Capture keterangan bar sinyal :
 12. Nomor atau info kontak lain yang bisa dihubungi?
 
-Ticket by Dio Deska
+
 
 1x24 jam`},{id:12,case:`Ganti SIM Card`,Solusi:`Makasih udah nunggu. Kak untuk permintaan ganti SIM Card, bisa dilakukan selama nomornya aktif ya. Silakan Kakak bisa lakukan prosesnya diApps by.U yaa, berikut cara melakukan permintaan ganti SIM Card-nya ya:
 1. Pastiin Versi aplikasi sudah yang terbaru yaa
@@ -267,7 +300,10 @@ Ticket by Dio Deska
 6. Ikuti proses prosedur ganti SIM Card
 7. Tunggu proses validasi dari tim by.U
 8. Kalo rikuesmu di terima, lanjutin prosesnya dan bisa Pilih Ambil (GraPARI)/Indomaret tanpa biaya pengambilan atau SIM Card diantar (Kurir JNE) dengan biaya Rp10.000 dan estimasi sampai makismal 7 hari kerja sesudah melakukan pembayaran.`,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Permintaan Ganti SIM Card Active
 
 1. Nomor by.U :
@@ -278,10 +314,13 @@ Permintaan Ganti SIM Card Active
 6. Nama & nomor penerima :
 7. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) :
 
-Ticket by Dio Deska
+
 
 `},{id:13,case:`Miskoordinasi JNE (AWB)`,Solusi:``,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Keluhan SIM Card Tidak Sampai via JNE ada AWB
 
 1. Nomor by.U :
@@ -291,10 +330,13 @@ Keluhan SIM Card Tidak Sampai via JNE ada AWB
 5. Capture pengecekan nomor resi di web tracking JNE : 
 6. Konfirmasi dari JNE (jika customer sempat komplain ke JNE) : -
 
-Ticket by Dio Deska
+
 
 `},{id:14,case:`Miskoordinasi JNE `,Solusi:``,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
 
 1. Nomor by.U :
@@ -304,10 +346,13 @@ Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
 5. Nomor Penerima :
 6. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) :
 
-Ticket by Dio Deska
+
         
 `},{id:15,case:`IRENEW virtual account Paid `,Solusi:``,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Masalah Pembelian Kuota/Pulsa I RENEW Via VA
 
 1. Nomor by.U :
@@ -322,10 +367,13 @@ TRX ID :
 No VA :
 paid
 
-Ticket by Dio Deska
+
         
 `},{id:16,case:`Penyalahgunaan NIK `,Solusi:``,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Penyalahgunaan NIK
 
 1. Email Aktif :
@@ -335,10 +383,13 @@ Penyalahgunaan NIK
 5. Nomor by.U yang ingin di UNREGISTRASI : 
 5. Capture SMS cek registrasi dari 4444 :
 
-Ticket by Dio Deska
+
         
 `},{id:17,case:`Irenew virtual account Unpaid `,Solusi:``,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Masalah Pembelian Kuota/Pulsa I RENEW Via Virtual Account
 
 1. Nomor by.U
@@ -355,21 +406,27 @@ TRX ID :
 No VA : 
 Unpaid
 
-Ticket by Dio Deska
+
         
 `},{id:18,case:`Permintaan Refund karena kesalahan sistem `,Solusi:``,Mandatory:`
 [REFUND]
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Permintaan Refund karena kesalahan sistem
 
 1.Nomor by.U :
 2.Email by.U :
 3.Capture bukti pembayaran :
 
-Ticket by Dio Deska
+
         
 `},{id:19,case:`Tidak Mendapatkan Kuota Monthversary  `,Solusi:``,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Tidak Mendapatkan Kuota Monthversary 
 
 1. MSISDN by.U :
@@ -380,11 +437,21 @@ Tidak Mendapatkan Kuota Monthversary
 6. Bukti bayar (jika kendalanya pelanggan sudah bayar tapi belum menerima paket Monthiversary Reward) :-
 7. Hasil pengecekan Add Ons di CRM (berupa text dan tidak boleh printscreen) :
 
-Ticket by Dio Deska
+
         
-`},{id:20,case:`SMS - Gagal Aktivasi M-Banking `,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala fitur banking nya, pastiin cuma ada SIM Card by.U di hp saat aktivasi fitur banking tersebut dan terkoneksi dengan jaringan by.U. Kalau masih tidak bisa, boleh tolong infokan beberapa data berikut agar dapat dibantu pengecekan :
+`},{id:20,case:`SMS - Gagal Aktivasi M-Banking `,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala fitur banking nya di nomor xxxxxx, pastiin cuma ada SIM Card by.U di hp saat aktivasi fitur banking tersebut dan terkoneksi dengan jaringan by.U. Kalau masih tidak bisa, boleh tolong infokan beberapa data berikut agar dapat dibantu pengecekan :
+1. Email akun by.U :
+2. Rincian keluhan :
+3. Tipe HP :
+4. Capture dashboard apps :
+5. Capture kirim atau terima SMS ke nomor lain berhasil :
+6. Capture keterangan gagal aktivasi fitur banking :
+
 `,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 SMS - Gagal Aktivasi M-Banking
 
 1. Nomor by.U :
@@ -395,10 +462,13 @@ SMS - Gagal Aktivasi M-Banking
 6. Capture kirim atau terima SMS ke nomor lain berhasil :
 7. Capture keterangan gagal aktivasi fitur banking :
 
-Ticket by Dio Deska
+
         
 `},{id:21,case:`IRENEW OVO/DANA/ShopeePay `,Solusi:``,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Masalah Pembelian Kuota/Pulsa I RENEW Via 
 
 1. Nomor by.U :
@@ -408,7 +478,7 @@ Masalah Pembelian Kuota/Pulsa I RENEW Via
 5. Transaction ID (CXT) (Pengecekan OperatorX) :
 6. Rincian Keluhan : kuota/pulsa belum masuk
 
-Ticket by Dio Deska
+
         
 `},{id:22,case:`Tidak Bisa Aktivasi SIM Card Legacy `,Solusi:`Maaf, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
 1. Nomor by.U (yang sesuai di bungkus SIM card)
@@ -416,7 +486,10 @@ Ticket by Dio Deska
 3. Capture Gagal Aktivasi
 4. SN barcode yang ada di cangkang SIM Card
 5. CP dan Email yang bisa dihubungi`,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Tidak Bisa Aktivasi SIM Card Legacy
 
 1. Nomor by.U :
@@ -428,7 +501,7 @@ Tidak Bisa Aktivasi SIM Card Legacy
 7. Order ID CXT/CXO (Pengecekan OperatorX) :
 8. Keterangan pengecekan :
 
-Ticket by Dio Deska
+
         
 `},{id:23,case:`Cara Aktivasi SIM card Digital `,Solusi:`Aku bantu infoin untuk cara aktivasinya Kakak bisa coba cara berikut ya Kak:
 1. Buka apps, lalu login dengan menggunakan akun yang digunakan pada saat pemesanan kartu by.U > klik tombol aktifin SIM Card,
@@ -438,8 +511,7 @@ Ticket by Dio Deska
 5. Pastiin saat masukkan NIK dan no.KK pakai jaringan by.U aja yang ingin di aktivasi ya
 Semoga berhasil ya Kak, kalau berkendala bisa Kakak coba aktivasi via web byu.id/aktivasi dan bisa gunakan jaringan lain untuk perbandingan ya Kak.`,Mandatory:`
 
-`},{id:24,case:`Tidak bisa internet`,Solusi:`Makasih udah nunggu. Kak maaf, aku cek nomor xxxx aktif dan lokasi Kakak ga ada masalah nih. Boleh coba panduan ini ya :
-Hai Kak, aku cek nomor xxx (sebutkan nomornya) aktif dan memiliki kuota, kami cek kondisi jaringan di lokasi kakak tidak ada masalah. Bisa dicoba langkah-langkah ini ya kak :
+`},{id:24,case:`Tidak bisa internet`,Solusi:`Makasih udah nunggu. Kak maaf, aku cek nomor xxxx aktif, punya kuota dan lokasi Kakak ga ada masalah nih. Boleh coba panduan ini ya :
 1. Ubah mode jaringan dari otomatis ke manual 2g only, kemudian kembalikan lagi ke mode otomatis
 2. Lakukan refresh jaringan :
 Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih by.U (Telkomsel).
@@ -447,7 +519,10 @@ iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
 3. Coba ON-kan airplane mode dan OFF-kan kembali, OFF-kan mobile data dan ON-kan kembali.
 4. Isi APN dengan "byu", username dan password kosongkan.
 5. Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.`,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Tidak Bisa akses internet
 
 1. Nomor by.U :
@@ -462,10 +537,13 @@ Tidak Bisa akses internet
 10. Nomor atau info kontak lain yang bisa dihubungi :
 11. Sisa kuota yang dimiliki oleh pelanggan :
 
-Ticket by Dio Deska
+
         
 `},{id:25,case:`Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy`,Solusi:``,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy
 
 1. Nomor by.U : 
@@ -478,7 +556,7 @@ Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy
 8. Alamat pengiriman :
 9. Order ID CXT/CXO (Pengecekan OperatorX) :
 
-Ticket by Dio Deska
+
         
 `},{id:26,case:`Tidak Bisa Aktivasi SIM Card Dengan Kode Error Asset Not Found `,Solusi:`Makasih udah nunggu ya Kak. Maaf banget nih, Kalau sudah mencoba lagi dan masih tidak bisa, boleh diinfokan beberapa data berikut ya supaya kami bisa melakukan pengecekan lebih lanjut :
 1. Akun by.U :
@@ -490,7 +568,10 @@ Ticket by Dio Deska
 
 
 Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U!`,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Tidak Bisa Aktivasi SIM Card Dengan Kode Error "Asset Not Found" 
 
 1. Akun by.U :
@@ -503,7 +584,7 @@ Tidak Bisa Aktivasi SIM Card Dengan Kode Error "Asset Not Found"
 
 
 
-Ticket by Dio Deska
+
         
 `},{id:27,case:`Ketidaksesuaian Penggunaan Kuota `,Solusi:`
 1. Lakukan update lokasi dengan cara:
@@ -511,7 +592,10 @@ a. Android : Switch 'manual network' pada menu mobile networks, pilih operator l
 b. iOS : Pilih settings - general - reset - reset network setting.
 2. OFF-kan data seluler beberapa saat, lalu ON-kan kembali
 3. Pastikan tidak ada aplikasi lain yang berjalan/running bersamaan di latar belakang/background smartphone`,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Ketidaksesuaian Penggunaan Kuota 
 
 1. Nomor by.U :
@@ -528,25 +612,27 @@ Ketidaksesuaian Penggunaan Kuota
 
 
 
-Ticket by Dio Deska
+
         
 `},{id:28,case:`Tidak dapat kode OTP login apps by.U `,Solusi:`
 Makasih udah nunggu. Kak maaf untuk kendala gabisa login apps by.U, jika SIM Card dan aplikasi by.U berada di gadget yang sama dan menggunakan jaringan by.U, seharusnya login akan terjadi otomatis, kecuali jika tidak ada koneksi. Jika memang diperlukan login manual, boleh dipastikan bahwa OS gadget yang Kakak pake adalah OS yang terupdate dan pastikan juga koneksi internetnya berjalan dengan baik. Dicoba ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih ga bisa, dicoba install ulang aplikasi by.U kakak dan di cek juga di HP lain sebagai perbandingan ya :) Pastiin setting dengan memilih menu Setting > pilih manager aplikasi > all > messaging > send premium sms > always allow dan pastikan juga untuk nomor pusat sudah diisi dengan angka +6281100000 disettingan sms HP ya, karena kalau belum disetting itu akan berpengaruh terhadap diterimanya OTP.
 Kakak bisa juga coba login menggunakan email akun by.U ya :) Semoga membantu :)`,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Tidak Menerima OTP untuk login aplikasi byU
 
 1. Nomor by.U :
 2. Nomor yang digunakan untuk login aplikasi :
 3. Capture keterangan gagal di aplikasi :
 4. Tanggal dan waktu kejadian :
-
-
-
-Ticket by Dio Deska
         
 `},{id:29,case:`Tidak Mendapatkan Voucher Non-Telco`,Solusi:``,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Tidak Mendapatkan Voucher Non-Telco
 
 1. Nomor by.U :
@@ -556,10 +642,13 @@ Tidak Mendapatkan Voucher Non-Telco
 5. Capture bukti redeem di halaman Reward Saya :
 6. Capture kendala penukaran : 
 
-Ticket by Dio Deska
+
         
 `},{id:30,case:`Pergantian SIM Card Legacy ditolak GraPARI`,Solusi:``,Mandatory:`
-IGDM ${e()} 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
 Pergantian SIM Card Legacy ditolak GraPARI
 
 1.Nama Pelanggan :
@@ -573,10 +662,96 @@ Pergantian SIM Card Legacy ditolak GraPARI
 9. Foto KTP :
 10. Foto selfie KTP :
 11. Alasan ganti SIM Card : SIM Card Hilang
-
-Ticket by Dio Deska
         
-`}]};var Ja=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),R=e(((e,t)=>{t.exports=Ja()}))(),Ya=({onSelect:e})=>(0,R.jsx)(Ka,{options:qa().map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:`#f6fbe0ff`}),menu:e=>({...e,backgroundColor:`#f6fbe0ff`})}}),Xa={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},Za=l.createContext&&l.createContext(Xa),Qa=[`attr`,`size`,`title`];function $a(e,t){if(e==null)return{};var n=eo(e,t),r,i;if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(i=0;i<a.length;i++)r=a[i],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function eo(e,t){if(e==null)return{};var n={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}function to(){return to=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},to.apply(this,arguments)}function no(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function ro(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?no(Object(n),!0).forEach(function(t){io(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):no(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function io(e,t,n){return t=ao(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function ao(e){var t=oo(e,`string`);return typeof t==`symbol`?t:t+``}function oo(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function so(e){return e&&e.map((e,t)=>l.createElement(e.tag,ro({key:t},e.attr),so(e.child)))}function co(e){return t=>l.createElement(lo,to({attr:ro({},e.attr)},t),so(e.child))}function lo(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=$a(e,Qa),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),l.createElement(`svg`,to({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:ro(ro({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&l.createElement(`title`,null,i),e.children)};return Za===void 0?t(Xa):l.createElement(Za.Consumer,null,e=>t(e))}function uo(e){return co({tag:`svg`,attr:{viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`2`,strokeLinecap:`round`,strokeLinejoin:`round`},child:[{tag:`rect`,attr:{x:`9`,y:`9`,width:`13`,height:`13`,rx:`2`,ry:`2`},child:[]},{tag:`path`,attr:{d:`M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1`},child:[]}]})(e)}var z=({text:e})=>{let[t,n]=(0,l.useState)(!1);return(0,R.jsxs)(`button`,{onClick:()=>{let t=e.split(`
+`},{id:31,case:`Esim Sinyal hilang`,Solusi:``,Mandatory:`
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
+eSIM sinyal hilang
+
+1. Nomor by.U :
+2. Akun by.U :
+3. Tipe/Merek Gadget :
+4. Nomor yang bisa dihubungi :
+5. Email yang bisa dihubungi : 
+6. Capture Sinyal :
+7. Capture settingan eSIM di handphone :
+8. Capture bukti pembayaran : 
+9. Order ID CXT/CXO (Pengecekan OperatorX):
+        
+`},{id:32,case:`eSIM  QR tidak tersimpan `,Solusi:``,Mandatory:`
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
+eSIM  QR tidak tersimpan 
+
+1. Nomor by.U :
+2. Akun by.U :
+3. Nomor yang bisa dihubungi :
+4. Email yang bisa dihubungi :
+5. Bukti pembayaran :
+6. Keterangan gagal : (KHUSUS APABILA QR YANG DIMILIKI PELANGGAN TIDAK VALID)
+7. Order ID CXT/CXO (Pengecekan OperatorX) :
+        
+`},{id:33,case:`Bugs Ganti SIM card (mandatory E)`,Solusi:``,Mandatory:`
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
+Bugs Ganti SIM card
+
+1. Nomor by.U :
+2. Email by.U :
+3. Nomor Identitas KTP :
+4. Scan/Foto KTP Asli :
+5. Foto selfie dengan KTP Asli :
+6. Screen record terbaru :
+7. Nama penerima :
+8. Nomor penerima :
+9. Alamat pengiriman :
+10. Tipe/merek Gadget :
+11. Versi OS Gadget :
+12. Versi aplikasi by.U :
+        
+`},{id:34,case:`Keluhan Tidak Bisa Akses Internet di Luar Negeri Roaming`,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
+1. Email akun by.U :
+2. Tanggal dan waktu kejadian sejak kapan :
+3. Jaringan/operator negara setempat yang digunakan :
+4. Capture speedtest :
+5. Capture setting APN di HP :
+6. Lokasi negara :
+
+Makasih udah nunggu. Kak aku cek nomor xxxxx aktif  dan punya kuota roaming, serta kondisi jaringan di xxxxxx tidak ada info gangguan. Bisa dicoba langkah-langkah ini ya kak :
+1. Coba ON-kan airplane mode dan OFF-kan kembali, OFF-kan mobile data dan ON-kan kembali.
+2. Lakukan refresh jaringan :
+3. Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih operator yang bekerja sama dengan Telkomsel, yaitu xxxxxxx
+4. iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
+5. Isi APN dengan "byu", username dan password kosongkan.
+6.Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.
+
+Jika cara di atas sudah dicoba dan akses internet tetap bermasalah, tolong hubungi kita lagi. Terima kasih`,Mandatory:`
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
+DATA - Tidak Bisa Akses Internet di Luar Negeri
+
+1. Akun dan nomor by.U :
+2. Lokasi negara :
+3. Nama Paket Roaming :
+4. Jenis device yang digunakan :
+5. Tanggal dan waktu kendala :
+6. Jaringan yang digunakan apa? 4G, 5G? :
+7. Jumlah sinyal bar atau titik yang didapat? :
+8. Jaringan/operator negara setempat yang digunakan :
+9. Email aktif yang bisa dihubungi :
+10. Sisa kuota yang dimiliki oleh pelanggan :
+11. Capture speedtest :
+12. Capture APN :
+        
+`}]};var Ja=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),R=e(((e,t)=>{t.exports=Ja()}))(),Ya=({onSelect:e})=>(0,R.jsx)(Ka,{options:qa().slice().sort((e,t)=>e.case.localeCompare(t.case)).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:`#f6fbe0ff`}),menu:e=>({...e,backgroundColor:`#f6fbe0ff`})}}),Xa={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},Za=l.createContext&&l.createContext(Xa),Qa=[`attr`,`size`,`title`];function $a(e,t){if(e==null)return{};var n=eo(e,t),r,i;if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(i=0;i<a.length;i++)r=a[i],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function eo(e,t){if(e==null)return{};var n={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}function to(){return to=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},to.apply(this,arguments)}function no(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function ro(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?no(Object(n),!0).forEach(function(t){io(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):no(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function io(e,t,n){return t=ao(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function ao(e){var t=oo(e,`string`);return typeof t==`symbol`?t:t+``}function oo(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function so(e){return e&&e.map((e,t)=>l.createElement(e.tag,ro({key:t},e.attr),so(e.child)))}function co(e){return t=>l.createElement(lo,to({attr:ro({},e.attr)},t),so(e.child))}function lo(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=$a(e,Qa),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),l.createElement(`svg`,to({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:ro(ro({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&l.createElement(`title`,null,i),e.children)};return Za===void 0?t(Xa):l.createElement(Za.Consumer,null,e=>t(e))}function uo(e){return co({tag:`svg`,attr:{viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`2`,strokeLinecap:`round`,strokeLinejoin:`round`},child:[{tag:`rect`,attr:{x:`9`,y:`9`,width:`13`,height:`13`,rx:`2`,ry:`2`},child:[]},{tag:`path`,attr:{d:`M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1`},child:[]}]})(e)}var z=({text:e})=>{let[t,n]=(0,l.useState)(!1);return(0,R.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),n(!0),setTimeout(()=>n(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid`,children:[(0,R.jsxs)(uo,{className:` ${t?`invisible!`:`visible`}`,children:["` $",t?`copy!`:`tidak`,"`"]}),(0,R.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,t?`anjay`:``,` `]})]})},fo=({selectedId:e})=>{let t=qa().find(t=>t.id===e);return t?(0,R.jsx)(`p`,{className:` p-2 w-full h-full border-2`,style:{whiteSpace:`pre-line`},children:t.Mandatory}):(0,R.jsx)(`p`,{className:`mt-4 text-gray-500`,children:`Silakan pilih case terlebih dahulu`})},po=({selectedId:e})=>{let t=qa().find(t=>t.id===e);return t?(0,R.jsx)(`p`,{className:`p-2 w-full h-full border-2`,style:{whiteSpace:`pre-line`},children:t.Solusi}):(0,R.jsx)(`p`,{className:`mt-4 text-gray-500`,children:`Silakan pilih case terlebih dahulu`})},B=()=>{let[e,t]=(0,l.useState)(()=>{let e=localStorage.getItem(`selectedId`);return e?Number(e):null}),n=qa().find(t=>t.id===e);return(0,l.useEffect)(()=>{e!==null&&localStorage.setItem(`selectedId`,String(e))},[e]),(0,R.jsxs)(`div`,{className:`flex flex-col w-screen `,children:[(0,R.jsx)(Ya,{onSelect:e=>t(e)}),(0,R.jsxs)(`div`,{className:`flex gap-2`,children:[(0,R.jsxs)(`div`,{className:`w-full h-dvh`,children:[n&&(0,R.jsx)(z,{text:n.Mandatory}),(0,R.jsx)(fo,{selectedId:e})]}),(0,R.jsxs)(`div`,{className:`w-full  `,children:[n&&(0,R.jsx)(z,{text:n.Solusi}),(0,R.jsx)(po,{selectedId:e})]})]})]})},V=()=>{let[e,t]=(0,l.useState)(null),[n,r]=(0,l.useState)(()=>{let e=localStorage.getItem(`my-templates`);return e?JSON.parse(e):[``,``,``,``,``,``]});(0,l.useEffect)(()=>{localStorage.setItem(`my-templates`,JSON.stringify(n))},[n]);let i=(e,t)=>{let i=[...n];i[e]=t,r(i)};return(0,R.jsx)(`div`,{className:`w-full`,children:[0,1,2,3,4,5,6,7,8].map(r=>(0,R.jsx)(`div`,{className:`flex`,children:[0,1].map(a=>{let o=r*2+a;return(0,R.jsxs)(`div`,{className:`relative w-full`,children:[(0,R.jsx)(`textarea`,{value:n[o],onChange:e=>i(o,e.target.value),onClick:()=>{navigator.clipboard.writeText(n[o]),t(o),setTimeout(()=>t(null),500)},className:`h-30 w-full border-1 border-solid hover:bg-yellow-200 hover:text-black `},o),e===o&&(0,R.jsx)(`p`,{className:`absolute left-1/2 top-1/2 -translate-1/2 bg-black text-white px-2 py-1 rounded shadow`,children:`anjay`})]})})},r))})};function mo(e){return co({tag:`svg`,attr:{fill:`currentColor`,viewBox:`0 0 16 16`},child:[{tag:`path`,attr:{d:`M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708`},child:[]}]})(e)}function ho(e){return co({tag:`svg`,attr:{viewBox:`0 0 24 24`,fill:`currentColor`},child:[{tag:`path`,attr:{d:`M9.8216 2.23796C9.29417 3.38265 9 4.65697 9 6C9 10.9706 13.0294 15 18 15C19.343 15 20.6174 14.7058 21.762 14.1784C20.7678 18.6537 16.7747 22 12 22C6.47715 22 2 17.5228 2 12C2 7.22532 5.3463 3.23221 9.8216 2.23796ZM18.1642 2.29104L19 2.5V3.5L18.1642 3.70896C17.4476 3.8881 16.8881 4.4476 16.709 5.16417L16.5 6H15.5L15.291 5.16417C15.1119 4.4476 14.5524 3.8881 13.8358 3.70896L13 3.5V2.5L13.8358 2.29104C14.5524 2.1119 15.1119 1.5524 15.291 0.835829L15.5 0H16.5L16.709 0.835829C16.8881 1.5524 17.4476 2.1119 18.1642 2.29104ZM23.1642 7.29104L24 7.5V8.5L23.1642 8.70896C22.4476 8.8881 21.8881 9.4476 21.709 10.1642L21.5 11H20.5L20.291 10.1642C20.1119 9.4476 19.5524 8.8881 18.8358 8.70896L18 8.5V7.5L18.8358 7.29104C19.5524 7.1119 20.1119 6.5524 20.291 5.83583L20.5 5H21.5L21.709 5.83583C21.8881 6.5524 22.4476 7.1119 23.1642 7.29104Z`},child:[]}]})(e)}function go(){let[e,t]=(0,l.useState)(()=>localStorage.getItem(`theme`)===`dark`);return(0,l.useEffect)(()=>{document.documentElement.classList.toggle(`dark`,e),localStorage.setItem(`theme`,e?`dark`:`light`)},[e]),(0,R.jsxs)(`button`,{onClick:()=>t(!e),className:`p-4 rounded transition-colors duration-500 relative overflow-hidden pointer-events-auto text-2xl`,"aria-label":`Toggle dark mode`,children:[(0,R.jsx)(mo,{className:` absolute inset-0 m-auto transition-all duration-500 ${e?`opacity-0 scale-50 rotate-90`:`opacity-100 scale-150 rotate-0`}`}),(0,R.jsx)(ho,{className:`text-white absolute inset-0 m-auto transition-all duration-500 ${e?`opacity-100 scale-150 rotate-0`:`opacity-0 scale-50 rotate-90`}`})]})}function _o(){let[e,t]=(0,l.useState)(`notepad`),n=(0,l.useRef)(null),r=(0,l.useRef)(!1),[i,a]=(0,l.useState)(()=>localStorage.getItem(`my-note`)||``);return(0,l.useEffect)(()=>{i!==``&&localStorage.setItem(`my-note`,i)},[i]),(0,l.useEffect)(()=>{e===`notepad`&&n.current&&(n.current.focus(),n.current.setSelectionRange(n.current.value.length,n.current.value.length))},[e]),(0,l.useEffect)(()=>{e===`notepad`&&i===``&&!r.current&&(r.current=!0)},[e]),(0,R.jsxs)(`div`,{className:`flex flex-col `,children:[(0,R.jsxs)(`div`,{className:`flex gap-2 p-2 border-b`,children:[(0,R.jsx)(`button`,{className:`border px-4 ${e===`notepad`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`notepad`),children:`Notepad`}),(0,R.jsx)(`button`,{className:`border px-4 ${e===`tiket`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`tiket`),children:`Mandatory`}),(0,R.jsx)(`button`,{className:`border px-4 ${e===`Template`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`Template`),children:`Template`}),(0,R.jsxs)(`div`,{className:`absolute right-0 flex gap-1`,children:[(0,R.jsx)(go,{}),(0,R.jsxs)(`h1`,{className:`text-3xl tracking-[.25em]`,children:[`di`,(0,R.jsx)(`span`,{className:`text-red-600`,children:`N`})]})]})]}),(0,R.jsxs)(`div`,{className:`flex p-2 h-screen`,children:[e===`notepad`&&(0,R.jsx)(`textarea`,{ref:n,className:`border w-full h-full p-2`,placeholder:`Tulis catatan kamu…`,value:i,onChange:e=>a(e.target.value),onKeyDown:e=>{if(e.key!==`Enter`)return;let t=e.currentTarget.selectionStart,r=i.slice(0,t).split(`
 `),o=r[r.length-1],s=o.match(/^(\d+)\./);if(o.trim()===``||!s)return;e.preventDefault();let c=Number(s[1])+1;a(i.slice(0,t)+`\n${c}. `+i.slice(t)),requestAnimationFrame(()=>{let e=t+`\n${c}. `.length;n.current?.setSelectionRange(e,e)})}}),e===`tiket`&&(0,R.jsx)(B,{}),e===`Template`&&(0,R.jsx)(V,{})]})]})}var vo=`modulepreload`,yo=function(e){return`/Smart-Attacker/`+e},bo={};const xo=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}r=o(t.map(t=>{if(t=yo(t,n),t in bo)return;bo[t]=!0;let r=t.endsWith(`.css`),i=r?`[rel="stylesheet"]`:``;if(n)for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}else if(document.querySelector(`link[href="${t}"]${i}`))return;let o=document.createElement(`link`);if(o.rel=r?`stylesheet`:vo,r||(o.as=`script`),o.crossOrigin=``,o.href=t,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),r)return new Promise((e,n)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};var H=`popstate`;function So(e={}){function t(e,t){let{pathname:n=`/`,search:r=``,hash:i=``}=Oo(e.location.hash.substring(1));return!n.startsWith(`/`)&&!n.startsWith(`.`)&&(n=`/`+n),Eo(``,{pathname:n,search:r,hash:i},t.state&&t.state.usr||null,t.state&&t.state.key||`default`)}function n(e,t){let n=e.document.querySelector(`base`),r=``;if(n&&n.getAttribute(`href`)){let t=e.location.href,n=t.indexOf(`#`);r=n===-1?t:t.slice(0,n)}return r+`#`+(typeof t==`string`?t:Do(t))}function r(e,t){Co(e.pathname.charAt(0)===`/`,`relative pathnames are not supported in hash history.push(${JSON.stringify(t)})`)}return ko(t,n,r,e)}function U(e,t){if(e===!1||e==null)throw Error(t)}function Co(e,t){if(!e){typeof console<`u`&&console.warn(t);try{throw Error(t)}catch{}}}function wo(){return Math.random().toString(36).substring(2,10)}function To(e,t){return{usr:e.state,key:e.key,idx:t}}function Eo(e,t,n=null,r){return{pathname:typeof e==`string`?e:e.pathname,search:``,hash:``,...typeof t==`string`?Oo(t):t,state:n,key:t&&t.key||r||wo()}}function Do({pathname:e=`/`,search:t=``,hash:n=``}){return t&&t!==`?`&&(e+=t.charAt(0)===`?`?t:`?`+t),n&&n!==`#`&&(e+=n.charAt(0)===`#`?n:`#`+n),e}function Oo(e){let t={};if(e){let n=e.indexOf(`#`);n>=0&&(t.hash=e.substring(n),e=e.substring(0,n));let r=e.indexOf(`?`);r>=0&&(t.search=e.substring(r),e=e.substring(0,r)),e&&(t.pathname=e)}return t}function ko(e,t,n,r={}){let{window:i=document.defaultView,v5Compat:a=!1}=r,o=i.history,s=`POP`,c=null,l=u();l??(l=0,o.replaceState({...o.state,idx:l},``));function u(){return(o.state||{idx:null}).idx}function d(){s=`POP`;let e=u(),t=e==null?null:e-l;l=e,c&&c({action:s,location:h.location,delta:t})}function f(e,t){s=`PUSH`;let r=Eo(h.location,e,t);n&&n(r,e),l=u()+1;let d=To(r,l),f=h.createHref(r);try{o.pushState(d,``,f)}catch(e){if(e instanceof DOMException&&e.name===`DataCloneError`)throw e;i.location.assign(f)}a&&c&&c({action:s,location:h.location,delta:1})}function p(e,t){s=`REPLACE`;let r=Eo(h.location,e,t);n&&n(r,e),l=u();let i=To(r,l),d=h.createHref(r);o.replaceState(i,``,d),a&&c&&c({action:s,location:h.location,delta:0})}function m(e){return Ao(e)}let h={get action(){return s},get location(){return e(i,o)},listen(e){if(c)throw Error(`A history only accepts one active listener`);return i.addEventListener(H,d),c=e,()=>{i.removeEventListener(H,d),c=null}},createHref(e){return t(i,e)},createURL:m,encodeLocation(e){let t=m(e);return{pathname:t.pathname,search:t.search,hash:t.hash}},push:f,replace:p,go(e){return o.go(e)}};return h}function Ao(e,t=!1){let n=`http://localhost`;typeof window<`u`&&(n=window.location.origin===`null`?window.location.href:window.location.origin),U(n,`No window.location.(origin|href) available to create URL`);let r=typeof e==`string`?e:Do(e);return r=r.replace(/ $/,`%20`),!t&&r.startsWith(`//`)&&(r=n+r),new URL(r,n)}function jo(e,t,n=`/`){return Mo(e,t,n,!1)}function Mo(e,t,n,r){let i=Xo((typeof t==`string`?Oo(t):t).pathname||`/`,n);if(i==null)return null;let a=Po(e);Io(a);let o=null;for(let e=0;o==null&&e<a.length;++e){let t=Yo(i);o=Ko(a[e],t,r)}return o}function No(e,t){let{route:n,pathname:r,params:i}=e;return{id:n.id,pathname:r,params:i,data:t[n.id],loaderData:t[n.id],handle:n.handle}}function Po(e,t=[],n=[],r=``,i=!1){let a=(e,a,o=i,s)=>{let c={relativePath:s===void 0?e.path||``:s,caseSensitive:e.caseSensitive===!0,childrenIndex:a,route:e};if(c.relativePath.startsWith(`/`)){if(!c.relativePath.startsWith(r)&&o)return;U(c.relativePath.startsWith(r),`Absolute route path "${c.relativePath}" nested under path "${r}" is not valid. An absolute child route path must start with the combined path of all its parent routes.`),c.relativePath=c.relativePath.slice(r.length)}let l=as([r,c.relativePath]),u=n.concat(c);e.children&&e.children.length>0&&(U(e.index!==!0,`Index routes must not have child routes. Please remove all child routes from route path "${l}".`),Po(e.children,t,u,l,o)),!(e.path==null&&!e.index)&&t.push({path:l,score:Wo(l,e.index),routesMeta:u})};return e.forEach((e,t)=>{if(e.path===``||!e.path?.includes(`?`))a(e,t);else for(let n of Fo(e.path))a(e,t,!0,n)}),t}function Fo(e){let t=e.split(`/`);if(t.length===0)return[];let[n,...r]=t,i=n.endsWith(`?`),a=n.replace(/\?$/,``);if(r.length===0)return i?[a,``]:[a];let o=Fo(r.join(`/`)),s=[];return s.push(...o.map(e=>e===``?a:[a,e].join(`/`))),i&&s.push(...o),s.map(t=>e.startsWith(`/`)&&t===``?`/`:t)}function Io(e){e.sort((e,t)=>e.score===t.score?Go(e.routesMeta.map(e=>e.childrenIndex),t.routesMeta.map(e=>e.childrenIndex)):t.score-e.score)}var Lo=/^:[\w-]+$/,Ro=3,zo=2,Bo=1,Vo=10,Ho=-2,Uo=e=>e===`*`;function Wo(e,t){let n=e.split(`/`),r=n.length;return n.some(Uo)&&(r+=Ho),t&&(r+=zo),n.filter(e=>!Uo(e)).reduce((e,t)=>e+(Lo.test(t)?Ro:t===``?Bo:Vo),r)}function Go(e,t){return e.length===t.length&&e.slice(0,-1).every((e,n)=>e===t[n])?e[e.length-1]-t[t.length-1]:0}function Ko(e,t,n=!1){let{routesMeta:r}=e,i={},a=`/`,o=[];for(let e=0;e<r.length;++e){let s=r[e],c=e===r.length-1,l=a===`/`?t:t.slice(a.length)||`/`,u=qo({path:s.relativePath,caseSensitive:s.caseSensitive,end:c},l),d=s.route;if(!u&&c&&n&&!r[r.length-1].route.index&&(u=qo({path:s.relativePath,caseSensitive:s.caseSensitive,end:!1},l)),!u)return null;Object.assign(i,u.params),o.push({params:i,pathname:as([a,u.pathname]),pathnameBase:os(as([a,u.pathnameBase])),route:d}),u.pathnameBase!==`/`&&(a=as([a,u.pathnameBase]))}return o}function qo(e,t){typeof e==`string`&&(e={path:e,caseSensitive:!1,end:!0});let[n,r]=Jo(e.path,e.caseSensitive,e.end),i=t.match(n);if(!i)return null;let a=i[0],o=a.replace(/(.)\/+$/,`$1`),s=i.slice(1);return{params:r.reduce((e,{paramName:t,isOptional:n},r)=>{if(t===`*`){let e=s[r]||``;o=a.slice(0,a.length-e.length).replace(/(.)\/+$/,`$1`)}let i=s[r];return n&&!i?e[t]=void 0:e[t]=(i||``).replace(/%2F/g,`/`),e},{}),pathname:a,pathnameBase:o,pattern:e}}function Jo(e,t=!1,n=!0){Co(e===`*`||!e.endsWith(`*`)||e.endsWith(`/*`),`Route path "${e}" will be treated as if it were "${e.replace(/\*$/,`/*`)}" because the \`*\` character must always follow a \`/\` in the pattern. To get rid of this warning, please change the route path to "${e.replace(/\*$/,`/*`)}".`);let r=[],i=`^`+e.replace(/\/*\*?$/,``).replace(/^\/*/,`/`).replace(/[\\.*+^${}|()[\]]/g,`\\$&`).replace(/\/:([\w-]+)(\?)?/g,(e,t,n)=>(r.push({paramName:t,isOptional:n!=null}),n?`/?([^\\/]+)?`:`/([^\\/]+)`)).replace(/\/([\w-]+)\?(\/|$)/g,`(/$1)?$2`);return e.endsWith(`*`)?(r.push({paramName:`*`}),i+=e===`*`||e===`/*`?`(.*)$`:`(?:\\/(.+)|\\/*)$`):n?i+=`\\/*$`:e!==``&&e!==`/`&&(i+=`(?:(?=\\/|$))`),[new RegExp(i,t?void 0:`i`),r]}function Yo(e){try{return e.split(`/`).map(e=>decodeURIComponent(e).replace(/\//g,`%2F`)).join(`/`)}catch(t){return Co(!1,`The URL path "${e}" could not be decoded because it is a malformed URL segment. This is probably due to a bad percent encoding (${t}).`),e}}function Xo(e,t){if(t===`/`)return e;if(!e.toLowerCase().startsWith(t.toLowerCase()))return null;let n=t.endsWith(`/`)?t.length-1:t.length,r=e.charAt(n);return r&&r!==`/`?null:e.slice(n)||`/`}var Zo=/^(?:[a-z][a-z0-9+.-]*:|\/\/)/i,Qo=e=>Zo.test(e);function $o(e,t=`/`){let{pathname:n,search:r=``,hash:i=``}=typeof e==`string`?Oo(e):e,a;if(n)if(Qo(n))a=n;else{if(n.includes(`//`)){let e=n;n=n.replace(/\/\/+/g,`/`),Co(!1,`Pathnames cannot have embedded double slashes - normalizing ${e} -> ${n}`)}a=n.startsWith(`/`)?es(n.substring(1),`/`):es(n,t)}else a=t;return{pathname:a,search:ss(r),hash:cs(i)}}function es(e,t){let n=t.replace(/\/+$/,``).split(`/`);return e.split(`/`).forEach(e=>{e===`..`?n.length>1&&n.pop():e!==`.`&&n.push(e)}),n.length>1?n.join(`/`):`/`}function ts(e,t,n,r){return`Cannot include a '${e}' character in a manually specified \`to.${t}\` field [${JSON.stringify(r)}].  Please separate it out to the \`to.${n}\` field. Alternatively you may provide the full path as a string in <Link to="..."> and the router will parse it for you.`}function ns(e){return e.filter((e,t)=>t===0||e.route.path&&e.route.path.length>0)}function rs(e){let t=ns(e);return t.map((e,n)=>n===t.length-1?e.pathname:e.pathnameBase)}function is(e,t,n,r=!1){let i;typeof e==`string`?i=Oo(e):(i={...e},U(!i.pathname||!i.pathname.includes(`?`),ts(`?`,`pathname`,`search`,i)),U(!i.pathname||!i.pathname.includes(`#`),ts(`#`,`pathname`,`hash`,i)),U(!i.search||!i.search.includes(`#`),ts(`#`,`search`,`hash`,i)));let a=e===``||i.pathname===``,o=a?`/`:i.pathname,s;if(o==null)s=n;else{let e=t.length-1;if(!r&&o.startsWith(`..`)){let t=o.split(`/`);for(;t[0]===`..`;)t.shift(),--e;i.pathname=t.join(`/`)}s=e>=0?t[e]:`/`}let c=$o(i,s),l=o&&o!==`/`&&o.endsWith(`/`),u=(a||o===`.`)&&n.endsWith(`/`);return!c.pathname.endsWith(`/`)&&(l||u)&&(c.pathname+=`/`),c}var as=e=>e.join(`/`).replace(/\/\/+/g,`/`),os=e=>e.replace(/\/+$/,``).replace(/^\/*/,`/`),ss=e=>!e||e===`?`?``:e.startsWith(`?`)?e:`?`+e,cs=e=>!e||e===`#`?``:e.startsWith(`#`)?e:`#`+e;function ls(e){return e!=null&&typeof e.status==`number`&&typeof e.statusText==`string`&&typeof e.internal==`boolean`&&`data`in e}function us(e){return e.map(e=>e.route.path).filter(Boolean).join(`/`).replace(/\/\/*/g,`/`)||`/`}Object.getOwnPropertyNames(Object.prototype).sort().join(`\0`);var ds=l.createContext(null);ds.displayName=`DataRouter`;var fs=l.createContext(null);fs.displayName=`DataRouterState`,l.createContext(!1);var ps=l.createContext({isTransitioning:!1});ps.displayName=`ViewTransition`;var ms=l.createContext(new Map);ms.displayName=`Fetchers`;var hs=l.createContext(null);hs.displayName=`Await`;var gs=l.createContext(null);gs.displayName=`Navigation`;var _s=l.createContext(null);_s.displayName=`Location`;var vs=l.createContext({outlet:null,matches:[],isDataRoute:!1});vs.displayName=`Route`;var ys=l.createContext(null);ys.displayName=`RouteError`;function bs(e,{relative:t}={}){U(xs(),`useHref() may be used only in the context of a <Router> component.`);let{basename:n,navigator:r}=l.useContext(gs),{hash:i,pathname:a,search:o}=Ds(e,{relative:t}),s=a;return n!==`/`&&(s=a===`/`?n:as([n,a])),r.createHref({pathname:s,search:o,hash:i})}function xs(){return l.useContext(_s)!=null}function Ss(){return U(xs(),`useLocation() may be used only in the context of a <Router> component.`),l.useContext(_s).location}var Cs=`You should call navigate() in a React.useEffect(), not when your component is first rendered.`;function ws(e){l.useContext(gs).static||l.useLayoutEffect(e)}function Ts(){let{isDataRoute:e}=l.useContext(vs);return e?Us():Es()}function Es(){U(xs(),`useNavigate() may be used only in the context of a <Router> component.`);let e=l.useContext(ds),{basename:t,navigator:n}=l.useContext(gs),{matches:r}=l.useContext(vs),{pathname:i}=Ss(),a=JSON.stringify(rs(r)),o=l.useRef(!1);return ws(()=>{o.current=!0}),l.useCallback((r,s={})=>{if(Co(o.current,Cs),!o.current)return;if(typeof r==`number`){n.go(r);return}let c=is(r,JSON.parse(a),i,s.relative===`path`);e==null&&t!==`/`&&(c.pathname=c.pathname===`/`?t:as([t,c.pathname])),(s.replace?n.replace:n.push)(c,s.state,s)},[t,n,a,i,e])}l.createContext(null);function Ds(e,{relative:t}={}){let{matches:n}=l.useContext(vs),{pathname:r}=Ss(),i=JSON.stringify(rs(n));return l.useMemo(()=>is(e,JSON.parse(i),r,t===`path`),[e,i,r,t])}function Os(e,t,n,r,i){U(xs(),`useRoutes() may be used only in the context of a <Router> component.`);let{navigator:a}=l.useContext(gs),{matches:o}=l.useContext(vs),s=o[o.length-1],c=s?s.params:{},u=s?s.pathname:`/`,d=s?s.pathnameBase:`/`,f=s&&s.route;{let e=f&&f.path||``;Gs(u,!f||e.endsWith(`*`)||e.endsWith(`*?`),`You rendered descendant <Routes> (or called \`useRoutes()\`) at "${u}" (under <Route path="${e}">) but the parent route path has no trailing "*". This means if you navigate deeper, the parent won't match anymore and therefore the child routes will never render.
