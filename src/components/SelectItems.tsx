@@ -6,13 +6,14 @@ interface Props {
 }
 
 const MandatorySelect = ({ onSelect }: Props) => {
-  const Mandatory = DataMandatory();
+  const Mandatory = DataMandatory().slice().sort((a,b)=>a.case.toLocaleLowerCase().localeCompare(b.case.toLocaleLowerCase()))
 
   return (
     <Select
       options={Mandatory.map(item => ({
         value: item.id,
         label: item.case,
+        
       }))}
       className="w-full  listText"
       onChange={(option) => onSelect(option?.value || null)}
