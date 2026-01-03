@@ -331,7 +331,7 @@ Makasih udah nunggu. Kak maaf, untuk kendala sinyalnya di nomor xxxxx ,boleh inf
 
 Sekedar info, Kak. Karena kita pake jaringan Telkomsel, jadi kualitas jaringan by.U mengikuti kualitas jaringan Telkomsel di lokasi kakak ya. Makasih :)
 
-============================================================================
+==============
 
 Makasih udah nunggu. Kak maaf, kalau aku cek nomor xxxxxxxxxxxx  statusnya aktif dan tidak ada info gangguan di lokasi Kakak. Bisa dicoba dulu langkah-langkah di bawah ini ya kak :
 1. Ubah mode jaringan dari otomatis ke manual 2g only, kemudian kembalikan lagi ke mode otomatis
@@ -945,6 +945,48 @@ Bugs Ganti SIM card
 `   
 },
 
+{
+id: 34,
+case : "Keluhan Tidak Bisa Akses Internet di Luar Negeri Roaming",
+Solusi : `Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
+1. Email akun by.U :
+2. Tanggal dan waktu kejadian sejak kapan :
+3. Jaringan/operator negara setempat yang digunakan :
+4. Capture speedtest :
+5. Capture setting APN di HP :
+6. Lokasi negara :
+
+Makasih udah nunggu. Kak aku cek nomor xxxxx aktif  dan punya kuota roaming, serta kondisi jaringan di xxxxxx tidak ada info gangguan. Bisa dicoba langkah-langkah ini ya kak :
+1. Coba ON-kan airplane mode dan OFF-kan kembali, OFF-kan mobile data dan ON-kan kembali.
+2. Lakukan refresh jaringan :
+3. Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih operator yang bekerja sama dengan Telkomsel, yaitu xxxxxxx
+4. iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
+5. Isi APN dengan "byu", username dan password kosongkan.
+6.Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.
+
+Jika cara di atas sudah dicoba dan akses internet tetap bermasalah, tolong hubungi kita lagi. Terima kasih`,
+Mandatory : `
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
+DATA - Tidak Bisa Akses Internet di Luar Negeri
+
+1. Akun dan nomor by.U :
+2. Lokasi negara :
+3. Nama Paket Roaming :
+4. Jenis device yang digunakan :
+5. Tanggal dan waktu kendala :
+6. Jaringan yang digunakan apa? 4G, 5G? :
+7. Jumlah sinyal bar atau titik yang didapat? :
+8. Jaringan/operator negara setempat yang digunakan :
+9. Email aktif yang bisa dihubungi :
+10. Sisa kuota yang dimiliki oleh pelanggan :
+11. Capture speedtest :
+12. Capture APN :
+        
+`   
+},
 ]
 return Mandatory
 }
