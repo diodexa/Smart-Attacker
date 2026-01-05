@@ -343,12 +343,6 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 
 
 
-Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${t()} Kakak mau dibantu Permintaan Ganti SIM Card Active dengan data :
-1. Nomor by.U : xxxxxx
-2. Email: xxxxxxx
-3. NIK KTP valid : xxxxxxxx
-
-Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :)
 `,Mandatory:`
 #Pelangganbyu
 [byU igdm] 
