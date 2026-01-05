@@ -6,7 +6,7 @@ interface Props {
 }
 
 const MandatorySelect = ({ onSelect }: Props) => {
-  const Mandatory = DataMandatory().slice().sort((a,b)=>a.case.localeCompare(b.case))
+  const Mandatory = DataMandatory().slice().sort((a,b)=>a.case.toLocaleLowerCase().localeCompare(b.case.toLocaleLowerCase()))
 
   return (
     <Select

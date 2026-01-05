@@ -94,11 +94,11 @@ export default function App() {
       </div>
 
       {/* TAB CONTENT */}
-      <div className="flex p-2 h-screen">
+      <div className="flex p-2 ">
         {activeTab === "notepad" && (
           <textarea
           ref={textareaRef}
-          className="border w-full h-full p-2"
+          className="border w-full h-screen p-2"
           placeholder="Tulis catatan kamu…"
           value={note}
           onChange={(e) => setNote(e.target.value)}

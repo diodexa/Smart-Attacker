@@ -1,22 +1,19 @@
-import { DataMandatory } from "./Mandatory";
-
 interface Props {
-  selectedId: number | null;
-  onValueChange?: (text: string) => void; 
+  value: string;
+  onChange: (val: string) => void;
 }
 
-
-const MandatoryDisplay = ({ selectedId }: Props) => {
-  const Mandatory = DataMandatory();
-  const selected = Mandatory.find(item => item.id === selectedId);
-
-  if (!selected) return <p className="mt-4 text-gray-500">Silakan pilih case terlebih dahulu</p>;
-
+const SolusiDisplay = ({ value, onChange }: Props) => {
   return (
-    <p className="p-2 w-full h-full border-2" style={{whiteSpace:"pre-line"}}>
-    {selected.Solusi}
-  </p>
+    <textarea
+      className="p-2 w-full h-screen border-2 resize-none"
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+      
+    />
+
+    
   );
 };
 
-export default MandatoryDisplay;
+export default SolusiDisplay;
