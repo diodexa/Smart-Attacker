@@ -826,11 +826,11 @@ Untuk mengecek nomor yang terdaftar di NIK nya kalau kakak punya nomor Telkomsel
 
 
 Makasih udah nunggu. Kak maaf kalau udah unreg tapi masih gabisa aktivasi SIM card nya, boleh infoin data ini ya  :
-* NIK :
-* NOKK :
-* Serial Number di cangkang SIM Card :
-* Capture gagal aktivasi SIM Card :
-* Capture bukti sudah melakukan unregistrasi
+1. NIK :
+2. NOKK :
+3. Serial Number di cangkang SIM Card :
+4. Capture gagal aktivasi SIM Card :
+5. Capture bukti sudah melakukan unregistrasi
 
 Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U!
 `,Mandatory:`  
@@ -848,6 +848,104 @@ Tidak Bisa Aktivasi SIM Card Dengan Keterangan Maximum Number
 6. Capture gagal aktivasi SIM Card :
 7. Capture bukti sudah melakukan unregistrasi :
 8. Order ID CXT/CXO (Pengecekan OperatorX) :
+`},{id:40,case:`Perubahan Data Pelanggan`,Solusi:`Makasih udah nunggu. Kak maaf untuk perubahan data NIK nya di nomor xxxxx ,boleh infoin data ini ya biar bisa aku proses : 
+1. Alamat Email login by.U :
+2. NIK & NOK pelanggan baru :
+3. Foto KTP pelanggan baru :
+4. Foto selfie dengan KTP pelanggan baru :
+5. Surat pernyataan yang bisa minta ke email nindy@byu.id :
+6. Validasi tambahan :
+
+Untuk validasi tambahannya bisa infoin salah satu dari data ini ya : 
+1. Tanggal dan jenis paket terakhir yang dibeli :
+2. Jumlah pulsa yang dimiliki sekarang :
+3. Nominal harga paket yang dibeli terakhir :
+4. 5 Transaksi terakhir (minimum 3 transaksi valid) :
+5. Tipe dan merk HP terakhir digunakan :
+Kirim nya ke email nindy@byu.id ya biar aman :)
+
+
+Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${t()} Kakak mau dibantu Permintaan Perubahan data  dengan data :
+1. Nomor by.U : xxxxxx
+2. Email: xxxxxxx
+3. NIK KTP pelanggan baru : xxxxxxx
+4. No KK pelanggan baru   : xxxxxxx
+
+Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
+
+
+`,Mandatory:`  
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
+Perubahan data pelanggan
+
+1. Nomor by.U :
+2. Alamat Email login by.U :
+3. nomor identitas & NOK pelanggan baru :
+4. Foto KTP pelanggan baru :
+5. Foto selfie dengan KTP pelanggan baru :
+6. Surat pernyataan :
+7. Validasi tambahan :
+`},{id:41,case:`Perubahan Data pindah tangan`,Solusi:`Makasih udah nunggu. Kak maaf untuk perubahan data NIK nya di nomor xxxxx ,boleh infoin data ini ya biar bisa aku proses : 
+1. Alamat Email login by.U :
+2. NIK & NOK pelanggan lama :
+3. NIK & NOK pelanggan baru :
+4. Foto KTP pelanggan lama :
+5. Foto KTP pelanggan baru :
+6. Foto selfie dengan KTP pelanggan baru :
+7. Surat pernyataan yang bisa minta ke email nindy@byu.id :
+Kirimnya ke email nindy@byu.id aja ya biar aman :)
+
+
+Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${t()} Kakak mau dibantu Permintaan Perubahan data karena pindah tangan dengan data :
+1. Nomor by.U : xxxxxx
+2. Email: xxxxxxx
+3. NIK KTP pelanggan baru : xxxxxxx
+4. No KK pelanggan baru   : xxxxxxx
+
+Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
+
+`,Mandatory:`  
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
+Perubahan data pelanggan pindah tangan pindah tangan
+
+1. Nomor by.U :
+2. Alamat Email login by.U :
+3. Nomor identitas pelanggan lama :
+4. NOK pelanggan lama : 
+5. Nomor identitas pelanggan baru :
+6. NOK pelanggan baru : 
+7. Foto KTP pelanggan lama :
+8. Foto KTP pelanggan baru :
+9. Foto selfie dengan KTP pelanggan baru :
+10. Surper :
+`},{id:42,case:`PUK`,Solusi:`Makasih udah nunggu. Kak untuk permintaan kode PUK di nomor xxxxx , boleh infoin data ini ya biar bisa aku bantu :
+1. Alamat email akun by.U :
+2. NIK yang terdaftar :
+
+Makasih udah nunggu. Kak untuk permintaan kode PUK di nomor xxxxx , boleh infoin data ini ya biar bisa aku bantu :
+1. validasi tambahan :
+2. NIK yang terdaftar :
+
+Untuk validasi tambahannya Kakak bisa isi salah satu dari data ini ya : 
+1. Tanggal dan jenis paket terakhir yang dibeli.
+2. Jumlah pulsa yang dimiliki sekarang.
+3. Nominal harga paket yang dibeli terakhir.
+4. 5 Transaksi terakhir (minimum 3 transaksi valid)
+5. Tipe dan merk HP terakhir digunakan.
+
+
+Makasih udah nunggu. Kak untuk permintaan kode PUK 1 di nomor xxxxxxx adalah xxxx. Silakan bisa input PUK 1 dan diikuti memasukkan PIN baru 4 digit angka secara acak dan mudah diingat. Untuk syarat dan ketentuannya sebagai berikut Kak:
+a. Batas maksimal memasukkan PUK adalah 10 kali
+b. Setelah 10 kali gagal, pelanggan diharuskan ganti kartu. Pastikan menginputnya sesuai dengan PUK yang diberikan
+c. Kode PUK tidak akan berubah, Kakak bisa menyimpan kode PUK jika diperlukan kembali. Semoga berhasil Kak :)
+
+`,Mandatory:`  
 `}]};var Ja=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),R=e(((e,t)=>{t.exports=Ja()}))(),Ya=({onSelect:e})=>(0,R.jsx)(Ka,{options:qa().slice().sort((e,t)=>e.case.toLocaleLowerCase().localeCompare(t.case.toLocaleLowerCase())).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:`#f6fbe0ff`}),menu:e=>({...e,backgroundColor:`#f6fbe0ff`})}}),Xa={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},Za=l.createContext&&l.createContext(Xa),Qa=[`attr`,`size`,`title`];function $a(e,t){if(e==null)return{};var n=eo(e,t),r,i;if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(i=0;i<a.length;i++)r=a[i],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function eo(e,t){if(e==null)return{};var n={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}function to(){return to=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},to.apply(this,arguments)}function no(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function ro(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?no(Object(n),!0).forEach(function(t){io(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):no(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function io(e,t,n){return t=ao(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function ao(e){var t=oo(e,`string`);return typeof t==`symbol`?t:t+``}function oo(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function so(e){return e&&e.map((e,t)=>l.createElement(e.tag,ro({key:t},e.attr),so(e.child)))}function co(e){return t=>l.createElement(lo,to({attr:ro({},e.attr)},t),so(e.child))}function lo(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=$a(e,Qa),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),l.createElement(`svg`,to({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:ro(ro({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&l.createElement(`title`,null,i),e.children)};return Za===void 0?t(Xa):l.createElement(Za.Consumer,null,e=>t(e))}function uo(e){return co({tag:`svg`,attr:{viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`2`,strokeLinecap:`round`,strokeLinejoin:`round`},child:[{tag:`rect`,attr:{x:`9`,y:`9`,width:`13`,height:`13`,rx:`2`,ry:`2`},child:[]},{tag:`path`,attr:{d:`M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1`},child:[]}]})(e)}var z=({text:e})=>{let[t,n]=(0,l.useState)(!1);return(0,R.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),n(!0),setTimeout(()=>n(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid`,children:[(0,R.jsxs)(uo,{className:` ${t?`invisible!`:`visible`}`,children:["` $",t?`copy!`:`tidak`,"`"]}),(0,R.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,t?`anjay`:``,` `]})]})},fo=({value:e,onChange:t})=>(0,R.jsx)(`textarea`,{className:`p-2 w-full h-screen border-2`,value:e,onChange:e=>t(e.target.value)}),po=({value:e,onChange:t})=>(0,R.jsx)(`textarea`,{className:`p-2 w-full h-screen border-2 resize-none`,value:e,onChange:e=>t(e.target.value)}),B=()=>{let[e,t]=(0,l.useState)(()=>{let e=localStorage.getItem(`selectedId`);return e?Number(e):null}),n=qa().find(t=>t.id===e),[r,i]=(0,l.useState)(``),[a,o]=(0,l.useState)(``);return(0,l.useEffect)(()=>{e!==null&&localStorage.setItem(`selectedId`,String(e))},[e]),(0,l.useEffect)(()=>{n&&i(n.Mandatory)},[e]),(0,l.useEffect)(()=>{n&&o(n.Solusi)},[e]),(0,R.jsxs)(`div`,{className:`flex flex-col w-screen `,children:[(0,R.jsx)(Ya,{onSelect:e=>t(e)}),(0,R.jsxs)(`div`,{className:`flex gap-2`,children:[(0,R.jsxs)(`div`,{className:`w-full`,children:[n&&(0,R.jsx)(z,{text:r}),(0,R.jsx)(fo,{selectedId:e,value:r,onChange:i},e)]}),(0,R.jsxs)(`div`,{className:`w-full  `,children:[n&&(0,R.jsx)(z,{text:a}),(0,R.jsx)(po,{value:a,onChange:o},e)]})]})]})},V=()=>{let[e,t]=(0,l.useState)(null),[n,r]=(0,l.useState)(()=>{let e=localStorage.getItem(`my-templates`);return e?JSON.parse(e):[``,``,``,``,``,``]});(0,l.useEffect)(()=>{localStorage.setItem(`my-templates`,JSON.stringify(n))},[n]);let i=(e,t)=>{let i=[...n];i[e]=t,r(i)};return(0,R.jsx)(`div`,{className:`w-full`,children:[0,1,2,3,4,5,6,7,8].map(r=>(0,R.jsx)(`div`,{className:`flex`,children:[0,1].map(a=>{let o=r*2+a;return(0,R.jsxs)(`div`,{className:`relative w-full`,children:[(0,R.jsx)(`textarea`,{value:n[o],onChange:e=>i(o,e.target.value),onClick:()=>{navigator.clipboard.writeText(n[o]),t(o),setTimeout(()=>t(null),500)},className:`h-30 w-full border-1 border-solid hover:bg-yellow-200 hover:text-black `},o),e===o&&(0,R.jsx)(`p`,{className:`absolute left-1/2 top-1/2 -translate-1/2 bg-black text-white px-2 py-1 rounded shadow`,children:`anjay`})]})})},r))})};function mo(e){return co({tag:`svg`,attr:{fill:`currentColor`,viewBox:`0 0 16 16`},child:[{tag:`path`,attr:{d:`M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708`},child:[]}]})(e)}function ho(e){return co({tag:`svg`,attr:{viewBox:`0 0 24 24`,fill:`currentColor`},child:[{tag:`path`,attr:{d:`M9.8216 2.23796C9.29417 3.38265 9 4.65697 9 6C9 10.9706 13.0294 15 18 15C19.343 15 20.6174 14.7058 21.762 14.1784C20.7678 18.6537 16.7747 22 12 22C6.47715 22 2 17.5228 2 12C2 7.22532 5.3463 3.23221 9.8216 2.23796ZM18.1642 2.29104L19 2.5V3.5L18.1642 3.70896C17.4476 3.8881 16.8881 4.4476 16.709 5.16417L16.5 6H15.5L15.291 5.16417C15.1119 4.4476 14.5524 3.8881 13.8358 3.70896L13 3.5V2.5L13.8358 2.29104C14.5524 2.1119 15.1119 1.5524 15.291 0.835829L15.5 0H16.5L16.709 0.835829C16.8881 1.5524 17.4476 2.1119 18.1642 2.29104ZM23.1642 7.29104L24 7.5V8.5L23.1642 8.70896C22.4476 8.8881 21.8881 9.4476 21.709 10.1642L21.5 11H20.5L20.291 10.1642C20.1119 9.4476 19.5524 8.8881 18.8358 8.70896L18 8.5V7.5L18.8358 7.29104C19.5524 7.1119 20.1119 6.5524 20.291 5.83583L20.5 5H21.5L21.709 5.83583C21.8881 6.5524 22.4476 7.1119 23.1642 7.29104Z`},child:[]}]})(e)}function go(){let[e,t]=(0,l.useState)(()=>localStorage.getItem(`theme`)===`dark`);return(0,l.useEffect)(()=>{document.documentElement.classList.toggle(`dark`,e),localStorage.setItem(`theme`,e?`dark`:`light`)},[e]),(0,R.jsxs)(`button`,{onClick:()=>t(!e),className:`p-4 rounded transition-colors duration-500 relative overflow-hidden pointer-events-auto text-2xl`,"aria-label":`Toggle dark mode`,children:[(0,R.jsx)(mo,{className:` absolute inset-0 m-auto transition-all duration-500 ${e?`opacity-0 scale-50 rotate-90`:`opacity-100 scale-150 rotate-0`}`}),(0,R.jsx)(ho,{className:`text-white absolute inset-0 m-auto transition-all duration-500 ${e?`opacity-100 scale-150 rotate-0`:`opacity-0 scale-50 rotate-90`}`})]})}function _o(){let[e,t]=(0,l.useState)(`notepad`),n=(0,l.useRef)(null),r=(0,l.useRef)(!1),[i,a]=(0,l.useState)(()=>localStorage.getItem(`my-note`)||``);return(0,l.useEffect)(()=>{i!==``&&localStorage.setItem(`my-note`,i)},[i]),(0,l.useEffect)(()=>{e===`notepad`&&n.current&&(n.current.focus(),n.current.setSelectionRange(n.current.value.length,n.current.value.length))},[e]),(0,l.useEffect)(()=>{e===`notepad`&&i===``&&!r.current&&(r.current=!0)},[e]),(0,R.jsxs)(`div`,{className:`flex flex-col `,children:[(0,R.jsxs)(`div`,{className:`flex gap-2 p-2 border-b`,children:[(0,R.jsx)(`button`,{className:`border px-4 ${e===`notepad`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`notepad`),children:`Notepad`}),(0,R.jsx)(`button`,{className:`border px-4 ${e===`tiket`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`tiket`),children:`Mandatory`}),(0,R.jsx)(`button`,{className:`border px-4 ${e===`Template`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`Template`),children:`Template`}),(0,R.jsxs)(`div`,{className:`absolute right-0 flex gap-1`,children:[(0,R.jsx)(go,{}),(0,R.jsxs)(`h1`,{className:`text-3xl tracking-[.25em]`,children:[`di`,(0,R.jsx)(`span`,{className:`text-red-600`,children:`N`})]})]})]}),(0,R.jsxs)(`div`,{className:`flex p-2 `,children:[e===`notepad`&&(0,R.jsx)(`textarea`,{ref:n,className:`border w-full h-screen p-2`,placeholder:`Tulis catatan kamu…`,value:i,onChange:e=>a(e.target.value),onKeyDown:e=>{if(e.key!==`Enter`)return;let t=e.currentTarget.selectionStart,r=i.slice(0,t).split(`
