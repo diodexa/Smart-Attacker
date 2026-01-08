@@ -318,7 +318,7 @@ Tidak Ada Sinyal/Blankspot & Sinyal Lemah/Tidak Stabil
 
 
 
-1x24 jam`},{id:12,case:`permintaan Ganti SIM Card active`,Solusi:`Makasih udah nunggu. Kak untuk permintaan ganti SIM Card, bisa dilakukan selama nomornya aktif ya. Silakan Kakak bisa lakukan prosesnya diApps by.U yaa, berikut cara melakukan permintaan ganti SIM Card-nya ya:
+1x24 jam`},{id:12,case:`Ganti SIM Card active`,Solusi:`Makasih udah nunggu. Kak untuk permintaan ganti SIM Card, bisa dilakukan selama nomornya aktif ya. Silakan Kakak bisa lakukan prosesnya diApps by.U yaa, berikut cara melakukan permintaan ganti SIM Card-nya ya:
 1. Pastiin Versi aplikasi sudah yang terbaru yaa
 2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak (bukan pakai nomor by.U)
 3. Masuk Ke profil by.U pojok kiri atas
@@ -578,7 +578,7 @@ Tidak Bisa akses internet
 9. Capture tidak bisa akses internet : 
 10. Nomor atau info kontak lain yang bisa dihubungi : 
 11. Sisa kuota yang dimiliki oleh pelanggan : 
-`},{id:25,case:`Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy (indomaret)`,Solusi:``,Mandatory:`
+`},{id:25,case:`Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy (indomaret)`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku`,Mandatory:`
 #Pelangganbyu
 [byU igdm] 
 NamaPelanggan
@@ -644,7 +644,8 @@ Ketidaksesuaian Penggunaan Kuota
 10. Apakah customer pernah mencoba di gadget lain dan mengalami masalah yang sama? TIDAK
 11. Apakah ada VPN dsb di gadget customer? TIDAK 
 `},{id:28,case:`Tidak bisa login dengan Nomor BYU / terima kode OTP pakai nomor by.U`,Solusi:`
-Makasih udah nunggu. Kak maaf untuk kendala gabisa login apps by.U, jika SIM Card dan aplikasi by.U berada di gadget yang sama dan menggunakan jaringan by.U, seharusnya login akan terjadi otomatis, kecuali jika tidak ada koneksi. Jika memang diperlukan login manual, boleh dipastikan bahwa OS gadget yang Kakak pake adalah OS yang terupdate dan pastikan juga koneksi internetnya berjalan dengan baik. Dicoba ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih ga bisa, dicoba install ulang aplikasi by.U kakak dan di cek juga di HP lain sebagai perbandingan ya :) Pastiin setting dengan memilih menu Setting > pilih manager aplikasi > all > messaging > send premium sms > always allow dan pastikan juga untuk nomor pusat sudah diisi dengan angka +6281100000 disettingan sms HP ya, karena kalau belum disetting itu akan berpengaruh terhadap diterimanya OTP.
+Makasih udah nunggu. Kak maaf untuk kendala gabisa login apps by.U di nomor xxxxxx, jika SIM Card dan aplikasi by.U berada di gadget yang sama dan menggunakan jaringan by.U, seharusnya login akan terjadi otomatis, kecuali jika tidak ada koneksi. Jika memang diperlukan login manual, boleh dipastikan bahwa OS gadget yang Kakak pake adalah OS yang terupdate dan pastikan juga koneksi internetnya berjalan dengan baik. Dicoba ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih ga bisa, dicoba install ulang aplikasi by.U kakak dan di cek juga di HP lain sebagai perbandingan ya :) 
+Pastiin setting dengan memilih menu Setting > pilih manager aplikasi > all > messaging > send premium sms > always allow dan pastikan juga untuk nomor pusat sudah diisi dengan angka +6281100000 disettingan sms HP ya, karena kalau belum disetting itu akan berpengaruh terhadap diterimanya OTP.
 Kakak bisa juga coba login menggunakan email akun by.U ya :) Semoga membantu :)`,Mandatory:`
 #Pelangganbyu
 [byU igdm] 
@@ -661,7 +662,13 @@ Tidak bisa login dengan Nomor BYU
 7. Hari dan Tanggal waktu terjadi keluhan : 
 8. Penjelasan keluhan pelanggan : 
 9. Lokasi Pelanggan : 
-`},{id:29,case:`Tidak Mendapatkan Voucher Non-Telco`,Solusi:``,Mandatory:`
+`},{id:29,case:`Tidak Mendapatkan Voucher Non-Telco uCoin`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+1. Email akun by.U : 
+2. Jenis voucher yang ditukarkan : 
+3. Tanggal penukaran U-Coin : 
+4. Capture bukti redeem di halaman Reward Saya : 
+5. Capture kendala penukaran : 
+ `,Mandatory:`
 #Pelangganbyu
 [byU igdm] 
 NamaPelanggan
@@ -674,7 +681,19 @@ Tidak Mendapatkan Voucher Non-Telco
 4. Tanggal penukaran U-Coin : 
 5. Capture bukti redeem di halaman Reward Saya : 
 6. Capture kendala penukaran : 
-`},{id:30,case:`Pergantian SIM Card Legacy ditolak GraPARI`,Solusi:``,Mandatory:`
+`},{id:30,case:`Pergantian SIM Card Legacy ditolak GraPARI`,Solusi:`Makasih udah nunggu. Kak maaf, untuk ganti SIM card nya karena gabisa di GraPARI di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+1. Nama Pelanggan/pengunjung : 
+2. Email aktif yang bisa dihubungi : 
+3. Nomor lain yang bisa dihubungi : 
+4. Tanggal dan hari mengunjungi GraPARI : 
+5. Nama GraPARI : 
+6. Lokasi GraPARI : (Nama dan nomor Jalan, Kelurahan, Kecamatan, Kota/Kabupaten, Provinsi)
+7. Detail alasan ditolak : 
+8. NIK KTP Valid : 
+9. Foto KTP : 
+10. Foto selfie KTP : 
+Kirimnya ke email nindy@byu.id aja ya biar aman. Kakak bisa infoin email yang dipake watu ngirimnya biar bisa aku cek :)
+`,Mandatory:`
 #Pelangganbyu
 [byU igdm] 
 NamaPelanggan
@@ -686,7 +705,7 @@ Pergantian SIM Card Legacy ditolak GraPARI
 3. Email aktif dan nomor lain yang bisa dihubungi : 
 4. Tanggal dan hari mengunjungi GraPARI : 
 5. Nama GraPARI : 
-6. Lokasi GraPARI : (Nama dan nomor Jalan, Kelurahan, Kecamatan, Kota/Kabupaten, Provinsi)
+6. Lokasi GraPARI : 
 7. Detail alasan ditolak : 
 8. NIK KTP Valid : 
 9. Foto KTP : 
@@ -716,7 +735,12 @@ eSIM sinyal hilang
 7. Capture settingan eSIM di handphone : 
 8. Capture bukti pembayaran : 
 9. Order ID CXT/CXO (Pengecekan OperatorX): 
-`},{id:32,case:`eSIM  QR tidak tersimpan `,Solusi:``,Mandatory:`
+`},{id:32,case:`eSIM  QR tidak tersimpan `,Solusi:`Makasih udah nunggu. Kak maaf untuk barcode/qr eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+1. Akun by.U : 
+2. Nomor yang bisa dihubungi : 
+3. Email yang bisa dihubungi : 
+4. Capture bukti pembayaran : 
+`,Mandatory:`
 #Pelangganbyu
 [byU igdm] 
 NamaPelanggan
@@ -905,7 +929,7 @@ Perubahan data pelanggan
 5. Foto selfie dengan KTP pelanggan baru : 
 6. Surat pernyataan : 
 7. Validasi tambahan : 
-`},{id:41,case:`Perubahan Data pindah tangan`,Solusi:`Makasih udah nunggu. Kak maaf untuk perubahan data NIK nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
+`},{id:41,case:`Perubahan Data pindah tangan (pindah tangan)`,Solusi:`Makasih udah nunggu. Kak maaf untuk perubahan data NIK nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
 1. Alamat Email login by.U :
 2. NIK & NOK pelanggan lama :
 3. NIK & NOK pelanggan baru :
@@ -930,7 +954,7 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 [byU igdm] 
 NamaPelanggan
 ${e()} 
-Perubahan data pelanggan pindah tangan pindah tangan
+Perubahan data pelanggan pindah tangan 
 
 1. Nomor by.U : xxxxxx
 2. Alamat Email login by.U : 
@@ -949,7 +973,6 @@ Perubahan data pelanggan pindah tangan pindah tangan
 Makasih udah nunggu. Kak untuk permintaan kode PUK di nomor xxxxxx , boleh infoin data ini ya biar bisa aku bantu :
 1. validasi tambahan :
 2. NIK yang terdaftar :
-
 Untuk validasi tambahannya Kakak bisa isi salah satu dari data ini ya : 
 1. Tanggal dan jenis paket terakhir yang dibeli.
 2. Jumlah pulsa yang dimiliki sekarang.
@@ -1075,6 +1098,32 @@ Masalah Pembelian Kuota Via Tukar Kode Voucher
 10. Tanggal dan waktu kejadian : 
 `},{id:48,case:`Sponsorship/kerjasama`,Solusi:` Makasih udah nunggu Kak :) Mengenai pengajuan sponsorship atau kerjasama proposalnya bisa langsung dikirim ke email nindy@byu.id ya, have a good day :)
 
+`,Mandatory:``},{id:49,case:` SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan / Gagal pairing`,Solusi:` Makasih udah nungu. Kak maaf sepertinya ada kendala nih untuk  SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+1. Email akun by.U :
+2. SN kartu pengganti yang ada di dekat barcode cangkang SIM card :
+`,Mandatory:`
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
+SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan
+
+1. Nomor by.U : xxxxxx
+2. Akun by.U : 
+3. SN Kartu Pengganti :
+4. Capture SIM Card tidak terdeteksi : (khusus kendala SIM Card tidak terdeteksi dan status aktif. Jika kendalanya gagal pairing/belum dipairing dengan status suspend, maka tidak perlu dimintakan)`},{id:50,case:` SIM card Tidak terdeteksi atau swim swap failed`,Solusi:` Makasih udah nungu. Kak maaf untuk kendala SIM card nya, aku cek nomor xxxxxx udah gabisa di aktivasi/registrasi karena nomornya udah ga aktif/ga di atifin lebih dari 30 hari dari waktu pembayaran berhasil. Aku saranin beli nomor baru di apps by.U pakai akun baru ya :)
+`,Mandatory:`
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${e()} 
+SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan
+
+1. Nomor by.U : xxxxxx
+2. Akun by.U : 
+3. SN Kartu Pengganti :
+4. Capture SIM Card tidak terdeteksi : (khusus kendala SIM Card tidak terdeteksi dan status aktif. Jika kendalanya gagal pairing/belum dipairing dengan status suspend, maka tidak perlu dimintakan)`},{id:51,case:` SIM card Deactive`,Solusi:` Makasih udah nungu. Kak maaf untuk kendala SIM card nya, aku cek nomor xxxxxx udah gabisa di aktivasi/registrasi karena nomornya udah ga aktif/ga di atifin lebih dari 30 hari dari waktu pembayaran berhasil. Aku saranin beli nomor baru di apps by.U pakai akun baru ya :)
+`,Mandatory:``},{id:52,case:`Pulsa terpotong karena SMS dari luar negeri`,Solusi:` Maaf udah bikin Kakak nunggu ya. Aku cek di sistem untuk nomor xxxxxx ada pengurangan pulsa sebesar Rp500 untuk SMS ke nomor +41415737017. Untuk SMS ini adalah SMS verifikasi dari apps tertentu yang developernya dari luar negeri dan membebankan biaya registrasi ke pulsa customer. Ini settingan dari apps yang terisntall di HP Kakak yang otomatis menarik biaya pulsa ya, bukan settingan dari by.U 🙂
 `,Mandatory:``}]};var Ja=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),R=e(((e,t)=>{t.exports=Ja()}))(),Ya=({onSelect:e})=>(0,R.jsx)(Ka,{options:qa().slice().sort((e,t)=>e.case.toLocaleLowerCase().localeCompare(t.case.toLocaleLowerCase())).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:`#f6fbe0ff`}),menu:e=>({...e,backgroundColor:`#f6fbe0ff`})}}),Xa={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},Za=l.createContext&&l.createContext(Xa),Qa=[`attr`,`size`,`title`];function $a(e,t){if(e==null)return{};var n=eo(e,t),r,i;if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(i=0;i<a.length;i++)r=a[i],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function eo(e,t){if(e==null)return{};var n={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}function to(){return to=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},to.apply(this,arguments)}function no(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function ro(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?no(Object(n),!0).forEach(function(t){io(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):no(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function io(e,t,n){return t=ao(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function ao(e){var t=oo(e,`string`);return typeof t==`symbol`?t:t+``}function oo(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function so(e){return e&&e.map((e,t)=>l.createElement(e.tag,ro({key:t},e.attr),so(e.child)))}function co(e){return t=>l.createElement(lo,to({attr:ro({},e.attr)},t),so(e.child))}function lo(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=$a(e,Qa),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),l.createElement(`svg`,to({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:ro(ro({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&l.createElement(`title`,null,i),e.children)};return Za===void 0?t(Xa):l.createElement(Za.Consumer,null,e=>t(e))}function uo(e){return co({tag:`svg`,attr:{viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`2`,strokeLinecap:`round`,strokeLinejoin:`round`},child:[{tag:`rect`,attr:{x:`9`,y:`9`,width:`13`,height:`13`,rx:`2`,ry:`2`},child:[]},{tag:`path`,attr:{d:`M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1`},child:[]}]})(e)}var z=({text:e})=>{let[t,n]=(0,l.useState)(!1);return(0,R.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),n(!0),setTimeout(()=>n(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,R.jsxs)(uo,{className:` ${t?`invisible!`:`visible`}`,children:["` $",t?`copy!`:`tidak`,"`"]}),(0,R.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,t?`anjay`:``,` `]})]})};function fo(){let e=(0,l.useRef)([]),t=(0,l.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var po=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=fo(),c=e=>{let t=e.split(`
