@@ -22,8 +22,8 @@ const TemplatePages = () => {
         
             
     return (
-        <div className="w-full">
-            {[0,1,2,3,4,5,6,7,8].map(row => (
+        <div className="w-full ">
+            {[0,1,2,3,4,5,6,7,8,9,10].map(row => (
                 <div className="flex" key={row}>
                 {[0,1].map(col => {
                     const index = row * 2 + col;

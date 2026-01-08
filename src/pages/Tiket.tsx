@@ -33,11 +33,29 @@ const TiketPages = () => {
         setsolusiText(selected.Solusi);
       }, [selectedId]);
 
+      const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
+        e.preventDefault();
 
+        const droppedText = e.dataTransfer.getData("text/plain");
+        if (!droppedText) return;
 
+        setMandatoryText(prev =>
+          prev.replace(/xxxxxx/g, droppedText)
+        );
+
+        setsolusiText(prev =>
+          prev.replace(/xxxxxx/g, droppedText)
+        );
+      };
+
+      const handleDragOver = (e: React.DragEvent) => {
+        e.preventDefault();
+      };
 
     return (
-        <div className='flex flex-col w-screen '>
+        <div className='flex flex-col w-screen '
+        onDrop={handleDrop}
+        onDragOver={handleDragOver}>
             <List onSelect={(id) => setSelectedId(id)} />
                 <div className='flex gap-2'>
                 <div className='w-full'>

@@ -20,7 +20,7 @@ const Mandatory = [{
 id: 1 ,
 case : "Internet Lambat",
 Solusi : `
-Makasih udah nunggu. Kak maaf, untuk kendala internet lambatnya di nomor xxxxxxx, boleh infoin data ini ya biar bisa aku cek : 
+Makasih udah nunggu. Kak maaf, untuk kendala internet lambatnya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku cek : 
 1. Email akun by.U :
 2. Lokasi detail kendala (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
 3. Tanggal dan waktu kejadian sejak kapan :
@@ -32,7 +32,7 @@ Sekedar info kak, karena kita pake jaringan Telkomsel, jadi kualitas jaringan by
 
 
 
-Makasih udah nunggu. Kak aku cek nomor xxxxxxx aktif dan punya kuota juga lokasi Kakak ga ada info gangguan nih. Boleh coba panduan ini ya :
+Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif dan punya kuota juga lokasi Kakak ga ada info gangguan nih. Boleh coba panduan ini ya :
 1. Ubah mode jaringan dari otomatis ke manual 2G only, kemudian kembalikan lagi ke mode otomatis
 2. Lakukan refresh jaringan :
 Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih by.U (Telkomsel).
@@ -49,15 +49,16 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Internet Lambat  
 
-1. Nomor dan akun by.U :
-2. Lokasi detail (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) :
-3. Jenis device yang digunakan :
-4. Tanggal dan waktu kendala :
-5. Kendala terjadi sepanjang hari atau pada waktu tertentu aja?
-6. Jaringan yang diterima (2G, 4G, atau 5G) dan jumlah bar/titik sinyal yang didapat?
-7. Capture hasil speedtest :
-8. Nomor atau info kontak lain yang bisa dihubungi :
-9. Sisa kuota yang dimiliki oleh pelanggan :
+1. Nomor by.U : xxxxxx
+2. Email akun by.U : 
+3. Lokasi detail (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) : 
+4. Jenis device yang digunakan : 
+5. Tanggal dan waktu kendala : 
+6. Kendala terjadi sepanjang hari atau pada waktu tertentu aja? 
+7. Jaringan yang diterima (2G, 4G, atau 5G) dan jumlah bar/titik sinyal yang didapat? 
+8. Capture hasil speedtest : 
+9. Nomor atau info kontak lain yang bisa dihubungi : 
+10. Sisa kuota yang dimiliki oleh pelanggan : 
 
 
 
@@ -82,13 +83,13 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak bisa aktivasi Error Lain 
 
-1. Nomor by.U :
-2. Akun by.U :
-3. Nomor Identitas KTP valid :
-4. NOKK :
-5. Serial Number di cangkang SIM Card :
-6. Capture gagal aktivasi  :
-7. Order ID CXT/CXO (Pengecekan OperatorX) :
+1. Nomor by.U : xxxxxx
+2. Akun by.U : 
+3. Nomor Identitas KTP valid : 
+4. NOKK : 
+5. Serial Number di cangkang SIM Card : 
+6. Capture gagal aktivasi  : 
+7. Order ID CXT/CXO (Pengecekan OperatorX) : 
 
 
 
@@ -98,16 +99,15 @@ Tidak bisa aktivasi Error Lain
 {
 id: 3,
 case : "Bugs Lain",
-Solusi : `Makasih udah nunggu. Kak maaf, aku cek ga ada info gangguan. Boleh coba dulu untuk ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih gak bisa, boleh coba install ulang aplikasi by.U kakak dan pastikan koneksi internet ada. Kalau di aplikasi masih berkendala, Kakak bisa coba akses di website by.U ya. Kalau udah tapi masih berkendala, boleh infoin data ini ya :
-1. Email by.U : 
-2. Nomor by.U : 
-3. Tipe/merek Gadget : 
-4. Versi OS Gadget : 
-5. Versi aplikasi by.U : 
-6. Apakah bisa akses website byu.id di device yang sama menggunakan jaringan by.U atau jaringan lain? 
-7. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
-8. Waktu dan Lama Kejadian : 
-9. Lokasi Kejadian :  `,
+Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala aplikasinya di nomor xxxxxx, aku cek ga ada info gangguan. Boleh coba dulu untuk ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih gak bisa, boleh coba install ulang aplikasi by.U kakak dan pastikan koneksi internet ada. Kalau di aplikasi masih berkendala, Kakak bisa coba akses di website by.U ya. Kalau udah tapi masih berkendala, boleh infoin data ini ya :
+1. Email akun by.U : 
+2. Tipe/merek Gadget : 
+3. Versi OS Gadget : 
+4. Versi aplikasi by.U : 
+5. Apakah bisa akses website byu.id di device yang sama menggunakan jaringan by.U atau jaringan lain? 
+6. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
+7. Waktu dan Lama Kejadian : 
+8. Lokasi Kejadian :  `,
 Mandatory : `
 #Pelangganbyu
 [byU igdm] 
@@ -116,7 +116,7 @@ ${getCurrentDateTime()}
 Bugs Lain 
 
 1. Email by.U : 
-2. Nomor by.U : 
+2. Nomor by.U : xxxxxx
 3. Tipe/merek Gadget : 
 4. Versi OS Gadget : 
 5. Versi aplikasi by.U : 
@@ -124,23 +124,20 @@ Bugs Lain
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
 8. Waktu dan Lama Kejadian : 
 9. Lokasi Kejadian : 
-
-
 `   
 },
 
 {
 id: 4,
 case : "Bugs Ganti Sim Card",
-Solusi : `Makasih udah nunggu :) Oke Kak maaf. Ini SIM card Kakak harusnya bisa lanjut dengan Kakak pilih menu ganti SIM card di apps, nantinya bakal muncul halaman pengambilan/pengantaran. Coba di clear cache dulu apps nya dan pastiin pakai apps versi terbaru ya. Kalau udah tapi masih ga muncul halaman pengambilan/pengantarannya boleh diinfoin data ini :
+Solusi : `Makasih udah nunggu :) Oke Kak maaf. Ini SIM card Kakak di nomor xxxxxx harusnya bisa lanjut dengan Kakak pilih menu ganti SIM card di apps, nantinya bakal muncul halaman pengambilan/pengantaran. Coba di clear cache dulu apps nya dan pastiin pakai apps versi terbaru ya. Kalau udah tapi masih ga muncul halaman pengambilan/pengantarannya boleh diinfoin data ini :
 1. Email by.U :
-2. Nomor by.U :
-3. Tipe/merek Gadget :
-4. Versi OS Gadget :
-5. Versi aplikasi by.U :
-6. Apakah bisa akses menggunakan wifi/jaringan lain :
-7. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :
-8. Waktu dan Lama Kejadian :`,
+2. Tipe/merek Gadget :
+3. Versi OS Gadget :
+4. Versi aplikasi by.U :
+5. Apakah bisa akses menggunakan wifi/jaringan lain :
+6. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :
+7. Waktu dan Lama Kejadian :`,
 Mandatory : `
 #Pelangganbyu
 [byU igdm] 
@@ -149,22 +146,20 @@ ${getCurrentDateTime()}
 Bugs Ganti Sim Card 
 
 1. Email by.U : 
-2. Nomor by.U : 
+2. Nomor by.U : xxxxxx
 3. Tipe/merek Gadget : 
 4. Versi OS Gadget : 
 5. Versi aplikasi by.U : 
 6. Detail keluhan yang disampaikan customer apakah bisa akses menggunakan wifi/jaringan lain : YA 
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :  
 8. Waktu dan Lama Kejadian : 
-
-
 `   
 },
 
 {
 id: 5,
 case : "Tidak bisa Kirim/Terima SMS",
-Solusi : `Makasih udah nunggu. Kak maaf banget nih untuk kendala SMS nya di nomor xxxx. Boleh coba panduan ini dulu ya :
+Solusi : `Makasih udah nunggu. Kak maaf banget nih untuk kendala SMS nya di nomor xxxxxx. Boleh coba panduan ini dulu ya :
 1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
 2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 *Note: hanya ada di HP android, jika pelanggan sudah infokan tipe HP dan bukan HP android maka settingan ini tidak perlu di infokan ke pelanggan
 3. Coba on-off-kan airplane mode
@@ -186,14 +181,15 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak bisa kirim / Terima SMS 
 
-1. Email dan nomor by.U :
-2. Printscreen dashboard di apps dan keterangan sinyal : 
-3. Waktu dan Lama Kejadian :
-4. Tipe gadget yang dipakai :
-5. Keterangan gagal yang muncul saat menerima atau mengirim SMS :
-6. Kendala yang terjadi tidak bisa terima SMS, kirim SMS atau keduanya? :
-7. Kendala terjadi hanya saat menerima SMS atau mengirim SMS ke nomor tertentu atau semua? :
-8. Nomor lain yang bisa dihubungi : 
+1. Nomor by.U : xxxxxx
+2. Email akun by.U : 
+3. Printscreen dashboard di apps dan keterangan sinyal : 
+4. Waktu dan Lama Kejadian : 
+5. Tipe gadget yang dipakai : 
+6. Keterangan gagal yang muncul saat menerima atau mengirim SMS : 
+7. Kendala yang terjadi tidak bisa terima SMS, kirim SMS atau keduanya? : 
+8. Kendala terjadi hanya saat menerima SMS atau mengirim SMS ke nomor tertentu atau semua? : 
+9. Nomor lain yang bisa dihubungi : 
 
 
 
@@ -203,7 +199,7 @@ Tidak bisa kirim / Terima SMS
 {
 id: 6,
 case : "Panggilan Telepon Masuk / Telepon Keluar",
-Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala teleponnya di nomor xxxxx , boleh  pastiin dulu kakak berada dalam lokasi yang mendapatkan sinyal by.U dan sudah mencoba on-off-kan airplane mode. kalau masih gabisa, boleh infoin data ini ya :
+Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala teleponnya di nomor xxxxxx , boleh  pastiin dulu kakak berada dalam lokasi yang mendapatkan sinyal by.U dan sudah mencoba on-off-kan airplane mode. kalau masih gabisa, boleh infoin data ini ya :
 1. Email akun by.U :
 2. Printscreen dashboard di apps dan keterangan sinyal : 
 3. Waktu dan Lama Kejadian :
@@ -221,14 +217,15 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak bisa melakukan panggilan on-net & off-net
 
-1. Email dan nomor by.U :
-2. Printscreen dashboard di apps dan keterangan sinyal : 
-3. Waktu dan Lama Kejadian :
-4. Tipe HP yang dipakai :
-5. Keterangan error yang muncul saat telepon :
-6. Kendala terjadi hanya saat menerima panggilan, melakukan panggilan, atau keduanya :
-7. Kendala terjadi hanya ke nomor tertentu atau semua nomor :
-8. Nomor lain yang bisa dihubungi : 
+1. Nomor by.U : xxxxxx
+2. Email akun by.U : 
+3. Printscreen dashboard di apps dan keterangan sinyal : 
+4. Waktu dan Lama Kejadian : 
+5. Tipe HP yang dipakai : 
+6. Keterangan error yang muncul saat telepon : 
+7. Kendala terjadi hanya saat menerima panggilan, melakukan panggilan, atau keduanya : 
+8. Kendala terjadi hanya ke nomor tertentu atau semua nomor : 
+9. Nomor lain yang bisa dihubungi : 
 
 
 
@@ -238,7 +235,7 @@ Tidak bisa melakukan panggilan on-net & off-net
 {
 id: 7,
 case : "Tidak bisa request OTP Meta Product",
-Solusi : `Kak maaf banget nih untuk kendala kode OTP nya di nomor xxxx. Boleh coba panduan ini dulu ya :
+Solusi : `Kak maaf banget nih untuk kendala kode OTP nya di nomor xxxxxx. Boleh coba panduan ini dulu ya :
 1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
 2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 
 3. Coba on-off-kan airplane mode
@@ -257,15 +254,13 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 TIDAK BISA REQUEST OTP META PRODUCT
 
-1. Email by.U :
-2. Nomor by.U :
-3. Waktu Kejadian :
-4. Nomor lain yang bisa dihubungi :
-5. Tipe gadget yang digunakan :
+1. Email by.U : 
+2. Nomor by.U : xxxxxx
+3. Waktu Kejadian : 
+4. Nomor lain yang bisa dihubungi : 
+5. Tipe gadget yang digunakan : 
 6. Capture dashboard di apps dan keterangan sinyal : 
-7. Keterangan gagal yang muncul saat melakukan request/menerima OTP :
-
-
+7. Keterangan gagal yang muncul saat melakukan request/menerima OTP : 
 
 1x24 jam`   
 },
@@ -282,9 +277,11 @@ Solusi : `Makasih udah nunggu. Kak maaf untuk unreg/deaktivasi SIM card by.U, bi
 6. Unreg SIM Card akan diproses jika data sesuai dan keterangan berhasil unreg akan muncul di aplikasi by.U :)
 
 
+DISCLAIMER 
+
 Makasih udah nunggu. Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu UNREG SIM Card di akun berikut:
-1. Nomor by.U : xxxxxxxx
-2. Email: xxxxxxxx
+1. Nomor by.U : xxxxxx
+2. Email: yyyyy
 
 Nomor yang sudah berhasil di unregistrasi ga akan bisa diaktifkan kembali dalam kondisi apapun ya kak, lalu NIK yang terdaftar di nomor ini juga akan ikut terhapus. Kalo data diatas udah sesuai dan Kakak setuju boleh tolong konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :)
 `,
@@ -295,11 +292,11 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Permintaan Deaktivasi SIM Card dan Hapus NIK
 
-1. Email by.U :
-2. Nomor by.U :
-3. Nomor Identitas KTP :
-4. Alasan tidak ingin menggunakan by.U lagi :
-5. Nomor Kartu Keluarga :
+1. Email by.U : 
+2. Nomor by.U : xxxxxx
+3. Nomor Identitas KTP : 
+4. Alasan tidak ingin menggunakan by.U lagi : 
+5. Nomor Kartu Keluarga : 
 6. Foto KTP : 
 7. Foto Selfie dengan KTP : 
 
@@ -319,15 +316,15 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Permintaan Deaktivasi SIM Card dan Hapus NIK
 
-1. Nomor by.U :
-2. Email by.U :
-3. Nomor KTP :
-4. Alasan tidak ingin menggunakan by.U lagi :
-5. Nomor Kartu Keluarga :
-6. Foto identitas :
+1. Nomor by.U : xxxxxx
+2. Email by.U : 
+3. Nomor KTP : 
+4. Alasan tidak ingin menggunakan by.U lagi : 
+5. Nomor Kartu Keluarga : 
+6. Foto identitas : 
 7. Foto Selfie KTP : 
 8. Capture hasil pengecekan dari *444# : 
-9. CP yang bisa dihubungi :
+9. CP yang bisa dihubungi : 
 
 
 1x24 jam`   
@@ -344,10 +341,10 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Gagal Aktivasi eSIM Account Status Tidak Sesuai
 
-1.Email by.U :
-2.Nomor by.U :
-3.Nomor yang bisa dihubungi :
-4.Email yang bisa dihubungi :
+1.Email by.U : 
+2.Nomor by.U : xxxxxx
+3.Nomor yang bisa dihubungi : 
+4.Email yang bisa dihubungi : 
 5.Capture gagal aktivasi di apps : 
 
 
@@ -359,7 +356,7 @@ Gagal Aktivasi eSIM Account Status Tidak Sesuai
 id: 11,
 case : "Sinyal lemah/tidak stabil",
 Solusi : `
-Makasih udah nunggu. Kak maaf, untuk kendala sinyalnya di nomor xxxxx ,boleh infoin data ini ya biar bisa aku cek :
+Makasih udah nunggu. Kak maaf, untuk kendala sinyalnya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
 2. Lokasi detail kendala (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
 3. Tanggal dan waktu kejadian sejak kapan :
@@ -369,7 +366,7 @@ Sekedar info, Kak. Karena kita pake jaringan Telkomsel, jadi kualitas jaringan b
 
 ==============
 
-Makasih udah nunggu. Kak maaf, kalau aku cek nomor xxxxxxxxxxxx  statusnya aktif dan tidak ada info gangguan di lokasi Kakak. Bisa dicoba dulu langkah-langkah di bawah ini ya kak :
+Makasih udah nunggu. Kak maaf, kalau aku cek nomor xxxxxx  statusnya aktif dan tidak ada info gangguan di lokasi Kakak. Bisa dicoba dulu langkah-langkah di bawah ini ya kak :
 1. Ubah mode jaringan dari otomatis ke manual 2g only, kemudian kembalikan lagi ke mode otomatis
 2. Lakukan refresh jaringan :
 Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih by.U (Telkomsel).
@@ -385,7 +382,7 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Ada Sinyal/Blankspot & Sinyal Lemah/Tidak Stabil
 
-1. Nomor by.U :
+1. Nomor by.U : xxxxxx
 2. Akun by.U :
 3. Lokasi detail kendala (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
 4. Tanggal dan waktu kejadian sejak kapan :
@@ -417,10 +414,12 @@ Solusi : `Makasih udah nunggu. Kak untuk permintaan ganti SIM Card, bisa dilakuk
 8. Kalo rikuesmu di terima, lanjutin prosesnya dan bisa Pilih Ambil (GraPARI)/Indomaret tanpa biaya pengambilan atau SIM Card diantar (Kurir JNE) dengan biaya Rp10.000 dan estimasi sampai makismal 7 hari kerja sesudah melakukan pembayaran.
 
 
+DISCLAIMER
+
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Ganti SIM Card Active dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: xxxxxxx
-3. NIK KTP valid : xxxxxxx
+2. Email: yyyyy
+3. NIK KTP valid : 
 4. Nama & nomor penerima :
 5. Alamat pengiriman :
 
@@ -436,7 +435,7 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Permintaan Ganti SIM Card Active
 
-1. Nomor by.U :
+1. Nomor by.U : xxxxxx
 2. Email registrasi by.U atau nomor HP jika registrasi by.U menggunakan nomor operator lain :
 3. Nomor Identitas valid :
 4. Scan/Foto KTP asli : 
@@ -450,7 +449,7 @@ Permintaan Ganti SIM Card Active
 {
 id: 13,
 case : "Miskoordinasi JNE (AWB)",
-Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxx , aku cek ada kendala nih dari aplikasinya jadinya SIM card Kakak belum di kirimin. Boleh infoin data ini ya biar bisa aku proses : 
+Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari aplikasinya jadinya SIM card Kakak belum di kirimin. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. Nama dan Nomor Penerima :
 3. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) :
@@ -464,8 +463,8 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Keluhan SIM Card Tidak Sampai via JNE ada AWB
 
-1. Nomor by.U :
-2. Email by.U :
+1. Nomor by.U : xxxxxx
+2. Email by.U : 
 3. Nama dan Nomor Penerima :
 4. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) :
 5. Capture pengecekan nomor resi di web tracking JNE : 
@@ -487,13 +486,12 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
 
-1. Nomor by.U :
-2. Email by.U :
+1. Nomor by.U : xxxxxx
+2. Email by.U : 
 3. Capture bukti pembayaran : 
-4. Nama Penerima :
-5. Nomor Penerima :
-6. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) :
-        
+4. Nama Penerima : 
+5. Nomor Penerima : 
+6. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) : 
 `   
 },
 
@@ -508,12 +506,12 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Masalah Pembelian Kuota/Pulsa I RENEW Via VA
 
-1. Nomor by.U :
+1. Nomor by.U : xxxxxx
 2. Email by.U : 
 3. Printscreen halaman bukti pembayaran : terlampir
 4. Rincian Keluhan : kuota belum masuk
-5. Order detail ID (CXO) (Pengecekan OperatorX) 
-6. Transaction ID (CXT) (Pengecekan OperatorX)
+5. Order detail ID (CXO) (Pengecekan OperatorX) : -
+6. Transaction ID (CXT) (Pengecekan OperatorX) : -
 
 pending payment
 TRX ID : 
@@ -526,11 +524,12 @@ paid
 {
 id: 16,
 case : "Penyalahgunaan NIK ",
-Solusi : `Oke Kak, Aku konfirmasi kembali pada tanggal ${getCurrentDate()} kakak mau proses UNREGISTRASI nomor by.U yang bukan milik Kakak tetapi terdaftar dengan NIK Kakak dengan data berikut
+Solusi : ` DISCLAIMER
+Oke Kak, Aku konfirmasi kembali pada tanggal ${getCurrentDate()} kakak mau proses UNREGISTRASI nomor by.U yang bukan milik Kakak tetapi terdaftar dengan NIK Kakak dengan data berikut
 
-Nomor by.U : xxxxx
-NIK  : xxxxxxx
-NOKK : xxxxxxxx
+Nomor by.U : xxxxxx
+NIK  : 
+NOKK : 
 
 Silahkan dikonfirmasi ya kak, dengan membalas "benar" atau "setuju"`,
 Mandatory : `
@@ -540,12 +539,12 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Penyalahgunaan NIK
 
-1. Email Aktif :
-2. Nomor aktif lainnya yang bisa dihubungi :
-3. Nomor Identitas KTP :
-4. Nomor Kartu Keluarga :
+1. Email Aktif : 
+2. Nomor aktif lainnya yang bisa dihubungi : 
+3. Nomor Identitas KTP : 
+4. Nomor Kartu Keluarga : 
 5. Nomor by.U yang ingin di UNREGISTRASI : 
-5. Capture SMS cek registrasi dari 4444 :
+5. Capture SMS cek registrasi dari 4444 : 
 
         
 `   
@@ -554,7 +553,7 @@ Penyalahgunaan NIK
 {
 id: 17,
 case : "Irenew virtual account Unpaid ",
-Solusi : "Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxx boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)",
+Solusi : "Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)",
 Mandatory : `
 #Pelangganbyu
 [byU igdm] 
@@ -562,8 +561,8 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Masalah Pembelian Kuota/Pulsa I RENEW Via Virtual Account
 
-1. Nomor by.U :
-2. Email by.U :
+1. Nomor by.U : xxxxxx
+2. Email by.U : 
 3. Bukti pembayaran yang tercantum waktu transaksinya : terlampir
 4. Rincian Keluhan : kuota belum masuk, pembayaran berhasil
 5. Order detail ID (CXO) (Pengecekan OperatorX) :
@@ -591,11 +590,9 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Permintaan Refund karena kesalahan sistem
 
-1.Nomor by.U :
-2.Email by.U :
-3.Capture bukti pembayaran :
-
-
+1.Nomor by.U : xxxxxx
+2.Email by.U : 
+3.Capture bukti pembayaran : 
 `   
 },
 
@@ -610,13 +607,13 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Mendapatkan Kuota Monthversary 
 
-1. MSISDN by.U :
-2. Email akun by.U :
-3. Kuota berapa bulan yang belum didapatkan (3, 6, 9, atau 12 bulan) :
-4. Tanggal aktivasi nomor by.U :
-5. Capture halaman Reward (Sudah dan Belum Terpakai) : Terlamp8ir
+1. MSISDN by.U : xxxxxx
+2. Email akun by.U : 
+3. Kuota berapa bulan yang belum didapatkan (3, 6, 9, atau 12 bulan) : 
+4. Tanggal aktivasi nomor by.U : 
+5. Capture halaman Reward (Sudah dan Belum Terpakai) : Terlampir
 6. Bukti bayar (jika kendalanya pelanggan sudah bayar tapi belum menerima paket Monthiversary Reward) :-
-7. Hasil pengecekan Add Ons di CRM (berupa text dan tidak boleh printscreen) :
+7. Hasil pengecekan Add Ons di CRM (berupa text dan tidak boleh printscreen) : 
 
         
 `   
@@ -641,21 +638,20 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 SMS - Gagal Aktivasi M-Banking
 
-1. Nomor by.U :
-2. Email akun by.U :
-3. Rincian keluhan :
-4. Tipe HP :
-5. Capture dashboard apps :
-6. Capture kirim atau terima SMS ke nomor lain berhasil :
-7. Capture keterangan gagal aktivasi fitur banking :
-        
+1. Nomor by.U : xxxxxx
+2. Email akun by.U : 
+3. Rincian keluhan : 
+4. Tipe HP : 
+5. Capture dashboard apps : 
+6. Capture kirim atau terima SMS ke nomor lain berhasil : 
+7. Capture keterangan gagal aktivasi fitur banking : 
 `   
 },
 
 {
 id: 21,
 case : "IRENEW OVO/DANA/ShopeePay ",
-Solusi : `Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxx boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,
+Solusi : `Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,
 Mandatory : `
 #Pelangganbyu
 [byU igdm] 
@@ -663,20 +659,19 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Masalah Pembelian Kuota/Pulsa I RENEW Via 
 
-1. Nomor by.U :
-2. Email by.U :
-3. Capture bukti pembayaran :
+1. Nomor by.U : xxxxxx
+2. Email by.U : 
+3. Capture bukti pembayaran : 
 4. Order detail ID (CXO) (Pengecekan OperatorX)  : 
 5. Transaction ID (CXT) (Pengecekan OperatorX) :
 6. Rincian Keluhan : kuota/pulsa belum masuk
-  
 `   
 },
 
 {
 id: 22,
 case : "Tidak Bisa Aktivasi SIM Card Legacy ",
-Solusi : `Makasih udah nunggu. Kak maaf untuk kendala gabisa aktivasi/registrasi di nomor xxxxx, aku cek nomornya belum kedaftar di sistem nih yang artinya belum di aktivasi. Kalau nomornya udah sesuai dengan yang di bagian depan bungkus SIM card, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
+Solusi : `Makasih udah nunggu. Kak maaf untuk kendala gabisa aktivasi/registrasi di nomor xxxxxx, aku cek nomornya belum kedaftar di sistem nih yang artinya belum di aktivasi. Kalau nomornya udah sesuai dengan yang di bagian depan bungkus SIM card, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
 1. NIK & NOKK :
 2. Capture Gagal Aktivasi
 3. SN barcode yang ada di cangkang SIM Card
@@ -688,14 +683,14 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Bisa Aktivasi SIM Card Legacy
 
-1. Nomor by.U :
-2. Capture berhasil aktivasi via SMS :
-3. Nomor Identitas KTP :
-4. Nomor Kartu Keluarga :
-5. CP dan Email yang bisa dihubungi :
-6. SN barcode yang ada di cangkang SIM Card :
-7. Order ID CXT/CXO (Pengecekan OperatorX) :
-8. Keterangan pengecekan :
+1. Nomor by.U : xxxxxx
+2. Capture berhasil aktivasi via SMS : 
+3. Nomor Identitas KTP : 
+4. Nomor Kartu Keluarga : 
+5. CP dan Email yang bisa dihubungi : 
+6. SN barcode yang ada di cangkang SIM Card : 
+7. Order ID CXT/CXO (Pengecekan OperatorX) : 
+8. Keterangan pengecekan : 
         
 `   
 },
@@ -719,7 +714,7 @@ Mandatory : `
 id: 24,
 case : "Tidak bisa internet",
 Solusi : `
-Kak makasih udah nunggu. Maaf nih untuk kendala internet nya di nomor xxxxx , boleh infoin data ini ya biar bisa aku cek : 
+Kak makasih udah nunggu. Maaf nih untuk kendala internet nya di nomor xxxxxx , boleh infoin data ini ya biar bisa aku cek : 
 1. Email akun by.U :
 2. Lokasi detail kendala (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
 3. Tanggal dan waktu kendala :
@@ -727,7 +722,7 @@ Kak makasih udah nunggu. Maaf nih untuk kendala internet nya di nomor xxxxx , bo
 5. Capture setting APN di HP :
 
 
-Makasih udah nunggu. Kak maaf, aku cek nomor xxxx aktif, punya kuota dan lokasi Kakak ga ada masalah nih. Boleh coba panduan ini ya :
+Makasih udah nunggu. Kak maaf, aku cek nomor xxxxxx aktif, punya kuota dan lokasi Kakak ga ada masalah nih. Boleh coba panduan ini ya :
 1. Ubah mode jaringan dari otomatis ke manual 2g only, kemudian kembalikan lagi ke mode otomatis
 2. Lakukan refresh jaringan :
 Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih by.U (Telkomsel).
@@ -742,20 +737,17 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Bisa akses internet
 
-1. Nomor by.U :
-2. Akun by.U :
-3. Lokasi detail (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) :
-4. Jenis device yang digunakan :
-5. Tanggal dan waktu kendala :
+1. Nomor by.U : xxxxxx
+2. Akun by.U : 
+3. Lokasi detail (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) : 
+4. Jenis device yang digunakan : 
+5. Tanggal dan waktu kendala : 
 6. Kendala terjadi sepanjang hari atau pada waktu tertentu aja :
-7. Jaringan yang digunakan apa? 4G,5G? 
-8. Jumlah sinyal bar yang didapat :
-9. Capture tidak bisa akses internet :
-10. Nomor atau info kontak lain yang bisa dihubungi :
-11. Sisa kuota yang dimiliki oleh pelanggan :
-
-
-        
+7. Jaringan yang digunakan apa? 4G,5G? :
+8. Jumlah sinyal bar yang didapat : 
+9. Capture tidak bisa akses internet : 
+10. Nomor atau info kontak lain yang bisa dihubungi : 
+11. Sisa kuota yang dimiliki oleh pelanggan : 
 `   
 },
 
@@ -770,17 +762,15 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy
 
-1. Nomor by.U : 
-2. Akun by.U :
-3. Capture Keterangan Gagal Aktivasi :
-4. Serial Number di cangkang SIM Card :
-5. Foto bungkus SIM Card bagian depan :
-6. Nama penerima :
-7. Nomor penerima :
-8. Alamat pengiriman :
-9. Order ID CXT/CXO (Pengecekan OperatorX) :
-
-        
+1. Nomor by.U : xxxxxx
+2. Akun by.U : 
+3. Capture Keterangan Gagal Aktivasi : 
+4. Serial Number di cangkang SIM Card : 
+5. Foto bungkus SIM Card bagian depan : 
+6. Nama penerima : 
+7. Nomor penerima : 
+8. Alamat pengiriman : 
+9. Order ID CXT/CXO (Pengecekan OperatorX) :         
 `   
 },
 
@@ -789,7 +779,7 @@ id: 26,
 case : "Tidak Bisa Aktivasi SIM Card Dengan Kode Error Asset Not Found ",
 Solusi : `Makasih udah nunggu ya Kak. Maaf banget nih untuk kendala aktivasi SIM card nya di nomor xxxxxx, Kalau sudah mencoba lagi dan masih tidak bisa, boleh diinfokan beberapa data berikut ya supaya kami bisa melakukan pengecekan lebih lanjut :
 1. Akun by.U :
-2 NIK :
+2. NIK :
 3. NOKK :
 4. Serial Number di cangkang SIM Card :
 5. Capture gagal aktivasi SIM Card :
@@ -802,13 +792,13 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Bisa Aktivasi SIM Card Dengan Kode Error "Asset Not Found" 
 
-1. Akun by.U :
-2. Nomor by.U :
-3. Nomor identitas :
-4. NOKK :
-5. Serial Number di cangkang SIM Card :
-6. Capture gagal aktivasi SIM Card :
-7. Order ID CXT/CXO (Pengecekan OperatorX) :
+1. Akun by.U : 
+2. Nomor by.U : xxxxxx
+3. Nomor identitas : 
+4. NOKK : 
+5. Serial Number di cangkang SIM Card : 
+6. Capture gagal aktivasi SIM Card : 
+7. Order ID CXT/CXO (Pengecekan OperatorX) : 
         
 `   
 },
@@ -816,7 +806,7 @@ Tidak Bisa Aktivasi SIM Card Dengan Kode Error "Asset Not Found"
 {
 id: 27,
 case : "Ketidaksesuaian Penggunaan Kuota ",
-Solusi : `Makasih udah nunggu. Kak maaf untuk kendala penggunaan kuota yang ga sesuai di nomor xxxxx, boleh infoin data ini ya biar bisa aku proses :
+Solusi : `Makasih udah nunggu. Kak maaf untuk kendala penggunaan kuota yang ga sesuai di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U:
 2. Tanggal waktu kejadian :
 3. Lokasi Kejadian ( Cukup Kec, Kabupaten atau Kota ) :
@@ -833,18 +823,17 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Ketidaksesuaian Penggunaan Kuota 
 
-1. Nomor by.U :
-2. Email :
-3. Tanggal waktu kejadian :
-4. Lokasi Kejadian ( Cukup Kec, Kabupaten atau Kota ) :
-5. Tipe hp/gadget :
-6. Paket yang dikeluhkan :
-7. Jumlah kuota awal dan kuota akhir :
-8. Capture data usage :
-9. Capture dashboard apps by.U :
+1. Nomor by.U : xxxxxx
+2. Email : 
+3. Tanggal waktu kejadian : 
+4. Lokasi Kejadian ( Cukup Kec, Kabupaten atau Kota ) : 
+5. Tipe hp/gadget : 
+6. Paket yang dikeluhkan : 
+7. Jumlah kuota awal dan kuota akhir : 
+8. Capture data usage : 
+9. Capture dashboard apps by.U : 
 10. Apakah customer pernah mencoba di gadget lain dan mengalami masalah yang sama? TIDAK
-11. Apakah ada VPN dsb di gadget customer? TIDAK
-        
+11. Apakah ada VPN dsb di gadget customer? TIDAK 
 `   
 },
 
@@ -861,15 +850,15 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak bisa login dengan Nomor BYU 
 
-1. Email dan nomor by.U :
-2. Tipe/merek Gadget :
-3. Versi OS Gadget :
-4. Versi aplikasi by.U :
-5. Screen record dari awal masuk aplikasi by.U hingga muncul notifikasi error dengan koneksi yang sama atau menggunakan wifi/ jaringan lain :
-6. Hari dan Tanggal waktu terjadi keluhan :
-7. Penjelasan keluhan pelanggan :
-8. Lokasi Pelanggan :
-        
+1. Nomor by.U : xxxxxx
+2. Email akun by.U : 
+3. Tipe/merek Gadget : 
+4. Versi OS Gadget : 
+5. Versi aplikasi by.U : 
+6. Screen record dari awal masuk aplikasi by.U hingga muncul notifikasi error dengan koneksi yang sama atau menggunakan wifi/ jaringan lain : 
+7. Hari dan Tanggal waktu terjadi keluhan : 
+8. Penjelasan keluhan pelanggan : 
+9. Lokasi Pelanggan : 
 `   
 },
 
@@ -884,13 +873,12 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Mendapatkan Voucher Non-Telco
 
-1. Nomor by.U :
-2. Email by.U :
-3. Jenis voucher yang ditukarkan :
-4. Tanggal penukaran U-Coin :
-5. Capture bukti redeem di halaman Reward Saya :
+1. Nomor by.U : xxxxxx
+2. Email by.U : 
+3. Jenis voucher yang ditukarkan : 
+4. Tanggal penukaran U-Coin : 
+5. Capture bukti redeem di halaman Reward Saya : 
 6. Capture kendala penukaran : 
-        
 `   
 },
 
@@ -905,25 +893,32 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Pergantian SIM Card Legacy ditolak GraPARI
 
-1.Nama Pelanggan :
-2. Nomor dan email by.U :
-3. Email aktif dan nomor lain yang bisa dihubungi :
-4. Tanggal dan hari mengunjungi GraPARI :
-5. Nama GraPARI :
+1. Nama Pelanggan : 
+2. Nomor by.U : xxxxxx
+3. Email aktif dan nomor lain yang bisa dihubungi : 
+4. Tanggal dan hari mengunjungi GraPARI : 
+5. Nama GraPARI : 
 6. Lokasi GraPARI : (Nama dan nomor Jalan, Kelurahan, Kecamatan, Kota/Kabupaten, Provinsi)
-7. Detail alasan ditolak :
-8. NIK KTP Valid :
-9. Foto KTP :
-10. Foto selfie KTP :
+7. Detail alasan ditolak : 
+8. NIK KTP Valid : 
+9. Foto KTP : 
+10. Foto selfie KTP : 
 11. Alasan ganti SIM Card : SIM Card Hilang
-        
 `   
 },
 
 {
 id: 31,
 case : "Esim Sinyal hilang",
-Solusi : ``,
+Solusi : `Makasih udah nunggu. Kak maaf untuk kendala eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+1. Email akun by.U :
+2. Tipe/Merek Gadget :
+3. Nomor yang bisa dihubungi :
+4. Email yang bisa dihubungi : 
+5. Capture Sinyal :
+6. Capture settingan eSIM di handphone :
+7. Capture bukti pembayaran : 
+`,
 Mandatory : `
 #Pelangganbyu
 [byU igdm] 
@@ -931,16 +926,15 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 eSIM sinyal hilang
 
-1. Nomor by.U :
-2. Akun by.U :
-3. Tipe/Merek Gadget :
-4. Nomor yang bisa dihubungi :
+1. Nomor by.U : xxxxxx
+2. Akun by.U : 
+3. Tipe/Merek Gadget : 
+4. Nomor yang bisa dihubungi : 
 5. Email yang bisa dihubungi : 
-6. Capture Sinyal :
-7. Capture settingan eSIM di handphone :
+6. Capture Sinyal : 
+7. Capture settingan eSIM di handphone : 
 8. Capture bukti pembayaran : 
-9. Order ID CXT/CXO (Pengecekan OperatorX):
-        
+9. Order ID CXT/CXO (Pengecekan OperatorX): 
 `   
 },
 
@@ -955,13 +949,13 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 eSIM  QR tidak tersimpan 
 
-1. Nomor by.U :
-2. Akun by.U :
-3. Nomor yang bisa dihubungi :
-4. Email yang bisa dihubungi :
-5. Bukti pembayaran :
+1. Nomor by.U : xxxxxx
+2. Akun by.U : 
+3. Nomor yang bisa dihubungi : 
+4. Email yang bisa dihubungi : 
+5. Bukti pembayaran : 
 6. Keterangan gagal : (KHUSUS APABILA QR YANG DIMILIKI PELANGGAN TIDAK VALID)
-7. Order ID CXT/CXO (Pengecekan OperatorX) :
+7. Order ID CXT/CXO (Pengecekan OperatorX) : 
         
 `   
 },
@@ -969,7 +963,31 @@ eSIM  QR tidak tersimpan
 {
 id: 33,
 case : "Bugs Ganti SIM card (mandatory E)",
-Solusi : ``,
+Solusi : ` Makasih udah nunggu. Kak maaf, kalau keterangannya seperti itu, boleh infoin data ini ya biar bisa aku proses : 
+1. Email akun by.U :
+2. Nomor Identitas KTP :
+3. Scan/Foto KTP Asli :
+4. Foto selfie dengan KTP Asli :
+5. Screen record terbaru :
+6. Nama penerima :
+7. Nomor penerima :
+8. Alamat pengiriman :
+9. Tipe/merek Gadget :
+10. Versi OS Gadget :
+11. Versi aplikasi by.U :
+Kirimnya ke email nindy@byu.id aja ya biar aman :)
+
+DISCLAIMER
+
+Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu  Ganti SIM Card dengan data :
+1. Nomor by.U : xxxxxx
+2. Email akun by.U: 
+3. NIK KTP valid : 
+4. Nama & nomor penerima :
+5. Alamat pengiriman :
+
+Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
+`,
 Mandatory : `
 #Pelangganbyu
 [byU igdm] 
@@ -977,19 +995,18 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Bugs Ganti SIM card
 
-1. Nomor by.U :
-2. Email by.U :
-3. Nomor Identitas KTP :
-4. Scan/Foto KTP Asli :
-5. Foto selfie dengan KTP Asli :
-6. Screen record terbaru :
-7. Nama penerima :
-8. Nomor penerima :
-9. Alamat pengiriman :
-10. Tipe/merek Gadget :
-11. Versi OS Gadget :
-12. Versi aplikasi by.U :
-        
+1. Nomor by.U : xxxxxx
+2. Email by.U : 
+3. Nomor Identitas KTP : 
+4. Scan/Foto KTP Asli : 
+5. Foto selfie dengan KTP Asli : 
+6. Screen record terbaru : 
+7. Nama penerima : 
+8. Nomor penerima : 
+9. Alamat pengiriman : 
+10. Tipe/merek Gadget : 
+11. Versi OS Gadget : 
+12. Versi aplikasi by.U : 
 `   
 },
 
@@ -1004,10 +1021,10 @@ Solusi : `Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar ne
 5. Capture setting APN di HP :
 6. Lokasi negara :
 
-Makasih udah nunggu. Kak aku cek nomor xxxxx aktif  dan punya kuota roaming, serta kondisi jaringan di xxxxxx tidak ada info gangguan. Bisa dicoba langkah-langkah ini ya kak :
+Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif  dan punya kuota roaming, serta kondisi jaringan di lokasi negara Kakak ga ada info gangguan. Bisa dicoba langkah-langkah ini ya kak :
 1. Coba ON-kan airplane mode dan OFF-kan kembali, OFF-kan mobile data dan ON-kan kembali.
 2. Lakukan refresh jaringan :
-3. Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih operator yang bekerja sama dengan Telkomsel, yaitu xxxxxxx
+3. Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih operator yang bekerja sama dengan Telkomsel, yaitu STC
 4. iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
 5. Isi APN dengan "byu", username dan password kosongkan.
 6.Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.
@@ -1020,43 +1037,44 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 DATA - Tidak Bisa Akses Internet di Luar Negeri
 
-1. Akun dan nomor by.U :
-2. Lokasi negara :
-3. Nama Paket Roaming :
-4. Jenis device yang digunakan :
-5. Tanggal dan waktu kendala :
-6. Jaringan yang digunakan apa? 4G, 5G? :
-7. Jumlah sinyal bar atau titik yang didapat? :
-8. Jaringan/operator negara setempat yang digunakan :
-9. Email aktif yang bisa dihubungi :
-10. Sisa kuota yang dimiliki oleh pelanggan :
-11. Capture speedtest :
-12. Capture APN :
-        
+1. nomor by.U : xxxxxx
+2. Akun by.U : 
+2. Lokasi negara : 
+3. Nama Paket Roaming : 
+4. Jenis device yang digunakan : 
+5. Tanggal dan waktu kendala : 
+6. Jaringan yang digunakan apa? 4G, 5G? : 
+7. Jumlah sinyal bar atau titik yang didapat? : 
+8. Jaringan/operator negara setempat yang digunakan : 
+9. Email aktif yang bisa dihubungi : 
+10. Sisa kuota yang dimiliki oleh pelanggan : 
+11. Capture speedtest : 
+12. Capture APN : 
 `   
 },
 
 {
 id: 35,
-case : "Tidak bisa aktivasi NIK invalid",
-Solusi : `Makasih udah nunggu Kak. Maaf nih untuk kendala aktivasinya, aku cek nomor xxxx gabisa aktivasi karena NIK nya ga valid yang artinya  NIK nya ga terdaftar nih di sistem Dukcapil. Kakak bisa hubungi pihak Dukcapil dulu ya biar NIK Kakak bisa digunakan untuk aktivasi SIM card nya :)`,
+case : "Pulsa berkurang tiba-tiba",
+Solusi : `Makasih udah nunggu Kak. Maaf nih untuk kendala pulsa yang berkurang tiba-tiba di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
+1. Email akun By.U :
+2. Pulsa awal dan pulsa akhir :
+3. Tipe Hp :
+4. Tanggal dan Waktu kejadian :
+`,
 Mandatory : `
 #Pelangganbyu
 [byU igdm] 
 NamaPelanggan
 ${getCurrentDateTime()} 
-Tidak bisa aktivasi NIK invalid
+Pulsa berkurang tib-tiba
 
-1. Akun by.U :
-2. Nomor by.U :
-3. Data identitas :
-4. NOKK :
-5. Serial Number di cangkang SIM Card :
-6. Capture gagal aktivasi SIM Card
-7. Capture bukti dari dukcapil bahwa data sudah update
-8. Order ID CXT/CXO (Pengecekan OperatorX)
-
-
+1. Nomor By.U : xxxxxx
+2. Email By.U : 
+3. Pulsa awal dan pulsa akhir : 
+4. Tipe Hp : 
+5. Tanggal dan Waktu kejadian : 
+6. Rincian kendala/Capture kendala dan hasil pengecekkan agent : 
         
 `   
 },
@@ -1071,8 +1089,8 @@ Mandatory : `
 
 {
 id: 37,
-case : "Tidak bisa aktivasi NIK invalid Dukcapil",
-Solusi : `Makasih udah nunggu. Kak maaf untuk gabisa aktivasi SIM card nya di nomor xxxx, aku cek NIK Kakak ga terdaftar nih di sistem Dukcapil, Boleh pastiin lagi NIK yang diinputnya sesuai yang di KTP dan pastiin ada 16 digit ya Kak. Kalo masih berkendala dikhawatirkan ada error data dukcapil. Untuk kendala ini silakan kakak bisa update data ke Contact Center Ditjen Dukcapil. Bilang aja mau update data registrasi SIM Card ya.
+case : "Tidak bisa aktivasi NIK invalid Dukcapil/Disdukcapil",
+Solusi : `Makasih udah nunggu. Kak maaf untuk gabisa aktivasi SIM card nya di nomor xxxxxx, aku cek NIK Kakak ga terdaftar nih di sistem Dukcapil, Boleh pastiin lagi NIK yang diinputnya sesuai yang di KTP dan pastiin ada 16 digit ya Kak. Kalo masih berkendala dikhawatirkan ada error data dukcapil. Untuk kendala ini silakan kakak bisa update data ke Contact Center Ditjen Dukcapil. Bilang aja mau update data registrasi SIM Card ya.
 Berikut kontak detailnya dukcapil :
 Hotline : 1500537
 WA : 08118005373
@@ -1085,7 +1103,7 @@ Mandatory : `
 {
 id: 38,
 case : "Tidak bisa aktivasi exceed limit (udah 3 kali percobaan)",
-Solusi : `Makasih udah nunggu. Kak maaf aku cek di nomor xxxxxxx , hari ini udah lebih dari 3 kali nyoba aktivasi. Boleh dicoba lagi besok hari ya. Pastiin saat proses aktivasi sudah terkoneksi ke jaringan by.U - bukan wifi atau jaringan lain, dan NIK-NO.KK yang dimasukkan benar 16 angka. Kalo besok masih belum bisa, jangan coba berulang ya, silahkan konfirmasi lagi biar bisa langsung di proses :)`,
+Solusi : `Makasih udah nunggu. Kak maaf aku cek di nomor xxxxxx , hari ini udah lebih dari 3 kali nyoba aktivasi. Boleh dicoba lagi besok hari ya. Pastiin saat proses aktivasi sudah terkoneksi ke jaringan by.U - bukan wifi atau jaringan lain, dan NIK-NO.KK yang dimasukkan benar 16 angka. Kalo besok masih belum bisa, jangan coba berulang ya, silahkan konfirmasi lagi biar bisa langsung di proses :)`,
 Mandatory : `       
 `   
 },
@@ -1093,18 +1111,18 @@ Mandatory : `
 {
 id: 39,
 case : "Tidak bisa aktivasi maximum NIK",
-Solusi : `Makasih udah nunggu ya Kak, mengenai kendala gagal daftar NIK-NOKK di nomor xxx. Setelah kami cek di sistem rupanya NIK kakak sudah terdaftar di 3 Nomor Telkomsel/ by.U. Untuk case seperti ini jika kakak masih memegang nomor Telkomsel (selain by.U), bisa melakukan unregistrasi sendiri melalui SMS UNREG#NO NIK kirim ke 4444 atau melalui *444#. Jika kakak tidak merasa memiliki 3 Nomor Telkomsel, bisa menghubungi Call Center Telkomsel atau datang ke Grapari agar bisa disolusikan. Jika sudah melakukan UNREG atau melaporkan ke pihak Telkomsel, bisa dicoba lagi pendaftaran NIK-NOKK-nya ya, Kak. Maaf banget, semoga bisa ya Kak 😊
+Solusi : `Makasih udah nunggu ya Kak, mengenai kendala gagal daftar NIK-NOKK di nomor xxxxxx. Setelah kami cek di sistem rupanya NIK kakak sudah terdaftar di 3 Nomor Telkomsel/ by.U. Untuk case seperti ini jika kakak masih memegang nomor Telkomsel (selain by.U), bisa melakukan unregistrasi sendiri melalui SMS UNREG#NO NIK kirim ke 4444 atau melalui *444#. Jika kakak tidak merasa memiliki 3 Nomor Telkomsel, bisa menghubungi Call Center Telkomsel atau datang ke Grapari agar bisa disolusikan. Jika sudah melakukan UNREG atau melaporkan ke pihak Telkomsel, bisa dicoba lagi pendaftaran NIK-NOKK-nya ya, Kak. Maaf banget, semoga bisa ya Kak 😊
 
 
 Untuk mengecek nomor yang terdaftar di NIK nya kalau kakak punya nomor Telkomsel yang data NIK nya sama juga, silakan bisa cek di *444# pilih cek status registrasi ya Kak :)
 
 
 Makasih udah nunggu. Kak maaf kalau udah unreg tapi masih gabisa aktivasi SIM card nya, boleh infoin data ini ya  :
-* NIK :
-* NOKK :
-* Serial Number di cangkang SIM Card :
-* Capture gagal aktivasi SIM Card :
-* Capture bukti sudah melakukan unregistrasi
+1. NIK :
+2. NOKK :
+3. Serial Number di cangkang SIM Card :
+4. Capture gagal aktivasi SIM Card :
+5. Capture bukti sudah melakukan unregistrasi
 
 Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U!
 `,
@@ -1115,17 +1133,288 @@ NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Bisa Aktivasi SIM Card Dengan Keterangan Maximum Number
 
-1. Akun by.U :
-2. Nomor by.U :
-3. Nomor identitas KTP :
-4. NOKK :
-5. Serial Number di cangkang SIM Card :
-6. Capture gagal aktivasi SIM Card :
-7. Capture bukti sudah melakukan unregistrasi :
-8. Order ID CXT/CXO (Pengecekan OperatorX) :
+1. Akun by.U : 
+2. Nomor by.U : xxxxxx
+3. Nomor identitas KTP : 
+4. NOKK : 
+5. Serial Number di cangkang SIM Card : 
+6. Capture gagal aktivasi SIM Card : 
+7. Capture bukti sudah melakukan unregistrasi : 
+8. Order ID CXT/CXO (Pengecekan OperatorX) : 
 `   
 },
 
+{
+id: 40,
+case : "Perubahan Data Pelanggan",
+Solusi : `Makasih udah nunggu. Kak maaf untuk perubahan data NIK nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
+1. Alamat Email login by.U :
+2. NIK & NOK pelanggan baru :
+3. Foto KTP pelanggan baru :
+4. Foto selfie dengan KTP pelanggan baru :
+5. Surat pernyataan yang bisa minta ke email nindy@byu.id :
+6. Validasi tambahan :
+
+Untuk validasi tambahannya bisa infoin salah satu dari data ini ya : 
+1. Tanggal dan jenis paket terakhir yang dibeli :
+2. Jumlah pulsa yang dimiliki sekarang :
+3. Nominal harga paket yang dibeli terakhir :
+4. 5 Transaksi terakhir (minimum 3 transaksi valid) :
+5. Tipe dan merk HP terakhir digunakan :
+Kirim nya ke email nindy@byu.id ya biar aman :)
+
+DISCLAIMER
+
+Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Perubahan data  dengan data :
+1. Nomor by.U : xxxxxx
+2. Email: 
+3. NIK KTP pelanggan baru : 
+4. No KK pelanggan baru   : 
+
+Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
+`,
+Mandatory : `  
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
+Perubahan data pelanggan
+
+1. Nomor by.U : xxxxxx
+2. Alamat Email login by.U : 
+3. nomor identitas & NOK pelanggan baru : 
+4. Foto KTP pelanggan baru : 
+5. Foto selfie dengan KTP pelanggan baru : 
+6. Surat pernyataan : 
+7. Validasi tambahan : 
+`   
+},
+
+{
+id: 41,
+case : "Perubahan Data pindah tangan",
+Solusi : `Makasih udah nunggu. Kak maaf untuk perubahan data NIK nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
+1. Alamat Email login by.U :
+2. NIK & NOK pelanggan lama :
+3. NIK & NOK pelanggan baru :
+4. Foto KTP pelanggan lama :
+5. Foto KTP pelanggan baru :
+6. Foto selfie dengan KTP pelanggan baru :
+7. Surat pernyataan yang bisa minta ke email nindy@byu.id :
+Kirimnya ke email nindy@byu.id aja ya biar aman :)
+
+
+DISCLAIMER
+
+Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Perubahan data karena pindah tangan dengan data :
+1. Nomor by.U : xxxxxx
+2. Email: 
+3. NIK KTP pelanggan baru : 
+4. No KK pelanggan baru   : 
+
+Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
+`,
+Mandatory : `  
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
+Perubahan data pelanggan pindah tangan pindah tangan
+
+1. Nomor by.U : xxxxxx
+2. Alamat Email login by.U : 
+3. Nomor identitas pelanggan lama : 
+4. NOK pelanggan lama : 
+5. Nomor identitas pelanggan baru : 
+6. NOK pelanggan baru : 
+7. Foto KTP pelanggan lama : 
+8. Foto KTP pelanggan baru : 
+9. Foto selfie dengan KTP pelanggan baru : 
+10. Surper : 
+`   
+},
+
+{
+id: 42,
+case : "PUK",
+Solusi : `Makasih udah nunggu. Kak untuk permintaan kode PUK di nomor xxxxxx , boleh infoin data ini ya biar bisa aku bantu :
+1. Alamat email akun by.U :
+2. NIK yang terdaftar :
+
+Makasih udah nunggu. Kak untuk permintaan kode PUK di nomor xxxxxx , boleh infoin data ini ya biar bisa aku bantu :
+1. validasi tambahan :
+2. NIK yang terdaftar :
+
+Untuk validasi tambahannya Kakak bisa isi salah satu dari data ini ya : 
+1. Tanggal dan jenis paket terakhir yang dibeli.
+2. Jumlah pulsa yang dimiliki sekarang.
+3. Nominal harga paket yang dibeli terakhir.
+4. 5 Transaksi terakhir (minimum 3 transaksi valid)
+5. Tipe dan merk HP terakhir digunakan.
+
+
+Makasih udah nunggu. Kak untuk permintaan kode PUK 1 di nomor xxxxxx adalah 1111111. Silakan bisa input PUK 1 dan diikuti memasukkan PIN baru 4 digit angka secara acak dan mudah diingat. Untuk syarat dan ketentuannya sebagai berikut Kak:
+a. Batas maksimal memasukkan PUK adalah 10 kali
+b. Setelah 10 kali gagal, pelanggan diharuskan ganti kartu. Pastikan menginputnya sesuai dengan PUK yang diberikan
+c. Kode PUK tidak akan berubah, Kakak bisa menyimpan kode PUK jika diperlukan kembali. Semoga berhasil Kak :)
+
+`,
+Mandatory : `  
+`   
+},
+
+{
+id: 43,
+case : "Tidak dapat langganan ZOOM Premium",
+Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Zoom nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
+1. Email akun by.U :
+2. Capture detail riwayat transaksi pembelian topping Zoom :
+3. Email yang didaftarkan pada pentautan Link Zoom :
+4. Tipe topping Zoom yang dibeli :
+5. Capture SMS dari TSELZOOM :
+6. Capture halaman profil di aplikasi web ZOOM :
+
+`,
+Mandatory : ` 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
+Tidak dapat langganan ZOOM Premium
+
+1. Email by.U : 
+2. Nomor by.U : xxxxxx
+3. Capture detail riwayat transaksi pembelian topping Zoom : 
+4. Email yang didaftarkan pada pentautan Link Zoom : 
+5. Tipe topping Zoom yang dibeli : 
+6. Capture SMS dari TSELZOOM : 
+7. Capture halaman profil di aplikasi web ZOOM : 
+`   
+},
+
+{
+id: 44,
+case : "Tidak dapat langganan Netflix",
+Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Netflix nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
+1. Email akun by.U :
+2. Tanggal pembelian paket :
+3. Capture sms dari Netlfix atau 9943 (kalau ada) :
+4. Capture notifikasi berhasil aktivasi di aplikasi :
+5. Capture kendala :
+
+`,
+Mandatory : ` 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
+Tidak dapat langganan Netflix
+
+1. Nomor by.U : xxxxxx
+2. Email : 
+3. Tanggal pembelian paket : 
+4. Capture sms dari Netlfix atau 9943 : 
+5. Capture notifikasi berhasil aktivasi : 
+6. Capture kendala : 
+7. Order detail ID (CXO) (Pengecekan OperatorX) : 
+8. Transaction ID (CXT) (Pengecekan OperatorX) : 
+`   
+},
+
+{
+id: 45,
+case : "Tidak dapat langganan Vidio",
+Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Vidio nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
+1. Email akun by.U :
+2. Capture detail riwayat transaksi pembelian topping Vidio :
+3. Tipe topping Vidio yang dibeli :
+4. Capture SMS dari 97080 :
+5. Capture halaman paket subscription di aplikasi Vidio :
+
+`,
+Mandatory : ` 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
+Tidak dapat langganan Vidio
+
+1. Email by.U : 
+2. Nomor by.U : xxxxxx
+3. Capture detail riwayat transaksi pembelian topping Vidio : 
+4. Tipe topping Vidio yang dibeli : 
+5. Capture SMS dari 97080 : 
+6. Capture halaman paket subscription di aplikasi Vidio : 
+7. Order detail ID (CXO) (Pengecekan OperatorX) : 
+8. Transaction ID (CXT) (Pengecekan OperatorX) : 
+`   
+},
+
+{
+id: 46,
+case : "Tidak dapat kuota Birthday reward",
+Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat kuota bonus birthday di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
+1. Email akun by.U :
+2. Capture profile di aplikasi by.U :
+3. Capture halaman notifikasi di apps by.U :
+4. Capture halaman paket aktif :
+
+`,
+Mandatory : ` 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
+Tidak Mendapatkan Kuota Birthday Reward
+
+1. Nomor by.U : xxxxxx
+2. Akun by.U : 
+3. Capture profile di aplikasi by.U : 
+4. Capture halaman notifikasi di apps by.U : 
+5. Capture halaman paket aktif : 
+6. Hasil pengecekan Add Ons di CRM (berupa text dan tidak boleh printscreen) : 
+`   
+},
+
+{
+id: 47,
+case : "IRENEW Voucher fisik",
+Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
+1. Email akun by.U :
+2. Nama Paket Kuota :
+3. Kode hasil Gesek Voucher Fisik :
+4. Serial Number Voucher Fisik :
+5. Capture keterangan gagal redeem voucher :
+
+`,
+Mandatory : ` 
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
+Masalah Pembelian Kuota Via Tukar Kode Voucher 
+
+1. Nomor by.U : xxxxxx
+2. Email by.U : 
+3. Nama Paket Kuota : 
+4. Kode hasil Gesek Voucher Fisik : 
+5. Serial Number Voucher Fisik : 
+6. Capture keterangan gagal redeem voucher : 
+7. Foto Voucher Fisik : (untuk kendala voucher fisik rusak (nomor voucher tidak terlihat atau hilang)
+8. Order detail ID (CXO) (Pengecekan OperatorX) : 
+9. Transaction ID (CXT) (Pengecekan OperatorX) : 
+10. Tanggal dan waktu kejadian : 
+`   
+},
+
+{
+id: 48,
+case : "Sponsorship/kerjasama",
+Solusi : ` Makasih udah nunggu Kak :) Mengenai pengajuan sponsorship atau kerjasama proposalnya bisa langsung dikirim ke email nindy@byu.id ya, have a good day :)
+
+`,
+Mandatory : ``
+},
 
 ]
 return Mandatory
