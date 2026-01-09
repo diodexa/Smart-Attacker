@@ -28,9 +28,8 @@ const TemplatePages = () => {
                 {[0,1].map(col => {
                     const index = row * 2 + col;
                     return (
-                        <div className="relative w-full">
+                        <div className="relative w-full" key={index}>
                             <textarea
-                            key={index}
                             value={Templates[index]}
                             onChange={(e) => handleChange(index, e.target.value)}
                             onClick={() => {

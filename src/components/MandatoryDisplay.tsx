@@ -8,7 +8,6 @@ interface Props {
 }
 
 
-
 const MandatoryDisplay = ({ value, onChange }: Props) => {
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
   const cursorRef = useRef<number | null>(null);

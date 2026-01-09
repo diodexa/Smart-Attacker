@@ -16,6 +16,7 @@ export const DataMandatory = () => {
     return`${date} `
 }  
 
+
 const Mandatory = [{ 
 id: 1 ,
 case : "Internet Lambat",
@@ -402,7 +403,7 @@ Tidak Ada Sinyal/Blankspot & Sinyal Lemah/Tidak Stabil
 
 {
 id: 12,
-case : "permintaan Ganti SIM Card active",
+case : "Ganti SIM Card active",
 Solusi : `Makasih udah nunggu. Kak untuk permintaan ganti SIM Card, bisa dilakukan selama nomornya aktif ya. Silakan Kakak bisa lakukan prosesnya diApps by.U yaa, berikut cara melakukan permintaan ganti SIM Card-nya ya:
 1. Pastiin Versi aplikasi sudah yang terbaru yaa
 2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak (bukan pakai nomor by.U)
@@ -754,7 +755,7 @@ Tidak Bisa akses internet
 {
 id: 25,
 case : "Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy (indomaret)",
-Solusi : ``,
+Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku`,
 Mandatory : `
 #Pelangganbyu
 [byU igdm] 
@@ -841,7 +842,8 @@ Ketidaksesuaian Penggunaan Kuota
 id: 28,
 case : "Tidak bisa login dengan Nomor BYU / terima kode OTP pakai nomor by.U",
 Solusi : `
-Makasih udah nunggu. Kak maaf untuk kendala gabisa login apps by.U, jika SIM Card dan aplikasi by.U berada di gadget yang sama dan menggunakan jaringan by.U, seharusnya login akan terjadi otomatis, kecuali jika tidak ada koneksi. Jika memang diperlukan login manual, boleh dipastikan bahwa OS gadget yang Kakak pake adalah OS yang terupdate dan pastikan juga koneksi internetnya berjalan dengan baik. Dicoba ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih ga bisa, dicoba install ulang aplikasi by.U kakak dan di cek juga di HP lain sebagai perbandingan ya :) Pastiin setting dengan memilih menu Setting > pilih manager aplikasi > all > messaging > send premium sms > always allow dan pastikan juga untuk nomor pusat sudah diisi dengan angka +6281100000 disettingan sms HP ya, karena kalau belum disetting itu akan berpengaruh terhadap diterimanya OTP.
+Makasih udah nunggu. Kak maaf untuk kendala gabisa login apps by.U di nomor xxxxxx, jika SIM Card dan aplikasi by.U berada di gadget yang sama dan menggunakan jaringan by.U, seharusnya login akan terjadi otomatis, kecuali jika tidak ada koneksi. Jika memang diperlukan login manual, boleh dipastikan bahwa OS gadget yang Kakak pake adalah OS yang terupdate dan pastikan juga koneksi internetnya berjalan dengan baik. Dicoba ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih ga bisa, dicoba install ulang aplikasi by.U kakak dan di cek juga di HP lain sebagai perbandingan ya :) 
+Pastiin setting dengan memilih menu Setting > pilih manager aplikasi > all > messaging > send premium sms > always allow dan pastikan juga untuk nomor pusat sudah diisi dengan angka +6281100000 disettingan sms HP ya, karena kalau belum disetting itu akan berpengaruh terhadap diterimanya OTP.
 Kakak bisa juga coba login menggunakan email akun by.U ya :) Semoga membantu :)`,
 Mandatory : `
 #Pelangganbyu
@@ -864,8 +866,14 @@ Tidak bisa login dengan Nomor BYU
 
 {
 id: 29,
-case : "Tidak Mendapatkan Voucher Non-Telco",
-Solusi : ``,
+case : "Tidak Mendapatkan Voucher Non-Telco uCoin",
+Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+1. Email akun by.U : 
+2. Jenis voucher yang ditukarkan : 
+3. Tanggal penukaran U-Coin : 
+4. Capture bukti redeem di halaman Reward Saya : 
+5. Capture kendala penukaran : 
+ `,
 Mandatory : `
 #Pelangganbyu
 [byU igdm] 
@@ -885,7 +893,19 @@ Tidak Mendapatkan Voucher Non-Telco
 {
 id: 30,
 case : "Pergantian SIM Card Legacy ditolak GraPARI",
-Solusi : ``,
+Solusi : `Makasih udah nunggu. Kak maaf, untuk ganti SIM card nya karena gabisa di GraPARI di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+1. Nama Pelanggan/pengunjung : 
+2. Email aktif yang bisa dihubungi : 
+3. Nomor lain yang bisa dihubungi : 
+4. Tanggal dan hari mengunjungi GraPARI : 
+5. Nama GraPARI : 
+6. Lokasi GraPARI : (Nama dan nomor Jalan, Kelurahan, Kecamatan, Kota/Kabupaten, Provinsi)
+7. Detail alasan ditolak : 
+8. NIK KTP Valid : 
+9. Foto KTP : 
+10. Foto selfie KTP : 
+Kirimnya ke email nindy@byu.id aja ya biar aman. Kakak bisa infoin email yang dipake watu ngirimnya biar bisa aku cek :)
+`,
 Mandatory : `
 #Pelangganbyu
 [byU igdm] 
@@ -898,7 +918,7 @@ Pergantian SIM Card Legacy ditolak GraPARI
 3. Email aktif dan nomor lain yang bisa dihubungi : 
 4. Tanggal dan hari mengunjungi GraPARI : 
 5. Nama GraPARI : 
-6. Lokasi GraPARI : (Nama dan nomor Jalan, Kelurahan, Kecamatan, Kota/Kabupaten, Provinsi)
+6. Lokasi GraPARI : 
 7. Detail alasan ditolak : 
 8. NIK KTP Valid : 
 9. Foto KTP : 
@@ -941,7 +961,12 @@ eSIM sinyal hilang
 {
 id: 32,
 case : "eSIM  QR tidak tersimpan ",
-Solusi : ``,
+Solusi : `Makasih udah nunggu. Kak maaf untuk barcode/qr eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+1. Akun by.U : 
+2. Nomor yang bisa dihubungi : 
+3. Email yang bisa dihubungi : 
+4. Capture bukti pembayaran : 
+`,
 Mandatory : `
 #Pelangganbyu
 [byU igdm] 
@@ -1192,7 +1217,7 @@ Perubahan data pelanggan
 
 {
 id: 41,
-case : "Perubahan Data pindah tangan",
+case : "Perubahan Data pindah tangan (pindah tangan)",
 Solusi : `Makasih udah nunggu. Kak maaf untuk perubahan data NIK nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
 1. Alamat Email login by.U :
 2. NIK & NOK pelanggan lama :
@@ -1219,7 +1244,7 @@ Mandatory : `
 [byU igdm] 
 NamaPelanggan
 ${getCurrentDateTime()} 
-Perubahan data pelanggan pindah tangan pindah tangan
+Perubahan data pelanggan pindah tangan 
 
 1. Nomor by.U : xxxxxx
 2. Alamat Email login by.U : 
@@ -1244,7 +1269,6 @@ Solusi : `Makasih udah nunggu. Kak untuk permintaan kode PUK di nomor xxxxxx , b
 Makasih udah nunggu. Kak untuk permintaan kode PUK di nomor xxxxxx , boleh infoin data ini ya biar bisa aku bantu :
 1. validasi tambahan :
 2. NIK yang terdaftar :
-
 Untuk validasi tambahannya Kakak bisa isi salah satu dari data ini ya : 
 1. Tanggal dan jenis paket terakhir yang dibeli.
 2. Jumlah pulsa yang dimiliki sekarang.
@@ -1413,9 +1437,65 @@ case : "Sponsorship/kerjasama",
 Solusi : ` Makasih udah nunggu Kak :) Mengenai pengajuan sponsorship atau kerjasama proposalnya bisa langsung dikirim ke email nindy@byu.id ya, have a good day :)
 
 `,
-Mandatory : ``
+Mandatory : `
+`
 },
 
+{
+id: 49,
+case : " SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan / Gagal pairing",
+Solusi : ` Makasih udah nungu. Kak maaf sepertinya ada kendala nih untuk  SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+1. Email akun by.U :
+2. SN kartu pengganti yang ada di dekat barcode cangkang SIM card :
+`,
+Mandatory : `
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
+SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan
+
+1. Nomor by.U : xxxxxx
+2. Akun by.U : 
+3. SN Kartu Pengganti :
+4. Capture SIM Card tidak terdeteksi : (khusus kendala SIM Card tidak terdeteksi dan status aktif. Jika kendalanya gagal pairing/belum dipairing dengan status suspend, maka tidak perlu dimintakan)`
+},
+
+{
+id: 50,
+case : " SIM card Tidak terdeteksi atau swim swap failed",
+Solusi : ` Makasih udah nungu. Kak maaf untuk kendala SIM card nya, aku cek nomor xxxxxx udah gabisa di aktivasi/registrasi karena nomornya udah ga aktif/ga di atifin lebih dari 30 hari dari waktu pembayaran berhasil. Aku saranin beli nomor baru di apps by.U pakai akun baru ya :)
+`,
+Mandatory : `
+#Pelangganbyu
+[byU igdm] 
+NamaPelanggan
+${getCurrentDateTime()} 
+SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan
+
+1. Nomor by.U : xxxxxx
+2. Akun by.U : 
+3. SN Kartu Pengganti :
+4. Capture SIM Card tidak terdeteksi : (khusus kendala SIM Card tidak terdeteksi dan status aktif. Jika kendalanya gagal pairing/belum dipairing dengan status suspend, maka tidak perlu dimintakan)`
+},
+
+{
+id: 51,
+case : " SIM card Deactive",
+Solusi : ` Makasih udah nungu. Kak maaf untuk kendala SIM card nya, aku cek nomor xxxxxx udah gabisa di aktivasi/registrasi karena nomornya udah ga aktif/ga di atifin lebih dari 30 hari dari waktu pembayaran berhasil. Aku saranin beli nomor baru di apps by.U pakai akun baru ya :)
+`,
+Mandatory : `
+`
+},
+
+{
+id: 52,
+case : "Pulsa terpotong karena SMS dari luar negeri",
+Solusi : ` Maaf udah bikin Kakak nunggu ya. Aku cek di sistem untuk nomor xxxxxx ada pengurangan pulsa sebesar Rp500 untuk SMS ke nomor +41415737017. Untuk SMS ini adalah SMS verifikasi dari apps tertentu yang developernya dari luar negeri dan membebankan biaya registrasi ke pulsa customer. Ini settingan dari apps yang terisntall di HP Kakak yang otomatis menarik biaya pulsa ya, bukan settingan dari by.U 🙂
+`,
+Mandatory : `
+`
+},
 ]
 return Mandatory
 }
