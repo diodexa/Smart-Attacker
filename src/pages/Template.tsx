@@ -19,6 +19,7 @@ const TemplatePages = () => {
             updated[index] = value;
             setTemlates(updated);
         };
+
         
             
     return (
@@ -27,6 +28,8 @@ const TemplatePages = () => {
                 <div className="flex" key={row}>
                 {[0,1].map(col => {
                     const index = row * 2 + col;
+                    const shortcutLabel: Record<number, string> = {
+                        0: "F1", 2: "F2", 4: "F3",1: "F4", 3: "F6"};
                     return (
                         <div className="relative w-full" key={index}>
                             <textarea
@@ -41,6 +44,20 @@ const TemplatePages = () => {
                             }}
                             className = {`h-30 w-full border-1 border-solid hover:bg-yellow-200 hover:text-black `}  
                             />
+                            {shortcutLabel[index] && (
+                                <span className="
+                                pointer-events-none
+                                absolute
+                                top-1/2 left-1/2
+                                -translate-x-1/2 -translate-y-1/2
+                                text-6xl font-black
+                                text-black/10
+                                select-none
+                                label
+                                ">
+                                {shortcutLabel[index]}
+                                </span>
+                            )}
                             {activeIndex===index && (
                                 <p className="absolute left-1/2 top-1/2 -translate-1/2 bg-black text-white px-2 py-1 rounded shadow">anjay</p>
                             )}

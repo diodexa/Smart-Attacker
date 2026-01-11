@@ -45,7 +45,7 @@ iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
 Semoga membantu :)`,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Internet Lambat  
@@ -79,7 +79,7 @@ Solusi : ` Makasih udah nunggu. Kak maaf, kalau aku cek ada  masalah di nomor at
 Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U! `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak bisa aktivasi Error Lain 
@@ -111,7 +111,7 @@ Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala aplikasinya di nomor xxxx
 8. Lokasi Kejadian :  `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Bugs Lain 
@@ -141,7 +141,7 @@ Solusi : `Makasih udah nunggu :) Oke Kak maaf. Ini SIM card Kakak di nomor xxxxx
 7. Waktu dan Lama Kejadian :`,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Bugs Ganti Sim Card 
@@ -177,7 +177,7 @@ Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan be
 `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak bisa kirim / Terima SMS 
@@ -213,7 +213,7 @@ Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala teleponnya di nomor xxxxx
 `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak bisa melakukan panggilan on-net & off-net
@@ -250,7 +250,7 @@ Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan be
 `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 TIDAK BISA REQUEST OTP META PRODUCT
@@ -288,7 +288,7 @@ Nomor yang sudah berhasil di unregistrasi ga akan bisa diaktifkan kembali dalam 
 `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Permintaan Deaktivasi SIM Card dan Hapus NIK
@@ -312,7 +312,7 @@ case : "Unreg hapus NIK lupa nomor",
 Solusi : "",
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Permintaan Deaktivasi SIM Card dan Hapus NIK
@@ -337,7 +337,7 @@ case : "Gagal Aktivasi eSIM Account Status Tidak Sesuai",
 Solusi : "",
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Gagal Aktivasi eSIM Account Status Tidak Sesuai
@@ -378,7 +378,7 @@ iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
 Semoga membantu :)`,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Ada Sinyal/Blankspot & Sinyal Lemah/Tidak Stabil
@@ -431,7 +431,7 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Permintaan Ganti SIM Card Active
@@ -459,7 +459,7 @@ Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya d
 `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Keluhan SIM Card Tidak Sampai via JNE ada AWB
@@ -482,7 +482,7 @@ case : "Miskoordinasi JNE ",
 Solusi : "",
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
@@ -502,7 +502,7 @@ case : "IRENEW virtual account Paid ",
 Solusi : "",
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Masalah Pembelian Kuota/Pulsa I RENEW Via VA
@@ -535,7 +535,7 @@ NOKK :
 Silahkan dikonfirmasi ya kak, dengan membalas "benar" atau "setuju"`,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Penyalahgunaan NIK
@@ -557,7 +557,7 @@ case : "Irenew virtual account Unpaid ",
 Solusi : "Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)",
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Masalah Pembelian Kuota/Pulsa I RENEW Via Virtual Account
@@ -586,7 +586,7 @@ Solusi : "",
 Mandatory : `
 [REFUND]
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Permintaan Refund karena kesalahan sistem
@@ -603,7 +603,7 @@ case : "Tidak Mendapatkan Kuota Monthversary  ",
 Solusi : "",
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Mendapatkan Kuota Monthversary 
@@ -634,7 +634,7 @@ Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala fitur banking nya di nomo
 `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 SMS - Gagal Aktivasi M-Banking
@@ -655,7 +655,7 @@ case : "IRENEW OVO/DANA/ShopeePay ",
 Solusi : `Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Masalah Pembelian Kuota/Pulsa I RENEW Via 
@@ -679,7 +679,7 @@ Solusi : `Makasih udah nunggu. Kak maaf untuk kendala gabisa aktivasi/registrasi
 4. CP dan Email yang bisa dihubungi`,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Bisa Aktivasi SIM Card Legacy
@@ -733,7 +733,7 @@ iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
 5. Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.`,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Bisa akses internet
@@ -758,7 +758,7 @@ case : "Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy (indoma
 Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku`,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy
@@ -788,7 +788,7 @@ Solusi : `Makasih udah nunggu ya Kak. Maaf banget nih untuk kendala aktivasi SIM
 Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U!`,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Bisa Aktivasi SIM Card Dengan Kode Error "Asset Not Found" 
@@ -819,7 +819,7 @@ Solusi : `Makasih udah nunggu. Kak maaf untuk kendala penggunaan kuota yang ga s
 `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Ketidaksesuaian Penggunaan Kuota 
@@ -847,7 +847,7 @@ Pastiin setting dengan memilih menu Setting > pilih manager aplikasi > all > mes
 Kakak bisa juga coba login menggunakan email akun by.U ya :) Semoga membantu :)`,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak bisa login dengan Nomor BYU 
@@ -876,7 +876,7 @@ Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx
  `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Mendapatkan Voucher Non-Telco
@@ -908,7 +908,7 @@ Kirimnya ke email nindy@byu.id aja ya biar aman. Kakak bisa infoin email yang di
 `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Pergantian SIM Card Legacy ditolak GraPARI
@@ -941,7 +941,7 @@ Solusi : `Makasih udah nunggu. Kak maaf untuk kendala eSIM nya di nomor xxxxxx, 
 `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 eSIM sinyal hilang
@@ -969,7 +969,7 @@ Solusi : `Makasih udah nunggu. Kak maaf untuk barcode/qr eSIM nya di nomor xxxxx
 `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 eSIM  QR tidak tersimpan 
@@ -1015,7 +1015,7 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Bugs Ganti SIM card
@@ -1057,7 +1057,7 @@ Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif  dan punya kuota roaming, se
 Jika cara di atas sudah dicoba dan akses internet tetap bermasalah, tolong hubungi kita lagi. Terima kasih`,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 DATA - Tidak Bisa Akses Internet di Luar Negeri
@@ -1089,7 +1089,7 @@ Solusi : `Makasih udah nunggu Kak. Maaf nih untuk kendala pulsa yang berkurang t
 `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Pulsa berkurang tib-tiba
@@ -1153,7 +1153,7 @@ Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak.
 `,
 Mandatory : `  
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Bisa Aktivasi SIM Card Dengan Keterangan Maximum Number
@@ -1200,7 +1200,7 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 `,
 Mandatory : `  
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Perubahan data pelanggan
@@ -1241,7 +1241,7 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 `,
 Mandatory : `  
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Perubahan data pelanggan pindah tangan 
@@ -1301,7 +1301,7 @@ Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Zoom nya di no
 `,
 Mandatory : ` 
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak dapat langganan ZOOM Premium
@@ -1329,7 +1329,7 @@ Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Netflix nya di
 `,
 Mandatory : ` 
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak dapat langganan Netflix
@@ -1358,7 +1358,7 @@ Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Vidio nya di n
 `,
 Mandatory : ` 
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak dapat langganan Vidio
@@ -1386,7 +1386,7 @@ Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat kuota bonus birthday di 
 `,
 Mandatory : ` 
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Tidak Mendapatkan Kuota Birthday Reward
@@ -1413,7 +1413,7 @@ Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat kuota dari pengisian di 
 `,
 Mandatory : ` 
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 Masalah Pembelian Kuota Via Tukar Kode Voucher 
@@ -1450,7 +1450,7 @@ Solusi : ` Makasih udah nungu. Kak maaf sepertinya ada kendala nih untuk  SIM ca
 `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan
@@ -1468,7 +1468,7 @@ Solusi : ` Makasih udah nungu. Kak maaf untuk kendala SIM card nya, aku cek nomo
 `,
 Mandatory : `
 #Pelangganbyu
-[byU igdm] 
+[byU Live] 
 NamaPelanggan
 ${getCurrentDateTime()} 
 SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan

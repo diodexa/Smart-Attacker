@@ -23,7 +23,7 @@ const GlobalShortcut = () => {
         if (!saved) return;
 
         const templates: string[] = JSON.parse(saved);
-        const textToCopy = templates[1];
+        const textToCopy = templates[2];
 
         if (textToCopy) {
           navigator.clipboard.writeText(textToCopy);
@@ -36,7 +36,7 @@ const GlobalShortcut = () => {
         if (!saved) return;
 
         const templates: string[] = JSON.parse(saved);
-        const textToCopy = templates[2];
+        const textToCopy = templates[4];
 
         if (textToCopy) {
           navigator.clipboard.writeText(textToCopy);
@@ -49,13 +49,26 @@ const GlobalShortcut = () => {
         if (!saved) return;
 
         const templates: string[] = JSON.parse(saved);
-        const textToCopy = templates[3];
+        const textToCopy = templates[1];
 
         if (textToCopy) {
           navigator.clipboard.writeText(textToCopy);
         }
       }
       
+      if (e.key === "F6") {
+        e.preventDefault(); // ❗ cegah help browser
+
+        const saved = localStorage.getItem("my-templates");
+        if (!saved) return;
+
+        const templates: string[] = JSON.parse(saved);
+        const textToCopy = templates[3];
+
+        if (textToCopy) {
+          navigator.clipboard.writeText(textToCopy);
+        }
+      }
       
     };
 
