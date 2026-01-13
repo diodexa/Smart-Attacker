@@ -14,9 +14,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 `])),$r=function(e,t){var n=e.isFocused,r=e.size,i=e.theme,a=i.colors,o=i.spacing.baseUnit;return h({label:`loadingIndicator`,display:`flex`,transition:`color 150ms`,alignSelf:`center`,fontSize:r,lineHeight:1,marginRight:r,textAlign:`center`,verticalAlign:`middle`},t?{}:{color:n?a.neutral60:a.neutral20,padding:o*2})},ei=function(e){var t=e.delay,n=e.offset;return P(`span`,{css:tn({animation:`${Qr} 1s ease-in-out ${t}ms infinite;`,backgroundColor:`currentColor`,borderRadius:`1em`,display:`inline-block`,marginLeft:n?`1em`:void 0,height:`1em`,verticalAlign:`top`,width:`1em`},``,``)})},ti=function(e){var t=e.innerProps,n=e.isRtl,r=e.size,i=r===void 0?4:r;return P(`div`,E({},F(h(h({},C(e,Br)),{},{innerProps:t,isRtl:n,size:i}),`loadingIndicator`,{indicator:!0,"loading-indicator":!0}),t),P(ei,{delay:0,offset:n}),P(ei,{delay:160,offset:!0}),P(ei,{delay:320,offset:!n}))},ni=function(e,t){var n=e.isDisabled,r=e.isFocused,i=e.theme,a=i.colors,o=i.borderRadius,s=i.spacing;return h({label:`control`,alignItems:`center`,cursor:`default`,display:`flex`,flexWrap:`wrap`,justifyContent:`space-between`,minHeight:s.controlHeight,outline:`0 !important`,position:`relative`,transition:`all 100ms`},t?{}:{backgroundColor:n?a.neutral5:a.neutral0,borderColor:n?a.neutral10:r?a.primary:a.neutral20,borderRadius:o,borderStyle:`solid`,borderWidth:1,boxShadow:r?`0 0 0 1px ${a.primary}`:void 0,"&:hover":{borderColor:r?a.primary:a.neutral30}})},ri=function(e){var t=e.children,n=e.isDisabled,r=e.isFocused,i=e.innerRef,a=e.innerProps,o=e.menuIsOpen;return P(`div`,E({ref:i},F(e,`control`,{control:!0,"control--is-disabled":n,"control--is-focused":r,"control--menu-is-open":o}),a,{"aria-disabled":n||void 0}),t)},ii=[`data`],ai=function(e,t){var n=e.theme.spacing;return t?{}:{paddingBottom:n.baseUnit*2,paddingTop:n.baseUnit*2}},oi=function(e){var t=e.children,n=e.cx,r=e.getStyles,i=e.getClassNames,a=e.Heading,o=e.headingProps,s=e.innerProps,c=e.label,l=e.theme,u=e.selectProps;return P(`div`,E({},F(e,`group`,{group:!0}),s),P(a,E({},o,{selectProps:u,theme:l,getStyles:r,getClassNames:i,cx:n}),c),P(`div`,null,t))},si=function(e,t){var n=e.theme,r=n.colors,i=n.spacing;return h({label:`group`,cursor:`default`,display:`block`},t?{}:{color:r.neutral40,fontSize:`75%`,fontWeight:500,marginBottom:`0.25em`,paddingLeft:i.baseUnit*3,paddingRight:i.baseUnit*3,textTransform:`uppercase`})},ci=function(e){var t=Kn(e);t.data;var n=C(t,ii);return P(`div`,E({},F(e,`groupHeading`,{"group-heading":!0}),n))},li=oi,ui=[`innerRef`,`isDisabled`,`isHidden`,`inputClassName`],di=function(e,t){var n=e.isDisabled,r=e.value,i=e.theme,a=i.spacing,o=i.colors;return h(h({visibility:n?`hidden`:`visible`,transform:r?`translateZ(0)`:``},pi),t?{}:{margin:a.baseUnit/2,paddingBottom:a.baseUnit/2,paddingTop:a.baseUnit/2,color:o.neutral80})},fi={gridArea:`1 / 2`,font:`inherit`,minWidth:`2px`,border:0,margin:0,outline:0,padding:0},pi={flex:`1 1 auto`,display:`inline-grid`,gridArea:`1 / 1 / 2 / 3`,gridTemplateColumns:`0 min-content`,"&:after":h({content:`attr(data-value) " "`,visibility:`hidden`,whiteSpace:`pre`},fi)},mi=function(e){return h({label:`input`,color:`inherit`,background:0,opacity:e?0:1,width:`100%`},fi)},hi=function(e){var t=e.cx,n=e.value,r=Kn(e),i=r.innerRef,a=r.isDisabled,o=r.isHidden,s=r.inputClassName,c=C(r,ui);return P(`div`,E({},F(e,`input`,{"input-container":!0}),{"data-value":n||``}),P(`input`,E({className:t({input:!0},s),ref:i,style:mi(o),disabled:a},c)))},gi=function(e,t){var n=e.theme,r=n.spacing,i=n.borderRadius,a=n.colors;return h({label:`multiValue`,display:`flex`,minWidth:0},t?{}:{backgroundColor:a.neutral10,borderRadius:i/2,margin:r.baseUnit/2})},_i=function(e,t){var n=e.theme,r=n.borderRadius,i=n.colors,a=e.cropWithEllipsis;return h({overflow:`hidden`,textOverflow:a||a===void 0?`ellipsis`:void 0,whiteSpace:`nowrap`},t?{}:{borderRadius:r/2,color:i.neutral80,fontSize:`85%`,padding:3,paddingLeft:6})},vi=function(e,t){var n=e.theme,r=n.spacing,i=n.borderRadius,a=n.colors,o=e.isFocused;return h({alignItems:`center`,display:`flex`},t?{}:{borderRadius:i/2,backgroundColor:o?a.dangerLight:void 0,paddingLeft:r.baseUnit,paddingRight:r.baseUnit,":hover":{backgroundColor:a.dangerLight,color:a.danger}})},yi=function(e){var t=e.children,n=e.innerProps;return P(`div`,n,t)},bi=yi,xi=yi;function Si(e){var t=e.children,n=e.innerProps;return P(`div`,E({role:`button`},n),t||P(Ur,{size:14}))}var Ci=function(e){var t=e.children,n=e.components,r=e.data,i=e.innerProps,a=e.isDisabled,o=e.removeProps,s=e.selectProps,c=n.Container,l=n.Label,u=n.Remove;return P(c,{data:r,innerProps:h(h({},F(e,`multiValue`,{"multi-value":!0,"multi-value--is-disabled":a})),i),selectProps:s},P(l,{data:r,innerProps:h({},F(e,`multiValueLabel`,{"multi-value__label":!0})),selectProps:s},t),P(u,{data:r,innerProps:h(h({},F(e,`multiValueRemove`,{"multi-value__remove":!0})),{},{"aria-label":`Remove ${t||`option`}`},o),selectProps:s}))},wi=function(e,t){var n=e.isDisabled,r=e.isFocused,i=e.isSelected,a=e.theme,o=a.spacing,s=a.colors;return h({label:`option`,cursor:`default`,display:`block`,fontSize:`inherit`,width:`100%`,userSelect:`none`,WebkitTapHighlightColor:`rgba(0, 0, 0, 0)`},t?{}:{backgroundColor:i?s.primary:r?s.primary25:`transparent`,color:n?s.neutral20:i?s.neutral0:`inherit`,padding:`${o.baseUnit*2}px ${o.baseUnit*3}px`,":active":{backgroundColor:n?void 0:i?s.primary:s.primary50}})},Ti=function(e){var t=e.children,n=e.isDisabled,r=e.isFocused,i=e.isSelected,a=e.innerRef,o=e.innerProps;return P(`div`,E({},F(e,`option`,{option:!0,"option--is-disabled":n,"option--is-focused":r,"option--is-selected":i}),{ref:a,"aria-disabled":n},o),t)},Ei=function(e,t){var n=e.theme,r=n.spacing,i=n.colors;return h({label:`placeholder`,gridArea:`1 / 1 / 2 / 3`},t?{}:{color:i.neutral50,marginLeft:r.baseUnit/2,marginRight:r.baseUnit/2})},Di=function(e){var t=e.children,n=e.innerProps;return P(`div`,E({},F(e,`placeholder`,{placeholder:!0}),n),t)},Oi=function(e,t){var n=e.isDisabled,r=e.theme,i=r.spacing,a=r.colors;return h({label:`singleValue`,gridArea:`1 / 1 / 2 / 3`,maxWidth:`100%`,overflow:`hidden`,textOverflow:`ellipsis`,whiteSpace:`nowrap`},t?{}:{color:n?a.neutral40:a.neutral80,marginLeft:i.baseUnit/2,marginRight:i.baseUnit/2})},ki={ClearIndicator:Yr,Control:ri,DropdownIndicator:qr,DownChevron:Wr,CrossIcon:Ur,Group:li,GroupHeading:ci,IndicatorsContainer:Lr,IndicatorSeparator:Zr,Input:hi,LoadingIndicator:ti,Menu:Sr,MenuList:wr,MenuPortal:jr,LoadingMessage:kr,NoOptionsMessage:Or,MultiValue:Ci,MultiValueContainer:bi,MultiValueLabel:xi,MultiValueRemove:Si,Option:Ti,Placeholder:Di,SelectContainer:Nr,SingleValue:function(e){var t=e.children,n=e.isDisabled,r=e.innerProps;return P(`div`,E({},F(e,`singleValue`,{"single-value":!0,"single-value--is-disabled":n}),r),t)},ValueContainer:Fr},Ai=function(e){return h(h({},ki),e.components)},ji=Number.isNaN||function(e){return typeof e==`number`&&e!==e};function Mi(e,t){return!!(e===t||ji(e)&&ji(t))}function Ni(e,t){if(e.length!==t.length)return!1;for(var n=0;n<e.length;n++)if(!Mi(e[n],t[n]))return!1;return!0}function Pi(e,t){t===void 0&&(t=Ni);var n=null;function r(){var r=[...arguments];if(n&&n.lastThis===this&&t(r,n.lastArgs))return n.lastResult;var i=e.apply(this,r);return n={lastResult:i,lastArgs:r,lastThis:this},i}return r.clear=function(){n=null},r}for(var Fi={name:`7pg0cj-a11yText`,styles:`label:a11yText;z-index:9999;border:0;clip:rect(1px, 1px, 1px, 1px);height:1px;width:1px;position:absolute;overflow:hidden;padding:0;white-space:nowrap`},Ii=function(e){return P(`span`,E({css:Fi},e))},I={guidance:function(e){var t=e.isSearchable,n=e.isMulti,r=e.tabSelectsValue,i=e.context,a=e.isInitialFocus;switch(i){case`menu`:return`Use Up and Down to choose options, press Enter to select the currently focused option, press Escape to exit the menu${r?`, press Tab to select the option and exit the menu`:``}.`;case`input`:return a?`${e[`aria-label`]||`Select`} is focused ${t?`,type to refine list`:``}, press Down to open the menu, ${n?` press left to focus selected values`:``}`:``;case`value`:return`Use left and right to toggle between focused values, press Backspace to remove the currently focused value`;default:return``}},onChange:function(e){var t=e.action,n=e.label,r=n===void 0?``:n,i=e.labels,a=e.isDisabled;switch(t){case`deselect-option`:case`pop-value`:case`remove-value`:return`option ${r}, deselected.`;case`clear`:return`All selected options have been cleared.`;case`initial-input-focus`:return`option${i.length>1?`s`:``} ${i.join(`,`)}, selected.`;case`select-option`:return a?`option ${r} is disabled. Select another option.`:`option ${r}, selected.`;default:return``}},onFocus:function(e){var t=e.context,n=e.focused,r=e.options,i=e.label,a=i===void 0?``:i,o=e.selectValue,s=e.isDisabled,c=e.isSelected,l=e.isAppleDevice,u=function(e,t){return e&&e.length?`${e.indexOf(t)+1} of ${e.length}`:``};return t===`value`&&o?`value ${a} focused, ${u(o,n)}.`:t===`menu`&&l?`${a}${`${c?` selected`:``}${s?` disabled`:``}`}, ${u(r,n)}.`:``},onFilter:function(e){var t=e.inputValue;return`${e.resultsMessage}${t?` for search term `+t:``}.`}},L=function(e){var t=e.ariaSelection,n=e.focusedOption,r=e.focusedValue,i=e.focusableOptions,a=e.isFocused,o=e.selectValue,s=e.selectProps,c=e.id,u=e.isAppleDevice,d=s.ariaLiveMessages,f=s.getOptionLabel,p=s.inputValue,m=s.isMulti,g=s.isOptionDisabled,_=s.isSearchable,v=s.menuIsOpen,y=s.options,b=s.screenReaderStatus,x=s.tabSelectsValue,S=s.isLoading,C=s[`aria-label`],w=s[`aria-live`],T=(0,l.useMemo)(function(){return h(h({},I),d||{})},[d]),E=(0,l.useMemo)(function(){var e=``;if(t&&T.onChange){var n=t.option,r=t.options,i=t.removedValue,a=t.removedValues,s=t.value,c=i||n||function(e){return Array.isArray(e)?null:e}(s),l=c?f(c):``,u=r||a||void 0,d=u?u.map(f):[],p=h({isDisabled:c&&g(c,o),label:l,labels:d},t);e=T.onChange(p)}return e},[t,T,g,o,f]),ee=(0,l.useMemo)(function(){var e=``,t=n||r,a=!!(n&&o&&o.includes(n));if(t&&T.onFocus){var s={focused:t,label:f(t),isDisabled:g(t,o),isSelected:a,options:i,context:t===n?`menu`:`value`,selectValue:o,isAppleDevice:u};e=T.onFocus(s)}return e},[n,r,f,g,T,i,o,u]),D=(0,l.useMemo)(function(){var e=``;if(v&&y.length&&!S&&T.onFilter){var t=b({count:i.length});e=T.onFilter({inputValue:p,resultsMessage:t})}return e},[i,p,v,T,y,b,S]),te=t?.action===`initial-input-focus`,ne=(0,l.useMemo)(function(){var e=``;if(T.guidance){var t=r?`value`:v?`menu`:`input`;e=T.guidance({"aria-label":C,context:t,isDisabled:n&&g(n,o),isMulti:m,isSearchable:_,tabSelectsValue:x,isInitialFocus:te})}return e},[C,n,r,m,g,_,v,T,o,x,te]),re=P(l.Fragment,null,P(`span`,{id:`aria-selection`},E),P(`span`,{id:`aria-focused`},ee),P(`span`,{id:`aria-results`},D),P(`span`,{id:`aria-guidance`},ne));return P(l.Fragment,null,P(Ii,{id:c},te&&re),P(Ii,{"aria-live":w,"aria-atomic":`false`,"aria-relevant":`additions text`,role:`log`},a&&!te&&re))},Li=[{base:`A`,letters:`AⒶＡÀÁÂẦẤẪẨÃĀĂẰẮẴẲȦǠÄǞẢÅǺǍȀȂẠẬẶḀĄȺⱯ`},{base:`AA`,letters:`Ꜳ`},{base:`AE`,letters:`ÆǼǢ`},{base:`AO`,letters:`Ꜵ`},{base:`AU`,letters:`Ꜷ`},{base:`AV`,letters:`ꜸꜺ`},{base:`AY`,letters:`Ꜽ`},{base:`B`,letters:`BⒷＢḂḄḆɃƂƁ`},{base:`C`,letters:`CⒸＣĆĈĊČÇḈƇȻꜾ`},{base:`D`,letters:`DⒹＤḊĎḌḐḒḎĐƋƊƉꝹ`},{base:`DZ`,letters:`ǱǄ`},{base:`Dz`,letters:`ǲǅ`},{base:`E`,letters:`EⒺＥÈÉÊỀẾỄỂẼĒḔḖĔĖËẺĚȄȆẸỆȨḜĘḘḚƐƎ`},{base:`F`,letters:`FⒻＦḞƑꝻ`},{base:`G`,letters:`GⒼＧǴĜḠĞĠǦĢǤƓꞠꝽꝾ`},{base:`H`,letters:`HⒽＨĤḢḦȞḤḨḪĦⱧⱵꞍ`},{base:`I`,letters:`IⒾＩÌÍÎĨĪĬİÏḮỈǏȈȊỊĮḬƗ`},{base:`J`,letters:`JⒿＪĴɈ`},{base:`K`,letters:`KⓀＫḰǨḲĶḴƘⱩꝀꝂꝄꞢ`},{base:`L`,letters:`LⓁＬĿĹĽḶḸĻḼḺŁȽⱢⱠꝈꝆꞀ`},{base:`LJ`,letters:`Ǉ`},{base:`Lj`,letters:`ǈ`},{base:`M`,letters:`MⓂＭḾṀṂⱮƜ`},{base:`N`,letters:`NⓃＮǸŃÑṄŇṆŅṊṈȠƝꞐꞤ`},{base:`NJ`,letters:`Ǌ`},{base:`Nj`,letters:`ǋ`},{base:`O`,letters:`OⓄＯÒÓÔỒỐỖỔÕṌȬṎŌṐṒŎȮȰÖȪỎŐǑȌȎƠỜỚỠỞỢỌỘǪǬØǾƆƟꝊꝌ`},{base:`OI`,letters:`Ƣ`},{base:`OO`,letters:`Ꝏ`},{base:`OU`,letters:`Ȣ`},{base:`P`,letters:`PⓅＰṔṖƤⱣꝐꝒꝔ`},{base:`Q`,letters:`QⓆＱꝖꝘɊ`},{base:`R`,letters:`RⓇＲŔṘŘȐȒṚṜŖṞɌⱤꝚꞦꞂ`},{base:`S`,letters:`SⓈＳẞŚṤŜṠŠṦṢṨȘŞⱾꞨꞄ`},{base:`T`,letters:`TⓉＴṪŤṬȚŢṰṮŦƬƮȾꞆ`},{base:`TZ`,letters:`Ꜩ`},{base:`U`,letters:`UⓊＵÙÚÛŨṸŪṺŬÜǛǗǕǙỦŮŰǓȔȖƯỪỨỮỬỰỤṲŲṶṴɄ`},{base:`V`,letters:`VⓋＶṼṾƲꝞɅ`},{base:`VY`,letters:`Ꝡ`},{base:`W`,letters:`WⓌＷẀẂŴẆẄẈⱲ`},{base:`X`,letters:`XⓍＸẊẌ`},{base:`Y`,letters:`YⓎＹỲÝŶỸȲẎŸỶỴƳɎỾ`},{base:`Z`,letters:`ZⓏＺŹẐŻŽẒẔƵȤⱿⱫꝢ`},{base:`a`,letters:`aⓐａẚàáâầấẫẩãāăằắẵẳȧǡäǟảåǻǎȁȃạậặḁąⱥɐ`},{base:`aa`,letters:`ꜳ`},{base:`ae`,letters:`æǽǣ`},{base:`ao`,letters:`ꜵ`},{base:`au`,letters:`ꜷ`},{base:`av`,letters:`ꜹꜻ`},{base:`ay`,letters:`ꜽ`},{base:`b`,letters:`bⓑｂḃḅḇƀƃɓ`},{base:`c`,letters:`cⓒｃćĉċčçḉƈȼꜿↄ`},{base:`d`,letters:`dⓓｄḋďḍḑḓḏđƌɖɗꝺ`},{base:`dz`,letters:`ǳǆ`},{base:`e`,letters:`eⓔｅèéêềếễểẽēḕḗĕėëẻěȅȇẹệȩḝęḙḛɇɛǝ`},{base:`f`,letters:`fⓕｆḟƒꝼ`},{base:`g`,letters:`gⓖｇǵĝḡğġǧģǥɠꞡᵹꝿ`},{base:`h`,letters:`hⓗｈĥḣḧȟḥḩḫẖħⱨⱶɥ`},{base:`hv`,letters:`ƕ`},{base:`i`,letters:`iⓘｉìíîĩīĭïḯỉǐȉȋịįḭɨı`},{base:`j`,letters:`jⓙｊĵǰɉ`},{base:`k`,letters:`kⓚｋḱǩḳķḵƙⱪꝁꝃꝅꞣ`},{base:`l`,letters:`lⓛｌŀĺľḷḹļḽḻſłƚɫⱡꝉꞁꝇ`},{base:`lj`,letters:`ǉ`},{base:`m`,letters:`mⓜｍḿṁṃɱɯ`},{base:`n`,letters:`nⓝｎǹńñṅňṇņṋṉƞɲŉꞑꞥ`},{base:`nj`,letters:`ǌ`},{base:`o`,letters:`oⓞｏòóôồốỗổõṍȭṏōṑṓŏȯȱöȫỏőǒȍȏơờớỡởợọộǫǭøǿɔꝋꝍɵ`},{base:`oi`,letters:`ƣ`},{base:`ou`,letters:`ȣ`},{base:`oo`,letters:`ꝏ`},{base:`p`,letters:`pⓟｐṕṗƥᵽꝑꝓꝕ`},{base:`q`,letters:`qⓠｑɋꝗꝙ`},{base:`r`,letters:`rⓡｒŕṙřȑȓṛṝŗṟɍɽꝛꞧꞃ`},{base:`s`,letters:`sⓢｓßśṥŝṡšṧṣṩșşȿꞩꞅẛ`},{base:`t`,letters:`tⓣｔṫẗťṭțţṱṯŧƭʈⱦꞇ`},{base:`tz`,letters:`ꜩ`},{base:`u`,letters:`uⓤｕùúûũṹūṻŭüǜǘǖǚủůűǔȕȗưừứữửựụṳųṷṵʉ`},{base:`v`,letters:`vⓥｖṽṿʋꝟʌ`},{base:`vy`,letters:`ꝡ`},{base:`w`,letters:`wⓦｗẁẃŵẇẅẘẉⱳ`},{base:`x`,letters:`xⓧｘẋẍ`},{base:`y`,letters:`yⓨｙỳýŷỹȳẏÿỷẙỵƴɏỿ`},{base:`z`,letters:`zⓩｚźẑżžẓẕƶȥɀⱬꝣ`}],Ri=RegExp(`[`+Li.map(function(e){return e.letters}).join(``)+`]`,`g`),zi={},Bi=0;Bi<Li.length;Bi++)for(var Vi=Li[Bi],Hi=0;Hi<Vi.letters.length;Hi++)zi[Vi.letters[Hi]]=Vi.base;var Ui=function(e){return e.replace(Ri,function(e){return zi[e]})},Wi=Pi(Ui),Gi=function(e){return e.replace(/^\s+|\s+$/g,``)},Ki=function(e){return`${e.label} ${e.value}`},qi=function(e){return function(t,n){if(t.data.__isNew__)return!0;var r=h({ignoreCase:!0,ignoreAccents:!0,stringify:Ki,trim:!0,matchFrom:`any`},e),i=r.ignoreCase,a=r.ignoreAccents,o=r.stringify,s=r.trim,c=r.matchFrom,l=s?Gi(n):n,u=s?Gi(o(t)):o(t);return i&&(l=l.toLowerCase(),u=u.toLowerCase()),a&&(l=Wi(l),u=Ui(u)),c===`start`?u.substr(0,l.length)===l:u.indexOf(l)>-1}},Ji=[`innerRef`];function Yi(e){var t=e.innerRef,n=pr(C(e,Ji),`onExited`,`in`,`enter`,`exit`,`appear`);return P(`input`,E({ref:t},n,{css:tn({label:`dummyInput`,background:0,border:0,caretColor:`transparent`,fontSize:`inherit`,gridArea:`1 / 1 / 2 / 3`,outline:0,padding:0,width:1,color:`transparent`,left:-100,opacity:0,position:`relative`,transform:`scale(.01)`},``,``)}))}var Xi=function(e){e.cancelable&&e.preventDefault(),e.stopPropagation()};function Zi(e){var t=e.isEnabled,n=e.onBottomArrive,r=e.onBottomLeave,i=e.onTopArrive,a=e.onTopLeave,o=(0,l.useRef)(!1),s=(0,l.useRef)(!1),c=(0,l.useRef)(0),u=(0,l.useRef)(null),d=(0,l.useCallback)(function(e,t){if(u.current!==null){var c=u.current,l=c.scrollTop,d=c.scrollHeight,f=c.clientHeight,p=u.current,m=t>0,h=d-f-l,g=!1;h>t&&o.current&&(r&&r(e),o.current=!1),m&&s.current&&(a&&a(e),s.current=!1),m&&t>h?(n&&!o.current&&n(e),p.scrollTop=d,g=!0,o.current=!0):!m&&-t>l&&(i&&!s.current&&i(e),p.scrollTop=0,g=!0,s.current=!0),g&&Xi(e)}},[n,r,i,a]),f=(0,l.useCallback)(function(e){d(e,e.deltaY)},[d]),p=(0,l.useCallback)(function(e){c.current=e.changedTouches[0].clientY},[]),m=(0,l.useCallback)(function(e){d(e,c.current-e.changedTouches[0].clientY)},[d]),h=(0,l.useCallback)(function(e){if(e){var t=sr?{passive:!1}:!1;e.addEventListener(`wheel`,f,t),e.addEventListener(`touchstart`,p,t),e.addEventListener(`touchmove`,m,t)}},[m,p,f]),g=(0,l.useCallback)(function(e){e&&(e.removeEventListener(`wheel`,f,!1),e.removeEventListener(`touchstart`,p,!1),e.removeEventListener(`touchmove`,m,!1))},[m,p,f]);return(0,l.useEffect)(function(){if(t){var e=u.current;return h(e),function(){g(e)}}},[t,h,g]),function(e){u.current=e}}var Qi=[`boxSizing`,`height`,`overflow`,`paddingRight`,`position`],$i={boxSizing:`border-box`,overflow:`hidden`,position:`relative`,height:`100%`};function ea(e){e.cancelable&&e.preventDefault()}function ta(e){e.stopPropagation()}function na(){var e=this.scrollTop,t=this.scrollHeight,n=e+this.offsetHeight;e===0?this.scrollTop=1:n===t&&(this.scrollTop=e-1)}function ra(){return`ontouchstart`in window||navigator.maxTouchPoints}var ia=!!(typeof window<`u`&&window.document&&window.document.createElement),aa=0,oa={capture:!1,passive:!1};function sa(e){var t=e.isEnabled,n=e.accountForScrollbars,r=n===void 0?!0:n,i=(0,l.useRef)({}),a=(0,l.useRef)(null),o=(0,l.useCallback)(function(e){if(ia){var t=document.body,n=t&&t.style;if(r&&Qi.forEach(function(e){var t=n&&n[e];i.current[e]=t}),r&&aa<1){var a=parseInt(i.current.paddingRight,10)||0,o=document.body?document.body.clientWidth:0,s=window.innerWidth-o+a||0;Object.keys($i).forEach(function(e){var t=$i[e];n&&(n[e]=t)}),n&&(n.paddingRight=`${s}px`)}t&&ra()&&(t.addEventListener(`touchmove`,ea,oa),e&&(e.addEventListener(`touchstart`,na,oa),e.addEventListener(`touchmove`,ta,oa))),aa+=1}},[r]),s=(0,l.useCallback)(function(e){if(ia){var t=document.body,n=t&&t.style;aa=Math.max(aa-1,0),r&&aa<1&&Qi.forEach(function(e){var t=i.current[e];n&&(n[e]=t)}),t&&ra()&&(t.removeEventListener(`touchmove`,ea,oa),e&&(e.removeEventListener(`touchstart`,na,oa),e.removeEventListener(`touchmove`,ta,oa)))}},[r]);return(0,l.useEffect)(function(){if(t){var e=a.current;return o(e),function(){s(e)}}},[t,o,s]),function(e){a.current=e}}var ca=function(e){var t=e.target;return t.ownerDocument.activeElement&&t.ownerDocument.activeElement.blur()},la={name:`1kfdb0e`,styles:`position:fixed;left:0;bottom:0;right:0;top:0`};function ua(e){var t=e.children,n=e.lockEnabled,r=e.captureEnabled,i=r===void 0?!0:r,a=e.onBottomArrive,o=e.onBottomLeave,s=e.onTopArrive,c=e.onTopLeave,u=Zi({isEnabled:i,onBottomArrive:a,onBottomLeave:o,onTopArrive:s,onTopLeave:c}),d=sa({isEnabled:n});return P(l.Fragment,null,n&&P(`div`,{onClick:ca,css:la}),t(function(e){u(e),d(e)}))}var da={name:`1a0ro4n-requiredInput`,styles:`label:requiredInput;opacity:0;pointer-events:none;position:absolute;bottom:0;left:0;right:0;width:100%`},fa=function(e){var t=e.name,n=e.onFocus;return P(`input`,{required:!0,name:t,tabIndex:-1,"aria-hidden":`true`,onFocus:n,css:da,value:``,onChange:function(){}})};function pa(e){return typeof window<`u`&&window.navigator!=null?e.test(window.navigator.userAgentData?.platform||window.navigator.platform):!1}function ma(){return pa(/^iPhone/i)}function ha(){return pa(/^Mac/i)}function ga(){return pa(/^iPad/i)||ha()&&navigator.maxTouchPoints>1}function _a(){return ma()||ga()}function va(){return ha()||_a()}var ya=function(e){return e.label},ba=function(e){return e.label},xa=function(e){return e.value},Sa=function(e){return!!e.isDisabled},Ca={clearIndicator:Jr,container:Mr,control:ni,dropdownIndicator:Kr,group:ai,groupHeading:si,indicatorsContainer:Ir,indicatorSeparator:Xr,input:di,loadingIndicator:$r,loadingMessage:Dr,menu:yr,menuList:Cr,menuPortal:Ar,multiValue:gi,multiValueLabel:_i,multiValueRemove:vi,noOptionsMessage:Er,option:wi,placeholder:Ei,singleValue:Oi,valueContainer:Pr},wa={primary:`#2684FF`,primary75:`#4C9AFF`,primary50:`#B2D4FF`,primary25:`#DEEBFF`,danger:`#DE350B`,dangerLight:`#FFBDAD`,neutral0:`hsl(0, 0%, 100%)`,neutral5:`hsl(0, 0%, 95%)`,neutral10:`hsl(0, 0%, 90%)`,neutral20:`hsl(0, 0%, 80%)`,neutral30:`hsl(0, 0%, 70%)`,neutral40:`hsl(0, 0%, 60%)`,neutral50:`hsl(0, 0%, 50%)`,neutral60:`hsl(0, 0%, 40%)`,neutral70:`hsl(0, 0%, 30%)`,neutral80:`hsl(0, 0%, 20%)`,neutral90:`hsl(0, 0%, 10%)`},Ta=4,Ea=4,Da={borderRadius:Ta,colors:wa,spacing:{baseUnit:Ea,controlHeight:38,menuGutter:Ea*2}},Oa={"aria-live":`polite`,backspaceRemovesValue:!0,blurInputOnSelect:nr(),captureMenuScroll:!nr(),classNames:{},closeMenuOnSelect:!0,closeMenuOnScroll:!1,components:{},controlShouldRenderValue:!0,escapeClearsValue:!1,filterOption:qi(),formatGroupLabel:ya,getOptionLabel:ba,getOptionValue:xa,isDisabled:!1,isLoading:!1,isMulti:!1,isRtl:!1,isSearchable:!0,isOptionDisabled:Sa,loadingMessage:function(){return`Loading...`},maxMenuHeight:300,minMenuHeight:140,menuIsOpen:!1,menuPlacement:`bottom`,menuPosition:`absolute`,menuShouldBlockScroll:!1,menuShouldScrollIntoView:!rr(),noOptionsMessage:function(){return`No options`},openMenuOnFocus:!1,openMenuOnClick:!0,options:[],pageSize:5,placeholder:`Select...`,screenReaderStatus:function(e){var t=e.count;return`${t} result${t===1?``:`s`} available`},styles:{},tabIndex:0,tabSelectsValue:!0,unstyled:!1};function ka(e,t,n,r){return{type:`option`,data:t,isDisabled:Ba(e,t,n),isSelected:Va(e,t,n),label:Ra(e,t),value:za(e,t),index:r}}function Aa(e,t){return e.options.map(function(n,r){if(`options`in n){var i=n.options.map(function(n,r){return ka(e,n,t,r)}).filter(function(t){return Pa(e,t)});return i.length>0?{type:`group`,data:n,options:i,index:r}:void 0}var a=ka(e,n,t,r);return Pa(e,a)?a:void 0}).filter(cr)}function ja(e){return e.reduce(function(e,t){return t.type===`group`?e.push.apply(e,ue(t.options.map(function(e){return e.data}))):e.push(t.data),e},[])}function Ma(e,t){return e.reduce(function(e,n){return n.type===`group`?e.push.apply(e,ue(n.options.map(function(e){return{data:e.data,id:`${t}-${n.index}-${e.index}`}}))):e.push({data:n.data,id:`${t}-${n.index}`}),e},[])}function Na(e,t){return ja(Aa(e,t))}function Pa(e,t){var n=e.inputValue,r=n===void 0?``:n,i=t.data,a=t.isSelected,o=t.label,s=t.value;return(!Ua(e)||!a)&&Ha(e,{label:o,value:s,data:i},r)}function Fa(e,t){var n=e.focusedValue,r=e.selectValue.indexOf(n);if(r>-1){if(t.indexOf(n)>-1)return n;if(r<t.length)return t[r]}return null}function Ia(e,t){var n=e.focusedOption;return n&&t.indexOf(n)>-1?n:t[0]}var La=function(e,t){return e.find(function(e){return e.data===t})?.id||null},Ra=function(e,t){return e.getOptionLabel(t)},za=function(e,t){return e.getOptionValue(t)};function Ba(e,t,n){return typeof e.isOptionDisabled==`function`?e.isOptionDisabled(t,n):!1}function Va(e,t,n){if(n.indexOf(t)>-1)return!0;if(typeof e.isOptionSelected==`function`)return e.isOptionSelected(t,n);var r=za(e,t);return n.some(function(t){return za(e,t)===r})}function Ha(e,t,n){return e.filterOption?e.filterOption(t,n):!0}var Ua=function(e){var t=e.hideSelectedOptions,n=e.isMulti;return t===void 0?n:t},Wa=1,Ga=function(e){re(n,e);var t=O(n);function n(e){var r;if(ee(this,n),r=t.call(this,e),r.state={ariaSelection:null,focusedOption:null,focusedOptionId:null,focusableOptionsWithIds:[],focusedValue:null,inputIsHidden:!1,isFocused:!1,selectValue:[],clearFocusValueOnUpdate:!1,prevWasFocused:!1,inputIsHiddenAfterUpdate:void 0,prevProps:void 0,instancePrefix:``,isAppleDevice:!1},r.blockOptionHover=!1,r.isComposing=!1,r.commonProps=void 0,r.initialTouchX=0,r.initialTouchY=0,r.openAfterFocus=!1,r.scrollToFocusedOptionOnUpdate=!1,r.userIsDragging=void 0,r.controlRef=null,r.getControlRef=function(e){r.controlRef=e},r.focusedOptionRef=null,r.getFocusedOptionRef=function(e){r.focusedOptionRef=e},r.menuListRef=null,r.getMenuListRef=function(e){r.menuListRef=e},r.inputRef=null,r.getInputRef=function(e){r.inputRef=e},r.focus=r.focusInput,r.blur=r.blurInput,r.onChange=function(e,t){var n=r.props,i=n.onChange;t.name=n.name,r.ariaOnChange(e,t),i(e,t)},r.setValue=function(e,t,n){var i=r.props,a=i.closeMenuOnSelect,o=i.isMulti,s=i.inputValue;r.onInputChange(``,{action:`set-value`,prevInputValue:s}),a&&(r.setState({inputIsHiddenAfterUpdate:!o}),r.onMenuClose()),r.setState({clearFocusValueOnUpdate:!0}),r.onChange(e,{action:t,option:n})},r.selectOption=function(e){var t=r.props,n=t.blurInputOnSelect,i=t.isMulti,a=t.name,o=r.state.selectValue,s=i&&r.isOptionSelected(e,o),c=r.isOptionDisabled(e,o);if(s){var l=r.getOptionValue(e);r.setValue(fr(o.filter(function(e){return r.getOptionValue(e)!==l})),`deselect-option`,e)}else if(!c)i?r.setValue(fr([].concat(ue(o),[e])),`select-option`,e):r.setValue(dr(e),`select-option`);else{r.ariaOnChange(dr(e),{action:`select-option`,option:e,name:a});return}n&&r.blurInput()},r.removeValue=function(e){var t=r.props.isMulti,n=r.state.selectValue,i=r.getOptionValue(e),a=n.filter(function(e){return r.getOptionValue(e)!==i}),o=ur(t,a,a[0]||null);r.onChange(o,{action:`remove-value`,removedValue:e}),r.focusInput()},r.clearValue=function(){var e=r.state.selectValue;r.onChange(ur(r.props.isMulti,[],null),{action:`clear`,removedValues:e})},r.popValue=function(){var e=r.props.isMulti,t=r.state.selectValue,n=t[t.length-1],i=t.slice(0,t.length-1),a=ur(e,i,i[0]||null);n&&r.onChange(a,{action:`pop-value`,removedValue:n})},r.getFocusedOptionId=function(e){return La(r.state.focusableOptionsWithIds,e)},r.getFocusableOptionsWithIds=function(){return Ma(Aa(r.props,r.state.selectValue),r.getElementId(`option`))},r.getValue=function(){return r.state.selectValue},r.cx=function(){var e=[...arguments];return Wn.apply(void 0,[r.props.classNamePrefix].concat(e))},r.getOptionLabel=function(e){return Ra(r.props,e)},r.getOptionValue=function(e){return za(r.props,e)},r.getStyles=function(e,t){var n=r.props.unstyled,i=Ca[e](t,n);i.boxSizing=`border-box`;var a=r.props.styles[e];return a?a(i,t):i},r.getClassNames=function(e,t){var n;return(n=r.props.classNames)[e]?.call(n,t)},r.getElementId=function(e){return`${r.state.instancePrefix}-${e}`},r.getComponents=function(){return Ai(r.props)},r.buildCategorizedOptions=function(){return Aa(r.props,r.state.selectValue)},r.getCategorizedOptions=function(){return r.props.menuIsOpen?r.buildCategorizedOptions():[]},r.buildFocusableOptions=function(){return ja(r.buildCategorizedOptions())},r.getFocusableOptions=function(){return r.props.menuIsOpen?r.buildFocusableOptions():[]},r.ariaOnChange=function(e,t){r.setState({ariaSelection:h({value:e},t)})},r.onMenuMouseDown=function(e){e.button===0&&(e.stopPropagation(),e.preventDefault(),r.focusInput())},r.onMenuMouseMove=function(e){r.blockOptionHover=!1},r.onControlMouseDown=function(e){if(!e.defaultPrevented){var t=r.props.openMenuOnClick;r.state.isFocused?r.props.menuIsOpen?e.target.tagName!==`INPUT`&&e.target.tagName!==`TEXTAREA`&&r.onMenuClose():t&&r.openMenu(`first`):(t&&(r.openAfterFocus=!0),r.focusInput()),e.target.tagName!==`INPUT`&&e.target.tagName!==`TEXTAREA`&&e.preventDefault()}},r.onDropdownIndicatorMouseDown=function(e){if(!(e&&e.type===`mousedown`&&e.button!==0)&&!r.props.isDisabled){var t=r.props,n=t.isMulti,i=t.menuIsOpen;r.focusInput(),i?(r.setState({inputIsHiddenAfterUpdate:!n}),r.onMenuClose()):r.openMenu(`first`),e.preventDefault()}},r.onClearIndicatorMouseDown=function(e){e&&e.type===`mousedown`&&e.button!==0||(r.clearValue(),e.preventDefault(),r.openAfterFocus=!1,e.type===`touchend`?r.focusInput():setTimeout(function(){return r.focusInput()}))},r.onScroll=function(e){typeof r.props.closeMenuOnScroll==`boolean`?e.target instanceof HTMLElement&&qn(e.target)&&r.props.onMenuClose():typeof r.props.closeMenuOnScroll==`function`&&r.props.closeMenuOnScroll(e)&&r.props.onMenuClose()},r.onCompositionStart=function(){r.isComposing=!0},r.onCompositionEnd=function(){r.isComposing=!1},r.onTouchStart=function(e){var t=e.touches,n=t&&t.item(0);n&&(r.initialTouchX=n.clientX,r.initialTouchY=n.clientY,r.userIsDragging=!1)},r.onTouchMove=function(e){var t=e.touches,n=t&&t.item(0);if(n){var i=Math.abs(n.clientX-r.initialTouchX),a=Math.abs(n.clientY-r.initialTouchY),o=5;r.userIsDragging=i>o||a>o}},r.onTouchEnd=function(e){r.userIsDragging||(r.controlRef&&!r.controlRef.contains(e.target)&&r.menuListRef&&!r.menuListRef.contains(e.target)&&r.blurInput(),r.initialTouchX=0,r.initialTouchY=0)},r.onControlTouchEnd=function(e){r.userIsDragging||r.onControlMouseDown(e)},r.onClearIndicatorTouchEnd=function(e){r.userIsDragging||r.onClearIndicatorMouseDown(e)},r.onDropdownIndicatorTouchEnd=function(e){r.userIsDragging||r.onDropdownIndicatorMouseDown(e)},r.handleInputChange=function(e){var t=r.props.inputValue,n=e.currentTarget.value;r.setState({inputIsHiddenAfterUpdate:!1}),r.onInputChange(n,{action:`input-change`,prevInputValue:t}),r.props.menuIsOpen||r.onMenuOpen()},r.onInputFocus=function(e){r.props.onFocus&&r.props.onFocus(e),r.setState({inputIsHiddenAfterUpdate:!1,isFocused:!0}),(r.openAfterFocus||r.props.openMenuOnFocus)&&r.openMenu(`first`),r.openAfterFocus=!1},r.onInputBlur=function(e){var t=r.props.inputValue;if(r.menuListRef&&r.menuListRef.contains(document.activeElement)){r.inputRef.focus();return}r.props.onBlur&&r.props.onBlur(e),r.onInputChange(``,{action:`input-blur`,prevInputValue:t}),r.onMenuClose(),r.setState({focusedValue:null,isFocused:!1})},r.onOptionHover=function(e){if(!(r.blockOptionHover||r.state.focusedOption===e)){var t=r.getFocusableOptions().indexOf(e);r.setState({focusedOption:e,focusedOptionId:t>-1?r.getFocusedOptionId(e):null})}},r.shouldHideSelectedOptions=function(){return Ua(r.props)},r.onValueInputFocus=function(e){e.preventDefault(),e.stopPropagation(),r.focus()},r.onKeyDown=function(e){var t=r.props,n=t.isMulti,i=t.backspaceRemovesValue,a=t.escapeClearsValue,o=t.inputValue,s=t.isClearable,c=t.isDisabled,l=t.menuIsOpen,u=t.onKeyDown,d=t.tabSelectsValue,f=t.openMenuOnFocus,p=r.state,m=p.focusedOption,h=p.focusedValue,g=p.selectValue;if(!c&&!(typeof u==`function`&&(u(e),e.defaultPrevented))){switch(r.blockOptionHover=!0,e.key){case`ArrowLeft`:if(!n||o)return;r.focusValue(`previous`);break;case`ArrowRight`:if(!n||o)return;r.focusValue(`next`);break;case`Delete`:case`Backspace`:if(o)return;if(h)r.removeValue(h);else{if(!i)return;n?r.popValue():s&&r.clearValue()}break;case`Tab`:if(r.isComposing||e.shiftKey||!l||!d||!m||f&&r.isOptionSelected(m,g))return;r.selectOption(m);break;case`Enter`:if(e.keyCode===229)break;if(l){if(!m||r.isComposing)return;r.selectOption(m);break}return;case`Escape`:l?(r.setState({inputIsHiddenAfterUpdate:!1}),r.onInputChange(``,{action:`menu-close`,prevInputValue:o}),r.onMenuClose()):s&&a&&r.clearValue();break;case` `:if(o)return;if(!l){r.openMenu(`first`);break}if(!m)return;r.selectOption(m);break;case`ArrowUp`:l?r.focusOption(`up`):r.openMenu(`last`);break;case`ArrowDown`:l?r.focusOption(`down`):r.openMenu(`first`);break;case`PageUp`:if(!l)return;r.focusOption(`pageup`);break;case`PageDown`:if(!l)return;r.focusOption(`pagedown`);break;case`Home`:if(!l)return;r.focusOption(`first`);break;case`End`:if(!l)return;r.focusOption(`last`);break;default:return}e.preventDefault()}},r.state.instancePrefix=`react-select-`+(r.props.instanceId||++Wa),r.state.selectValue=Gn(e.value),e.menuIsOpen&&r.state.selectValue.length){var i=r.getFocusableOptionsWithIds(),a=r.buildFocusableOptions(),o=a.indexOf(r.state.selectValue[0]);r.state.focusableOptionsWithIds=i,r.state.focusedOption=a[o],r.state.focusedOptionId=La(i,a[o])}return r}return te(n,[{key:`componentDidMount`,value:function(){this.startListeningComposition(),this.startListeningToTouch(),this.props.closeMenuOnScroll&&document&&document.addEventListener&&document.addEventListener(`scroll`,this.onScroll,!0),this.props.autoFocus&&this.focusInput(),this.props.menuIsOpen&&this.state.focusedOption&&this.menuListRef&&this.focusedOptionRef&&er(this.menuListRef,this.focusedOptionRef),va()&&this.setState({isAppleDevice:!0})}},{key:`componentDidUpdate`,value:function(e){var t=this.props,n=t.isDisabled,r=t.menuIsOpen,i=this.state.isFocused;(i&&!n&&e.isDisabled||i&&r&&!e.menuIsOpen)&&this.focusInput(),i&&n&&!e.isDisabled?this.setState({isFocused:!1},this.onMenuClose):!i&&!n&&e.isDisabled&&this.inputRef===document.activeElement&&this.setState({isFocused:!0}),this.menuListRef&&this.focusedOptionRef&&this.scrollToFocusedOptionOnUpdate&&(er(this.menuListRef,this.focusedOptionRef),this.scrollToFocusedOptionOnUpdate=!1)}},{key:`componentWillUnmount`,value:function(){this.stopListeningComposition(),this.stopListeningToTouch(),document.removeEventListener(`scroll`,this.onScroll,!0)}},{key:`onMenuOpen`,value:function(){this.props.onMenuOpen()}},{key:`onMenuClose`,value:function(){this.onInputChange(``,{action:`menu-close`,prevInputValue:this.props.inputValue}),this.props.onMenuClose()}},{key:`onInputChange`,value:function(e,t){this.props.onInputChange(e,t)}},{key:`focusInput`,value:function(){this.inputRef&&this.inputRef.focus()}},{key:`blurInput`,value:function(){this.inputRef&&this.inputRef.blur()}},{key:`openMenu`,value:function(e){var t=this,n=this.state,r=n.selectValue,i=n.isFocused,a=this.buildFocusableOptions(),o=e===`first`?0:a.length-1;if(!this.props.isMulti){var s=a.indexOf(r[0]);s>-1&&(o=s)}this.scrollToFocusedOptionOnUpdate=!(i&&this.menuListRef),this.setState({inputIsHiddenAfterUpdate:!1,focusedValue:null,focusedOption:a[o],focusedOptionId:this.getFocusedOptionId(a[o])},function(){return t.onMenuOpen()})}},{key:`focusValue`,value:function(e){var t=this.state,n=t.selectValue,r=t.focusedValue;if(this.props.isMulti){this.setState({focusedOption:null});var i=n.indexOf(r);r||(i=-1);var a=n.length-1,o=-1;if(n.length){switch(e){case`previous`:o=i===0?0:i===-1?a:i-1;break;case`next`:i>-1&&i<a&&(o=i+1);break}this.setState({inputIsHidden:o!==-1,focusedValue:n[o]})}}}},{key:`focusOption`,value:function(){var e=arguments.length>0&&arguments[0]!==void 0?arguments[0]:`first`,t=this.props.pageSize,n=this.state.focusedOption,r=this.getFocusableOptions();if(r.length){var i=0,a=r.indexOf(n);n||(a=-1),e===`up`?i=a>0?a-1:r.length-1:e===`down`?i=(a+1)%r.length:e===`pageup`?(i=a-t,i<0&&(i=0)):e===`pagedown`?(i=a+t,i>r.length-1&&(i=r.length-1)):e===`last`&&(i=r.length-1),this.scrollToFocusedOptionOnUpdate=!0,this.setState({focusedOption:r[i],focusedValue:null,focusedOptionId:this.getFocusedOptionId(r[i])})}}},{key:`getTheme`,value:function(){return this.props.theme?typeof this.props.theme==`function`?this.props.theme(Da):h(h({},Da),this.props.theme):Da}},{key:`getCommonProps`,value:function(){var e=this.clearValue,t=this.cx,n=this.getStyles,r=this.getClassNames,i=this.getValue,a=this.selectOption,o=this.setValue,s=this.props,c=s.isMulti,l=s.isRtl,u=s.options;return{clearValue:e,cx:t,getStyles:n,getClassNames:r,getValue:i,hasValue:this.hasValue(),isMulti:c,isRtl:l,options:u,selectOption:a,selectProps:s,setValue:o,theme:this.getTheme()}}},{key:`hasValue`,value:function(){return this.state.selectValue.length>0}},{key:`hasOptions`,value:function(){return!!this.getFocusableOptions().length}},{key:`isClearable`,value:function(){var e=this.props,t=e.isClearable,n=e.isMulti;return t===void 0?n:t}},{key:`isOptionDisabled`,value:function(e,t){return Ba(this.props,e,t)}},{key:`isOptionSelected`,value:function(e,t){return Va(this.props,e,t)}},{key:`filterOption`,value:function(e,t){return Ha(this.props,e,t)}},{key:`formatOptionLabel`,value:function(e,t){if(typeof this.props.formatOptionLabel==`function`){var n=this.props.inputValue,r=this.state.selectValue;return this.props.formatOptionLabel(e,{context:t,inputValue:n,selectValue:r})}else return this.getOptionLabel(e)}},{key:`formatGroupLabel`,value:function(e){return this.props.formatGroupLabel(e)}},{key:`startListeningComposition`,value:function(){document&&document.addEventListener&&(document.addEventListener(`compositionstart`,this.onCompositionStart,!1),document.addEventListener(`compositionend`,this.onCompositionEnd,!1))}},{key:`stopListeningComposition`,value:function(){document&&document.removeEventListener&&(document.removeEventListener(`compositionstart`,this.onCompositionStart),document.removeEventListener(`compositionend`,this.onCompositionEnd))}},{key:`startListeningToTouch`,value:function(){document&&document.addEventListener&&(document.addEventListener(`touchstart`,this.onTouchStart,!1),document.addEventListener(`touchmove`,this.onTouchMove,!1),document.addEventListener(`touchend`,this.onTouchEnd,!1))}},{key:`stopListeningToTouch`,value:function(){document&&document.removeEventListener&&(document.removeEventListener(`touchstart`,this.onTouchStart),document.removeEventListener(`touchmove`,this.onTouchMove),document.removeEventListener(`touchend`,this.onTouchEnd))}},{key:`renderInput`,value:function(){var e=this.props,t=e.isDisabled,n=e.isSearchable,r=e.inputId,i=e.inputValue,a=e.tabIndex,o=e.form,s=e.menuIsOpen,c=e.required,u=this.getComponents().Input,d=this.state,f=d.inputIsHidden,p=d.ariaSelection,m=this.commonProps,g=r||this.getElementId(`input`),_=h(h(h({"aria-autocomplete":`list`,"aria-expanded":s,"aria-haspopup":!0,"aria-errormessage":this.props[`aria-errormessage`],"aria-invalid":this.props[`aria-invalid`],"aria-label":this.props[`aria-label`],"aria-labelledby":this.props[`aria-labelledby`],"aria-required":c,role:`combobox`,"aria-activedescendant":this.state.isAppleDevice?void 0:this.state.focusedOptionId||``},s&&{"aria-controls":this.getElementId(`listbox`)}),!n&&{"aria-readonly":!0}),this.hasValue()?p?.action===`initial-input-focus`&&{"aria-describedby":this.getElementId(`live-region`)}:{"aria-describedby":this.getElementId(`placeholder`)});return n?l.createElement(u,E({},m,{autoCapitalize:`none`,autoComplete:`off`,autoCorrect:`off`,id:g,innerRef:this.getInputRef,isDisabled:t,isHidden:f,onBlur:this.onInputBlur,onChange:this.handleInputChange,onFocus:this.onInputFocus,spellCheck:`false`,tabIndex:a,form:o,type:`text`,value:i},_)):l.createElement(Yi,E({id:g,innerRef:this.getInputRef,onBlur:this.onInputBlur,onChange:Hn,onFocus:this.onInputFocus,disabled:t,tabIndex:a,inputMode:`none`,form:o,value:``},_))}},{key:`renderPlaceholderOrValue`,value:function(){var e=this,t=this.getComponents(),n=t.MultiValue,r=t.MultiValueContainer,i=t.MultiValueLabel,a=t.MultiValueRemove,o=t.SingleValue,s=t.Placeholder,c=this.commonProps,u=this.props,d=u.controlShouldRenderValue,f=u.isDisabled,p=u.isMulti,m=u.inputValue,h=u.placeholder,g=this.state,_=g.selectValue,v=g.focusedValue,y=g.isFocused;if(!this.hasValue()||!d)return m?null:l.createElement(s,E({},c,{key:`placeholder`,isDisabled:f,isFocused:y,innerProps:{id:this.getElementId(`placeholder`)}}),h);if(p)return _.map(function(t,o){var s=t===v,u=`${e.getOptionLabel(t)}-${e.getOptionValue(t)}`;return l.createElement(n,E({},c,{components:{Container:r,Label:i,Remove:a},isFocused:s,isDisabled:f,key:u,index:o,removeProps:{onClick:function(){return e.removeValue(t)},onTouchEnd:function(){return e.removeValue(t)},onMouseDown:function(e){e.preventDefault()}},data:t}),e.formatOptionLabel(t,`value`))});if(m)return null;var b=_[0];return l.createElement(o,E({},c,{data:b,isDisabled:f}),this.formatOptionLabel(b,`value`))}},{key:`renderClearIndicator`,value:function(){var e=this.getComponents().ClearIndicator,t=this.commonProps,n=this.props,r=n.isDisabled,i=n.isLoading,a=this.state.isFocused;if(!this.isClearable()||!e||r||!this.hasValue()||i)return null;var o={onMouseDown:this.onClearIndicatorMouseDown,onTouchEnd:this.onClearIndicatorTouchEnd,"aria-hidden":`true`};return l.createElement(e,E({},t,{innerProps:o,isFocused:a}))}},{key:`renderLoadingIndicator`,value:function(){var e=this.getComponents().LoadingIndicator,t=this.commonProps,n=this.props,r=n.isDisabled,i=n.isLoading,a=this.state.isFocused;return!e||!i?null:l.createElement(e,E({},t,{innerProps:{"aria-hidden":`true`},isDisabled:r,isFocused:a}))}},{key:`renderIndicatorSeparator`,value:function(){var e=this.getComponents(),t=e.DropdownIndicator,n=e.IndicatorSeparator;if(!t||!n)return null;var r=this.commonProps,i=this.props.isDisabled,a=this.state.isFocused;return l.createElement(n,E({},r,{isDisabled:i,isFocused:a}))}},{key:`renderDropdownIndicator`,value:function(){var e=this.getComponents().DropdownIndicator;if(!e)return null;var t=this.commonProps,n=this.props.isDisabled,r=this.state.isFocused,i={onMouseDown:this.onDropdownIndicatorMouseDown,onTouchEnd:this.onDropdownIndicatorTouchEnd,"aria-hidden":`true`};return l.createElement(e,E({},t,{innerProps:i,isDisabled:n,isFocused:r}))}},{key:`renderMenu`,value:function(){var e=this,t=this.getComponents(),n=t.Group,r=t.GroupHeading,i=t.Menu,a=t.MenuList,o=t.MenuPortal,s=t.LoadingMessage,c=t.NoOptionsMessage,u=t.Option,d=this.commonProps,f=this.state.focusedOption,p=this.props,m=p.captureMenuScroll,h=p.inputValue,g=p.isLoading,_=p.loadingMessage,v=p.minMenuHeight,y=p.maxMenuHeight,b=p.menuIsOpen,x=p.menuPlacement,S=p.menuPosition,C=p.menuPortalTarget,w=p.menuShouldBlockScroll,T=p.menuShouldScrollIntoView,ee=p.noOptionsMessage,D=p.onMenuScrollToTop,te=p.onMenuScrollToBottom;if(!b)return null;var ne=function(t,n){var r=t.type,i=t.data,a=t.isDisabled,o=t.isSelected,s=t.label,c=t.value,p=f===i,m=a?void 0:function(){return e.onOptionHover(i)},h=a?void 0:function(){return e.selectOption(i)},g=`${e.getElementId(`option`)}-${n}`,_={id:g,onClick:h,onMouseMove:m,onMouseOver:m,tabIndex:-1,role:`option`,"aria-selected":e.state.isAppleDevice?void 0:o};return l.createElement(u,E({},d,{innerProps:_,data:i,isDisabled:a,isSelected:o,key:g,label:s,type:r,value:c,isFocused:p,innerRef:p?e.getFocusedOptionRef:void 0}),e.formatOptionLabel(t.data,`menu`))},re;if(this.hasOptions())re=this.getCategorizedOptions().map(function(t){if(t.type===`group`){var i=t.data,a=t.options,o=t.index,s=`${e.getElementId(`group`)}-${o}`,c=`${s}-heading`;return l.createElement(n,E({},d,{key:s,data:i,options:a,Heading:r,headingProps:{id:c,data:t.data},label:e.formatGroupLabel(t.data)}),t.options.map(function(e){return ne(e,`${o}-${e.index}`)}))}else if(t.type===`option`)return ne(t,`${t.index}`)});else if(g){var ie=_({inputValue:h});if(ie===null)return null;re=l.createElement(s,d,ie)}else{var ae=ee({inputValue:h});if(ae===null)return null;re=l.createElement(c,d,ae)}var oe={minMenuHeight:v,maxMenuHeight:y,menuPlacement:x,menuPosition:S,menuShouldScrollIntoView:T},se=l.createElement(xr,E({},d,oe),function(t){var n=t.ref,r=t.placerProps,o=r.placement,s=r.maxHeight;return l.createElement(i,E({},d,oe,{innerRef:n,innerProps:{onMouseDown:e.onMenuMouseDown,onMouseMove:e.onMenuMouseMove},isLoading:g,placement:o}),l.createElement(ua,{captureEnabled:m,onTopArrive:D,onBottomArrive:te,lockEnabled:w},function(t){return l.createElement(a,E({},d,{innerRef:function(n){e.getMenuListRef(n),t(n)},innerProps:{role:`listbox`,"aria-multiselectable":d.isMulti,id:e.getElementId(`listbox`)},isLoading:g,maxHeight:s,focusedOption:f}),re)}))});return C||S===`fixed`?l.createElement(o,E({},d,{appendTo:C,controlElement:this.controlRef,menuPlacement:x,menuPosition:S}),se):se}},{key:`renderFormField`,value:function(){var e=this,t=this.props,n=t.delimiter,r=t.isDisabled,i=t.isMulti,a=t.name,o=t.required,s=this.state.selectValue;if(o&&!this.hasValue()&&!r)return l.createElement(fa,{name:a,onFocus:this.onValueInputFocus});if(!(!a||r))if(i)if(n){var c=s.map(function(t){return e.getOptionValue(t)}).join(n);return l.createElement(`input`,{name:a,type:`hidden`,value:c})}else{var u=s.length>0?s.map(function(t,n){return l.createElement(`input`,{key:`i-${n}`,name:a,type:`hidden`,value:e.getOptionValue(t)})}):l.createElement(`input`,{name:a,type:`hidden`,value:``});return l.createElement(`div`,null,u)}else{var d=s[0]?this.getOptionValue(s[0]):``;return l.createElement(`input`,{name:a,type:`hidden`,value:d})}}},{key:`renderLiveRegion`,value:function(){var e=this.commonProps,t=this.state,n=t.ariaSelection,r=t.focusedOption,i=t.focusedValue,a=t.isFocused,o=t.selectValue,s=this.getFocusableOptions();return l.createElement(L,E({},e,{id:this.getElementId(`live-region`),ariaSelection:n,focusedOption:r,focusedValue:i,isFocused:a,selectValue:o,focusableOptions:s,isAppleDevice:this.state.isAppleDevice}))}},{key:`render`,value:function(){var e=this.getComponents(),t=e.Control,n=e.IndicatorsContainer,r=e.SelectContainer,i=e.ValueContainer,a=this.props,o=a.className,s=a.id,c=a.isDisabled,u=a.menuIsOpen,d=this.state.isFocused,f=this.commonProps=this.getCommonProps();return l.createElement(r,E({},f,{className:o,innerProps:{id:s,onKeyDown:this.onKeyDown},isDisabled:c,isFocused:d}),this.renderLiveRegion(),l.createElement(t,E({},f,{innerRef:this.getControlRef,innerProps:{onMouseDown:this.onControlMouseDown,onTouchEnd:this.onControlTouchEnd},isDisabled:c,isFocused:d,menuIsOpen:u}),l.createElement(i,E({},f,{isDisabled:c}),this.renderPlaceholderOrValue(),this.renderInput()),l.createElement(n,E({},f,{isDisabled:c}),this.renderClearIndicator(),this.renderLoadingIndicator(),this.renderIndicatorSeparator(),this.renderDropdownIndicator())),this.renderMenu(),this.renderFormField())}}],[{key:`getDerivedStateFromProps`,value:function(e,t){var n=t.prevProps,r=t.clearFocusValueOnUpdate,i=t.inputIsHiddenAfterUpdate,a=t.ariaSelection,o=t.isFocused,s=t.prevWasFocused,c=t.instancePrefix,l=e.options,u=e.value,d=e.menuIsOpen,f=e.inputValue,p=e.isMulti,m=Gn(u),g={};if(n&&(u!==n.value||l!==n.options||d!==n.menuIsOpen||f!==n.inputValue)){var _=d?Na(e,m):[],v=d?Ma(Aa(e,m),`${c}-option`):[],y=r?Fa(t,m):null,b=Ia(t,_);g={selectValue:m,focusedOption:b,focusedOptionId:La(v,b),focusableOptionsWithIds:v,focusedValue:y,clearFocusValueOnUpdate:!1}}var x=i!=null&&e!==n?{inputIsHidden:i,inputIsHiddenAfterUpdate:void 0}:{},S=a,C=o&&s;return o&&!C&&(S={value:ur(p,m,m[0]||null),options:m,action:`initial-input-focus`},C=!s),a?.action===`initial-input-focus`&&(S=null),h(h(h({},g),x),{},{prevProps:e,ariaSelection:S,prevWasFocused:C})}}]),n}(l.Component);Ga.defaultProps=Oa,o();var Ka=(0,l.forwardRef)(function(e,t){var n=T(e);return l.createElement(Ga,E({ref:t},n))});const qa=()=>{let e=()=>{let e=new Date;return`${e.toLocaleDateString(`id-ID`)} ${e.toLocaleTimeString(`id-ID`,{hour:`2-digit`,minute:`2-digit`})}`},t=()=>`${new Date().toLocaleDateString(`id-ID`)} `;return[{id:1,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case : Internet Lambat
-Solusi : 
+Email by.U : -
+Detail case :  Internet Lambat
+Solusi :  
 `,case:`Internet Lambat`,Solusi:`
 Makasih udah nunggu. Kak maaf, untuk kendala internet lambatnya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku cek : 
 1. Email akun by.U : 
@@ -62,9 +62,9 @@ Internet Lambat
 3x24 jam`},{id:2,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case : gabisa aktivasi Error Lain
-Solusi :
+Email by.U : -
+Detail case :  gabisa aktivasi Error Lain
+Solusi : 
 `,case:`Error Lain`,Solusi:` Makasih udah nunggu. Kak maaf, kalau aku cek ada  masalah di nomor atau SIM Card by.U Kakak. Untuk pengecekan lebih lanjut, boleh infoin data ini ya :
 
 1. Nomor Identitas KTP valid :
@@ -92,9 +92,9 @@ Tidak bisa aktivasi Error Lain
 1x24 jam`},{id:3,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case : bugs aplikasi
-Solusi : 
+Email by.U : -
+Detail case :  bugs aplikasi
+Solusi :  
 `,case:`Bugs Lain`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala aplikasinya di nomor xxxxxx, aku cek ga ada info gangguan. Boleh coba dulu untuk ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih gak bisa, boleh coba install ulang aplikasi by.U kakak dan pastikan koneksi internet ada. Kalau di aplikasi masih berkendala, Kakak bisa coba akses di website by.U ya. Kalau udah tapi masih berkendala, boleh infoin data ini ya :
 1. Email akun by.U : 
 2. Tipe/merek Gadget : 
@@ -110,7 +110,7 @@ Pelanggan by.U
 ${e()} 
 Bugs Lain 
 
-1. Email by.U : 
+1. Email by.U : -
 2. Nomor by.U : xxxxxx
 3. Tipe/merek Gadget : 
 4. Versi OS Gadget : 
@@ -122,9 +122,9 @@ Bugs Lain
 `},{id:4,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
+Email by.U : -
 Detail case : bugs ganti sim card
-Solusi : 
+Solusi :  
 `,case:`Bugs Ganti Sim Card`,Solusi:`Makasih udah nunggu :) Oke Kak maaf. Ini SIM card Kakak di nomor xxxxxx harusnya bisa lanjut dengan Kakak pilih menu ganti SIM card di apps, nantinya bakal muncul halaman pengambilan/pengantaran. Coba di clear cache dulu apps nya dan pastiin pakai apps versi terbaru ya. Kalau udah tapi masih ga muncul halaman pengambilan/pengantarannya boleh diinfoin data ini :
 1. Email by.U :
 2. Tipe/merek Gadget :
@@ -139,7 +139,7 @@ Pelanggan by.U
 ${e()} 
 Bugs Ganti Sim Card 
 
-1. Email by.U : 
+1. Email by.U : -
 2. Nomor by.U : xxxxxx
 3. Tipe/merek Gadget : 
 4. Versi OS Gadget : 
@@ -150,9 +150,9 @@ Bugs Ganti Sim Card
 `},{id:5,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
+Email by.U : -
 Detail case : gabisa kirim/terima SMS
-Solusi : 
+Solusi :  
 `,case:`Tidak bisa Kirim/Terima SMS`,Solusi:`Makasih udah nunggu. Kak maaf banget nih untuk kendala SMS nya di nomor xxxxxx. Boleh coba panduan ini dulu ya :
 1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
 2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 *Note: hanya ada di HP android, jika pelanggan sudah infokan tipe HP dan bukan HP android maka settingan ini tidak perlu di infokan ke pelanggan
@@ -189,9 +189,9 @@ Tidak bisa kirim / Terima SMS
 1x24 jam`},{id:6,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
+Email by.U : -
 Detail case : gabisa telepon masuk/keluar
-Solusi :
+Solusi : 
 `,case:`Panggilan Telepon Masuk / Telepon Keluar`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala teleponnya di nomor xxxxxx , boleh  pastiin dulu kakak berada dalam lokasi yang mendapatkan sinyal by.U dan sudah mencoba on-off-kan airplane mode. kalau masih gabisa, boleh infoin data ini ya :
 1. Email akun by.U :
 2. Printscreen dashboard di apps dan keterangan sinyal : 
@@ -224,9 +224,9 @@ Tidak bisa melakukan panggilan on-net & off-net
 1x24 jam`},{id:7,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
+Email by.U : -
 Detail case : ga dapat OTP Whatsapp/Telegram
-Solusi :
+Solusi : 
 `,case:`Tidak bisa request OTP Meta Product`,Solusi:`Kak maaf banget nih untuk kendala kode OTP nya di nomor xxxxxx. Boleh coba panduan ini dulu ya :
 1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
 2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 
@@ -245,7 +245,7 @@ Pelanggan by.U
 ${e()} 
 TIDAK BISA REQUEST OTP META PRODUCT
 
-1. Email by.U : 
+1. Email by.U : -
 2. Nomor by.U : xxxxxx
 3. Waktu Kejadian : 
 4. Nomor lain yang bisa dihubungi : 
@@ -256,9 +256,9 @@ TIDAK BISA REQUEST OTP META PRODUCT
 1x24 jam`},{id:8,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
+Email by.U : -
 Detail case : unreg
-Solusi : 
+Solusi :  
 `,case:`Unreg hapus NIK`,Solusi:`Makasih udah nunggu. Kak maaf untuk unreg/deaktivasi SIM card by.U, bisa melalui aplikasi. Silakan kakak buka halaman profil, pilih menu bantuan, pilih topik Isu SIM, lalu Kakak pilih faq Gimana sih cara unreg SIM Card by.U? Selanjutnya ikuti langkah-langkah pada aplikasi ya.
 1. Masukan SIM Card by.U ke gadget kamu
 2. Matikan WiFi dan pastikan gadget kamu udah nyambung ke jaringan seluler by.U
@@ -282,7 +282,7 @@ Pelanggan by.U
 ${e()} 
 Permintaan Deaktivasi SIM Card dan Hapus NIK
 
-1. Email by.U : 
+1. Email by.U : -
 2. Nomor by.U : xxxxxx
 3. Nomor Identitas KTP : 
 4. Alasan tidak ingin menggunakan by.U lagi : 
@@ -295,9 +295,9 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 1x24 jam`},{id:9,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
+Email by.U : -
 Detail case : unreg
-Solusi : 
+Solusi :  
 `,case:`Unreg hapus NIK lupa nomor`,Solusi:``,Mandatory:`
 #Pelangganbyu
 [byU Live] 
@@ -306,7 +306,7 @@ ${e()}
 Permintaan Deaktivasi SIM Card dan Hapus NIK
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : 
+2. Email by.U : -
 3. Nomor KTP : 
 4. Alasan tidak ingin menggunakan by.U lagi : 
 5. Nomor Kartu Keluarga : 
@@ -319,9 +319,9 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 1x24 jam`},{id:10,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
+Email by.U : -
 Detail case : gabisa aktivasi esim acount
-Solusi :
+Solusi : 
 `,case:`Gagal Aktivasi eSIM Account Status Tidak Sesuai`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala eSIM di nomor xxxxxx , aku cek ada kendala nih dari proses aktivasinya. Boleh infoin data ini ya biar bisa aku proses :
 1.Email akun by.U : 
 2.Nomor yang bisa dihubungi : 
@@ -334,7 +334,7 @@ Pelanggan by.U
 ${e()} 
 Gagal Aktivasi eSIM Account Status Tidak Sesuai
 
-1.Email by.U : 
+1.Email by.U : -
 2.Nomor by.U : xxxxxx
 3.Nomor yang bisa dihubungi : 
 4.Email yang bisa dihubungi : 
@@ -345,9 +345,9 @@ Gagal Aktivasi eSIM Account Status Tidak Sesuai
 1x24 jam`},{id:11,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
+Email by.U : -
 Detail case : Sinyal lemah/tidak stabil
-Solusi : 
+Solusi :  
 `,case:`Sinyal lemah/tidak stabil`,Solusi:`
 Makasih udah nunggu. Kak maaf, untuk kendala sinyalnya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
@@ -392,9 +392,9 @@ Tidak Ada Sinyal/Blankspot & Sinyal Lemah/Tidak Stabil
 1x24 jam`},{id:12,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
+Email by.U : -
 Detail case : ganti sim card
-Solusi : 
+Solusi :  
 `,case:`Ganti SIM Card active`,Solusi:`Makasih udah nunggu. Kak untuk permintaan ganti SIM Card, bisa dilakukan selama nomornya aktif ya. Silakan Kakak bisa lakukan prosesnya diApps by.U yaa, berikut cara melakukan permintaan ganti SIM Card-nya ya:
 1. Pastiin Versi aplikasi sudah yang terbaru yaa
 2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak (bukan pakai nomor by.U)
@@ -437,9 +437,9 @@ Permintaan Ganti SIM Card Active
 `},{id:13,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : misskoordinasi JNE ada AWB
+Solusi : 
 `,case:`Miskoordinasi JNE (AWB)`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari aplikasinya jadinya SIM card Kakak belum di kirimin. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. Nama dan Nomor Penerima :
@@ -454,7 +454,7 @@ ${e()}
 Keluhan SIM Card Tidak Sampai via JNE ada AWB
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : 
+2. Email by.U : -
 3. Nama dan Nomor Penerima : 
 4. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) : 
 5. Capture pengecekan nomor resi di web tracking JNE : 
@@ -465,11 +465,11 @@ Keluhan SIM Card Tidak Sampai via JNE ada AWB
 `},{id:14,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : misskoordinasi ga ada awb
+Solusi : 
 `,case:`Miskoordinasi JNE `,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari aplikasinya jadinya SIM card Kakak belum di kirimin. Boleh infoin data ini ya biar bisa aku proses : 
-1. Email by.U : 
+1. Email by.U : -
 2. Capture bukti pembayaran : 
 3. Nama Penerima : 
 4. Nomor Penerima : 
@@ -482,7 +482,7 @@ ${e()}
 Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : 
+2. Email by.U : -
 3. Capture bukti pembayaran : 
 4. Nama Penerima : 
 5. Nomor Penerima : 
@@ -490,9 +490,9 @@ Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
 `},{id:15,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : irenew va
+Solusi : 
 `,case:`IRENEW virtual account Paid `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,Mandatory:`
 #Pelangganbyu
 [byU Live] 
@@ -501,7 +501,7 @@ ${e()}
 Masalah Pembelian Kuota/Pulsa I RENEW Via VA
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : 
+2. Email by.U : -
 3. Printscreen halaman bukti pembayaran : terlampir
 4. Rincian Keluhan : kuota belum masuk
 5. Order detail ID (CXO) (Pengecekan OperatorX) : -
@@ -515,9 +515,9 @@ paid
 `},{id:16,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : penyalahgunaan nik
+Solusi : 
 `,case:`Penyalahgunaan NIK `,Solusi:` 
 Makasih udah nunggu. Kak maaf untuk permintaan unreg di NIK Kakak boleh infoin aku data ini ya biar bisa aku proses : 
 1. Email Aktif : 
@@ -553,9 +553,9 @@ Penyalahgunaan NIK
 `},{id:17,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : irenew VA unpaid
+Solusi : 
 `,case:`Irenew virtual account Unpaid `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx, boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)
 
 Kak maaf, aku cek transaksi di nomor xxxxxx, ada kendala dari pihak pembayarannya jadinya transaksinya gabisa dilanjutin nih. Boleh infoin data ini ya biar bisa aku proses : 
@@ -571,7 +571,7 @@ ${e()}
 Masalah Pembelian Kuota/Pulsa I RENEW Via Virtual Account
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : 
+2. Email by.U : -
 3. Bukti pembayaran yang tercantum waktu transaksinya : terlampir
 4. Rincian Keluhan : kuota belum masuk, pembayaran berhasil
 5. Order detail ID (CXO) (Pengecekan OperatorX) :
@@ -587,9 +587,9 @@ Unpaid
 `},{id:18,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : refund karena
+Solusi : 
 `,case:`Permintaan Refund karena kesalahan sistem `,Solusi:``,Mandatory:`
 [REFUND]
 #Pelangganbyu
@@ -599,14 +599,14 @@ ${e()}
 Permintaan Refund karena kesalahan sistem
 
 1.Nomor by.U : xxxxxx
-2.Email by.U : 
+2.Email by.U : -
 3.Capture bukti pembayaran : 
 `},{id:19,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : ga dapat kuota Monthversary
+Solusi : 
 `,case:`Tidak Mendapatkan Kuota Monthversary  `,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala ga dapat kuota Monthversary di nomor xxxxxx, boleh infoin aku data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Kuota berapa bulan yang belum didapatkan (3, 6, 9, atau 12 bulan) : 
@@ -631,9 +631,9 @@ Tidak Mendapatkan Kuota Monthversary
 `},{id:20,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : gagal Aktivasi M-Banking
+Solusi : 
 `,case:`SMS - Gagal Aktivasi M-Banking `,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala fitur banking nya di nomor xxxxxx, pastiin cuma ada SIM Card by.U di hp saat aktivasi fitur banking tersebut dan terkoneksi dengan jaringan by.U. Kalau masih tidak bisa, boleh tolong infokan beberapa data berikut agar dapat dibantu pengecekan :
 1. Email akun by.U :
 2. Rincian keluhan :
@@ -659,9 +659,9 @@ SMS - Gagal Aktivasi M-Banking
 `},{id:21,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : irenew
+Solusi : 
 `,case:`IRENEW OVO/DANA/ShopeePay `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,Mandatory:`
 #Pelangganbyu
 [byU Live] 
@@ -670,7 +670,7 @@ ${e()}
 Masalah Pembelian Kuota/Pulsa I RENEW Via 
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : 
+2. Email by.U : -
 3. Capture bukti pembayaran : 
 4. Order detail ID (CXO) (Pengecekan OperatorX)  : 
 5. Transaction ID (CXT) (Pengecekan OperatorX) :
@@ -678,9 +678,9 @@ Masalah Pembelian Kuota/Pulsa I RENEW Via
 `},{id:22,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : gabisa aktivasi legacy
+Solusi : 
 `,case:`Tidak Bisa Aktivasi SIM Card Legacy `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala gabisa aktivasi/registrasi di nomor xxxxxx, aku cek nomornya belum kedaftar di sistem nih yang artinya belum di aktivasi. Kalau nomornya udah sesuai dengan yang di bagian depan bungkus SIM card, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
 1. NIK & NOKK :
 2. Capture Gagal Aktivasi
@@ -704,9 +704,9 @@ Tidak Bisa Aktivasi SIM Card Legacy
 `},{id:23,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : cara aktivasi sim card digital
+Solusi : info cara aktivasi di apps
 `,case:`Cara Aktivasi SIM card Digital `,Solusi:`Aku bantu infoin untuk cara aktivasinya Kakak bisa coba cara berikut ya Kak:
 1. Buka apps, lalu login dengan menggunakan akun yang digunakan pada saat pemesanan kartu by.U > klik tombol aktifin SIM Card,
 2. Pastiin SIM Card di HP hanya ada SIM by.U,
@@ -718,9 +718,9 @@ Semoga berhasil ya Kak, kalau berkendala bisa Kakak coba aktivasi via web byu.id
 `},{id:24,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : gabisa internet
+Solusi : 
 `,case:`Tidak bisa internet`,Solusi:`
 Kak makasih udah nunggu. Maaf nih untuk kendala internet nya di nomor xxxxxx , boleh infoin data ini ya biar bisa aku cek : 
 1. Email akun by.U :
@@ -758,9 +758,9 @@ Tidak Bisa akses internet
 `},{id:25,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : sim card yang didapat legacy
+Solusi : 
 `,case:`Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy (indomaret)`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku`,Mandatory:`
 #Pelangganbyu
 [byU Live] 
@@ -780,9 +780,9 @@ Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy
 `},{id:26,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : gabisa aktivasi asset notfound
+Solusi : 
 `,case:`Tidak Bisa Aktivasi SIM Card Dengan Kode Error Asset Not Found `,Solusi:`Makasih udah nunggu ya Kak. Maaf banget nih untuk kendala aktivasi SIM card nya di nomor xxxxxx, Kalau sudah mencoba lagi dan masih tidak bisa, boleh diinfokan beberapa data berikut ya supaya kami bisa melakukan pengecekan lebih lanjut :
 1. Akun by.U :
 2. NIK :
@@ -808,9 +808,9 @@ Tidak Bisa Aktivasi SIM Card Dengan Kode Error "Asset Not Found"
 `},{id:27,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : kuota tiba-tiba berkurang
+Solusi : 
 `,case:`Ketidaksesuaian Penggunaan Kuota `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala penggunaan kuota yang ga sesuai di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U:
 2. Tanggal waktu kejadian :
@@ -841,9 +841,9 @@ Ketidaksesuaian Penggunaan Kuota
 `},{id:28,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : gabisa login nomor by.U
+Solusi : solusi gabisa login nomor by.u
 `,case:`Tidak bisa login dengan Nomor BYU / terima kode OTP pakai nomor by.U`,Solusi:`
 Makasih udah nunggu. Kak maaf untuk kendala gabisa login apps by.U di nomor xxxxxx, jika SIM Card dan aplikasi by.U berada di gadget yang sama dan menggunakan jaringan by.U, seharusnya login akan terjadi otomatis, kecuali jika tidak ada koneksi. Jika memang diperlukan login manual, boleh dipastikan bahwa OS gadget yang Kakak pake adalah OS yang terupdate dan pastikan juga koneksi internetnya berjalan dengan baik. Dicoba ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih ga bisa, dicoba install ulang aplikasi by.U kakak dan di cek juga di HP lain sebagai perbandingan ya :) 
 Pastiin setting dengan memilih menu Setting > pilih manager aplikasi > all > messaging > send premium sms > always allow dan pastikan juga untuk nomor pusat sudah diisi dengan angka +6281100000 disettingan sms HP ya, karena kalau belum disetting itu akan berpengaruh terhadap diterimanya OTP.
@@ -866,9 +866,9 @@ Tidak bisa login dengan Nomor BYU
 `},{id:29,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : non telco
+Solusi : 
 `,case:`Tidak Mendapatkan Voucher Non-Telco uCoin`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Jenis voucher yang ditukarkan : 
@@ -883,7 +883,7 @@ ${e()}
 Tidak Mendapatkan Voucher Non-Telco
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : 
+2. Email by.U : -
 3. Jenis voucher yang ditukarkan : 
 4. Tanggal penukaran U-Coin : 
 5. Capture bukti redeem di halaman Reward Saya : 
@@ -891,9 +891,9 @@ Tidak Mendapatkan Voucher Non-Telco
 `},{id:30,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : ganti sim card ditolak grapari
+Solusi : 
 `,case:`Pergantian SIM Card Legacy ditolak GraPARI`,Solusi:`Makasih udah nunggu. Kak maaf, untuk ganti SIM card nya karena gabisa di GraPARI di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Nama Pelanggan/pengunjung : 
 2. Email aktif yang bisa dihubungi : 
@@ -927,9 +927,9 @@ Pergantian SIM Card Legacy ditolak GraPARI
 `},{id:31,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : esim sinyal hilang
+Solusi : 
 `,case:`Esim Sinyal hilang`,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. Tipe/Merek Gadget :
@@ -957,10 +957,10 @@ eSIM sinyal hilang
 `},{id:32,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
-`,case:`eSIM  QR tidak tersimpan `,Solusi:`Makasih udah nunggu. Kak maaf untuk barcode/qr eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+Email by.U : -
+Detail case : minta barcode esim
+Solusi : 
+`,case:`eSIM barcode/QR tidak tersimpan `,Solusi:`Makasih udah nunggu. Kak maaf untuk barcode/qr eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Akun by.U : 
 2. Nomor yang bisa dihubungi : 
 3. Email yang bisa dihubungi : 
@@ -983,9 +983,9 @@ eSIM  QR tidak tersimpan
 `},{id:33,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : bugs ganti sim card
+Solusi : 
 `,case:`Bugs Ganti SIM card (mandatory E)`,Solusi:` Makasih udah nunggu. Kak maaf, kalau keterangannya seperti itu, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. Nomor Identitas KTP :
@@ -1018,7 +1018,7 @@ ${e()}
 Bugs Ganti SIM card
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : 
+2. Email by.U : -
 3. Nomor Identitas KTP : 
 4. Scan/Foto KTP Asli : 
 5. Foto selfie dengan KTP Asli : 
@@ -1032,9 +1032,9 @@ Bugs Ganti SIM card
 `},{id:34,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : gabisa internet roaming
+Solusi : 
 `,case:`Keluhan Tidak Bisa Akses Internet di Luar Negeri Roaming`,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
 2. Tanggal dan waktu kejadian sejak kapan :
@@ -1074,9 +1074,9 @@ DATA - Tidak Bisa Akses Internet di Luar Negeri
 `},{id:35,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : pulsa berkurang tiba-tiba
+Solusi : 
 `,case:`Pulsa berkurang tiba-tiba`,Solusi:`Makasih udah nunggu Kak. Maaf nih untuk kendala pulsa yang berkurang tiba-tiba di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun By.U :
 2. Pulsa awal dan pulsa akhir :
@@ -1090,7 +1090,7 @@ ${e()}
 Pulsa berkurang tib-tiba
 
 1. Nomor By.U : xxxxxx
-2. Email By.U : 
+2. Email By.U : -
 3. Pulsa awal dan pulsa akhir : 
 4. Tipe Hp : 
 5. Tanggal dan Waktu kejadian : 
@@ -1099,16 +1099,16 @@ Pulsa berkurang tib-tiba
 `},{id:36,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : gabisa aktivasi sim card legacy
+Solusi : hubungi pihak penjual
 `,case:`Tidak bisa aktivasi inject paket`,Solusi:`Makasih udah nunggu Kak maaf kalau keterangan gabisa aktivasinya seperti itu, Kakak bisa tukerin SIM card nya di tempat Kakak beli/dapetin SIM card nya ya`,Mandatory:`       
 `},{id:37,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : gabisa aktivasi nik invalid
+Solusi : hubungi dukcapil
 `,case:`Tidak bisa aktivasi NIK invalid Dukcapil/Disdukcapil`,Solusi:`Makasih udah nunggu. Kak maaf untuk gabisa aktivasi SIM card nya di nomor xxxxxx, aku cek NIK Kakak ga terdaftar nih di sistem Dukcapil, Boleh pastiin lagi NIK yang diinputnya sesuai yang di KTP dan pastiin ada 16 digit ya Kak. Kalo masih berkendala dikhawatirkan ada error data dukcapil. Untuk kendala ini silakan kakak bisa update data ke Contact Center Ditjen Dukcapil. Bilang aja mau update data registrasi SIM Card ya.
 Berikut kontak detailnya dukcapil :
 Hotline : 1500537
@@ -1143,16 +1143,16 @@ Tidak Bisa Aktivasi SIM Card Dengan Kode Error NIK Tidak Ditemukan
 `},{id:38,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : gabisa aktivasi sim card
+Solusi : diinfoin coba besok
 `,case:`Tidak bisa aktivasi exceed limit (udah 3 kali percobaan)`,Solusi:`Makasih udah nunggu. Kak maaf aku cek di nomor xxxxxx , hari ini udah lebih dari 3 kali nyoba aktivasi. Boleh dicoba lagi besok hari ya. Pastiin saat proses aktivasi sudah terkoneksi ke jaringan by.U - bukan wifi atau jaringan lain, dan NIK-NO.KK yang dimasukkan benar 16 angka. Kalo besok masih belum bisa, jangan coba berulang ya, silahkan konfirmasi lagi biar bisa langsung di proses :)`,Mandatory:`       
 `},{id:39,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : gabisa aktivasi maximum nik
+Solusi : diinfoin unreg nomor telkomsel
 `,case:`Tidak bisa aktivasi maximum NIK`,Solusi:`Makasih udah nunggu ya Kak, mengenai kendala gagal daftar NIK-NOKK di nomor xxxxxx. Setelah kami cek di sistem rupanya NIK kakak sudah terdaftar di 3 Nomor Telkomsel/ by.U. Untuk case seperti ini jika kakak masih memegang nomor Telkomsel (selain by.U), bisa melakukan unregistrasi sendiri melalui SMS UNREG#NO NIK kirim ke 4444 atau melalui *444#. Jika kakak tidak merasa memiliki 3 Nomor Telkomsel, bisa menghubungi Call Center Telkomsel atau datang ke Grapari agar bisa disolusikan. Jika sudah melakukan UNREG atau melaporkan ke pihak Telkomsel, bisa dicoba lagi pendaftaran NIK-NOKK-nya ya, Kak. Maaf banget, semoga bisa ya Kak 😊
 
 
@@ -1185,9 +1185,9 @@ Tidak Bisa Aktivasi SIM Card Dengan Keterangan Maximum Number
 `},{id:40,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : perubahan data pelanggan
+Solusi : 
 `,case:`Perubahan Data Pelanggan`,Solusi:`Makasih udah nunggu. Kak maaf untuk perubahan data NIK nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
 1. Alamat Email login by.U :
 2. NIK & NOK pelanggan baru :
@@ -1230,9 +1230,9 @@ Perubahan data pelanggan
 `},{id:41,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : perubahan data 
+Solusi : 
 `,case:`Perubahan Data pindah tangan (pindah tangan)`,Solusi:`Makasih udah nunggu. Kak maaf untuk perubahan data NIK nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
 1. Alamat Email login by.U :
 2. NIK & NOK pelanggan lama :
@@ -1273,9 +1273,9 @@ Perubahan data pelanggan pindah tangan
 `},{id:42,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : puk
+Solusi : minta data
 `,case:`PUK`,Solusi:`Makasih udah nunggu. Kak untuk permintaan kode PUK di nomor xxxxxx , boleh infoin data ini ya biar bisa aku bantu :
 1. Alamat email akun by.U :
 2. NIK yang terdaftar :
@@ -1300,9 +1300,9 @@ c. Kode PUK tidak akan berubah, Kakak bisa menyimpan kode PUK jika diperlukan ke
 `},{id:43,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : Tidak dapat langganan ZOOM Premium"
+Solusi : 
 `,case:`Tidak dapat langganan ZOOM Premium`,Solusi:` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Zoom nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Capture detail riwayat transaksi pembelian topping Zoom :
@@ -1318,7 +1318,7 @@ Pelanggan by.U
 ${e()} 
 Tidak dapat langganan ZOOM Premium
 
-1. Email by.U : 
+1. Email by.U : -
 2. Nomor by.U : xxxxxx
 3. Capture detail riwayat transaksi pembelian topping Zoom : 
 4. Email yang didaftarkan pada pentautan Link Zoom : 
@@ -1328,9 +1328,9 @@ Tidak dapat langganan ZOOM Premium
 `},{id:44,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : Tidak dapat langganan Netflix
+Solusi : 
 `,case:`Tidak dapat langganan Netflix`,Solusi:` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Netflix nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Tanggal pembelian paket :
@@ -1356,9 +1356,9 @@ Tidak dapat langganan Netflix
 `},{id:45,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : Tidak dapat langganan Vidio
+Solusi : 
 `,case:`Tidak dapat langganan Vidio`,Solusi:` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Vidio nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Capture detail riwayat transaksi pembelian topping Vidio :
@@ -1373,7 +1373,7 @@ Pelanggan by.U
 ${e()} 
 Tidak dapat langganan Vidio
 
-1. Email by.U : 
+1. Email by.U : -
 2. Nomor by.U : xxxxxx
 3. Capture detail riwayat transaksi pembelian topping Vidio : 
 4. Tipe topping Vidio yang dibeli : 
@@ -1384,9 +1384,9 @@ Tidak dapat langganan Vidio
 `},{id:46,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : Tidak dapat kuota Birthday reward
+Solusi : 
 `,case:`Tidak dapat kuota Birthday reward`,Solusi:` Makasih udah nunggu. Kak maaf untuk ga dapat kuota bonus birthday di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Capture profile di aplikasi by.U :
@@ -1409,9 +1409,9 @@ Tidak Mendapatkan Kuota Birthday Reward
 `},{id:47,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : IRENEW Voucher fisik
+Solusi : minta data
 `,case:`IRENEW Voucher fisik`,Solusi:` Makasih udah nunggu. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Nama Paket Kuota :
@@ -1427,7 +1427,7 @@ ${e()}
 Masalah Pembelian Kuota Via Tukar Kode Voucher 
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : 
+2. Email by.U : -
 3. Nama Paket Kuota : 
 4. Kode hasil Gesek Voucher Fisik : 
 5. Serial Number Voucher Fisik : 
@@ -1439,18 +1439,18 @@ Masalah Pembelian Kuota Via Tukar Kode Voucher
 `},{id:48,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : Sponsorship
+Solusi : arahin hubungi email
 `,case:`Sponsorship/kerjasama`,Solusi:` Makasih udah nunggu Kak :) Mengenai pengajuan sponsorship atau kerjasama proposalnya bisa langsung dikirim ke email nindy@byu.id ya, have a good day :)
 
 `,Mandatory:`
 `},{id:49,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : gagal pairing
+Solusi : 
 `,case:` SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan / Gagal pairing`,Solusi:` Makasih udah nungu. Kak maaf sepertinya ada kendala nih untuk  SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. SN kartu pengganti yang ada di dekat barcode cangkang SIM card :
@@ -1467,42 +1467,46 @@ SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan
 4. Capture SIM Card tidak terdeteksi : (khusus kendala SIM Card tidak terdeteksi dan status aktif. Jika kendalanya gagal pairing/belum dipairing dengan status suspend, maka tidak perlu dimintakan)`},{id:50,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
-`,case:` SIM card Tidak terdeteksi atau swim swap failed`,Solusi:` Makasih udah nungu. Kak maaf untuk kendala SIM card nya, aku cek nomor xxxxxx udah gabisa di aktivasi/registrasi karena nomornya udah ga aktif/ga di atifin lebih dari 30 hari dari waktu pembayaran berhasil. Aku saranin beli nomor baru di apps by.U pakai akun baru ya :)
+Email by.U : -
+Detail case : greeting
+Solusi : greeting
+`,case:` greeting`,Solusi:`Kak boleh infoin pertanyaan atau kendalanya lebih detail seputar by.U ya biar bisa aku bantu :)
 `,Mandatory:`
-#Pelangganbyu
-[byU Live] 
-Pelanggan by.U
-${e()} 
-SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan
+https://byu.omnix.co.id/login
 
-1. Nomor by.U : xxxxxx
-2. Akun by.U : 
-3. SN Kartu Pengganti :
-4. Capture SIM Card tidak terdeteksi : (khusus kendala SIM Card tidak terdeteksi dan status aktif. Jika kendalanya gagal pairing/belum dipairing dengan status suspend, maka tidak perlu dimintakan)`},{id:51,Bracket:`#Pelangganbyu
+https://cs.byu.id/id/user/login
+
+https://crm.byu.id/crm/
+
+https://sso.identity.telkomsel.co.id/dsc/
+
+https://sites.google.com/view/modulhappiness
+
+https://docs.google.com/spreadsheets/d/1uZiJ3pb1dVJr3Wvw9-D0mOpevhUOhQ1hX2thMy02WEs/edit?usp=sharing
+
+https://web.telegram.org/k/
+`},{id:51,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case :  sim card deactive
+Solusi : info  sim card deactive
 `,case:` SIM card Deactive`,Solusi:` Makasih udah nungu. Kak maaf untuk kendala SIM card nya, aku cek nomor xxxxxx udah gabisa di aktivasi/registrasi karena nomornya udah ga aktif/ga di atifin lebih dari 30 hari dari waktu pembayaran berhasil. Aku saranin beli nomor baru di apps by.U pakai akun baru ya :)
 `,Mandatory:`
 `},{id:52,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : Pulsa terpotong karena SMS dari luar negeri
+Solusi : info nomor SMS nya
 `,case:`Pulsa terpotong karena SMS dari luar negeri`,Solusi:` Maaf udah bikin Kakak nunggu ya. Aku cek di sistem untuk nomor xxxxxx ada pengurangan pulsa sebesar Rp500 untuk SMS ke nomor +41415737017. Untuk SMS ini adalah SMS verifikasi dari apps tertentu yang developernya dari luar negeri dan membebankan biaya registrasi ke pulsa customer. Ini settingan dari apps yang terisntall di HP Kakak yang otomatis menarik biaya pulsa ya, bukan settingan dari by.U 🙂
 `,Mandatory:`
 `},{id:52,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
-Email by.U : 
-Detail case :
-Solusi :
+Email by.U : -
+Detail case : SIM card tidak terdeteksi"
+Solusi : solusi SIM card tidak terdeteksi"
 `,case:`SIM card tidak terdeteksi`,Solusi:` Makasih udah nunggu. Kak maaf, untuk kendala SIM card yang ga kedeteksi, kalau IMEI nya udah terdaftar tapi masih berkendala, boleh coba panduan ini ya :
 1. Buka dan lepaskan kartu SIM yang tidak terbaca dari slot HP yang tersedia kemudian bersihkan dari debu-debu yang mengganggu kinerja kartu SIM. Selanjutnya aktifkan kembali HP dan tunggu hingga SIM Card menanggapi serta terhubung ke jaringan.
 2. Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.
@@ -1519,7 +1523,7 @@ Solusi :
 `).length&&(n=c(n)),r.current=a,u(n,a),i.current=n},onKeyDown:i=>{if((i.ctrlKey||i.metaKey)&&i.key.toLowerCase()===`z`){if(i.preventDefault(),i.shiftKey){let e=s();e&&(t(e.value),r.current=e.cursor)}else{let e=o();e&&(t(e.value),r.current=e.cursor)}return}if((i.ctrlKey||i.metaKey)&&i.key.toLowerCase()===`y`){i.preventDefault();let e=s();e&&(t(e.value),r.current=e.cursor);return}if(i.key!==`Enter`||i.key==`Enter`&&i.shiftKey)return;let a=(e,t)=>{let n=1;for(let r=t-1;r>=0;r--){let t=e[r].match(/^(\d+)\./);if(e[r].trim()===``)break;if(t){n=Number(t[1])+1;break}}for(let r=t;r<e.length;r++){let t=e[r].match(/^(\d+)\.\s*(.*)/);if(!t||e[r].trim()===``)break;e[r]=`${n}. ${t[2]}`,n++}},c=i.currentTarget.selectionStart,l=e.slice(0,c),d=l.split(`
 `),f=d.length-1,p=d[f].match(/^(\d+)\.\s*/);if(!p)return;i.preventDefault();let m=Number(p[1])+1,h=e.split(`
 `);h.splice(f+1,0,`${m}. `),a(h,f+2);let g=h.join(`
-`),_=l.length+`\n${m}. `.length;l.length+`\n${m}. `.length,u(g,_),t(g),setTimeout(()=>{n.current?.setSelectionRange(_,_)},0)},placeholder:`Pilih dulu kategorinya .....`})},B=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=fo(),c=e=>{let t=e.split(`
+`),_=l.length+`\n${m}. `.length;l.length+`\n${m}. `.length,u(g,_),t(g),setTimeout(()=>{n.current?.setSelectionRange(_,_)},0)},placeholder:`Pilih dulu kategorinya .....`,onClick:e=>{if(!e.ctrlKey)return;let t=e.currentTarget,n=t.value,r=t.selectionStart,i=(n.slice(0,r).split(/\s/).pop()||``)+(n.slice(r).split(/\s/)[0]||``);i.startsWith(`http`)&&window.open(i,`_blank`,`noopener,noreferrer`)}})},B=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=fo(),c=e=>{let t=e.split(`
 `),n=1;for(let e=0;e<t.length;e++){if(t[e].trim()===``){n=1;continue}let r=t[e].match(/^(\d+)\.\s*(.*)/);if(!r){n=1;continue}t[e]=`${n}. ${r[2]}`,n++}return t.join(`
 `)},u=(e,n)=>{a(e,n),t(e),r.current=n};return(0,l.useLayoutEffect)(()=>{r.current!==null&&n.current&&(n.current.setSelectionRange(r.current,r.current),r.current=null)},[e]),(0,R.jsx)(`textarea`,{ref:n,className:`p-2 w-full h-screen border-2 resize-none`,value:e,onChange:e=>{let t=e.target,n=t.value,a=t.selectionStart;n.split(`
 `).length<i.current.split(`
@@ -1527,7 +1531,7 @@ Solusi :
 `),f=d.length-1,p=d[f].match(/^(\d+)\.\s*/);if(!p)return;i.preventDefault();let m=Number(p[1])+1,h=e.split(`
 `);h.splice(f+1,0,`${m}. `),a(h,f+2);let g=h.join(`
 `),_=l.length+`\n${m}. `.length;l.length+`\n${m}. `.length,u(g,_),t(g),setTimeout(()=>{n.current?.setSelectionRange(_,_)},0)},placeholder:`Pilih dulu kategorinya .....`})},V=()=>{let[e,t]=(0,l.useState)(()=>{let e=localStorage.getItem(`selectedId`);return e?Number(e):null}),n=qa().find(t=>t.id===e),[r,i]=(0,l.useState)(``),[a,o]=(0,l.useState)(``);return(0,l.useEffect)(()=>{e!==null&&localStorage.setItem(`selectedId`,String(e))},[e]),(0,l.useEffect)(()=>{n&&(i(n.Mandatory),o([n.Bracket,n.Solusi].filter(Boolean).join(`
-`)))},[e]),(0,l.useEffect)(()=>{let e=async e=>{if(e.ctrlKey&&e.code===`Space`){if(e.preventDefault(),!navigator.clipboard)return;let t=await navigator.clipboard.readText();i(e=>e.replace(/xxxxxx/g,t)),o(e=>e.replace(/xxxxxx/g,t))}};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[]),(0,R.jsxs)(`div`,{className:`flex flex-col w-screen `,children:[(0,R.jsx)(Ya,{onSelect:e=>t(e)}),(0,R.jsxs)(`div`,{className:`flex gap-2`,children:[(0,R.jsxs)(`div`,{className:`w-full`,children:[n&&(0,R.jsx)(z,{text:r}),(0,R.jsx)(po,{selectedId:e,value:r,onChange:i},e)]}),(0,R.jsxs)(`div`,{className:`w-full  `,children:[n&&(0,R.jsx)(z,{text:a}),(0,R.jsx)(B,{value:a,onChange:o},e)]})]})]})},mo=()=>{let[e,t]=(0,l.useState)(null),[n,r]=(0,l.useState)(()=>{let e=localStorage.getItem(`my-templates`);return e?JSON.parse(e):[``,``,``,``,``,``]});(0,l.useEffect)(()=>{localStorage.setItem(`my-templates`,JSON.stringify(n))},[n]);let i=(e,t)=>{let i=[...n];i[e]=t,r(i)};return(0,R.jsx)(`div`,{className:`w-full `,children:[0,1,2,3,4,5,6,7,8,9,10].map(r=>(0,R.jsx)(`div`,{className:`flex`,children:[0,1].map(a=>{let o=r*2+a,s={0:`F1`,2:`F2`,4:`F3`,1:`F4`,3:`F6`};return(0,R.jsxs)(`div`,{className:`relative w-full`,children:[(0,R.jsx)(`textarea`,{value:n[o],onChange:e=>i(o,e.target.value),onClick:()=>{navigator.clipboard.writeText(n[o]),t(o),setTimeout(()=>t(null),500)},className:`h-30 w-full border-1 border-solid hover:bg-yellow-200 hover:text-black `}),s[o]&&(0,R.jsx)(`span`,{className:`\r
+`)))},[e]),(0,l.useEffect)(()=>{let e=async e=>{if(e.ctrlKey&&e.key===`b`){if(e.preventDefault(),!navigator.clipboard)return;let t=await navigator.clipboard.readText();i(e=>e.replace(/xxxxxx/g,t)),o(e=>e.replace(/xxxxxx/g,t))}};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[]),(0,R.jsxs)(`div`,{className:`flex flex-col w-screen `,children:[(0,R.jsx)(Ya,{onSelect:e=>t(e)}),(0,R.jsxs)(`div`,{className:`flex gap-2`,children:[(0,R.jsxs)(`div`,{className:`w-full`,children:[n&&(0,R.jsx)(z,{text:r}),(0,R.jsx)(po,{selectedId:e,value:r,onChange:i},e)]}),(0,R.jsxs)(`div`,{className:`w-full  `,children:[n&&(0,R.jsx)(z,{text:a}),(0,R.jsx)(B,{value:a,onChange:o},e)]})]})]})},mo=()=>{let[e,t]=(0,l.useState)(null),[n,r]=(0,l.useState)(()=>{let e=localStorage.getItem(`my-templates`);return e?JSON.parse(e):[``,``,``,``,``,``]});(0,l.useEffect)(()=>{localStorage.setItem(`my-templates`,JSON.stringify(n))},[n]);let i=(e,t)=>{let i=[...n];i[e]=t,r(i)};return(0,R.jsx)(`div`,{className:`w-full `,children:[0,1,2,3,4,5,6,7,8,9,10].map(r=>(0,R.jsx)(`div`,{className:`flex`,children:[0,1].map(a=>{let o=r*2+a,s={0:`F1`,2:`F2`,4:`F3`,1:`F4`,3:`F6`,5:`F7`};return(0,R.jsxs)(`div`,{className:`relative w-full`,children:[(0,R.jsx)(`textarea`,{value:n[o],onChange:e=>i(o,e.target.value),onClick:()=>{navigator.clipboard.writeText(n[o]),t(o),setTimeout(()=>t(null),500)},className:`h-30 w-full border-1 border-solid hover:bg-yellow-200 hover:text-black `}),s[o]&&(0,R.jsx)(`span`,{className:`\r
                                 pointer-events-none\r
                                 absolute\r
                                 top-1/2 left-1/2\r
@@ -1541,6 +1545,6 @@ Solusi :
 `)};return(0,l.useEffect)(()=>{localStorage.setItem(`my-note`,r)},[r]),(0,l.useLayoutEffect)(()=>{t.current!==null&&e.current&&(e.current.setSelectionRange(t.current,t.current),t.current=null)},[r]),(0,R.jsx)(`textarea`,{ref:e,value:r,onChange:e=>{let r=e.target,o=r.value,s=r.selectionStart,c=n.current.split(`
 `);o.split(`
 `).length<c.length?(t.current=s,i(a(o))):i(o),n.current=o},onKeyDown:e=>{if(e.key!==`Enter`||e.key==`Enter`&&e.shiftKey)return;let n=e.currentTarget.selectionStart,o=r.slice(0,n),s=r.slice(n),c=o.split(`
-`),l=c[c.length-1].match(/^(\d+)\.\s*/);if(!l)return;e.preventDefault();let u=Number(l[1])+1,d=o+`\n${u}. `+s;t.current=o.length+`\n${u}. `.length,i(a(d))},className:`border w-full h-screen p-2`,placeholder:`Isi note kamu.....`})}var yo=()=>((0,l.useEffect)(()=>{let e=e=>{if(e.key===`F1`){e.preventDefault();let t=localStorage.getItem(`my-templates`);if(!t)return;let n=JSON.parse(t)[0];n&&navigator.clipboard.writeText(n)}if(e.key===`F2`){e.preventDefault();let t=localStorage.getItem(`my-templates`);if(!t)return;let n=JSON.parse(t)[2];n&&navigator.clipboard.writeText(n)}if(e.key===`F3`){e.preventDefault();let t=localStorage.getItem(`my-templates`);if(!t)return;let n=JSON.parse(t)[4];n&&navigator.clipboard.writeText(n)}if(e.key===`F4`){e.preventDefault();let t=localStorage.getItem(`my-templates`);if(!t)return;let n=JSON.parse(t)[1];n&&navigator.clipboard.writeText(n)}if(e.key===`F6`){e.preventDefault();let t=localStorage.getItem(`my-templates`);if(!t)return;let n=JSON.parse(t)[3];n&&navigator.clipboard.writeText(n)}};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[]),null);function bo(){let[e,t]=(0,l.useState)(`notepad`);return(0,R.jsxs)(`div`,{className:`flex flex-col `,children:[(0,R.jsx)(yo,{}),(0,R.jsxs)(`div`,{className:`flex gap-2 p-2 border-b`,children:[(0,R.jsx)(`button`,{className:`border px-4 ${e===`notepad`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`notepad`),children:`Notepad`}),(0,R.jsx)(`button`,{className:`border px-4 ${e===`tiket`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`tiket`),children:`Mandatory`}),(0,R.jsx)(`button`,{className:`border px-4 ${e===`Template`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`Template`),children:`Template`}),(0,R.jsxs)(`div`,{className:`absolute right-0 flex gap-1`,children:[(0,R.jsx)(_o,{}),(0,R.jsxs)(`h1`,{className:`text-3xl tracking-[.25em]`,children:[`di`,(0,R.jsx)(`span`,{className:`text-red-600`,children:`N`})]})]})]}),(0,R.jsxs)(`div`,{className:`flex `,children:[e===`notepad`&&(0,R.jsx)(vo,{}),e===`tiket`&&(0,R.jsx)(V,{}),e===`Template`&&(0,R.jsx)(mo,{})]})]})}var xo=`modulepreload`,H=function(e){return`/Smart-Attacker/`+e},So={};const Co=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}r=o(t.map(t=>{if(t=H(t,n),t in So)return;So[t]=!0;let r=t.endsWith(`.css`),i=r?`[rel="stylesheet"]`:``;if(n)for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}else if(document.querySelector(`link[href="${t}"]${i}`))return;let o=document.createElement(`link`);if(o.rel=r?`stylesheet`:xo,r||(o.as=`script`),o.crossOrigin=``,o.href=t,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),r)return new Promise((e,n)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};var wo=`popstate`;function To(e={}){function t(e,t){let{pathname:n=`/`,search:r=``,hash:i=``}=jo(e.location.hash.substring(1));return!n.startsWith(`/`)&&!n.startsWith(`.`)&&(n=`/`+n),Ao(``,{pathname:n,search:r,hash:i},t.state&&t.state.usr||null,t.state&&t.state.key||`default`)}function n(e,t){let n=e.document.querySelector(`base`),r=``;if(n&&n.getAttribute(`href`)){let t=e.location.href,n=t.indexOf(`#`);r=n===-1?t:t.slice(0,n)}return r+`#`+(typeof t==`string`?t:U(t))}function r(e,t){Do(e.pathname.charAt(0)===`/`,`relative pathnames are not supported in hash history.push(${JSON.stringify(t)})`)}return Mo(t,n,r,e)}function Eo(e,t){if(e===!1||e==null)throw Error(t)}function Do(e,t){if(!e){typeof console<`u`&&console.warn(t);try{throw Error(t)}catch{}}}function Oo(){return Math.random().toString(36).substring(2,10)}function ko(e,t){return{usr:e.state,key:e.key,idx:t}}function Ao(e,t,n=null,r){return{pathname:typeof e==`string`?e:e.pathname,search:``,hash:``,...typeof t==`string`?jo(t):t,state:n,key:t&&t.key||r||Oo()}}function U({pathname:e=`/`,search:t=``,hash:n=``}){return t&&t!==`?`&&(e+=t.charAt(0)===`?`?t:`?`+t),n&&n!==`#`&&(e+=n.charAt(0)===`#`?n:`#`+n),e}function jo(e){let t={};if(e){let n=e.indexOf(`#`);n>=0&&(t.hash=e.substring(n),e=e.substring(0,n));let r=e.indexOf(`?`);r>=0&&(t.search=e.substring(r),e=e.substring(0,r)),e&&(t.pathname=e)}return t}function Mo(e,t,n,r={}){let{window:i=document.defaultView,v5Compat:a=!1}=r,o=i.history,s=`POP`,c=null,l=u();l??(l=0,o.replaceState({...o.state,idx:l},``));function u(){return(o.state||{idx:null}).idx}function d(){s=`POP`;let e=u(),t=e==null?null:e-l;l=e,c&&c({action:s,location:h.location,delta:t})}function f(e,t){s=`PUSH`;let r=Ao(h.location,e,t);n&&n(r,e),l=u()+1;let d=ko(r,l),f=h.createHref(r);try{o.pushState(d,``,f)}catch(e){if(e instanceof DOMException&&e.name===`DataCloneError`)throw e;i.location.assign(f)}a&&c&&c({action:s,location:h.location,delta:1})}function p(e,t){s=`REPLACE`;let r=Ao(h.location,e,t);n&&n(r,e),l=u();let i=ko(r,l),d=h.createHref(r);o.replaceState(i,``,d),a&&c&&c({action:s,location:h.location,delta:0})}function m(e){return No(e)}let h={get action(){return s},get location(){return e(i,o)},listen(e){if(c)throw Error(`A history only accepts one active listener`);return i.addEventListener(wo,d),c=e,()=>{i.removeEventListener(wo,d),c=null}},createHref(e){return t(i,e)},createURL:m,encodeLocation(e){let t=m(e);return{pathname:t.pathname,search:t.search,hash:t.hash}},push:f,replace:p,go(e){return o.go(e)}};return h}function No(e,t=!1){let n=`http://localhost`;typeof window<`u`&&(n=window.location.origin===`null`?window.location.href:window.location.origin),Eo(n,`No window.location.(origin|href) available to create URL`);let r=typeof e==`string`?e:U(e);return r=r.replace(/ $/,`%20`),!t&&r.startsWith(`//`)&&(r=n+r),new URL(r,n)}function Po(e,t,n=`/`){return Fo(e,t,n,!1)}function Fo(e,t,n,r){let i=$o((typeof t==`string`?jo(t):t).pathname||`/`,n);if(i==null)return null;let a=Lo(e);zo(a);let o=null;for(let e=0;o==null&&e<a.length;++e){let t=Qo(i);o=Yo(a[e],t,r)}return o}function Io(e,t){let{route:n,pathname:r,params:i}=e;return{id:n.id,pathname:r,params:i,data:t[n.id],loaderData:t[n.id],handle:n.handle}}function Lo(e,t=[],n=[],r=``,i=!1){let a=(e,a,o=i,s)=>{let c={relativePath:s===void 0?e.path||``:s,caseSensitive:e.caseSensitive===!0,childrenIndex:a,route:e};if(c.relativePath.startsWith(`/`)){if(!c.relativePath.startsWith(r)&&o)return;Eo(c.relativePath.startsWith(r),`Absolute route path "${c.relativePath}" nested under path "${r}" is not valid. An absolute child route path must start with the combined path of all its parent routes.`),c.relativePath=c.relativePath.slice(r.length)}let l=cs([r,c.relativePath]),u=n.concat(c);e.children&&e.children.length>0&&(Eo(e.index!==!0,`Index routes must not have child routes. Please remove all child routes from route path "${l}".`),Lo(e.children,t,u,l,o)),!(e.path==null&&!e.index)&&t.push({path:l,score:qo(l,e.index),routesMeta:u})};return e.forEach((e,t)=>{if(e.path===``||!e.path?.includes(`?`))a(e,t);else for(let n of Ro(e.path))a(e,t,!0,n)}),t}function Ro(e){let t=e.split(`/`);if(t.length===0)return[];let[n,...r]=t,i=n.endsWith(`?`),a=n.replace(/\?$/,``);if(r.length===0)return i?[a,``]:[a];let o=Ro(r.join(`/`)),s=[];return s.push(...o.map(e=>e===``?a:[a,e].join(`/`))),i&&s.push(...o),s.map(t=>e.startsWith(`/`)&&t===``?`/`:t)}function zo(e){e.sort((e,t)=>e.score===t.score?Jo(e.routesMeta.map(e=>e.childrenIndex),t.routesMeta.map(e=>e.childrenIndex)):t.score-e.score)}var Bo=/^:[\w-]+$/,Vo=3,Ho=2,Uo=1,Wo=10,Go=-2,Ko=e=>e===`*`;function qo(e,t){let n=e.split(`/`),r=n.length;return n.some(Ko)&&(r+=Go),t&&(r+=Ho),n.filter(e=>!Ko(e)).reduce((e,t)=>e+(Bo.test(t)?Vo:t===``?Uo:Wo),r)}function Jo(e,t){return e.length===t.length&&e.slice(0,-1).every((e,n)=>e===t[n])?e[e.length-1]-t[t.length-1]:0}function Yo(e,t,n=!1){let{routesMeta:r}=e,i={},a=`/`,o=[];for(let e=0;e<r.length;++e){let s=r[e],c=e===r.length-1,l=a===`/`?t:t.slice(a.length)||`/`,u=Xo({path:s.relativePath,caseSensitive:s.caseSensitive,end:c},l),d=s.route;if(!u&&c&&n&&!r[r.length-1].route.index&&(u=Xo({path:s.relativePath,caseSensitive:s.caseSensitive,end:!1},l)),!u)return null;Object.assign(i,u.params),o.push({params:i,pathname:cs([a,u.pathname]),pathnameBase:ls(cs([a,u.pathnameBase])),route:d}),u.pathnameBase!==`/`&&(a=cs([a,u.pathnameBase]))}return o}function Xo(e,t){typeof e==`string`&&(e={path:e,caseSensitive:!1,end:!0});let[n,r]=Zo(e.path,e.caseSensitive,e.end),i=t.match(n);if(!i)return null;let a=i[0],o=a.replace(/(.)\/+$/,`$1`),s=i.slice(1);return{params:r.reduce((e,{paramName:t,isOptional:n},r)=>{if(t===`*`){let e=s[r]||``;o=a.slice(0,a.length-e.length).replace(/(.)\/+$/,`$1`)}let i=s[r];return n&&!i?e[t]=void 0:e[t]=(i||``).replace(/%2F/g,`/`),e},{}),pathname:a,pathnameBase:o,pattern:e}}function Zo(e,t=!1,n=!0){Do(e===`*`||!e.endsWith(`*`)||e.endsWith(`/*`),`Route path "${e}" will be treated as if it were "${e.replace(/\*$/,`/*`)}" because the \`*\` character must always follow a \`/\` in the pattern. To get rid of this warning, please change the route path to "${e.replace(/\*$/,`/*`)}".`);let r=[],i=`^`+e.replace(/\/*\*?$/,``).replace(/^\/*/,`/`).replace(/[\\.*+^${}|()[\]]/g,`\\$&`).replace(/\/:([\w-]+)(\?)?/g,(e,t,n)=>(r.push({paramName:t,isOptional:n!=null}),n?`/?([^\\/]+)?`:`/([^\\/]+)`)).replace(/\/([\w-]+)\?(\/|$)/g,`(/$1)?$2`);return e.endsWith(`*`)?(r.push({paramName:`*`}),i+=e===`*`||e===`/*`?`(.*)$`:`(?:\\/(.+)|\\/*)$`):n?i+=`\\/*$`:e!==``&&e!==`/`&&(i+=`(?:(?=\\/|$))`),[new RegExp(i,t?void 0:`i`),r]}function Qo(e){try{return e.split(`/`).map(e=>decodeURIComponent(e).replace(/\//g,`%2F`)).join(`/`)}catch(t){return Do(!1,`The URL path "${e}" could not be decoded because it is a malformed URL segment. This is probably due to a bad percent encoding (${t}).`),e}}function $o(e,t){if(t===`/`)return e;if(!e.toLowerCase().startsWith(t.toLowerCase()))return null;let n=t.endsWith(`/`)?t.length-1:t.length,r=e.charAt(n);return r&&r!==`/`?null:e.slice(n)||`/`}var es=/^(?:[a-z][a-z0-9+.-]*:|\/\/)/i,ts=e=>es.test(e);function ns(e,t=`/`){let{pathname:n,search:r=``,hash:i=``}=typeof e==`string`?jo(e):e,a;if(n)if(ts(n))a=n;else{if(n.includes(`//`)){let e=n;n=n.replace(/\/\/+/g,`/`),Do(!1,`Pathnames cannot have embedded double slashes - normalizing ${e} -> ${n}`)}a=n.startsWith(`/`)?rs(n.substring(1),`/`):rs(n,t)}else a=t;return{pathname:a,search:us(r),hash:ds(i)}}function rs(e,t){let n=t.replace(/\/+$/,``).split(`/`);return e.split(`/`).forEach(e=>{e===`..`?n.length>1&&n.pop():e!==`.`&&n.push(e)}),n.length>1?n.join(`/`):`/`}function is(e,t,n,r){return`Cannot include a '${e}' character in a manually specified \`to.${t}\` field [${JSON.stringify(r)}].  Please separate it out to the \`to.${n}\` field. Alternatively you may provide the full path as a string in <Link to="..."> and the router will parse it for you.`}function as(e){return e.filter((e,t)=>t===0||e.route.path&&e.route.path.length>0)}function os(e){let t=as(e);return t.map((e,n)=>n===t.length-1?e.pathname:e.pathnameBase)}function ss(e,t,n,r=!1){let i;typeof e==`string`?i=jo(e):(i={...e},Eo(!i.pathname||!i.pathname.includes(`?`),is(`?`,`pathname`,`search`,i)),Eo(!i.pathname||!i.pathname.includes(`#`),is(`#`,`pathname`,`hash`,i)),Eo(!i.search||!i.search.includes(`#`),is(`#`,`search`,`hash`,i)));let a=e===``||i.pathname===``,o=a?`/`:i.pathname,s;if(o==null)s=n;else{let e=t.length-1;if(!r&&o.startsWith(`..`)){let t=o.split(`/`);for(;t[0]===`..`;)t.shift(),--e;i.pathname=t.join(`/`)}s=e>=0?t[e]:`/`}let c=ns(i,s),l=o&&o!==`/`&&o.endsWith(`/`),u=(a||o===`.`)&&n.endsWith(`/`);return!c.pathname.endsWith(`/`)&&(l||u)&&(c.pathname+=`/`),c}var cs=e=>e.join(`/`).replace(/\/\/+/g,`/`),ls=e=>e.replace(/\/+$/,``).replace(/^\/*/,`/`),us=e=>!e||e===`?`?``:e.startsWith(`?`)?e:`?`+e,ds=e=>!e||e===`#`?``:e.startsWith(`#`)?e:`#`+e;function fs(e){return e!=null&&typeof e.status==`number`&&typeof e.statusText==`string`&&typeof e.internal==`boolean`&&`data`in e}function ps(e){return e.map(e=>e.route.path).filter(Boolean).join(`/`).replace(/\/\/*/g,`/`)||`/`}Object.getOwnPropertyNames(Object.prototype).sort().join(`\0`);var ms=l.createContext(null);ms.displayName=`DataRouter`;var hs=l.createContext(null);hs.displayName=`DataRouterState`,l.createContext(!1);var gs=l.createContext({isTransitioning:!1});gs.displayName=`ViewTransition`;var _s=l.createContext(new Map);_s.displayName=`Fetchers`;var vs=l.createContext(null);vs.displayName=`Await`;var ys=l.createContext(null);ys.displayName=`Navigation`;var bs=l.createContext(null);bs.displayName=`Location`;var xs=l.createContext({outlet:null,matches:[],isDataRoute:!1});xs.displayName=`Route`;var Ss=l.createContext(null);Ss.displayName=`RouteError`;function Cs(e,{relative:t}={}){Eo(ws(),`useHref() may be used only in the context of a <Router> component.`);let{basename:n,navigator:r}=l.useContext(ys),{hash:i,pathname:a,search:o}=As(e,{relative:t}),s=a;return n!==`/`&&(s=a===`/`?n:cs([n,a])),r.createHref({pathname:s,search:o,hash:i})}function ws(){return l.useContext(bs)!=null}function Ts(){return Eo(ws(),`useLocation() may be used only in the context of a <Router> component.`),l.useContext(bs).location}var Es=`You should call navigate() in a React.useEffect(), not when your component is first rendered.`;function Ds(e){l.useContext(ys).static||l.useLayoutEffect(e)}function Os(){let{isDataRoute:e}=l.useContext(xs);return e?Ks():ks()}function ks(){Eo(ws(),`useNavigate() may be used only in the context of a <Router> component.`);let e=l.useContext(ms),{basename:t,navigator:n}=l.useContext(ys),{matches:r}=l.useContext(xs),{pathname:i}=Ts(),a=JSON.stringify(os(r)),o=l.useRef(!1);return Ds(()=>{o.current=!0}),l.useCallback((r,s={})=>{if(Do(o.current,Es),!o.current)return;if(typeof r==`number`){n.go(r);return}let c=ss(r,JSON.parse(a),i,s.relative===`path`);e==null&&t!==`/`&&(c.pathname=c.pathname===`/`?t:cs([t,c.pathname])),(s.replace?n.replace:n.push)(c,s.state,s)},[t,n,a,i,e])}l.createContext(null);function As(e,{relative:t}={}){let{matches:n}=l.useContext(xs),{pathname:r}=Ts(),i=JSON.stringify(os(n));return l.useMemo(()=>ss(e,JSON.parse(i),r,t===`path`),[e,i,r,t])}function js(e,t,n,r,i){Eo(ws(),`useRoutes() may be used only in the context of a <Router> component.`);let{navigator:a}=l.useContext(ys),{matches:o}=l.useContext(xs),s=o[o.length-1],c=s?s.params:{},u=s?s.pathname:`/`,d=s?s.pathnameBase:`/`,f=s&&s.route;{let e=f&&f.path||``;Js(u,!f||e.endsWith(`*`)||e.endsWith(`*?`),`You rendered descendant <Routes> (or called \`useRoutes()\`) at "${u}" (under <Route path="${e}">) but the parent route path has no trailing "*". This means if you navigate deeper, the parent won't match anymore and therefore the child routes will never render.
+`),l=c[c.length-1].match(/^(\d+)\.\s*/);if(!l)return;e.preventDefault();let u=Number(l[1])+1,d=o+`\n${u}. `+s;t.current=o.length+`\n${u}. `.length,i(a(d))},className:`border w-full h-screen p-2`,placeholder:`Isi note kamu.....`})}var yo=()=>((0,l.useEffect)(()=>{let e=e=>{if(e.ctrlKey&&e.key===`F1`){if(e.preventDefault(),!confirm(`Buka semua tools byU?`))return;[`https://byu.omnix.co.id/login`,`https://cs.byu.id/id/user/login`,`https://crm.byu.id/crm/`,`https://sso.identity.telkomsel.co.id/dsc/`,`https://sites.google.com/view/modulhappiness`,`https://docs.google.com/spreadsheets/d/1uZiJ3pb1dVJr3Wvw9-D0mOpevhUOhQ1hX2thMy02WEs/edit?usp=sharing`,`https://web.telegram.org/k/`].forEach(e=>{window.open(e,`_blank`,`noopener,noreferrer`)})}if(e.key===`F1`){e.preventDefault();let t=localStorage.getItem(`my-templates`);if(!t)return;let n=JSON.parse(t)[0];n&&navigator.clipboard.writeText(n)}if(e.key===`F2`){e.preventDefault();let t=localStorage.getItem(`my-templates`);if(!t)return;let n=JSON.parse(t)[2];n&&navigator.clipboard.writeText(n)}if(e.key===`F3`){e.preventDefault();let t=localStorage.getItem(`my-templates`);if(!t)return;let n=JSON.parse(t)[4];n&&navigator.clipboard.writeText(n)}if(e.key===`F4`){e.preventDefault();let t=localStorage.getItem(`my-templates`);if(!t)return;let n=JSON.parse(t)[1];n&&navigator.clipboard.writeText(n)}if(e.key===`F6`){e.preventDefault();let t=localStorage.getItem(`my-templates`);if(!t)return;let n=JSON.parse(t)[3];n&&navigator.clipboard.writeText(n)}if(e.key===`F7`){e.preventDefault();let t=localStorage.getItem(`my-templates`);if(!t)return;let n=JSON.parse(t)[5];n&&navigator.clipboard.writeText(n)}};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[]),null);function bo(){let[e,t]=(0,l.useState)(`notepad`);return(0,R.jsxs)(`div`,{className:`flex flex-col `,children:[(0,R.jsx)(yo,{}),(0,R.jsxs)(`div`,{className:`flex gap-2 p-2 border-b`,children:[(0,R.jsx)(`button`,{className:`border px-4 ${e===`notepad`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`notepad`),children:`Notepad`}),(0,R.jsx)(`button`,{className:`border px-4 ${e===`tiket`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`tiket`),children:`Mandatory`}),(0,R.jsx)(`button`,{className:`border px-4 ${e===`Template`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`Template`),children:`Template`}),(0,R.jsxs)(`div`,{className:`absolute right-0 flex gap-1`,children:[(0,R.jsx)(_o,{}),(0,R.jsxs)(`h1`,{className:`text-3xl tracking-[.25em]`,children:[`di`,(0,R.jsx)(`span`,{className:`text-red-600`,children:`N`})]})]})]}),(0,R.jsxs)(`div`,{className:`flex `,children:[e===`notepad`&&(0,R.jsx)(vo,{}),e===`tiket`&&(0,R.jsx)(V,{}),e===`Template`&&(0,R.jsx)(mo,{})]})]})}var xo=`modulepreload`,H=function(e){return`/Smart-Attacker/`+e},So={};const Co=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}r=o(t.map(t=>{if(t=H(t,n),t in So)return;So[t]=!0;let r=t.endsWith(`.css`),i=r?`[rel="stylesheet"]`:``;if(n)for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}else if(document.querySelector(`link[href="${t}"]${i}`))return;let o=document.createElement(`link`);if(o.rel=r?`stylesheet`:xo,r||(o.as=`script`),o.crossOrigin=``,o.href=t,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),r)return new Promise((e,n)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};var wo=`popstate`;function To(e={}){function t(e,t){let{pathname:n=`/`,search:r=``,hash:i=``}=jo(e.location.hash.substring(1));return!n.startsWith(`/`)&&!n.startsWith(`.`)&&(n=`/`+n),Ao(``,{pathname:n,search:r,hash:i},t.state&&t.state.usr||null,t.state&&t.state.key||`default`)}function n(e,t){let n=e.document.querySelector(`base`),r=``;if(n&&n.getAttribute(`href`)){let t=e.location.href,n=t.indexOf(`#`);r=n===-1?t:t.slice(0,n)}return r+`#`+(typeof t==`string`?t:U(t))}function r(e,t){Do(e.pathname.charAt(0)===`/`,`relative pathnames are not supported in hash history.push(${JSON.stringify(t)})`)}return Mo(t,n,r,e)}function Eo(e,t){if(e===!1||e==null)throw Error(t)}function Do(e,t){if(!e){typeof console<`u`&&console.warn(t);try{throw Error(t)}catch{}}}function Oo(){return Math.random().toString(36).substring(2,10)}function ko(e,t){return{usr:e.state,key:e.key,idx:t}}function Ao(e,t,n=null,r){return{pathname:typeof e==`string`?e:e.pathname,search:``,hash:``,...typeof t==`string`?jo(t):t,state:n,key:t&&t.key||r||Oo()}}function U({pathname:e=`/`,search:t=``,hash:n=``}){return t&&t!==`?`&&(e+=t.charAt(0)===`?`?t:`?`+t),n&&n!==`#`&&(e+=n.charAt(0)===`#`?n:`#`+n),e}function jo(e){let t={};if(e){let n=e.indexOf(`#`);n>=0&&(t.hash=e.substring(n),e=e.substring(0,n));let r=e.indexOf(`?`);r>=0&&(t.search=e.substring(r),e=e.substring(0,r)),e&&(t.pathname=e)}return t}function Mo(e,t,n,r={}){let{window:i=document.defaultView,v5Compat:a=!1}=r,o=i.history,s=`POP`,c=null,l=u();l??(l=0,o.replaceState({...o.state,idx:l},``));function u(){return(o.state||{idx:null}).idx}function d(){s=`POP`;let e=u(),t=e==null?null:e-l;l=e,c&&c({action:s,location:h.location,delta:t})}function f(e,t){s=`PUSH`;let r=Ao(h.location,e,t);n&&n(r,e),l=u()+1;let d=ko(r,l),f=h.createHref(r);try{o.pushState(d,``,f)}catch(e){if(e instanceof DOMException&&e.name===`DataCloneError`)throw e;i.location.assign(f)}a&&c&&c({action:s,location:h.location,delta:1})}function p(e,t){s=`REPLACE`;let r=Ao(h.location,e,t);n&&n(r,e),l=u();let i=ko(r,l),d=h.createHref(r);o.replaceState(i,``,d),a&&c&&c({action:s,location:h.location,delta:0})}function m(e){return No(e)}let h={get action(){return s},get location(){return e(i,o)},listen(e){if(c)throw Error(`A history only accepts one active listener`);return i.addEventListener(wo,d),c=e,()=>{i.removeEventListener(wo,d),c=null}},createHref(e){return t(i,e)},createURL:m,encodeLocation(e){let t=m(e);return{pathname:t.pathname,search:t.search,hash:t.hash}},push:f,replace:p,go(e){return o.go(e)}};return h}function No(e,t=!1){let n=`http://localhost`;typeof window<`u`&&(n=window.location.origin===`null`?window.location.href:window.location.origin),Eo(n,`No window.location.(origin|href) available to create URL`);let r=typeof e==`string`?e:U(e);return r=r.replace(/ $/,`%20`),!t&&r.startsWith(`//`)&&(r=n+r),new URL(r,n)}function Po(e,t,n=`/`){return Fo(e,t,n,!1)}function Fo(e,t,n,r){let i=$o((typeof t==`string`?jo(t):t).pathname||`/`,n);if(i==null)return null;let a=Lo(e);zo(a);let o=null;for(let e=0;o==null&&e<a.length;++e){let t=Qo(i);o=Yo(a[e],t,r)}return o}function Io(e,t){let{route:n,pathname:r,params:i}=e;return{id:n.id,pathname:r,params:i,data:t[n.id],loaderData:t[n.id],handle:n.handle}}function Lo(e,t=[],n=[],r=``,i=!1){let a=(e,a,o=i,s)=>{let c={relativePath:s===void 0?e.path||``:s,caseSensitive:e.caseSensitive===!0,childrenIndex:a,route:e};if(c.relativePath.startsWith(`/`)){if(!c.relativePath.startsWith(r)&&o)return;Eo(c.relativePath.startsWith(r),`Absolute route path "${c.relativePath}" nested under path "${r}" is not valid. An absolute child route path must start with the combined path of all its parent routes.`),c.relativePath=c.relativePath.slice(r.length)}let l=cs([r,c.relativePath]),u=n.concat(c);e.children&&e.children.length>0&&(Eo(e.index!==!0,`Index routes must not have child routes. Please remove all child routes from route path "${l}".`),Lo(e.children,t,u,l,o)),!(e.path==null&&!e.index)&&t.push({path:l,score:qo(l,e.index),routesMeta:u})};return e.forEach((e,t)=>{if(e.path===``||!e.path?.includes(`?`))a(e,t);else for(let n of Ro(e.path))a(e,t,!0,n)}),t}function Ro(e){let t=e.split(`/`);if(t.length===0)return[];let[n,...r]=t,i=n.endsWith(`?`),a=n.replace(/\?$/,``);if(r.length===0)return i?[a,``]:[a];let o=Ro(r.join(`/`)),s=[];return s.push(...o.map(e=>e===``?a:[a,e].join(`/`))),i&&s.push(...o),s.map(t=>e.startsWith(`/`)&&t===``?`/`:t)}function zo(e){e.sort((e,t)=>e.score===t.score?Jo(e.routesMeta.map(e=>e.childrenIndex),t.routesMeta.map(e=>e.childrenIndex)):t.score-e.score)}var Bo=/^:[\w-]+$/,Vo=3,Ho=2,Uo=1,Wo=10,Go=-2,Ko=e=>e===`*`;function qo(e,t){let n=e.split(`/`),r=n.length;return n.some(Ko)&&(r+=Go),t&&(r+=Ho),n.filter(e=>!Ko(e)).reduce((e,t)=>e+(Bo.test(t)?Vo:t===``?Uo:Wo),r)}function Jo(e,t){return e.length===t.length&&e.slice(0,-1).every((e,n)=>e===t[n])?e[e.length-1]-t[t.length-1]:0}function Yo(e,t,n=!1){let{routesMeta:r}=e,i={},a=`/`,o=[];for(let e=0;e<r.length;++e){let s=r[e],c=e===r.length-1,l=a===`/`?t:t.slice(a.length)||`/`,u=Xo({path:s.relativePath,caseSensitive:s.caseSensitive,end:c},l),d=s.route;if(!u&&c&&n&&!r[r.length-1].route.index&&(u=Xo({path:s.relativePath,caseSensitive:s.caseSensitive,end:!1},l)),!u)return null;Object.assign(i,u.params),o.push({params:i,pathname:cs([a,u.pathname]),pathnameBase:ls(cs([a,u.pathnameBase])),route:d}),u.pathnameBase!==`/`&&(a=cs([a,u.pathnameBase]))}return o}function Xo(e,t){typeof e==`string`&&(e={path:e,caseSensitive:!1,end:!0});let[n,r]=Zo(e.path,e.caseSensitive,e.end),i=t.match(n);if(!i)return null;let a=i[0],o=a.replace(/(.)\/+$/,`$1`),s=i.slice(1);return{params:r.reduce((e,{paramName:t,isOptional:n},r)=>{if(t===`*`){let e=s[r]||``;o=a.slice(0,a.length-e.length).replace(/(.)\/+$/,`$1`)}let i=s[r];return n&&!i?e[t]=void 0:e[t]=(i||``).replace(/%2F/g,`/`),e},{}),pathname:a,pathnameBase:o,pattern:e}}function Zo(e,t=!1,n=!0){Do(e===`*`||!e.endsWith(`*`)||e.endsWith(`/*`),`Route path "${e}" will be treated as if it were "${e.replace(/\*$/,`/*`)}" because the \`*\` character must always follow a \`/\` in the pattern. To get rid of this warning, please change the route path to "${e.replace(/\*$/,`/*`)}".`);let r=[],i=`^`+e.replace(/\/*\*?$/,``).replace(/^\/*/,`/`).replace(/[\\.*+^${}|()[\]]/g,`\\$&`).replace(/\/:([\w-]+)(\?)?/g,(e,t,n)=>(r.push({paramName:t,isOptional:n!=null}),n?`/?([^\\/]+)?`:`/([^\\/]+)`)).replace(/\/([\w-]+)\?(\/|$)/g,`(/$1)?$2`);return e.endsWith(`*`)?(r.push({paramName:`*`}),i+=e===`*`||e===`/*`?`(.*)$`:`(?:\\/(.+)|\\/*)$`):n?i+=`\\/*$`:e!==``&&e!==`/`&&(i+=`(?:(?=\\/|$))`),[new RegExp(i,t?void 0:`i`),r]}function Qo(e){try{return e.split(`/`).map(e=>decodeURIComponent(e).replace(/\//g,`%2F`)).join(`/`)}catch(t){return Do(!1,`The URL path "${e}" could not be decoded because it is a malformed URL segment. This is probably due to a bad percent encoding (${t}).`),e}}function $o(e,t){if(t===`/`)return e;if(!e.toLowerCase().startsWith(t.toLowerCase()))return null;let n=t.endsWith(`/`)?t.length-1:t.length,r=e.charAt(n);return r&&r!==`/`?null:e.slice(n)||`/`}var es=/^(?:[a-z][a-z0-9+.-]*:|\/\/)/i,ts=e=>es.test(e);function ns(e,t=`/`){let{pathname:n,search:r=``,hash:i=``}=typeof e==`string`?jo(e):e,a;if(n)if(ts(n))a=n;else{if(n.includes(`//`)){let e=n;n=n.replace(/\/\/+/g,`/`),Do(!1,`Pathnames cannot have embedded double slashes - normalizing ${e} -> ${n}`)}a=n.startsWith(`/`)?rs(n.substring(1),`/`):rs(n,t)}else a=t;return{pathname:a,search:us(r),hash:ds(i)}}function rs(e,t){let n=t.replace(/\/+$/,``).split(`/`);return e.split(`/`).forEach(e=>{e===`..`?n.length>1&&n.pop():e!==`.`&&n.push(e)}),n.length>1?n.join(`/`):`/`}function is(e,t,n,r){return`Cannot include a '${e}' character in a manually specified \`to.${t}\` field [${JSON.stringify(r)}].  Please separate it out to the \`to.${n}\` field. Alternatively you may provide the full path as a string in <Link to="..."> and the router will parse it for you.`}function as(e){return e.filter((e,t)=>t===0||e.route.path&&e.route.path.length>0)}function os(e){let t=as(e);return t.map((e,n)=>n===t.length-1?e.pathname:e.pathnameBase)}function ss(e,t,n,r=!1){let i;typeof e==`string`?i=jo(e):(i={...e},Eo(!i.pathname||!i.pathname.includes(`?`),is(`?`,`pathname`,`search`,i)),Eo(!i.pathname||!i.pathname.includes(`#`),is(`#`,`pathname`,`hash`,i)),Eo(!i.search||!i.search.includes(`#`),is(`#`,`search`,`hash`,i)));let a=e===``||i.pathname===``,o=a?`/`:i.pathname,s;if(o==null)s=n;else{let e=t.length-1;if(!r&&o.startsWith(`..`)){let t=o.split(`/`);for(;t[0]===`..`;)t.shift(),--e;i.pathname=t.join(`/`)}s=e>=0?t[e]:`/`}let c=ns(i,s),l=o&&o!==`/`&&o.endsWith(`/`),u=(a||o===`.`)&&n.endsWith(`/`);return!c.pathname.endsWith(`/`)&&(l||u)&&(c.pathname+=`/`),c}var cs=e=>e.join(`/`).replace(/\/\/+/g,`/`),ls=e=>e.replace(/\/+$/,``).replace(/^\/*/,`/`),us=e=>!e||e===`?`?``:e.startsWith(`?`)?e:`?`+e,ds=e=>!e||e===`#`?``:e.startsWith(`#`)?e:`#`+e;function fs(e){return e!=null&&typeof e.status==`number`&&typeof e.statusText==`string`&&typeof e.internal==`boolean`&&`data`in e}function ps(e){return e.map(e=>e.route.path).filter(Boolean).join(`/`).replace(/\/\/*/g,`/`)||`/`}Object.getOwnPropertyNames(Object.prototype).sort().join(`\0`);var ms=l.createContext(null);ms.displayName=`DataRouter`;var hs=l.createContext(null);hs.displayName=`DataRouterState`,l.createContext(!1);var gs=l.createContext({isTransitioning:!1});gs.displayName=`ViewTransition`;var _s=l.createContext(new Map);_s.displayName=`Fetchers`;var vs=l.createContext(null);vs.displayName=`Await`;var ys=l.createContext(null);ys.displayName=`Navigation`;var bs=l.createContext(null);bs.displayName=`Location`;var xs=l.createContext({outlet:null,matches:[],isDataRoute:!1});xs.displayName=`Route`;var Ss=l.createContext(null);Ss.displayName=`RouteError`;function Cs(e,{relative:t}={}){Eo(ws(),`useHref() may be used only in the context of a <Router> component.`);let{basename:n,navigator:r}=l.useContext(ys),{hash:i,pathname:a,search:o}=As(e,{relative:t}),s=a;return n!==`/`&&(s=a===`/`?n:cs([n,a])),r.createHref({pathname:s,search:o,hash:i})}function ws(){return l.useContext(bs)!=null}function Ts(){return Eo(ws(),`useLocation() may be used only in the context of a <Router> component.`),l.useContext(bs).location}var Es=`You should call navigate() in a React.useEffect(), not when your component is first rendered.`;function Ds(e){l.useContext(ys).static||l.useLayoutEffect(e)}function Os(){let{isDataRoute:e}=l.useContext(xs);return e?Ks():ks()}function ks(){Eo(ws(),`useNavigate() may be used only in the context of a <Router> component.`);let e=l.useContext(ms),{basename:t,navigator:n}=l.useContext(ys),{matches:r}=l.useContext(xs),{pathname:i}=Ts(),a=JSON.stringify(os(r)),o=l.useRef(!1);return Ds(()=>{o.current=!0}),l.useCallback((r,s={})=>{if(Do(o.current,Es),!o.current)return;if(typeof r==`number`){n.go(r);return}let c=ss(r,JSON.parse(a),i,s.relative===`path`);e==null&&t!==`/`&&(c.pathname=c.pathname===`/`?t:cs([t,c.pathname])),(s.replace?n.replace:n.push)(c,s.state,s)},[t,n,a,i,e])}l.createContext(null);function As(e,{relative:t}={}){let{matches:n}=l.useContext(xs),{pathname:r}=Ts(),i=JSON.stringify(os(n));return l.useMemo(()=>ss(e,JSON.parse(i),r,t===`path`),[e,i,r,t])}function js(e,t,n,r,i){Eo(ws(),`useRoutes() may be used only in the context of a <Router> component.`);let{navigator:a}=l.useContext(ys),{matches:o}=l.useContext(xs),s=o[o.length-1],c=s?s.params:{},u=s?s.pathname:`/`,d=s?s.pathnameBase:`/`,f=s&&s.route;{let e=f&&f.path||``;Js(u,!f||e.endsWith(`*`)||e.endsWith(`*?`),`You rendered descendant <Routes> (or called \`useRoutes()\`) at "${u}" (under <Route path="${e}">) but the parent route path has no trailing "*". This means if you navigate deeper, the parent won't match anymore and therefore the child routes will never render.
 
 Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}/*`}">.`)}let p=Ts(),m;if(t){let e=typeof t==`string`?jo(t):t;Eo(d===`/`||e.pathname?.startsWith(d),`When overriding the location using \`<Routes location>\` or \`useRoutes(routes, location)\`, the location pathname must begin with the portion of the URL pathname that was matched by all parent routes. The current pathname base is "${d}" but pathname "${e.pathname}" was given in the \`location\` prop.`),m=e}else m=p;let h=m.pathname||`/`,g=h;if(d!==`/`){let e=d.replace(/^\//,``).split(`/`);g=`/`+h.replace(/^\//,``).split(`/`).slice(e.length).join(`/`)}let _=Po(e,{pathname:g});Do(f||_!=null,`No routes matched location "${m.pathname}${m.search}${m.hash}" `),Do(_==null||_[_.length-1].route.element!==void 0||_[_.length-1].route.Component!==void 0||_[_.length-1].route.lazy!==void 0,`Matched leaf route at location "${m.pathname}${m.search}${m.hash}" does not have an element or Component. This means it will render an <Outlet /> with a null value by default resulting in an "empty" page.`);let v=Is(_&&_.map(e=>Object.assign({},e,{params:Object.assign({},c,e.params),pathname:cs([d,a.encodeLocation?a.encodeLocation(e.pathname.replace(/\?/g,`%3F`).replace(/#/g,`%23`)).pathname:e.pathname]),pathnameBase:e.pathnameBase===`/`?d:cs([d,a.encodeLocation?a.encodeLocation(e.pathnameBase.replace(/\?/g,`%3F`).replace(/#/g,`%23`)).pathname:e.pathnameBase])})),o,n,r,i);return t&&v?l.createElement(bs.Provider,{value:{location:{pathname:`/`,search:``,hash:``,state:null,key:`default`,...m},navigationType:`POP`}},v):v}function Ms(){let e=Gs(),t=fs(e)?`${e.status} ${e.statusText}`:e instanceof Error?e.message:JSON.stringify(e),n=e instanceof Error?e.stack:null,r=`rgba(200,200,200, 0.5)`,i={padding:`0.5rem`,backgroundColor:r},a={padding:`2px 4px`,backgroundColor:r},o=null;return console.error(`Error handled by React Router default ErrorBoundary:`,e),o=l.createElement(l.Fragment,null,l.createElement(`p`,null,`💿 Hey developer 👋`),l.createElement(`p`,null,`You can provide a way better UX than this when your app throws errors by providing your own `,l.createElement(`code`,{style:a},`ErrorBoundary`),` or`,` `,l.createElement(`code`,{style:a},`errorElement`),` prop on your route.`)),l.createElement(l.Fragment,null,l.createElement(`h2`,null,`Unexpected Application Error!`),l.createElement(`h3`,{style:{fontStyle:`italic`}},t),n?l.createElement(`pre`,{style:i},n):null,o)}var Ns=l.createElement(Ms,null),Ps=class extends l.Component{constructor(e){super(e),this.state={location:e.location,revalidation:e.revalidation,error:e.error}}static getDerivedStateFromError(e){return{error:e}}static getDerivedStateFromProps(e,t){return t.location!==e.location||t.revalidation!==`idle`&&e.revalidation===`idle`?{error:e.error,location:e.location,revalidation:e.revalidation}:{error:e.error===void 0?t.error:e.error,location:t.location,revalidation:e.revalidation||t.revalidation}}componentDidCatch(e,t){this.props.onError?this.props.onError(e,t):console.error(`React Router caught the following error during render`,e)}render(){return this.state.error===void 0?this.props.children:l.createElement(xs.Provider,{value:this.props.routeContext},l.createElement(Ss.Provider,{value:this.state.error,children:this.props.component}))}};function Fs({routeContext:e,match:t,children:n}){let r=l.useContext(ms);return r&&r.static&&r.staticContext&&(t.route.errorElement||t.route.ErrorBoundary)&&(r.staticContext._deepestRenderedBoundaryId=t.route.id),l.createElement(xs.Provider,{value:e},n)}function Is(e,t=[],n=null,r=null,i=null){if(e==null){if(!n)return null;if(n.errors)e=n.matches;else if(t.length===0&&!n.initialized&&n.matches.length>0)e=n.matches;else return null}let a=e,o=n?.errors;if(o!=null){let e=a.findIndex(e=>e.route.id&&o?.[e.route.id]!==void 0);Eo(e>=0,`Could not find a matching route for errors on route IDs: ${Object.keys(o).join(`,`)}`),a=a.slice(0,Math.min(a.length,e+1))}let s=!1,c=-1;if(n)for(let e=0;e<a.length;e++){let t=a[e];if((t.route.HydrateFallback||t.route.hydrateFallbackElement)&&(c=e),t.route.id){let{loaderData:e,errors:r}=n,i=t.route.loader&&!e.hasOwnProperty(t.route.id)&&(!r||r[t.route.id]===void 0);if(t.route.lazy||i){s=!0,a=c>=0?a.slice(0,c+1):[a[0]];break}}}let u=n&&r?(e,t)=>{r(e,{location:n.location,params:n.matches?.[0]?.params??{},unstable_pattern:ps(n.matches),errorInfo:t})}:void 0;return a.reduceRight((e,r,i)=>{let d,f=!1,p=null,m=null;n&&(d=o&&r.route.id?o[r.route.id]:void 0,p=r.route.errorElement||Ns,s&&(c<0&&i===0?(Js(`route-fallback`,!1,"No `HydrateFallback` element provided to render during initial hydration"),f=!0,m=null):c===i&&(f=!0,m=r.route.hydrateFallbackElement||null)));let h=t.concat(a.slice(0,i+1)),g=()=>{let t;return t=d?p:f?m:r.route.Component?l.createElement(r.route.Component,null):r.route.element?r.route.element:e,l.createElement(Fs,{match:r,routeContext:{outlet:e,matches:h,isDataRoute:n!=null},children:t})};return n&&(r.route.ErrorBoundary||r.route.errorElement||i===0)?l.createElement(Ps,{location:n.location,revalidation:n.revalidation,component:p,error:d,children:g(),routeContext:{outlet:null,matches:h,isDataRoute:!0},onError:u}):g()},null)}function Ls(e){return`${e} must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.`}function Rs(e){let t=l.useContext(ms);return Eo(t,Ls(e)),t}function zs(e){let t=l.useContext(hs);return Eo(t,Ls(e)),t}function Bs(e){let t=l.useContext(xs);return Eo(t,Ls(e)),t}function Vs(e){let t=Bs(e),n=t.matches[t.matches.length-1];return Eo(n.route.id,`${e} can only be used on routes that contain a unique "id"`),n.route.id}function Hs(){return Vs(`useRouteId`)}function Us(){return zs(`useNavigation`).navigation}function Ws(){let{matches:e,loaderData:t}=zs(`useMatches`);return l.useMemo(()=>e.map(e=>Io(e,t)),[e,t])}function Gs(){let e=l.useContext(Ss),t=zs(`useRouteError`),n=Vs(`useRouteError`);return e===void 0?t.errors?.[n]:e}function Ks(){let{router:e}=Rs(`useNavigate`),t=Vs(`useNavigate`),n=l.useRef(!1);return Ds(()=>{n.current=!0}),l.useCallback(async(r,i={})=>{Do(n.current,Es),n.current&&(typeof r==`number`?await e.navigate(r):await e.navigate(r,{fromRouteId:t,...i}))},[e,t])}var qs={};function Js(e,t,n){!t&&!qs[e]&&(qs[e]=!0,Do(!1,n))}l.useOptimistic,l.memo(Ys);function Ys({routes:e,future:t,state:n,unstable_onError:r}){return js(e,void 0,n,r,t)}function Xs({basename:e=`/`,children:t=null,location:n,navigationType:r=`POP`,navigator:i,static:a=!1,unstable_useTransitions:o}){Eo(!ws(),`You cannot render a <Router> inside another <Router>. You should never have more than one in your app.`);let s=e.replace(/^\/*/,`/`),c=l.useMemo(()=>({basename:s,navigator:i,static:a,unstable_useTransitions:o,future:{}}),[s,i,a,o]);typeof n==`string`&&(n=jo(n));let{pathname:u=`/`,search:d=``,hash:f=``,state:p=null,key:m=`default`}=n,h=l.useMemo(()=>{let e=$o(u,s);return e==null?null:{location:{pathname:e,search:d,hash:f,state:p,key:m},navigationType:r}},[s,u,d,f,p,m,r]);return Do(h!=null,`<Router basename="${s}"> is not able to match the URL "${u}${d}${f}" because it does not start with the basename, so the <Router> won't render anything.`),h==null?null:l.createElement(ys.Provider,{value:c},l.createElement(bs.Provider,{children:t,value:h}))}var Zs=`get`,Qs=`application/x-www-form-urlencoded`;function $s(e){return typeof HTMLElement<`u`&&e instanceof HTMLElement}function ec(e){return $s(e)&&e.tagName.toLowerCase()===`button`}function tc(e){return $s(e)&&e.tagName.toLowerCase()===`form`}function nc(e){return $s(e)&&e.tagName.toLowerCase()===`input`}function rc(e){return!!(e.metaKey||e.altKey||e.ctrlKey||e.shiftKey)}function ic(e,t){return e.button===0&&(!t||t===`_self`)&&!rc(e)}var ac=null;function oc(){if(ac===null)try{new FormData(document.createElement(`form`),0),ac=!1}catch{ac=!0}return ac}var sc=new Set([`application/x-www-form-urlencoded`,`multipart/form-data`,`text/plain`]);function cc(e){return e!=null&&!sc.has(e)?(Do(!1,`"${e}" is not a valid \`encType\` for \`<Form>\`/\`<fetcher.Form>\` and will default to "${Qs}"`),null):e}function lc(e,t){let n,r,i,a,o;if(tc(e)){let o=e.getAttribute(`action`);r=o?$o(o,t):null,n=e.getAttribute(`method`)||Zs,i=cc(e.getAttribute(`enctype`))||Qs,a=new FormData(e)}else if(ec(e)||nc(e)&&(e.type===`submit`||e.type===`image`)){let o=e.form;if(o==null)throw Error(`Cannot submit a <button> or <input type="submit"> without a <form>`);let s=e.getAttribute(`formaction`)||o.getAttribute(`action`);if(r=s?$o(s,t):null,n=e.getAttribute(`formmethod`)||o.getAttribute(`method`)||Zs,i=cc(e.getAttribute(`formenctype`))||cc(o.getAttribute(`enctype`))||Qs,a=new FormData(o,e),!oc()){let{name:t,type:n,value:r}=e;if(n===`image`){let e=t?`${t}.`:``;a.append(`${e}x`,`0`),a.append(`${e}y`,`0`)}else t&&a.append(t,r)}}else if($s(e))throw Error(`Cannot submit element that is not <form>, <button>, or <input type="submit|image">`);else n=Zs,r=null,i=Qs,o=e;return a&&i===`text/plain`&&(o=a,a=void 0),{action:r,method:n.toLowerCase(),encType:i,formData:a,body:o}}Object.getOwnPropertyNames(Object.prototype).sort().join(`\0`);function uc(e,t){if(e===!1||e==null)throw Error(t)}function dc(e,t,n){let r=typeof e==`string`?new URL(e,typeof window>`u`?`server://singlefetch/`:window.location.origin):e;return r.pathname===`/`?r.pathname=`_root.${n}`:t&&$o(r.pathname,t)===`/`?r.pathname=`${t.replace(/\/$/,``)}/_root.${n}`:r.pathname=`${r.pathname.replace(/\/$/,``)}.${n}`,r}async function fc(e,t){if(e.id in t)return t[e.id];try{let n=await Co(()=>import(e.module),[]);return t[e.id]=n,n}catch(t){return console.error(`Error loading route module \`${e.module}\`, reloading page...`),console.error(t),window.__reactRouterContext&&window.__reactRouterContext.isSpaMode,window.location.reload(),new Promise(()=>{})}}function pc(e){return e!=null&&typeof e.page==`string`}function mc(e){return e==null?!1:e.href==null?e.rel===`preload`&&typeof e.imageSrcSet==`string`&&typeof e.imageSizes==`string`:typeof e.rel==`string`&&typeof e.href==`string`}async function hc(e,t,n){return bc((await Promise.all(e.map(async e=>{let r=t.routes[e.route.id];if(r){let e=await fc(r,n);return e.links?e.links():[]}return[]}))).flat(1).filter(mc).filter(e=>e.rel===`stylesheet`||e.rel===`preload`).map(e=>e.rel===`stylesheet`?{...e,rel:`prefetch`,as:`style`}:{...e,rel:`prefetch`}))}function gc(e,t,n,r,i,a){let o=(e,t)=>n[t]?e.route.id!==n[t].route.id:!0,s=(e,t)=>n[t].pathname!==e.pathname||n[t].route.path?.endsWith(`*`)&&n[t].params[`*`]!==e.params[`*`];return a===`assets`?t.filter((e,t)=>o(e,t)||s(e,t)):a===`data`?t.filter((t,a)=>{let c=r.routes[t.route.id];if(!c||!c.hasLoader)return!1;if(o(t,a)||s(t,a))return!0;if(t.route.shouldRevalidate){let r=t.route.shouldRevalidate({currentUrl:new URL(i.pathname+i.search+i.hash,window.origin),currentParams:n[0]?.params||{},nextUrl:new URL(e,window.origin),nextParams:t.params,defaultShouldRevalidate:!0});if(typeof r==`boolean`)return r}return!0}):[]}function _c(e,t,{includeHydrateFallback:n}={}){return vc(e.map(e=>{let r=t.routes[e.route.id];if(!r)return[];let i=[r.module];return r.clientActionModule&&(i=i.concat(r.clientActionModule)),r.clientLoaderModule&&(i=i.concat(r.clientLoaderModule)),n&&r.hydrateFallbackModule&&(i=i.concat(r.hydrateFallbackModule)),r.imports&&(i=i.concat(r.imports)),i}).flat(1))}function vc(e){return[...new Set(e)]}function yc(e){let t={},n=Object.keys(e).sort();for(let r of n)t[r]=e[r];return t}function bc(e,t){let n=new Set,r=new Set(t);return e.reduce((e,i)=>{if(t&&!pc(i)&&i.as===`script`&&i.href&&r.has(i.href))return e;let a=JSON.stringify(yc(i));return n.has(a)||(n.add(a),e.push({key:a,link:i})),e},[])}function xc(){let e=l.useContext(ms);return uc(e,`You must render this element inside a <DataRouterContext.Provider> element`),e}function Sc(){let e=l.useContext(hs);return uc(e,`You must render this element inside a <DataRouterStateContext.Provider> element`),e}var Cc=l.createContext(void 0);Cc.displayName=`FrameworkContext`;function wc(){let e=l.useContext(Cc);return uc(e,`You must render this element inside a <HydratedRouter> element`),e}function Tc(e,t){let n=l.useContext(Cc),[r,i]=l.useState(!1),[a,o]=l.useState(!1),{onFocus:s,onBlur:c,onMouseEnter:u,onMouseLeave:d,onTouchStart:f}=t,p=l.useRef(null);l.useEffect(()=>{if(e===`render`&&o(!0),e===`viewport`){let e=new IntersectionObserver(e=>{e.forEach(e=>{o(e.isIntersecting)})},{threshold:.5});return p.current&&e.observe(p.current),()=>{e.disconnect()}}},[e]),l.useEffect(()=>{if(r){let e=setTimeout(()=>{o(!0)},100);return()=>{clearTimeout(e)}}},[r]);let m=()=>{i(!0)},h=()=>{i(!1),o(!1)};return n?e===`intent`?[a,p,{onFocus:Ec(s,m),onBlur:Ec(c,h),onMouseEnter:Ec(u,m),onMouseLeave:Ec(d,h),onTouchStart:Ec(f,m)}]:[a,p,{}]:[!1,p,{}]}function Ec(e,t){return n=>{e&&e(n),n.defaultPrevented||t(n)}}function Dc({page:e,...t}){let{router:n}=xc(),r=l.useMemo(()=>Po(n.routes,e,n.basename),[n.routes,e,n.basename]);return r?l.createElement(kc,{page:e,matches:r,...t}):null}function Oc(e){let{manifest:t,routeModules:n}=wc(),[r,i]=l.useState([]);return l.useEffect(()=>{let r=!1;return hc(e,t,n).then(e=>{r||i(e)}),()=>{r=!0}},[e,t,n]),r}function kc({page:e,matches:t,...n}){let r=Ts(),{manifest:i,routeModules:a}=wc(),{basename:o}=xc(),{loaderData:s,matches:c}=Sc(),u=l.useMemo(()=>gc(e,t,c,i,r,`data`),[e,t,c,i,r]),d=l.useMemo(()=>gc(e,t,c,i,r,`assets`),[e,t,c,i,r]),f=l.useMemo(()=>{if(e===r.pathname+r.search+r.hash)return[];let n=new Set,c=!1;if(t.forEach(e=>{let t=i.routes[e.route.id];!t||!t.hasLoader||(!u.some(t=>t.route.id===e.route.id)&&e.route.id in s&&a[e.route.id]?.shouldRevalidate||t.hasClientLoader?c=!0:n.add(e.route.id))}),n.size===0)return[];let l=dc(e,o,`data`);return c&&n.size>0&&l.searchParams.set(`_routes`,t.filter(e=>n.has(e.route.id)).map(e=>e.route.id).join(`,`)),[l.pathname+l.search]},[o,s,r,i,u,t,e,a]),p=l.useMemo(()=>_c(d,i),[d,i]),m=Oc(d);return l.createElement(l.Fragment,null,f.map(e=>l.createElement(`link`,{key:e,rel:`prefetch`,as:`fetch`,href:e,...n})),p.map(e=>l.createElement(`link`,{key:e,rel:`modulepreload`,href:e,...n})),m.map(({key:e,link:t})=>l.createElement(`link`,{key:e,nonce:n.nonce,...t})))}function Ac(...e){return t=>{e.forEach(e=>{typeof e==`function`?e(t):e!=null&&(e.current=t)})}}var jc=typeof window<`u`&&window.document!==void 0&&window.document.createElement!==void 0;try{jc&&(window.__reactRouterVersion=`7.10.0`)}catch{}function Mc({basename:e,children:t,unstable_useTransitions:n,window:r}){let i=l.useRef();i.current??=To({window:r,v5Compat:!0});let a=i.current,[o,s]=l.useState({action:a.action,location:a.location}),c=l.useCallback(e=>{n===!1?s(e):l.startTransition(()=>s(e))},[n]);return l.useLayoutEffect(()=>a.listen(c),[a,c]),l.createElement(Xs,{basename:e,children:t,location:o.location,navigationType:o.action,navigator:a,unstable_useTransitions:n===!0})}function Nc({basename:e,children:t,history:n,unstable_useTransitions:r}){let[i,a]=l.useState({action:n.action,location:n.location}),o=l.useCallback(e=>{r===!1?a(e):l.startTransition(()=>a(e))},[r]);return l.useLayoutEffect(()=>n.listen(o),[n,o]),l.createElement(Xs,{basename:e,children:t,location:i.location,navigationType:i.action,navigator:n,unstable_useTransitions:r===!0})}Nc.displayName=`unstable_HistoryRouter`;var Pc=/^(?:[a-z][a-z0-9+.-]*:|\/\/)/i,Fc=l.forwardRef(function({onClick:e,discover:t=`render`,prefetch:n=`none`,relative:r,reloadDocument:i,replace:a,state:o,target:s,to:c,preventScrollReset:u,viewTransition:d,...f},p){let{basename:m,unstable_useTransitions:h}=l.useContext(ys),g=typeof c==`string`&&Pc.test(c),_,v=!1;if(typeof c==`string`&&g&&(_=c,jc))try{let e=new URL(window.location.href),t=c.startsWith(`//`)?new URL(e.protocol+c):new URL(c),n=$o(t.pathname,m);t.origin===e.origin&&n!=null?c=n+t.search+t.hash:v=!0}catch{Do(!1,`<Link to="${c}"> contains an invalid URL which will probably break when clicked - please update to a valid URL path.`)}let y=Cs(c,{relative:r}),[b,x,S]=Tc(n,f),C=Vc(c,{replace:a,state:o,target:s,preventScrollReset:u,relative:r,viewTransition:d,unstable_useTransitions:h});function w(t){e&&e(t),t.defaultPrevented||C(t)}let T=l.createElement(`a`,{...f,...S,href:_||y,onClick:v||i?e:w,ref:Ac(p,x),target:s,"data-discover":!g&&t===`render`?`true`:void 0});return b&&!g?l.createElement(l.Fragment,null,T,l.createElement(Dc,{page:y})):T});Fc.displayName=`Link`;var Ic=l.forwardRef(function({"aria-current":e=`page`,caseSensitive:t=!1,className:n=``,end:r=!1,style:i,to:a,viewTransition:o,children:s,...c},u){let d=As(a,{relative:c.relative}),f=Ts(),p=l.useContext(hs),{navigator:m,basename:h}=l.useContext(ys),g=p!=null&&Zc(d)&&o===!0,_=m.encodeLocation?m.encodeLocation(d).pathname:d.pathname,v=f.pathname,y=p&&p.navigation&&p.navigation.location?p.navigation.location.pathname:null;t||(v=v.toLowerCase(),y=y?y.toLowerCase():null,_=_.toLowerCase()),y&&h&&(y=$o(y,h)||y);let b=_!==`/`&&_.endsWith(`/`)?_.length-1:_.length,x=v===_||!r&&v.startsWith(_)&&v.charAt(b)===`/`,S=y!=null&&(y===_||!r&&y.startsWith(_)&&y.charAt(_.length)===`/`),C={isActive:x,isPending:S,isTransitioning:g},w=x?e:void 0,T;T=typeof n==`function`?n(C):[n,x?`active`:null,S?`pending`:null,g?`transitioning`:null].filter(Boolean).join(` `);let E=typeof i==`function`?i(C):i;return l.createElement(Fc,{...c,"aria-current":w,className:T,ref:u,style:E,to:a,viewTransition:o},typeof s==`function`?s(C):s)});Ic.displayName=`NavLink`;var Lc=l.forwardRef(({discover:e=`render`,fetcherKey:t,navigate:n,reloadDocument:r,replace:i,state:a,method:o=Zs,action:s,onSubmit:c,relative:u,preventScrollReset:d,viewTransition:f,...p},m)=>{let{unstable_useTransitions:h}=l.useContext(ys),g=Wc(),_=Gc(s,{relative:u}),v=o.toLowerCase()===`get`?`get`:`post`,y=typeof s==`string`&&Pc.test(s);return l.createElement(`form`,{ref:m,method:v,action:_,onSubmit:r?c:e=>{if(c&&c(e),e.defaultPrevented)return;e.preventDefault();let r=e.nativeEvent.submitter,s=r?.getAttribute(`formmethod`)||o,p=()=>g(r||e.currentTarget,{fetcherKey:t,method:s,navigate:n,replace:i,state:a,relative:u,preventScrollReset:d,viewTransition:f});h&&n!==!1?l.startTransition(()=>p()):p()},...p,"data-discover":!y&&e===`render`?`true`:void 0})});Lc.displayName=`Form`;function W({getKey:e,storageKey:t,...n}){let r=l.useContext(Cc),{basename:i}=l.useContext(ys),a=Ts(),o=Ws();Yc({getKey:e,storageKey:t});let s=l.useMemo(()=>{if(!r||!e)return null;let t=Jc(a,o,i,e);return t===a.key?null:t},[]);if(!r||r.isSpaMode)return null;let c=((e,t)=>{if(!window.history.state||!window.history.state.key){let e=Math.random().toString(32).slice(2);window.history.replaceState({key:e},``)}try{let n=JSON.parse(sessionStorage.getItem(e)||`{}`)[t||window.history.state.key];typeof n==`number`&&window.scrollTo(0,n)}catch(t){console.error(t),sessionStorage.removeItem(e)}}).toString();return l.createElement(`script`,{...n,suppressHydrationWarning:!0,dangerouslySetInnerHTML:{__html:`(${c})(${JSON.stringify(t||Kc)}, ${JSON.stringify(s)})`}})}W.displayName=`ScrollRestoration`;function Rc(e){return`${e} must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.`}function zc(e){let t=l.useContext(ms);return Eo(t,Rc(e)),t}function Bc(e){let t=l.useContext(hs);return Eo(t,Rc(e)),t}function Vc(e,{target:t,replace:n,state:r,preventScrollReset:i,relative:a,viewTransition:o,unstable_useTransitions:s}={}){let c=Os(),u=Ts(),d=As(e,{relative:a});return l.useCallback(f=>{if(ic(f,t)){f.preventDefault();let t=n===void 0?U(u)===U(d):n,p=()=>c(e,{replace:t,state:r,preventScrollReset:i,relative:a,viewTransition:o});s?l.startTransition(()=>p()):p()}},[u,c,d,n,r,t,e,i,a,o,s])}var Hc=0,Uc=()=>`__${String(++Hc)}__`;function Wc(){let{router:e}=zc(`useSubmit`),{basename:t}=l.useContext(ys),n=Hs(),r=e.fetch,i=e.navigate;return l.useCallback(async(e,a={})=>{let{action:o,method:s,encType:c,formData:l,body:u}=lc(e,t);a.navigate===!1?await r(a.fetcherKey||Uc(),n,a.action||o,{preventScrollReset:a.preventScrollReset,formData:l,body:u,formMethod:a.method||s,formEncType:a.encType||c,flushSync:a.flushSync}):await i(a.action||o,{preventScrollReset:a.preventScrollReset,formData:l,body:u,formMethod:a.method||s,formEncType:a.encType||c,replace:a.replace,state:a.state,fromRouteId:n,flushSync:a.flushSync,viewTransition:a.viewTransition})},[r,i,t,n])}function Gc(e,{relative:t}={}){let{basename:n}=l.useContext(ys),r=l.useContext(xs);Eo(r,`useFormAction must be used inside a RouteContext`);let[i]=r.matches.slice(-1),a={...As(e||`.`,{relative:t})},o=Ts();if(e==null){a.search=o.search;let e=new URLSearchParams(a.search),t=e.getAll(`index`);if(t.some(e=>e===``)){e.delete(`index`),t.filter(e=>e).forEach(t=>e.append(`index`,t));let n=e.toString();a.search=n?`?${n}`:``}}return(!e||e===`.`)&&i.route.index&&(a.search=a.search?a.search.replace(/^\?/,`?index&`):`?index`),n!==`/`&&(a.pathname=a.pathname===`/`?n:cs([n,a.pathname])),U(a)}var Kc=`react-router-scroll-positions`,qc={};function Jc(e,t,n,r){let i=null;return r&&(i=r(n===`/`?e:{...e,pathname:$o(e.pathname,n)||e.pathname},t)),i??=e.key,i}function Yc({getKey:e,storageKey:t}={}){let{router:n}=zc(`useScrollRestoration`),{restoreScrollPosition:r,preventScrollReset:i}=Bc(`useScrollRestoration`),{basename:a}=l.useContext(ys),o=Ts(),s=Ws(),c=Us();l.useEffect(()=>(window.history.scrollRestoration=`manual`,()=>{window.history.scrollRestoration=`auto`}),[]),Xc(l.useCallback(()=>{if(c.state===`idle`){let t=Jc(o,s,a,e);qc[t]=window.scrollY}try{sessionStorage.setItem(t||Kc,JSON.stringify(qc))}catch(e){Do(!1,`Failed to save scroll positions in sessionStorage, <ScrollRestoration /> will not work properly (${e}).`)}window.history.scrollRestoration=`auto`},[c.state,e,a,o,s,t])),typeof document<`u`&&(l.useLayoutEffect(()=>{try{let e=sessionStorage.getItem(t||Kc);e&&(qc=JSON.parse(e))}catch{}},[t]),l.useLayoutEffect(()=>{let t=n?.enableScrollRestoration(qc,()=>window.scrollY,e?(t,n)=>Jc(t,n,a,e):void 0);return()=>t&&t()},[n,a,e]),l.useLayoutEffect(()=>{if(r!==!1){if(typeof r==`number`){window.scrollTo(0,r);return}try{if(o.hash){let e=document.getElementById(decodeURIComponent(o.hash.slice(1)));if(e){e.scrollIntoView();return}}}catch{Do(!1,`"${o.hash.slice(1)}" is not a decodable element ID. The view will not scroll to it.`)}i!==!0&&window.scrollTo(0,0)}},[o,r,i]))}function Xc(e,t){let{capture:n}=t||{};l.useEffect(()=>{let t=n==null?void 0:{capture:n};return window.addEventListener(`pagehide`,e,t),()=>{window.removeEventListener(`pagehide`,e,t)}},[e,n])}function Zc(e,{relative:t}={}){let n=l.useContext(gs);Eo(n!=null,"`useViewTransitionState` must be used within `react-router-dom`'s `RouterProvider`.  Did you accidentally import `RouterProvider` from `react-router`?");let{basename:r}=zc(`useViewTransitionState`),i=As(e,{relative:t});if(!n.isTransitioning)return!1;let a=$o(n.currentLocation.pathname,r)||n.currentLocation.pathname,o=$o(n.nextLocation.pathname,r)||n.nextLocation.pathname;return Xo(i.pathname,o)!=null||Xo(i.pathname,a)!=null}(0,c.createRoot)(document.getElementById(`root`)).render((0,R.jsx)(l.StrictMode,{children:(0,R.jsx)(Mc,{children:(0,R.jsx)(bo,{})})}));
