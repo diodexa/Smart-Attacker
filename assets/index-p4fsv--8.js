@@ -16,7 +16,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case :  Internet Lambat
-Solusi :  
+Solusi :  minta data
 `,case:`Internet Lambat`,Solusi:`
 Makasih udah nunggu. Kak maaf, untuk kendala internet lambatnya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku cek : 
 1. Email akun by.U : 
@@ -64,7 +64,7 @@ Internet Lambat
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case :  gabisa aktivasi Error Lain
-Solusi : 
+Solusi : minta data
 `,case:`Error Lain`,Solusi:` Makasih udah nunggu. Kak maaf, kalau aku cek ada  masalah di nomor atau SIM Card by.U Kakak. Untuk pengecekan lebih lanjut, boleh infoin data ini ya :
 
 1. Nomor Identitas KTP valid :
@@ -94,7 +94,7 @@ Tidak bisa aktivasi Error Lain
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case :  bugs aplikasi
-Solusi :  
+Solusi :  minta data
 `,case:`Bugs Lain`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala aplikasinya di nomor xxxxxx, aku cek ga ada info gangguan. Boleh coba dulu untuk ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih gak bisa, boleh coba install ulang aplikasi by.U kakak dan pastikan koneksi internet ada. Kalau di aplikasi masih berkendala, Kakak bisa coba akses di website by.U ya. Kalau udah tapi masih berkendala, boleh infoin data ini ya :
 1. Email akun by.U : 
 2. Tipe/merek Gadget : 
@@ -103,7 +103,9 @@ Solusi :
 5. Apakah bisa akses website byu.id di device yang sama menggunakan jaringan by.U atau jaringan lain? 
 6. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
 7. Waktu dan Lama Kejadian : 
-8. Lokasi Kejadian :  `,Mandatory:`
+8. Lokasi Kejadian :  
+Kalau gabisa kirim Screen recorder, bisa kirim ke email nindy@byu.id, nanti kalau udah infoin email yang dipakai waktu ngirimnya ya :)
+`,Mandatory:`
 #Pelangganbyu
 [byU Live] 
 Pelanggan by.U
@@ -124,7 +126,7 @@ Bugs Lain
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : bugs ganti sim card
-Solusi :  
+Solusi : minta data
 `,case:`Bugs Ganti Sim Card`,Solusi:`Makasih udah nunggu :) Oke Kak maaf. Ini SIM card Kakak di nomor xxxxxx harusnya bisa lanjut dengan Kakak pilih menu ganti SIM card di apps, nantinya bakal muncul halaman pengambilan/pengantaran. Coba di clear cache dulu apps nya dan pastiin pakai apps versi terbaru ya. Kalau udah tapi masih ga muncul halaman pengambilan/pengantarannya boleh diinfoin data ini :
 1. Email by.U :
 2. Tipe/merek Gadget :
@@ -132,7 +134,9 @@ Solusi :
 4. Versi aplikasi by.U :
 5. Apakah bisa akses menggunakan wifi/jaringan lain :
 6. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :
-7. Waktu dan Lama Kejadian :`,Mandatory:`
+7. Waktu dan Lama Kejadian :
+Kalau gabisa kirim Screen recorder, bisa kirim ke email nindy@byu.id, nanti kalau udah infoin email yang dipakai waktu ngirimnya ya :)
+`,Mandatory:`
 #Pelangganbyu
 [byU Live] 
 Pelanggan by.U
@@ -152,7 +156,7 @@ Bugs Ganti Sim Card
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : gabisa kirim/terima SMS
-Solusi :  
+Solusi :  minta data
 `,case:`Tidak bisa Kirim/Terima SMS`,Solusi:`Makasih udah nunggu. Kak maaf banget nih untuk kendala SMS nya di nomor xxxxxx. Boleh coba panduan ini dulu ya :
 1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
 2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 *Note: hanya ada di HP android, jika pelanggan sudah infokan tipe HP dan bukan HP android maka settingan ini tidak perlu di infokan ke pelanggan
@@ -191,7 +195,7 @@ Tidak bisa kirim / Terima SMS
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : gabisa telepon masuk/keluar
-Solusi : 
+Solusi : minta data
 `,case:`Panggilan Telepon Masuk / Telepon Keluar`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala teleponnya di nomor xxxxxx , boleh  pastiin dulu kakak berada dalam lokasi yang mendapatkan sinyal by.U dan sudah mencoba on-off-kan airplane mode. kalau masih gabisa, boleh infoin data ini ya :
 1. Email akun by.U :
 2. Printscreen dashboard di apps dan keterangan sinyal : 
@@ -226,7 +230,7 @@ Tidak bisa melakukan panggilan on-net & off-net
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : ga dapat OTP Whatsapp/Telegram
-Solusi : 
+Solusi : minta data
 `,case:`Tidak bisa request OTP Meta Product`,Solusi:`Kak maaf banget nih untuk kendala kode OTP nya di nomor xxxxxx. Boleh coba panduan ini dulu ya :
 1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
 2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 
@@ -258,7 +262,7 @@ TIDAK BISA REQUEST OTP META PRODUCT
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : unreg
-Solusi :  
+Solusi :  minta data
 `,case:`Unreg hapus NIK`,Solusi:`Makasih udah nunggu. Kak maaf untuk unreg/deaktivasi SIM card by.U, bisa melalui aplikasi. Silakan kakak buka halaman profil, pilih menu bantuan, pilih topik Isu SIM, lalu Kakak pilih faq Gimana sih cara unreg SIM Card by.U? Selanjutnya ikuti langkah-langkah pada aplikasi ya.
 1. Masukan SIM Card by.U ke gadget kamu
 2. Matikan WiFi dan pastikan gadget kamu udah nyambung ke jaringan seluler by.U
@@ -297,7 +301,7 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : unreg
-Solusi :  
+Solusi : minta data
 `,case:`Unreg hapus NIK lupa nomor`,Solusi:``,Mandatory:`
 #Pelangganbyu
 [byU Live] 
@@ -321,7 +325,7 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : gabisa aktivasi esim acount
-Solusi : 
+Solusi : minta data
 `,case:`Gagal Aktivasi eSIM Account Status Tidak Sesuai`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala eSIM di nomor xxxxxx , aku cek ada kendala nih dari proses aktivasinya. Boleh infoin data ini ya biar bisa aku proses :
 1.Email akun by.U : 
 2.Nomor yang bisa dihubungi : 
@@ -347,7 +351,7 @@ Gagal Aktivasi eSIM Account Status Tidak Sesuai
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : Sinyal lemah/tidak stabil
-Solusi :  
+Solusi : minta data
 `,case:`Sinyal lemah/tidak stabil`,Solusi:`
 Makasih udah nunggu. Kak maaf, untuk kendala sinyalnya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
@@ -393,17 +397,26 @@ Tidak Ada Sinyal/Blankspot & Sinyal Lemah/Tidak Stabil
 [byU Live]
 Nomor by.U : xxxxxx
 Email by.U : -
-Detail case : ganti sim card
-Solusi :  
-`,case:`Ganti SIM Card active`,Solusi:`Makasih udah nunggu. Kak untuk permintaan ganti SIM Card, bisa dilakukan selama nomornya aktif ya. Silakan Kakak bisa lakukan prosesnya diApps by.U yaa, berikut cara melakukan permintaan ganti SIM Card-nya ya:
+Detail case : Ganti sim card
+Solusi : minta data
+`,case:`Ganti SIM Card active`,Solusi:`Makasih udah nunggu. Kak maaf kalau maksudnya permintaan ganti SIM Card nya di nomor xxxxxx, silakan Kakak bisa lakukan prosesnya diApps by.U yaa, berikut cara melakukan permintaan ganti SIM Card-nya ya:
 1. Pastiin Versi aplikasi sudah yang terbaru yaa
-2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak (bukan pakai nomor by.U)
+2. Log In ke apps by.U pake email akun by.U (bukan pakai nomor by.U)
 3. Masuk Ke profil by.U pojok kiri atas
 4. Scroll kebawah
 5. Klik Ganti SIM Card
 6. Ikuti proses prosedur ganti SIM Card
 7. Tunggu proses validasi dari tim by.U
 8. Kalo rikuesmu di terima, lanjutin prosesnya dan bisa Pilih Ambil (GraPARI)/Indomaret tanpa biaya pengambilan atau SIM Card diantar (Kurir JNE) dengan biaya Rp10.000 dan estimasi sampai makismal 7 hari kerja sesudah melakukan pembayaran.
+
+
+Kak kalau gitu boleh infoin data ini ya biar bisa aku proses : 
+1. Email akun by.U : 
+2. Nomor Identitas valid : 
+3. Scan/Foto KTP asli : 
+4. Foto selfie dengan KTP asli :  
+5. Nama & nomor penerima : 
+6. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
 
 
 DISCLAIMER
@@ -439,7 +452,7 @@ Permintaan Ganti SIM Card Active
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : misskoordinasi JNE ada AWB
-Solusi : 
+Solusi : minta data
 `,case:`Miskoordinasi JNE (AWB)`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari aplikasinya jadinya SIM card Kakak belum di kirimin. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. Nama dan Nomor Penerima :
@@ -467,7 +480,7 @@ Keluhan SIM Card Tidak Sampai via JNE ada AWB
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : misskoordinasi ga ada awb
-Solusi : 
+Solusi : minta data
 `,case:`Miskoordinasi JNE `,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari aplikasinya jadinya SIM card Kakak belum di kirimin. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email by.U : -
 2. Capture bukti pembayaran : 
@@ -492,7 +505,7 @@ Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : irenew va
-Solusi : 
+Solusi : minta data
 `,case:`IRENEW virtual account Paid `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,Mandatory:`
 #Pelangganbyu
 [byU Live] 
@@ -517,7 +530,7 @@ paid
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : penyalahgunaan nik
-Solusi : 
+Solusi : minta data
 `,case:`Penyalahgunaan NIK `,Solusi:` 
 Makasih udah nunggu. Kak maaf untuk permintaan unreg di NIK Kakak boleh infoin aku data ini ya biar bisa aku proses : 
 1. Email Aktif : 
@@ -555,7 +568,7 @@ Penyalahgunaan NIK
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : irenew VA unpaid
-Solusi : 
+Solusi : minta data
 `,case:`Irenew virtual account Unpaid `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx, boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)
 
 Kak maaf, aku cek transaksi di nomor xxxxxx, ada kendala dari pihak pembayarannya jadinya transaksinya gabisa dilanjutin nih. Boleh infoin data ini ya biar bisa aku proses : 
@@ -589,7 +602,7 @@ Unpaid
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : refund karena
-Solusi : 
+Solusi : minta data
 `,case:`Permintaan Refund karena kesalahan sistem `,Solusi:``,Mandatory:`
 [REFUND]
 #Pelangganbyu
@@ -606,7 +619,7 @@ Permintaan Refund karena kesalahan sistem
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : ga dapat kuota Monthversary
-Solusi : 
+Solusi : minta data
 `,case:`Tidak Mendapatkan Kuota Monthversary  `,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala ga dapat kuota Monthversary di nomor xxxxxx, boleh infoin aku data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Kuota berapa bulan yang belum didapatkan (3, 6, 9, atau 12 bulan) : 
@@ -633,7 +646,7 @@ Tidak Mendapatkan Kuota Monthversary
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : gagal Aktivasi M-Banking
-Solusi : 
+Solusi : minta data
 `,case:`SMS - Gagal Aktivasi M-Banking `,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala fitur banking nya di nomor xxxxxx, pastiin cuma ada SIM Card by.U di hp saat aktivasi fitur banking tersebut dan terkoneksi dengan jaringan by.U. Kalau masih tidak bisa, boleh tolong infokan beberapa data berikut agar dapat dibantu pengecekan :
 1. Email akun by.U :
 2. Rincian keluhan :
@@ -661,7 +674,7 @@ SMS - Gagal Aktivasi M-Banking
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : irenew
-Solusi : 
+Solusi : minta data
 `,case:`IRENEW OVO/DANA/ShopeePay `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,Mandatory:`
 #Pelangganbyu
 [byU Live] 
@@ -680,7 +693,7 @@ Masalah Pembelian Kuota/Pulsa I RENEW Via
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : gabisa aktivasi legacy
-Solusi : 
+Solusi : minta data
 `,case:`Tidak Bisa Aktivasi SIM Card Legacy `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala gabisa aktivasi/registrasi di nomor xxxxxx, aku cek nomornya belum kedaftar di sistem nih yang artinya belum di aktivasi. Kalau nomornya udah sesuai dengan yang di bagian depan bungkus SIM card, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
 1. NIK & NOKK :
 2. Capture Gagal Aktivasi
@@ -720,7 +733,7 @@ Semoga berhasil ya Kak, kalau berkendala bisa Kakak coba aktivasi via web byu.id
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : gabisa internet
-Solusi : 
+Solusi : minta data
 `,case:`Tidak bisa internet`,Solusi:`
 Kak makasih udah nunggu. Maaf nih untuk kendala internet nya di nomor xxxxxx , boleh infoin data ini ya biar bisa aku cek : 
 1. Email akun by.U :
@@ -760,8 +773,16 @@ Tidak Bisa akses internet
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : sim card yang didapat legacy
-Solusi : 
-`,case:`Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy (indomaret)`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku`,Mandatory:`
+Solusi : minta data
+`,case:`Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy (indomaret)`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
+1. Akun by.U : 
+2. Capture Keterangan Gagal Aktivasi : 
+3. Serial Number di cangkang SIM Card : 
+4. Foto bungkus SIM Card bagian depan : 
+5. Nama penerima : 
+6. Nomor penerima : 
+7. Alamat pengiriman : 
+`,Mandatory:`
 #Pelangganbyu
 [byU Live] 
 Pelanggan by.U
@@ -782,7 +803,7 @@ Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : gabisa aktivasi asset notfound
-Solusi : 
+Solusi : minta data
 `,case:`Tidak Bisa Aktivasi SIM Card Dengan Kode Error Asset Not Found `,Solusi:`Makasih udah nunggu ya Kak. Maaf banget nih untuk kendala aktivasi SIM card nya di nomor xxxxxx, Kalau sudah mencoba lagi dan masih tidak bisa, boleh diinfokan beberapa data berikut ya supaya kami bisa melakukan pengecekan lebih lanjut :
 1. Akun by.U :
 2. NIK :
@@ -810,7 +831,7 @@ Tidak Bisa Aktivasi SIM Card Dengan Kode Error "Asset Not Found"
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : kuota tiba-tiba berkurang
-Solusi : 
+Solusi : minta data
 `,case:`Ketidaksesuaian Penggunaan Kuota `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala penggunaan kuota yang ga sesuai di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U:
 2. Tanggal waktu kejadian :
@@ -868,7 +889,7 @@ Tidak bisa login dengan Nomor BYU
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : non telco
-Solusi : 
+Solusi : minta data
 `,case:`Tidak Mendapatkan Voucher Non-Telco uCoin`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Jenis voucher yang ditukarkan : 
@@ -893,7 +914,7 @@ Tidak Mendapatkan Voucher Non-Telco
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : ganti sim card ditolak grapari
-Solusi : 
+Solusi : minta data
 `,case:`Pergantian SIM Card Legacy ditolak GraPARI`,Solusi:`Makasih udah nunggu. Kak maaf, untuk ganti SIM card nya karena gabisa di GraPARI di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Nama Pelanggan/pengunjung : 
 2. Email aktif yang bisa dihubungi : 
@@ -929,7 +950,7 @@ Pergantian SIM Card Legacy ditolak GraPARI
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : esim sinyal hilang
-Solusi : 
+Solusi : minta data
 `,case:`Esim Sinyal hilang`,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. Tipe/Merek Gadget :
@@ -959,7 +980,7 @@ eSIM sinyal hilang
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : minta barcode esim
-Solusi : 
+Solusi : minta data
 `,case:`eSIM barcode/QR tidak tersimpan `,Solusi:`Makasih udah nunggu. Kak maaf untuk barcode/qr eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Akun by.U : 
 2. Nomor yang bisa dihubungi : 
@@ -985,7 +1006,7 @@ eSIM  QR tidak tersimpan
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : bugs ganti sim card
-Solusi : 
+Solusi : minta data
 `,case:`Bugs Ganti SIM card (mandatory E)`,Solusi:` Makasih udah nunggu. Kak maaf, kalau keterangannya seperti itu, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. Nomor Identitas KTP :
@@ -998,7 +1019,9 @@ Solusi :
 9. Tipe/merek Gadget :
 10. Versi OS Gadget :
 11. Versi aplikasi by.U :
-Kirimnya ke email nindy@byu.id aja ya biar aman :)
+Kalau gabisa kirim Screen recorder, bisa kirim ke email nindy@byu.id, nanti kalau udah infoin email yang dipakai waktu ngirimnya ya :)
+
+
 
 DISCLAIMER
 
@@ -1034,7 +1057,7 @@ Bugs Ganti SIM card
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : gabisa internet roaming
-Solusi : 
+Solusi : minta data
 `,case:`Keluhan Tidak Bisa Akses Internet di Luar Negeri Roaming`,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
 2. Tanggal dan waktu kejadian sejak kapan :
@@ -1076,7 +1099,7 @@ DATA - Tidak Bisa Akses Internet di Luar Negeri
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : pulsa berkurang tiba-tiba
-Solusi : 
+Solusi : minta data
 `,case:`Pulsa berkurang tiba-tiba`,Solusi:`Makasih udah nunggu Kak. Maaf nih untuk kendala pulsa yang berkurang tiba-tiba di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun By.U :
 2. Pulsa awal dan pulsa akhir :
@@ -1187,7 +1210,7 @@ Tidak Bisa Aktivasi SIM Card Dengan Keterangan Maximum Number
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : perubahan data pelanggan
-Solusi : 
+Solusi : minta data
 `,case:`Perubahan Data Pelanggan`,Solusi:`Makasih udah nunggu. Kak maaf untuk perubahan data NIK nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
 1. Alamat Email login by.U :
 2. NIK & NOK pelanggan baru :
@@ -1232,7 +1255,7 @@ Perubahan data pelanggan
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : perubahan data 
-Solusi : 
+Solusi : minta data
 `,case:`Perubahan Data pindah tangan (pindah tangan)`,Solusi:`Makasih udah nunggu. Kak maaf untuk perubahan data NIK nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
 1. Alamat Email login by.U :
 2. NIK & NOK pelanggan lama :
@@ -1302,7 +1325,7 @@ c. Kode PUK tidak akan berubah, Kakak bisa menyimpan kode PUK jika diperlukan ke
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : Tidak dapat langganan ZOOM Premium"
-Solusi : 
+Solusi : minta data
 `,case:`Tidak dapat langganan ZOOM Premium`,Solusi:` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Zoom nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Capture detail riwayat transaksi pembelian topping Zoom :
@@ -1330,7 +1353,7 @@ Tidak dapat langganan ZOOM Premium
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : Tidak dapat langganan Netflix
-Solusi : 
+Solusi : minta data
 `,case:`Tidak dapat langganan Netflix`,Solusi:` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Netflix nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Tanggal pembelian paket :
@@ -1358,7 +1381,7 @@ Tidak dapat langganan Netflix
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : Tidak dapat langganan Vidio
-Solusi : 
+Solusi : minta data
 `,case:`Tidak dapat langganan Vidio`,Solusi:` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Vidio nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Capture detail riwayat transaksi pembelian topping Vidio :
@@ -1386,7 +1409,7 @@ Tidak dapat langganan Vidio
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : Tidak dapat kuota Birthday reward
-Solusi : 
+Solusi : minta data
 `,case:`Tidak dapat kuota Birthday reward`,Solusi:` Makasih udah nunggu. Kak maaf untuk ga dapat kuota bonus birthday di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Capture profile di aplikasi by.U :
@@ -1450,7 +1473,7 @@ Solusi : arahin hubungi email
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : gagal pairing
-Solusi : 
+Solusi : minta data
 `,case:` SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan / Gagal pairing`,Solusi:` Makasih udah nungu. Kak maaf sepertinya ada kendala nih untuk  SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. SN kartu pengganti yang ada di dekat barcode cangkang SIM card :
@@ -1470,6 +1493,7 @@ Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : greeting
 Solusi : greeting
+
 `,case:` greeting`,Solusi:`Kak boleh infoin pertanyaan atau kendalanya lebih detail seputar by.U ya biar bisa aku bantu :)
 `,Mandatory:`
 https://byu.omnix.co.id/login
@@ -1485,6 +1509,13 @@ https://sites.google.com/view/modulhappiness
 https://docs.google.com/spreadsheets/d/1uZiJ3pb1dVJr3Wvw9-D0mOpevhUOhQ1hX2thMy02WEs/edit?usp=sharing
 
 https://web.telegram.org/k/
+
+#Pelangganbyu
+[byU Live]
+Nomor by.U : xxxxxx
+Email by.U : -
+Detail case : info send gift/tf pulsa
+Solusi : info send gift/tf pulsa
 `},{id:51,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
@@ -1505,8 +1536,8 @@ Solusi : info nomor SMS nya
 [byU Live]
 Nomor by.U : xxxxxx
 Email by.U : -
-Detail case : SIM card tidak terdeteksi"
-Solusi : solusi SIM card tidak terdeteksi"
+Detail case : SIM card tidak terdeteksi
+Solusi : solusi SIM card tidak terdeteksi
 `,case:`SIM card tidak terdeteksi`,Solusi:` Makasih udah nunggu. Kak maaf, untuk kendala SIM card yang ga kedeteksi, kalau IMEI nya udah terdaftar tapi masih berkendala, boleh coba panduan ini ya :
 1. Buka dan lepaskan kartu SIM yang tidak terbaca dari slot HP yang tersedia kemudian bersihkan dari debu-debu yang mengganggu kinerja kartu SIM. Selanjutnya aktifkan kembali HP dan tunggu hingga SIM Card menanggapi serta terhubung ke jaringan.
 2. Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.
@@ -1514,11 +1545,60 @@ Solusi : solusi SIM card tidak terdeteksi"
 4. Refresh jaringan : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih by.U (Telkomsel).
 5. Coba airplane mode dan ON-OFF kan mobile data.
 `,Mandatory:`
+`},{id:53,Bracket:`#Pelangganbyu
+[byU Live]
+Nomor by.U : xxxxxx
+Email by.U : -
+Detail case : Kuota tiba-tiba hilang karena kesalahan by.U
+Solusi : minta data
+`,case:`Kuota tiba-tiba hilang karena kesalahan by.U`,Solusi:` Makasih udah nunggu. Kak maaf, untuk kendala kuotanya di nomor xxxxxx , boleh infoin data ini ya biar bisa aku proses : 
+1. Email akun by.U : 
+2. Channel Pembayaran : 
+3. Tanggal & Waktu Kejadian : 
+4. Capture Detail Riwayat Transaksi Kuota yang hilang : 
+`,Mandatory:`#Pelangganbyu
+[byU Live] 
+Pelanggan by.U
+${e()} 
+Kuota tiba-tiba hilang karena kesalahan by.U
+
+1. Nomor by.U : xxxxxx
+2. Email by.U : 
+3. Channel Pembayaran : 
+4. Tanggal & Waktu Kejadian : 
+5. Capture Detail Riwayat Transaksi Kuota yang hilang : 
+6. Nama, Jumlah, Masa Aktif Kuota : (Agent yang melakukan pengecekan sendiri)
+7. Detail Kendala : 
+`},{id:54,Bracket:`#Pelangganbyu
+[byU Live]
+Nomor by.U : xxxxxx
+Email by.U : -
+Detail case :  u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
+Solusi : minta data
+`,case:` u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil`,Solusi:` Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+1. Email akun by.U : 
+2. Capture keterangan detail transaksi yang u-coinnya tidak masuk :
+3. Capture Halaman Histori U-Coin Terkumpul :
+`,Mandatory:`#Pelangganbyu
+[byU Live] 
+Pelanggan by.U
+${e()} 
+ u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
+
+1. Nomor by.U : xxxxxx
+2. Email by.U : 
+3. Capture keterangan detail transaksi yang u-coinnya tidak masuk :
+4. Capture Halaman Histori U-Coin Terkumpul :
+5. Order detail ID (CXO) (Pengecekan OperatorX) : (hasil pengecekan agent)
+6. Transaction ID (CXT) (Pengecekan OperatorX) : (hasil pengecekan agent) 
+7. Nomor BSS Order ID yang u-coin nya tidak masuk : (hasil pengecekan agent)
+8. Nomor Transaction ID dan waktu transaksi di CRM yang u-coin nya tidak masuk : (hasil pengecekan agent)
+9. Printscreen history u-Coin di LMS : (hasil pengecekan agent)
 `}]};var Ja=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),R=e(((e,t)=>{t.exports=Ja()}))(),Ya=({onSelect:e})=>(0,R.jsx)(Ka,{options:qa().slice().sort((e,t)=>e.case.toLocaleLowerCase().localeCompare(t.case.toLocaleLowerCase())).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:`#f6fbe0ff`}),menu:e=>({...e,backgroundColor:`#f6fbe0ff`})}}),Xa={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},Za=l.createContext&&l.createContext(Xa),Qa=[`attr`,`size`,`title`];function $a(e,t){if(e==null)return{};var n=eo(e,t),r,i;if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(i=0;i<a.length;i++)r=a[i],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function eo(e,t){if(e==null)return{};var n={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}function to(){return to=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},to.apply(this,arguments)}function no(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function ro(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?no(Object(n),!0).forEach(function(t){io(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):no(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function io(e,t,n){return t=ao(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function ao(e){var t=oo(e,`string`);return typeof t==`symbol`?t:t+``}function oo(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function so(e){return e&&e.map((e,t)=>l.createElement(e.tag,ro({key:t},e.attr),so(e.child)))}function co(e){return t=>l.createElement(lo,to({attr:ro({},e.attr)},t),so(e.child))}function lo(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=$a(e,Qa),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),l.createElement(`svg`,to({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:ro(ro({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&l.createElement(`title`,null,i),e.children)};return Za===void 0?t(Xa):l.createElement(Za.Consumer,null,e=>t(e))}function uo(e){return co({tag:`svg`,attr:{viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`2`,strokeLinecap:`round`,strokeLinejoin:`round`},child:[{tag:`rect`,attr:{x:`9`,y:`9`,width:`13`,height:`13`,rx:`2`,ry:`2`},child:[]},{tag:`path`,attr:{d:`M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1`},child:[]}]})(e)}var z=({text:e})=>{let[t,n]=(0,l.useState)(!1);return(0,R.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),n(!0),setTimeout(()=>n(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,R.jsxs)(uo,{className:` ${t?`invisible!`:`visible`}`,children:["` $",t?`copy!`:`tidak`,"`"]}),(0,R.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,t?`anjay`:``,` `]})]})};function fo(){let e=(0,l.useRef)([]),t=(0,l.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var po=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=fo(),c=e=>{let t=e.split(`
 `),n=1;for(let e=0;e<t.length;e++){if(t[e].trim()===``){n=1;continue}let r=t[e].match(/^(\d+)\.\s*(.*)/);if(!r){n=1;continue}t[e]=`${n}. ${r[2]}`,n++}return t.join(`
-`)},u=(e,n)=>{a(e,n),t(e),r.current=n};return(0,l.useLayoutEffect)(()=>{r.current!==null&&n.current&&(n.current.setSelectionRange(r.current,r.current),r.current=null)},[e]),(0,R.jsx)(`textarea`,{ref:n,className:`p-2 w-full h-screen border-2`,value:e,onChange:e=>{let t=e.target,n=t.value,a=t.selectionStart;n.split(`
+`)},u=(e,n)=>{a(e,n),t(e),r.current=n};return(0,l.useLayoutEffect)(()=>{r.current!==null&&n.current&&(n.current.setSelectionRange(r.current,r.current),r.current=null)},[e]),(0,R.jsx)(`textarea`,{ref:n,className:`p-2 w-full h-screen border-2 resize-x`,value:e,onChange:e=>{let t=e.target,n=t.value,a=t.selectionStart;n.split(`
 `).length<i.current.split(`
 `).length&&(n=c(n)),r.current=a,u(n,a),i.current=n},onKeyDown:i=>{if((i.ctrlKey||i.metaKey)&&i.key.toLowerCase()===`z`){if(i.preventDefault(),i.shiftKey){let e=s();e&&(t(e.value),r.current=e.cursor)}else{let e=o();e&&(t(e.value),r.current=e.cursor)}return}if((i.ctrlKey||i.metaKey)&&i.key.toLowerCase()===`y`){i.preventDefault();let e=s();e&&(t(e.value),r.current=e.cursor);return}if(i.key!==`Enter`||i.key==`Enter`&&i.shiftKey)return;let a=(e,t)=>{let n=1;for(let r=t-1;r>=0;r--){let t=e[r].match(/^(\d+)\./);if(e[r].trim()===``)break;if(t){n=Number(t[1])+1;break}}for(let r=t;r<e.length;r++){let t=e[r].match(/^(\d+)\.\s*(.*)/);if(!t||e[r].trim()===``)break;e[r]=`${n}. ${t[2]}`,n++}},c=i.currentTarget.selectionStart,l=e.slice(0,c),d=l.split(`
 `),f=d.length-1,p=d[f].match(/^(\d+)\.\s*/);if(!p)return;i.preventDefault();let m=Number(p[1])+1,h=e.split(`
@@ -1531,7 +1611,7 @@ Solusi : solusi SIM card tidak terdeteksi"
 `),f=d.length-1,p=d[f].match(/^(\d+)\.\s*/);if(!p)return;i.preventDefault();let m=Number(p[1])+1,h=e.split(`
 `);h.splice(f+1,0,`${m}. `),a(h,f+2);let g=h.join(`
 `),_=l.length+`\n${m}. `.length;l.length+`\n${m}. `.length,u(g,_),t(g),setTimeout(()=>{n.current?.setSelectionRange(_,_)},0)},placeholder:`Pilih dulu kategorinya .....`})},V=()=>{let[e,t]=(0,l.useState)(()=>{let e=localStorage.getItem(`selectedId`);return e?Number(e):null}),n=qa().find(t=>t.id===e),[r,i]=(0,l.useState)(``),[a,o]=(0,l.useState)(``);return(0,l.useEffect)(()=>{e!==null&&localStorage.setItem(`selectedId`,String(e))},[e]),(0,l.useEffect)(()=>{n&&(i(n.Mandatory),o([n.Bracket,n.Solusi].filter(Boolean).join(`
-`)))},[e]),(0,l.useEffect)(()=>{let e=async e=>{if(e.ctrlKey&&e.key===`b`){if(e.preventDefault(),!navigator.clipboard)return;let t=await navigator.clipboard.readText();i(e=>e.replace(/xxxxxx/g,t)),o(e=>e.replace(/xxxxxx/g,t))}};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[]),(0,R.jsxs)(`div`,{className:`flex flex-col w-screen `,children:[(0,R.jsx)(Ya,{onSelect:e=>t(e)}),(0,R.jsxs)(`div`,{className:`flex gap-2`,children:[(0,R.jsxs)(`div`,{className:`w-full`,children:[n&&(0,R.jsx)(z,{text:r}),(0,R.jsx)(po,{selectedId:e,value:r,onChange:i},e)]}),(0,R.jsxs)(`div`,{className:`w-full  `,children:[n&&(0,R.jsx)(z,{text:a}),(0,R.jsx)(B,{value:a,onChange:o},e)]})]})]})},mo=()=>{let[e,t]=(0,l.useState)(null),[n,r]=(0,l.useState)(()=>{let e=localStorage.getItem(`my-templates`);return e?JSON.parse(e):[``,``,``,``,``,``]});(0,l.useEffect)(()=>{localStorage.setItem(`my-templates`,JSON.stringify(n))},[n]);let i=(e,t)=>{let i=[...n];i[e]=t,r(i)};return(0,R.jsx)(`div`,{className:`w-full `,children:[0,1,2,3,4,5,6,7,8,9,10].map(r=>(0,R.jsx)(`div`,{className:`flex`,children:[0,1].map(a=>{let o=r*2+a,s={0:`F1`,2:`F2`,4:`F3`,1:`F4`,3:`F6`,5:`F7`};return(0,R.jsxs)(`div`,{className:`relative w-full`,children:[(0,R.jsx)(`textarea`,{value:n[o],onChange:e=>i(o,e.target.value),onClick:()=>{navigator.clipboard.writeText(n[o]),t(o),setTimeout(()=>t(null),500)},className:`h-30 w-full border-1 border-solid hover:bg-yellow-200 hover:text-black `}),s[o]&&(0,R.jsx)(`span`,{className:`\r
+`)))},[e]),(0,l.useEffect)(()=>{let e=async e=>{if(e.ctrlKey&&e.code===`Space`){if(e.preventDefault(),!navigator.clipboard)return;let t=await navigator.clipboard.readText();i(e=>e.replace(/xxxxxx/g,t)),o(e=>e.replace(/xxxxxx/g,t))}};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[]),(0,R.jsxs)(`div`,{className:`flex flex-col w-screen `,children:[(0,R.jsx)(Ya,{onSelect:e=>t(e)}),(0,R.jsxs)(`div`,{className:`flex gap-2`,children:[(0,R.jsxs)(`div`,{className:`w-full`,children:[n&&(0,R.jsx)(z,{text:r}),(0,R.jsx)(po,{selectedId:e,value:r,onChange:i},e)]}),(0,R.jsxs)(`div`,{className:`w-full  `,children:[n&&(0,R.jsx)(z,{text:a}),(0,R.jsx)(B,{value:a,onChange:o},e)]})]})]})},mo=()=>{let[e,t]=(0,l.useState)(null),[n,r]=(0,l.useState)(()=>{let e=localStorage.getItem(`my-templates`);return e?JSON.parse(e):[``,``,``,``,``,``]});(0,l.useEffect)(()=>{localStorage.setItem(`my-templates`,JSON.stringify(n))},[n]);let i=(e,t)=>{let i=[...n];i[e]=t,r(i)};return(0,R.jsx)(`div`,{className:`w-full `,children:[0,1,2,3,4,5,6,7,8,9,10].map(r=>(0,R.jsx)(`div`,{className:`flex`,children:[0,1].map(a=>{let o=r*2+a,s={0:`F1`,2:`F2`,4:`F3`,1:`F4`,3:`F6`,5:`F7`};return(0,R.jsxs)(`div`,{className:`relative w-full`,children:[(0,R.jsx)(`textarea`,{value:n[o],onChange:e=>i(o,e.target.value),onClick:()=>{navigator.clipboard.writeText(n[o]),t(o),setTimeout(()=>t(null),500)},className:`h-30 w-full border-1 border-solid hover:bg-yellow-200 hover:text-black `}),s[o]&&(0,R.jsx)(`span`,{className:`\r
                                 pointer-events-none\r
                                 absolute\r
                                 top-1/2 left-1/2\r
