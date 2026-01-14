@@ -65,7 +65,7 @@ Nomor by.U : xxxxxx
 Email by.U : -
 Detail case :  gabisa aktivasi Error Lain
 Solusi : minta data
-`,case:`Error Lain`,Solusi:` Makasih udah nunggu. Kak maaf, kalau aku cek ada  masalah di nomor atau SIM Card by.U Kakak. Untuk pengecekan lebih lanjut, boleh infoin data ini ya :
+`,case:`Error Lain`,Solusi:`Makasih udah nunggu. Kak maaf, kalau aku cek di nomor xxxxxx, ada  masalah di nomor atau SIM Card by.U Kakak. Untuk pengecekan lebih lanjut, boleh infoin data ini ya :
 
 1. Nomor Identitas KTP valid :
 2. NOKK :
@@ -453,7 +453,7 @@ Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : misskoordinasi JNE ada AWB
 Solusi : minta data
-`,case:`Miskoordinasi JNE (AWB)`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari aplikasinya jadinya SIM card Kakak belum di kirimin. Boleh infoin data ini ya biar bisa aku proses : 
+`,case:`Miskoordinasi JNE (AWB)`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari proses pengantarannya. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. Nama dan Nomor Penerima :
 3. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) :
@@ -569,9 +569,7 @@ Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : irenew VA unpaid
 Solusi : minta data
-`,case:`Irenew virtual account Unpaid `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx, boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)
-
-Kak maaf, aku cek transaksi di nomor xxxxxx, ada kendala dari pihak pembayarannya jadinya transaksinya gabisa dilanjutin nih. Boleh infoin data ini ya biar bisa aku proses : 
+`,case:`Irenew virtual account Unpaid `,Solusi:`Makasih udah nunggu. Kak maaf, aku cek transaksi di nomor xxxxxx, ada kendala dari pihak pembayarannya jadinya transaksinya gabisa dilanjutin nih. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U
 2. Nomor rekening bank BCA
 3. Atas nama pemilik rekening
@@ -675,7 +673,9 @@ Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : irenew
 Solusi : minta data
-`,case:`IRENEW OVO/DANA/ShopeePay `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,Mandatory:`
+`,case:`IRENEW OVO/DANA/ShopeePay `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx boleh infoin aku data ini ya biar bisa aku cek : 
+1. Email akun by.U 
+2. Capture bukti pembayaran`,Mandatory:`
 #Pelangganbyu
 [byU Live] 
 Pelanggan by.U
@@ -694,11 +694,11 @@ Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : gabisa aktivasi legacy
 Solusi : minta data
-`,case:`Tidak Bisa Aktivasi SIM Card Legacy `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala gabisa aktivasi/registrasi di nomor xxxxxx, aku cek nomornya belum kedaftar di sistem nih yang artinya belum di aktivasi. Kalau nomornya udah sesuai dengan yang di bagian depan bungkus SIM card, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
+`,case:`Tidak Bisa Aktivasi SIM Card Legacy `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala gabisa aktivasi/registrasi di nomor xxxxxx, aku cek nomornya belum berhasil di aktivasi nih. Kalau nomornya udah sesuai dengan yang di bagian depan bungkus SIM card, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
 1. NIK & NOKK :
-2. Capture Gagal Aktivasi
-3. SN barcode yang ada di cangkang SIM Card
-4. CP dan Email yang bisa dihubungi`,Mandatory:`
+2. Capture Gagal/berhasil Aktivasi via SMS :
+3. SN barcode yang ada di cangkang SIM Card :
+4. CP dan Email yang bisa dihubungi :`,Mandatory:`
 #Pelangganbyu
 [byU Live] 
 Pelanggan by.U
@@ -720,7 +720,7 @@ Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : cara aktivasi sim card digital
 Solusi : info cara aktivasi di apps
-`,case:`Cara Aktivasi SIM card Digital `,Solusi:`Aku bantu infoin untuk cara aktivasinya Kakak bisa coba cara berikut ya Kak:
+`,case:`Cara Aktivasi SIM card Digital `,Solusi:`Kak maaf, untuk aktivasi di nomor xxxxxx, Aku bantu infoin untuk cara aktivasinya Kakak bisa coba cara berikut ya Kak:
 1. Buka apps, lalu login dengan menggunakan akun yang digunakan pada saat pemesanan kartu by.U > klik tombol aktifin SIM Card,
 2. Pastiin SIM Card di HP hanya ada SIM by.U,
 3. Pastiin settingan HP jaringan internet terkoneksi ke jaringan by.U,
@@ -1474,7 +1474,7 @@ Nomor by.U : xxxxxx
 Email by.U : -
 Detail case : gagal pairing
 Solusi : minta data
-`,case:` SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan / Gagal pairing`,Solusi:` Makasih udah nungu. Kak maaf sepertinya ada kendala nih untuk  SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+`,case:`SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan / Gagal pairing`,Solusi:` Makasih udah nungu. Kak maaf sepertinya ada kendala nih untuk  SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. SN kartu pengganti yang ada di dekat barcode cangkang SIM card :
 `,Mandatory:`
@@ -1495,6 +1495,17 @@ Detail case : greeting
 Solusi : greeting
 
 `,case:` greeting`,Solusi:`Kak boleh infoin pertanyaan atau kendalanya lebih detail seputar by.U ya biar bisa aku bantu :)
+
+=======================
+
+#Pelangganbyu
+[byU Live]
+Nomor by.U : xxxxxx
+Email by.U : -
+Detail case : info send gift/tf pulsa
+Solusi : info send gift/tf pulsa
+
+Makasih udah nunggu. Kak maaf, untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
 `,Mandatory:`
 https://byu.omnix.co.id/login
 
@@ -1510,19 +1521,13 @@ https://docs.google.com/spreadsheets/d/1uZiJ3pb1dVJr3Wvw9-D0mOpevhUOhQ1hX2thMy02
 
 https://web.telegram.org/k/
 
-#Pelangganbyu
-[byU Live]
-Nomor by.U : xxxxxx
-Email by.U : -
-Detail case : info send gift/tf pulsa
-Solusi : info send gift/tf pulsa
 `},{id:51,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
 Email by.U : -
 Detail case :  sim card deactive
 Solusi : info  sim card deactive
-`,case:` SIM card Deactive`,Solusi:` Makasih udah nungu. Kak maaf untuk kendala SIM card nya, aku cek nomor xxxxxx udah gabisa di aktivasi/registrasi karena nomornya udah ga aktif/ga di atifin lebih dari 30 hari dari waktu pembayaran berhasil. Aku saranin beli nomor baru di apps by.U pakai akun baru ya :)
+`,case:`SIM card Deactive`,Solusi:` Makasih udah nungu. Kak maaf untuk kendala SIM card nya, aku cek nomor xxxxxx udah gabisa di aktivasi/registrasi karena nomornya udah ga aktif/ga di atifin lebih dari 30 hari dari waktu pembayaran berhasil. Aku saranin beli nomor baru di apps by.U pakai akun baru ya :)
 `,Mandatory:`
 `},{id:52,Bracket:`#Pelangganbyu
 [byU Live]
@@ -1532,7 +1537,7 @@ Detail case : Pulsa terpotong karena SMS dari luar negeri
 Solusi : info nomor SMS nya
 `,case:`Pulsa terpotong karena SMS dari luar negeri`,Solusi:` Maaf udah bikin Kakak nunggu ya. Aku cek di sistem untuk nomor xxxxxx ada pengurangan pulsa sebesar Rp500 untuk SMS ke nomor +41415737017. Untuk SMS ini adalah SMS verifikasi dari apps tertentu yang developernya dari luar negeri dan membebankan biaya registrasi ke pulsa customer. Ini settingan dari apps yang terisntall di HP Kakak yang otomatis menarik biaya pulsa ya, bukan settingan dari by.U 🙂
 `,Mandatory:`
-`},{id:52,Bracket:`#Pelangganbyu
+`},{id:53,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
 Email by.U : -
@@ -1545,7 +1550,7 @@ Solusi : solusi SIM card tidak terdeteksi
 4. Refresh jaringan : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih by.U (Telkomsel).
 5. Coba airplane mode dan ON-OFF kan mobile data.
 `,Mandatory:`
-`},{id:53,Bracket:`#Pelangganbyu
+`},{id:54,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
 Email by.U : -
@@ -1569,13 +1574,13 @@ Kuota tiba-tiba hilang karena kesalahan by.U
 5. Capture Detail Riwayat Transaksi Kuota yang hilang : 
 6. Nama, Jumlah, Masa Aktif Kuota : (Agent yang melakukan pengecekan sendiri)
 7. Detail Kendala : 
-`},{id:54,Bracket:`#Pelangganbyu
+`},{id:55,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
 Email by.U : -
-Detail case :  u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
+Detail case : u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
 Solusi : minta data
-`,case:` u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil`,Solusi:` Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+`,case:`U-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil`,Solusi:` Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Capture keterangan detail transaksi yang u-coinnya tidak masuk :
 3. Capture Halaman Histori U-Coin Terkumpul :
@@ -1583,7 +1588,7 @@ Solusi : minta data
 [byU Live] 
 Pelanggan by.U
 ${e()} 
- u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
+u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
 
 1. Nomor by.U : xxxxxx
 2. Email by.U : 
