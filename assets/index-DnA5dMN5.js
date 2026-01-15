@@ -1599,7 +1599,7 @@ u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
 7. Nomor BSS Order ID yang u-coin nya tidak masuk : (hasil pengecekan agent)
 8. Nomor Transaction ID dan waktu transaksi di CRM yang u-coin nya tidak masuk : (hasil pengecekan agent)
 9. Printscreen history u-Coin di LMS : (hasil pengecekan agent)
-`},{id:55,Bracket:`#Pelangganbyu
+`},{id:56,Bracket:`#Pelangganbyu
 [byU Live]
 Nomor by.U : xxxxxx
 Email by.U : -
