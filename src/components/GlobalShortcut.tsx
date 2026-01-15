@@ -3,6 +3,25 @@ import { useEffect } from "react";
 const GlobalShortcut = () => {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.ctrlKey && e.key === "F1") {
+        e.preventDefault();
+
+        if (!confirm("Buka semua tools byU?")) return;
+
+        const urls = [
+          "https://byu.omnix.co.id/login",
+          "https://cs.byu.id/id/user/login",
+          "https://crm.byu.id/crm/",
+          "https://sso.identity.telkomsel.co.id/dsc/",
+          "https://sites.google.com/view/modulhappiness",
+          "https://docs.google.com/spreadsheets/d/1uZiJ3pb1dVJr3Wvw9-D0mOpevhUOhQ1hX2thMy02WEs/edit?usp=sharing",
+          "https://web.telegram.org/k/"
+        ];
+
+        urls.forEach(url => {
+          window.open(url, "_blank", "noopener,noreferrer");
+        });
+      }
       if (e.key === "F1") {
         e.preventDefault(); // ❗ cegah help browser
 
@@ -70,6 +89,19 @@ const GlobalShortcut = () => {
         }
       }
       
+      if (e.key === "F7") {
+        e.preventDefault(); // ❗ cegah help browser
+
+        const saved = localStorage.getItem("my-templates");
+        if (!saved) return;
+
+        const templates: string[] = JSON.parse(saved);
+        const textToCopy = templates[5];
+
+        if (textToCopy) {
+          navigator.clipboard.writeText(textToCopy);
+        }
+      }
     };
 
     window.addEventListener("keydown", handleKeyDown);

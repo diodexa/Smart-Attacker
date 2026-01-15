@@ -29,7 +29,7 @@ const TemplatePages = () => {
                 {[0,1].map(col => {
                     const index = row * 2 + col;
                     const shortcutLabel: Record<number, string> = {
-                        0: "F1", 2: "F2", 4: "F3",1: "F4", 3: "F6"};
+                        0: "F1", 2: "F2", 4: "F3",1: "F4", 3: "F6" , 5:"F7"};
                     return (
                         <div className="relative w-full" key={index}>
                             <textarea

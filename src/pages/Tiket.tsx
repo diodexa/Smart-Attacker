@@ -7,15 +7,16 @@ import MandatoryDisplay from '../components/MandatoryDisplay';
 import SolusiDisplay from '../components/SolusiDisplay';
 
 const TiketPages = () => {
-    const [selectedId, setSelectedId] = useState<number | null>(()=> {
-         const saved = localStorage.getItem("selectedId");
-        return saved ? Number(saved) : null;
-    });
+  const [selectedId, setSelectedId] = useState<number | null>(() => {
+    const saved = localStorage.getItem("selectedId");
+    return saved ? Number(saved) : null;
+  });
 
-      const Mandatory = DataMandatory();
-      const selected = Mandatory.find(item => item.id === selectedId);
-      const [mandatoryText, setMandatoryText] = useState("");
-      const [solusiText, setsolusiText] = useState("");
+  const Mandatory = DataMandatory();
+  const selected = Mandatory.find(item => item.id === selectedId);
+
+  const [mandatoryText, setMandatoryText] = useState("");
+  const [solusiText, setSolusiText] = useState("");
 
       useEffect(() => {
         if (selectedId !== null) {
@@ -26,54 +27,58 @@ const TiketPages = () => {
       useEffect(() => {
         if (!selected) return;
         setMandatoryText(selected.Mandatory);
+        const combinedSolusi = [selected.Bracket,selected.Solusi].filter(Boolean).join("\n");
+        setSolusiText(combinedSolusi);
       }, [selectedId]);
+
+
 
       useEffect(() => {
-        if (!selected) return;
-        setsolusiText(selected.Solusi);
-      }, [selectedId]);
+        const handleKeyDown = async (e: KeyboardEvent) => {
+          if (e.ctrlKey && e.code === "Space") {
+            e.preventDefault();
 
-      const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
-        e.preventDefault();
+            if (!navigator.clipboard) return;
 
-        const droppedText = e.dataTransfer.getData("text/plain");
-        if (!droppedText) return;
+            const clipboardText = await navigator.clipboard.readText();
 
-        setMandatoryText(prev =>
-          prev.replace(/xxxxxx/g, droppedText)
-        );
+            setMandatoryText(prev =>
+              prev.replace(/xxxxxx/g, clipboardText)
+            );
 
-        setsolusiText(prev =>
-          prev.replace(/xxxxxx/g, droppedText)
-        );
-      };
+            setSolusiText(prev =>
+              prev.replace(/xxxxxx/g, clipboardText)
+            );
+          }
+        };
 
-      const handleDragOver = (e: React.DragEvent) => {
-        e.preventDefault();
-      };
+        window.addEventListener("keydown", handleKeyDown);
+        return () => window.removeEventListener("keydown", handleKeyDown);
+      }, []);
+
+
+
 
     return (
-        <div className='flex flex-col w-screen '
-        onDrop={handleDrop}
-        onDragOver={handleDragOver}>
+        <div className='flex flex-col w-screen '>
             <List onSelect={(id) => setSelectedId(id)} />
                 <div className='flex gap-2'>
-                <div className='w-full'>
-                    {selected && <CopyButton text={mandatoryText} />}
-                    <MandatoryDisplay
-                      key={selectedId}         
-                      selectedId={selectedId}
-                      value={mandatoryText}     
-                      onChange={setMandatoryText}
-                    />
-                </div>
-                <div className='w-full  '>
-                    {selected && <CopyButton text={solusiText} />}
-                    <SolusiDisplay 
-                      key={selectedId}         
-                      value={solusiText}     
-                      onChange={setsolusiText}
-                    />
+                  <div className='w-full'>
+                      {selected && <CopyButton text={mandatoryText} />}
+                      <MandatoryDisplay
+                        key={selectedId}         
+                        selectedId={selectedId}
+                        value={mandatoryText}     
+                        onChange={setMandatoryText}
+                      />
+                  </div>
+                  <div className='w-full  '>
+                      {selected && <CopyButton text={solusiText} />}
+                      <SolusiDisplay 
+                        key={selectedId}         
+                        value={solusiText}     
+                        onChange={setSolusiText}
+                      />
                 </div>
                 </div>
         </div>

@@ -161,7 +161,7 @@ const MandatoryDisplay = ({ value, onChange }: Props) => {
 };
 
 
-  // 🔥 restore cursor setelah render
+  //  restore cursor setelah render
   useLayoutEffect(() => {
     if (cursorRef.current !== null && textareaRef.current) {
         textareaRef.current.setSelectionRange(
@@ -172,17 +172,34 @@ const MandatoryDisplay = ({ value, onChange }: Props) => {
     }
   }, [value]);
 
+  const handleAltClick = (e: React.MouseEvent<HTMLTextAreaElement>) => {
+    if (!e.ctrlKey) return;
+
+    const textarea = e.currentTarget;
+    const text = textarea.value;
+    const pos = textarea.selectionStart;
+
+    const left = text.slice(0, pos).split(/\s/).pop() || "";
+    const right = text.slice(pos).split(/\s/)[0] || "";
+    const word = left + right;
+
+    if (word.startsWith("http")) {
+      window.open(word, "_blank", "noopener,noreferrer");
+    }
+  };
   
 
   return (
-    <textarea
-      ref={textareaRef}
-      className="p-2 w-full h-screen border-2"
-      value={value}
-      onChange={handleChange}
-      onKeyDown={handleKeyDown}
-      placeholder="Pilih dulu kategorinya ....."
-    />
+      <textarea
+        ref={textareaRef}
+        className="p-2 w-full h-screen border-2 resize-x"
+        value={value}
+        onChange={handleChange}
+        onKeyDown={handleKeyDown}
+        placeholder="Pilih dulu kategorinya ....."
+        onClick={handleAltClick}
+        
+      />
   );
 };
 
