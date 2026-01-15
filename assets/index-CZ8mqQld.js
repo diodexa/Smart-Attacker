@@ -1599,6 +1599,33 @@ u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
 7. Nomor BSS Order ID yang u-coin nya tidak masuk : (hasil pengecekan agent)
 8. Nomor Transaction ID dan waktu transaksi di CRM yang u-coin nya tidak masuk : (hasil pengecekan agent)
 9. Printscreen history u-Coin di LMS : (hasil pengecekan agent)
+`},{id:55,Bracket:`#Pelangganbyu
+[byU Live]
+Nomor by.U : xxxxxx
+Email by.U : -
+Detail case : Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)
+Solusi : minta data
+`,case:`Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala masalah pemesanan sim card via e-Commerce yang dialami, boleh infoin data ini ya biar aku bantu cek dulu transaksinya :
+1. Email akun by.U yang didaftarin :
+2 Printscreen bukti bayar yang tertera Invoice dan capture resi di aplikasi e-Commerce :
+3. Capture dashboard apps :
+
+
+Kak maaf, untuk aktivasinya kalau Kakak beli di Shopee toko resmi by.U, pastiin waktu beli SIM card nya kasih notes email biar didaftarin akun by.U nya. Kalau Kakak belum kasih notes nya, boleh Kakak hubungi admin by.U di Shopee ya biar bisa di bantu daftarin dulu akun by.U nya. Pastiin emailnya yang belum pernah didaftarin akun by.U sebelumnya ya :)
+`,Mandatory:`#Pelangganbyu
+[byU Live] 
+Pelanggan by.U
+${e()} 
+Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)
+
+1. Nomor by.U : xxxxxx
+2. Email by.U : 
+2. Printscreen bukti bayar yang tertera Invoice dan capture resi di aplikasi e-Commerce :
+3. Printscreen status pengiriman yang tertera resi di aplikasi e-Commerce : (dicek oleh agent)
+4. Capture profil apps : ( yang tertulis email login pelanggan)
+5. Tuliskan alasan tidak ada tombol aktivasi adalah karena alasan :
+6. Email alternatif yang belum terdaftar di akun by.U : 
+7. Order ID CXT/CXO (Pengecekan OperatorX) : 
 `}]};var Ja=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),R=e(((e,t)=>{t.exports=Ja()}))(),Ya=({onSelect:e})=>(0,R.jsx)(Ka,{options:qa().slice().sort((e,t)=>e.case.toLocaleLowerCase().localeCompare(t.case.toLocaleLowerCase())).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:`#f6fbe0ff`}),menu:e=>({...e,backgroundColor:`#f6fbe0ff`})}}),Xa={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},Za=l.createContext&&l.createContext(Xa),Qa=[`attr`,`size`,`title`];function $a(e,t){if(e==null)return{};var n=eo(e,t),r,i;if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(i=0;i<a.length;i++)r=a[i],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function eo(e,t){if(e==null)return{};var n={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}function to(){return to=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},to.apply(this,arguments)}function no(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function ro(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?no(Object(n),!0).forEach(function(t){io(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):no(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function io(e,t,n){return t=ao(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function ao(e){var t=oo(e,`string`);return typeof t==`symbol`?t:t+``}function oo(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function so(e){return e&&e.map((e,t)=>l.createElement(e.tag,ro({key:t},e.attr),so(e.child)))}function co(e){return t=>l.createElement(lo,to({attr:ro({},e.attr)},t),so(e.child))}function lo(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=$a(e,Qa),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),l.createElement(`svg`,to({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:ro(ro({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&l.createElement(`title`,null,i),e.children)};return Za===void 0?t(Xa):l.createElement(Za.Consumer,null,e=>t(e))}function uo(e){return co({tag:`svg`,attr:{viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`2`,strokeLinecap:`round`,strokeLinejoin:`round`},child:[{tag:`rect`,attr:{x:`9`,y:`9`,width:`13`,height:`13`,rx:`2`,ry:`2`},child:[]},{tag:`path`,attr:{d:`M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1`},child:[]}]})(e)}var z=({text:e})=>{let[t,n]=(0,l.useState)(!1);return(0,R.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),n(!0),setTimeout(()=>n(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,R.jsxs)(uo,{className:` ${t?`invisible!`:`visible`}`,children:["` $",t?`copy!`:`tidak`,"`"]}),(0,R.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,t?`anjay`:``,` `]})]})};function fo(){let e=(0,l.useRef)([]),t=(0,l.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var po=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=fo(),c=e=>{let t=e.split(`
