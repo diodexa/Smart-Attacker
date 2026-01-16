@@ -39,7 +39,7 @@ iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
 4. Isi APN dengan "byu", username dan password kosongkan.
 5. Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.
 6. Coba akses secara berkala selama 1x24 jam khawatir gangguan sementara.
-Semoga membantu :)`,Mandatory:(e,t)=>`Pelangganbyu
+Semoga membantu :)`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -71,7 +71,7 @@ Solusi : minta data
 3. Serial Number di cangkang SIM Card :
 4. Capture gagal aktivasi yang menggunakan 1 SIM card di HP dan pastiin ga pakai wifi :
 
-Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U! `,Mandatory:(e,t)=>`Pelangganbyu
+Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U! `,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -103,7 +103,7 @@ Solusi :  minta data
 7. Waktu dan Lama Kejadian : 
 8. Lokasi Kejadian :  
 Kalau gabisa kirim Screen recorder, bisa kirim ke email nindy@byu.id, nanti kalau udah infoin email yang dipakai waktu ngirimnya ya :)
-`,Mandatory:(e,t)=>`Pelangganbyu
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -133,7 +133,7 @@ Solusi : minta data
 6. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :
 7. Waktu dan Lama Kejadian :
 Kalau gabisa kirim Screen recorder, bisa kirim ke email nindy@byu.id, nanti kalau udah infoin email yang dipakai waktu ngirimnya ya :)
-`,Mandatory:(e,t)=>`Pelangganbyu
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -169,7 +169,7 @@ Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan be
 9. Nomor lain yang bisa dihubungi : 
 10. Nomor tujuan saat menerima atau mengirim SMS : 
 
-`,Mandatory:(e,t)=>`Pelangganbyu
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -205,7 +205,7 @@ Solusi : minta data
 7. Kendala terjadi hanya ke nomor tertentu atau semua nomor :
 8. Nomor lain yang bisa dihubungi : 
 
-`,Mandatory:(e,t)=>`Pelangganbyu
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -241,7 +241,7 @@ Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan be
 5. Capture dashboard di apps dan keterangan sinyal : 
 6. Capture keterangan gagal yang muncul saat melakukan request/menerima OTP : 
 7. Keterangan gagal yang muncul saat melakukan request/menerima OTP :
-`,Mandatory:(e,t)=>`Pelangganbyu
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -279,7 +279,7 @@ Makasih udah nunggu. Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Ak
 2. Email: --
 
 Nomor yang sudah berhasil di unregistrasi ga akan bisa diaktifkan kembali dalam kondisi apapun ya kak, lalu NIK yang terdaftar di nomor ini juga akan ikut terhapus. Kalo data diatas udah sesuai dan Kakak setuju boleh tolong konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :)
-`,Mandatory:(e,t)=>`Pelangganbyu
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -301,7 +301,7 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : unreg
 Solusi : minta data
-`,case:`Unreg hapus NIK lupa nomor`,Solusi:``,Mandatory:(e,t)=>`Pelangganbyu
+`,case:`Unreg hapus NIK lupa nomor`,Solusi:``,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -329,7 +329,7 @@ Solusi : minta data
 2.Nomor yang bisa dihubungi : 
 3.Email yang bisa dihubungi : 
 4.Capture gagal aktivasi di apps : 
-`,Mandatory:(e,t)=>`Pelangganbyu
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -368,7 +368,7 @@ iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
 3. Coba ON-kan airplane mode, lalu OFF-kan kembali.
 4. Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau coba ke HP lain untuk perbandingan.
 5. Dicoba akses/cek secara berkala selama 1x24 jam khawatir gangguan sementara.
-Semoga membantu :)`,Mandatory:(e,t)=>`Pelangganbyu
+Semoga membantu :)`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -428,7 +428,7 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 
 
 
-`,Mandatory:(e,t)=>`Pelangganbyu
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -454,7 +454,7 @@ Solusi : minta data
 3. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) :
 4. Capture pengecekan nomor resi di web tracking JNE : 
 5. Konfirmasi dari JNE (jika Kakak sempat komplain ke JNE) :
-`,Mandatory:(e,t)=>`Pelangganbyu
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -481,7 +481,7 @@ Solusi : minta data
 3. Nama Penerima : 
 4. Nomor Penerima : 
 5. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) : 
-`,Mandatory:(e,t)=>`Pelangganbyu
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -499,7 +499,7 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : irenew va
 Solusi : minta data
-`,case:`IRENEW virtual account Paid `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,Mandatory:(e,t)=>`Pelangganbyu
+`,case:`IRENEW virtual account Paid `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -540,7 +540,7 @@ Nomor by.U : xxxxxx
 NIK  : 
 NOKK : 
 
-Silahkan dikonfirmasi ya kak, dengan membalas "benar" atau "setuju"`,Mandatory:(e,t)=>`Pelangganbyu
+Silahkan dikonfirmasi ya kak, dengan membalas "benar" atau "setuju"`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -565,7 +565,7 @@ Solusi : minta data
 2. Nomor rekening bank BCA
 3. Atas nama pemilik rekening
 4. Kantor cabang pembuka
-`,Mandatory:(e,t)=>`Pelangganbyu
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -599,7 +599,7 @@ ${t}
 Permintaan Refund karena kesalahan sistem
 
 1.Nomor by.U : xxxxxx
-2.Email by.U : 
+2.Email by.U : --
 3.Capture bukti pembayaran : 
 `},{id:19,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
@@ -669,7 +669,7 @@ ${t}
 Masalah Pembelian Kuota/Pulsa I RENEW Via 
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : 
+2. Email by.U : --
 3. Capture bukti pembayaran : 
 4. Order detail ID (CXO) (Pengecekan OperatorX)  : 
 5. Transaction ID (CXT) (Pengecekan OperatorX) :
@@ -882,7 +882,7 @@ ${t}
 Tidak Mendapatkan Voucher Non-Telco
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : 
+2. Email by.U : --
 3. Jenis voucher yang ditukarkan : 
 4. Tanggal penukaran U-Coin : 
 5. Capture bukti redeem di halaman Reward Saya : 
@@ -1121,7 +1121,7 @@ Kak Kalau sudah berkoordinasi dengan dukcapil, masih tidak bisa, boleh infoin da
 * Printscreen bukti dari dukcapil bahwa data sudah update :
 
 Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U!
-`,Mandatory:(e,t)=>`Pelangganbyu
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -1519,7 +1519,7 @@ Solusi : minta data
 2. Channel Pembayaran : 
 3. Tanggal & Waktu Kejadian : 
 4. Capture Detail Riwayat Transaksi Kuota yang hilang : 
-`,Mandatory:(e,t)=>`Pelangganbyu
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -1542,7 +1542,7 @@ Solusi : minta data
 1. Email akun by.U : 
 2. Capture keterangan detail transaksi yang u-coinnya tidak masuk :
 3. Capture Halaman Histori U-Coin Terkumpul :
-`,Mandatory:(e,t)=>`Pelangganbyu
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -1570,7 +1570,7 @@ Solusi : minta data
 
 
 Kak maaf, untuk aktivasinya kalau Kakak beli di Shopee toko resmi by.U, pastiin waktu beli SIM card nya kasih notes email biar didaftarin akun by.U nya. Kalau Kakak belum kasih notes nya, boleh Kakak hubungi admin by.U di Shopee ya biar bisa di bantu daftarin dulu akun by.U nya. Pastiin emailnya yang belum pernah didaftarin akun by.U sebelumnya ya :)
-`,Mandatory:(e,t)=>`Pelangganbyu
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
