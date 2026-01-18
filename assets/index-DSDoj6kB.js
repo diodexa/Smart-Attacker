@@ -413,6 +413,7 @@ Kak maaf, kalau keterangannya seperti itu, boleh infoin data ini ya biar bisa ak
 4. Foto selfie dengan KTP asli :  
 5. Nama & nomor penerima : 
 6. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
+7. Alasan ganti SIM Card : 
 
 
 DISCLAIMER
@@ -441,7 +442,7 @@ Permintaan Ganti SIM Card Active
 5. Foto selfie dengan KTP asli :  
 6. Nama & nomor penerima : 
 7. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
-
+8. Alasan ganti SIM Card : 
 `},{id:13,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
