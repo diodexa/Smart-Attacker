@@ -498,7 +498,7 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : irenew va
 Solusi : minta data
-`,case:`IRENEW virtual account Paid `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,Mandatory:(e,t)=>`#Pelangganbyu
+`,case:`Pembelian paket IRENEW virtual account Paid `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -559,7 +559,7 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : irenew VA unpaid
 Solusi : minta data
-`,case:`Irenew virtual account Unpaid `,Solusi:`Makasih udah nunggu. Kak maaf, aku cek transaksi di nomor xxxxxx, ada kendala dari pihak pembayarannya jadinya transaksinya gabisa dilanjutin nih. Boleh infoin data ini ya biar bisa aku proses : 
+`,case:`Pembelian paket Irenew virtual account Unpaid `,Solusi:`Makasih udah nunggu. Kak maaf, aku cek transaksi di nomor xxxxxx, ada kendala dari pihak pembayarannya jadinya transaksinya gabisa dilanjutin nih. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U
 2. Nomor rekening bank BCA
 3. Atas nama pemilik rekening
@@ -659,7 +659,7 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : irenew
 Solusi : minta data
-`,case:`IRENEW OVO/DANA/ShopeePay `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx boleh infoin aku data ini ya biar bisa aku cek : 
+`,case:`Pembelian paket IRENEW OVO/DANA/ShopeePay/lainnya `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx boleh infoin aku data ini ya biar bisa aku cek : 
 1. Email akun by.U 
 2. Capture bukti pembayaran`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
@@ -1623,7 +1623,70 @@ Email akun by.U : --
 Detail case : informasi status kartu
 Solusi : informasi status kartu
 `,case:`cek masa aktif`,Solusi:`Makasih udah nunggu. Kak maaf, kalau aku cek nomor xxxxxx, statusnya aktif kok. Ini harusnya bisa digunakan SMS,internet maupun internet ya Kak. Boleh coba cek ya :)
-`,Mandatory:``}];var Xa=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),R=e(((e,t)=>{t.exports=Xa()}))(),Za=({onSelect:e})=>(0,R.jsx)(Ka,{options:Ya().slice().sort((e,t)=>e.case.toLocaleLowerCase().localeCompare(t.case.toLocaleLowerCase())).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:`#f6fbe0ff`}),menu:e=>({...e,backgroundColor:`#f6fbe0ff`})}}),Qa={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},$a=l.createContext&&l.createContext(Qa),eo=[`attr`,`size`,`title`];function to(e,t){if(e==null)return{};var n=no(e,t),r,i;if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(i=0;i<a.length;i++)r=a[i],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function no(e,t){if(e==null)return{};var n={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}function ro(){return ro=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},ro.apply(this,arguments)}function io(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function ao(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?io(Object(n),!0).forEach(function(t){oo(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):io(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function oo(e,t,n){return t=so(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function so(e){var t=co(e,`string`);return typeof t==`symbol`?t:t+``}function co(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function lo(e){return e&&e.map((e,t)=>l.createElement(e.tag,ao({key:t},e.attr),lo(e.child)))}function uo(e){return t=>l.createElement(fo,ro({attr:ao({},e.attr)},t),lo(e.child))}function fo(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=to(e,eo),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),l.createElement(`svg`,ro({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:ao(ao({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&l.createElement(`title`,null,i),e.children)};return $a===void 0?t(Qa):l.createElement($a.Consumer,null,e=>t(e))}function po(e){return uo({tag:`svg`,attr:{viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`2`,strokeLinecap:`round`,strokeLinejoin:`round`},child:[{tag:`rect`,attr:{x:`9`,y:`9`,width:`13`,height:`13`,rx:`2`,ry:`2`},child:[]},{tag:`path`,attr:{d:`M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1`},child:[]}]})(e)}var mo=({text:e})=>{let[t,n]=(0,l.useState)(!1);return(0,R.jsxs)(`button`,{onClick:()=>{let t=e.split(`
+`,Mandatory:``},{id:60,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : info harga paket
+Solusi : info harga paket
+`,case:`Harga paket berubah/jadi mahal`,Solusi:`Kak, maaf ya udah dibuat ga nyaman, untuk harga paket yang tertera di aplikasi bersifat penawaran ya, jadi akan berubah sesuai dengan promo yang sedang berjalan, yang merupakan bagian dari upaya kita buat terus ningkatin kualitas layanan by.U. Silakan untuk melakukan pembelian paket yang tersedia di aplikasi by.U ya kak :)
+`,Mandatory:``},{id:61,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : cara pasang esim
+Solusi : info pasang eSIM
+`,case:`Cara pasang eSIM`,Solusi:`Buat iPhone:
+- Buka “Pengaturan” pada iPhone.
+- Pilih opsi “Seluler”.
+- Pilih opsi “Tambah eSIM”.
+- Pilih opsi “Gunakan Kode QR”.
+- Pindai kode QR eSIM.
+- Setelah eSIM terdeteksi, pilih “Tambah/Lanjutkan”.
+- Masukkan kode informasi eSIM ke HP iPhone kamu.
+- Kalau nomor sudah berhasil terdaftar, klik “OK”.
+
+Buat Android :
+- Buka “Pengaturan” di HP Android kamu.
+- Pilih opsi “Koneksi”.
+- Pilih opsi “Manajer SIM”.
+- Pilih opsi “Tambah Paket Seluler”.
+- Pilih opsi “Pindai Kode QR”.
+- Pindai kode QR eSIM.
+
+- Setelah eSIM terdeteksi, klik “Tambah/Lanjutkan”.
+- Jika nomor sudah berhasil terdaftar, klik “OK”.
+- Selanjutnya, Kakak bisa aktivasi eSIM dengan buka aplikasi by.U dan pilih aktivasi eSIM.
+- Daftarin Nomor KTP/NIK, dan KK kamu.
+- 1Tunggu sampai eSIM kamu berhasil di registrasi.
+Kalau Kakak terkendala buat aktivasinya, silakan buat konfirmasi lagi ya
+`,Mandatory:``},{id:62,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case :  Gagal Registrasi 5g
+Solusi : minta data
+`,case:` Gagal Registrasi 5g`,Solusi:`Kak makasih udah nunggu. Untuk kendala 5G nya di nomor xxxxxx, Pastiin HP Kakak udah support 5G dan Kakak juga bisa cek apakah lokasi Kakak udah tercover jaringan 5G melalui https://www.telkomsel.com/check-5G-coverage. Kakak bisa melakukan daftar mandiri melalui https://my.telkomsel.com/provisioning/5g. Pastiin juga saat akses link tersebut SIM Card terpasang di SIM 1, data selular dalam keadaan on, dan fitur lokasi aktif.
+
+Jika masih berkendala, boleh infokan beberapa data di bawah ini supaya bisa dibantu pengecekan:
+1. Email akun by.U :
+2. Lokasi (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi) :
+3. Tipe HP :
+4. Capture kendala di web https://my.telkomsel.com/provisioning/5g :
+5. Capture settingan APN
+`,Mandatory:(e,t)=>`#Pelangganbyu
+[byU ${e}] 
+Pelanggan by.U
+${t} 
+5G - Gagal Aktivasi Layanan 5G
+
+1. Nomor by.U : xxxxxx
+2. Akun by.U :
+3. Lokasi detail (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi) :
+4. Tanggan dan waktu kejadian :
+5. Tipe HP :
+6. Capture kendala di https://my.telkomsel.com/provisioning/5g :
+`}];var Xa=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),R=e(((e,t)=>{t.exports=Xa()}))(),Za=({onSelect:e})=>(0,R.jsx)(Ka,{options:Ya().slice().sort((e,t)=>e.case.toLocaleLowerCase().localeCompare(t.case.toLocaleLowerCase())).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:`#f6fbe0ff`}),menu:e=>({...e,backgroundColor:`#f6fbe0ff`})}}),Qa={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},$a=l.createContext&&l.createContext(Qa),eo=[`attr`,`size`,`title`];function to(e,t){if(e==null)return{};var n=no(e,t),r,i;if(Object.getOwnPropertySymbols){var a=Object.getOwnPropertySymbols(e);for(i=0;i<a.length;i++)r=a[i],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function no(e,t){if(e==null)return{};var n={};for(var r in e)if(Object.prototype.hasOwnProperty.call(e,r)){if(t.indexOf(r)>=0)continue;n[r]=e[r]}return n}function ro(){return ro=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},ro.apply(this,arguments)}function io(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),n.push.apply(n,r)}return n}function ao(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]==null?{}:arguments[t];t%2?io(Object(n),!0).forEach(function(t){oo(e,t,n[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):io(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function oo(e,t,n){return t=so(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function so(e){var t=co(e,`string`);return typeof t==`symbol`?t:t+``}function co(e,t){if(typeof e!=`object`||!e)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||`default`);if(typeof r!=`object`)return r;throw TypeError(`@@toPrimitive must return a primitive value.`)}return(t===`string`?String:Number)(e)}function lo(e){return e&&e.map((e,t)=>l.createElement(e.tag,ao({key:t},e.attr),lo(e.child)))}function uo(e){return t=>l.createElement(fo,ro({attr:ao({},e.attr)},t),lo(e.child))}function fo(e){var t=t=>{var{attr:n,size:r,title:i}=e,a=to(e,eo),o=r||t.size||`1em`,s;return t.className&&(s=t.className),e.className&&(s=(s?s+` `:``)+e.className),l.createElement(`svg`,ro({stroke:`currentColor`,fill:`currentColor`,strokeWidth:`0`},t.attr,n,a,{className:s,style:ao(ao({color:e.color||t.color},t.style),e.style),height:o,width:o,xmlns:`http://www.w3.org/2000/svg`}),i&&l.createElement(`title`,null,i),e.children)};return $a===void 0?t(Qa):l.createElement($a.Consumer,null,e=>t(e))}function po(e){return uo({tag:`svg`,attr:{viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:`2`,strokeLinecap:`round`,strokeLinejoin:`round`},child:[{tag:`rect`,attr:{x:`9`,y:`9`,width:`13`,height:`13`,rx:`2`,ry:`2`},child:[]},{tag:`path`,attr:{d:`M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1`},child:[]}]})(e)}var mo=({text:e})=>{let[t,n]=(0,l.useState)(!1);return(0,R.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),n(!0),setTimeout(()=>n(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,R.jsxs)(po,{className:` ${t?`invisible!`:`visible`}`,children:["` $",t?`copy!`:`tidak`,"`"]}),(0,R.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,t?`anjay`:``,` `]})]})};function z(){let e=(0,l.useRef)([]),t=(0,l.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var B=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=z(),c=e=>{let t=e.split(`
 `),n=1;for(let e=0;e<t.length;e++){if(t[e].trim()===``){n=1;continue}let r=t[e].match(/^(\d+)\.\s*(.*)/);if(!r){n=1;continue}t[e]=`${n}. ${r[2]}`,n++}return t.join(`
