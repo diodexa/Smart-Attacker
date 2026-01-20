@@ -42,7 +42,7 @@ const TemplatePages = () => {
                                 // setCopied(true);
                                 // setTimeout(() => setCopied(false), 500);
                             }}
-                            className = {`h-30 w-full border-1 border-solid hover:bg-yellow-200 hover:text-black `}  
+                            className = {`h-30 w-full p-1 border-1 border-solid hover:bg-yellow-200 hover:text-black `}  
                             />
                             {shortcutLabel[index] && (
                                 <span className="

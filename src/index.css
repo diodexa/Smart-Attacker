@@ -44,9 +44,10 @@ h1 {
 .dark .label {
   color: #ffffff40;
 }
-
-
-
+.dark .border-select {
+  border: 1px solid white;
+  background-color: #213547;
+}
 
 
 /* 

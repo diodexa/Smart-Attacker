@@ -4,10 +4,11 @@ import TemplatePages from "./pages/Template";
 import DarkMode from "./components/ButtonDarkLight";
 import NotePages from "./pages/Note";
 import GlobalShortcut from "./components/GlobalShortcut";
+import SegmentList from "./components/SegmentList";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState("notepad");
-
+  const [segment, setSegment] = useState("Live");
 
   return (
     <div className="flex flex-col ">
@@ -33,9 +34,16 @@ export default function App() {
         >
           Template
         </button>
-        <div className="absolute right-0 flex gap-1">
+
+
+        <div className="ml-auto flex items-center gap-2">
+          <SegmentList Segment={segment} onChange={setSegment}/>
+        </div>
+
+
+        <div className="absolute top-1 right-0 flex gap-1">
           <DarkMode/>
-          <h1 className="text-3xl tracking-[.25em]">di<span className="text-red-600">N</span></h1>
+          <h1 className="text-3xl tracking-[.2em]">di<span className="text-red-600">N</span></h1>
         </div>
       </div>
 
@@ -46,7 +54,7 @@ export default function App() {
         )}
 
         {activeTab === "tiket" && (
-          <TiketPages />
+          <TiketPages segment={segment} />
         )}
         {activeTab === "Template" && (
           <TemplatePages />

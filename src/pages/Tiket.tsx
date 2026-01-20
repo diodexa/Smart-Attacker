@@ -5,37 +5,49 @@ import CopyButton from '../components/CopyButton';
 import MandatoryDisplay from '../components/MandatoryDisplay';
 
 import SolusiDisplay from '../components/SolusiDisplay';
+import { getCurrentDateTime } from '../components/DateTime';
 
-const TiketPages = () => {
+type Props = {
+  segment: string;
+};
+
+
+const TiketPages = ({ segment }: Props) => {
   const [selectedId, setSelectedId] = useState<number | null>(() => {
     const saved = localStorage.getItem("selectedId");
     return saved ? Number(saved) : null;
   });
 
+  const [createdAt] = useState(() => getCurrentDateTime());
+  
   const Mandatory = DataMandatory();
   const selected = Mandatory.find(item => item.id === selectedId);
 
   const [mandatoryText, setMandatoryText] = useState("");
   const [solusiText, setSolusiText] = useState("");
 
-      useEffect(() => {
-        if (selectedId !== null) {
-          localStorage.setItem("selectedId", String(selectedId));
-        }
-      }, [selectedId]);
+      // useEffect(() => {
+      //   if (selectedId !== null) {
+      //     localStorage.setItem("selectedId", String(selectedId));
+      //   }
+      // }, [selectedId]);
 
       useEffect(() => {
         if (!selected) return;
-        setMandatoryText(selected.Mandatory);
-        const combinedSolusi = [selected.Bracket,selected.Solusi].filter(Boolean).join("\n");
+        localStorage.setItem("selectedId", String(selectedId));
+        setMandatoryText(
+          typeof selected.Mandatory === "function"? selected.Mandatory(segment, createdAt): selected.Mandatory
+        )
+
+        const combinedSolusi = [selected.Bracket(segment),selected.Solusi].filter(Boolean).join("\n");
         setSolusiText(combinedSolusi);
-      }, [selectedId]);
+      }, [selectedId,segment]);
 
 
 
       useEffect(() => {
         const handleKeyDown = async (e: KeyboardEvent) => {
-          if (e.ctrlKey && e.code === "Space") {
+          if (e.ctrlKey && !e.shiftKey && e.code === "Space") {
             e.preventDefault();
 
             if (!navigator.clipboard) return;
@@ -50,6 +62,23 @@ const TiketPages = () => {
               prev.replace(/xxxxxx/g, clipboardText)
             );
           }
+          
+          if (e.ctrlKey && e.shiftKey && e.code === "Space") {
+            e.preventDefault();
+
+            if (!navigator.clipboard) return;
+
+            const clipboardText = await navigator.clipboard.readText();
+
+            setMandatoryText(prev =>
+              prev.replace(/--/g, clipboardText)
+            );
+
+            setSolusiText(prev =>
+              prev.replace(/--/g, clipboardText)
+            );
+          }
+
         };
 
         window.addEventListener("keydown", handleKeyDown);

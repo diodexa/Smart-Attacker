@@ -19,14 +19,14 @@ export default function DarkMode() {
       aria-label="Toggle dark mode"
     >
       <BsFillSunFill
-        className={` absolute inset-0 m-auto transition-all duration-500 ${
+        className={` absolute inset-0 m-auto transition-all duration-500 cursor-pointer ${
           dark
             ? "opacity-0 scale-50 rotate-90"
             : "opacity-100 scale-150 rotate-0"
         }`}
       />
       <RiMoonClearFill
-        className={`text-white absolute inset-0 m-auto transition-all duration-500 ${
+        className={`text-white absolute inset-0 m-auto transition-all duration-500 cursor-pointer ${
           dark
             ? "opacity-100 scale-150 rotate-0"
             : "opacity-0 scale-50 rotate-90"
