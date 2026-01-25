@@ -3,6 +3,8 @@ import { getCurrentDate } from "./DateTime"
 export const DataMandatory = () => {
 const Mandatory = [{ 
 id: 1 ,
+case : "Internet Lambat",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -10,7 +12,6 @@ Email by.U : --
 Detail case :  Internet Lambat
 Solusi :  minta data
 `,
-case : "Internet Lambat",
 Solusi : `
 Makasih udah nunggu. Kak maaf, untuk kendala internet lambatnya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku cek : 
 1. Email akun by.U : 
@@ -59,6 +60,7 @@ Internet Lambat
 
 {
 id: 2,
+case : "Tidak bisa aktivasi Error Lain",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
@@ -67,7 +69,6 @@ Email by.U : --
 Detail case :  gabisa aktivasi Error Lain
 Solusi : minta data
 `,
-case : "Error Lain",
 Solusi : `Makasih udah nunggu. Kak maaf, kalau aku cek di nomor xxxxxx, ada  masalah di nomor atau SIM Card by.U Kakak. Untuk pengecekan lebih lanjut, boleh infoin data ini ya :
 
 1. Nomor Identitas KTP valid :
@@ -98,6 +99,7 @@ Tidak bisa aktivasi Error Lain
 
 {
 id: 3,
+case : "Bugs Lain",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
@@ -106,7 +108,6 @@ Email by.U : --
 Detail case :  bugs aplikasi
 Solusi :  minta data
 `,
-case : "Bugs Lain",
 Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala aplikasinya di nomor xxxxxx, aku cek ga ada info gangguan. Boleh coba dulu untuk ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih gak bisa, boleh coba install ulang aplikasi by.U kakak dan pastikan koneksi internet ada. Kalau di aplikasi masih berkendala, Kakak bisa coba akses di website by.U ya. Kalau udah tapi masih berkendala, boleh infoin data ini ya :
 1. Email akun by.U : 
 2. Tipe/merek Gadget : 
@@ -139,6 +140,7 @@ Bugs Lain
 
 {
 id: 4,
+case : "Bugs Ganti Sim Card",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
@@ -147,7 +149,6 @@ Email by.U : --
 Detail case : bugs ganti sim card
 Solusi : minta data
 `,
-case : "Bugs Ganti Sim Card",
 Solusi : `Makasih udah nunggu :) Oke Kak maaf. Ini SIM card Kakak di nomor xxxxxx harusnya bisa lanjut dengan Kakak pilih menu ganti SIM card di apps, nantinya bakal muncul halaman pengambilan/pengantaran. Coba di clear cache dulu apps nya dan pastiin pakai apps versi terbaru ya. Kalau udah tapi masih ga muncul halaman pengambilan/pengantarannya boleh diinfoin data ini :
 1. Email akun by.U : 
 2. Tipe/merek Gadget :
@@ -178,6 +179,7 @@ Bugs Ganti Sim Card
 
 {
 id: 5,
+case : "Tidak bisa Kirim/Terima SMS",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
@@ -186,7 +188,6 @@ Email by.U : --
 Detail case : gabisa kirim/terima SMS
 Solusi :  minta data
 `,
-case : "Tidak bisa Kirim/Terima SMS",
 Solusi : `Makasih udah nunggu. Kak maaf banget nih untuk kendala SMS nya di nomor xxxxxx. Boleh coba panduan ini dulu ya :
 1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
 2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 *Note: hanya ada di HP android, jika pelanggan sudah infokan tipe HP dan bukan HP android maka settingan ini tidak perlu di infokan ke pelanggan
@@ -230,6 +231,7 @@ Tidak bisa kirim / Terima SMS
 
 {
 id: 6,
+case : "Panggilan Telepon Masuk / Telepon Keluar",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
@@ -238,7 +240,6 @@ Email by.U : --
 Detail case : gabisa telepon masuk/keluar
 Solusi : minta data
 `,
-case : "Panggilan Telepon Masuk / Telepon Keluar",
 Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala teleponnya di nomor xxxxxx , boleh  pastiin dulu kakak berada dalam lokasi yang mendapatkan sinyal by.U dan sudah mencoba on-off-kan airplane mode. kalau masih gabisa, boleh infoin data ini ya :
 1. Email akun by.U :
 2. Printscreen dashboard di apps dan keterangan sinyal : 
@@ -274,6 +275,7 @@ Tidak bisa melakukan panggilan on-net & off-net
 
 {
 id: 7,
+case : "Tidak bisa request OTP Meta Product",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
@@ -282,7 +284,6 @@ Email by.U : --
 Detail case : ga dapat OTP Whatsapp/Telegram
 Solusi : minta data
 `,
-case : "Tidak bisa request OTP Meta Product",
 Solusi : `Kak maaf banget nih untuk kendala kode OTP nya di nomor xxxxxx. Boleh coba panduan ini dulu ya :
 1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
 2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 
@@ -318,6 +319,7 @@ TIDAK BISA REQUEST OTP META PRODUCT
 
 {
 id: 8,
+case : "Unreg hapus NIK",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
@@ -326,7 +328,6 @@ Email by.U : --
 Detail case : unreg
 Solusi :  minta data
 `,
-case : "Unreg hapus NIK",
 Solusi : `Makasih udah nunggu. Kak maaf untuk unreg/deaktivasi SIM card by.U, bisa melalui aplikasi. Silakan kakak buka halaman profil, pilih menu bantuan, pilih topik Isu SIM, lalu Kakak pilih faq Gimana sih cara unreg SIM Card by.U? Selanjutnya ikuti langkah-langkah pada aplikasi ya.
 1. Masukan SIM Card by.U ke gadget kamu
 2. Matikan WiFi dan pastikan gadget kamu udah nyambung ke jaringan seluler by.U
@@ -366,6 +367,7 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 
 {
 id: 9,
+case : "Unreg hapus NIK lupa nomor",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
@@ -374,7 +376,6 @@ Email by.U : --
 Detail case : unreg
 Solusi : minta data
 `,
-case : "Unreg hapus NIK lupa nomor",
 Solusi : "",
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
@@ -399,6 +400,8 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 
 {
 id: 10,
+case : "Gagal Aktivasi eSIM Account Status Tidak Sesuai",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -406,7 +409,6 @@ Email by.U : --
 Detail case : gabisa aktivasi esim acount
 Solusi : minta data
 `,
-case : "Gagal Aktivasi eSIM Account Status Tidak Sesuai",
 Solusi :   `Makasih udah nunggu. Kak maaf, untuk kendala eSIM di nomor xxxxxx , aku cek ada kendala nih dari proses aktivasinya. Boleh infoin data ini ya biar bisa aku proses :
 1.Email akun by.U : 
 2.Nomor yang bisa dihubungi : 
@@ -433,6 +435,8 @@ Gagal Aktivasi eSIM Account Status Tidak Sesuai
 
 {
 id: 11,
+case : "Sinyal lemah/tidak stabil",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -440,7 +444,6 @@ Email by.U : --
 Detail case : Sinyal lemah/tidak stabil
 Solusi : minta data
 `,
-case : "Sinyal lemah/tidak stabil",
 Solusi : `
 Makasih udah nunggu. Kak maaf, untuk kendala sinyalnya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
@@ -488,6 +491,8 @@ Tidak Ada Sinyal/Blankspot & Sinyal Lemah/Tidak Stabil
 
 {
 id: 12,
+case : "Ganti SIM Card active",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -495,7 +500,6 @@ Email by.U : --
 Detail case : Ganti sim card
 Solusi : minta data
 `,
-case : "Ganti SIM Card active",
 Solusi :`Makasih udah nunggu. Kak maaf kalau maksudnya permintaan ganti SIM Card nya di nomor xxxxxx, silakan Kakak bisa lakukan prosesnya diApps by.U yaa, berikut cara melakukan permintaan ganti SIM Card-nya ya:
 1. Pastiin Versi aplikasi sudah yang terbaru yaa
 2. Log In ke apps by.U pake email akun by.U (bukan pakai nomor by.U)
@@ -527,9 +531,6 @@ Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kemb
 5. Alamat pengiriman :
 
 Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
-
-
-
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
@@ -551,6 +552,8 @@ Permintaan Ganti SIM Card Active
 
 {
 id: 13,
+case : "Miskoordinasi JNE (AWB)",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -558,7 +561,6 @@ Email by.U : --
 Detail case : misskoordinasi JNE ada AWB
 Solusi : minta data
 `,
-case : "Miskoordinasi JNE (AWB)",
 Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari proses pengantarannya. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. Nama dan Nomor Penerima :
@@ -585,6 +587,8 @@ Keluhan SIM Card Tidak Sampai via JNE ada AWB
 
 {
 id: 14,
+case : "Miskoordinasi JNE ",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -592,7 +596,6 @@ Email by.U : --
 Detail case : misskoordinasi ga ada awb
 Solusi : minta data
 `,
-case : "Miskoordinasi JNE ",
 Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari aplikasinya jadinya SIM card Kakak belum di kirimin. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Capture bukti pembayaran : 
@@ -618,6 +621,8 @@ Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
 
 {
 id: 15,
+case : "Pembelian paket IRENEW virtual account Paid ",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -625,7 +630,6 @@ Email by.U : --
 Detail case : irenew va
 Solusi : minta data
 `,
-case : "Pembelian paket IRENEW virtual account Paid ",
 Solusi : 'Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)',
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
@@ -652,6 +656,8 @@ paid
 
 {
 id: 16,
+case : "Penyalahgunaan NIK ",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -659,7 +665,6 @@ Email by.U : --
 Detail case : penyalahgunaan nik
 Solusi : minta data
 `,
-case : "Penyalahgunaan NIK ",
 Solusi : 
 `Makasih udah nunggu. Kak maaf untuk permintaan unreg di NIK Kakak boleh infoin aku data ini ya biar bisa aku proses : 
 1. Email Aktif : 
@@ -698,6 +703,8 @@ Penyalahgunaan NIK
 
 {
 id: 17,
+case : "Pembelian paket Irenew virtual account Unpaid ",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -705,7 +712,6 @@ Email by.U : --
 Detail case : irenew VA unpaid
 Solusi : minta data
 `,
-case : "Pembelian paket Irenew virtual account Unpaid ",
 Solusi : `Makasih udah nunggu. Kak maaf, aku cek transaksi di nomor xxxxxx, ada kendala dari pihak pembayarannya jadinya transaksinya gabisa dilanjutin nih. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U
 2. Nomor rekening bank BCA
@@ -738,6 +744,8 @@ Unpaid
 
 {
 id: 18,
+case : "Permintaan Refund karena kesalahan sistem ",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -745,7 +753,6 @@ Email by.U : --
 Detail case : refund karena
 Solusi : minta data
 `,
-case : "Permintaan Refund karena kesalahan sistem ",
 Solusi : "",
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
@@ -763,6 +770,8 @@ Permintaan Refund karena kesalahan sistem
 
 {
 id: 19,
+case : "Tidak Mendapatkan Kuota Monthversary  ",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -770,7 +779,6 @@ Email by.U : --
 Detail case : ga dapat kuota Monthversary
 Solusi : minta data
 `,
-case : "Tidak Mendapatkan Kuota Monthversary  ",
 Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala ga dapat kuota Monthversary di nomor xxxxxx, boleh infoin aku data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Kuota berapa bulan yang belum didapatkan (3, 6, 9, atau 12 bulan) : 
@@ -798,6 +806,8 @@ Tidak Mendapatkan Kuota Monthversary
 
 {
 id: 20,
+case : "SMS - Gagal Aktivasi M-Banking ",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -805,7 +815,6 @@ Email by.U : --
 Detail case : gagal Aktivasi M-Banking
 Solusi : minta data
 `,
-case : "SMS - Gagal Aktivasi M-Banking ",
 Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala fitur banking nya di nomor xxxxxx, pastiin cuma ada SIM Card by.U di hp saat aktivasi fitur banking tersebut dan terkoneksi dengan jaringan by.U. Kalau masih tidak bisa, boleh tolong infokan beberapa data berikut agar dapat dibantu pengecekan :
 1. Email akun by.U :
 2. Rincian keluhan :
@@ -834,6 +843,8 @@ SMS - Gagal Aktivasi M-Banking
 
 {
 id: 21,
+case : "Pembelian paket IRENEW OVO/DANA/ShopeePay/lainnya ",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -841,7 +852,6 @@ Email by.U : --
 Detail case : irenew
 Solusi : minta data
 `,
-case : "Pembelian paket IRENEW OVO/DANA/ShopeePay/lainnya ",
 Solusi : `Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx boleh infoin aku data ini ya biar bisa aku cek : 
 1. Email akun by.U 
 2. Capture bukti pembayaran`,
@@ -863,6 +873,8 @@ Masalah Pembelian Kuota/Pulsa I RENEW Via
 
 {
 id: 22,
+case : "Tidak Bisa Aktivasi SIM Card Legacy ",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -870,7 +882,6 @@ Email by.U : --
 Detail case : gabisa aktivasi legacy
 Solusi : minta data
 `,
-case : "Tidak Bisa Aktivasi SIM Card Legacy ",
 Solusi : `Makasih udah nunggu. Kak maaf untuk kendala gabisa aktivasi/registrasi di nomor xxxxxx, aku cek nomornya belum berhasil di aktivasi nih. Kalau nomornya udah sesuai dengan yang di bagian depan bungkus SIM card, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
 1. NIK & NOKK :
 2. Capture Gagal/berhasil Aktivasi via SMS :
@@ -897,6 +908,8 @@ Tidak Bisa Aktivasi SIM Card Legacy
 
 {
 id: 23,
+case : "Cara Aktivasi SIM card Digital ",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -904,7 +917,6 @@ Email by.U : --
 Detail case : cara aktivasi sim card digital
 Solusi : info cara aktivasi di apps
 `,
-case : "Cara Aktivasi SIM card Digital ",
 Solusi : `Kak maaf, untuk aktivasi di nomor xxxxxx, Aku bantu infoin untuk cara aktivasinya Kakak bisa coba cara berikut ya Kak:
 1. Buka apps, lalu login dengan menggunakan akun yang digunakan pada saat pemesanan kartu by.U > klik tombol aktifin SIM Card,
 2. Pastiin SIM Card di HP hanya ada SIM by.U,
@@ -918,6 +930,8 @@ Mandatory : `
 
 {
 id: 24,
+case : "Tidak bisa internet",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -925,7 +939,6 @@ Email by.U : --
 Detail case : gabisa internet
 Solusi : minta data
 `,
-case : "Tidak bisa internet",
 Solusi : `
 Kak makasih udah nunggu. Maaf nih untuk kendala internet nya di nomor xxxxxx , boleh infoin data ini ya biar bisa aku cek : 
 1. Email akun by.U :
@@ -966,6 +979,8 @@ Tidak Bisa akses internet
 
 {
 id: 25,
+case : "Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy (indomaret)",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -973,7 +988,6 @@ Email by.U : --
 Detail case : sim card yang didapat legacy
 Solusi : minta data
 `,
-case : "Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy (indomaret)",
 Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
 1. Akun by.U : 
 2. Capture Keterangan Gagal Aktivasi : 
@@ -1004,6 +1018,8 @@ Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy
 
 {
 id: 26,
+case : "Tidak Bisa Aktivasi SIM Card Dengan Kode Error Asset Not Found ",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1011,7 +1027,6 @@ Email by.U : --
 Detail case : gabisa aktivasi asset notfound
 Solusi : minta data
 `,
-case : "Tidak Bisa Aktivasi SIM Card Dengan Kode Error Asset Not Found ",
 Solusi : `Makasih udah nunggu ya Kak. Maaf banget nih untuk kendala aktivasi SIM card nya di nomor xxxxxx, Kalau sudah mencoba lagi dan masih tidak bisa, boleh diinfokan beberapa data berikut ya supaya kami bisa melakukan pengecekan lebih lanjut :
 1. Akun by.U :
 2. NIK :
@@ -1040,6 +1055,8 @@ Tidak Bisa Aktivasi SIM Card Dengan Kode Error "Asset Not Found"
 
 {
 id: 27,
+case : "Ketidaksesuaian Penggunaan Kuota ",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1047,7 +1064,6 @@ Email by.U : --
 Detail case : kuota tiba-tiba berkurang
 Solusi : minta data
 `,
-case : "Ketidaksesuaian Penggunaan Kuota ",
 Solusi : `Makasih udah nunggu. Kak maaf untuk kendala penggunaan kuota yang ga sesuai di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U:
 2. Tanggal waktu kejadian :
@@ -1081,6 +1097,8 @@ Ketidaksesuaian Penggunaan Kuota
 
 {
 id: 28,
+case : "Tidak bisa login dengan Nomor BYU / terima kode OTP pakai nomor by.U",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1088,7 +1106,6 @@ Email by.U : --
 Detail case : gabisa login nomor by.U
 Solusi : solusi gabisa login nomor by.u
 `,
-case : "Tidak bisa login dengan Nomor BYU / terima kode OTP pakai nomor by.U",
 Solusi : `
 Makasih udah nunggu. Kak maaf untuk kendala gabisa login apps by.U di nomor xxxxxx, jika SIM Card dan aplikasi by.U berada di gadget yang sama dan menggunakan jaringan by.U, seharusnya login akan terjadi otomatis, kecuali jika tidak ada koneksi. Jika memang diperlukan login manual, boleh dipastikan bahwa OS gadget yang Kakak pake adalah OS yang terupdate dan pastikan juga koneksi internetnya berjalan dengan baik. Dicoba ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih ga bisa, dicoba install ulang aplikasi by.U kakak dan di cek juga di HP lain sebagai perbandingan ya :) 
 Pastiin setting dengan memilih menu Setting > pilih manager aplikasi > all > messaging > send premium sms > always allow dan pastikan juga untuk nomor pusat sudah diisi dengan angka +6281100000 disettingan sms HP ya, karena kalau belum disetting itu akan berpengaruh terhadap diterimanya OTP.
@@ -1114,6 +1131,8 @@ Tidak bisa login dengan Nomor BYU
 
 {
 id: 29,
+case : "Tidak Mendapatkan Voucher Non-Telco uCoin",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1121,7 +1140,6 @@ Email by.U : --
 Detail case : non telco
 Solusi : minta data
 `,
-case : "Tidak Mendapatkan Voucher Non-Telco uCoin",
 Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Jenis voucher yang ditukarkan : 
@@ -1147,6 +1165,8 @@ Tidak Mendapatkan Voucher Non-Telco
 
 {
 id: 30,
+case : "Pergantian SIM Card Legacy ditolak GraPARI",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1154,7 +1174,6 @@ Email by.U : --
 Detail case : ganti sim card ditolak grapari
 Solusi : minta data
 `,
-case : "Pergantian SIM Card Legacy ditolak GraPARI",
 Solusi : `Makasih udah nunggu. Kak maaf, untuk ganti SIM card nya karena gabisa di GraPARI di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Nama Pelanggan/pengunjung : 
 2. Email aktif yang bisa dihubungi : 
@@ -1191,6 +1210,8 @@ Pergantian SIM Card Legacy ditolak GraPARI
 
 {
 id: 31,
+case : "Esim Sinyal hilang",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1198,7 +1219,6 @@ Email by.U : --
 Detail case : esim sinyal hilang
 Solusi : minta data
 `,
-case : "Esim Sinyal hilang",
 Solusi : `Makasih udah nunggu. Kak maaf untuk kendala eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. Tipe/Merek Gadget :
@@ -1229,6 +1249,8 @@ eSIM sinyal hilang
 
 {
 id: 32,
+case : "eSIM barcode/QR tidak tersimpan ",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1236,7 +1258,6 @@ Email by.U : --
 Detail case : minta barcode esim
 Solusi : minta data
 `,
-case : "eSIM barcode/QR tidak tersimpan ",
 Solusi : `Makasih udah nunggu. Kak maaf untuk barcode/qr eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Akun by.U : 
 2. Nomor yang bisa dihubungi : 
@@ -1263,6 +1284,8 @@ eSIM  QR tidak tersimpan
 
 {
 id: 33,
+case : "Bugs Ganti SIM card (mandatory E)",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1270,9 +1293,8 @@ Email by.U : --
 Detail case : bugs ganti sim card
 Solusi : minta data
 `,
-case : "Bugs Ganti SIM card (mandatory E)",
 Solusi : 
-` Makasih udah nunggu. Kak maaf, kalau keterangannya seperti itu, boleh infoin data ini ya biar bisa aku proses : 
+`Makasih udah nunggu. Kak maaf, kalau keterangannya seperti itu, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. Nomor Identitas KTP :
 3. Scan/Foto KTP Asli :
@@ -1323,6 +1345,8 @@ Bugs Ganti SIM card
 
 {
 id: 34,
+case : "Keluhan Tidak Bisa Akses Internet di Luar Negeri Roaming",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1330,7 +1354,6 @@ Email by.U : --
 Detail case : gabisa internet roaming
 Solusi : minta data
 `,
-case : "Keluhan Tidak Bisa Akses Internet di Luar Negeri Roaming",
 Solusi : `Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
 2. Tanggal dan waktu kejadian sejak kapan :
@@ -1373,6 +1396,8 @@ DATA - Tidak Bisa Akses Internet di Luar Negeri
 
 {
 id: 35,
+case : "Pulsa berkurang tiba-tiba",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1380,7 +1405,6 @@ Email by.U : --
 Detail case : pulsa berkurang tiba-tiba
 Solusi : minta data
 `,
-case : "Pulsa berkurang tiba-tiba",
 Solusi : `Makasih udah nunggu Kak. Maaf nih untuk kendala pulsa yang berkurang tiba-tiba di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun By.U :
 2. Pulsa awal dan pulsa akhir :
@@ -1406,6 +1430,8 @@ Pulsa berkurang tib-tiba
 
 {
 id: 36,
+case : "Tidak bisa aktivasi inject paket",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1413,7 +1439,6 @@ Email by.U : --
 Detail case : gabisa aktivasi sim card legacy
 Solusi : hubungi pihak penjual
 `,
-case : "Tidak bisa aktivasi inject paket",
 Solusi : `Makasih udah nunggu Kak maaf kalau keterangan gabisa aktivasinya seperti itu, Kakak bisa tukerin SIM card nya di tempat Kakak beli/dapetin SIM card nya ya`,
 Mandatory :
 `      
@@ -1422,6 +1447,8 @@ Mandatory :
 
 {
 id: 37,
+case : "Tidak bisa aktivasi NIK invalid Dukcapil/Disdukcapil",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1429,7 +1456,6 @@ Email by.U : --
 Detail case : gabisa aktivasi nik invalid
 Solusi : hubungi dukcapil
 `,
-case : "Tidak bisa aktivasi NIK invalid Dukcapil/Disdukcapil",
 Solusi : `Makasih udah nunggu. Kak maaf untuk gabisa aktivasi SIM card nya di nomor xxxxxx, aku cek NIK Kakak ga terdaftar nih di sistem Dukcapil, Boleh pastiin lagi NIK yang diinputnya sesuai yang di KTP dan pastiin ada 16 digit ya Kak. Kalo masih berkendala dikhawatirkan ada error data dukcapil. Untuk kendala ini silakan kakak bisa update data ke Contact Center Ditjen Dukcapil. Bilang aja mau update data registrasi SIM Card ya.
 Berikut kontak detailnya dukcapil :
 Hotline : 1500537
@@ -1468,6 +1494,8 @@ Tidak Bisa Aktivasi SIM Card Dengan Kode Error NIK Tidak Ditemukan
 
 {
 id: 38,
+case : "Tidak bisa aktivasi exceed limit (udah 3 kali percobaan)",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1475,13 +1503,14 @@ Email by.U : --
 Detail case : gabisa aktivasi sim card
 Solusi : diinfoin coba besok
 `,
-case : "Tidak bisa aktivasi exceed limit (udah 3 kali percobaan)",
 Solusi : `Makasih udah nunggu. Kak maaf aku cek di nomor xxxxxx , hari ini udah lebih dari 3 kali nyoba aktivasi. Boleh dicoba lagi besok hari ya. Pastiin saat proses aktivasi sudah terkoneksi ke jaringan by.U - bukan wifi atau jaringan lain, dan NIK-NO.KK yang dimasukkan benar 16 angka. Kalo besok masih belum bisa, jangan coba berulang ya, silahkan konfirmasi lagi biar bisa langsung di proses :)`,
 Mandatory :``   
 },
 
 {
 id: 39,
+case : "Tidak bisa aktivasi maximum NIK",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1489,8 +1518,8 @@ Email by.U : --
 Detail case : gabisa aktivasi maximum nik
 Solusi : diinfoin unreg nomor telkomsel
 `,
-case : "Tidak bisa aktivasi maximum NIK",
-Solusi : `Makasih udah nunggu ya Kak, mengenai kendala gagal daftar NIK-NOKK di nomor xxxxxx. Setelah kami cek di sistem rupanya NIK kakak sudah terdaftar di 3 Nomor Telkomsel/ by.U. Untuk case seperti ini jika kakak masih memegang nomor Telkomsel (selain by.U), bisa melakukan unregistrasi sendiri melalui SMS UNREG#NO NIK kirim ke 4444 atau melalui *444#. Jika kakak tidak merasa memiliki 3 Nomor Telkomsel, bisa menghubungi Call Center Telkomsel atau datang ke Grapari agar bisa disolusikan. Jika sudah melakukan UNREG atau melaporkan ke pihak Telkomsel, bisa dicoba lagi pendaftaran NIK-NOKK-nya ya, Kak. Maaf banget, semoga bisa ya Kak 😊
+Solusi : `Makasih udah nunggu ya Kak, mengenai kendala gagal daftar NIK-NOKK di nomor xxxxxx. Setelah kami cek di sistem rupanya NIK kakak sudah terdaftar di 3 Nomor Telkomsel/ by.U. Untuk case seperti ini jika kakak masih memegang nomor Telkomsel (selain by.U), bisa melakukan unregistrasi sendiri melalui SMS UNREG#NO NIK 
+kirim ke 4444 atau melalui *444#. Jika kakak tidak merasa memiliki 3 Nomor Telkomsel, bisa menghubungi Call Center Telkomsel atau datang ke Grapari agar bisa disolusikan. Jika sudah melakukan UNREG atau melaporkan ke pihak Telkomsel, bisa dicoba lagi pendaftaran NIK-NOKK-nya ya, Kak. Maaf banget, semoga bisa ya Kak 😊
 
 
 Untuk mengecek nomor yang terdaftar di NIK nya kalau kakak punya nomor Telkomsel yang data NIK nya sama juga, silakan bisa cek di *444# pilih cek status registrasi ya Kak :)
@@ -1526,6 +1555,8 @@ Tidak Bisa Aktivasi SIM Card Dengan Keterangan Maximum Number
 
 {
 id: 40,
+case : "Perubahan Data Pelanggan",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1533,7 +1564,6 @@ Email by.U : --
 Detail case : perubahan data pelanggan
 Solusi : minta data
 `,
-case : "Perubahan Data Pelanggan",
 Solusi :
 `Makasih udah nunggu. Kak maaf untuk perubahan data NIK nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
 1. Alamat Email login by.U :
@@ -1581,6 +1611,8 @@ Perubahan data pelanggan
 
 {
 id: 41,
+case : "Perubahan Data pindah tangan (pindah tangan)",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1588,7 +1620,6 @@ Email by.U : --
 Detail case : perubahan data 
 Solusi : minta data
 `,
-case : "Perubahan Data pindah tangan (pindah tangan)",
 Solusi : 
 `Makasih udah nunggu. Kak maaf untuk perubahan data NIK nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
 1. Alamat Email login by.U :
@@ -1612,8 +1643,7 @@ Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kemb
 Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
 `,
 Mandatory : (segment: string,DateTime: string ) =>
-` 
-#Pelangganbyu
+`#Pelangganbyu
 [byU ${segment}] 
 Pelanggan by.U
 ${DateTime} 
@@ -1634,6 +1664,8 @@ Perubahan data pelanggan pindah tangan
 
 {
 id: 42,
+case : "PUK",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1641,7 +1673,6 @@ Email by.U : --
 Detail case : puk
 Solusi : minta data
 `,
-case : "PUK",
 Solusi : `Makasih udah nunggu. Kak untuk permintaan kode PUK di nomor xxxxxx , boleh infoin data ini ya biar bisa aku bantu :
 1. Alamat email akun by.U :
 2. NIK yang terdaftar :
@@ -1668,6 +1699,8 @@ Mandatory : ``
 
 {
 id: 43,
+case : "Tidak dapat langganan ZOOM Premium",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1675,7 +1708,6 @@ Email by.U : --
 Detail case : Tidak dapat langganan ZOOM Premium"
 Solusi : minta data
 `,
-case : "Tidak dapat langganan ZOOM Premium",
 Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Zoom nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Capture detail riwayat transaksi pembelian topping Zoom :
@@ -1686,8 +1718,7 @@ Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Zoom nya di no
 
 `,
 Mandatory : (segment: string,DateTime: string ) =>
-`
-#Pelangganbyu
+`#Pelangganbyu
 [byU ${segment}] 
 Pelanggan by.U
 ${DateTime} 
@@ -1705,6 +1736,8 @@ Tidak dapat langganan ZOOM Premium
 
 {
 id: 44,
+case : "Tidak dapat langganan Netflix",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1712,7 +1745,6 @@ Email by.U : --
 Detail case : Tidak dapat langganan Netflix
 Solusi : minta data
 `,
-case : "Tidak dapat langganan Netflix",
 Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Netflix nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Tanggal pembelian paket :
@@ -1722,8 +1754,7 @@ Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Netflix nya di
 
 `,
 Mandatory : (segment: string,DateTime: string ) =>
-`
-#Pelangganbyu
+`#Pelangganbyu
 [byU ${segment}] 
 Pelanggan by.U
 ${DateTime} 
@@ -1742,6 +1773,8 @@ Tidak dapat langganan Netflix
 
 {
 id: 45,
+case : "Tidak dapat langganan Vidio",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1749,7 +1782,6 @@ Email by.U : --
 Detail case : Tidak dapat langganan Vidio
 Solusi : minta data
 `,
-case : "Tidak dapat langganan Vidio",
 Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Vidio nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Capture detail riwayat transaksi pembelian topping Vidio :
@@ -1759,8 +1791,7 @@ Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Vidio nya di n
 
 `,
 Mandatory : (segment: string,DateTime: string ) =>
-`
-#Pelangganbyu
+`#Pelangganbyu
 [byU ${segment}] 
 Pelanggan by.U
 ${DateTime} 
@@ -1779,6 +1810,8 @@ Tidak dapat langganan Vidio
 
 {
 id: 46,
+case : "Tidak dapat kuota Birthday reward",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1786,7 +1819,6 @@ Email by.U : --
 Detail case : Tidak dapat kuota Birthday reward
 Solusi : minta data
 `,
-case : "Tidak dapat kuota Birthday reward",
 Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat kuota bonus birthday di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Capture profile di aplikasi by.U :
@@ -1795,8 +1827,7 @@ Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat kuota bonus birthday di 
 
 `,
 Mandatory : (segment: string,DateTime: string ) =>
-`
-#Pelangganbyu
+`#Pelangganbyu
 [byU ${segment}] 
 Pelanggan by.U
 ${DateTime} 
@@ -1813,6 +1844,8 @@ Tidak Mendapatkan Kuota Birthday Reward
 
 {
 id: 47,
+case : "IRENEW Voucher fisik",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1820,8 +1853,7 @@ Email by.U : --
 Detail case : IRENEW Voucher fisik
 Solusi : minta data
 `,
-case : "IRENEW Voucher fisik",
-Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
+Solusi : `Makasih udah nunggu. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Nama Paket Kuota :
 3. Kode hasil Gesek Voucher Fisik :
@@ -1830,8 +1862,7 @@ Solusi : ` Makasih udah nunggu. Kak maaf untuk ga dapat kuota dari pengisian di 
 
 `,
 Mandatory : (segment: string,DateTime: string ) =>
-`
-#Pelangganbyu
+`#Pelangganbyu
 [byU ${segment}] 
 Pelanggan by.U
 ${DateTime} 
@@ -1852,6 +1883,8 @@ Masalah Pembelian Kuota Via Tukar Kode Voucher
 
 {
 id: 48,
+case : "Sponsorship/kerjasama",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1859,7 +1892,6 @@ Email by.U : --
 Detail case : Sponsorship
 Solusi : arahin hubungi email
 `,
-case : "Sponsorship/kerjasama",
 Solusi : ` Makasih udah nunggu Kak :) Mengenai pengajuan sponsorship atau kerjasama proposalnya bisa langsung dikirim ke email nindy@byu.id ya, have a good day :)
 
 `,
@@ -1868,6 +1900,8 @@ Mandatory :``
 
 {
 id: 49,
+case : "SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan / Gagal pairing",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1875,7 +1909,6 @@ Email by.U : --
 Detail case : gagal pairing
 Solusi : minta data
 `,
-case : "SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan / Gagal pairing",
 Solusi : ` Makasih udah nungu. Kak maaf sepertinya ada kendala nih untuk  SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. SN kartu pengganti yang ada di dekat barcode cangkang SIM card :
@@ -1895,6 +1928,7 @@ SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan
 
 {
 id: 50,
+case : " greeting",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1903,7 +1937,6 @@ Detail case : greeting
 Solusi : greeting
 
 `,
-case : " greeting",
 Solusi :
 `Kak boleh infoin pertanyaan atau kendalanya lebih detail seputar by.U ya biar bisa aku bantu :)
 
@@ -1932,6 +1965,8 @@ https://web.telegram.org/k/
 
 {
 id: 51,
+case : "SIM card Deactive",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1939,7 +1974,6 @@ Email by.U : --
 Detail case :  sim card deactive
 Solusi : info  sim card deactive
 `,
-case : "SIM card Deactive",
 Solusi : ` Makasih udah nungu. Kak maaf untuk kendala SIM card nya, aku cek nomor xxxxxx udah gabisa di aktivasi/registrasi karena nomornya udah ga aktif/ga di atifin lebih dari 30 hari dari waktu pembayaran berhasil. Aku saranin beli nomor baru di apps by.U pakai akun baru ya :)
 `,
 Mandatory :``
@@ -1947,6 +1981,8 @@ Mandatory :``
 
 {
 id: 52,
+case : "Pulsa terpotong karena SMS dari luar negeri",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1954,7 +1990,6 @@ Email by.U : --
 Detail case : Pulsa terpotong karena SMS dari luar negeri
 Solusi : info nomor SMS nya
 `,
-case : "Pulsa terpotong karena SMS dari luar negeri",
 Solusi : ` Maaf udah bikin Kakak nunggu ya. Aku cek di sistem untuk nomor xxxxxx ada pengurangan pulsa sebesar Rp500 untuk SMS ke nomor +41415737017. Untuk SMS ini adalah SMS verifikasi dari apps tertentu yang developernya dari luar negeri dan membebankan biaya registrasi ke pulsa customer. Ini settingan dari apps yang terisntall di HP Kakak yang otomatis menarik biaya pulsa ya, bukan settingan dari by.U 🙂
 `,
 Mandatory :``
@@ -1962,6 +1997,8 @@ Mandatory :``
 
 {
 id: 53,
+case : "SIM card tidak terdeteksi",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1969,7 +2006,6 @@ Email by.U : --
 Detail case : SIM card tidak terdeteksi
 Solusi : solusi SIM card tidak terdeteksi
 `,
-case : "SIM card tidak terdeteksi",
 Solusi : ` Makasih udah nunggu. Kak maaf, untuk kendala SIM card yang ga kedeteksi, kalau IMEI nya udah terdaftar tapi masih berkendala, boleh coba panduan ini ya :
 1. Buka dan lepaskan kartu SIM yang tidak terbaca dari slot HP yang tersedia kemudian bersihkan dari debu-debu yang mengganggu kinerja kartu SIM. Selanjutnya aktifkan kembali HP dan tunggu hingga SIM Card menanggapi serta terhubung ke jaringan.
 2. Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.
@@ -1982,6 +2018,8 @@ Mandatory : ``
 
 {
 id: 54,
+case : "Kuota tiba-tiba hilang karena kesalahan by.U",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -1989,7 +2027,6 @@ Email by.U : --
 Detail case : Kuota tiba-tiba hilang karena kesalahan by.U
 Solusi : minta data
 `,
-case : "Kuota tiba-tiba hilang karena kesalahan by.U",
 Solusi : ` Makasih udah nunggu. Kak maaf, untuk kendala kuotanya di nomor xxxxxx , boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Channel Pembayaran : 
@@ -2015,6 +2052,8 @@ Kuota tiba-tiba hilang karena kesalahan by.U
 
 {
 id: 55,
+case : "U-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -2022,7 +2061,6 @@ Email by.U :
 Detail case : u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
 Solusi : minta data
 `,
-case : "U-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil",
 Solusi : ` Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Capture keterangan detail transaksi yang u-coinnya tidak masuk :
@@ -2049,6 +2087,8 @@ u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
 
 {
 id: 56,
+case : "Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -2056,7 +2096,6 @@ Email by.U : --
 Detail case : Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)
 Solusi : minta data
 `,
-case : "Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)",
 Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala masalah pemesanan sim card via e-Commerce yang dialami, boleh infoin data ini ya biar aku bantu cek dulu transaksinya :
 1. Email akun by.U yang didaftarin :
 2 Printscreen bukti bayar yang tertera Invoice dan capture resi di aplikasi e-Commerce :
@@ -2085,6 +2124,8 @@ Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Toko
 
 {
 id: 57,
+case : " transfer pulsa",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -2092,7 +2133,6 @@ Email akun by.U : --
 Detail case : info send gift/tf pulsa
 Solusi : info send gift/tf pulsa
 `,
-case : " transfer pulsa",
 Solusi : `Makasih udah nunggu. Kak maaf, untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
 `,
 Mandatory : ``
@@ -2100,6 +2140,8 @@ Mandatory : ``
 
 {
 id: 58,
+case : "Tidak Mendapatkan Langganan Prime Video",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -2107,7 +2149,6 @@ Email akun by.U : --
 Detail case : Tidak Mendapatkan Langganan Prime Video
 Solusi : minta data
 `,
-case : "Tidak Mendapatkan Langganan Prime Video",
 Solusi : `Makasih udah nunggu. Kak maaf, untuk ga dapa langganan Prime Video nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Capture detail/daftar transaksi pembelian topping Prime Video di aplikasi by.U :
@@ -2135,6 +2176,8 @@ Tidak Mendapatkan Langganan Prime Video
 
 {
 id: 59,
+case : "cek masa aktif",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -2142,7 +2185,6 @@ Email akun by.U : --
 Detail case : informasi status kartu
 Solusi : informasi status kartu
 `,
-case : "cek masa aktif",
 Solusi : `Makasih udah nunggu. Kak maaf, kalau aku cek nomor xxxxxx, statusnya aktif kok. Ini harusnya bisa digunakan SMS,internet maupun internet ya Kak. Boleh coba cek ya :)
 `,
 Mandatory : ``
@@ -2150,6 +2192,8 @@ Mandatory : ``
 
 {
 id: 60,
+case : "Harga paket berubah/jadi mahal",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -2157,7 +2201,6 @@ Email akun by.U : --
 Detail case : info harga paket
 Solusi : info harga paket
 `,
-case : "Harga paket berubah/jadi mahal",
 Solusi : `Kak, maaf ya udah dibuat ga nyaman, untuk harga paket yang tertera di aplikasi bersifat penawaran ya, jadi akan berubah sesuai dengan promo yang sedang berjalan, yang merupakan bagian dari upaya kita buat terus ningkatin kualitas layanan by.U. Silakan untuk melakukan pembelian paket yang tersedia di aplikasi by.U ya kak :)
 `,
 Mandatory : ``
@@ -2165,6 +2208,8 @@ Mandatory : ``
 
 {
 id: 61,
+case : "Cara pasang eSIM",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -2172,7 +2217,6 @@ Email akun by.U : --
 Detail case : cara pasang esim
 Solusi : info pasang eSIM
 `,
-case : "Cara pasang eSIM",
 Solusi : `Buat iPhone:
 - Buka “Pengaturan” pada iPhone.
 - Pilih opsi “Seluler”.
@@ -2203,6 +2247,8 @@ Mandatory : ``
 
 {
 id: 62,
+case : "Gagal Registrasi 5g",
+
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -2210,7 +2256,6 @@ Email akun by.U : --
 Detail case :  Gagal Registrasi 5g
 Solusi : minta data
 `,
-case : " Gagal Registrasi 5g",
 Solusi : `Kak makasih udah nunggu. Untuk kendala 5G nya di nomor xxxxxx, Pastiin HP Kakak udah support 5G dan Kakak juga bisa cek apakah lokasi Kakak udah tercover jaringan 5G melalui https://www.telkomsel.com/check-5G-coverage. Kakak bisa melakukan daftar mandiri melalui https://my.telkomsel.com/provisioning/5g. Pastiin juga saat akses link tersebut SIM Card terpasang di SIM 1, data selular dalam keadaan on, dan fitur lokasi aktif.
 
 Jika masih berkendala, boleh infokan beberapa data di bawah ini supaya bisa dibantu pengecekan:

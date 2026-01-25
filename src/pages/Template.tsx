@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 
 const TemplatePages = () => {
+    // const [activeIndex] = useState<number | null>(null);
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
     // const [copied, setCopied] = useState(false)
 
@@ -35,12 +36,11 @@ const TemplatePages = () => {
                             <textarea
                             value={Templates[index]}
                             onChange={(e) => handleChange(index, e.target.value)}
-                            onClick={() => {
+                            onClick={(e) => {
+                                if (!e.altKey) return;
                                 navigator.clipboard.writeText(Templates[index]);
                                 setActiveIndex(index)
                                 setTimeout(() => setActiveIndex(null), 500);
-                                // setCopied(true);
-                                // setTimeout(() => setCopied(false), 500);
                             }}
                             className = {`h-30 w-full p-1 border-1 border-solid hover:bg-yellow-200 hover:text-black `}  
                             />

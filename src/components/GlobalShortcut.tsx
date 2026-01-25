@@ -23,7 +23,7 @@ const GlobalShortcut = () => {
         });
       }
       if (e.key === "F1") {
-        e.preventDefault(); // ❗ cegah help browser
+        e.preventDefault(); 
 
         const saved = localStorage.getItem("my-templates");
         if (!saved) return;
@@ -36,7 +36,7 @@ const GlobalShortcut = () => {
         }
       }
       if (e.key === "F2") {
-        e.preventDefault(); // ❗ cegah help browser
+        e.preventDefault(); 
 
         const saved = localStorage.getItem("my-templates");
         if (!saved) return;
@@ -49,7 +49,7 @@ const GlobalShortcut = () => {
         }
       }
       if (e.key === "F3") {
-        e.preventDefault(); // ❗ cegah help browser
+        e.preventDefault(); 
 
         const saved = localStorage.getItem("my-templates");
         if (!saved) return;
@@ -62,7 +62,7 @@ const GlobalShortcut = () => {
         }
       }
       if (e.key === "F4") {
-        e.preventDefault(); // ❗ cegah help browser
+        e.preventDefault(); 
 
         const saved = localStorage.getItem("my-templates");
         if (!saved) return;
@@ -76,7 +76,7 @@ const GlobalShortcut = () => {
       }
       
       if (e.key === "F6") {
-        e.preventDefault(); // ❗ cegah help browser
+        e.preventDefault(); 
 
         const saved = localStorage.getItem("my-templates");
         if (!saved) return;
@@ -90,7 +90,7 @@ const GlobalShortcut = () => {
       }
       
       if (e.key === "F7") {
-        e.preventDefault(); // ❗ cegah help browser
+        e.preventDefault(); 
 
         const saved = localStorage.getItem("my-templates");
         if (!saved) return;

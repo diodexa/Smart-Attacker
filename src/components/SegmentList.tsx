@@ -17,7 +17,10 @@ const channels = [
 const SegmentList = ({Segment,onChange}:ChannelSelectorProps) => {
 
     return (
-        <select className="mr-30 border-2 border-black text-center border-select" value={Segment} onChange={(e) => onChange(e.target.value)}>
+        <select 
+        className="mr-30 border-2 border-black text-center border-select" 
+        value={Segment} 
+        onChange={(e) => onChange(e.target.value)}>
             {channels.map(ch=>(
                 <option 
                 key={ch}

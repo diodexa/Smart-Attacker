@@ -71,7 +71,6 @@ export default function NotePages() {
     const newLines = newValue.split("\n");
 
 
-    // terjadi penghapusan baris
     if (newLines.length < prevLines.length) {
         cursorRef.current = cursorPos;
         setNote(normalizeNumberedList(newValue));

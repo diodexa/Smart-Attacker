@@ -126,39 +126,51 @@ const MandatoryDisplay = ({ value, onChange }: Props) => {
       }
     };
 
-  const textarea = e.currentTarget;
-  const cursorPos = textarea.selectionStart;
+    const textarea = e.currentTarget;
+    const cursorPos = textarea.selectionStart;
 
-  const before = value.slice(0, cursorPos);
+    const before = value.slice(0, cursorPos);
+    const linesBefore = before.split("\n");
+    const currentLineIndex = linesBefore.length - 1;
+    const currentLine = value.split("\n")[currentLineIndex];
 
-  const linesBefore = before.split("\n");
-  const currentLineIndex = linesBefore.length - 1;
-  const currentLine = linesBefore[currentLineIndex];
+    const match = currentLine.match(/^(\d+)\.\s*/);
+    if (!match) return;
 
-  const match = currentLine.match(/^(\d+)\.\s*/);
-  if (!match) return;
+    e.preventDefault();
 
-  e.preventDefault();
-
-  const insertNumber = Number(match[1]) + 1;
-  const allLines = value.split("\n");
-
-  // sisipkan baris baru
-  allLines.splice(currentLineIndex + 1, 0, `${insertNumber}. `);
-
-  renumberFrom(allLines, currentLineIndex + 2);
-
-  const newText = allLines.join("\n");
-  const newCursorPos = before.length + `\n${insertNumber}. `.length;
-
-  before.length + `\n${insertNumber}. `.length;
-  updateValue(newText, newCursorPos);
+    const insertNumber = Number(match[1]) + 1;
+    const allLines = value.split("\n");
     
-  onChange(newText);
-  setTimeout(() => {
-      textareaRef.current?.setSelectionRange(newCursorPos, newCursorPos);
-    }, 0);
-};
+
+    const lineStart =linesBefore.slice(0, -1).join("\n").length +(currentLineIndex > 0 ? 1 : 0);
+    const offset = cursorPos - lineStart;
+
+    const left = currentLine.slice(0, offset);
+    const right = currentLine.slice(offset);
+
+    const currentNumber = Number(match[1]);
+
+    allLines[currentLineIndex] = `${currentNumber}. ${left.replace(/^(\d+)\.\s*/, "").trimEnd()}`;
+
+    // sisipkan baris baru
+    // allLines.splice(currentLineIndex + 1, 0, `${insertNumber}. ${right.trimStart()} `);
+    allLines.splice(currentLineIndex + 1,0, `${insertNumber}. ${right.trimStart()}`);
+
+    renumberFrom(allLines, currentLineIndex + 2);
+
+    const newText = allLines.join("\n");
+    // const newCursorPos = before.length + `\n${insertNumber}. `.length;
+    const newCursorPos = allLines.slice(0, currentLineIndex + 1).join("\n").length +`\n${insertNumber}. `.length;
+
+    // before.length + `\n${insertNumber}. `.length;
+    updateValue(newText, newCursorPos);
+      
+    // onChange(newText);
+    setTimeout(() => {
+        textareaRef.current?.setSelectionRange(newCursorPos, newCursorPos);
+      }, 0);
+  };
 
 
   //  restore cursor setelah render

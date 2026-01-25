@@ -6,21 +6,19 @@ interface Props {
 }
 
 const MandatorySelect = ({ onSelect }: Props) => {
-  const Mandatory = DataMandatory().slice().sort((a,b)=>a.case.toLocaleLowerCase().localeCompare(b.case.toLocaleLowerCase()))
+  const normalizeCase = (v?: string) => v ?? "";
+  const Mandatory = DataMandatory().slice().sort((a,b)=>normalizeCase(a.case).toLocaleLowerCase().localeCompare(normalizeCase(b.case).toLocaleLowerCase()))
 
   return (
     <Select
-      options={Mandatory.map(item => ({
-        value: item.id,
-        label: item.case,
-        
-      }))}
+      options={Mandatory.map(item => ({value: item.id,label: item.case,}))}
       className="w-full  listText"
       onChange={(option) => onSelect(option?.value || null)}
       styles={{
-        control: (base) => ({ ...base, backgroundColor: "#f6fbe0ff" }),
-        menu: (base) => ({ ...base, backgroundColor: "#f6fbe0ff" }),
-        
+        control: (base) => ({ ...base, backgroundColor: " rgb(238, 255, 249)" }),
+        menu: (base) => ({ ...base, backgroundColor: "rgb(235, 250, 247)" }),
+        option: (base, state) => ({...base,backgroundColor: state.isFocused? "#f6e387": "transparent"
+    }),
       }}
     />
   );

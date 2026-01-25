@@ -18,7 +18,7 @@ const TiketPages = ({ segment }: Props) => {
     return saved ? Number(saved) : null;
   });
 
-  const [createdAt] = useState(() => getCurrentDateTime());
+
   
   const Mandatory = DataMandatory();
   const selected = Mandatory.find(item => item.id === selectedId);
@@ -35,10 +35,10 @@ const TiketPages = ({ segment }: Props) => {
       useEffect(() => {
         if (!selected) return;
         localStorage.setItem("selectedId", String(selectedId));
+        const createdDate = getCurrentDateTime();
         setMandatoryText(
-          typeof selected.Mandatory === "function"? selected.Mandatory(segment, createdAt): selected.Mandatory
+          typeof selected.Mandatory === "function"? selected.Mandatory(segment, createdDate): selected.Mandatory
         )
-
         const combinedSolusi = [selected.Bracket(segment),selected.Solusi].filter(Boolean).join("\n");
         setSolusiText(combinedSolusi);
       }, [selectedId,segment]);
@@ -82,7 +82,7 @@ const TiketPages = ({ segment }: Props) => {
         };
 
         window.addEventListener("keydown", handleKeyDown);
-        return () => window.removeEventListener("keydown", handleKeyDown);
+        return () => window.removeEventListener("keydown", handleKeyDown); 
       }, []);
 
 
