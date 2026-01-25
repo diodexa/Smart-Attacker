@@ -50,8 +50,8 @@ Internet Lambat
 3. Lokasi detail (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) : 
 4. Jenis device yang digunakan : 
 5. Tanggal dan waktu kendala : 
-6. Kendala terjadi sepanjang hari atau pada waktu tertentu aja? 
-7. Jaringan yang diterima (2G, 4G, atau 5G) dan jumlah bar/titik sinyal yang didapat? 
+6. Kendala terjadi sepanjang hari atau pada waktu tertentu aja : 
+7. Jaringan yang diterima (2G, 4G, atau 5G) dan jumlah bar/titik sinyal yang didapat :  
 8. Capture hasil speedtest : 
 9. Nomor atau info kontak lain yang bisa dihubungi : 
 10. Sisa kuota yang dimiliki oleh pelanggan : 
@@ -98,7 +98,7 @@ Solusi :  minta data
 2. Tipe/merek Gadget : 
 3. Versi OS Gadget : 
 4. Versi aplikasi by.U : 
-5. Apakah bisa akses website byu.id di device yang sama menggunakan jaringan by.U atau jaringan lain? 
+5. Apakah bisa akses website byu.id di device yang sama menggunakan jaringan by.U atau jaringan lain :  
 6. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
 7. Waktu dan Lama Kejadian : 
 8. Lokasi Kejadian :  
@@ -163,8 +163,8 @@ Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan be
 3. Waktu dan Lama Kejadian :
 4. Tipe gadget yang dipakai :
 5. Keterangan gagal yang muncul saat menerima atau mengirim SMS :
-6. Kendala yang terjadi tidak bisa terima SMS, kirim SMS atau keduanya? :
-7. Kendala terjadi hanya saat menerima SMS atau mengirim SMS ke nomor tertentu atau semua? :
+6. Kendala yang terjadi tidak bisa terima SMS, kirim SMS atau keduanya :
+7. Kendala terjadi hanya saat menerima SMS atau mengirim SMS ke nomor tertentu atau semua :
 8. Capture Keterangan gagal yang muncul saat menerima atau mengirim SMS : 
 9. Nomor lain yang bisa dihubungi : 
 10. Nomor tujuan saat menerima atau mengirim SMS : 
@@ -181,8 +181,8 @@ Tidak bisa kirim / Terima SMS
 4. Waktu dan Lama Kejadian : 
 5. Tipe gadget yang dipakai : 
 6. Keterangan gagal yang muncul saat menerima atau mengirim SMS : 
-7. Kendala yang terjadi tidak bisa terima SMS, kirim SMS atau keduanya? : 
-8. Kendala terjadi hanya saat menerima SMS atau mengirim SMS ke nomor tertentu atau semua? : 
+7. Kendala yang terjadi tidak bisa terima SMS, kirim SMS atau keduanya : 
+8. Kendala terjadi hanya saat menerima SMS atau mengirim SMS ke nomor tertentu atau semua : 
 9. Capture Keterangan gagal yang muncul saat menerima atau mengirim SMS : 
 10. Nomor lain yang bisa dihubungi : 
 11. Nomor tujuan saat menerima atau mengirim SMS : 
@@ -1057,7 +1057,7 @@ DATA - Tidak Bisa Akses Internet di Luar Negeri
 4. Jenis device yang digunakan : 
 5. Tanggal dan waktu kendala : 
 6. Jaringan yang digunakan apa? 4G, 5G? : 
-7. Jumlah sinyal bar atau titik yang didapat? : 
+7. Jumlah sinyal bar atau titik yang didapat : 
 8. Jaringan/operator negara setempat yang digunakan : 
 9. Email aktif yang bisa dihubungi : 
 10. Sisa kuota yang dimiliki oleh pelanggan : 
