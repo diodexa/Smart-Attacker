@@ -379,13 +379,13 @@ Tidak Ada Sinyal/Blankspot & Sinyal Lemah/Tidak Stabil
 3. Lokasi detail kendala (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) saat berkendala : 
 4. Tanggal dan waktu kejadian sejak kapan : 
 5. Nomor by.U lain yang berkendala sama : 
-6. Jenis device yang dipakai saat gangguan sinyal terjadi? 
-7. Kendala sinyal terjadi sepanjang hari atau pada waktu tertentu aja? 
-8. Kendala terjadi di satu lokasi atau semua lokasi? 
-9. Jaringan yang digunakan 2G, 4G, 5G? 
-10. Jumlah sinyal bar atau titik yang didapat? 
+6. Tipe HP : 
+7. Kendala sinyal terjadi sepanjang hari atau pada waktu tertentu aja : 
+8. Kendala terjadi di satu lokasi atau semua lokasi : 
+9. Jaringan yang digunakan 2G, 4G, 5G :  
+10. Jumlah sinyal bar atau titik yang didapat :  
 11. Capture keterangan bar sinyal : 
-12. Nomor atau info kontak lain yang bisa dihubungi? 
+12. Nomor atau info kontak lain yang bisa dihubungi :  
 
 
 
