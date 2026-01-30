@@ -2187,7 +2187,7 @@ Solusi : informasi status kartu
 `,
 Solusi : `Makasih udah nunggu. Kak maaf, kalau aku cek nomor xxxxxx, statusnya aktif kok. Ini harusnya bisa digunakan SMS,internet maupun internet ya Kak. Boleh coba cek ya :)
 
-Kak maaf, aku cek nomor xxxxxx , saat ini statusnya udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pake akun baru ya :) 
+Kak maaf, aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) 
 
 `,
 Mandatory : ``
