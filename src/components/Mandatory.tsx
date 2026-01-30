@@ -86,7 +86,7 @@ Tidak bisa aktivasi Error Lain
 
 1. Nomor by.U : xxxxxx
 2. Akun by.U : 
-3. Nomor Identitas KTP valid : 
+3. Nomor Identitas  valid : 
 4. NOKK : 
 5. Serial Number di cangkang SIM Card : 
 6. Capture gagal aktivasi  : 
@@ -354,11 +354,11 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 
 1. Email by.U : 
 2. Nomor by.U : xxxxxx
-3. Nomor Identitas KTP : 
+3. Nomor Identitas  : 
 4. Alasan tidak ingin menggunakan by.U lagi : 
 5. Nomor Kartu Keluarga : 
-6. Foto KTP : 
-7. Foto Selfie dengan KTP : 
+6. Foto identitas : 
+7. Foto Selfie dengan identitas : 
 
 
 
@@ -386,11 +386,11 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 
 1. Nomor by.U : xxxxxx
 2. Email by.U : 
-3. Nomor KTP : 
+3. Nomor identitas : 
 4. Alasan tidak ingin menggunakan by.U lagi : 
 5. Nomor Kartu Keluarga : 
 6. Foto identitas : 
-7. Foto Selfie KTP : 
+7. Foto Selfie identitas : 
 8. Capture hasil pengecekan dari *444# : 
 9. CP yang bisa dihubungi : 
 
@@ -542,8 +542,8 @@ Permintaan Ganti SIM Card Active
 1. Nomor by.U : xxxxxx
 2. Email registrasi by.U atau nomor HP jika registrasi by.U menggunakan nomor operator lain : 
 3. Nomor Identitas valid : 
-4. Scan/Foto KTP asli : 
-5. Foto selfie dengan KTP asli :  
+4. Scan/Foto identitas asli : 
+5. Foto selfie dengan kartu identitas asli :  
 6. Nama & nomor penerima : 
 7. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
 8. Alasan ganti SIM Card : 
@@ -692,7 +692,7 @@ Penyalahgunaan NIK
 
 1. Email Aktif : 
 2. Nomor aktif lainnya yang bisa dihubungi : 
-3. Nomor Identitas KTP : 
+3. Nomor Identitas  : 
 4. Nomor Kartu Keluarga : 
 5. Nomor by.U yang ingin di UNREGISTRASI : 
 5. Capture SMS cek registrasi dari 4444 : 
@@ -896,7 +896,7 @@ Tidak Bisa Aktivasi SIM Card Legacy
 
 1. Nomor by.U : xxxxxx
 2. Capture berhasil aktivasi via SMS : 
-3. Nomor Identitas KTP : 
+3. Nomor Identitas  : 
 4. Nomor Kartu Keluarga : 
 5. CP dan Email yang bisa dihubungi : 
 6. SN barcode yang ada di cangkang SIM Card : 
@@ -1201,9 +1201,9 @@ Pergantian SIM Card Legacy ditolak GraPARI
 5. Nama GraPARI : 
 6. Lokasi GraPARI : 
 7. Detail alasan ditolak : 
-8. NIK KTP Valid : 
-9. Foto KTP : 
-10. Foto selfie KTP : 
+8. Nomor identitas Valid : 
+9. Foto identitas : 
+10. Foto selfie identitas : 
 11. Alasan ganti SIM Card : SIM Card Hilang
 `   
 },
@@ -1297,8 +1297,8 @@ Solusi :
 `Makasih udah nunggu. Kak maaf, kalau keterangannya seperti itu, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. Nomor Identitas KTP :
-3. Scan/Foto KTP Asli :
-4. Foto selfie dengan KTP Asli :
+3. Scan/Foto kartu identitas Asli :
+4. Foto selfie dengan kartu identitas Asli :
 5. Screen record terbaru :
 6. Nama penerima :
 7. Nomor penerima :
@@ -1330,9 +1330,9 @@ Bugs Ganti SIM card
 
 1. Nomor by.U : xxxxxx
 2. Email akun by.U : 
-3. Nomor Identitas KTP : 
-4. Scan/Foto KTP Asli : 
-5. Foto selfie dengan KTP Asli : 
+3. Nomor Identitas identitas : 
+4. Scan/Foto kartu identitas Asli : 
+5. Foto selfie dengan kartu identitas Asli : 
 6. Screen record terbaru : 
 7. Nama penerima : 
 8. Nomor penerima : 
@@ -1544,7 +1544,7 @@ Tidak Bisa Aktivasi SIM Card Dengan Keterangan Maximum Number
 
 1. Akun by.U : 
 2. Nomor by.U : xxxxxx
-3. Nomor identitas KTP : 
+3. Nomor identitas  : 
 4. NOKK : 
 5. Serial Number di cangkang SIM Card : 
 6. Capture gagal aktivasi SIM Card : 
@@ -1602,8 +1602,8 @@ Perubahan data pelanggan
 1. Nomor by.U : xxxxxx
 2. Alamat Email login by.U : 
 3. nomor identitas & NOK pelanggan baru : 
-4. Foto KTP pelanggan baru : 
-5. Foto selfie dengan KTP pelanggan baru : 
+4. Foto identitas pelanggan baru : 
+5. Foto selfie dengan identitas pelanggan baru : 
 6. Surat pernyataan : 
 7. Validasi tambahan : 
 `   
@@ -1655,9 +1655,9 @@ Perubahan data pelanggan pindah tangan
 4. NOK pelanggan lama : 
 5. Nomor identitas pelanggan baru : 
 6. NOK pelanggan baru : 
-7. Foto KTP pelanggan lama : 
-8. Foto KTP pelanggan baru : 
-9. Foto selfie dengan KTP pelanggan baru : 
+7. Foto identitas pelanggan lama : 
+8. Foto identitas pelanggan baru : 
+9. Foto selfie dengan identitas pelanggan baru : 
 10. Surper : 
 `   
 },
