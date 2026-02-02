@@ -66,10 +66,11 @@ Detail case :  gabisa aktivasi Error Lain
 Solusi : minta data
 `,Solusi:`Makasih udah nunggu. Kak maaf, kalau aku cek di nomor xxxxxx, ada  masalah di nomor atau SIM Card by.U Kakak. Untuk pengecekan lebih lanjut, boleh infoin data ini ya :
 
-1. Nomor Identitas KTP valid :
-2. NOKK :
-3. Serial Number di cangkang SIM Card :
-4. Capture gagal aktivasi yang menggunakan 1 SIM card di HP dan pastiin ga pakai wifi :
+1. Email akun by.U :
+2. Nomor Identitas KTP valid :
+3. NOKK :
+4. Serial Number di cangkang SIM Card :
+5. Capture gagal aktivasi yang menggunakan 1 SIM card di HP dan pastiin ga pakai wifi :
 
 Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U! `,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
