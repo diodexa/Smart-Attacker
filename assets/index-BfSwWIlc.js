@@ -273,13 +273,17 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : unreg
 Solusi :  minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf untuk unreg/deaktivasi SIM card by.U, bisa melalui aplikasi. Silakan kakak buka halaman profil, pilih menu bantuan, pilih topik Isu SIM, lalu Kakak pilih faq Gimana sih cara unreg SIM Card by.U? Selanjutnya ikuti langkah-langkah pada aplikasi ya.
-1. Masukan SIM Card by.U ke gadget kamu
+`,Solusi:`Makasih udah nunggu. Kak maaf untuk unreg/deaktivasi SIM card by.U, bisa melalui aplikasi ya dengan cara berikut : 
+1. Masukan SIM Card by.U yang mau di unreg ke gadget kamu
 2. Matikan WiFi dan pastikan gadget kamu udah nyambung ke jaringan seluler by.U
-3. Klik button UNREG SIM Card pada bagian "Klik disini"
-4. Selanjutnya akan muncul halaman data unreg SIM Card. Pada halaman ini Kakak perlu meng-input NIK yang sama ketika nomor diaktivasi dan alasan unreg SIM Card, lalu klik button Kirim
-5. Kemudian akan muncul halaman disclaimer yang berisi syarat dan ketentuan terkait unreg SIM Card, pelanggan perlu menandai tanda checklist dibagian bawah sebagai tanda bahwa pelanggan sudah membaca dan menyetujui syarat & ketentuan unreg SIM Card. Lalu klik Unreg SIM Card
-6. Unreg SIM Card akan diproses jika data sesuai dan keterangan berhasil unreg akan muncul di aplikasi by.U :)
+3. Buka halaman profil
+4. Pilih menu bantuan
+5. Pilih topik Isu SIM 
+6. Lalu Kakak pilih faq Gimana sih cara unreg SIM Card by.U? atau masukkan kata kuncinya "unreg"
+7. Klik link URL yang ada di halaman "Gimana sih cara unreg SIM Card by.U?"
+8. Selanjutnya akan muncul halaman data unreg SIM Card. Pada halaman ini Kakak perlu meng-input NIK yang sama ketika nomor diaktivasi dan alasan unreg SIM Card, lalu klik button Kirim
+9. Kemudian akan muncul halaman disclaimer yang berisi syarat dan ketentuan terkait unreg SIM Card, Kakak perlu menandai tanda checklist dibagian bawah sebagai tanda bahwa Kakak sudah membaca dan menyetujui syarat & ketentuan unreg SIM Card. Lalu klik Unreg SIM Card
+10. Unreg SIM Card akan diproses jika data sesuai dan keterangan berhasil unreg akan muncul di aplikasi by.U
 
 
 DISCLAIMER 
