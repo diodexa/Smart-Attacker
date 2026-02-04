@@ -45,22 +45,23 @@ Segera hubungi kita lagi kalo internetnya masih kendala ya :)`,Mandatory:(e,t)=>
 9. Customer Tier Pelanggan :-
 10. Case Owner :byU
 11. Detail Complaint : Internet lambat
-12. Additional Information :sejak 2025 mengalami masalah ini, dengan patokan di belakang Mesjid Al Badar, , Sinyal full bar, jaringan tidak ada 4G atau 5G , hanya di nomor ini saja, di dalam atau di luar ruangan semua aplikasi, sisa kuota 3GB, speedtest terlampir, Tipe HP IPhone17 Pro
+12. Additional Information :
+-dalam Gedung atau di luar gedung?
+-semua lokasi atau hanya lokasi tertentu :
+-Nomor lain yang berkendala sama :-
+-bar sinyal dan 4G/3G/E :
+-Aplikasi/web yang berkendala :
+-CP :
+-Tipe HP :
 13. Capture Bukti Pelanggan : link capture
 14. Capture CCA : linkcapture
-15. Hasil analisa CCA :Possible Root Cause (ID refresh hlr)
-
+15. Hasil analisa CCA :Possible Root Cause (REQID)
 Network_4G_Normal
-
 Remarks
-
 Bapak atau Ibu Yth, setelah pengecekan di sistem kami, jaringan bapak atau ibu terlihat normal. Apakah bisa diinformasikan waktu terakhir di lokasi yang mengalami gangguan ?
-
 Suggestion
-
 Data pelanggan yang masuk pada sistem tidak mengindikasikan masalah. Silakan coba lagi dengan waktu yang lebih tepat. Tidak perlu create tiket ke network
-
-16. Solusi Yang telah di berikan : Update Location
+16. Solusi Yang telah di berikan : Update Location (REQID)
 #CheckbyCCA
 
 
@@ -378,7 +379,18 @@ Hi Kak, makasih banyak ya udah nunggu, aku cek nomor xxxxxx aktif dan di lokasi 
 1. Restart HP 5 menit kedepan
 2. Pastikan kolom APN di settingan HP terisi “byu”, kolom username dan password dikosongkan.
 3. Pindahkan SIM Card ke hp lain sebagai pembanding.
-5. Segera hubungi kita lagi kalo sinyalnya masih kendala `,Mandatory:(e,t)=>`#Pelangganbyu
+Segera hubungi kita lagi kalo sinyalnya masih kendala ya :) 
+
+===========================
+Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
+1. Apakah terjadi di dalam Gedung atau di luar gedung?
+2. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+3. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+4. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+5. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+6. CP lain yang dapat dihubungi 
+
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [NO] [byU ${e}] 
 1. Nama Customer : 
 2. MSISDN-A Yang Menghubungi : xxxxxx
@@ -391,21 +403,22 @@ Hi Kak, makasih banyak ya udah nunggu, aku cek nomor xxxxxx aktif dan di lokasi 
 9. Customer Tier Pelanggan :-
 10. Case Owner : byU
 11. Detail Complaint : Sinyal lemah
-12. Additional Information :sejak 2025 mengalami masalah ini, dengan patokan di belakang Mesjid Al Badar, , Sinyal full bar, jaringan tidak ada 4G atau 5G , hanya di nomor ini saja, di dalam atau di luar ruangan semua aplikasi, sisa kuota 3GB, speedtest terlampir, Tipe HP IPhone17 Pro
+12. Additional Information : 
+-dalam Gedung atau di luar gedung?
+-semua lokasi atau hanya lokasi tertentu :
+-Nomor lain yang berkendala sama :-
+-bar sinyal dan 4G/3G/E :
+-Aplikasi/web yang berkendala :
+-CP :
+-Tipe HP :
 13. Capture Bukti Pelanggan : link capture
 14. Capture CCA : linkcapture
 15. Hasil analisa CCA :Possible Root Cause (ID refresh hlr)
-
 Network_4G_Normal
-
 Remarks
-
 Bapak atau Ibu Yth, setelah pengecekan di sistem kami, jaringan bapak atau ibu terlihat normal. Apakah bisa diinformasikan waktu terakhir di lokasi yang mengalami gangguan ?
-
 Suggestion
-
 Data pelanggan yang masuk pada sistem tidak mengindikasikan masalah. Silakan coba lagi dengan waktu yang lebih tepat. Tidak perlu create tiket ke network
-
 16. Solusi Yang telah di berikan : Update Location
 #CheckbyCCA
 
@@ -732,7 +745,7 @@ Solusi : info cara aktivasi di apps
 4. Saat masukkan NIK dan No.KK pastikan sudah sesuai, cek secara manual kembali ya.
 5. Pastiin saat masukkan NIK dan no.KK pakai jaringan by.U aja yang ingin di aktivasi ya
 Semoga berhasil ya Kak, kalau berkendala bisa Kakak coba aktivasi via web byu.id/aktivasi dan bisa gunakan jaringan lain untuk perbandingan ya Kak.`,Mandatory:`
-`},{id:24,case:`Tidak bisa internet`,Bracket:e=>`#Pelangganbyu
+`},{id:24,case:`Tidak dapat langganan weTV`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email by.U : --
@@ -1721,7 +1734,25 @@ Solusi : Info request nomor
 Klik "Cari Nomor"
 4. Lalu akan muncul 5 pilihan nomor dengan 4 digit yang kamu pilih
 5. Setelah muncul pilihan nomor yang tersedia, kamu punya waktu 1 menit untuk memilih dan 5x kesempatan untuk mengganti kombinasi 4 digit angka favorit kamu. Kalo kamu sudah menggunakan 5x kesempatan, kamu baru bisa coba lagi buat bikin kombinasi 4 digit angka setelah 1x24 jam ya :)
-`,Mandatory:``}];var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e})=>{let t=e=>e??``;return(0,L.jsx)(qa,{options:Xa().slice().sort((e,n)=>t(e.case).toLocaleLowerCase().localeCompare(t(n.case).toLocaleLowerCase())).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
+`,Mandatory:``},{id:65,case:`CCA`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : sinyal/internet
+Solusi : infoin hasil CCA
+`,Solusi:``,Mandatory:` Hasil CCA :
+Possible Root Cause
+UE_Handset_Data_Setting_Off
+Remarks
+Bapak atau Ibu Yth, setelah melakukan pengecekan di sistem kami. Ditemukan issue pada device atau sim card yang digunakan. Jika restart device tidak menyelesaikan masalah maka disarankan untuk mengganti nomor sim ke Grapari
+Suggestion
+TIDAK PERLU CREATE TIKET KE TIM NETWORK. Adanya indikasi sim card atau handphone pelanggan bermasalah, anjurkan pelanggan untuk restart handphone. Jika masalah tetap ada, anjurkan pelanggan untuk mengganti sim card pada Grapari terdekat.
+
+Remarks
+Bapak atau Ibu Yth, setelah pengecekan di sistem kami, sinyal 4G bapak atau ibu terdeteksi lemah. Terima kasih atas laporannya kami akan segera eskalasi ke tim terkait 
+Suggestion
+Silahkan Create Tiket ke Tim Network. Adanya indikasi kondisi jangkauan sinyal 4G pada pelanggan yang kurang baik
+`}];var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e})=>{let t=e=>e??``;return(0,L.jsx)(qa,{options:Xa().slice().sort((e,n)=>t(e.case).toLocaleLowerCase().localeCompare(t(n.case).toLocaleLowerCase())).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),r(!0),setTimeout(()=>r(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,L.jsx)(`p`,{className:` ${n?`invisible!`:`visible`}`,children:n?`copy!`:t}),(0,L.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,n?`anjay`:``,` `]})]})};function eo(){let e=(0,l.useRef)([]),t=(0,l.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var to=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=eo(),c=e=>{let t=e.split(`
 `),n=1;for(let e=0;e<t.length;e++){if(t[e].trim()===``){n=1;continue}let r=t[e].match(/^(\d+)\.\s*(.*)/);if(!r){n=1;continue}t[e]=`${n}. ${r[2]}`,n++}return t.join(`
