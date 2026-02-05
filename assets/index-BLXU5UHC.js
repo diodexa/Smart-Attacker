@@ -32,7 +32,19 @@ Hi Kak, makasih banyak ya udah nunggu, aku cek nomor Xxxx (sebutkan nomornya) ak
 1. Restart HP 5 menit kedepan
 2. Pastikan kolom APN di settingan HP terisi “byu”, kolom username dan password dikosongkan.
 3. Pindahkan SIM Card ke hp lain sebagai pembanding.
-Segera hubungi kita lagi kalo internetnya masih kendala ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
+Segera hubungi kita lagi kalo internetnya masih kendala ya :)
+
+===========================
+Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
+1. Lokasi detail kendala (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Apakah terjadi di dalam Gedung atau di luar gedung?
+3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+7. CP lain yang dapat dihubungi 
+8. Capture keterangan internet berkendala :
+`,Mandatory:(e,t)=>`#Pelangganbyu
 [NO] [byU ${e}] 
 1. Nama Customer : 
 2. MSISDN-A Yang Menghubungi : xxxxxx
@@ -383,12 +395,14 @@ Segera hubungi kita lagi kalo sinyalnya masih kendala ya :)
 
 ===========================
 Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
-1. Apakah terjadi di dalam Gedung atau di luar gedung?
-2. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
-3. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
-4. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
-5. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
-6. CP lain yang dapat dihubungi 
+1. Lokasi detail kendala (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Apakah terjadi di dalam Gedung atau di luar gedung?
+3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+7. CP lain yang dapat dihubungi 
+8. Capture keterangan sinyal :
 
 `,Mandatory:(e,t)=>`#Pelangganbyu
 [NO] [byU ${e}] 
@@ -443,7 +457,7 @@ Solusi : minta data
 8. Kalo rikuesmu di terima, lanjutin prosesnya dan bisa Pilih Ambil (GraPARI)/Indomaret tanpa biaya pengambilan atau SIM Card diantar (Kurir JNE) dengan biaya Rp10.000 dan estimasi sampai makismal 7 hari kerja sesudah melakukan pembayaran.
 
 
-Kak maaf, untuk kendal ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+Kak maaf, untuk kendala ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Nomor Identitas valid : 
 3. Scan/Foto KTP asli : 
