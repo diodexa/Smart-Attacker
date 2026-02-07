@@ -28,7 +28,7 @@ Sekedar info kak, karena kita pake jaringan Telkomsel, jadi kualitas jaringan by
 
 ========Setelah refresh HLR=====
 
-Hi Kak, makasih banyak ya udah nunggu, aku cek nomor Xxxx (sebutkan nomornya) aktif dan di lokasi Kakak lagi ga ada gangguan. Untuk nomornya udah aku bantu refresh jaringan via sistem, bisa coba lakukan langkah berikut untuk 5 menit kedepan:
+Hi Kak, makasih banyak ya udah nunggu, aku cek nomor xxxxxx aktif dan di lokasi Kakak lagi ga ada gangguan. Untuk nomornya udah aku bantu refresh jaringan via sistem, bisa coba lakukan langkah berikut untuk 5 menit kedepan:
 1. Restart HP 5 menit kedepan
 2. Pastikan kolom APN di settingan HP terisi “byu”, kolom username dan password dikosongkan.
 3. Pindahkan SIM Card ke hp lain sebagai pembanding.
@@ -58,21 +58,22 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
 10. Case Owner :byU
 11. Detail Complaint : Internet lambat
 12. Additional Information :
--dalam Gedung atau di luar gedung?
--semua lokasi atau hanya lokasi tertentu :
--Nomor lain yang berkendala sama :-
--bar sinyal dan 4G/3G/E :
--Aplikasi/web yang berkendala :
--CP :
--Tipe HP :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
 13. Capture Bukti Pelanggan : link capture
 14. Capture CCA : linkcapture
-15. Hasil analisa CCA :Possible Root Cause (REQID)
-Network_4G_Normal
-Remarks
-Bapak atau Ibu Yth, setelah pengecekan di sistem kami, jaringan bapak atau ibu terlihat normal. Apakah bisa diinformasikan waktu terakhir di lokasi yang mengalami gangguan ?
-Suggestion
-Data pelanggan yang masuk pada sistem tidak mengindikasikan masalah. Silakan coba lagi dengan waktu yang lebih tepat. Tidak perlu create tiket ke network
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    -
+    Remarks
+    -
+    Suggestion
+    -
 16. Solusi Yang telah di berikan : Update Location (REQID)
 #CheckbyCCA
 
@@ -418,21 +419,22 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
 10. Case Owner : byU
 11. Detail Complaint : Sinyal lemah
 12. Additional Information : 
--dalam Gedung atau di luar gedung?
--semua lokasi atau hanya lokasi tertentu :
--Nomor lain yang berkendala sama :-
--bar sinyal dan 4G/3G/E :
--Aplikasi/web yang berkendala :
--CP :
--Tipe HP :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
 13. Capture Bukti Pelanggan : link capture
 14. Capture CCA : linkcapture
-15. Hasil analisa CCA :Possible Root Cause (ID refresh hlr)
-Network_4G_Normal
-Remarks
-Bapak atau Ibu Yth, setelah pengecekan di sistem kami, jaringan bapak atau ibu terlihat normal. Apakah bisa diinformasikan waktu terakhir di lokasi yang mengalami gangguan ?
-Suggestion
-Data pelanggan yang masuk pada sistem tidak mengindikasikan masalah. Silakan coba lagi dengan waktu yang lebih tepat. Tidak perlu create tiket ke network
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    -
+    Remarks
+    -
+    Suggestion
+    -
 16. Solusi Yang telah di berikan : Update Location
 #CheckbyCCA
 
@@ -466,6 +468,7 @@ Kak maaf, untuk kendala ganti SIM card nya di nomor xxxxxx, boleh infoin data in
 6. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
 7. Alasan ganti SIM Card : 
 
+Kak maaf, aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)p
 
 DISCLAIMER
 
@@ -1766,6 +1769,32 @@ Remarks
 Bapak atau Ibu Yth, setelah pengecekan di sistem kami, sinyal 4G bapak atau ibu terdeteksi lemah. Terima kasih atas laporannya kami akan segera eskalasi ke tim terkait 
 Suggestion
 Silahkan Create Tiket ke Tim Network. Adanya indikasi kondisi jangkauan sinyal 4G pada pelanggan yang kurang baik
+`},{id:66,case:`Permintaan Hapus Profil eSIM Karena Device Hilang`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : Permintaan Hapus Profil eSIM Karena Device Hilang
+Solusi : minta data
+`,Solusi:` Makasih udah nunggu, untuk hapus eSIM di perangkat lamanya yang udah hilang di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+1. Email registrasi by.U 
+2. Nomor Identitas KTP valid
+3. Scan/Foto KTP asli
+4. Foto selfie dengan KTP asli
+5. Jenis dan type Device yang hilang
+6. Email lain yang bisa dihubungi
+`,Mandatory:(e,t)=>`#Pelangganbyu
+[byU ${e}] 
+Pelanggan by.U
+${t} 
+Permintaan Hapus Profil eSIM Karena Device Hilang
+
+1. Nomor by.U : xxxxxx
+2. Email registrasi by.U : 
+3. Nomor Identitas KTP valid : 
+4. Scan/Foto KTP asli : 
+5. Foto selfie dengan KTP asli : 
+6. Jenis dan type Device yang hilang : 
+7. Email lain yang bisa dihubungi : 
 `}];var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e})=>{let t=e=>e??``;return(0,L.jsx)(qa,{options:Xa().slice().sort((e,n)=>t(e.case).toLocaleLowerCase().localeCompare(t(n.case).toLocaleLowerCase())).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),r(!0),setTimeout(()=>r(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,L.jsx)(`p`,{className:` ${n?`invisible!`:`visible`}`,children:n?`copy!`:t}),(0,L.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,n?`anjay`:``,` `]})]})};function eo(){let e=(0,l.useRef)([]),t=(0,l.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var to=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=eo(),c=e=>{let t=e.split(`
