@@ -20,14 +20,33 @@ Solusi :  minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala internetnya boleh infoin data ini ya biar biar bisa aku cek : 
 1. Nomor by.U : 
 2. Email akun by.U : 
-3. Lokasi detail kendala (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+3. Lokasi detail kendala (kelurahan, kecamatan, kabupaten/kota) saat berkendala :
 4. Tanggal dan waktu kejadian sejak kapan :
 5. Nomor by.U yang berkendala sama : 
 
 Sekedar info kak, karena kita pake jaringan Telkomsel, jadi kualitas jaringan by.U mengikuti kualitas jaringan Telkomsel di lokasi kakak ya. Makasih :)
+
+========Setelah refresh HLR=====
+
+Hi Kak, makasih banyak ya udah nunggu, aku cek nomor xxxxxx aktif dan di lokasi Kakak lagi ga ada gangguan. Untuk nomornya udah aku bantu refresh jaringan via sistem, bisa coba lakukan langkah berikut untuk 5 menit kedepan:
+1. Restart HP 5 menit kedepan
+2. Pastikan kolom APN di settingan HP terisi “byu”, kolom username dan password dikosongkan.
+3. Pindahkan SIM Card ke hp lain sebagai pembanding.
+Segera hubungi kita lagi kalo internetnya masih kendala ya :)
+
+===========================
+Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
+1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Apakah terjadi di dalam Gedung atau di luar gedung?
+3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+7. CP lain yang dapat dihubungi 
+8. Capture keterangan internet berkendala :
 `:`Makasih udah nunggu. Kak maaf, untuk kendala internetnya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku cek : 
 1. Email akun by.U : 
-2. Lokasi detail kendala (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Lokasi detail kendala (kelurahan, kecamatan, kabupaten/kota) saat berkendala :
 3. Tanggal dan waktu kejadian sejak kapan :
 4. Nomor by.U yang berkendala sama : 
 
@@ -43,7 +62,7 @@ Segera hubungi kita lagi kalo internetnya masih kendala ya :)
 
 ===========================
 Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
-1. Lokasi detail kendala (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
 2. Apakah terjadi di dalam Gedung atau di luar gedung?
 3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
 4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
@@ -457,7 +476,34 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : Sinyal lemah/tidak stabil/Tidak ada sinyal
 Solusi : minta data
-`,Solusi:`
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala sinyalnya, boleh infoin data ini ya biar bisa aku cek :
+1. Nomor by.U : 
+2. Email akun by.U :
+3. Lokasi detail kendala (kelurahan, kecamatan, kabupaten/kota) saat berkendala :
+4. Tanggal dan waktu kejadian sejak kapan :
+5. Nomor by.U lain yang berkendala sama :
+
+Sekedar info, Kak. Karena kita pake jaringan Telkomsel, jadi kualitas jaringan by.U mengikuti kualitas jaringan Telkomsel di lokasi kakak ya. Makasih :)
+
+====== Setelah Refresh HLR========
+
+Hi Kak, makasih banyak ya udah nunggu, aku cek nomor xxxxxx aktif dan di lokasi Kakak lagi ga ada gangguan. Untuk nomornya udah aku bantu refresh jaringan via sistem, bisa coba lakukan langkah berikut untuk 5 menit kedepan:
+1. Restart HP 5 menit kedepan
+2. Pastikan kolom APN di settingan HP terisi “byu”, kolom username dan password dikosongkan.
+3. Pindahkan SIM Card ke hp lain sebagai pembanding.
+Segera hubungi kita lagi kalo sinyalnya masih kendala ya :) 
+
+===========================
+Kak maaf, kalau udah dilakukan tapi masih berkendala, boleh lengkapin data ini ya :
+1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Apakah terjadi di dalam Gedung atau di luar gedung?
+3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+7. CP lain yang dapat dihubungi 
+8. Capture keterangan sinyal :
+`:`
 Makasih udah nunggu. Kak maaf, untuk kendala sinyalnya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
 2. Lokasi detail kendala (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
@@ -475,7 +521,7 @@ Hi Kak, makasih banyak ya udah nunggu, aku cek nomor xxxxxx aktif dan di lokasi 
 Segera hubungi kita lagi kalo sinyalnya masih kendala ya :) 
 
 ===========================
-Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
+Kak maaf, kalau udah dilakukan tapi masih berkendala, boleh lengkapin data ini ya :
 1. Lokasi detail kendala (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
 2. Apakah terjadi di dalam Gedung atau di luar gedung?
 3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
@@ -506,7 +552,7 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
     -Aplikasi/web yang berkendala :
     -CP :
     -Tipe HP :
-13. Capture Bukti Pelanggan : link capture
+13. Capture Bukti Pelanggan : linkcapture
 14. Capture CCA : linkcapture
 15. Hasil analisa CCA :
     Possible Root Cause 
@@ -515,14 +561,13 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
     -
     Suggestion
     -
-16. Solusi Yang telah di berikan : Update Location
+16. Solusi Yang telah di berikan : Update Location (reqID)
 #CheckbyCCA
 
 
 
 3x24 jam
-
-Sementara liat dulu di pansol`},{id:12,case:`Ganti SIM Card active`,Bracket:e=>`#Pelangganbyu
+`},{id:12,case:`Ganti SIM Card active`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email by.U : --
@@ -603,7 +648,14 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : misskoordinasi JNE ada AWB
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari proses pengantarannya. Boleh infoin data ini ya biar bisa aku proses : 
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala pengiriman SIM card , boleh infoin data ini ya biar bisa aku proses : 
+1. Nomor by.U yang dipesan : 
+2. Email akun by.U :
+3. Nama dan Nomor Penerima :
+4. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) :
+5. Capture pengecekan nomor resi di web tracking JNE : 
+6. Konfirmasi dari JNE (jika Kakak sempat komplain ke JNE) :
+`:`Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari proses pengantarannya. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. Nama dan Nomor Penerima :
 3. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) :
@@ -628,7 +680,14 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : misskoordinasi ga ada awb
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari aplikasinya jadinya SIM card Kakak belum di kirimin. Boleh infoin data ini ya biar bisa aku proses : 
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala pengiriman SIM card nya, boleh infoin data ini ya biar bisa aku proses : 
+1. Nomor by.U :
+2. Email akun by.U : 
+3. Capture bukti pembayaran : 
+4. Nama Penerima : 
+5. Nomor Penerima : 
+6. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) : 
+`:`Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari aplikasinya jadinya SIM card Kakak belum di kirimin. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Capture bukti pembayaran : 
 3. Nama Penerima : 
@@ -754,13 +813,20 @@ Permintaan Refund karena kesalahan sistem
 1.Nomor by.U : xxxxxx
 2.Email by.U : --
 3.Capture bukti pembayaran : 
+4. Data refund :
 `},{id:19,case:`Tidak Mendapatkan Kuota Monthversary  `,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : ga dapat kuota Monthversary
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala ga dapat kuota Monthversary di nomor xxxxxx, boleh infoin aku data ini ya biar bisa aku proses : 
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala ga dapat kuota Monthversary, boleh infoin aku data ini ya biar bisa aku proses : 
+1. Nomor by.U :
+2. Email akun by.U : 
+3. Kuota berapa bulan yang belum didapatkan (3, 6, 9, atau 12 bulan) : 
+4. Tanggal aktivasi nomor by.U : 
+5. Capture halaman Reward (Sudah dan Belum Terpakai) : 
+`:`Makasih udah nunggu. Kak maaf, untuk kendala ga dapat kuota Monthversary di nomor xxxxxx, boleh infoin aku data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Kuota berapa bulan yang belum didapatkan (3, 6, 9, atau 12 bulan) : 
 3. Tanggal aktivasi nomor by.U : 
@@ -786,14 +852,21 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : gagal Aktivasi M-Banking
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala fitur banking nya di nomor xxxxxx, pastiin cuma ada SIM Card by.U di hp saat aktivasi fitur banking tersebut dan terkoneksi dengan jaringan by.U. Kalau masih tidak bisa, boleh tolong infokan beberapa data berikut agar dapat dibantu pengecekan :
+`,Solusi:e=>e===`Email`?`Hai, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala fitur banking nya, pastiin cuma ada SIM Card by.U di hp saat aktivasi fitur banking tersebut dan terkoneksi dengan jaringan by.U. Kalau masih tidak bisa, boleh tolong infokan beberapa data berikut agar dapat dibantu pengecekan :
+1. Nomor by.U : 
+2. Email akun by.U :
+3. Rincian keluhan :
+4. Tipe HP :
+5. Capture dashboard apps :
+6. Capture kirim atau terima SMS ke nomor lain berhasil :
+7. Capture keterangan gagal aktivasi fitur banking :
+`:`Makasih udah nunggu. Kak maaf, untuk kendala fitur banking nya di nomor xxxxxx, pastiin cuma ada SIM Card by.U di hp saat aktivasi fitur banking tersebut dan terkoneksi dengan jaringan by.U. Kalau masih tidak bisa, boleh tolong infokan beberapa data berikut agar dapat dibantu pengecekan :
 1. Email akun by.U :
 2. Rincian keluhan :
 3. Tipe HP :
 4. Capture dashboard apps :
 5. Capture kirim atau terima SMS ke nomor lain berhasil :
 6. Capture keterangan gagal aktivasi fitur banking :
-
 `,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
@@ -813,9 +886,29 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : irenew
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx boleh infoin aku data ini ya biar bisa aku cek : 
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala transaksinya boleh infoin aku data ini ya biar bisa aku cek : 
+1. Nomor by.U :
+2. Email akun by.U :
+3. Capture bukti pembayaran :
+
+Oke Kak, untuk bukti bayar yang di Shopee dengan tertera Merchant Reff IDnya silahkan coba cara ini :
+1. Buka Aplikasi Shopee: Buka aplikasi Shopee di ponsel Kakak.
+2. Lihat Riwayat Transaksi: Masuk ke halaman "Saya" dan pilih "ShopeePay". Di bagian "Transaksi Terakhir", Kakak dapat melihat riwayat transaksinya.
+3. Pilih Transaksi: Pilih transaksi yang ingin dilihat detailnya.
+4. Cari Merchant Ref ID: Rincian transaksi akan menampilkan informasi detail termasuk Merchant Ref ID. Merchant Ref ID ini biasanya tertera dalam format yang mirip dengan nomor ID.
+
+Kak maaf, untuk capture bukti bayar yang di DANA, pastiin tertera ID order merchant nya yang angkanya tanpa di sensor ya:)
+`:`Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx boleh infoin aku data ini ya biar bisa aku cek : 
 1. Email akun by.U 
-2. Capture bukti pembayaran`,Mandatory:(e,t)=>`#Pelangganbyu
+2. Capture bukti pembayaran
+
+Oke Kak, untuk bukti bayar yang di Shopee dengan tertera Merchant Reff IDnya silahkan coba cara ini :
+1. Buka Aplikasi Shopee: Buka aplikasi Shopee di ponsel Kakak.
+2. Lihat Riwayat Transaksi: Masuk ke halaman "Saya" dan pilih "ShopeePay". Di bagian "Transaksi Terakhir", Kakak dapat melihat riwayat transaksinya.
+3. Pilih Transaksi: Pilih transaksi yang ingin dilihat detailnya.
+4. Cari Merchant Ref ID: Rincian transaksi akan menampilkan informasi detail termasuk Merchant Ref ID. Merchant Ref ID ini biasanya tertera dalam format yang mirip dengan nomor ID.
+
+Kak maaf, untuk capture bukti bayar yang di DANA, pastiin tertera ID order merchant nya yang angkanya tanpa di sensor ya:)`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -833,7 +926,13 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : gabisa aktivasi legacy
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala gabisa aktivasi/registrasi di nomor xxxxxx, aku cek nomornya belum berhasil di aktivasi nih. Kalau nomornya udah sesuai dengan yang di bagian depan bungkus SIM card, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala aktivasi SIM card nya, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
+1. Nomor by.U :
+2. NIK & NOKK :
+3. Capture Gagal/berhasil Aktivasi via SMS :
+4. SN barcode yang ada di cangkang SIM Card :
+5. CP dan Email yang bisa dihubungi :
+`:`Makasih udah nunggu. Kak maaf untuk kendala gabisa aktivasi/registrasi di nomor xxxxxx, aku cek nomornya belum berhasil di aktivasi nih. Kalau nomornya udah sesuai dengan yang di bagian depan bungkus SIM card, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
 1. NIK & NOKK :
 2. Capture Gagal/berhasil Aktivasi via SMS :
 3. SN barcode yang ada di cangkang SIM Card :
@@ -858,7 +957,14 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : cara aktivasi sim card digital
 Solusi : info cara aktivasi di apps
-`,Solusi:`Kak maaf, untuk aktivasi di nomor xxxxxx, Aku bantu infoin untuk cara aktivasinya Kakak bisa coba cara berikut ya Kak:
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak kalau nomornya beli di apps by.U, aku bantu infoin untuk cara aktivasinya Kakak bisa coba cara berikut ya Kak:
+1. Buka apps, lalu login dengan menggunakan akun yang digunakan pada saat pemesanan kartu by.U > klik tombol aktifin SIM Card,
+2. Pastiin SIM Card di HP hanya ada SIM by.U,
+3. Pastiin settingan HP jaringan internet terkoneksi ke jaringan by.U,
+4. Saat masukkan NIK dan No.KK pastikan sudah sesuai, cek secara manual kembali ya.
+5. Pastiin saat masukkan NIK dan no.KK pakai jaringan by.U aja yang ingin di aktivasi ya
+Semoga berhasil ya Kak, kalau berkendala bisa Kakak coba aktivasi via web byu.id/aktivasi dan bisa gunakan jaringan lain untuk perbandingan ya Kak.
+`:`Kak maaf, untuk aktivasi di nomor xxxxxx, Aku bantu infoin untuk cara aktivasinya Kakak bisa coba cara berikut ya Kak:
 1. Buka apps, lalu login dengan menggunakan akun yang digunakan pada saat pemesanan kartu by.U > klik tombol aktifin SIM Card,
 2. Pastiin SIM Card di HP hanya ada SIM by.U,
 3. Pastiin settingan HP jaringan internet terkoneksi ke jaringan by.U,
@@ -871,21 +977,19 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : ga dapat langganan weTV
 Solusi : minta data
-`,Solusi:`
-Kak makasih udah nunggu. Maaf nih untuk kendala internet nya di nomor xxxxxx , boleh infoin data ini ya biar bisa aku cek : 
-1. Email akun by.U :
-2. Lokasi detail kendala (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
-3. Tanggal dan waktu kendala :
-4. Kendala terjadi di beberapa aplikasi (ya/tidak) :
-5. Capture setting APN di HP :
-
-
-Makasih udah nunggu. Kak maaf, untuk kendala langganan weTV nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
-1. Email akun by.U :
-2. Capture Akun profile di aplikasi WeTV (yang tertera keterangan Membership/Berlangganan) :
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala langganan weTV nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
+1. Nomor by.U : 
+2. Email akun by.U :
+3. Capture Akun profile di aplikasi WeTV (yang tertera keterangan Membership/Berlangganan) :
 4. Capture notifikasi berhasil aktivasi :
 5. Tanggal pembelian paket:
 6. Tipe HP :
+`:`Makasih udah nunggu. Kak maaf, untuk kendala langganan weTV nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
+1. Email akun by.U :
+2. Capture Akun profile di aplikasi WeTV (yang tertera keterangan Membership/Berlangganan) :
+3. Capture notifikasi berhasil aktivasi :
+4. Tanggal pembelian paket:
+5. Tipe HP :
 `,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
@@ -905,7 +1009,16 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : sim card yang didapat legacy
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
+`,Solusi:e=>e===`Email`?`Hai, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala SIM card nya, boleh infoin data ini ya biar bisa aku proses :
+1. Nomor by.U yang dipesan: 
+2. Email akun by.U : 
+3. Capture Keterangan Gagal Aktivasi : 
+4. Serial Number di cangkang SIM Card : 
+5. Foto bungkus SIM Card bagian depan : 
+6. Nama penerima : 
+7. Nomor penerima : 
+8. Alamat pengiriman :
+`:`Makasih udah nunggu. Kak maaf, untuk kendala SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
 1. Akun by.U : 
 2. Capture Keterangan Gagal Aktivasi : 
 3. Serial Number di cangkang SIM Card : 
@@ -961,7 +1074,17 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : kuota tiba-tiba berkurang
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala penggunaan kuota yang ga sesuai di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
+`,Solusi:e=>e===`Email`?`Halo, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala penggunaan kuotanya, boleh infoin data ini ya biar bisa aku proses :
+1. Nomor by.U : 
+2. Email akun by.U:
+3. Tanggal waktu kejadian :
+4. Lokasi Kejadian ( Cukup Kec, Kabupaten atau Kota ) :
+5. Tipe hp/gadget :
+6. Paket yang dikeluhkan :
+7. Jumlah kuota awal dan kuota akhir :
+8. Capture data usage :
+9. Capture dashboard apps by.U (yang ada detail pemakaian Data) : 
+`:`Makasih udah nunggu. Kak maaf untuk kendala penggunaan kuota yang ga sesuai di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U:
 2. Tanggal waktu kejadian :
 3. Lokasi Kejadian ( Cukup Kec, Kabupaten atau Kota ) :
@@ -1017,7 +1140,14 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : non telco
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+`,Solusi:e=>e===`Email`?`Hai, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala uCoin nya, boleh infoin data ini ya biar bisa aku proses : 
+1. Nomor by.U : 
+2. Email akun by.U : 
+3. Jenis voucher yang ditukarkan : 
+4. Tanggal penukaran U-Coin : 
+5. Capture bukti redeem di halaman Reward Saya : 
+6. Capture kendala penukaran : 
+`:`Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Jenis voucher yang ditukarkan : 
 3. Tanggal penukaran U-Coin : 
@@ -1041,7 +1171,19 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : ganti sim card ditolak grapari
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf, untuk ganti SIM card nya karena gabisa di GraPARI di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+`,Solusi:e=>e===`Email`?`Hai, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk ganti SIM card nya karena gabisa di GraPARI, boleh infoin data ini ya biar bisa aku proses : 
+1. Nomor by.U :
+2. Nama Pelanggan/pengunjung : 
+3. Email aktif yang bisa dihubungi : 
+4. Nomor lain yang bisa dihubungi : 
+5. Tanggal dan hari mengunjungi GraPARI : 
+6. Nama GraPARI : 
+7. Lokasi GraPARI : (Nama dan nomor Jalan, Kelurahan, Kecamatan, Kota/Kabupaten, Provinsi)
+8. Detail alasan ditolak : 
+9. NIK KTP Valid : 
+10. Foto KTP : 
+11. Foto selfie KTP : 
+`:`Makasih udah nunggu. Kak maaf, untuk ganti SIM card nya karena gabisa di GraPARI di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Nama Pelanggan/pengunjung : 
 2. Email aktif yang bisa dihubungi : 
 3. Nomor lain yang bisa dihubungi : 
@@ -1076,7 +1218,16 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : esim sinyal hilang
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala eSIM nya, boleh infoin data ini ya biar bisa aku proses : 
+1. Nomor by.U :
+2. Email akun by.U :
+3. Tipe/Merek Gadget :
+4. Nomor yang bisa dihubungi :
+5. Email yang bisa dihubungi : 
+6. Capture Sinyal :
+7. Capture settingan eSIM di handphone :
+8. Capture bukti pembayaran : 
+`:`Makasih udah nunggu. Kak maaf untuk kendala eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. Tipe/Merek Gadget :
 3. Nomor yang bisa dihubungi :
@@ -1105,8 +1256,14 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : minta barcode esim
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf untuk barcode/qr eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
-1. Akun by.U : 
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk barcode/qr eSIM nya, boleh infoin data ini ya biar bisa aku proses : 
+1. Nomor by.U : 
+2. Email akun by.U : 
+3. Nomor yang bisa dihubungi : 
+4. Email yang bisa dihubungi : 
+5. Capture bukti pembayaran : 
+`:`Makasih udah nunggu. Kak maaf untuk barcode/qr eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+1. Email akun by.U : 
 2. Nomor yang bisa dihubungi : 
 3. Email yang bisa dihubungi : 
 4. Capture bukti pembayaran : 
@@ -1180,7 +1337,15 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : gabisa internet roaming
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala gabisa internet di luar negeri,boleh infoin data ini ya biar bisa aku cek :
+1. Nomor by.U :
+2. Email akun by.U :
+3. Tanggal dan waktu kejadian sejak kapan :
+4. Jaringan/operator negara setempat yang digunakan :
+5. Capture speedtest :
+6. Capture setting APN di HP :
+7. Lokasi negara :
+`:`Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
 2. Tanggal dan waktu kejadian sejak kapan :
 3. Jaringan/operator negara setempat yang digunakan :
@@ -1221,7 +1386,13 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : pulsa berkurang tiba-tiba
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu Kak. Maaf nih untuk kendala pulsa yang berkurang tiba-tiba di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
+`,Solusi:e=>e===`Email`?`Halo, Kak . Saat ini udah terhubung dengan Nindy. Maaf nih untuk kendala pulsa yang berkurang tiba-tiba, boleh infoin data ini ya biar bisa aku proses :
+1. Nomor by.U : 
+2. Email akun By.U :
+3. Pulsa awal dan pulsa akhir :
+4. Tipe Hp :
+5. Tanggal dan Waktu kejadian :
+`:`Makasih udah nunggu Kak. Maaf nih untuk kendala pulsa yang berkurang tiba-tiba di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun By.U :
 2. Pulsa awal dan pulsa akhir :
 3. Tipe Hp :
@@ -1230,7 +1401,7 @@ Solusi : minta data
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
-Pulsa berkurang tib-tiba
+Pulsa berkurang tiba-tiba
 
 1. Nomor By.U : xxxxxx
 2. Email akun By.U : 
@@ -1331,7 +1502,33 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : perubahan data pelanggan
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf untuk perubahan data NIK nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
+`,Solusi:e=>e===`Email`?`Halo, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk perubahan data nya, boleh infoin data ini ya biar bisa aku proses : 
+1. Nomor by.U : 
+2. Alamat Email login by.U :
+3. NIK & NOK pelanggan baru :
+4. Foto KTP pelanggan baru :
+5. Foto selfie dengan KTP pelanggan baru :
+6. Surat pernyataan yang bisa minta ke email nindy@byu.id :
+7. Validasi tambahan :
+
+Untuk validasi tambahannya bisa infoin salah satu dari data ini ya : 
+1. Tanggal dan jenis paket terakhir yang dibeli :
+2. Jumlah pulsa yang dimiliki sekarang :
+3. Nominal harga paket yang dibeli terakhir :
+4. 5 Transaksi terakhir (minimum 3 transaksi valid) :
+5. Tipe dan merk HP terakhir digunakan :
+Kirim nya ke email nindy@byu.id ya biar aman :)
+
+DISCLAIMER
+
+Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu Permintaan Perubahan data  dengan data :
+1. Nomor by.U : xxxxxx
+2. Email: --
+3. NIK KTP pelanggan baru : 
+4. No KK pelanggan baru   : 
+
+Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
+`:`Makasih udah nunggu. Kak maaf untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
 1. Alamat Email login by.U :
 2. NIK & NOK pelanggan baru :
 3. Foto KTP pelanggan baru :
@@ -1376,7 +1573,27 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : perubahan data 
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf untuk perubahan data NIK nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. ak maaf untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
+1. Alamat Email login by.U :
+2. NIK & NOK pelanggan lama :
+3. NIK & NOK pelanggan baru :
+4. Foto KTP pelanggan lama :
+5. Foto KTP pelanggan baru :
+6. Foto selfie dengan KTP pelanggan baru :
+7. Surat pernyataan yang bisa minta ke email nindy@byu.id :
+Kirimnya ke email nindy@byu.id aja ya biar aman :)
+
+
+DISCLAIMER
+
+Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu Permintaan Perubahan data karena pindah tangan dengan data :
+1. Nomor by.U : xxxxxx
+2. Email: --
+3. NIK KTP pelanggan baru : 
+4. No KK pelanggan baru   : 
+
+Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
+`:`Makasih udah nunggu. Kak maaf untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
 1. Alamat Email login by.U :
 2. NIK & NOK pelanggan lama :
 3. NIK & NOK pelanggan baru :
@@ -1418,7 +1635,28 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : puk
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak untuk permintaan kode PUK di nomor xxxxxx , boleh infoin data ini ya biar bisa aku bantu :
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak untuk permintaan kode PUK, boleh infoin data ini ya biar bisa aku bantu :
+1. Nomor by.U : 
+2. Alamat email akun by.U :
+3. NIK yang terdaftar :
+
+Makasih udah nunggu. Kak untuk permintaan kode PUK, boleh infoin data ini ya biar bisa aku bantu :
+1. Nomor by.U :
+1. NIK yang terdaftar :
+2. validasi tambahan :
+Untuk validasi tambahannya Kakak bisa isi salah satu dari data ini ya : 
+1. Tanggal dan jenis paket terakhir yang dibeli.
+2. Jumlah pulsa yang dimiliki sekarang.
+3. Nominal harga paket yang dibeli terakhir.
+4. 5 Transaksi terakhir (minimum 3 transaksi valid)
+5. Tipe dan merk HP terakhir digunakan.
+
+
+Makasih udah nunggu. Kak untuk permintaan kode PUK 1 di nomor xxxxxx adalah 1111111. Silakan bisa input PUK 1 dan diikuti memasukkan PIN baru 4 digit angka secara acak dan mudah diingat. Untuk syarat dan ketentuannya sebagai berikut Kak:
+a. Batas maksimal memasukkan PUK adalah 10 kali
+b. Setelah 10 kali gagal, pelanggan diharuskan ganti kartu. Pastikan menginputnya sesuai dengan PUK yang diberikan
+c. Kode PUK tidak akan berubah, Kakak bisa menyimpan kode PUK jika diperlukan kembali. Semoga berhasil Kak :)
+`:`Makasih udah nunggu. Kak untuk permintaan kode PUK di nomor xxxxxx , boleh infoin data ini ya biar bisa aku bantu :
 1. Alamat email akun by.U :
 2. NIK yang terdaftar :
 
@@ -1444,7 +1682,15 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : Tidak dapat langganan ZOOM Premium"
 Solusi : minta data
-`,Solusi:` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Zoom nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat langganan Zoom nya, boleh infoin data ini ya biar bisa aku proses :
+1. Nomor by.U :
+2. Email akun by.U :
+3. Capture detail riwayat transaksi pembelian topping Zoom :
+4. Email yang didaftarkan pada pentautan Link Zoom :
+5. Tipe topping Zoom yang dibeli :
+6. Capture SMS dari TSELZOOM :
+7. Capture halaman profil di aplikasi web ZOOM :
+`:`Makasih udah nunggu. Kak maaf untuk ga dapat langganan Zoom nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Capture detail riwayat transaksi pembelian topping Zoom :
 3. Email yang didaftarkan pada pentautan Link Zoom :
@@ -1471,7 +1717,14 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : Tidak dapat langganan Netflix
 Solusi : minta data
-`,Solusi:` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Netflix nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat langganan Netflix nya, boleh infoin data ini ya biar bisa aku proses :
+1. Nomor by.U : 
+2. Email akun by.U :
+3. Tanggal pembelian paket :
+4. Capture sms dari Netlfix atau 9943 (kalau ada) :
+5. Capture notifikasi berhasil aktivasi di aplikasi :
+6. Capture kendala :
+`:`Makasih udah nunggu. Kak maaf untuk ga dapat langganan Netflix nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Tanggal pembelian paket :
 3. Capture sms dari Netlfix atau 9943 (kalau ada) :
@@ -1498,7 +1751,14 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : Tidak dapat langganan Vidio
 Solusi : minta data
-`,Solusi:` Makasih udah nunggu. Kak maaf untuk ga dapat langganan Vidio nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat langganan Vidio nya, boleh infoin data ini ya biar bisa aku proses :
+1. Nomor by.U :
+2. Email akun by.U :
+3. Capture detail riwayat transaksi pembelian topping Vidio :
+4. Tipe topping Vidio yang dibeli :
+5. Capture SMS dari 97080 :
+6. Capture halaman paket subscription di aplikasi Vidio :
+`:`Makasih udah nunggu. Kak maaf untuk ga dapat langganan Vidio nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Capture detail riwayat transaksi pembelian topping Vidio :
 3. Tipe topping Vidio yang dibeli :
@@ -1525,7 +1785,13 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : Tidak dapat kuota Birthday reward
 Solusi : minta data
-`,Solusi:` Makasih udah nunggu. Kak maaf untuk ga dapat kuota bonus birthday di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat kuota bonus birthday, boleh infoin data ini ya biar bisa aku proses :
+1. NOmor by.U :
+2. Email akun by.U :
+3. Capture profile di aplikasi by.U :
+4. Capture halaman notifikasi di apps by.U :
+5. Capture halaman paket aktif :
+`:`Makasih udah nunggu. Kak maaf untuk ga dapat kuota bonus birthday di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Capture profile di aplikasi by.U :
 3. Capture halaman notifikasi di apps by.U :
@@ -1549,7 +1815,14 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : IRENEW Voucher fisik
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik, boleh infoin data ini ya biar bisa aku proses :
+1. Nomor by.U : 
+2. Email akun by.U :
+3. Nama Paket Kuota :
+4. Kode hasil Gesek Voucher Fisik :
+5. Serial Number Voucher Fisik :
+6. Capture keterangan gagal redeem voucher :
+`:`Makasih udah nunggu. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Nama Paket Kuota :
 3. Kode hasil Gesek Voucher Fisik :
@@ -1655,7 +1928,13 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : Kuota tiba-tiba hilang karena kesalahan by.U
 Solusi : minta data
-`,Solusi:` Makasih udah nunggu. Kak maaf, untuk kendala kuotanya di nomor xxxxxx , boleh infoin data ini ya biar bisa aku proses : 
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala kuotanya, boleh infoin data ini ya biar bisa aku proses : 
+1. Nomor by.U :
+2. Email akun by.U : 
+3. Channel Pembayaran : 
+4. Tanggal & Waktu Kejadian : 
+5. Capture Detail Riwayat Transaksi Kuota yang hilang : 
+`:`Makasih udah nunggu. Kak maaf, untuk kendala kuotanya di nomor xxxxxx , boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Channel Pembayaran : 
 3. Tanggal & Waktu Kejadian : 
@@ -1679,7 +1958,12 @@ Nomor by.U : xxxxxx
 Email by.U : 
 Detail case : u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
 Solusi : minta data
-`,Solusi:` Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala uCoin nya, boleh infoin data ini ya biar bisa aku proses : 
+1. Nomor by.U :
+2. Email akun by.U : 
+3. Capture keterangan detail transaksi yang u-coinnya tidak masuk :
+4. Capture Halaman Histori U-Coin Terkumpul :
+`:`Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Capture keterangan detail transaksi yang u-coinnya tidak masuk :
 3. Capture Halaman Histori U-Coin Terkumpul :
@@ -1731,14 +2015,22 @@ Nomor by.U : xxxxxx
 Email akun by.U : --
 Detail case : info send gift/tf pulsa
 Solusi : info send gift/tf pulsa
-`,Solusi:`Makasih udah nunggu. Kak maaf, untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
+`:`Makasih udah nunggu. Kak maaf, untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
 `,Mandatory:``},{id:58,case:`Tidak Mendapatkan Langganan Prime Video`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email akun by.U : --
 Detail case : Tidak Mendapatkan Langganan Prime Video
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf, untuk ga dapa langganan Prime Video nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk ga dapat langganan Prime Video nya , boleh infoin data ini ya biar bisa aku proses : 
+1. Nomor by.U :
+2. Email akun by.U : 
+3. Capture detail/daftar transaksi pembelian topping Prime Video di aplikasi by.U :
+4. Tipe topping Prime Video yang dibeli :
+5. Tanggal pembelian topping Prime Video :
+6. Capture kendala :
+`:`Makasih udah nunggu. Kak maaf, untuk ga dapat langganan Prime Video nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Capture detail/daftar transaksi pembelian topping Prime Video di aplikasi by.U :
 3. Tipe topping Prime Video yang dibeli :
@@ -1811,7 +2103,16 @@ Nomor by.U : xxxxxx
 Email akun by.U : --
 Detail case :  Gagal Registrasi 5g
 Solusi : minta data
-`,Solusi:`Kak makasih udah nunggu. Untuk kendala 5G nya di nomor xxxxxx, Pastiin HP Kakak udah support 5G dan Kakak juga bisa cek apakah lokasi Kakak udah tercover jaringan 5G melalui https://www.telkomsel.com/check-5G-coverage. Kakak bisa melakukan daftar mandiri melalui https://my.telkomsel.com/provisioning/5g. Pastiin juga saat akses link tersebut SIM Card terpasang di SIM 1, data selular dalam keadaan on, dan fitur lokasi aktif.
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala 5G nya, Pastiin HP Kakak udah support 5G dan Kakak juga bisa cek apakah lokasi Kakak udah tercover jaringan 5G melalui https://www.telkomsel.com/check-5G-coverage. Kakak bisa melakukan daftar mandiri melalui https://my.telkomsel.com/provisioning/5g. Pastiin juga saat akses link tersebut SIM Card terpasang di SIM 1, data selular dalam keadaan on, dan fitur lokasi aktif.
+
+Jika masih berkendala, boleh infokan beberapa data di bawah ini supaya bisa dibantu pengecekan:
+1. Nomor by.U :
+2. Email akun by.U :
+3. Lokasi (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi) :
+4. Tipe HP :
+5. Capture kendala di web https://my.telkomsel.com/provisioning/5g :
+6. Capture settingan APN
+`:`Kak makasih udah nunggu. Kak maaf, untuk kendala 5G nya di nomor xxxxxx, Pastiin HP Kakak udah support 5G dan Kakak juga bisa cek apakah lokasi Kakak udah tercover jaringan 5G melalui https://www.telkomsel.com/check-5G-coverage. Kakak bisa melakukan daftar mandiri melalui https://my.telkomsel.com/provisioning/5g. Pastiin juga saat akses link tersebut SIM Card terpasang di SIM 1, data selular dalam keadaan on, dan fitur lokasi aktif.
 
 Jika masih berkendala, boleh infokan beberapa data di bawah ini supaya bisa dibantu pengecekan:
 1. Email akun by.U :
@@ -1852,31 +2153,21 @@ Solusi : Info request nomor
 Klik "Cari Nomor"
 4. Lalu akan muncul 5 pilihan nomor dengan 4 digit yang kamu pilih
 5. Setelah muncul pilihan nomor yang tersedia, kamu punya waktu 1 menit untuk memilih dan 5x kesempatan untuk mengganti kombinasi 4 digit angka favorit kamu. Kalo kamu sudah menggunakan 5x kesempatan, kamu baru bisa coba lagi buat bikin kombinasi 4 digit angka setelah 1x24 jam ya :)
-`,Mandatory:``},{id:65,case:`CCA`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
-Nomor by.U : xxxxxx
-Email akun by.U : --
-Detail case : sinyal/internet
-Solusi : infoin hasil CCA
-`,Solusi:``,Mandatory:` Hasil CCA :
-Possible Root Cause
-UE_Handset_Data_Setting_Off
-Remarks
-Bapak atau Ibu Yth, setelah melakukan pengecekan di sistem kami. Ditemukan issue pada device atau sim card yang digunakan. Jika restart device tidak menyelesaikan masalah maka disarankan untuk mengganti nomor sim ke Grapari
-Suggestion
-TIDAK PERLU CREATE TIKET KE TIM NETWORK. Adanya indikasi sim card atau handphone pelanggan bermasalah, anjurkan pelanggan untuk restart handphone. Jika masalah tetap ada, anjurkan pelanggan untuk mengganti sim card pada Grapari terdekat.
-
-Remarks
-Bapak atau Ibu Yth, setelah pengecekan di sistem kami, sinyal 4G bapak atau ibu terdeteksi lemah. Terima kasih atas laporannya kami akan segera eskalasi ke tim terkait 
-Suggestion
-Silahkan Create Tiket ke Tim Network. Adanya indikasi kondisi jangkauan sinyal 4G pada pelanggan yang kurang baik
-`},{id:66,case:`Permintaan Hapus Profil eSIM Karena Device Hilang`,Bracket:e=>`#Pelangganbyu
+`,Mandatory:``},{id:65,case:`Permintaan Hapus Profil eSIM Karena Device Hilang`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email akun by.U : --
 Detail case : Permintaan Hapus Profil eSIM Karena Device Hilang
 Solusi : minta data
-`,Solusi:` Makasih udah nunggu, untuk hapus eSIM di perangkat lamanya yang udah hilang di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk hapus eSIM di perangkat lamanya yang udah hilang, boleh infoin data ini ya biar bisa aku proses : 
+1. Nomor by.U : 
+2. Email registrasi by.U :
+3. Nomor Identitas KTP valid :
+4. Scan/Foto KTP asli :
+5. Foto selfie dengan KTP asli :
+6. Jenis dan type Device yang hilang :
+7. Email lain yang bisa dihubungi :
+`:`Makasih udah nunggu, untuk hapus eSIM di perangkat lamanya yang udah hilang di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email registrasi by.U 
 2. Nomor Identitas KTP valid
 3. Scan/Foto KTP asli
@@ -1896,6 +2187,233 @@ Permintaan Hapus Profil eSIM Karena Device Hilang
 5. Foto selfie dengan KTP asli : 
 6. Jenis dan type Device yang hilang : 
 7. Email lain yang bisa dihubungi : 
+`},{id:66,case:`CCA UE_Handset_Data_Setting_Off`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : sinyal/internet
+Solusi : sesuai hasil cca disarankan ganti SIM card
+`,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device atau sim card yang digunakan. Jika restart HP tidak menyelesaikan masalah, maka disarankan untuk ajuin ganti SIM card ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
+[NO] [byU ${e}] 
+1. Nama Customer : 
+2. MSISDN-A Yang Menghubungi : xxxxxx
+3. MSISDN-B Yang Bermasalah : xxxxxx
+4. Tanggal/Jam Kejadian : ${t} 
+5. Lokasi Pelanggan (alamat) : 
+6. Koordinat Customer : 
+7. Segmentasi Kartu :byU
+8. SIM Capability :USIM
+9. Customer Tier Pelanggan :-
+10. Case Owner :byU
+11. Detail Complaint : sinyal/internet
+12. Additional Information :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
+13. Capture Bukti Pelanggan : linkcapture
+14. Capture CCA : linkcapture
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    UE_Handset_Data_Setting_Off
+    Remarks
+    Bapak atau Ibu Yth, setelah melakukan pengecekan di sistem kami. Ditemukan issue pada device atau sim card yang digunakan. Jika restart device tidak menyelesaikan masalah maka disarankan untuk mengganti nomor sim ke Grapari
+    Suggestion
+    TIDAK PERLU CREATE TIKET KE TIM NETWORK. Adanya indikasi sim card atau handphone pelanggan bermasalah, anjurkan pelanggan untuk restart handphone. Jika masalah tetap ada, anjurkan pelanggan untuk mengganti sim card pada Grapari terdekat.
+16. Solusi Yang telah di berikan : restart HP dan arahin ganti SIM card
+#CheckbyCCA
+
+
+
+3x24 jam`},{id:67,case:`CCA UE_Handset_Problem_4G`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : sinyal/internet
+Solusi : sesuai hasil cca disarankan ganti SIM card
+`,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device atau sim card yang digunakan. Jika restart HP tidak menyelesaikan masalah, maka disarankan untuk ajuin ganti SIM card ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
+[NO] [byU ${e}] 
+1. Nama Customer : 
+2. MSISDN-A Yang Menghubungi : xxxxxx
+3. MSISDN-B Yang Bermasalah : xxxxxx
+4. Tanggal/Jam Kejadian : ${t} 
+5. Lokasi Pelanggan (alamat) : 
+6. Koordinat Customer : 
+7. Segmentasi Kartu :byU
+8. SIM Capability :USIM
+9. Customer Tier Pelanggan :-
+10. Case Owner :byU
+11. Detail Complaint : sinyal/internet
+12. Additional Information :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
+13. Capture Bukti Pelanggan : linkcapture
+14. Capture CCA : linkcapture
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    Radio_lambat
+    Remarks
+    Bapak atau Ibu Yth, kendala Bapak atau Ibu saat ini disebabkan oleh BTS yang sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Terima kasih atas laporannya kami akan segera eskalasi ke tim terkait
+    Suggestion
+    SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi masalah pada jaringan yang lambat.
+16. Solusi Yang telah di berikan : restart HP dan arahin ganti SIM card
+#CheckbyCCA
+
+
+
+3x24 jam`},{id:68,case:`CCA Radio_lambat`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : sinyal/internet
+Solusi : minta data
+`,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
+1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Apakah terjadi di dalam Gedung atau di luar gedung?
+3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+7. CP lain yang dapat dihubungi 
+8. Capture keterangan internet berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
+[NO] [byU ${e}] 
+1. Nama Customer : 
+2. MSISDN-A Yang Menghubungi : xxxxxx
+3. MSISDN-B Yang Bermasalah : xxxxxx
+4. Tanggal/Jam Kejadian : ${t} 
+5. Lokasi Pelanggan (alamat) : 
+6. Koordinat Customer : 
+7. Segmentasi Kartu :byU
+8. SIM Capability :USIM
+9. Customer Tier Pelanggan :-
+10. Case Owner :byU
+11. Detail Complaint : sinyal/internet
+12. Additional Information :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
+13. Capture Bukti Pelanggan : linkcapture
+14. Capture CCA : linkcapture
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    Radio_lambat
+    Remarks
+    Bapak atau Ibu Yth, kendala Bapak atau Ibu saat ini disebabkan oleh BTS yang sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Terima kasih atas laporannya kami akan segera eskalasi ke tim terkait
+    Suggestion
+    SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi masalah pada jaringan yang lambat.
+16. Solusi Yang telah di berikan : tiket
+#CheckbyCCA
+
+
+
+3x24 jam`},{id:69,case:`CCA Neighbor_BTS_Problem`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : sinyal/internet
+Solusi : minta data
+`,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
+1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Apakah terjadi di dalam Gedung atau di luar gedung?
+3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+7. CP lain yang dapat dihubungi 
+8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
+[NO] [byU ${e}] 
+1. Nama Customer : 
+2. MSISDN-A Yang Menghubungi : xxxxxx
+3. MSISDN-B Yang Bermasalah : xxxxxx
+4. Tanggal/Jam Kejadian : ${t} 
+5. Lokasi Pelanggan (alamat) : 
+6. Koordinat Customer : 
+7. Segmentasi Kartu :byU
+8. SIM Capability :USIM
+9. Customer Tier Pelanggan :-
+10. Case Owner :byU
+11. Detail Complaint : sinyal/internet
+12. Additional Information :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
+13. Capture Bukti Pelanggan : linkcapture
+14. Capture CCA : linkcapture
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    Kapasitas_jaringan
+    Remarks
+    Bapak atau Ibu Yth, setelah pengecekan di sistem kami, kendala Bapak atau Ibu dikarenakan BTS sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Terima kasih atas laporannya kami akan segera eskalasi ke tim terkait
+    Suggestion
+    SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi masalah kapasitas jaringan yang penuh.
+16. Solusi Yang telah di berikan : Tiket
+#CheckbyCCA
+`},{id:70,case:`Kapasitas_jaringan`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : sinyal/internet
+Solusi : sesuai hasil CCA disarankan menunggu
+`,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
+1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Apakah terjadi di dalam Gedung atau di luar gedung?
+3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+7. CP lain yang dapat dihubungi 
+8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
+[NO] [byU ${e}] 
+1. Nama Customer : 
+2. MSISDN-A Yang Menghubungi : xxxxxx
+3. MSISDN-B Yang Bermasalah : xxxxxx
+4. Tanggal/Jam Kejadian : ${t} 
+5. Lokasi Pelanggan (alamat) : 
+6. Koordinat Customer : 
+7. Segmentasi Kartu :byU
+8. SIM Capability :USIM
+9. Customer Tier Pelanggan :-
+10. Case Owner :byU
+11. Detail Complaint : sinyal/internet
+12. Additional Information :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
+13. Capture Bukti Pelanggan : linkcapture
+14. Capture CCA : linkcapture
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    Neighbor_BTS_Problem
+    Remarks
+    Bapak atau Ibu Yth, kendala Bapak atau Ibu yang dialami saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala.
+    Cause : --
+    Level : 0
+    Alarm meaning : 0 = Low, 1 = Critical, 2 = Major, 3 = Minor
+    Suggestion
+    TIDAK PERLU CREATE TIKET KE TIM NETWORK. Pelanggan mengalami masalah dan sudah ada tiket yang dicreate ke Network dengan
+    Ticket No: IM-20260207-00000898
+16. Solusi Yang telah di berikan : Ditunggu
+#CheckbyCCA
 `}];var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e})=>{let t=e=>e??``;return(0,L.jsx)(qa,{options:Xa().slice().sort((e,n)=>t(e.case).toLocaleLowerCase().localeCompare(t(n.case).toLocaleLowerCase())).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),r(!0),setTimeout(()=>r(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,L.jsx)(`p`,{className:` ${n?`invisible!`:`visible`}`,children:n?`copy!`:t}),(0,L.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,n?`anjay`:``,` `]})]})};function eo(){let e=(0,l.useRef)([]),t=(0,l.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var to=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=eo(),c=e=>{let t=e.split(`
