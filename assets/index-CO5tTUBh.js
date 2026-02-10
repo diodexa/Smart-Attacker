@@ -1731,6 +1731,12 @@ Solusi : minta data
 4. Capture notifikasi berhasil aktivasi di aplikasi :
 5. Capture kendala :
 
+==========
+Makasih udah nunggu. Kak maaf, coba Kakak aktivasi manual dulu lewat https://netflix-widget.metranet.co.id/netflix-authentication/account_activation ya :) Berikut langkahnya :
+a. Input nomor HP by.U yang sudah aktivasi paket Topping Netflix-nya
+b. Klik button "Kirim Kode Verifikasi"
+c. Nanti akan masuk SMS berupa kode verifikasi untuk konfirmasi aktivasi akun dan ikuti panduannya.
+
 `,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
