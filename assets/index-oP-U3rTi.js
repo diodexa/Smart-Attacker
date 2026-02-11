@@ -2363,19 +2363,23 @@ Solusi : minta data
 14. Capture CCA : linkcapture
 15. Hasil analisa CCA :
     Possible Root Cause 
-    Kapasitas_jaringan
+    Neighbor_BTS_Problem
     Remarks
-    Bapak atau Ibu Yth, setelah pengecekan di sistem kami, kendala Bapak atau Ibu dikarenakan BTS sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Terima kasih atas laporannya kami akan segera eskalasi ke tim terkait
+    Bapak atau Ibu Yth, kendala Bapak atau Ibu yang dialami saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala.
+    Cause : --
+    Level : 0
+    Alarm meaning : 0 = Low, 1 = Critical, 2 = Major, 3 = Minor
     Suggestion
-    SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi masalah kapasitas jaringan yang penuh.
-16. Solusi Yang telah di berikan : Tiket
+    TIDAK PERLU CREATE TIKET KE TIM NETWORK. Pelanggan mengalami masalah dan sudah ada tiket yang dicreate ke Network dengan
+    Ticket No: IM-20260207-00000898
+16. Solusi Yang telah di berikan : disarankan menunggu
 #CheckbyCCA
-`},{id:70,case:`Kapasitas_jaringan`,Bracket:e=>`#Pelangganbyu
+`},{id:70,case:`CCA Kapasitas_jaringan`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email akun by.U : --
 Detail case : sinyal/internet
-Solusi : sesuai hasil CCA disarankan menunggu
+Solusi : Minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
 1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
 2. Apakah terjadi di dalam Gedung atau di luar gedung?
@@ -2409,15 +2413,57 @@ Solusi : sesuai hasil CCA disarankan menunggu
 14. Capture CCA : linkcapture
 15. Hasil analisa CCA :
     Possible Root Cause 
-    Neighbor_BTS_Problem
+    Kapasitas_jaringan
     Remarks
-    Bapak atau Ibu Yth, kendala Bapak atau Ibu yang dialami saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala.
-    Cause : --
-    Level : 0
-    Alarm meaning : 0 = Low, 1 = Critical, 2 = Major, 3 = Minor
+    Bapak atau Ibu Yth, setelah pengecekan di sistem kami, kendala Bapak atau Ibu dikarenakan BTS sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Terima kasih atas laporannya kami akan segera eskalasi ke tim terkait
     Suggestion
-    TIDAK PERLU CREATE TIKET KE TIM NETWORK. Pelanggan mengalami masalah dan sudah ada tiket yang dicreate ke Network dengan
-    Ticket No: IM-20260207-00000898
+    SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi masalah kapasitas jaringan yang penuh.
+16. Solusi Yang telah di berikan : Ditunggu
+#CheckbyCCA
+`},{id:71,case:`CCA Sinyal_tidak_stabil`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : sinyal/internet
+Solusi : Minta data
+`,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
+1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Apakah terjadi di dalam Gedung atau di luar gedung?
+3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+7. CP lain yang dapat dihubungi 
+8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
+[NO] [byU ${e}] 
+1. Nama Customer : 
+2. MSISDN-A Yang Menghubungi : xxxxxx
+3. MSISDN-B Yang Bermasalah : xxxxxx
+4. Tanggal/Jam Kejadian : ${t} 
+5. Lokasi Pelanggan (alamat) : 
+6. Koordinat Customer : 
+7. Segmentasi Kartu :byU
+8. SIM Capability :USIM
+9. Customer Tier Pelanggan :-
+10. Case Owner :byU
+11. Detail Complaint : sinyal/internet
+12. Additional Information :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
+13. Capture Bukti Pelanggan : linkcapture
+14. Capture CCA : linkcapture
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    Sinyal_tidak_stabil
+    Remarks
+    Bapak atau Ibu Yth, kendala Bapak atau Ibu saat ini BTS sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Terima kasih atas laporannya kami akan segera eskalasi ke tim terkait.
+    Suggestion
+    SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi jaringan yang dirasakan pelanggan sedang tidak stabil sehingga pelanggan merasakan internet lamban.
 16. Solusi Yang telah di berikan : Ditunggu
 #CheckbyCCA
 `}];var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e})=>{let t=e=>e??``;return(0,L.jsx)(qa,{options:Xa().slice().sort((e,n)=>t(e.case).toLocaleLowerCase().localeCompare(t(n.case).toLocaleLowerCase())).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
