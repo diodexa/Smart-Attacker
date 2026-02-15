@@ -892,6 +892,7 @@ Solusi : minta data
 1. Nomor by.U :
 2. Email akun by.U :
 3. Capture bukti pembayaran :
+Aku tunggu datanya ya :)
 
 Oke Kak, untuk bukti bayar yang di Shopee dengan tertera Merchant Reff IDnya silahkan coba cara ini :
 1. Buka Aplikasi Shopee: Buka aplikasi Shopee di ponsel Kakak.
@@ -1860,7 +1861,8 @@ Masalah Pembelian Kuota Via Tukar Kode Voucher
 Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : Sponsorship
-Solusi : diteruskan ke email  event@byu.id`:`#Pelangganbyu
+Solusi : diteruskan ke email  event@byu.id
+`:`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email by.U : --
