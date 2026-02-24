@@ -39,7 +39,10 @@ const TiketPages = ({ segment }: Props) => {
         setMandatoryText(
           typeof selected.Mandatory === "function"? selected.Mandatory(segment, createdDate): selected.Mandatory
         )
-        const combinedSolusi = [selected.Bracket(segment),selected.Solusi].filter(Boolean).join("\n");
+
+        const solusi = typeof selected.Solusi ==="function"? selected.Solusi(segment) :selected.Solusi
+
+        const combinedSolusi = [selected.Bracket(segment),solusi].filter(Boolean).join("\n");
         setSolusiText(combinedSolusi);
       }, [selectedId,segment]);
 
@@ -93,7 +96,7 @@ const TiketPages = ({ segment }: Props) => {
             <List onSelect={(id) => setSelectedId(id)} />
                 <div className='flex gap-2'>
                   <div className='w-full'>
-                      {selected && <CopyButton text={mandatoryText} />}
+                      {selected && <CopyButton text={mandatoryText} label='Mandatory' />}
                       <MandatoryDisplay
                         key={selectedId}         
                         selectedId={selectedId}
@@ -102,7 +105,7 @@ const TiketPages = ({ segment }: Props) => {
                       />
                   </div>
                   <div className='w-full  '>
-                      {selected && <CopyButton text={solusiText} />}
+                      {selected && <CopyButton text={solusiText} label='Bracket + Solusi' />}
                       <SolusiDisplay 
                         key={selectedId}         
                         value={solusiText}     
