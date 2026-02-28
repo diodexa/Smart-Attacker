@@ -2565,7 +2565,7 @@ Solusi : Minta data
     TIDAK PERLU CREATE TIKET KE TIM NETWORK. Adanya indikasi bahwa pelanggan tidak menggunakan layanan roaming, saran kepada agent untuk mengecek profile dan paketnya kembali.
 16. Solusi Yang telah di berikan : sesuai remarks
 #CheckbyCCA
-`},{id:73,case:`CCA Kendala_sinyal_4G`,Bracket:e=>`#Pelangganbyu
+`},{id:74,case:`CCA Kendala_sinyal_4G`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email akun by.U : --
@@ -2611,7 +2611,7 @@ Solusi : Minta data
     SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi kondisi jangkauan sinyal 4G pada pelanggan yang kurang baik.
 16. Solusi Yang telah di berikan : Tiket
 #CheckbyCCA
-`},{id:74,case:`CCA UE_Handset_tidak_connect_ke_network`,Bracket:e=>`#Pelangganbyu
+`},{id:75,case:`CCA UE_Handset_tidak_connect_ke_network`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email akun by.U : --
@@ -2650,9 +2650,7 @@ Solusi : sesuai hasil cca disarankan ganti SIM card
 16. Solusi Yang telah di berikan : restart HP dan arahin ganti SIM card
 #CheckbyCCA
 
-
-
-3x24 jam`},{id:75,case:`CCA Network_browsing_lambat`,Bracket:e=>`#Pelangganbyu
+`},{id:76,case:`CCA Network_browsing_lambat`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email akun by.U : --
@@ -2698,10 +2696,20 @@ Solusi : minta data
     SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi masalah pada jaringan yang lambat.
 16. Solusi Yang telah di berikan : tiket
 #CheckbyCCA
+`},{id:77,case:`Cara membagikan kode refferal`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : Cara membagikan kode refferal
+Solusi : edukasi
+`,Solusi:`Hi, Kak Herman. Saat ni udah terhubung dengan Nindy. Aku konfirmasi apakah yang dimaksud cara ajak teman menggunakan nomor by.U? Kalo iya, sebelumnya Pastiin dulu udah pake aplikasi versi terbaru ya!
 
+Nah ada 2 cara buat share link referral:
 
+1. Buka aplikasi lalu klik foto profile di pojok kiri atas aplikasi. Klik tombol "Ajak Teman" lalu bagikan link/QR code referral lewat channel yang kamu mau
+2. Buka aplikasi by.U lalu klik carding "Rich Giga" di halaman Updates, lalu klik "Link Referal" dan bagikan lewat channel yang kamu mau atau ajak teman kamu untuk scan QR code referal yang ada di aplikasi.
 
-3x24 jam`}];var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e})=>{let t=e=>e??``;return(0,L.jsx)(qa,{options:Xa().slice().sort((e,n)=>t(e.case).toLocaleLowerCase().localeCompare(t(n.case).toLocaleLowerCase())).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
+Oh iya! Kamu bisa kamu share referal kamu lewat Whatsapp, Line, IG direct, Twitter, Email, Linkedin, Facebook Messenger, SMS, Email, Flipboard, dan pilihan channel lainnya ya :)`,Mandatory:``}];var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e})=>{let t=e=>e??``;return(0,L.jsx)(qa,{options:Xa().slice().sort((e,n)=>t(e.case).toLocaleLowerCase().localeCompare(t(n.case).toLocaleLowerCase())).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),r(!0),setTimeout(()=>r(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,L.jsx)(`p`,{className:` ${n?`invisible!`:`visible`}`,children:n?`copy!`:t}),(0,L.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,n?`anjay`:``,` `]})]})};function eo(){let e=(0,l.useRef)([]),t=(0,l.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var to=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=eo(),c=e=>{let t=e.split(`
 `),n=1;for(let e=0;e<t.length;e++){if(t[e].trim()===``){n=1;continue}let r=t[e].match(/^(\d+)\.\s*(.*)/);if(!r){n=1;continue}t[e]=`${n}. ${r[2]}`,n++}return t.join(`
