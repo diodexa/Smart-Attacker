@@ -2110,13 +2110,15 @@ Solusi : informasi status kartu
 
 Kak maaf, aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) 
 
-`,Mandatory:``},{id:60,case:`Harga paket berubah/jadi mahal`,Bracket:e=>`#Pelangganbyu
+`,Mandatory:``},{id:60,case:`Harga paket berubah/jadi mahal/promo`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email akun by.U : --
-Detail case : info harga paket
-Solusi : info harga paket
+Detail case : info paket
+Solusi : info paket
 `,Solusi:`Kak, maaf ya udah dibuat ga nyaman, untuk harga paket yang tertera di aplikasi bersifat penawaran ya, jadi akan berubah sesuai dengan promo yang sedang berjalan, yang merupakan bagian dari upaya kita buat terus ningkatin kualitas layanan by.U. Silakan untuk melakukan pembelian paket yang tersedia di aplikasi by.U ya kak :)
+
+Kak maaf, kalau ga tersedia paket yang Kakak inginin, artinya penawaran paketnya udah ga ada. Kakak bisa pilih paket yang tersedia saat ini di apps by.U ya :)
 `,Mandatory:``},{id:61,case:`Cara pasang eSIM`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
@@ -2723,7 +2725,196 @@ Nah ada 2 cara buat share link referral:
 1. Buka aplikasi lalu klik foto profile di pojok kiri atas aplikasi. Klik tombol "Ajak Teman" lalu bagikan link/QR code referral lewat channel yang kamu mau
 2. Buka aplikasi by.U lalu klik carding "Rich Giga" di halaman Updates, lalu klik "Link Referal" dan bagikan lewat channel yang kamu mau atau ajak teman kamu untuk scan QR code referal yang ada di aplikasi.
 
-Oh iya! Kamu bisa kamu share referal kamu lewat Whatsapp, Line, IG direct, Twitter, Email, Linkedin, Facebook Messenger, SMS, Email, Flipboard, dan pilihan channel lainnya ya :)`,Mandatory:``}];var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e})=>{let t=e=>e??``;return(0,L.jsx)(qa,{options:Xa().slice().sort((e,n)=>t(e.case).toLocaleLowerCase().localeCompare(t(n.case).toLocaleLowerCase())).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
+Oh iya! Kamu bisa kamu share referal kamu lewat Whatsapp, Line, IG direct, Twitter, Email, Linkedin, Facebook Messenger, SMS, Email, Flipboard, dan pilihan channel lainnya ya :)`,Mandatory:``},{id:78,case:`Paket unlimited/Mbps`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : Paket unlimited
+Solusi : edukasi ga tersedia
+`,Solusi:e=>e===`Email`?`Hi, Kak Ardi. Saat ini udah terhubung dengan Nindy. Mengenai paket unlimited atau Mbps lagi engga tersedia dulu nih atas pertimbangan tim dan buat info kedepannya masih ada paketnya atau engga Kaka bisa cek berkala siapa tau tim lagi siapin kejutan kuota yg lebih menarik buat kamu dan bisa juga beli dulu paket lainnya yg tersedia si Apps ya Kak, makasih udah antusias banget :)`:`Kak maaf, untuk paket unlimited atau Mbps lagi engga tersedia dulu nih atas pertimbangan tim dan buat info kedepannya masih ada paketnya atau engga Kaka bisa cek berkala siapa tau tim lagi siapin kejutan kuota yg lebih menarik buat kamu dan bisa juga beli dulu paket lainnya yg tersedia si Apps ya Kak, makasih udah antusias banget :)`,Mandatory:``},{id:79,case:`CCA Cell_Colo_Problem`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : sinyal/internet
+Solusi : sarankan tunggu sesuai CCA
+`,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
+[NO] [byU ${e}] 
+1. Nama Customer : 
+2. MSISDN-A Yang Menghubungi : xxxxxx
+3. MSISDN-B Yang Bermasalah : xxxxxx
+4. Tanggal/Jam Kejadian : ${t} 
+5. Lokasi Pelanggan (alamat) : 
+6. Koordinat Customer : 
+7. Segmentasi Kartu :byU
+8. SIM Capability :USIM
+9. Customer Tier Pelanggan :-
+10. Case Owner :byU
+11. Detail Complaint : sinyal/internet
+12. Additional Information :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
+13. Capture Bukti Pelanggan : linkcapture
+14. Capture CCA : linkcapture
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    Cell_Colo_Problem
+    Remarks
+    Bapak atau Ibu Yth, kendala Bapak atau Ibu yang dialami saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala.
+        Cause : Cell Unavailable
+        Level : 0
+        Alarm meaning
+        0 = Low
+        1 = Critical
+        2 = Major
+        3 = Minor
+    Suggestion
+    TIDAK PERLU CREATE TIKET KE TIM NETWORK. Pelanggan mengalami masalah dan sudah ada tiket yang dicreate.
+    Ticket No: EM-20260214-00000957
+16. Solusi Yang telah di berikan : disarankan menunggu
+#CheckbyCCA
+`},{id:80,case:`CCA BTS_Down`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : sinyal/internet
+Solusi : sarankan tunggu sesuai CCA
+`,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
+[NO] [byU ${e}] 
+1. Nama Customer : 
+2. MSISDN-A Yang Menghubungi : xxxxxx
+3. MSISDN-B Yang Bermasalah : xxxxxx
+4. Tanggal/Jam Kejadian : ${t} 
+5. Lokasi Pelanggan (alamat) : 
+6. Koordinat Customer : 
+7. Segmentasi Kartu :byU
+8. SIM Capability :USIM
+9. Customer Tier Pelanggan :-
+10. Case Owner :byU
+11. Detail Complaint : sinyal/internet
+12. Additional Information :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
+13. Capture Bukti Pelanggan : linkcapture
+14. Capture CCA : linkcapture
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    BTS_Down
+    Remarks
+    Bapak atau Ibu Yth, kendala Bapak atau Ibu yang dialami saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal.
+        Mohon dicek secara berkala.
+        Cause : INAP Site Down
+        Alarm level : 0
+        Alarm meaning : 0 = Low, 1 = Critical, 2 = Major, 3 = Minor
+    Suggestion
+    TIDAK PERLU CREATE TIKET KE TIM NETWORK. Pelanggan mengalami masalah dan sudah ada tiket yang dicreate ke Network dengan
+    Ticket No: IM-20260216-00000058
+16. Solusi Yang telah di berikan : disarankan menunggu
+#CheckbyCCA
+`},{id:81,case:`CCA Red_Cell_Capacity_Solution`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : sinyal/internet
+Solusi : minta data
+`,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dikarenakan BTS sedang mengalami isu yang berkaitan dengan kapasitas jaringan yang penuh di BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
+1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Apakah terjadi di dalam Gedung atau di luar gedung?
+3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+7. CP lain yang dapat dihubungi 
+8. Capture keterangan internet berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
+[NO] [byU ${e}] 
+1. Nama Customer : 
+2. MSISDN-A Yang Menghubungi : xxxxxx
+3. MSISDN-B Yang Bermasalah : xxxxxx
+4. Tanggal/Jam Kejadian : ${t} 
+5. Lokasi Pelanggan (alamat) : 
+6. Koordinat Customer : 
+7. Segmentasi Kartu :byU
+8. SIM Capability :USIM
+9. Customer Tier Pelanggan :-
+10. Case Owner :byU
+11. Detail Complaint : sinyal/internet
+12. Additional Information :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
+13. Capture Bukti Pelanggan : linkcapture
+14. Capture CCA : linkcapture
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    Red_Cell_Capacity_Solution
+    Remarks
+    Bapak atau Ibu Yth, setelah pengecekan di sistem kami, kendala Bapak atau Ibu dikarenakan BTS sedang mengalami isu yang berkaitan dengan kapasitas jaringan yang penuh di BTS tersebut. Terima kasih atas laporannya kami akan segera eskalasi ke tim terkait
+    Suggestion
+    SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi masalah kapasitas jaringan yang penuh.
+16. Solusi Yang telah di berikan : tiket
+#CheckbyCCA
+
+`},{id:82,case:`Kendala_Sinyal`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : sinyal/internet
+Solusi : minta data
+`,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dikarenakan BTS sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
+1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Apakah terjadi di dalam Gedung atau di luar gedung?
+3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+7. CP lain yang dapat dihubungi 
+8. Capture keterangan internet berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
+[NO] [byU ${e}] 
+1. Nama Customer : 
+2. MSISDN-A Yang Menghubungi : xxxxxx
+3. MSISDN-B Yang Bermasalah : xxxxxx
+4. Tanggal/Jam Kejadian : ${t} 
+5. Lokasi Pelanggan (alamat) : 
+6. Koordinat Customer : 
+7. Segmentasi Kartu :byU
+8. SIM Capability :USIM
+9. Customer Tier Pelanggan :-
+10. Case Owner :byU
+11. Detail Complaint : sinyal/internet
+12. Additional Information :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
+13. Capture Bukti Pelanggan : linkcapture
+14. Capture CCA : linkcapture
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    Kendala_Sinyal
+    Remarks
+    Bapak atau Ibu Yth, berdasarkan pengecekan di sistem kami, kendala Bapak atau Ibu saat ini dikarenakan BTS sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Terima kasih atas laporannya, kami akan segera eskalasi ke tim terkait.
+    Suggestion
+    SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi BTS mengalami gangguan sehingga pelanggan tidak dapat mengakses internet.
+16. Solusi Yang telah di berikan : tiket
+#CheckbyCCA
+
+`}];var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e})=>{let t=e=>e??``;return(0,L.jsx)(qa,{options:Xa().slice().sort((e,n)=>t(e.case).toLocaleLowerCase().localeCompare(t(n.case).toLocaleLowerCase())).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),r(!0),setTimeout(()=>r(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,L.jsx)(`p`,{className:` ${n?`invisible!`:`visible`}`,children:n?`copy!`:t}),(0,L.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,n?`anjay`:``,` `]})]})};function eo(){let e=(0,l.useRef)([]),t=(0,l.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var to=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=eo(),c=e=>{let t=e.split(`
 `),n=1;for(let e=0;e<t.length;e++){if(t[e].trim()===``){n=1;continue}let r=t[e].match(/^(\d+)\.\s*(.*)/);if(!r){n=1;continue}t[e]=`${n}. ${r[2]}`,n++}return t.join(`
