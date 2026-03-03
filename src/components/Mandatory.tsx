@@ -702,7 +702,8 @@ Detail case : Ganti sim card
 Solusi : minta data
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
-`
+`Hai Kak. Saat ini terhubung dengan Nindy. Kak maaf, aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) Jadi gabisa dilakkan ganti SIM card ya :)
+
 Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ganti SIM card nya boleh infoin data ini dulu ya biar aku cocokin : 
 1. Nomor by.U
 2. Email akun by.U
@@ -721,6 +722,10 @@ Hi, Kak . Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM card 
 ====================legacy============================
 Kak maaf, aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
 
+=========Hangus==========
+Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Jadi Kakak udah gabisa ganti SIM card nya ya :)
+Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :)
+
 DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Ganti SIM Card Active dengan data :
@@ -738,7 +743,7 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 3. NIK yang didaftarin
 
 
-Kak maaf, untuk kendala ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+Kak maaf, untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Nomor Identitas valid : 
 3. Scan/Foto KTP asli : 
@@ -747,8 +752,21 @@ Kak maaf, untuk kendala ganti SIM card nya di nomor xxxxxx, boleh infoin data in
 6. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
 7. Alasan ganti SIM Card : 
 
+===========Di Apps ============
+Makasih udah nunggu. Kak maaf kalau maksudnya permintaan ganti SIM Card nya di nomor xxxxxx, silakan Kakak bisa lakukan prosesnya diApps by.U yaa, berikut cara melakukan permintaan ganti SIM Card-nya ya:
+1. Pastiin Versi aplikasi sudah yang terbaru yaa
+2. Log In ke apps by.U pake email akun by.U (bukan pakai nomor by.U)
+3. Masuk Ke profil by.U pojok kiri atas
+4. Scroll kebawah
+5. Klik Ganti SIM Card
+6. Ikuti proses prosedur ganti SIM Card
+7. Tunggu proses validasi dari tim by.U
+8. Kalo rikuesmu di terima, lanjutin prosesnya dan bisa Pilih Ambil (GraPARI)/Indomaret tanpa biaya pengambilan atau SIM Card diantar (Kurir JNE) dengan biaya Rp10.000 dan estimasi sampai makismal 7 hari kerja sesudah melakukan pembayaran.
+
 ====================legacy============================
 Kak maaf, aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
+
+====================================
 
 DISCLAIMER
 
@@ -776,6 +794,7 @@ Permintaan Ganti SIM Card Active
 6. Nama & nomor penerima : 
 7. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
 8. Alasan ganti SIM Card : 
+9. Capture SIM card rusak : -
 `   
 },
 
@@ -2759,16 +2778,18 @@ Mandatory : ``
 
 {
 id: 60,
-case : "Harga paket berubah/jadi mahal",
+case : "Harga paket berubah/jadi mahal/promo",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : --
-Detail case : info harga paket
-Solusi : info harga paket
+Detail case : info paket
+Solusi : info paket
 `,
 Solusi : `Kak, maaf ya udah dibuat ga nyaman, untuk harga paket yang tertera di aplikasi bersifat penawaran ya, jadi akan berubah sesuai dengan promo yang sedang berjalan, yang merupakan bagian dari upaya kita buat terus ningkatin kualitas layanan by.U. Silakan untuk melakukan pembelian paket yang tersedia di aplikasi by.U ya kak :)
+
+Kak maaf, kalau ga tersedia paket yang Kakak inginin, artinya penawaran paketnya udah ga ada. Kakak bisa pilih paket yang tersedia saat ini di apps by.U ya :)
 `,
 Mandatory : ``
 },
@@ -3360,7 +3381,7 @@ Mandatory : (segment:string, DateTime:string) =>
 },
 
 {
-id: 73,
+id: 74,
 case : "CCA Kendala_sinyal_4G",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
@@ -3415,7 +3436,7 @@ Mandatory : (segment:string, DateTime:string) =>
 },
 
 {
-id: 74,
+id: 75,
 case : "CCA UE_Handset_tidak_connect_ke_network",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
@@ -3459,13 +3480,11 @@ Mandatory : (segment:string, DateTime:string) =>
 16. Solusi Yang telah di berikan : restart HP dan arahin ganti SIM card
 #CheckbyCCA
 
-
-
-3x24 jam` 
+` 
 },
 
 {
-id: 75,
+id: 76,
 case : "CCA Network_browsing_lambat",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
@@ -3516,11 +3535,266 @@ Mandatory : (segment:string, DateTime:string) =>
     SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi masalah pada jaringan yang lambat.
 16. Solusi Yang telah di berikan : tiket
 #CheckbyCCA
-
-
-
-3x24 jam` 
+` 
 },
+
+{
+id: 77,
+case : "Cara membagikan kode refferal",
+Bracket : (segment: string) =>`#Pelangganbyu
+[byU ${segment}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : Cara membagikan kode refferal
+Solusi : edukasi
+`,
+Solusi : `Hi, Kak Herman. Saat ni udah terhubung dengan Nindy. Aku konfirmasi apakah yang dimaksud cara ajak teman menggunakan nomor by.U? Kalo iya, sebelumnya Pastiin dulu udah pake aplikasi versi terbaru ya!
+
+Nah ada 2 cara buat share link referral:
+
+1. Buka aplikasi lalu klik foto profile di pojok kiri atas aplikasi. Klik tombol "Ajak Teman" lalu bagikan link/QR code referral lewat channel yang kamu mau
+2. Buka aplikasi by.U lalu klik carding "Rich Giga" di halaman Updates, lalu klik "Link Referal" dan bagikan lewat channel yang kamu mau atau ajak teman kamu untuk scan QR code referal yang ada di aplikasi.
+
+Oh iya! Kamu bisa kamu share referal kamu lewat Whatsapp, Line, IG direct, Twitter, Email, Linkedin, Facebook Messenger, SMS, Email, Flipboard, dan pilihan channel lainnya ya :)`,
+Mandatory : 
+`` 
+},
+
+{
+id: 78,
+case : "Paket unlimited/Mbps",
+Bracket : (segment: string) =>`#Pelangganbyu
+[byU ${segment}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : Paket unlimited
+Solusi : edukasi ga tersedia
+`,
+Solusi : (segment: string) => segment ==='Email' ?  `Hi, Kak Ardi. Saat ini udah terhubung dengan Nindy. Mengenai paket unlimited atau Mbps lagi engga tersedia dulu nih atas pertimbangan tim dan buat info kedepannya masih ada paketnya atau engga Kaka bisa cek berkala siapa tau tim lagi siapin kejutan kuota yg lebih menarik buat kamu dan bisa juga beli dulu paket lainnya yg tersedia si Apps ya Kak, makasih udah antusias banget :)`:
+`Kak maaf, untuk paket unlimited atau Mbps lagi engga tersedia dulu nih atas pertimbangan tim dan buat info kedepannya masih ada paketnya atau engga Kaka bisa cek berkala siapa tau tim lagi siapin kejutan kuota yg lebih menarik buat kamu dan bisa juga beli dulu paket lainnya yg tersedia si Apps ya Kak, makasih udah antusias banget :)`,
+Mandatory : 
+`` 
+},
+
+{
+id: 79,
+case : "CCA Cell_Colo_Problem",
+Bracket : (segment: string) =>`#Pelangganbyu
+[byU ${segment}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : sinyal/internet
+Solusi : sarankan tunggu sesuai CCA
+`,
+Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala ya :)`,
+Mandatory : (segment:string, DateTime:string) =>
+`#Pelangganbyu
+[NO] [byU ${segment}] 
+1. Nama Customer : 
+2. MSISDN-A Yang Menghubungi : xxxxxx
+3. MSISDN-B Yang Bermasalah : xxxxxx
+4. Tanggal/Jam Kejadian : ${DateTime} 
+5. Lokasi Pelanggan (alamat) : 
+6. Koordinat Customer : 
+7. Segmentasi Kartu :byU
+8. SIM Capability :USIM
+9. Customer Tier Pelanggan :-
+10. Case Owner :byU
+11. Detail Complaint : sinyal/internet
+12. Additional Information :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
+13. Capture Bukti Pelanggan : linkcapture
+14. Capture CCA : linkcapture
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    Cell_Colo_Problem
+    Remarks
+    Bapak atau Ibu Yth, kendala Bapak atau Ibu yang dialami saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala.
+        Cause : Cell Unavailable
+        Level : 0
+        Alarm meaning
+        0 = Low
+        1 = Critical
+        2 = Major
+        3 = Minor
+    Suggestion
+    TIDAK PERLU CREATE TIKET KE TIM NETWORK. Pelanggan mengalami masalah dan sudah ada tiket yang dicreate.
+    Ticket No: EM-20260214-00000957
+16. Solusi Yang telah di berikan : disarankan menunggu
+#CheckbyCCA
+`
+},
+
+{
+id: 80,
+case : "CCA BTS_Down",
+Bracket : (segment: string) =>`#Pelangganbyu
+[byU ${segment}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : sinyal/internet
+Solusi : sarankan tunggu sesuai CCA
+`,
+Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala ya :)`,
+Mandatory : (segment:string, DateTime:string) =>
+`#Pelangganbyu
+[NO] [byU ${segment}] 
+1. Nama Customer : 
+2. MSISDN-A Yang Menghubungi : xxxxxx
+3. MSISDN-B Yang Bermasalah : xxxxxx
+4. Tanggal/Jam Kejadian : ${DateTime} 
+5. Lokasi Pelanggan (alamat) : 
+6. Koordinat Customer : 
+7. Segmentasi Kartu :byU
+8. SIM Capability :USIM
+9. Customer Tier Pelanggan :-
+10. Case Owner :byU
+11. Detail Complaint : sinyal/internet
+12. Additional Information :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
+13. Capture Bukti Pelanggan : linkcapture
+14. Capture CCA : linkcapture
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    BTS_Down
+    Remarks
+    Bapak atau Ibu Yth, kendala Bapak atau Ibu yang dialami saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal.
+        Mohon dicek secara berkala.
+        Cause : INAP Site Down
+        Alarm level : 0
+        Alarm meaning : 0 = Low, 1 = Critical, 2 = Major, 3 = Minor
+    Suggestion
+    TIDAK PERLU CREATE TIKET KE TIM NETWORK. Pelanggan mengalami masalah dan sudah ada tiket yang dicreate ke Network dengan
+    Ticket No: IM-20260216-00000058
+16. Solusi Yang telah di berikan : disarankan menunggu
+#CheckbyCCA
+`
+},
+
+{
+id: 81,
+case : "CCA Red_Cell_Capacity_Solution",
+Bracket : (segment: string) =>`#Pelangganbyu
+[byU ${segment}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : sinyal/internet
+Solusi : minta data
+`,
+Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dikarenakan BTS sedang mengalami isu yang berkaitan dengan kapasitas jaringan yang penuh di BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
+1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Apakah terjadi di dalam Gedung atau di luar gedung?
+3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+7. CP lain yang dapat dihubungi 
+8. Capture keterangan internet berkendala :)`,
+Mandatory : (segment:string, DateTime:string) =>
+`#Pelangganbyu
+[NO] [byU ${segment}] 
+1. Nama Customer : 
+2. MSISDN-A Yang Menghubungi : xxxxxx
+3. MSISDN-B Yang Bermasalah : xxxxxx
+4. Tanggal/Jam Kejadian : ${DateTime} 
+5. Lokasi Pelanggan (alamat) : 
+6. Koordinat Customer : 
+7. Segmentasi Kartu :byU
+8. SIM Capability :USIM
+9. Customer Tier Pelanggan :-
+10. Case Owner :byU
+11. Detail Complaint : sinyal/internet
+12. Additional Information :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
+13. Capture Bukti Pelanggan : linkcapture
+14. Capture CCA : linkcapture
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    Red_Cell_Capacity_Solution
+    Remarks
+    Bapak atau Ibu Yth, setelah pengecekan di sistem kami, kendala Bapak atau Ibu dikarenakan BTS sedang mengalami isu yang berkaitan dengan kapasitas jaringan yang penuh di BTS tersebut. Terima kasih atas laporannya kami akan segera eskalasi ke tim terkait
+    Suggestion
+    SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi masalah kapasitas jaringan yang penuh.
+16. Solusi Yang telah di berikan : tiket
+#CheckbyCCA
+
+` 
+},
+
+{
+id: 82,
+case : "Kendala_Sinyal",
+Bracket : (segment: string) =>`#Pelangganbyu
+[byU ${segment}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : sinyal/internet
+Solusi : minta data
+`,
+Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dikarenakan BTS sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
+1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Apakah terjadi di dalam Gedung atau di luar gedung?
+3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+7. CP lain yang dapat dihubungi 
+8. Capture keterangan internet berkendala :)`,
+Mandatory : (segment:string, DateTime:string) =>
+`#Pelangganbyu
+[NO] [byU ${segment}] 
+1. Nama Customer : 
+2. MSISDN-A Yang Menghubungi : xxxxxx
+3. MSISDN-B Yang Bermasalah : xxxxxx
+4. Tanggal/Jam Kejadian : ${DateTime} 
+5. Lokasi Pelanggan (alamat) : 
+6. Koordinat Customer : 
+7. Segmentasi Kartu :byU
+8. SIM Capability :USIM
+9. Customer Tier Pelanggan :-
+10. Case Owner :byU
+11. Detail Complaint : sinyal/internet
+12. Additional Information :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
+13. Capture Bukti Pelanggan : linkcapture
+14. Capture CCA : linkcapture
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    Kendala_Sinyal
+    Remarks
+    Bapak atau Ibu Yth, berdasarkan pengecekan di sistem kami, kendala Bapak atau Ibu saat ini dikarenakan BTS sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Terima kasih atas laporannya, kami akan segera eskalasi ke tim terkait.
+    Suggestion
+    SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi BTS mengalami gangguan sehingga pelanggan tidak dapat mengakses internet.
+16. Solusi Yang telah di berikan : tiket
+#CheckbyCCA
+
+` 
+},
+
 
 ]
 return Mandatory

@@ -8,18 +8,31 @@ const TemplatePages = () => {
 
     const [Templates, setTemlates] = useState(() => {
         const saved = localStorage.getItem("my-templates");
-        return saved ? JSON.parse(saved) : ["", "", "", "", "", ""];
+        return saved ? JSON.parse(saved) : Array(22).fill("");
         });
+
+    useEffect(() => {
+        const syncTemplates = () => {
+            const saved = localStorage.getItem("my-templates");
+            if (saved) {
+            setTemlates(JSON.parse(saved));
+            }
+        };
+
+        window.addEventListener("templates-updated", syncTemplates);
+        return () =>
+            window.removeEventListener("templates-updated", syncTemplates);
+    }, []);
 
     useEffect(() => {
         localStorage.setItem("my-templates", JSON.stringify(Templates));
         }, [Templates]);
         
-        const handleChange = (index: number, value: string) => {
-            const updated = [...Templates];
-            updated[index] = value;
-            setTemlates(updated);
-        };
+    const handleChange = (index: number, value: string) => {
+        const updated = [...Templates];
+        updated[index] = value;
+        setTemlates(updated);
+    };
 
         
             
