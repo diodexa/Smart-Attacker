@@ -1852,12 +1852,14 @@ Solusi : minta data
 4. Kode hasil Gesek Voucher Fisik :
 5. Serial Number Voucher Fisik :
 6. Capture keterangan gagal redeem voucher :
+7. Foto Voucher fisik :
 `:`Makasih udah nunggu. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Nama Paket Kuota :
 3. Kode hasil Gesek Voucher Fisik :
 4. Serial Number Voucher Fisik :
 5. Capture keterangan gagal redeem voucher :
+6. Foto Voucher Fisik :
 
 `,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
@@ -2110,7 +2112,7 @@ Solusi : informasi status kartu
 
 Kak maaf, aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) 
 
-`,Mandatory:``},{id:60,case:`Harga paket berubah/jadi mahal/promo`,Bracket:e=>`#Pelangganbyu
+`,Mandatory:``},{id:60,case:`Info Paket/ Harga paket berubah/jadi mahal/promo`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email akun by.U : --
@@ -2119,6 +2121,8 @@ Solusi : info paket
 `,Solusi:`Kak, maaf ya udah dibuat ga nyaman, untuk harga paket yang tertera di aplikasi bersifat penawaran ya, jadi akan berubah sesuai dengan promo yang sedang berjalan, yang merupakan bagian dari upaya kita buat terus ningkatin kualitas layanan by.U. Silakan untuk melakukan pembelian paket yang tersedia di aplikasi by.U ya kak :)
 
 Kak maaf, kalau ga tersedia paket yang Kakak inginin, artinya penawaran paketnya udah ga ada. Kakak bisa pilih paket yang tersedia saat ini di apps by.U ya :)
+
+Kak maaf, aku cek nomor xxxxxx saat ini kuota internetnya udah habis, jadi gabisa internetan. Kakak bisa beli kuota baru di apps by.U pake wifi/jaringan lain dulu ya :)
 `,Mandatory:``},{id:61,case:`Cara pasang eSIM`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
@@ -2377,8 +2381,7 @@ Solusi : minta data
 #CheckbyCCA
 
 
-
-3x24 jam`},{id:69,case:`CCA Neighbor_BTS_Problem`,Bracket:e=>`#Pelangganbyu
+`},{id:69,case:`CCA Neighbor_BTS_Problem`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email akun by.U : --
@@ -2549,7 +2552,25 @@ Nomor by.U : xxxxxx
 Email akun by.U : --
 Detail case : sinyal/internet
 Solusi : Minta data
-`,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, kami menemukan indikasi bahwa sim card yang sedang digunakan tidak memiliki paket untuk mengakses atau menggunakan layanan internet. Mohon dicek kembali :)`,Mandatory:(e,t)=>`#Pelangganbyu
+`,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, kami menemukan indikasi bahwa sim card yang sedang digunakan tidak memiliki paket untuk mengakses atau menggunakan layanan internet. Mohon dicek kembali :) 
+
+=====================
+Hi Kak, makasih banyak ya udah nunggu, aku cek nomor xxxxxx aktif dan di lokasi Kakak lagi ga ada gangguan. Untuk nomornya udah aku bantu refresh jaringan via sistem, bisa coba lakukan langkah berikut untuk 5 menit kedepan:
+1. Restart HP 5 menit kedepan
+2. Pastikan kolom APN di settingan HP terisi “byu”, kolom username dan password dikosongkan.
+3. Pindahkan SIM Card ke hp lain sebagai pembanding.
+Segera hubungi kita lagi kalo internetnya masih kendala ya :)
+
+============Kalau masih berkendala===============
+Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
+1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Apakah terjadi di dalam Gedung atau di luar gedung?
+3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+7. CP lain yang dapat dihubungi 
+8. Capture keterangan internet berkendala :`,Mandatory:(e,t)=>`#Pelangganbyu
 [NO] [byU ${e}] 
 1. Nama Customer : 
 2. MSISDN-A Yang Menghubungi : xxxxxx
@@ -2867,7 +2888,7 @@ Solusi : minta data
 16. Solusi Yang telah di berikan : tiket
 #CheckbyCCA
 
-`},{id:82,case:`Kendala_Sinyal`,Bracket:e=>`#Pelangganbyu
+`},{id:82,case:`CCA Kendala_Sinyal`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email akun by.U : --
