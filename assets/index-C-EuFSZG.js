@@ -2941,6 +2941,51 @@ Solusi : minta data
 16. Solusi Yang telah di berikan : tiket
 #CheckbyCCA
 
+`},{id:83,case:`Beli Paket/Pulsa/SIM card`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : cara pembelian SIM card/eSIM
+Solusi : info cara pembelian SIM card/eSIM
+`,Solusi:`Kak maaf, untuk beli paket internet bisa lewat apps by.U dengan pilih menu isi kuota pada halaman dashboard ya :)
+
+Kak maaf, untuk beli pulsa bisa lewat apps by.U dengan pilih menu isi pulsa pada halaman dashboard ya :)
+
+Kak untuk beli SIM card/nomor baru bisa beli lewat apps/web by.U ya, nanti setelah pilih paket langsung masuk ke halaman pembayaran. Pilih nomor yang tersedia aja disana ya :)
+
+Kak untuk beli eSIM bisa lewat apps by.U langsung ya, pastiin pilih menu eSIM sebelum login/sign up :)`,Mandatory:(e,t)=>`#Pelangganbyu
+[NO] [byU ${e}] 
+1. Nama Customer : 
+2. MSISDN-A Yang Menghubungi : xxxxxx
+3. MSISDN-B Yang Bermasalah : xxxxxx
+4. Tanggal/Jam Kejadian : ${t} 
+5. Lokasi Pelanggan (alamat) : 
+6. Koordinat Customer : 
+7. Segmentasi Kartu :byU
+8. SIM Capability :USIM
+9. Customer Tier Pelanggan :-
+10. Case Owner :byU
+11. Detail Complaint : sinyal/internet
+12. Additional Information :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
+13. Capture Bukti Pelanggan : linkcapture
+14. Capture CCA : linkcapture
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    Kendala_Sinyal
+    Remarks
+    Bapak atau Ibu Yth, berdasarkan pengecekan di sistem kami, kendala Bapak atau Ibu saat ini dikarenakan BTS sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Terima kasih atas laporannya, kami akan segera eskalasi ke tim terkait.
+    Suggestion
+    SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi BTS mengalami gangguan sehingga pelanggan tidak dapat mengakses internet.
+16. Solusi Yang telah di berikan : tiket
+#CheckbyCCA
+
 `}];var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e})=>{let t=e=>e??``;return(0,L.jsx)(qa,{options:Xa().slice().sort((e,n)=>t(e.case).toLocaleLowerCase().localeCompare(t(n.case).toLocaleLowerCase())).map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),r(!0),setTimeout(()=>r(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,L.jsx)(`p`,{className:` ${n?`invisible!`:`visible`}`,children:n?`copy!`:t}),(0,L.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,n?`anjay`:``,` `]})]})};function eo(){let e=(0,l.useRef)([]),t=(0,l.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var to=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=eo(),c=e=>{let t=e.split(`
