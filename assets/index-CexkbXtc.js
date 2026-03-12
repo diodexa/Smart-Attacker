@@ -505,7 +505,7 @@ Kak maaf, kalau udah dilakukan tapi masih berkendala, boleh lengkapin data ini y
 `:`
 Makasih udah nunggu. Kak maaf, untuk kendala sinyalnya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
-2. Lokasi detail kendala (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Lokasi detail kendala (kelurahan, kecamatan, kabupaten/kota)  saat berkendala :
 3. Tanggal dan waktu kejadian sejak kapan :
 4. Nomor by.U lain yang berkendala sama :
 
