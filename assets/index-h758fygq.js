@@ -399,19 +399,25 @@ Makasih udah nunggu. Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Ak
 2. Email: --
 
 Nomor yang sudah berhasil di unregistrasi ga akan bisa diaktifkan kembali dalam kondisi apapun ya kak, lalu NIK yang terdaftar di nomor ini juga akan ikut terhapus. Kalo data diatas udah sesuai dan Kakak setuju boleh tolong konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :)
+
+Kak maaf, aku cek NIK yang Kakak infoin ga ada yang sesuai nih untuk nomor xxxxxx. Boleh infoin salah satu dari data ini ya biar bisa aku proses :
+1. Tanggal dan jenis paket terakhir yang dibeli.
+2. Jumlah kuota data yang dimiliki sekarang.
+3. Nominal harga paket yang dibeli terakhir.
+4. Akun Email yang terdaftar
+5. Tipe dan merk HP terakhir digunakan.
 `,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
 Permintaan Deaktivasi SIM Card dan Hapus NIK
 
-1. Email by.U : 
-2. Nomor by.U : xxxxxx
-3. Nomor Identitas  : 
-4. Alasan tidak ingin menggunakan by.U lagi : 
-5. Nomor Kartu Keluarga : 
-6. Foto identitas : 
-7. Foto Selfie dengan identitas : 
+1. Nomor by.U : xxxxxx
+2. Nomor Identitas KTP : 
+3. Foto Selfie (tidak dengan KTP) :
+4. Scan/Foto KTP asli/KTP Digital :
+5. Alasan tidak ingin menggunakan by.U lagi :
+6. Email yang bisa dihubungi :
 
 
 
@@ -428,14 +434,12 @@ ${t}
 Permintaan Deaktivasi SIM Card dan Hapus NIK
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : 
-3. Nomor identitas : 
-4. Alasan tidak ingin menggunakan by.U lagi : 
-5. Nomor Kartu Keluarga : 
-6. Foto identitas : 
-7. Foto Selfie identitas : 
-8. Capture hasil pengecekan dari *444# : 
-9. CP yang bisa dihubungi : 
+2. Nomor Identitas KTP (sesuai yang tercantum di sistem) :
+3. Foto Selfie (tidak dengan KTP) :
+4. Scan/Foto KTP asli/KTP Digital :
+5. Alasan tidak ingin menggunakan by.U lagi :
+6. Capture hasil pengecekan dari *444# :
+7. Email yang bisa dihubungi :
 
 
 1x24 jam`},{id:10,case:`Gagal Aktivasi eSIM Account Status Tidak Sesuai`,Bracket:e=>`#Pelangganbyu
@@ -583,10 +587,9 @@ Hi, Kak . Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM card 
 2. Nomor by.U : 
 3. Nomor Identitas valid : 
 4. Scan/Foto KTP asli : 
-5. Foto selfie dengan KTP asli :  
-6. Nama & nomor penerima : 
-7. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
-8. Alasan ganti SIM Card : 
+5. Nama & nomor penerima : 
+6. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
+7. Alasan ganti SIM Card : 
 
 ====================legacy============================
 Kak maaf, aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
@@ -614,11 +617,10 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 Kak maaf, untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Nomor Identitas valid : 
-3. Scan/Foto KTP asli : 
-4. Foto selfie dengan KTP asli :  
-5. Nama & nomor penerima : 
-6. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
-7. Alasan ganti SIM Card : 
+3. Scan/Foto KTP asli :  
+4. Nama & nomor penerima : 
+5. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
+6. Alasan ganti SIM Card : 
 
 ===========Di Apps ============
 Makasih udah nunggu. Kak maaf kalau maksudnya permintaan ganti SIM Card nya di nomor xxxxxx, silakan Kakak bisa lakukan prosesnya diApps by.U yaa, berikut cara melakukan permintaan ganti SIM Card-nya ya:
@@ -656,11 +658,10 @@ Permintaan Ganti SIM Card Active
 2. Email registrasi by.U atau nomor HP jika registrasi by.U menggunakan nomor operator lain : 
 3. Nomor Identitas valid : 
 4. Scan/Foto identitas asli : 
-5. Foto selfie dengan kartu identitas asli :  
-6. Nama & nomor penerima : 
-7. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
-8. Alasan ganti SIM Card : 
-9. Capture SIM card rusak : -
+5. Nama & nomor penerima : 
+6. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
+7. Alasan ganti SIM Card : 
+8. Capture SIM card rusak : -
 `},{id:13,case:`Miskoordinasi JNE (AWB)`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
@@ -756,12 +757,12 @@ Email by.U : --
 Detail case : penyalahgunaan nik
 Solusi : minta data
 `,Solusi:`Makasih udah nunggu. Kak maaf untuk permintaan unreg di NIK Kakak boleh infoin aku data ini ya biar bisa aku proses : 
-1. Email Aktif : 
-2. Nomor aktif lainnya yang bisa dihubungi : 
-3. Nomor Identitas KTP : 
-4. Nomor Kartu Keluarga : 
-5. Nomor by.U yang ingin di UNREGISTRASI : 
-5. Capture SMS cek registrasi dari 4444 : 
+1. Nomor by.U yang ingin di UNREGISTRASI :
+2. Nomor Identitas KTP :
+3. Foto Selfie (tidak dengan KTP) :
+4. Scan/Foto KTP asli/KTP Digital :
+5. Capture SMS cek registrasi dari 4444 :
+6. Email yang bisa dihubungi :
 
 
 DISCLAIMER
@@ -777,12 +778,13 @@ Pelanggan by.U
 ${t} 
 Penyalahgunaan NIK
 
-1. Email Aktif : 
-2. Nomor aktif lainnya yang bisa dihubungi : 
-3. Nomor Identitas  : 
-4. Nomor Kartu Keluarga : 
-5. Nomor by.U yang ingin di UNREGISTRASI : 
-5. Capture SMS cek registrasi dari 4444 : 
+1. Nomor by.U yang ingin di UNREGISTRASI :
+2. Nomor Identitas  :
+3. Foto Selfie :
+4. Scan/Foto KTP asli/KTP Digital :
+5. Capture SMS cek registrasi dari 4444 :
+6. Email yang bisa dihubungi :
+7. Alasan ingin Unregistrasi nomor by.U : MSISDN terdapat penyalahgunaan NIK yang bukan punya pemilik NIK
 
         
 `},{id:17,case:`Pembelian paket Irenew virtual account Unpaid `,Bracket:e=>`#Pelangganbyu
