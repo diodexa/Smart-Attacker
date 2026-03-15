@@ -2990,12 +2990,12 @@ Kak untuk beli eSIM bisa lewat apps by.U langsung ya, pastiin pilih menu eSIM se
 16. Solusi Yang telah di berikan : tiket
 #CheckbyCCA
 
-`},{id:85,case:`Beli Paket/Pulsa/SIM card`,Bracket:e=>`#Pelangganbyu
+`},{id:85,case:`Tidak dapat Langganan Youtube Premium`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email akun by.U : --
-Detail case : cara pembelian SIM card/eSIM
-Solusi : info cara pembelian SIM card/eSIM
+Detail case : Tidak Mendapatkan Langganan Youtube Premium
+Solusi : minta data
 `,Solusi:`Hai, Kak. Maaf banget jadi ga nyaman karena ga dapet SMS link akun Youtube Premium-nya di nomor xxxxxx. Silakan coba aktivasi dulu melalui link berikut : https://tsel.id/ytact ya. Kalo masih kendala infoin data berikut biar dibantu lebih lanjut :
 1. Email akun by.U
 2. Capture detail/daftar transaksi pembelian topping Youtube Premium di aplikasi by.U
