@@ -2988,6 +2988,32 @@ Kak untuk beli eSIM bisa lewat apps by.U langsung ya, pastiin pilih menu eSIM se
 16. Solusi Yang telah di berikan : tiket
 #CheckbyCCA
 
+`},{id:84,case:`Beli Paket/Pulsa/SIM card`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : cara pembelian SIM card/eSIM
+Solusi : info cara pembelian SIM card/eSIM
+`,Solusi:`Hai, Kak. Maaf banget jadi ga nyaman karena ga dapet SMS link akun Youtube Premium-nya di nomor xxxxxx. Silakan coba aktivasi dulu melalui link berikut : https://tsel.id/ytact ya. Kalo masih kendala infoin data berikut biar dibantu lebih lanjut :
+1. Email akun by.U
+2. Capture detail/daftar transaksi pembelian topping Youtube Premium di aplikasi by.U
+3. Capture SMS dari 97080
+4. Capture gagal aktivasi melalui link https://tsel.id/ytact
+`,Mandatory:(e,t)=>`#Pelangganbyu
+[byU ${e}] 
+Pelanggan by.U
+${t} 
+Tidak Mendapatkan Langganan Youtube Premium
+
+1. Email akun by.u :
+2. Nomor by.U :
+3. Capture detail/daftar transaksi pembelian topping Youtube Premium di aplikasi by.U :
+4. Tipe topping Youtube Premium yang dibeli :
+5. Tanggal pembelian topping Youtube Premium :
+6. Capture kendala (disesuaikan dengan kendala pelanggan) :
+7. Order detail ID (CXO) (Pengecekan OperatorX) :
+8. Transaction ID (CXT) (Pengecekan OperatorX) :
+
 `}];var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e,selectedId:t})=>{let n=e=>e??``,r=Xa().slice().sort((e,t)=>n(e.case).toLocaleLowerCase().localeCompare(n(t.case).toLocaleLowerCase()));return(0,L.jsx)(qa,{options:r.map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),value:r.map(e=>({value:e.id,label:e.case})).find(e=>e.value===t)||null,styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),r(!0),setTimeout(()=>r(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,L.jsx)(`p`,{className:` ${n?`invisible!`:`visible`}`,children:n?`copy!`:t}),(0,L.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,n?`anjay`:``,` `]})]})};function eo(){let e=(0,l.useRef)([]),t=(0,l.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var to=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=eo(),c=e=>{let t=e.split(`
