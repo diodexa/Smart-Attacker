@@ -11,7 +11,7 @@ const channels = [
   "Xdm",
   "dmFb",
   "Playstore",
-  "155"
+  "VA"
 ];
 
 const SegmentList = ({Segment,onChange}:ChannelSelectorProps) => {
@@ -25,6 +25,7 @@ const SegmentList = ({Segment,onChange}:ChannelSelectorProps) => {
                 <option 
                 key={ch}
                 onClick={()=>onChange(ch)}
+                value={ch}
                 className={`px-1 py-1 border ${Segment === ch ? "text black" : ""}`}>
                     {ch}
                 </option>

@@ -1,4 +1,4 @@
-import {  useState } from "react";
+import {  useEffect, useState } from "react";
 import TiketPages from "./pages/Tiket";
 import TemplatePages from "./pages/Template";
 import DarkMode from "./components/ButtonDarkLight";
@@ -8,7 +8,13 @@ import SegmentList from "./components/SegmentList";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState("notepad");
-  const [segment, setSegment] = useState("Live");
+  const [segment, setSegment] = useState(() => {
+    return localStorage.getItem("segment") || "Live";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("segment", segment);
+  }, [segment]);
 
   return (
     <div className="flex flex-col ">

@@ -48,6 +48,21 @@ const GlobalShortcut = () => {
           console.error("Invalid JSON in localStorage");
         }
       }
+
+      if (e.ctrlKey && e.key=== "`") {
+        e.preventDefault();
+        const urls = [
+          "https://sites.google.com/view/modulhappiness",
+          "https://byu.omnix.co.id/login",
+          "https://cs.byu.id/id/user/login",
+          "https://crm.byu.id/crm/",
+          "https://sso.identity.telkomsel.co.id/dsc/",
+          "https://docs.google.com/spreadsheets/d/1gvMeepRq_WNZ0iwilZn_RFz3xORem03sjh0yF0ekD14/edit?gid=645015539#gid=645015539",
+          "https://docs.google.com/spreadsheets/d/1uZiJ3pb1dVJr3Wvw9-D0mOpevhUOhQ1hX2thMy02WEs/edit?usp=sharing",
+          "https://web.telegram.org/k/",
+        ];
+        urls.forEach(url=>{window.open(url,"_blank", "noopener,noreferrer")})
+      }
     };
 
     window.addEventListener("keydown", handleKeyDown);

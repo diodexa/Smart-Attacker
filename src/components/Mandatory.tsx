@@ -72,7 +72,7 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
-1. Nama Customer : 
+1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
 4. Tanggal/Jam Kejadian : ${DateTime} 
@@ -104,8 +104,7 @@ Mandatory : (segment: string,DateTime: string ) =>
 #CheckbyCCA
 
 
-
-3x24 jam` 
+` 
 },
 
 {
@@ -483,6 +482,13 @@ Makasih udah nunggu. Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Ak
 2. Email: --
 
 Nomor yang sudah berhasil di unregistrasi ga akan bisa diaktifkan kembali dalam kondisi apapun ya kak, lalu NIK yang terdaftar di nomor ini juga akan ikut terhapus. Kalo data diatas udah sesuai dan Kakak setuju boleh tolong konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :)
+
+Kak maaf, aku cek NIK yang Kakak infoin ga ada yang sesuai nih untuk nomor xxxxxx. Boleh infoin salah satu dari data ini ya biar bisa aku proses :
+1. Tanggal dan jenis paket terakhir yang dibeli.
+2. Jumlah kuota data yang dimiliki sekarang.
+3. Nominal harga paket yang dibeli terakhir.
+4. Akun Email yang terdaftar
+5. Tipe dan merk HP terakhir digunakan.
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
@@ -491,13 +497,12 @@ Pelanggan by.U
 ${DateTime} 
 Permintaan Deaktivasi SIM Card dan Hapus NIK
 
-1. Email by.U : 
-2. Nomor by.U : xxxxxx
-3. Nomor Identitas  : 
-4. Alasan tidak ingin menggunakan by.U lagi : 
-5. Nomor Kartu Keluarga : 
-6. Foto identitas : 
-7. Foto Selfie dengan identitas : 
+1. Nomor by.U : xxxxxx
+2. Nomor Identitas KTP : 
+3. Foto Selfie (tidak dengan KTP) :
+4. Scan/Foto KTP asli/KTP Digital :
+5. Alasan tidak ingin menggunakan by.U lagi :
+6. Email yang bisa dihubungi :
 
 
 
@@ -524,14 +529,12 @@ ${DateTime}
 Permintaan Deaktivasi SIM Card dan Hapus NIK
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : 
-3. Nomor identitas : 
-4. Alasan tidak ingin menggunakan by.U lagi : 
-5. Nomor Kartu Keluarga : 
-6. Foto identitas : 
-7. Foto Selfie identitas : 
-8. Capture hasil pengecekan dari *444# : 
-9. CP yang bisa dihubungi : 
+2. Nomor Identitas KTP (sesuai yang tercantum di sistem) :
+3. Foto Selfie (tidak dengan KTP) :
+4. Scan/Foto KTP asli/KTP Digital :
+5. Alasan tidak ingin menggunakan by.U lagi :
+6. Capture hasil pengecekan dari *444# :
+7. Email yang bisa dihubungi :
 
 
 1x24 jam`   
@@ -624,7 +627,7 @@ Kak maaf, kalau udah dilakukan tapi masih berkendala, boleh lengkapin data ini y
 `
 Makasih udah nunggu. Kak maaf, untuk kendala sinyalnya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
-2. Lokasi detail kendala (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Lokasi detail kendala (kelurahan, kecamatan, kabupaten/kota)  saat berkendala :
 3. Tanggal dan waktu kejadian sejak kapan :
 4. Nomor by.U lain yang berkendala sama :
 
@@ -653,7 +656,7 @@ Kak maaf, kalau udah dilakukan tapi masih berkendala, boleh lengkapin data ini y
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
-1. Nama Customer : 
+1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
 4. Tanggal/Jam Kejadian : ${DateTime} 
@@ -686,7 +689,6 @@ Mandatory : (segment: string,DateTime: string ) =>
 
 
 
-3x24 jam
 `   
 },
 
@@ -714,10 +716,9 @@ Hi, Kak . Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM card 
 2. Nomor by.U : 
 3. Nomor Identitas valid : 
 4. Scan/Foto KTP asli : 
-5. Foto selfie dengan KTP asli :  
-6. Nama & nomor penerima : 
-7. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
-8. Alasan ganti SIM Card : 
+5. Nama & nomor penerima : 
+6. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
+7. Alasan ganti SIM Card : 
 
 ====================legacy============================
 Kak maaf, aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
@@ -746,11 +747,10 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 Kak maaf, untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Nomor Identitas valid : 
-3. Scan/Foto KTP asli : 
-4. Foto selfie dengan KTP asli :  
-5. Nama & nomor penerima : 
-6. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
-7. Alasan ganti SIM Card : 
+3. Scan/Foto KTP asli :  
+4. Nama & nomor penerima : 
+5. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
+6. Alasan ganti SIM Card : 
 
 ===========Di Apps ============
 Makasih udah nunggu. Kak maaf kalau maksudnya permintaan ganti SIM Card nya di nomor xxxxxx, silakan Kakak bisa lakukan prosesnya diApps by.U yaa, berikut cara melakukan permintaan ganti SIM Card-nya ya:
@@ -790,11 +790,10 @@ Permintaan Ganti SIM Card Active
 2. Email registrasi by.U atau nomor HP jika registrasi by.U menggunakan nomor operator lain : 
 3. Nomor Identitas valid : 
 4. Scan/Foto identitas asli : 
-5. Foto selfie dengan kartu identitas asli :  
-6. Nama & nomor penerima : 
-7. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
-8. Alasan ganti SIM Card : 
-9. Capture SIM card rusak : -
+5. Nama & nomor penerima : 
+6. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
+7. Alasan ganti SIM Card : 
+8. Capture SIM card rusak : -
 `   
 },
 
@@ -935,12 +934,12 @@ Solusi : minta data
 `,
 Solusi : 
 `Makasih udah nunggu. Kak maaf untuk permintaan unreg di NIK Kakak boleh infoin aku data ini ya biar bisa aku proses : 
-1. Email Aktif : 
-2. Nomor aktif lainnya yang bisa dihubungi : 
-3. Nomor Identitas KTP : 
-4. Nomor Kartu Keluarga : 
-5. Nomor by.U yang ingin di UNREGISTRASI : 
-5. Capture SMS cek registrasi dari 4444 : 
+1. Nomor by.U yang ingin di UNREGISTRASI :
+2. Nomor Identitas KTP :
+3. Foto Selfie (tidak dengan KTP) :
+4. Scan/Foto KTP asli/KTP Digital :
+5. Capture SMS cek registrasi dari 4444 :
+6. Email yang bisa dihubungi :
 
 
 DISCLAIMER
@@ -958,12 +957,13 @@ Pelanggan by.U
 ${DateTime} 
 Penyalahgunaan NIK
 
-1. Email Aktif : 
-2. Nomor aktif lainnya yang bisa dihubungi : 
-3. Nomor Identitas  : 
-4. Nomor Kartu Keluarga : 
-5. Nomor by.U yang ingin di UNREGISTRASI : 
-5. Capture SMS cek registrasi dari 4444 : 
+1. Nomor by.U yang ingin di UNREGISTRASI :
+2. Nomor Identitas  :
+3. Foto Selfie :
+4. Scan/Foto KTP asli/KTP Digital :
+5. Capture SMS cek registrasi dari 4444 :
+6. Email yang bisa dihubungi :
+7. Alasan ingin Unregistrasi nomor by.U : MSISDN terdapat penyalahgunaan NIK yang bukan punya pemilik NIK
 
         
 `   
@@ -984,6 +984,8 @@ Solusi : `Makasih udah nunggu. Kak maaf, aku cek transaksi di nomor xxxxxx, ada 
 1. Email akun by.U
 2. Nomor rekening bank BCA
 3. Atas nama pemilik rekening
+
+
 4. Kantor cabang pembuka
 `,
 Mandatory : (segment: string,DateTime: string ) =>
@@ -1193,7 +1195,7 @@ Detail case : gabisa aktivasi legacy
 Solusi : minta data
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
-`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala aktivasi SIM card nya, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
+`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala aktivasi SIM card nya, kalau nomornya beli di konter, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
 1. Nomor by.U :
 2. NIK & NOKK :
 3. Capture Gagal/berhasil Aktivasi via SMS :
@@ -1205,7 +1207,17 @@ Solusi : (segment: string) => segment ==='Email' ?
 1. NIK & NOKK :
 2. Capture Gagal/berhasil Aktivasi via SMS :
 3. SN barcode yang ada di cangkang SIM Card :
-4. CP dan Email yang bisa dihubungi :`,
+4. CP dan Email yang bisa dihubungi :
+
+
+Kak maaf, untuk aktivasi SIM card nya, kalau nomornya beli di konter, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
+1. Nomor by.U :
+2. NIK & NOKK :
+3. Capture Gagal/berhasil Aktivasi via SMS :
+4. SN barcode yang ada di cangkang SIM Card :
+5. CP dan Email yang bisa dihubungi :
+
+`,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
 [byU ${segment}] 
@@ -2382,6 +2394,7 @@ Solusi : (segment: string) => segment ==='Email' ?
 4. Kode hasil Gesek Voucher Fisik :
 5. Serial Number Voucher Fisik :
 6. Capture keterangan gagal redeem voucher :
+7. Foto Voucher fisik :
 ` :
 `Makasih udah nunggu. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
@@ -2389,6 +2402,7 @@ Solusi : (segment: string) => segment ==='Email' ?
 3. Kode hasil Gesek Voucher Fisik :
 4. Serial Number Voucher Fisik :
 5. Capture keterangan gagal redeem voucher :
+6. Foto Voucher Fisik :
 
 `,
 Mandatory : (segment: string,DateTime: string ) =>
@@ -2778,7 +2792,7 @@ Mandatory : ``
 
 {
 id: 60,
-case : "Harga paket berubah/jadi mahal/promo",
+case : "Info Paket/ Harga paket berubah/jadi mahal/promo",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
@@ -2790,6 +2804,8 @@ Solusi : info paket
 Solusi : `Kak, maaf ya udah dibuat ga nyaman, untuk harga paket yang tertera di aplikasi bersifat penawaran ya, jadi akan berubah sesuai dengan promo yang sedang berjalan, yang merupakan bagian dari upaya kita buat terus ningkatin kualitas layanan by.U. Silakan untuk melakukan pembelian paket yang tersedia di aplikasi by.U ya kak :)
 
 Kak maaf, kalau ga tersedia paket yang Kakak inginin, artinya penawaran paketnya udah ga ada. Kakak bisa pilih paket yang tersedia saat ini di apps by.U ya :)
+
+Kak maaf, aku cek nomor xxxxxx saat ini kuota internetnya udah habis, jadi gabisa internetan. Kakak bisa beli kuota baru di apps by.U pake wifi/jaringan lain dulu ya :)
 `,
 Mandatory : ``
 },
@@ -2978,7 +2994,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device a
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
-1. Nama Customer : 
+1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
 4. Tanggal/Jam Kejadian : ${DateTime} 
@@ -3010,8 +3026,7 @@ Mandatory : (segment:string, DateTime:string) =>
 #CheckbyCCA
 
 
-
-3x24 jam` 
+` 
 },
 
 
@@ -3037,7 +3052,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya 
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
-1. Nama Customer : 
+1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
 4. Tanggal/Jam Kejadian : ${DateTime} 
@@ -3069,8 +3084,7 @@ Mandatory : (segment:string, DateTime:string) =>
 #CheckbyCCA
 
 
-
-3x24 jam` 
+` 
 },
 {
 id: 68,
@@ -3094,7 +3108,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya 
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
-1. Nama Customer : 
+1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
 4. Tanggal/Jam Kejadian : ${DateTime} 
@@ -3126,8 +3140,7 @@ Mandatory : (segment:string, DateTime:string) =>
 #CheckbyCCA
 
 
-
-3x24 jam` 
+` 
 },
 
 {
@@ -3144,7 +3157,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses 
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
-1. Nama Customer : 
+1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
 4. Tanggal/Jam Kejadian : ${DateTime} 
@@ -3203,7 +3216,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya 
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
-1. Nama Customer : 
+1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
 4. Tanggal/Jam Kejadian : ${DateTime} 
@@ -3258,7 +3271,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya 
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
-1. Nama Customer : 
+1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
 4. Tanggal/Jam Kejadian : ${DateTime} 
@@ -3343,11 +3356,29 @@ Email akun by.U : --
 Detail case : sinyal/internet
 Solusi : Minta data
 `,
-Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, kami menemukan indikasi bahwa sim card yang sedang digunakan tidak memiliki paket untuk mengakses atau menggunakan layanan internet. Mohon dicek kembali :)`,
+Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, kami menemukan indikasi bahwa sim card yang sedang digunakan tidak memiliki paket untuk mengakses atau menggunakan layanan internet. Mohon dicek kembali :) 
+
+=====================
+Hi Kak, makasih banyak ya udah nunggu, aku cek nomor xxxxxx aktif dan di lokasi Kakak lagi ga ada gangguan. Untuk nomornya udah aku bantu refresh jaringan via sistem, bisa coba lakukan langkah berikut untuk 5 menit kedepan:
+1. Restart HP 5 menit kedepan
+2. Pastikan kolom APN di settingan HP terisi “byu”, kolom username dan password dikosongkan.
+3. Pindahkan SIM Card ke hp lain sebagai pembanding.
+Segera hubungi kita lagi kalo internetnya masih kendala ya :)
+
+============Kalau masih berkendala===============
+Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
+1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Apakah terjadi di dalam Gedung atau di luar gedung?
+3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+7. CP lain yang dapat dihubungi 
+8. Capture keterangan internet berkendala :`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
-1. Nama Customer : 
+1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
 4. Tanggal/Jam Kejadian : ${DateTime} 
@@ -3402,7 +3433,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya 
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
-1. Nama Customer : 
+1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
 4. Tanggal/Jam Kejadian : ${DateTime} 
@@ -3449,7 +3480,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device a
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
-1. Nama Customer : 
+1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
 4. Tanggal/Jam Kejadian : ${DateTime} 
@@ -3505,7 +3536,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya 
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
-1. Nama Customer : 
+1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
 4. Tanggal/Jam Kejadian : ${DateTime} 
@@ -3590,7 +3621,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses 
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
-1. Nama Customer : 
+1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
 4. Tanggal/Jam Kejadian : ${DateTime} 
@@ -3645,7 +3676,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses 
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
-1. Nama Customer : 
+1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
 4. Tanggal/Jam Kejadian : ${DateTime} 
@@ -3705,7 +3736,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dikarenakan B
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
-1. Nama Customer : 
+1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
 4. Tanggal/Jam Kejadian : ${DateTime} 
@@ -3741,7 +3772,7 @@ Mandatory : (segment:string, DateTime:string) =>
 
 {
 id: 82,
-case : "Kendala_Sinyal",
+case : "CCA Kendala_Sinyal",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
@@ -3761,7 +3792,60 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dikarenakan B
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
-1. Nama Customer : 
+1. Nama Customer : Pelanggan 
+2. MSISDN-A Yang Menghubungi : xxxxxx
+3. MSISDN-B Yang Bermasalah : xxxxxx
+4. Tanggal/Jam Kejadian : ${DateTime} 
+5. Lokasi Pelanggan (alamat) : 
+6. Koordinat Customer : 
+7. Segmentasi Kartu :byU
+8. SIM Capability :USIM
+9. Customer Tier Pelanggan :-
+10. Case Owner :byU
+11. Detail Complaint : sinyal/internet
+12. Additional Information :
+    -dalam Gedung atau di luar gedung?
+    -semua lokasi atau hanya lokasi tertentu :
+    -Nomor lain yang berkendala sama :-
+    -bar sinyal dan 4G/3G/E :
+    -Aplikasi/web yang berkendala :
+    -CP :
+    -Tipe HP :
+13. Capture Bukti Pelanggan : linkcapture
+14. Capture CCA : linkcapture
+15. Hasil analisa CCA :
+    Possible Root Cause 
+    Kendala_Sinyal
+    Remarks
+    Bapak atau Ibu Yth, berdasarkan pengecekan di sistem kami, kendala Bapak atau Ibu saat ini dikarenakan BTS sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Terima kasih atas laporannya, kami akan segera eskalasi ke tim terkait.
+    Suggestion
+    SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi BTS mengalami gangguan sehingga pelanggan tidak dapat mengakses internet.
+16. Solusi Yang telah di berikan : tiket
+#CheckbyCCA
+
+` 
+},
+{
+id: 83,
+case : "Beli Paket/Pulsa/SIM card",
+Bracket : (segment: string) =>`#Pelangganbyu
+[byU ${segment}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : cara pembelian SIM card/eSIM
+Solusi : info cara pembelian SIM card/eSIM
+`,
+Solusi : `Kak maaf, untuk beli paket internet bisa lewat apps by.U dengan pilih menu isi kuota pada halaman dashboard ya :)
+
+Kak maaf, untuk beli pulsa bisa lewat apps by.U dengan pilih menu isi pulsa pada halaman dashboard ya :)
+
+Kak untuk beli SIM card/nomor baru bisa beli lewat apps/web by.U ya, nanti setelah pilih paket langsung masuk ke halaman pembayaran. Pilih nomor yang tersedia aja disana ya :)
+
+Kak untuk beli eSIM bisa lewat apps by.U langsung ya, pastiin pilih menu eSIM sebelum login/sign up :)`,
+Mandatory : (segment:string, DateTime:string) =>
+`#Pelangganbyu
+[NO] [byU ${segment}] 
+1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
 4. Tanggal/Jam Kejadian : ${DateTime} 
@@ -3795,6 +3879,40 @@ Mandatory : (segment:string, DateTime:string) =>
 ` 
 },
 
+{
+id: 85,
+case : "Tidak dapat Langganan Youtube Premium",
+Bracket : (segment: string) =>`#Pelangganbyu
+[byU ${segment}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : Tidak Mendapatkan Langganan Youtube Premium
+Solusi : minta data
+`,
+Solusi : `Hai, Kak. Maaf banget jadi ga nyaman karena ga dapet SMS link akun Youtube Premium-nya di nomor xxxxxx. Silakan coba aktivasi dulu melalui link berikut : https://tsel.id/ytact ya. Kalo masih kendala infoin data berikut biar dibantu lebih lanjut :
+1. Email akun by.U
+2. Capture detail/daftar transaksi pembelian topping Youtube Premium di aplikasi by.U
+3. Capture SMS dari 97080
+4. Capture gagal aktivasi melalui link https://tsel.id/ytact
+`,
+Mandatory : (segment:string, DateTime:string) =>
+`#Pelangganbyu
+[byU ${segment}] 
+Pelanggan by.U
+${DateTime} 
+Tidak Mendapatkan Langganan Youtube Premium
+
+1. Email akun by.u :
+2. Nomor by.U :
+3. Capture detail/daftar transaksi pembelian topping Youtube Premium di aplikasi by.U :
+4. Tipe topping Youtube Premium yang dibeli :
+5. Tanggal pembelian topping Youtube Premium :
+6. Capture kendala (disesuaikan dengan kendala pelanggan) :
+7. Order detail ID (CXO) (Pengecekan OperatorX) :
+8. Transaction ID (CXT) (Pengecekan OperatorX) :
+
+` 
+},
 
 ]
 return Mandatory

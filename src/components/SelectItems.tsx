@@ -3,9 +3,10 @@ import { DataMandatory } from "./Mandatory";
 
 interface Props {
   onSelect: (id: number | null) => void;
+  selectedId: number | null;
 }
 
-const MandatorySelect = ({ onSelect }: Props) => {
+const MandatorySelect = ({ onSelect,selectedId }: Props) => {
   const normalizeCase = (v?: string) => v ?? "";
   const Mandatory = DataMandatory().slice().sort((a,b)=>normalizeCase(a.case).toLocaleLowerCase().localeCompare(normalizeCase(b.case).toLocaleLowerCase()))
 
@@ -14,6 +15,7 @@ const MandatorySelect = ({ onSelect }: Props) => {
       options={Mandatory.map(item => ({value: item.id,label: item.case,}))}
       className="w-full  listText"
       onChange={(option) => onSelect(option?.value || null)}
+      value={Mandatory.map(item => ({ value: item.id, label: item.case })).find(opt => opt.value === selectedId) || null}
       styles={{
         control: (base) => ({ ...base, backgroundColor: " rgb(238, 255, 249)" }),
         menu: (base) => ({ ...base, backgroundColor: "rgb(235, 250, 247)" }),

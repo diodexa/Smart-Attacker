@@ -2,14 +2,12 @@ import { useEffect, useState } from "react";
 
 
 const TemplatePages = () => {
-    // const [activeIndex] = useState<number | null>(null);
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
-    // const [copied, setCopied] = useState(false)
 
     const [Templates, setTemlates] = useState(() => {
         const saved = localStorage.getItem("my-templates");
         return saved ? JSON.parse(saved) : Array(22).fill("");
-        });
+    });
 
     useEffect(() => {
         const syncTemplates = () => {
@@ -26,7 +24,7 @@ const TemplatePages = () => {
 
     useEffect(() => {
         localStorage.setItem("my-templates", JSON.stringify(Templates));
-        }, [Templates]);
+    }, [Templates]);
         
     const handleChange = (index: number, value: string) => {
         const updated = [...Templates];

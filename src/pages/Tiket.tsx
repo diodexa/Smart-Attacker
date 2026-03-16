@@ -88,32 +88,31 @@ const TiketPages = ({ segment }: Props) => {
         return () => window.removeEventListener("keydown", handleKeyDown); 
       }, []);
 
-
-
+      
 
     return (
-        <div className='flex flex-col w-screen '>
-            <List onSelect={(id) => setSelectedId(id)} />
-                <div className='flex gap-2'>
-                  <div className='w-full'>
-                      {selected && <CopyButton text={mandatoryText} label='Mandatory' />}
-                      <MandatoryDisplay
-                        key={selectedId}         
-                        selectedId={selectedId}
-                        value={mandatoryText}     
-                        onChange={setMandatoryText}
-                      />
-                  </div>
-                  <div className='w-full  '>
-                      {selected && <CopyButton text={solusiText} label='Bracket + Solusi' />}
-                      <SolusiDisplay 
-                        key={selectedId}         
-                        value={solusiText}     
-                        onChange={setSolusiText}
-                      />
-                </div>
-                </div>
-        </div>
+      <div className='flex flex-col w-screen '>
+          <List onSelect={setSelectedId} selectedId={selectedId} />
+          <div className='flex gap-2'>
+            <div className='w-full'>
+                {selected && <CopyButton text={mandatoryText} label='Mandatory' />}
+                <MandatoryDisplay
+                  key={selectedId}         
+                  selectedId={selectedId}
+                  value={mandatoryText}     
+                  onChange={setMandatoryText}
+                />
+            </div>
+            <div className='w-full  '>
+                {selected && <CopyButton text={solusiText} label='Bracket + Solusi' />}
+                <SolusiDisplay 
+                  key={selectedId}         
+                  value={solusiText}     
+                  onChange={setSolusiText}
+                />
+            </div>
+          </div>
+      </div>
     )
 }
 export default TiketPages
