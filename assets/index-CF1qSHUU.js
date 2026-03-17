@@ -2957,40 +2957,7 @@ Kak maaf, untuk beli pulsa bisa lewat apps by.U dengan pilih menu isi pulsa pada
 
 Kak untuk beli SIM card/nomor baru bisa beli lewat apps/web by.U ya, nanti setelah pilih paket langsung masuk ke halaman pembayaran. Pilih nomor yang tersedia aja disana ya :)
 
-Kak untuk beli eSIM bisa lewat apps by.U langsung ya, pastiin pilih menu eSIM sebelum login/sign up :)`,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
-1. Nama Customer : Pelanggan 
-2. MSISDN-A Yang Menghubungi : xxxxxx
-3. MSISDN-B Yang Bermasalah : xxxxxx
-4. Tanggal/Jam Kejadian : ${t} 
-5. Lokasi Pelanggan (alamat) : 
-6. Koordinat Customer : 
-7. Segmentasi Kartu :byU
-8. SIM Capability :USIM
-9. Customer Tier Pelanggan :-
-10. Case Owner :byU
-11. Detail Complaint : sinyal/internet
-12. Additional Information :
-    -dalam Gedung atau di luar gedung?
-    -semua lokasi atau hanya lokasi tertentu :
-    -Nomor lain yang berkendala sama :-
-    -bar sinyal dan 4G/3G/E :
-    -Aplikasi/web yang berkendala :
-    -CP :
-    -Tipe HP :
-13. Capture Bukti Pelanggan : linkcapture
-14. Capture CCA : linkcapture
-15. Hasil analisa CCA :
-    Possible Root Cause 
-    Kendala_Sinyal
-    Remarks
-    Bapak atau Ibu Yth, berdasarkan pengecekan di sistem kami, kendala Bapak atau Ibu saat ini dikarenakan BTS sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Terima kasih atas laporannya, kami akan segera eskalasi ke tim terkait.
-    Suggestion
-    SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi BTS mengalami gangguan sehingga pelanggan tidak dapat mengakses internet.
-16. Solusi Yang telah di berikan : tiket
-#CheckbyCCA
-
-`},{id:85,case:`Tidak dapat Langganan Youtube Premium`,Bracket:e=>`#Pelangganbyu
+Kak untuk beli eSIM bisa lewat apps by.U langsung ya, pastiin pilih menu eSIM sebelum login/sign up :)`,Mandatory:``},{id:85,case:`Tidak dapat Langganan Youtube Premium`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email akun by.U : --
