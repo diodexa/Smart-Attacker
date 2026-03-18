@@ -2983,7 +2983,7 @@ Tidak Mendapatkan Langganan Youtube Premium
 7. Order detail ID (CXO) (Pengecekan OperatorX) :
 8. Transaction ID (CXT) (Pengecekan OperatorX) :
 
-`},{id:87,case:`Closing`,Bracket:e=>`#Pelangganbyu
+`},{id:86,case:`Closing`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email akun by.U : --
