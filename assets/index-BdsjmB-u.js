@@ -2301,15 +2301,7 @@ Nomor by.U : xxxxxx
 Email akun by.U : --
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
-`,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
-1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
-2. Apakah terjadi di dalam Gedung atau di luar gedung?
-3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
-4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
-5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
-6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
-7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
+`,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device atau sim card yang digunakan. Jika restart HP tidak menyelesaikan masalah, maka disarankan untuk ajuin ganti SIM card ya :) `,Mandatory:(e,t)=>`#Pelangganbyu
 [NO] [byU ${e}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
