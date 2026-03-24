@@ -150,6 +150,27 @@ Solusi :  minta data
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
 8. Waktu dan Lama Kejadian : 
 9. Lokasi Kejadian :  
+
+============
+Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf mengenai kendala aplikasi Error bisa dicoba dulu cara berikut ya :
+1. Periksa juga pengaturan tanggal dan waktu gadget sudah sesuai
+2. Pastikan OS HP sudah merupakan versi paling update
+3. ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali, dan pastikan koneksi internet (termasuk kuota internet) ada
+4. Kalau masih nggak bisa, coba install ulang aplikasi by.U kakak
+
+Kalo masih kendala boleh lengkapi data berikut agar dibantu cek dulu :
+
+1. Nomor by.U : 
+2. Email akun by.U : 
+3. Tipe/merek Gadget : 
+4. Versi OS Gadget : 
+5. Versi aplikasi by.U : 
+6. Apakah bisa akses website byu.id di device yang sama menggunakan jaringan by.U atau jaringan lain :  
+7. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
+8. Waktu dan Lama Kejadian : 
+9. Lokasi Kejadian :  
+
+Silakan dicoba dulu ya Kak :)
 `:`Makasih udah nunggu. Kak maaf, untuk kendala aplikasinya di nomor xxxxxx, aku cek ga ada info gangguan. Boleh coba dulu untuk ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih gak bisa, boleh coba install ulang aplikasi by.U kakak dan pastikan koneksi internet ada. Kalau di aplikasi masih berkendala, Kakak bisa coba akses di website by.U ya. Kalau udah tapi masih berkendala, boleh infoin data ini ya :
 1. Email akun by.U : 
 2. Tipe/merek Gadget : 
@@ -1543,9 +1564,8 @@ Halo, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk perubahan data 
 2. Alamat Email login by.U :
 3. NIK & NOK pelanggan baru :
 4. Foto KTP pelanggan baru :
-5. Foto selfie dengan KTP pelanggan baru :
-6. Surat pernyataan yang bisa minta ke email nindy@byu.id :
-7. Validasi tambahan :
+5. Surat pernyataan yang ada di lampiran :
+6. Validasi tambahan :
 
 Untuk validasi tambahannya bisa infoin salah satu dari data ini ya : 
 1. Tanggal dan jenis paket terakhir yang dibeli :
@@ -1553,7 +1573,7 @@ Untuk validasi tambahannya bisa infoin salah satu dari data ini ya :
 3. Nominal harga paket yang dibeli terakhir :
 4. 5 Transaksi terakhir (minimum 3 transaksi valid) :
 5. Tipe dan merk HP terakhir digunakan :
-Kirim nya ke email nindy@byu.id ya biar aman :)
+
 
 DISCLAIMER
 
@@ -1568,9 +1588,8 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 1. Alamat Email login by.U :
 2. NIK & NOK pelanggan baru :
 3. Foto KTP pelanggan baru :
-4. Foto selfie dengan KTP pelanggan baru :
-5. Surat pernyataan yang bisa minta ke email nindy@byu.id :
-6. Validasi tambahan :
+4. Surat pernyataan yang bisa minta ke email nindy@byu.id :
+5. Validasi tambahan :
 
 Untuk validasi tambahannya bisa infoin salah satu dari data ini ya : 
 1. Tanggal dan jenis paket terakhir yang dibeli :
@@ -1578,7 +1597,7 @@ Untuk validasi tambahannya bisa infoin salah satu dari data ini ya :
 3. Nominal harga paket yang dibeli terakhir :
 4. 5 Transaksi terakhir (minimum 3 transaksi valid) :
 5. Tipe dan merk HP terakhir digunakan :
-Kirim nya ke email nindy@byu.id ya biar aman :)
+
 
 DISCLAIMER
 
@@ -1600,9 +1619,8 @@ Perubahan data pelanggan
 2. Alamat Email login by.U : 
 3. nomor identitas & NOK pelanggan baru : 
 4. Foto identitas pelanggan baru : 
-5. Foto selfie dengan identitas pelanggan baru : 
-6. Surat pernyataan : 
-7. Validasi tambahan : 
+5. Surat pernyataan : 
+6. Validasi tambahan : 
 `},{id:41,case:`Perubahan Data pindah tangan (pindah tangan)`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
@@ -1615,9 +1633,8 @@ Solusi : minta data
 3. NIK & NOK pelanggan baru :
 4. Foto KTP pelanggan lama :
 5. Foto KTP pelanggan baru :
-6. Foto selfie dengan KTP pelanggan baru :
-7. Surat pernyataan yang bisa minta ke email nindy@byu.id :
-Kirimnya ke email nindy@byu.id aja ya biar aman :)
+6. Surat pernyataan yang ada di lampiran:
+
 
 
 DISCLAIMER
@@ -2165,6 +2182,19 @@ Buat Android :
 - Daftarin Nomor KTP/NIK, dan KK kamu.
 - 1Tunggu sampai eSIM kamu berhasil di registrasi.
 Kalau Kakak terkendala buat aktivasinya, silakan buat konfirmasi lagi ya
+
+================
+Hi, Kak Akhyari. Saat ini udah terhubung dengan Nindy. Mengenai penggunaan nomor by.U tanpa kartu Kakak bisa
+pesen eSIM by.U via aplikasi dengan langkah-langkah di bawah ini yaa:
+1. Pilih "eSIM" pada login page
+2. Pilih perangkat yang akan kamu pakai untuk menggunakan eSIM
+3. Pilih kuota yang kamu mau
+4. Daftar akun by.U menggunakan nomor provider lain
+5. Pilih nomor eSIM by.U yang kamu mau
+6. Konfirmasi pesanan dan lakukan pembayaran
+7. Selanjutnya, kamu akan dikasih QR Code dengan profile eSIM yang bisa kamu download.
+
+Silakan dicoba dulu ya Kak :)
 `,Mandatory:``},{id:62,case:`Gagal Registrasi 5g`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
@@ -2982,9 +3012,8 @@ Email akun by.U : --
 Detail case : closing
 Solusi : closing
 `,Solusi:e=>e===`Live`?`Makasih juga udah interaksi ya Kak :) Ohiya, aku akhiri obrolan kita ya, Kaka jangan dulu tutup chatnya ya karena setelah ini juga ada pop-up survey yang lain. Dibantu isi ya Kak kalau Kaka merasa puas boleh banget isi dengan angka (10) dan seterusnya ya. Makasih banget udah selalu setia sama by.U Kak :)  sehat selalu :)
-`:`Oke, Kak. Kalau nantinya masih ada yang mau ditanyain lagi terkait layanan by.U-nya, jangan sungkan buat hubungi aku ya.
-Aku izin akhiri obrolan kita ya, Agar pelayanannya bisa lebih baik lagi nih Kak, bisa isi link berikut https://tsel.id/survey-byu . Boleh banget isi dengan angka (10) kalau merasa terbantu dan kalau merasa belum terbantu boleh di isi dari mulai angka (1) dan seterusnya, ya Kak.
-Oh iya, Semoga dilancarkan puasanya dan sehat selalu🌙 . Nindy bakal tingkatin terus kualitas layanan by.U biar kamu seneng dan tetep setia sama by.U 💙`,Mandatory:`
+`:`Oke, Kak. Kalau nantinya masih ada yang mau ditanyain lagi terkait layanan by.U-nya, jangan sungkan buat hubungi aku ya.Aku izin akhiri obrolan kita ya, Agar pelayanannya bisa lebih baik lagi nih Kak, bisa isi link berikut https://tsel.id/survey-byu . Boleh banget isi dengan angka (10) kalau merasa terbantu dan kalau merasa belum terbantu boleh di isi dari mulai angka (1) dan seterusnya, ya Kak.
+Nindy bakal tingkatin terus kualitas layanan by.U biar kamu seneng dan tetep setia sama by.U 💙`,Mandatory:`
 `}];var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e,selectedId:t})=>{let n=e=>e??``,r=Xa().slice().sort((e,t)=>n(e.case).toLocaleLowerCase().localeCompare(n(t.case).toLocaleLowerCase()));return(0,L.jsx)(qa,{options:r.map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),value:r.map(e=>({value:e.id,label:e.case})).find(e=>e.value===t)||null,styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),r(!0),setTimeout(()=>r(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,L.jsx)(`p`,{className:` ${n?`invisible!`:`visible`}`,children:n?`copy!`:t}),(0,L.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,n?`anjay`:``,` `]})]})};function eo(){let e=(0,l.useRef)([]),t=(0,l.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var to=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=eo(),c=e=>{let t=e.split(`
@@ -3022,7 +3051,7 @@ Oh iya, Semoga dilancarkan puasanya dan sehat selalu🌙 . Nindy bakal tingkatin
 `)};return(0,l.useEffect)(()=>{localStorage.setItem(`my-note`,r)},[r]),(0,l.useLayoutEffect)(()=>{t.current!==null&&e.current&&(e.current.setSelectionRange(t.current,t.current),t.current=null)},[r]),(0,L.jsx)(`textarea`,{ref:e,value:r,onChange:e=>{let r=e.target,o=r.value,s=r.selectionStart,c=n.current.split(`
 `);o.split(`
 `).length<c.length?(t.current=s,i(a(o))):i(o),n.current=o},onKeyDown:e=>{if(e.key!==`Enter`||e.key==`Enter`&&e.shiftKey)return;let n=e.currentTarget.selectionStart,o=r.slice(0,n),s=r.slice(n),c=o.split(`
-`),l=c[c.length-1].match(/^(\d+)\.\s*/);if(!l)return;e.preventDefault();let u=Number(l[1])+1,d=o+`\n${u}. `+s;t.current=o.length+`\n${u}. `.length,i(a(d))},className:`border w-full h-screen p-2`,placeholder:`Isi note kamu.....`})}var xo=[`Hai Kak aku Odi temennya Nindy.`,`Kak maaf, aku cek dulu ya. Ditunggu :)`,`Aku cek dulu interaksinya ya nanti aku balik lagi :)`,`Makasih juga udah interaksi ya Kak :) Ohiya, aku akhiri obrolan kita ya, Kaka jangan dulu tutup chatnya ya karena setelah ini juga ada pop-up survey yang lain. Dibantu isi ya Kak kalau Kaka merasa puas boleh banget isi dengan angka (10) dan seterusnya ya. Makasih banget udah selalu setia sama by.U Kak :) selamat menunaikan hari lebaran ya. Semoga dilancarkan puasanya dan sehat selalu🌙`,`Makasih datanya. Aku cek dulu ya. Ditunggu :)`,`Makasih udah nunggu ya Kak aku ajuin pelaporan dulu dengan ID xxxxx ya. Nanti hasilnya bakal dikabarin sama tim kami lewat SMS/email ya :) Ditunggu maksimal 1x24 jam ya :) Ohiya, aku akhiri obrolan kita ya, Kaka jangan dulu tutup chatnya ya karena setelah ini juga ada pop-up survey yang lain. Dibantu isi ya Kak kalau Kaka merasa puas boleh banget isi dengan angka (10) dan seterusnya ya. Jangan sungkan buat chat aku lagi ya. Selamat lebaran. Hihi🤗💙💛💚`,`agungrohm
+`),l=c[c.length-1].match(/^(\d+)\.\s*/);if(!l)return;e.preventDefault();let u=Number(l[1])+1,d=o+`\n${u}. `+s;t.current=o.length+`\n${u}. `.length,i(a(d))},className:`border w-full h-screen p-2`,placeholder:`Isi note kamu.....`})}var xo=[`Hai Kak aku Odi temennya Nindy.`,`Kak maaf, aku cek dulu ya. Ditunggu :)`,`Aku cek dulu interaksinya ya nanti aku balik lagi :)`,`Makasih juga udah interaksi ya Kak :) Ohiya, aku akhiri obrolan kita ya, Kaka jangan dulu tutup chatnya ya karena setelah ini juga ada pop-up survey yang lain. Dibantu isi ya Kak kalau Kaka merasa puas boleh banget isi dengan angka (10) dan seterusnya ya. Makasih banget udah selalu setia sama by.U Kak :) `,`Makasih datanya. Aku cek dulu ya. Ditunggu :)`,`Makasih udah nunggu ya Kak aku ajuin pelaporan dulu dengan ID xxxxx ya. Nanti hasilnya bakal dikabarin sama tim kami lewat SMS/email ya :) Ditunggu maksimal 1x24 jam ya :) Ohiya, aku akhiri obrolan kita ya, Kaka jangan dulu tutup chatnya ya karena setelah ini juga ada pop-up survey yang lain. Dibantu isi ya Kak kalau Kaka merasa puas boleh banget isi dengan angka (10) dan seterusnya ya. Jangan sungkan buat chat aku lagi ya.  Hihi🤗💙💛💚`,`agungrohm
 Agung_byu3#
 d_deska_x@telkomsel.co.id 
 s*r!17#i
