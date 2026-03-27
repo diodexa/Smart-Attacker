@@ -169,6 +169,27 @@ Solusi : (segment: string) => segment ==='Email' ?
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
 8. Waktu dan Lama Kejadian : 
 9. Lokasi Kejadian :  
+
+============
+Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf mengenai kendala aplikasi Error bisa dicoba dulu cara berikut ya :
+1. Periksa juga pengaturan tanggal dan waktu gadget sudah sesuai
+2. Pastikan OS HP sudah merupakan versi paling update
+3. ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali, dan pastikan koneksi internet (termasuk kuota internet) ada
+4. Kalau masih nggak bisa, coba install ulang aplikasi by.U kakak
+
+Kalo masih kendala boleh lengkapi data berikut agar dibantu cek dulu :
+
+1. Nomor by.U : 
+2. Email akun by.U : 
+3. Tipe/merek Gadget : 
+4. Versi OS Gadget : 
+5. Versi aplikasi by.U : 
+6. Apakah bisa akses website byu.id di device yang sama menggunakan jaringan by.U atau jaringan lain :  
+7. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
+8. Waktu dan Lama Kejadian : 
+9. Lokasi Kejadian :  
+
+Silakan dicoba dulu ya Kak :)
 ` :
 
 `Makasih udah nunggu. Kak maaf, untuk kendala aplikasinya di nomor xxxxxx, aku cek ga ada info gangguan. Boleh coba dulu untuk ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih gak bisa, boleh coba install ulang aplikasi by.U kakak dan pastikan koneksi internet ada. Kalau di aplikasi masih berkendala, Kakak bisa coba akses di website by.U ya. Kalau udah tapi masih berkendala, boleh infoin data ini ya :
@@ -1990,9 +2011,8 @@ Halo, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk perubahan data 
 2. Alamat Email login by.U :
 3. NIK & NOK pelanggan baru :
 4. Foto KTP pelanggan baru :
-5. Foto selfie dengan KTP pelanggan baru :
-6. Surat pernyataan yang bisa minta ke email nindy@byu.id :
-7. Validasi tambahan :
+5. Surat pernyataan yang ada di lampiran :
+6. Validasi tambahan :
 
 Untuk validasi tambahannya bisa infoin salah satu dari data ini ya : 
 1. Tanggal dan jenis paket terakhir yang dibeli :
@@ -2000,7 +2020,7 @@ Untuk validasi tambahannya bisa infoin salah satu dari data ini ya :
 3. Nominal harga paket yang dibeli terakhir :
 4. 5 Transaksi terakhir (minimum 3 transaksi valid) :
 5. Tipe dan merk HP terakhir digunakan :
-Kirim nya ke email nindy@byu.id ya biar aman :)
+
 
 DISCLAIMER
 
@@ -2016,9 +2036,8 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 1. Alamat Email login by.U :
 2. NIK & NOK pelanggan baru :
 3. Foto KTP pelanggan baru :
-4. Foto selfie dengan KTP pelanggan baru :
-5. Surat pernyataan yang bisa minta ke email nindy@byu.id :
-6. Validasi tambahan :
+4. Surat pernyataan yang bisa minta ke email nindy@byu.id :
+5. Validasi tambahan :
 
 Untuk validasi tambahannya bisa infoin salah satu dari data ini ya : 
 1. Tanggal dan jenis paket terakhir yang dibeli :
@@ -2026,7 +2045,7 @@ Untuk validasi tambahannya bisa infoin salah satu dari data ini ya :
 3. Nominal harga paket yang dibeli terakhir :
 4. 5 Transaksi terakhir (minimum 3 transaksi valid) :
 5. Tipe dan merk HP terakhir digunakan :
-Kirim nya ke email nindy@byu.id ya biar aman :)
+
 
 DISCLAIMER
 
@@ -2050,9 +2069,8 @@ Perubahan data pelanggan
 2. Alamat Email login by.U : 
 3. nomor identitas & NOK pelanggan baru : 
 4. Foto identitas pelanggan baru : 
-5. Foto selfie dengan identitas pelanggan baru : 
-6. Surat pernyataan : 
-7. Validasi tambahan : 
+5. Surat pernyataan : 
+6. Validasi tambahan : 
 `   
 },
 
@@ -2074,9 +2092,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 3. NIK & NOK pelanggan baru :
 4. Foto KTP pelanggan lama :
 5. Foto KTP pelanggan baru :
-6. Foto selfie dengan KTP pelanggan baru :
-7. Surat pernyataan yang bisa minta ke email nindy@byu.id :
-Kirimnya ke email nindy@byu.id aja ya biar aman :)
+6. Surat pernyataan yang ada di lampiran:
+
 
 
 DISCLAIMER
@@ -2845,6 +2862,19 @@ Buat Android :
 - Daftarin Nomor KTP/NIK, dan KK kamu.
 - 1Tunggu sampai eSIM kamu berhasil di registrasi.
 Kalau Kakak terkendala buat aktivasinya, silakan buat konfirmasi lagi ya
+
+================
+Hi, Kak Akhyari. Saat ini udah terhubung dengan Nindy. Mengenai penggunaan nomor by.U tanpa kartu Kakak bisa
+pesen eSIM by.U via aplikasi dengan langkah-langkah di bawah ini yaa:
+1. Pilih "eSIM" pada login page
+2. Pilih perangkat yang akan kamu pakai untuk menggunakan eSIM
+3. Pilih kuota yang kamu mau
+4. Daftar akun by.U menggunakan nomor provider lain
+5. Pilih nomor eSIM by.U yang kamu mau
+6. Konfirmasi pesanan dan lakukan pembayaran
+7. Selanjutnya, kamu akan dikasih QR Code dengan profile eSIM yang bisa kamu download.
+
+Silakan dicoba dulu ya Kak :)
 `,
 Mandatory : ``
 },
@@ -3040,15 +3070,7 @@ Email akun by.U : --
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,
-Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
-1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
-2. Apakah terjadi di dalam Gedung atau di luar gedung?
-3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
-4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
-5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
-6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
-7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :)`,
+Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device atau sim card yang digunakan. Jika restart HP tidak menyelesaikan masalah, maka disarankan untuk ajuin ganti SIM card ya :) `,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
@@ -3842,41 +3864,7 @@ Kak maaf, untuk beli pulsa bisa lewat apps by.U dengan pilih menu isi pulsa pada
 Kak untuk beli SIM card/nomor baru bisa beli lewat apps/web by.U ya, nanti setelah pilih paket langsung masuk ke halaman pembayaran. Pilih nomor yang tersedia aja disana ya :)
 
 Kak untuk beli eSIM bisa lewat apps by.U langsung ya, pastiin pilih menu eSIM sebelum login/sign up :)`,
-Mandatory : (segment:string, DateTime:string) =>
-`#Pelangganbyu
-[NO] [byU ${segment}] 
-1. Nama Customer : Pelanggan 
-2. MSISDN-A Yang Menghubungi : xxxxxx
-3. MSISDN-B Yang Bermasalah : xxxxxx
-4. Tanggal/Jam Kejadian : ${DateTime} 
-5. Lokasi Pelanggan (alamat) : 
-6. Koordinat Customer : 
-7. Segmentasi Kartu :byU
-8. SIM Capability :USIM
-9. Customer Tier Pelanggan :-
-10. Case Owner :byU
-11. Detail Complaint : sinyal/internet
-12. Additional Information :
-    -dalam Gedung atau di luar gedung?
-    -semua lokasi atau hanya lokasi tertentu :
-    -Nomor lain yang berkendala sama :-
-    -bar sinyal dan 4G/3G/E :
-    -Aplikasi/web yang berkendala :
-    -CP :
-    -Tipe HP :
-13. Capture Bukti Pelanggan : linkcapture
-14. Capture CCA : linkcapture
-15. Hasil analisa CCA :
-    Possible Root Cause 
-    Kendala_Sinyal
-    Remarks
-    Bapak atau Ibu Yth, berdasarkan pengecekan di sistem kami, kendala Bapak atau Ibu saat ini dikarenakan BTS sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Terima kasih atas laporannya, kami akan segera eskalasi ke tim terkait.
-    Suggestion
-    SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi BTS mengalami gangguan sehingga pelanggan tidak dapat mengakses internet.
-16. Solusi Yang telah di berikan : tiket
-#CheckbyCCA
-
-` 
+Mandatory : `` 
 },
 
 {
@@ -3914,6 +3902,23 @@ Tidak Mendapatkan Langganan Youtube Premium
 ` 
 },
 
+{
+id: 86,
+case : "Closing",
+Bracket : (segment: string) =>`#Pelangganbyu
+[byU ${segment}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : closing
+Solusi : closing
+`,
+Solusi:  (segment: string) => segment ==='Live' ?  `Makasih juga udah interaksi ya Kak :) Ohiya, aku akhiri obrolan kita ya, Kaka jangan dulu tutup chatnya ya karena setelah ini juga ada pop-up survey yang lain. Dibantu isi ya Kak kalau Kaka merasa puas boleh banget isi dengan angka (10) dan seterusnya ya. Makasih banget udah selalu setia sama by.U Kak :)  sehat selalu :)
+`: `Oke, Kak. Kalau nantinya masih ada yang mau ditanyain lagi terkait layanan by.U-nya, jangan sungkan buat hubungi aku ya.Aku izin akhiri obrolan kita ya, Agar pelayanannya bisa lebih baik lagi nih Kak, bisa isi link berikut https://tsel.id/survey-byu . Boleh banget isi dengan angka (10) kalau merasa terbantu dan kalau merasa belum terbantu boleh di isi dari mulai angka (1) dan seterusnya, ya Kak.
+Nindy bakal tingkatin terus kualitas layanan by.U biar kamu seneng dan tetep setia sama by.U 💙`,
+Mandatory : 
+`
+` 
+},
 ]
 return Mandatory
 }
