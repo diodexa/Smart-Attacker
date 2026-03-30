@@ -417,9 +417,9 @@ DISCLAIMER
 
 Makasih udah nunggu. Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu UNREG SIM Card di akun berikut:
 1. Nomor by.U : xxxxxx
-2. Email: --
+2. Nomor Identitas KTP sesuai yang tercantum di sistem : 
 
-Nomor yang sudah berhasil di unregistrasi ga akan bisa diaktifkan kembali dalam kondisi apapun ya kak, lalu NIK yang terdaftar di nomor ini juga akan ikut terhapus. Kalo data diatas udah sesuai dan Kakak setuju boleh tolong konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :)
+Nomor yang sudah berhasil di unregistrasi ga akan bisa diaktifkan kembali dalam kondisi apapun ya kak, kuota/sisa pulsa akan hangus, lalu NIK yang terdaftar di nomor ini juga akan ikut terhapus. Kalo data diatas udah sesuai dan Kakak "SETUJU" boleh tolong konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :)
 
 Kak maaf, aku cek NIK yang Kakak infoin ga ada yang sesuai nih untuk nomor xxxxxx. Boleh infoin salah satu dari data ini ya biar bisa aku proses :
 1. Tanggal dan jenis paket terakhir yang dibeli.
@@ -1680,8 +1680,7 @@ Perubahan data pelanggan pindah tangan
 6. NOK pelanggan baru : 
 7. Foto identitas pelanggan lama : 
 8. Foto identitas pelanggan baru : 
-9. Foto selfie dengan identitas pelanggan baru : 
-10. Surper : 
+9.  Surper : 
 `},{id:42,case:`PUK`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
@@ -2569,6 +2568,8 @@ Aku tunggu datanya ya Kak :)
 3. Capture SMS :
 4. Tanggal dan waktu kejadian :
 5. Nomor pengirim Broadcast :
+
+Kak aku cek nomor xxxxxx, ada langganan SMS berbayar yang aktif nih. Saat ini udah aku bantu berhentiin langganannya ya. Boleh di cek notifikasi berhenti berlangganannya di SMS ya:) 
 `,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
