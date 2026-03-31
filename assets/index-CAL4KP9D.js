@@ -43,7 +43,7 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
 5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :
+8. Capture keterangan internet/sinyal berkendala 
 `:`Makasih udah nunggu. Kak maaf, untuk kendala internetnya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku cek : 
 1. Email akun by.U : 
 2. Lokasi detail kendala (kelurahan, kecamatan, kabupaten/kota) saat berkendala :
@@ -69,7 +69,7 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
 5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :
+8. Capture keterangan internet/sinyal berkendala :
 `,Mandatory:(e,t)=>`#Pelangganbyu
 [NO] [byU ${e}] 
 1. Nama Customer : Pelanggan 
@@ -2380,7 +2380,7 @@ Solusi : minta data
 5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
+8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
 [NO] [byU ${e}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
@@ -2605,7 +2605,7 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
 5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :`,Mandatory:(e,t)=>`#Pelangganbyu
+8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
 [NO] [byU ${e}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
@@ -2651,7 +2651,7 @@ Solusi : Minta data
 5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
+8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
 [NO] [byU ${e}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
@@ -2736,7 +2736,7 @@ Solusi : minta data
 5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
+8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
 [NO] [byU ${e}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
@@ -2890,7 +2890,7 @@ Solusi : minta data
 5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
+8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
 [NO] [byU ${e}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
@@ -2937,7 +2937,7 @@ Solusi : minta data
 5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
+8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
 [NO] [byU ${e}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
