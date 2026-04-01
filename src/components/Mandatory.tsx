@@ -39,7 +39,7 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
 5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :
+8. Capture keterangan internet/sinyal berkendala 
 ` :
 
 `Makasih udah nunggu. Kak maaf, untuk kendala internetnya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku cek : 
@@ -67,7 +67,7 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
 5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :
+8. Capture keterangan internet/sinyal berkendala :
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
@@ -500,9 +500,9 @@ DISCLAIMER
 
 Makasih udah nunggu. Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu UNREG SIM Card di akun berikut:
 1. Nomor by.U : xxxxxx
-2. Email: --
+2. Nomor Identitas KTP sesuai yang tercantum di sistem : 
 
-Nomor yang sudah berhasil di unregistrasi ga akan bisa diaktifkan kembali dalam kondisi apapun ya kak, lalu NIK yang terdaftar di nomor ini juga akan ikut terhapus. Kalo data diatas udah sesuai dan Kakak setuju boleh tolong konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :)
+Nomor yang sudah berhasil di unregistrasi ga akan bisa diaktifkan kembali dalam kondisi apapun ya kak, kuota/sisa pulsa akan hangus, lalu NIK yang terdaftar di nomor ini juga akan ikut terhapus. Kalo data diatas udah sesuai dan Kakak "SETUJU" boleh tolong konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :)
 
 Kak maaf, aku cek NIK yang Kakak infoin ga ada yang sesuai nih untuk nomor xxxxxx. Boleh infoin salah satu dari data ini ya biar bisa aku proses :
 1. Tanggal dan jenis paket terakhir yang dibeli.
@@ -2142,8 +2142,7 @@ Perubahan data pelanggan pindah tangan
 6. NOK pelanggan baru : 
 7. Foto identitas pelanggan lama : 
 8. Foto identitas pelanggan baru : 
-9. Foto selfie dengan identitas pelanggan baru : 
-10. Surper : 
+9.  Surper : 
 `   
 },
 
@@ -2809,7 +2808,7 @@ Mandatory : ``
 
 {
 id: 60,
-case : "Info Paket/ Harga paket berubah/jadi mahal/promo",
+case : "Info Paket/ Tarif Harga paket berubah/jadi mahal/promo",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
@@ -2823,6 +2822,8 @@ Solusi : `Kak, maaf ya udah dibuat ga nyaman, untuk harga paket yang tertera di 
 Kak maaf, kalau ga tersedia paket yang Kakak inginin, artinya penawaran paketnya udah ga ada. Kakak bisa pilih paket yang tersedia saat ini di apps by.U ya :)
 
 Kak maaf, aku cek nomor xxxxxx saat ini kuota internetnya udah habis, jadi gabisa internetan. Kakak bisa beli kuota baru di apps by.U pake wifi/jaringan lain dulu ya :)
+
+Maaf kak, saat ini ada penyesuaian tarif paket internet merupakan salah satu upaya by.U untuk tetap menjaga kualitas layanan kepada pelanggan. Nindy dan team akan terus tingkatin produk dan layanan by.U biar Kakak bisa selalu nyaman pakai by.U. Keep supporting us ya! :)
 `,
 Mandatory : ``
 },
@@ -3126,7 +3127,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya 
 5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :)`,
+8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
@@ -3352,6 +3353,8 @@ Aku tunggu datanya ya Kak :)
 3. Capture SMS :
 4. Tanggal dan waktu kejadian :
 5. Nomor pengirim Broadcast :
+
+Kak aku cek nomor xxxxxx, ada langganan SMS berbayar yang aktif nih. Saat ini udah aku bantu berhentiin langganannya ya. Boleh di cek notifikasi berhenti berlangganannya di SMS ya:) 
 `,
 Mandatory : (segment:string,DateTime:string)=> 
 `#Pelangganbyu
@@ -3396,7 +3399,7 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
 5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :`,
+8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
@@ -3451,7 +3454,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya 
 5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :)`,
+8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
@@ -3554,7 +3557,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya 
 5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :)`,
+8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
@@ -3754,7 +3757,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dikarenakan B
 5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :)`,
+8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
@@ -3810,7 +3813,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dikarenakan B
 5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
-8. Capture keterangan internet berkendala :)`,
+8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
@@ -3919,6 +3922,8 @@ Mandatory :
 `
 ` 
 },
+
+
 ]
 return Mandatory
 }
