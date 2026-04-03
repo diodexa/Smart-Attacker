@@ -644,16 +644,16 @@ Kak maaf, untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya bi
 6. Alasan ganti SIM Card : 
 
 ===========Di Apps ============
-Makasih udah nunggu. Kak maaf kalau maksudnya permintaan ganti SIM Card nya di nomor xxxxxx, silakan Kakak bisa lakukan prosesnya diApps by.U yaa, berikut cara melakukan permintaan ganti SIM Card-nya ya:
-1. Pastiin Versi aplikasi sudah yang terbaru yaa
-2. Log In ke apps by.U pake email akun by.U (bukan pakai nomor by.U)
+Makasih udah nunggu. Kak maaf, jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
+1. Pastiin Versi aplikasi sudah yang terbaru 
+2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak
 3. Masuk Ke profil by.U pojok kiri atas
-4. Scroll kebawah
-5. Klik Ganti SIM Card
-6. Ikuti proses prosedur ganti SIM Card
-7. Tunggu proses validasi dari tim by.U
-8. Kalo rikuesmu di terima, lanjutin prosesnya dan bisa Pilih Ambil (GraPARI)/Indomaret tanpa biaya pengambilan atau SIM Card diantar (Kurir JNE) dengan biaya Rp10.000 dan estimasi sampai makismal 7 hari kerja sesudah melakukan pembayaran.
-
+4. Scroll kebawah 
+5. Klik Ganti SIM Card 
+6. Ikuti proses prosedur ganti SIM Card 
+7. Pilih SIM Cardnya dikirim pake JNE dengan ongkir Rp10.000 atau pilih Ambil di GraPARI/Indomaret terdekat tanpa biaya pengambilan
+8. Tunggu proses validasi dari tim by.U
+9. Kalo rikuesmu di terima dan kakak pilih SIM Cardnya di kirim, tunggu SIM Cardnya sampai via JNE maksimal 7 hari kerja atau kalo kakak pilihnya diambil, kakak bisa langsung ambil SIM Cardnya di GraPARI/Indomaret yg sebelumnya dipilih
 ====================legacy============================
 Kak maaf, aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
 
