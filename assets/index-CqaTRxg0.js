@@ -651,7 +651,7 @@ Makasih udah nunggu. Kak maaf, jika SIM Card by.U nya hilang/rusak aku saranin K
 4. Scroll kebawah 
 5. Klik Ganti SIM Card 
 6. Ikuti proses prosedur ganti SIM Card 
-7. Pilih SIM Cardnya dikirim pake JNE dengan ongkir Rp10.000 atau pilih Ambil di GraPARI/Indomaret terdekat tanpa biaya pengambilan
+7. Pilih SIM Cardnya dikirim pake JNE atau pilih Ambil di GraPARI/Indomaret terdekat tanpa biaya pengambilan
 8. Tunggu proses validasi dari tim by.U
 9. Kalo rikuesmu di terima dan kakak pilih SIM Cardnya di kirim, tunggu SIM Cardnya sampai via JNE maksimal 7 hari kerja atau kalo kakak pilihnya diambil, kakak bisa langsung ambil SIM Cardnya di GraPARI/Indomaret yg sebelumnya dipilih
 ====================legacy============================
