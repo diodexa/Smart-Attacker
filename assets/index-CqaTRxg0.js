@@ -1942,6 +1942,7 @@ Solusi : minta data
 `,Solusi:` Makasih udah nungu. Kak maaf sepertinya ada kendala nih untuk  SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. SN kartu pengganti yang ada di dekat barcode cangkang SIM card :
+3. Capture keterangan gabisa aktivasi SIM card:
 `,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
@@ -1951,7 +1952,7 @@ SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan
 1. Nomor by.U : xxxxxx
 2. Akun by.U : 
 3. SN Kartu Pengganti :
-4. Capture SIM Card tidak terdeteksi : (khusus kendala SIM Card tidak terdeteksi dan status aktif. Jika kendalanya gagal pairing/belum dipairing dengan status suspend, maka tidak perlu dimintakan)`},{id:50,case:` greeting`,Bracket:e=>`#Pelangganbyu
+4. Capture SIM Card tidak terdeteksi : `},{id:50,case:` greeting`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email by.U : --
@@ -2359,9 +2360,9 @@ Solusi : sesuai hasil cca disarankan ganti SIM card
     Possible Root Cause 
     UE_Handset_Problem_4G
     Remarks
-    Bapak atau Ibu Yth, kendala Bapak atau Ibu saat ini disebabkan oleh BTS yang sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Terima kasih atas laporannya kami akan segera eskalasi ke tim terkait
+    Bapak atau Ibu Yth, setelah melakukan pengecekan di sistem kami. Ditemukan issue pada device atau sim card yang digunakan. Jika restart device tidak menyelesaikan masalah maka disarankan untuk mengganti nomor sim ke Grapari
     Suggestion
-    SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi masalah pada jaringan yang lambat.
+    TIDAK PERLU CREATE TIKET KE TIM NETWORK. Adanya indikasi sim card atau handphone pelanggan bermasalah, anjurkan pelanggan untuk restart handphone. Jika masalah tetap ada, anjurkan pelanggan untuk mengganti sim card pada Grapari terdekat.
 16. Solusi Yang telah di berikan : restart HP dan arahin ganti SIM card
 #CheckbyCCA
 
