@@ -498,7 +498,7 @@ Gagal Aktivasi eSIM Account Status Tidak Sesuai
 [byU ${e}]
 Nomor by.U : xxxxxx
 Email by.U : --
-Detail case : Sinyal lemah/tidak stabil/Tidak ada sinyal
+Detail case : Sinyal
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala sinyalnya, boleh infoin data ini ya biar bisa aku cek :
 1. Nomor by.U : 
@@ -603,14 +603,16 @@ Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ganti SIM card ny
 2. Email akun by.U
 3. NIK yang didaftarin
 
-Hi, Kak . Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM card nya boleh infoin data ini ya :
-1. Email akun by.U : 
-2. Nomor by.U : 
-3. Nomor Identitas valid : 
-4. Scan/Foto KTP asli : 
-5. Nama & nomor penerima : 
-6. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
-7. Alasan ganti SIM Card : 
+Hi, Kak . Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM card nya, jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
+1. Pastiin Versi aplikasi sudah yang terbaru 
+2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak
+3. Masuk Ke profil by.U pojok kiri atas
+4. Scroll kebawah 
+5. Klik Ganti SIM Card 
+6. Ikuti proses prosedur ganti SIM Card 
+7. Pilih SIM Cardnya dikirim pake JNE atau pilih Ambil di GraPARI/Indomaret terdekat tanpa biaya pengambilan
+8. Tunggu proses validasi dari tim by.U
+9. Kalo rikuesmu di terima dan kakak pilih SIM Cardnya di kirim, tunggu SIM Cardnya sampai via JNE maksimal 7 hari kerja atau kalo kakak pilihnya diambil, kakak bisa langsung ambil SIM Cardnya di GraPARI/Indomaret yg sebelumnya dipilih
 
 ====================legacy============================
 Kak maaf, aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
@@ -644,7 +646,7 @@ Kak maaf, untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya bi
 6. Alasan ganti SIM Card : 
 
 ===========Di Apps ============
-Makasih udah nunggu. Kak maaf, jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
+Makasih udah nunggu. Kak maaf kalau maksudnya permintaan ganti SIM Card nya di nomor xxxxxx,  jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
 1. Pastiin Versi aplikasi sudah yang terbaru 
 2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak
 3. Masuk Ke profil by.U pojok kiri atas
@@ -3018,6 +3020,97 @@ Solusi : closing
 `,Solusi:e=>e===`Live`?`Makasih juga udah interaksi ya Kak :) Ohiya, aku akhiri obrolan kita ya, Kaka jangan dulu tutup chatnya ya karena setelah ini juga ada pop-up survey yang lain. Dibantu isi ya Kak kalau Kaka merasa puas boleh banget isi dengan angka (10) dan seterusnya ya. Makasih banget udah selalu setia sama by.U Kak :)  sehat selalu :)
 `:`Oke, Kak. Kalau nantinya masih ada yang mau ditanyain lagi terkait layanan by.U-nya, jangan sungkan buat hubungi aku ya.Aku izin akhiri obrolan kita ya, Agar pelayanannya bisa lebih baik lagi nih Kak, bisa isi link berikut https://tsel.id/survey-byu . Boleh banget isi dengan angka (10) kalau merasa terbantu dan kalau merasa belum terbantu boleh di isi dari mulai angka (1) dan seterusnya, ya Kak.
 Nindy bakal tingkatin terus kualitas layanan by.U biar kamu seneng dan tetep setia sama by.U 💙`,Mandatory:`
+`},{id:87,case:`Pengambilan SIM card di GraPARI`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : Pengambilan SIM card di GraPARI
+Solusi : minta data
+`,Solusi:e=>e===`Email`?`
+Hi, Kak Dalela. Saat ini udah terhubung dengan Nindy. Maaf mengenai kendala pengambilan SIM Card baru di GraPARI, boeh infoin data berikut agar dibantu cek dulu ya :
+
+
+1. Email dan Nomor by.U customer:
+2. Bukti bayar:
+3. Capture pengambilan kartu:
+4. Nama dan alamat booth/grapari/outlet:
+5. Nama dan nomor penerima:
+
+Aku tunggu datanya ya Kak :)
+`:`
+Makasih udah nunggu. Kak maaf, untuk pengambilan SIM card nya kalau berkendala, Kakak bisa ke GraPARI lain ya dengan tunjukin halaman pengambilan SIM card nya yang saat ini :)
+
+Oke Kak untuk pengajuan pengirimannya di nomor xxxxxx boleh infoin data ini ya :
+1. Email akun by.U:
+2. Bukti bayar:
+3. Capture pengambilan kartu:
+4. Nama dan alamat booth/grapari/outlet:
+5. Nama dan nomor penerima:
+6. Alamat lengkap (nama jalan, no rumah, RT/RW, Kelurahan. Kecamatan, kabupaten/kota, patokan lokasi dan kode POS) :
+
+(kalau sim card pengganti gausah bukti bayar)
+
+`,Mandatory:(e,t)=>`#Pelangganbyu
+[byU ${e}] 
+Pelanggan by.U
+${t} 
+Pick Up GRAPARI tutup
+
+1. Email by.u :
+2. Nomor by.U :
+3. Bukti bayar: 
+4. Capture pengambilan kartu: 
+5. Nama dan alamat booth/grapari/outlet: 
+6. Nama dan nomor penerima: 
+7. Alamat lengkap (nama jalan, no rumah, RT/RW, Kelurahan. Kecamatan, kabupaten/kota, patokan lokasi dan kode POS) :
+8. Order detail ID (CXO) (Pengecekan OperatorX) :
+9. Transaction ID (CXT) (Pengecekan OperatorX) :
+
+`},{id:88,case:`Keluhan sinyal di Luar Negeri Roaming`,Bracket:e=>`#Pelangganbyu
+[byU ${e}]
+Nomor by.U : xxxxxx
+Email by.U : --
+Detail case : gabisa sinyal roaming
+Solusi : minta data
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala gabisa internet di luar negeri,boleh infoin data ini ya biar bisa aku cek :
+1. Nomor by.U :
+2. Email akun by.U :
+3. Tanggal dan waktu kejadian sejak kapan :
+4. Jaringan/operator negara setempat yang digunakan :
+5. Capture setting APN di HP :
+6. Capture sinyal:
+`:`Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
+1. Email akun by.U :
+2. Tanggal dan waktu kejadian sejak kapan :
+3. Jaringan/operator negara setempat yang digunakan :
+4. Capture setting APN di HP :
+5. Capture sinyal yang didapat :
+
+Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif  dan punya kuota roaming, serta kondisi jaringan di lokasi negara Kakak ga ada info gangguan. Bisa dicoba langkah-langkah ini ya kak :
+1. Coba ON-kan airplane mode dan OFF-kan kembali, OFF-kan mobile data dan ON-kan kembali.
+2. Lakukan refresh jaringan :
+ Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih operator yang bekerja sama dengan Telkomsel, yaitu STC
+ iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
+3. Isi APN dengan "byu", username dan password kosongkan.
+4.Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.
+
+Jika cara di atas sudah dicoba dan akses internet tetap bermasalah, tolong hubungi kita lagi. Terima kasih`,Mandatory:(e,t)=>`#Pelangganbyu
+[byU ${e}] 
+Pelanggan by.U
+${t} 
+Tidak ada sinyal di Luar Negeri
+
+1. nomor by.U : xxxxxx
+2. Akun by.U : 
+3. Lokasi negara : 
+4. Tanggal dan waktu kendala : 
+5. Jaringan/operator negara setempat yang digunakan : 
+6. Jenis device/hp yang dipakai : 
+7. Gangguan sinyal terjadi sepanjang hari atau pada waktu tertentu aja : 
+8. Jaringan yang digunakan apa? 2G, 4G, 5G? : 
+9. Email aktif yang bisa dihubungi : 
+10. Capture APN  : 
+11. Capture bar sinyal yang didapat : 
 `}];var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e,selectedId:t})=>{let n=e=>e??``,r=Xa().slice().sort((e,t)=>n(e.case).toLocaleLowerCase().localeCompare(n(t.case).toLocaleLowerCase()));return(0,L.jsx)(qa,{options:r.map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),value:r.map(e=>({value:e.id,label:e.case})).find(e=>e.value===t)||null,styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),r(!0),setTimeout(()=>r(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,L.jsx)(`p`,{className:` ${n?`invisible!`:`visible`}`,children:n?`copy!`:t}),(0,L.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,n?`anjay`:``,` `]})]})};function eo(){let e=(0,l.useRef)([]),t=(0,l.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var to=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=eo(),c=e=>{let t=e.split(`
