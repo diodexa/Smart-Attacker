@@ -612,7 +612,7 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : --
-Detail case : Sinyal lemah/tidak stabil/Tidak ada sinyal
+Detail case : Sinyal
 Solusi : minta data
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
@@ -732,14 +732,16 @@ Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ganti SIM card ny
 2. Email akun by.U
 3. NIK yang didaftarin
 
-Hi, Kak . Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM card nya boleh infoin data ini ya :
-1. Email akun by.U : 
-2. Nomor by.U : 
-3. Nomor Identitas valid : 
-4. Scan/Foto KTP asli : 
-5. Nama & nomor penerima : 
-6. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
-7. Alasan ganti SIM Card : 
+Hi, Kak . Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM card nya, jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
+1. Pastiin Versi aplikasi sudah yang terbaru 
+2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak
+3. Masuk Ke profil by.U pojok kiri atas
+4. Scroll kebawah 
+5. Klik Ganti SIM Card 
+6. Ikuti proses prosedur ganti SIM Card 
+7. Pilih SIM Cardnya dikirim pake JNE atau pilih Ambil di GraPARI/Indomaret terdekat tanpa biaya pengambilan
+8. Tunggu proses validasi dari tim by.U
+9. Kalo rikuesmu di terima dan kakak pilih SIM Cardnya di kirim, tunggu SIM Cardnya sampai via JNE maksimal 7 hari kerja atau kalo kakak pilihnya diambil, kakak bisa langsung ambil SIM Cardnya di GraPARI/Indomaret yg sebelumnya dipilih
 
 ====================legacy============================
 Kak maaf, aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
@@ -774,16 +776,16 @@ Kak maaf, untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya bi
 6. Alasan ganti SIM Card : 
 
 ===========Di Apps ============
-Makasih udah nunggu. Kak maaf kalau maksudnya permintaan ganti SIM Card nya di nomor xxxxxx, silakan Kakak bisa lakukan prosesnya diApps by.U yaa, berikut cara melakukan permintaan ganti SIM Card-nya ya:
-1. Pastiin Versi aplikasi sudah yang terbaru yaa
-2. Log In ke apps by.U pake email akun by.U (bukan pakai nomor by.U)
+Makasih udah nunggu. Kak maaf kalau maksudnya permintaan ganti SIM Card nya di nomor xxxxxx,  jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
+1. Pastiin Versi aplikasi sudah yang terbaru 
+2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak
 3. Masuk Ke profil by.U pojok kiri atas
-4. Scroll kebawah
-5. Klik Ganti SIM Card
-6. Ikuti proses prosedur ganti SIM Card
-7. Tunggu proses validasi dari tim by.U
-8. Kalo rikuesmu di terima, lanjutin prosesnya dan bisa Pilih Ambil (GraPARI)/Indomaret tanpa biaya pengambilan atau SIM Card diantar (Kurir JNE) dengan biaya Rp10.000 dan estimasi sampai makismal 7 hari kerja sesudah melakukan pembayaran.
-
+4. Scroll kebawah 
+5. Klik Ganti SIM Card 
+6. Ikuti proses prosedur ganti SIM Card 
+7. Pilih SIM Cardnya dikirim pake JNE atau pilih Ambil di GraPARI/Indomaret terdekat tanpa biaya pengambilan
+8. Tunggu proses validasi dari tim by.U
+9. Kalo rikuesmu di terima dan kakak pilih SIM Cardnya di kirim, tunggu SIM Cardnya sampai via JNE maksimal 7 hari kerja atau kalo kakak pilihnya diambil, kakak bisa langsung ambil SIM Cardnya di GraPARI/Indomaret yg sebelumnya dipilih
 ====================legacy============================
 Kak maaf, aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
 
@@ -3922,6 +3924,118 @@ Nindy bakal tingkatin terus kualitas layanan by.U biar kamu seneng dan tetep set
 Mandatory : 
 `
 ` 
+},
+
+{
+id: 87,
+case : "Pengambilan SIM card di GraPARI",
+Bracket : (segment: string) =>`#Pelangganbyu
+[byU ${segment}]
+Nomor by.U : xxxxxx
+Email akun by.U : --
+Detail case : Pengambilan SIM card di GraPARI
+Solusi : minta data
+`,
+Solusi:  (segment: string) => segment ==='Email' ?  `
+Hi, Kak Dalela. Saat ini udah terhubung dengan Nindy. Maaf mengenai kendala pengambilan SIM Card baru di GraPARI, boeh infoin data berikut agar dibantu cek dulu ya :
+
+
+1. Email dan Nomor by.U customer:
+2. Bukti bayar:
+3. Capture pengambilan kartu:
+4. Nama dan alamat booth/grapari/outlet:
+5. Nama dan nomor penerima:
+
+Aku tunggu datanya ya Kak :)
+`: `
+Makasih udah nunggu. Kak maaf, untuk pengambilan SIM card nya kalau berkendala, Kakak bisa ke GraPARI lain ya dengan tunjukin halaman pengambilan SIM card nya yang saat ini :)
+
+Oke Kak untuk pengajuan pengirimannya di nomor xxxxxx boleh infoin data ini ya :
+1. Email akun by.U:
+2. Bukti bayar:
+3. Capture pengambilan kartu:
+4. Nama dan alamat booth/grapari/outlet:
+5. Nama dan nomor penerima:
+6. Alamat lengkap (nama jalan, no rumah, RT/RW, Kelurahan. Kecamatan, kabupaten/kota, patokan lokasi dan kode POS) :
+
+(kalau sim card pengganti gausah bukti bayar)
+
+`,
+Mandatory : (segment: string, DateTime:string) =>
+`#Pelangganbyu
+[byU ${segment}] 
+Pelanggan by.U
+${DateTime} 
+Pick Up GRAPARI tutup
+
+1. Email by.u :
+2. Nomor by.U :
+3. Bukti bayar: 
+4. Capture pengambilan kartu: 
+5. Nama dan alamat booth/grapari/outlet: 
+6. Nama dan nomor penerima: 
+7. Alamat lengkap (nama jalan, no rumah, RT/RW, Kelurahan. Kecamatan, kabupaten/kota, patokan lokasi dan kode POS) :
+8. Order detail ID (CXO) (Pengecekan OperatorX) :
+9. Transaction ID (CXT) (Pengecekan OperatorX) :
+
+` 
+},
+
+{
+id: 88,
+case : "Keluhan sinyal di Luar Negeri Roaming",
+
+Bracket : (segment: string) =>`#Pelangganbyu
+[byU ${segment}]
+Nomor by.U : xxxxxx
+Email by.U : --
+Detail case : gabisa sinyal roaming
+Solusi : minta data
+`,
+Solusi : (segment: string) => segment ==='Email' ? 
+`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala gabisa internet di luar negeri,boleh infoin data ini ya biar bisa aku cek :
+1. Nomor by.U :
+2. Email akun by.U :
+3. Tanggal dan waktu kejadian sejak kapan :
+4. Jaringan/operator negara setempat yang digunakan :
+5. Capture setting APN di HP :
+6. Capture sinyal:
+` :
+`Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
+1. Email akun by.U :
+2. Tanggal dan waktu kejadian sejak kapan :
+3. Jaringan/operator negara setempat yang digunakan :
+4. Capture setting APN di HP :
+5. Capture sinyal yang didapat :
+
+Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif  dan punya kuota roaming, serta kondisi jaringan di lokasi negara Kakak ga ada info gangguan. Bisa dicoba langkah-langkah ini ya kak :
+1. Coba ON-kan airplane mode dan OFF-kan kembali, OFF-kan mobile data dan ON-kan kembali.
+2. Lakukan refresh jaringan :
+ Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih operator yang bekerja sama dengan Telkomsel, yaitu STC
+ iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
+3. Isi APN dengan "byu", username dan password kosongkan.
+4.Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.
+
+Jika cara di atas sudah dicoba dan akses internet tetap bermasalah, tolong hubungi kita lagi. Terima kasih`,
+Mandatory : (segment: string,DateTime: string ) =>
+`#Pelangganbyu
+[byU ${segment}] 
+Pelanggan by.U
+${DateTime} 
+Tidak ada sinyal di Luar Negeri
+
+1. nomor by.U : xxxxxx
+2. Akun by.U : 
+3. Lokasi negara : 
+4. Tanggal dan waktu kendala : 
+5. Jaringan/operator negara setempat yang digunakan : 
+6. Jenis device/hp yang dipakai : 
+7. Gangguan sinyal terjadi sepanjang hari atau pada waktu tertentu aja : 
+8. Jaringan yang digunakan apa? 2G, 4G, 5G? : 
+9. Email aktif yang bisa dihubungi : 
+10. Capture APN  : 
+11. Capture bar sinyal yang didapat : 
+`   
 },
 
 
