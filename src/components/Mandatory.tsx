@@ -4001,7 +4001,7 @@ Solusi : (segment: string) => segment ==='Email' ?
 5. Capture setting APN di HP :
 6. Capture sinyal:
 ` :
-`Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
+`Makasih udah nunggu. Kak maaf untuk kendala sinyal di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
 2. Tanggal dan waktu kejadian sejak kapan :
 3. Jaringan/operator negara setempat yang digunakan :
