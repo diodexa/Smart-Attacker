@@ -151,6 +151,8 @@ Solusi :  minta data
 8. Waktu dan Lama Kejadian : 
 9. Lokasi Kejadian :  
 
+Aku tunggu datanya ya :)
+
 ============
 Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf mengenai kendala aplikasi Error bisa dicoba dulu cara berikut ya :
 1. Periksa juga pengaturan tanggal dan waktu gadget sudah sesuai
@@ -247,6 +249,8 @@ Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan be
 9. Capture Keterangan gagal yang muncul saat menerima atau mengirim SMS : 
 10. Nomor lain yang bisa dihubungi : 
 11. Nomor tujuan saat menerima atau mengirim SMS : 
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf banget nih untuk kendala SMS nya di nomor xxxxxx. Boleh coba panduan ini dulu ya :
 1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
 2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 
@@ -299,6 +303,8 @@ Solusi : minta data
 7. Kendala terjadi hanya saat menerima panggilan, melakukan panggilan, atau keduanya :
 8. Kendala terjadi hanya ke nomor tertentu atau semua nomor :
 9. Nomor lain yang bisa dihubungi : 
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf, untuk kendala teleponnya di nomor xxxxxx , boleh pastiin dulu kakak berada dalam lokasi yang mendapatkan sinyal by.U dan sudah mencoba on-off-kan airplane mode. kalau masih gabisa, boleh infoin data ini ya :
 1. Email akun by.U :
 2. Printscreen dashboard di apps dan keterangan sinyal : 
@@ -346,6 +352,8 @@ Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan be
 6. Capture dashboard di apps dan keterangan sinyal : 
 7. Capture keterangan gagal yang muncul saat melakukan request/menerima OTP : 
 8. Keterangan gagal yang muncul saat melakukan request/menerima OTP :
+
+Aku tunggu datanya ya :)
 `:`Kak maaf banget nih untuk kendala kode OTP nya di nomor xxxxxx. Boleh coba panduan ini dulu ya :
 1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
 2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 
@@ -475,6 +483,8 @@ Solusi : minta data
 3.Nomor yang bisa dihubungi : 
 4.Email yang bisa dihubungi : 
 5.Capture gagal aktivasi di apps : 
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf, untuk kendala eSIM di nomor xxxxxx , aku cek ada kendala nih dari proses aktivasinya. Boleh infoin data ini ya biar bisa aku proses :
 1.Email akun by.U : 
 2.Nomor yang bisa dihubungi : 
@@ -603,6 +613,8 @@ Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ganti SIM card ny
 2. Email akun by.U
 3. NIK yang didaftarin
 
+Aku tunggu datanya ya :)
+
 Hi, Kak . Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM card nya, jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
 1. Pastiin Versi aplikasi sudah yang terbaru 
 2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak
@@ -698,6 +710,8 @@ Solusi : minta data
 4. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) :
 5. Capture pengecekan nomor resi di web tracking JNE : 
 6. Konfirmasi dari JNE (jika Kakak sempat komplain ke JNE) :
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari proses pengantarannya. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. Nama dan Nomor Penerima :
@@ -730,6 +744,8 @@ Solusi : minta data
 4. Nama Penerima : 
 5. Nomor Penerima : 
 6. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) : 
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari aplikasinya jadinya SIM card Kakak belum di kirimin. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Capture bukti pembayaran : 
@@ -871,7 +887,9 @@ Solusi : minta data
 2. Email akun by.U : 
 3. Kuota berapa bulan yang belum didapatkan (3, 6, 9, atau 12 bulan) : 
 4. Tanggal aktivasi nomor by.U : 
-5. Capture halaman Reward (Sudah dan Belum Terpakai) : 
+5. Capture halaman Reward (Sudah dan Belum Terpakai) :
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf, untuk kendala ga dapat kuota Monthversary di nomor xxxxxx, boleh infoin aku data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Kuota berapa bulan yang belum didapatkan (3, 6, 9, atau 12 bulan) : 
@@ -906,6 +924,8 @@ Solusi : minta data
 5. Capture dashboard apps :
 6. Capture kirim atau terima SMS ke nomor lain berhasil :
 7. Capture keterangan gagal aktivasi fitur banking :
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf, untuk kendala fitur banking nya di nomor xxxxxx, pastiin cuma ada SIM Card by.U di hp saat aktivasi fitur banking tersebut dan terkoneksi dengan jaringan by.U. Kalau masih tidak bisa, boleh tolong infokan beberapa data berikut agar dapat dibantu pengecekan :
 1. Email akun by.U :
 2. Rincian keluhan :
@@ -936,6 +956,7 @@ Solusi : minta data
 1. Nomor by.U :
 2. Email akun by.U :
 3. Capture bukti pembayaran :
+
 Aku tunggu datanya ya :)
 
 Oke Kak, untuk bukti bayar yang di Shopee dengan tertera Merchant Reff IDnya silahkan coba cara ini :
@@ -979,6 +1000,8 @@ Solusi : minta data
 3. Capture Gagal/berhasil Aktivasi via SMS :
 4. SN barcode yang ada di cangkang SIM Card :
 5. CP dan Email yang bisa dihubungi :
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf untuk kendala gabisa aktivasi/registrasi di nomor xxxxxx, aku cek nomornya belum berhasil di aktivasi nih. Kalau nomornya udah sesuai dengan yang di bagian depan bungkus SIM card, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
 1. NIK & NOKK :
 2. Capture Gagal/berhasil Aktivasi via SMS :
@@ -1041,6 +1064,8 @@ Solusi : minta data
 4. Capture notifikasi berhasil aktivasi :
 5. Tanggal pembelian paket:
 6. Tipe HP :
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf, untuk kendala langganan weTV nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Capture Akun profile di aplikasi WeTV (yang tertera keterangan Membership/Berlangganan) :
@@ -1075,6 +1100,8 @@ Solusi : minta data
 6. Nama penerima : 
 7. Nomor penerima : 
 8. Alamat pengiriman :
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf, untuk kendala SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
 1. Akun by.U : 
 2. Capture Keterangan Gagal Aktivasi : 
@@ -1141,6 +1168,8 @@ Solusi : minta data
 7. Jumlah kuota awal dan kuota akhir :
 8. Capture data usage :
 9. Capture dashboard apps by.U (yang ada detail pemakaian Data) : 
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf untuk kendala penggunaan kuota yang ga sesuai di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U:
 2. Tanggal waktu kejadian :
@@ -1204,6 +1233,8 @@ Solusi : minta data
 4. Tanggal penukaran U-Coin : 
 5. Capture bukti redeem di halaman Reward Saya : 
 6. Capture kendala penukaran : 
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Jenis voucher yang ditukarkan : 
@@ -1240,6 +1271,8 @@ Solusi : minta data
 9. NIK KTP Valid : 
 10. Foto KTP : 
 11. Foto selfie KTP : 
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf, untuk ganti SIM card nya karena gabisa di GraPARI di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Nama Pelanggan/pengunjung : 
 2. Email aktif yang bisa dihubungi : 
@@ -1284,6 +1317,8 @@ Solusi : minta data
 6. Capture Sinyal :
 7. Capture settingan eSIM di handphone :
 8. Capture bukti pembayaran : 
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf untuk kendala eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
 2. Tipe/Merek Gadget :
@@ -1319,6 +1354,8 @@ Solusi : minta data
 3. Nomor yang bisa dihubungi : 
 4. Email yang bisa dihubungi : 
 5. Capture bukti pembayaran : 
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf untuk barcode/qr eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Nomor yang bisa dihubungi : 
@@ -1402,6 +1439,8 @@ Solusi : minta data
 5. Capture speedtest :
 6. Capture setting APN di HP :
 7. Lokasi negara :
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
 2. Tanggal dan waktu kejadian sejak kapan :
@@ -1449,6 +1488,8 @@ Solusi : minta data
 3. Pulsa awal dan pulsa akhir :
 4. Tipe Hp :
 5. Tanggal dan Waktu kejadian :
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu Kak. Maaf nih untuk kendala pulsa yang berkurang tiba-tiba di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun By.U :
 2. Pulsa awal dan pulsa akhir :
@@ -1576,6 +1617,8 @@ Untuk validasi tambahannya bisa infoin salah satu dari data ini ya :
 4. 5 Transaksi terakhir (minimum 3 transaksi valid) :
 5. Tipe dan merk HP terakhir digunakan :
 
+Aku tunggu datanya ya :)
+
 
 DISCLAIMER
 
@@ -1637,6 +1680,8 @@ Solusi : minta data
 5. Foto KTP pelanggan baru :
 6. Surat pernyataan yang ada di lampiran:
 
+Aku tunggu datanya ya :)
+
 
 
 DISCLAIMER
@@ -1694,6 +1739,8 @@ Solusi : minta data
 2. Alamat email akun by.U :
 3. NIK yang terdaftar :
 
+Aku tunggu datanya ya :)
+
 Makasih udah nunggu. Kak untuk permintaan kode PUK, boleh infoin data ini ya biar bisa aku bantu :
 1. Nomor by.U :
 1. NIK yang terdaftar :
@@ -1704,6 +1751,8 @@ Untuk validasi tambahannya Kakak bisa isi salah satu dari data ini ya :
 3. Nominal harga paket yang dibeli terakhir.
 4. 5 Transaksi terakhir (minimum 3 transaksi valid)
 5. Tipe dan merk HP terakhir digunakan.
+
+Aku tunggu datanya ya :)
 
 
 Makasih udah nunggu. Kak untuk permintaan kode PUK 1 di nomor xxxxxx adalah 1111111. Silakan bisa input PUK 1 dan diikuti memasukkan PIN baru 4 digit angka secara acak dan mudah diingat. Untuk syarat dan ketentuannya sebagai berikut Kak:
@@ -1744,6 +1793,8 @@ Solusi : minta data
 5. Tipe topping Zoom yang dibeli :
 6. Capture SMS dari TSELZOOM :
 7. Capture halaman profil di aplikasi web ZOOM :
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf untuk ga dapat langganan Zoom nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Capture detail riwayat transaksi pembelian topping Zoom :
@@ -1778,6 +1829,8 @@ Solusi : minta data
 4. Capture sms dari Netlfix atau 9943 (kalau ada) :
 5. Capture notifikasi berhasil aktivasi di aplikasi :
 6. Capture kendala :
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf untuk ga dapat langganan Netflix nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Tanggal pembelian paket :
@@ -1818,6 +1871,8 @@ Solusi : minta data
 4. Tipe topping Vidio yang dibeli :
 5. Capture SMS dari 97080 :
 6. Capture halaman paket subscription di aplikasi Vidio :
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf untuk ga dapat langganan Vidio nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Capture detail riwayat transaksi pembelian topping Vidio :
@@ -1851,6 +1906,8 @@ Solusi : minta data
 3. Capture profile di aplikasi by.U :
 4. Capture halaman notifikasi di apps by.U :
 5. Capture halaman paket aktif :
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf untuk ga dapat kuota bonus birthday di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Capture profile di aplikasi by.U :
@@ -1883,6 +1940,8 @@ Solusi : minta data
 5. Serial Number Voucher Fisik :
 6. Capture keterangan gagal redeem voucher :
 7. Foto Voucher fisik :
+
+Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
 2. Nama Paket Kuota :
@@ -1913,6 +1972,21 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : Sponsorship
 Solusi : diteruskan ke email  event@byu.id
+
+Hi, Kak. Saat ini udah terhubung dengan Nindy. Terkait pengajuan Sponsorship/kerjasama udah aku bantu ajuin dulu ke tim terkait, kalo sesuai akan dihubungi melalui CPnya ya :)
+
+
+Hi, Kak. Saat ini udah terhubung dengan Nindy. Terkait pengajuan Sponsorship/kerjasama bisa lampirkan juga data berikut agar dibantu teruskan dulu ke tim terkait ya:
+
+1. Subject email : Pengajuan Kerjasama/Sponsorship
+
+1. Isi email sertakan 
+- Nama Lengkap :
+- Contact Person : 
+- Lampiran Data Pendukung :
+(Lampiran Proposal)
+
+Aku tunggu datanya ya Kak :)
 `:`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
@@ -2017,6 +2091,8 @@ Solusi : minta data
 3. Channel Pembayaran : 
 4. Tanggal & Waktu Kejadian : 
 5. Capture Detail Riwayat Transaksi Kuota yang hilang : 
+
+Aku tunggu datanya ya Kak :)
 `:`Makasih udah nunggu. Kak maaf, untuk kendala kuotanya di nomor xxxxxx , boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Channel Pembayaran : 
@@ -2046,6 +2122,8 @@ Solusi : minta data
 2. Email akun by.U : 
 3. Capture keterangan detail transaksi yang u-coinnya tidak masuk :
 4. Capture Halaman Histori U-Coin Terkumpul :
+
+Aku tunggu datanya ya Kak :)
 `:`Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Capture keterangan detail transaksi yang u-coinnya tidak masuk :
@@ -2113,6 +2191,8 @@ Solusi : minta data
 4. Tipe topping Prime Video yang dibeli :
 5. Tanggal pembelian topping Prime Video :
 6. Capture kendala :
+
+Aku tunggu datanya ya Kak :)
 `:`Makasih udah nunggu. Kak maaf, untuk ga dapat langganan Prime Video nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Capture detail/daftar transaksi pembelian topping Prime Video di aplikasi by.U :
@@ -2213,7 +2293,9 @@ Jika masih berkendala, boleh infokan beberapa data di bawah ini supaya bisa diba
 3. Lokasi (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi) :
 4. Tipe HP :
 5. Capture kendala di web https://my.telkomsel.com/provisioning/5g :
-6. Capture settingan APN
+6. Capture settingan APN :
+
+Aku tunggu datanya ya Kak :)
 `:`Kak makasih udah nunggu. Kak maaf, untuk kendala 5G nya di nomor xxxxxx, Pastiin HP Kakak udah support 5G dan Kakak juga bisa cek apakah lokasi Kakak udah tercover jaringan 5G melalui https://www.telkomsel.com/check-5G-coverage. Kakak bisa melakukan daftar mandiri melalui https://my.telkomsel.com/provisioning/5g. Pastiin juga saat akses link tersebut SIM Card terpasang di SIM 1, data selular dalam keadaan on, dan fitur lokasi aktif.
 
 Jika masih berkendala, boleh infokan beberapa data di bawah ini supaya bisa dibantu pengecekan:
@@ -2269,6 +2351,8 @@ Solusi : minta data
 5. Foto selfie dengan KTP asli :
 6. Jenis dan type Device yang hilang :
 7. Email lain yang bisa dihubungi :
+
+Aku tunggu datanya ya Kak :)
 `:`Makasih udah nunggu, untuk hapus eSIM di perangkat lamanya yang udah hilang di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email registrasi by.U 
 2. Nomor Identitas KTP valid
@@ -3079,6 +3163,8 @@ Solusi : minta data
 4. Jaringan/operator negara setempat yang digunakan :
 5. Capture setting APN di HP :
 6. Capture sinyal:
+
+Aku tunggu datanya ya Kak :)
 `:`Makasih udah nunggu. Kak maaf untuk kendala sinyal di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
 2. Tanggal dan waktu kejadian sejak kapan :
