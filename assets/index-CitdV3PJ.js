@@ -204,7 +204,18 @@ Nomor by.U : xxxxxx
 Email by.U : --
 Detail case : bugs ganti sim card
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu :) Oke Kak maaf. Ini SIM card Kakak di nomor xxxxxx harusnya bisa lanjut dengan Kakak pilih menu ganti SIM card di apps, nantinya bakal muncul halaman pengambilan/pengantaran. Coba di clear cache dulu apps nya dan pastiin pakai apps versi terbaru ya. Kalau udah tapi masih ga muncul halaman pengambilan/pengantarannya boleh diinfoin data ini :
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih, untuk kendala ganti SIM card nya di apps by.U, Coba di clear cache dulu apps nya dan pastiin pakai apps versi terbaru ya. Kalau udah tapi masih berkendala boleh diinfoin data ini :
+1. Nomor by.U :
+2. Email akun by.U : 
+3. Tipe/merek Gadget :
+4. Versi OS Gadget :
+5. Versi aplikasi by.U :
+6. Apakah bisa akses menggunakan wifi/jaringan lain :
+7. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :
+8. Waktu dan Lama Kejadian :
+
+Aku Tunggu datanya ya :)
+`:`Makasih udah nunggu :) Oke Kak maaf. Ini SIM card Kakak di nomor xxxxxx harusnya bisa lanjut dengan Kakak pilih menu ganti SIM card di apps, nantinya bakal muncul halaman pengambilan/pengantaran. Coba di clear cache dulu apps nya dan pastiin pakai apps versi terbaru ya. Kalau udah tapi masih ga muncul halaman pengambilan/pengantarannya boleh diinfoin data ini :
 1. Email akun by.U : 
 2. Tipe/merek Gadget :
 3. Versi OS Gadget :
