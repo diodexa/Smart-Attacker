@@ -1204,7 +1204,7 @@ Ketidaksesuaian Penggunaan Kuota
 6. Paket yang dikeluhkan : 
 7. Jumlah kuota awal dan kuota akhir : 
 8. Capture data usage : 
-9. Capture dashboard apps by.U : 
+9. Capture dashboard apps by.U  (yang ada detail pemakaian Data): 
 10. Apakah customer pernah mencoba di gadget lain dan mengalami masalah yang sama? TIDAK
 11. Apakah ada VPN dsb di gadget customer? TIDAK 
 `},{id:28,case:`Tidak bisa login dengan Nomor BYU / terima kode OTP pakai nomor by.U`,Bracket:e=>`#Pelangganbyu
