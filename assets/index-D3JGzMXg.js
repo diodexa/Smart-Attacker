@@ -409,7 +409,7 @@ Terima Telepon :
 5.1. Keterangan nomor dialihkan:
 Kak aku cek nomor xxxxxx aktif. Coba pastiin dulu ini ya :
 - layanan voice mail pada HP ga aktif ya
-- oof kan layanan call forward, Caranya : Dial ##002# > ok/yes
+- Off kan layanan call forward, Caranya : Dial ##002# > ok/yes
 - Refresh Jaringan dengan cara Restart Handphone
 - coba pindahkan SIM card ke HP lain
 - Kalau masih gabisa, Kakak bisa tunggu 1x24jam untuk mengantisipasi gangguan jaringan sementara
@@ -427,6 +427,7 @@ Kak aku cek nomor xxxxxx aktif. Coba pandan ini ya :
 Jika masih tidak dapat menerima panggilan, lanjut ke Step berikutnya (langkah 6)
 
 Jika hanya dari satu nomor: 
+Kak aku cek nomor xxxxxx aktif. Coba pandan ini ya :
 - Pastikan nomor pemanggil tidak ada di list blokir di settingan Handphone Kakak.
 - Jika masih berkendala sarankan nomor pemanggil untuk coba di HP yang lain
 - Kalau semua udah di coba tapi masih berkendala, ada indikasi nomor yang melakukan panggilannya yang berkendala dan disarankan hubungi kami untuk bisa dibantu :)
