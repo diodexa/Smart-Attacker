@@ -244,57 +244,83 @@ Nomor by.U : xxxxxx
 Email by.U : zz
 Detail case : gabisa kirim/terima SMS
 Solusi :  minta data
-`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala SMS nya, boleh coba panduan ini dulu ya :
-1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
-2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 
-3. Coba on-off-kan airplane mode
-Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan beberapa data berikut supaya kami bisa bantu pengecekan ya Kak :
-1. Email akun by.U :
-2. Nomor by.U : 
-3. Printscreen dashboard di apps dan keterangan sinyal : 
-4. Waktu dan Lama Kejadian :
-5. Tipe gadget yang dipakai :
-6. Keterangan gagal yang muncul saat menerima atau mengirim SMS :
-7. Kendala yang terjadi tidak bisa terima SMS, kirim SMS atau keduanya :
-8. Kendala terjadi hanya saat menerima SMS atau mengirim SMS ke nomor tertentu atau semua :
-9. Capture Keterangan gagal yang muncul saat menerima atau mengirim SMS : 
-10. Nomor lain yang bisa dihubungi : 
-11. Nomor tujuan saat menerima atau mengirim SMS : 
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala SMS nya, boleh infoin dulu data ini ya :
+1. Nomor dan Email akun by.U :
+2. Nomor tujuan SMS (semua nomor, hanya khusus nomor tertentu saja atau SMS Premium) :
+3. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
+4. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
+5. Notifikasi gagal kirim/terima SMS : 
+6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
+7. Tipe HP : 
 
 Aku tunggu datanya ya :)
-`:`Makasih udah nunggu. Kak maaf banget nih untuk kendala SMS nya di nomor xxxxxx. Boleh coba panduan ini dulu ya :
-1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
-2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 
-3. Coba on-off-kan airplane mode
-Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan beberapa data berikut supaya kami bisa bantu pengecekan ya Kak :
-1. Email akun by.U :
-2. Printscreen dashboard di apps dan keterangan sinyal : 
-3. Waktu dan Lama Kejadian :
-4. Tipe gadget yang dipakai :
-5. Keterangan gagal yang muncul saat menerima atau mengirim SMS :
-6. Kendala yang terjadi tidak bisa terima SMS, kirim SMS atau keduanya :
-7. Kendala terjadi hanya saat menerima SMS atau mengirim SMS ke nomor tertentu atau semua :
-8. Capture Keterangan gagal yang muncul saat menerima atau mengirim SMS : 
-9. Nomor lain yang bisa dihubungi : 
-10. Nomor tujuan saat menerima atau mengirim SMS : 
 
-`,Mandatory:(e,t)=>`#Pelangganbyu
-[byU ${e}] 
-Pelanggan by.U
-${t} 
-Tidak bisa kirim / Terima SMS 
+
+4.1 Keterangan SMS gagal terkirim
+Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya : 
+• Pastikan nomor pusat pesan sudah +6281100000 (hanya untuk device Android)
+• Refresh Jaringan dengan cara Restart Handphone kemudian mengirim SMS ke nomor sendiri 
+• Coba gunakan SIM card pada HP lain sebagai perbandingan.
+
+4.2 Keterangan SMS Pending
+Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya : 
+• Refresh Jaringan dengan cara Restart Handphone dan menunggu proses Pengiriman SMS 1x24 Jam
+
+• Jika kendala di satu nomor aja dan setelah 1x24 jam masih berkendala, coba nomor tujuan dikirim dari nomor lain sebagai perbandingan. Pastiin nomor tujuan aktif dan HP nya ga berkendala
+
+terima OTP
+Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya : 
+• Refresh Jaringan dengan cara Restart Handphone
+• Coba untuk ubah mode jaringan ke 2G Only terlebih dahulu, kemudian tunggu maksimal 1x24 jam untuk memastikan SMS Kode OTP dapat diterima
+• Periksa juga folder Spam & diblokir jika pesan tidak muncul.
+• Kalau masih berkendala, boleh coba hubungi pihak aplikasi dulu ya :)
+
+
+`:`Makasih udah nunggu. Kak maaf banget nih untuk kendala SMS nya di nomor xxxxxx. Boleh infoin data ini ya biar bisa aku cek :
+1. Email akun by.U :
+2. Nomor tujuan SMS (semua nomor, hanya khusus nomor tertentu saja atau SMS Premium) :
+3. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
+4. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
+5. Notifikasi gagal kirim/terima SMS : 
+6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
+7. Tipe HP : 
+
+4.1 Keterangan SMS gagal terkirim
+Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya : 
+• Pastikan nomor pusat pesan sudah +6281100000 (hanya untuk device Android)
+• Refresh Jaringan dengan cara Restart Handphone kemudian mengirim SMS ke nomor sendiri 
+• Coba gunakan SIM card pada HP lain sebagai perbandingan.
+
+4.2 Keterangan SMS Pending
+Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya : 
+• Refresh Jaringan dengan cara Restart Handphone dan menunggu proses Pengiriman SMS 1x24 Jam
+
+• Jika kendala di satu nomor aja dan setelah 1x24 jam masih berkendala, coba nomor tujuan dikirim dari nomor lain sebagai perbandingan. Pastiin nomor tujuan aktif dan HP nya ga berkendala
+
+terima OTP
+Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya : 
+• Refresh Jaringan dengan cara Restart Handphone
+• Coba untuk ubah mode jaringan ke 2G Only terlebih dahulu, kemudian tunggu maksimal 1x24 jam untuk memastikan SMS Kode OTP dapat diterima
+• Periksa juga folder Spam & diblokir jika pesan tidak muncul.
+• Kalau masih berkendala, boleh coba hubungi pihak aplikasi dulu ya :)
+
+
+
+`,Mandatory:e=>`#Pelangganbyu
+ID Omnix :
+Nama Pelanggan : pelanggan
+Tanggal lapor : ${e} 
+
 
 1. Nomor by.U : xxxxxx
 2. Email akun by.U : 
-3. Printscreen dashboard di apps dan keterangan sinyal : 
-4. Waktu dan Lama Kejadian : 
-5. Tipe gadget yang dipakai : 
-6. Keterangan gagal yang muncul saat menerima atau mengirim SMS : 
-7. Kendala yang terjadi tidak bisa terima SMS, kirim SMS atau keduanya : 
-8. Kendala terjadi hanya saat menerima SMS atau mengirim SMS ke nomor tertentu atau semua : 
-9. Capture Keterangan gagal yang muncul saat menerima atau mengirim SMS : 
-10. Nomor lain yang bisa dihubungi : 
-11. Nomor tujuan saat menerima atau mengirim SMS : 
+3. Nomor tujuan SMS (semua nomor, hanya khusus nomor tertentu saja atau SMS Premium) : 
+4. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) : 
+5. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  : 
+6. Notifikasi gagal kirim SMS (capture/text) : 
+7. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ? 
+8. Tipe HP : 
+9. Detail permasalahan : gabisa kirim SMS
 
 
 
