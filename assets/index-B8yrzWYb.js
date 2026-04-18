@@ -550,33 +550,8 @@ Nomor by.U : xxxxxx
 Email by.U : zz
 Detail case : ga dapat OTP Whatsapp/Telegram
 Solusi : minta data
-`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala kode OTP nya, boleh coba panduan ini dulu ya :
-1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
-2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 
-3. Coba on-off-kan airplane mode
-Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan beberapa data berikut supaya kami bisa bantu pengecekan ya Kak :
-1. Email akun by.U :
-2. Nomor by.U : 
-3. Waktu Kejadian :
-4. Nomor lain yang bisa dihubungi :
-5. Tipe gadget yang digunakan :
-6. Capture dashboard di apps dan keterangan sinyal : 
-7. Capture keterangan gagal yang muncul saat melakukan request/menerima OTP : 
-8. Keterangan gagal yang muncul saat melakukan request/menerima OTP :
-
-Aku tunggu datanya ya :)
-`:`Kak maaf banget nih untuk kendala kode OTP nya di nomor xxxxxx. Boleh coba panduan ini dulu ya :
-1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
-2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 
-3. Coba on-off-kan airplane mode
-Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan beberapa data berikut supaya kami bisa bantu pengecekan ya Kak :
-1. Email akun by.U :
-2. Waktu Kejadian :
-3. Nomor lain yang bisa dihubungi :
-4. Tipe gadget yang digunakan :
-5. Capture dashboard di apps dan keterangan sinyal : 
-6. Capture keterangan gagal yang muncul saat melakukan request/menerima OTP : 
-7. Keterangan gagal yang muncul saat melakukan request/menerima OTP :
+`,Solusi:e=>e===`Email`?`ke SMS dulu
+`:`ke SMS dulu:
 `,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
