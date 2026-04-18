@@ -14,7 +14,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 `])),ei=function(e,t){var n=e.isFocused,r=e.size,i=e.theme,a=i.colors,o=i.spacing.baseUnit;return h({label:`loadingIndicator`,display:`flex`,transition:`color 150ms`,alignSelf:`center`,fontSize:r,lineHeight:1,marginRight:r,textAlign:`center`,verticalAlign:`middle`},t?{}:{color:n?a.neutral60:a.neutral20,padding:o*2})},ti=function(e){var t=e.delay,n=e.offset;return N(`span`,{css:nn({animation:`${$r} 1s ease-in-out ${t}ms infinite;`,backgroundColor:`currentColor`,borderRadius:`1em`,display:`inline-block`,marginLeft:n?`1em`:void 0,height:`1em`,verticalAlign:`top`,width:`1em`},``,``)})},ni=function(e){var t=e.innerProps,n=e.isRtl,r=e.size,i=r===void 0?4:r;return N(`div`,E({},P(h(h({},C(e,Vr)),{},{innerProps:t,isRtl:n,size:i}),`loadingIndicator`,{indicator:!0,"loading-indicator":!0}),t),N(ti,{delay:0,offset:n}),N(ti,{delay:160,offset:!0}),N(ti,{delay:320,offset:!n}))},ri=function(e,t){var n=e.isDisabled,r=e.isFocused,i=e.theme,a=i.colors,o=i.borderRadius,s=i.spacing;return h({label:`control`,alignItems:`center`,cursor:`default`,display:`flex`,flexWrap:`wrap`,justifyContent:`space-between`,minHeight:s.controlHeight,outline:`0 !important`,position:`relative`,transition:`all 100ms`},t?{}:{backgroundColor:n?a.neutral5:a.neutral0,borderColor:n?a.neutral10:r?a.primary:a.neutral20,borderRadius:o,borderStyle:`solid`,borderWidth:1,boxShadow:r?`0 0 0 1px ${a.primary}`:void 0,"&:hover":{borderColor:r?a.primary:a.neutral30}})},ii=function(e){var t=e.children,n=e.isDisabled,r=e.isFocused,i=e.innerRef,a=e.innerProps,o=e.menuIsOpen;return N(`div`,E({ref:i},P(e,`control`,{control:!0,"control--is-disabled":n,"control--is-focused":r,"control--menu-is-open":o}),a,{"aria-disabled":n||void 0}),t)},ai=[`data`],oi=function(e,t){var n=e.theme.spacing;return t?{}:{paddingBottom:n.baseUnit*2,paddingTop:n.baseUnit*2}},si=function(e){var t=e.children,n=e.cx,r=e.getStyles,i=e.getClassNames,a=e.Heading,o=e.headingProps,s=e.innerProps,c=e.label,l=e.theme,u=e.selectProps;return N(`div`,E({},P(e,`group`,{group:!0}),s),N(a,E({},o,{selectProps:u,theme:l,getStyles:r,getClassNames:i,cx:n}),c),N(`div`,null,t))},ci=function(e,t){var n=e.theme,r=n.colors,i=n.spacing;return h({label:`group`,cursor:`default`,display:`block`},t?{}:{color:r.neutral40,fontSize:`75%`,fontWeight:500,marginBottom:`0.25em`,paddingLeft:i.baseUnit*3,paddingRight:i.baseUnit*3,textTransform:`uppercase`})},li=function(e){var t=qn(e);t.data;var n=C(t,ai);return N(`div`,E({},P(e,`groupHeading`,{"group-heading":!0}),n))},ui=si,di=[`innerRef`,`isDisabled`,`isHidden`,`inputClassName`],fi=function(e,t){var n=e.isDisabled,r=e.value,i=e.theme,a=i.spacing,o=i.colors;return h(h({visibility:n?`hidden`:`visible`,transform:r?`translateZ(0)`:``},mi),t?{}:{margin:a.baseUnit/2,paddingBottom:a.baseUnit/2,paddingTop:a.baseUnit/2,color:o.neutral80})},pi={gridArea:`1 / 2`,font:`inherit`,minWidth:`2px`,border:0,margin:0,outline:0,padding:0},mi={flex:`1 1 auto`,display:`inline-grid`,gridArea:`1 / 1 / 2 / 3`,gridTemplateColumns:`0 min-content`,"&:after":h({content:`attr(data-value) " "`,visibility:`hidden`,whiteSpace:`pre`},pi)},hi=function(e){return h({label:`input`,color:`inherit`,background:0,opacity:e?0:1,width:`100%`},pi)},gi=function(e){var t=e.cx,n=e.value,r=qn(e),i=r.innerRef,a=r.isDisabled,o=r.isHidden,s=r.inputClassName,c=C(r,di);return N(`div`,E({},P(e,`input`,{"input-container":!0}),{"data-value":n||``}),N(`input`,E({className:t({input:!0},s),ref:i,style:hi(o),disabled:a},c)))},_i=function(e,t){var n=e.theme,r=n.spacing,i=n.borderRadius,a=n.colors;return h({label:`multiValue`,display:`flex`,minWidth:0},t?{}:{backgroundColor:a.neutral10,borderRadius:i/2,margin:r.baseUnit/2})},vi=function(e,t){var n=e.theme,r=n.borderRadius,i=n.colors,a=e.cropWithEllipsis;return h({overflow:`hidden`,textOverflow:a||a===void 0?`ellipsis`:void 0,whiteSpace:`nowrap`},t?{}:{borderRadius:r/2,color:i.neutral80,fontSize:`85%`,padding:3,paddingLeft:6})},yi=function(e,t){var n=e.theme,r=n.spacing,i=n.borderRadius,a=n.colors,o=e.isFocused;return h({alignItems:`center`,display:`flex`},t?{}:{borderRadius:i/2,backgroundColor:o?a.dangerLight:void 0,paddingLeft:r.baseUnit,paddingRight:r.baseUnit,":hover":{backgroundColor:a.dangerLight,color:a.danger}})},bi=function(e){var t=e.children,n=e.innerProps;return N(`div`,n,t)},xi=bi,Si=bi;function Ci(e){var t=e.children,n=e.innerProps;return N(`div`,E({role:`button`},n),t||N(Wr,{size:14}))}var wi=function(e){var t=e.children,n=e.components,r=e.data,i=e.innerProps,a=e.isDisabled,o=e.removeProps,s=e.selectProps,c=n.Container,l=n.Label,u=n.Remove;return N(c,{data:r,innerProps:h(h({},P(e,`multiValue`,{"multi-value":!0,"multi-value--is-disabled":a})),i),selectProps:s},N(l,{data:r,innerProps:h({},P(e,`multiValueLabel`,{"multi-value__label":!0})),selectProps:s},t),N(u,{data:r,innerProps:h(h({},P(e,`multiValueRemove`,{"multi-value__remove":!0})),{},{"aria-label":`Remove ${t||`option`}`},o),selectProps:s}))},Ti=function(e,t){var n=e.isDisabled,r=e.isFocused,i=e.isSelected,a=e.theme,o=a.spacing,s=a.colors;return h({label:`option`,cursor:`default`,display:`block`,fontSize:`inherit`,width:`100%`,userSelect:`none`,WebkitTapHighlightColor:`rgba(0, 0, 0, 0)`},t?{}:{backgroundColor:i?s.primary:r?s.primary25:`transparent`,color:n?s.neutral20:i?s.neutral0:`inherit`,padding:`${o.baseUnit*2}px ${o.baseUnit*3}px`,":active":{backgroundColor:n?void 0:i?s.primary:s.primary50}})},Ei=function(e){var t=e.children,n=e.isDisabled,r=e.isFocused,i=e.isSelected,a=e.innerRef,o=e.innerProps;return N(`div`,E({},P(e,`option`,{option:!0,"option--is-disabled":n,"option--is-focused":r,"option--is-selected":i}),{ref:a,"aria-disabled":n},o),t)},Di=function(e,t){var n=e.theme,r=n.spacing,i=n.colors;return h({label:`placeholder`,gridArea:`1 / 1 / 2 / 3`},t?{}:{color:i.neutral50,marginLeft:r.baseUnit/2,marginRight:r.baseUnit/2})},Oi=function(e){var t=e.children,n=e.innerProps;return N(`div`,E({},P(e,`placeholder`,{placeholder:!0}),n),t)},ki=function(e,t){var n=e.isDisabled,r=e.theme,i=r.spacing,a=r.colors;return h({label:`singleValue`,gridArea:`1 / 1 / 2 / 3`,maxWidth:`100%`,overflow:`hidden`,textOverflow:`ellipsis`,whiteSpace:`nowrap`},t?{}:{color:n?a.neutral40:a.neutral80,marginLeft:i.baseUnit/2,marginRight:i.baseUnit/2})},Ai={ClearIndicator:Xr,Control:ii,DropdownIndicator:Jr,DownChevron:Gr,CrossIcon:Wr,Group:ui,GroupHeading:li,IndicatorsContainer:Rr,IndicatorSeparator:Qr,Input:gi,LoadingIndicator:ni,Menu:Cr,MenuList:Tr,MenuPortal:Mr,LoadingMessage:Ar,NoOptionsMessage:kr,MultiValue:wi,MultiValueContainer:xi,MultiValueLabel:Si,MultiValueRemove:Ci,Option:Ei,Placeholder:Oi,SelectContainer:Pr,SingleValue:function(e){var t=e.children,n=e.isDisabled,r=e.innerProps;return N(`div`,E({},P(e,`singleValue`,{"single-value":!0,"single-value--is-disabled":n}),r),t)},ValueContainer:Ir},ji=function(e){return h(h({},Ai),e.components)},Mi=Number.isNaN||function(e){return typeof e==`number`&&e!==e};function Ni(e,t){return!!(e===t||Mi(e)&&Mi(t))}function Pi(e,t){if(e.length!==t.length)return!1;for(var n=0;n<e.length;n++)if(!Ni(e[n],t[n]))return!1;return!0}function Fi(e,t){t===void 0&&(t=Pi);var n=null;function r(){var r=[...arguments];if(n&&n.lastThis===this&&t(r,n.lastArgs))return n.lastResult;var i=e.apply(this,r);return n={lastResult:i,lastArgs:r,lastThis:this},i}return r.clear=function(){n=null},r}for(var Ii={name:`7pg0cj-a11yText`,styles:`label:a11yText;z-index:9999;border:0;clip:rect(1px, 1px, 1px, 1px);height:1px;width:1px;position:absolute;overflow:hidden;padding:0;white-space:nowrap`},Li=function(e){return N(`span`,E({css:Ii},e))},F={guidance:function(e){var t=e.isSearchable,n=e.isMulti,r=e.tabSelectsValue,i=e.context,a=e.isInitialFocus;switch(i){case`menu`:return`Use Up and Down to choose options, press Enter to select the currently focused option, press Escape to exit the menu${r?`, press Tab to select the option and exit the menu`:``}.`;case`input`:return a?`${e[`aria-label`]||`Select`} is focused ${t?`,type to refine list`:``}, press Down to open the menu, ${n?` press left to focus selected values`:``}`:``;case`value`:return`Use left and right to toggle between focused values, press Backspace to remove the currently focused value`;default:return``}},onChange:function(e){var t=e.action,n=e.label,r=n===void 0?``:n,i=e.labels,a=e.isDisabled;switch(t){case`deselect-option`:case`pop-value`:case`remove-value`:return`option ${r}, deselected.`;case`clear`:return`All selected options have been cleared.`;case`initial-input-focus`:return`option${i.length>1?`s`:``} ${i.join(`,`)}, selected.`;case`select-option`:return a?`option ${r} is disabled. Select another option.`:`option ${r}, selected.`;default:return``}},onFocus:function(e){var t=e.context,n=e.focused,r=e.options,i=e.label,a=i===void 0?``:i,o=e.selectValue,s=e.isDisabled,c=e.isSelected,l=e.isAppleDevice,u=function(e,t){return e&&e.length?`${e.indexOf(t)+1} of ${e.length}`:``};return t===`value`&&o?`value ${a} focused, ${u(o,n)}.`:t===`menu`&&l?`${a}${`${c?` selected`:``}${s?` disabled`:``}`}, ${u(r,n)}.`:``},onFilter:function(e){var t=e.inputValue;return`${e.resultsMessage}${t?` for search term `+t:``}.`}},I=function(e){var t=e.ariaSelection,n=e.focusedOption,r=e.focusedValue,i=e.focusableOptions,a=e.isFocused,o=e.selectValue,s=e.selectProps,c=e.id,u=e.isAppleDevice,d=s.ariaLiveMessages,f=s.getOptionLabel,p=s.inputValue,m=s.isMulti,g=s.isOptionDisabled,_=s.isSearchable,v=s.menuIsOpen,y=s.options,b=s.screenReaderStatus,x=s.tabSelectsValue,S=s.isLoading,C=s[`aria-label`],w=s[`aria-live`],T=(0,l.useMemo)(function(){return h(h({},F),d||{})},[d]),E=(0,l.useMemo)(function(){var e=``;if(t&&T.onChange){var n=t.option,r=t.options,i=t.removedValue,a=t.removedValues,s=t.value,c=i||n||function(e){return Array.isArray(e)?null:e}(s),l=c?f(c):``,u=r||a||void 0,d=u?u.map(f):[],p=h({isDisabled:c&&g(c,o),label:l,labels:d},t);e=T.onChange(p)}return e},[t,T,g,o,f]),ee=(0,l.useMemo)(function(){var e=``,t=n||r,a=!!(n&&o&&o.includes(n));if(t&&T.onFocus){var s={focused:t,label:f(t),isDisabled:g(t,o),isSelected:a,options:i,context:t===n?`menu`:`value`,selectValue:o,isAppleDevice:u};e=T.onFocus(s)}return e},[n,r,f,g,T,i,o,u]),D=(0,l.useMemo)(function(){var e=``;if(v&&y.length&&!S&&T.onFilter){var t=b({count:i.length});e=T.onFilter({inputValue:p,resultsMessage:t})}return e},[i,p,v,T,y,b,S]),te=t?.action===`initial-input-focus`,ne=(0,l.useMemo)(function(){var e=``;if(T.guidance){var t=r?`value`:v?`menu`:`input`;e=T.guidance({"aria-label":C,context:t,isDisabled:n&&g(n,o),isMulti:m,isSearchable:_,tabSelectsValue:x,isInitialFocus:te})}return e},[C,n,r,m,g,_,v,T,o,x,te]),re=N(l.Fragment,null,N(`span`,{id:`aria-selection`},E),N(`span`,{id:`aria-focused`},ee),N(`span`,{id:`aria-results`},D),N(`span`,{id:`aria-guidance`},ne));return N(l.Fragment,null,N(Li,{id:c},te&&re),N(Li,{"aria-live":w,"aria-atomic":`false`,"aria-relevant":`additions text`,role:`log`},a&&!te&&re))},Ri=[{base:`A`,letters:`AⒶＡÀÁÂẦẤẪẨÃĀĂẰẮẴẲȦǠÄǞẢÅǺǍȀȂẠẬẶḀĄȺⱯ`},{base:`AA`,letters:`Ꜳ`},{base:`AE`,letters:`ÆǼǢ`},{base:`AO`,letters:`Ꜵ`},{base:`AU`,letters:`Ꜷ`},{base:`AV`,letters:`ꜸꜺ`},{base:`AY`,letters:`Ꜽ`},{base:`B`,letters:`BⒷＢḂḄḆɃƂƁ`},{base:`C`,letters:`CⒸＣĆĈĊČÇḈƇȻꜾ`},{base:`D`,letters:`DⒹＤḊĎḌḐḒḎĐƋƊƉꝹ`},{base:`DZ`,letters:`ǱǄ`},{base:`Dz`,letters:`ǲǅ`},{base:`E`,letters:`EⒺＥÈÉÊỀẾỄỂẼĒḔḖĔĖËẺĚȄȆẸỆȨḜĘḘḚƐƎ`},{base:`F`,letters:`FⒻＦḞƑꝻ`},{base:`G`,letters:`GⒼＧǴĜḠĞĠǦĢǤƓꞠꝽꝾ`},{base:`H`,letters:`HⒽＨĤḢḦȞḤḨḪĦⱧⱵꞍ`},{base:`I`,letters:`IⒾＩÌÍÎĨĪĬİÏḮỈǏȈȊỊĮḬƗ`},{base:`J`,letters:`JⒿＪĴɈ`},{base:`K`,letters:`KⓀＫḰǨḲĶḴƘⱩꝀꝂꝄꞢ`},{base:`L`,letters:`LⓁＬĿĹĽḶḸĻḼḺŁȽⱢⱠꝈꝆꞀ`},{base:`LJ`,letters:`Ǉ`},{base:`Lj`,letters:`ǈ`},{base:`M`,letters:`MⓂＭḾṀṂⱮƜ`},{base:`N`,letters:`NⓃＮǸŃÑṄŇṆŅṊṈȠƝꞐꞤ`},{base:`NJ`,letters:`Ǌ`},{base:`Nj`,letters:`ǋ`},{base:`O`,letters:`OⓄＯÒÓÔỒỐỖỔÕṌȬṎŌṐṒŎȮȰÖȪỎŐǑȌȎƠỜỚỠỞỢỌỘǪǬØǾƆƟꝊꝌ`},{base:`OI`,letters:`Ƣ`},{base:`OO`,letters:`Ꝏ`},{base:`OU`,letters:`Ȣ`},{base:`P`,letters:`PⓅＰṔṖƤⱣꝐꝒꝔ`},{base:`Q`,letters:`QⓆＱꝖꝘɊ`},{base:`R`,letters:`RⓇＲŔṘŘȐȒṚṜŖṞɌⱤꝚꞦꞂ`},{base:`S`,letters:`SⓈＳẞŚṤŜṠŠṦṢṨȘŞⱾꞨꞄ`},{base:`T`,letters:`TⓉＴṪŤṬȚŢṰṮŦƬƮȾꞆ`},{base:`TZ`,letters:`Ꜩ`},{base:`U`,letters:`UⓊＵÙÚÛŨṸŪṺŬÜǛǗǕǙỦŮŰǓȔȖƯỪỨỮỬỰỤṲŲṶṴɄ`},{base:`V`,letters:`VⓋＶṼṾƲꝞɅ`},{base:`VY`,letters:`Ꝡ`},{base:`W`,letters:`WⓌＷẀẂŴẆẄẈⱲ`},{base:`X`,letters:`XⓍＸẊẌ`},{base:`Y`,letters:`YⓎＹỲÝŶỸȲẎŸỶỴƳɎỾ`},{base:`Z`,letters:`ZⓏＺŹẐŻŽẒẔƵȤⱿⱫꝢ`},{base:`a`,letters:`aⓐａẚàáâầấẫẩãāăằắẵẳȧǡäǟảåǻǎȁȃạậặḁąⱥɐ`},{base:`aa`,letters:`ꜳ`},{base:`ae`,letters:`æǽǣ`},{base:`ao`,letters:`ꜵ`},{base:`au`,letters:`ꜷ`},{base:`av`,letters:`ꜹꜻ`},{base:`ay`,letters:`ꜽ`},{base:`b`,letters:`bⓑｂḃḅḇƀƃɓ`},{base:`c`,letters:`cⓒｃćĉċčçḉƈȼꜿↄ`},{base:`d`,letters:`dⓓｄḋďḍḑḓḏđƌɖɗꝺ`},{base:`dz`,letters:`ǳǆ`},{base:`e`,letters:`eⓔｅèéêềếễểẽēḕḗĕėëẻěȅȇẹệȩḝęḙḛɇɛǝ`},{base:`f`,letters:`fⓕｆḟƒꝼ`},{base:`g`,letters:`gⓖｇǵĝḡğġǧģǥɠꞡᵹꝿ`},{base:`h`,letters:`hⓗｈĥḣḧȟḥḩḫẖħⱨⱶɥ`},{base:`hv`,letters:`ƕ`},{base:`i`,letters:`iⓘｉìíîĩīĭïḯỉǐȉȋịįḭɨı`},{base:`j`,letters:`jⓙｊĵǰɉ`},{base:`k`,letters:`kⓚｋḱǩḳķḵƙⱪꝁꝃꝅꞣ`},{base:`l`,letters:`lⓛｌŀĺľḷḹļḽḻſłƚɫⱡꝉꞁꝇ`},{base:`lj`,letters:`ǉ`},{base:`m`,letters:`mⓜｍḿṁṃɱɯ`},{base:`n`,letters:`nⓝｎǹńñṅňṇņṋṉƞɲŉꞑꞥ`},{base:`nj`,letters:`ǌ`},{base:`o`,letters:`oⓞｏòóôồốỗổõṍȭṏōṑṓŏȯȱöȫỏőǒȍȏơờớỡởợọộǫǭøǿɔꝋꝍɵ`},{base:`oi`,letters:`ƣ`},{base:`ou`,letters:`ȣ`},{base:`oo`,letters:`ꝏ`},{base:`p`,letters:`pⓟｐṕṗƥᵽꝑꝓꝕ`},{base:`q`,letters:`qⓠｑɋꝗꝙ`},{base:`r`,letters:`rⓡｒŕṙřȑȓṛṝŗṟɍɽꝛꞧꞃ`},{base:`s`,letters:`sⓢｓßśṥŝṡšṧṣṩșşȿꞩꞅẛ`},{base:`t`,letters:`tⓣｔṫẗťṭțţṱṯŧƭʈⱦꞇ`},{base:`tz`,letters:`ꜩ`},{base:`u`,letters:`uⓤｕùúûũṹūṻŭüǜǘǖǚủůűǔȕȗưừứữửựụṳųṷṵʉ`},{base:`v`,letters:`vⓥｖṽṿʋꝟʌ`},{base:`vy`,letters:`ꝡ`},{base:`w`,letters:`wⓦｗẁẃŵẇẅẘẉⱳ`},{base:`x`,letters:`xⓧｘẋẍ`},{base:`y`,letters:`yⓨｙỳýŷỹȳẏÿỷẙỵƴɏỿ`},{base:`z`,letters:`zⓩｚźẑżžẓẕƶȥɀⱬꝣ`}],zi=RegExp(`[`+Ri.map(function(e){return e.letters}).join(``)+`]`,`g`),Bi={},Vi=0;Vi<Ri.length;Vi++)for(var Hi=Ri[Vi],Ui=0;Ui<Hi.letters.length;Ui++)Bi[Hi.letters[Ui]]=Hi.base;var Wi=function(e){return e.replace(zi,function(e){return Bi[e]})},Gi=Fi(Wi),Ki=function(e){return e.replace(/^\s+|\s+$/g,``)},qi=function(e){return`${e.label} ${e.value}`},Ji=function(e){return function(t,n){if(t.data.__isNew__)return!0;var r=h({ignoreCase:!0,ignoreAccents:!0,stringify:qi,trim:!0,matchFrom:`any`},e),i=r.ignoreCase,a=r.ignoreAccents,o=r.stringify,s=r.trim,c=r.matchFrom,l=s?Ki(n):n,u=s?Ki(o(t)):o(t);return i&&(l=l.toLowerCase(),u=u.toLowerCase()),a&&(l=Gi(l),u=Wi(u)),c===`start`?u.substr(0,l.length)===l:u.indexOf(l)>-1}},Yi=[`innerRef`];function Xi(e){var t=e.innerRef,n=mr(C(e,Yi),`onExited`,`in`,`enter`,`exit`,`appear`);return N(`input`,E({ref:t},n,{css:nn({label:`dummyInput`,background:0,border:0,caretColor:`transparent`,fontSize:`inherit`,gridArea:`1 / 1 / 2 / 3`,outline:0,padding:0,width:1,color:`transparent`,left:-100,opacity:0,position:`relative`,transform:`scale(.01)`},``,``)}))}var Zi=function(e){e.cancelable&&e.preventDefault(),e.stopPropagation()};function Qi(e){var t=e.isEnabled,n=e.onBottomArrive,r=e.onBottomLeave,i=e.onTopArrive,a=e.onTopLeave,o=(0,l.useRef)(!1),s=(0,l.useRef)(!1),c=(0,l.useRef)(0),u=(0,l.useRef)(null),d=(0,l.useCallback)(function(e,t){if(u.current!==null){var c=u.current,l=c.scrollTop,d=c.scrollHeight,f=c.clientHeight,p=u.current,m=t>0,h=d-f-l,g=!1;h>t&&o.current&&(r&&r(e),o.current=!1),m&&s.current&&(a&&a(e),s.current=!1),m&&t>h?(n&&!o.current&&n(e),p.scrollTop=d,g=!0,o.current=!0):!m&&-t>l&&(i&&!s.current&&i(e),p.scrollTop=0,g=!0,s.current=!0),g&&Zi(e)}},[n,r,i,a]),f=(0,l.useCallback)(function(e){d(e,e.deltaY)},[d]),p=(0,l.useCallback)(function(e){c.current=e.changedTouches[0].clientY},[]),m=(0,l.useCallback)(function(e){d(e,c.current-e.changedTouches[0].clientY)},[d]),h=(0,l.useCallback)(function(e){if(e){var t=cr?{passive:!1}:!1;e.addEventListener(`wheel`,f,t),e.addEventListener(`touchstart`,p,t),e.addEventListener(`touchmove`,m,t)}},[m,p,f]),g=(0,l.useCallback)(function(e){e&&(e.removeEventListener(`wheel`,f,!1),e.removeEventListener(`touchstart`,p,!1),e.removeEventListener(`touchmove`,m,!1))},[m,p,f]);return(0,l.useEffect)(function(){if(t){var e=u.current;return h(e),function(){g(e)}}},[t,h,g]),function(e){u.current=e}}var $i=[`boxSizing`,`height`,`overflow`,`paddingRight`,`position`],ea={boxSizing:`border-box`,overflow:`hidden`,position:`relative`,height:`100%`};function ta(e){e.cancelable&&e.preventDefault()}function na(e){e.stopPropagation()}function ra(){var e=this.scrollTop,t=this.scrollHeight,n=e+this.offsetHeight;e===0?this.scrollTop=1:n===t&&(this.scrollTop=e-1)}function ia(){return`ontouchstart`in window||navigator.maxTouchPoints}var aa=!!(typeof window<`u`&&window.document&&window.document.createElement),oa=0,sa={capture:!1,passive:!1};function ca(e){var t=e.isEnabled,n=e.accountForScrollbars,r=n===void 0?!0:n,i=(0,l.useRef)({}),a=(0,l.useRef)(null),o=(0,l.useCallback)(function(e){if(aa){var t=document.body,n=t&&t.style;if(r&&$i.forEach(function(e){var t=n&&n[e];i.current[e]=t}),r&&oa<1){var a=parseInt(i.current.paddingRight,10)||0,o=document.body?document.body.clientWidth:0,s=window.innerWidth-o+a||0;Object.keys(ea).forEach(function(e){var t=ea[e];n&&(n[e]=t)}),n&&(n.paddingRight=`${s}px`)}t&&ia()&&(t.addEventListener(`touchmove`,ta,sa),e&&(e.addEventListener(`touchstart`,ra,sa),e.addEventListener(`touchmove`,na,sa))),oa+=1}},[r]),s=(0,l.useCallback)(function(e){if(aa){var t=document.body,n=t&&t.style;oa=Math.max(oa-1,0),r&&oa<1&&$i.forEach(function(e){var t=i.current[e];n&&(n[e]=t)}),t&&ia()&&(t.removeEventListener(`touchmove`,ta,sa),e&&(e.removeEventListener(`touchstart`,ra,sa),e.removeEventListener(`touchmove`,na,sa)))}},[r]);return(0,l.useEffect)(function(){if(t){var e=a.current;return o(e),function(){s(e)}}},[t,o,s]),function(e){a.current=e}}var la=function(e){var t=e.target;return t.ownerDocument.activeElement&&t.ownerDocument.activeElement.blur()},ua={name:`1kfdb0e`,styles:`position:fixed;left:0;bottom:0;right:0;top:0`};function da(e){var t=e.children,n=e.lockEnabled,r=e.captureEnabled,i=r===void 0?!0:r,a=e.onBottomArrive,o=e.onBottomLeave,s=e.onTopArrive,c=e.onTopLeave,u=Qi({isEnabled:i,onBottomArrive:a,onBottomLeave:o,onTopArrive:s,onTopLeave:c}),d=ca({isEnabled:n});return N(l.Fragment,null,n&&N(`div`,{onClick:la,css:ua}),t(function(e){u(e),d(e)}))}var fa={name:`1a0ro4n-requiredInput`,styles:`label:requiredInput;opacity:0;pointer-events:none;position:absolute;bottom:0;left:0;right:0;width:100%`},pa=function(e){var t=e.name,n=e.onFocus;return N(`input`,{required:!0,name:t,tabIndex:-1,"aria-hidden":`true`,onFocus:n,css:fa,value:``,onChange:function(){}})};function ma(e){return typeof window<`u`&&window.navigator!=null?e.test(window.navigator.userAgentData?.platform||window.navigator.platform):!1}function ha(){return ma(/^iPhone/i)}function ga(){return ma(/^Mac/i)}function _a(){return ma(/^iPad/i)||ga()&&navigator.maxTouchPoints>1}function va(){return ha()||_a()}function ya(){return ga()||va()}var ba=function(e){return e.label},xa=function(e){return e.label},Sa=function(e){return e.value},Ca=function(e){return!!e.isDisabled},wa={clearIndicator:Yr,container:Nr,control:ri,dropdownIndicator:qr,group:oi,groupHeading:ci,indicatorsContainer:Lr,indicatorSeparator:Zr,input:fi,loadingIndicator:ei,loadingMessage:Or,menu:br,menuList:wr,menuPortal:jr,multiValue:_i,multiValueLabel:vi,multiValueRemove:yi,noOptionsMessage:Dr,option:Ti,placeholder:Di,singleValue:ki,valueContainer:Fr},Ta={primary:`#2684FF`,primary75:`#4C9AFF`,primary50:`#B2D4FF`,primary25:`#DEEBFF`,danger:`#DE350B`,dangerLight:`#FFBDAD`,neutral0:`hsl(0, 0%, 100%)`,neutral5:`hsl(0, 0%, 95%)`,neutral10:`hsl(0, 0%, 90%)`,neutral20:`hsl(0, 0%, 80%)`,neutral30:`hsl(0, 0%, 70%)`,neutral40:`hsl(0, 0%, 60%)`,neutral50:`hsl(0, 0%, 50%)`,neutral60:`hsl(0, 0%, 40%)`,neutral70:`hsl(0, 0%, 30%)`,neutral80:`hsl(0, 0%, 20%)`,neutral90:`hsl(0, 0%, 10%)`},Ea=4,Da=4,Oa={borderRadius:Ea,colors:Ta,spacing:{baseUnit:Da,controlHeight:38,menuGutter:Da*2}},ka={"aria-live":`polite`,backspaceRemovesValue:!0,blurInputOnSelect:rr(),captureMenuScroll:!rr(),classNames:{},closeMenuOnSelect:!0,closeMenuOnScroll:!1,components:{},controlShouldRenderValue:!0,escapeClearsValue:!1,filterOption:Ji(),formatGroupLabel:ba,getOptionLabel:xa,getOptionValue:Sa,isDisabled:!1,isLoading:!1,isMulti:!1,isRtl:!1,isSearchable:!0,isOptionDisabled:Ca,loadingMessage:function(){return`Loading...`},maxMenuHeight:300,minMenuHeight:140,menuIsOpen:!1,menuPlacement:`bottom`,menuPosition:`absolute`,menuShouldBlockScroll:!1,menuShouldScrollIntoView:!ir(),noOptionsMessage:function(){return`No options`},openMenuOnFocus:!1,openMenuOnClick:!0,options:[],pageSize:5,placeholder:`Select...`,screenReaderStatus:function(e){var t=e.count;return`${t} result${t===1?``:`s`} available`},styles:{},tabIndex:0,tabSelectsValue:!0,unstyled:!1};function Aa(e,t,n,r){return{type:`option`,data:t,isDisabled:Va(e,t,n),isSelected:Ha(e,t,n),label:za(e,t),value:Ba(e,t),index:r}}function ja(e,t){return e.options.map(function(n,r){if(`options`in n){var i=n.options.map(function(n,r){return Aa(e,n,t,r)}).filter(function(t){return Fa(e,t)});return i.length>0?{type:`group`,data:n,options:i,index:r}:void 0}var a=Aa(e,n,t,r);return Fa(e,a)?a:void 0}).filter(lr)}function Ma(e){return e.reduce(function(e,t){return t.type===`group`?e.push.apply(e,ue(t.options.map(function(e){return e.data}))):e.push(t.data),e},[])}function Na(e,t){return e.reduce(function(e,n){return n.type===`group`?e.push.apply(e,ue(n.options.map(function(e){return{data:e.data,id:`${t}-${n.index}-${e.index}`}}))):e.push({data:n.data,id:`${t}-${n.index}`}),e},[])}function Pa(e,t){return Ma(ja(e,t))}function Fa(e,t){var n=e.inputValue,r=n===void 0?``:n,i=t.data,a=t.isSelected,o=t.label,s=t.value;return(!Wa(e)||!a)&&Ua(e,{label:o,value:s,data:i},r)}function Ia(e,t){var n=e.focusedValue,r=e.selectValue.indexOf(n);if(r>-1){if(t.indexOf(n)>-1)return n;if(r<t.length)return t[r]}return null}function La(e,t){var n=e.focusedOption;return n&&t.indexOf(n)>-1?n:t[0]}var Ra=function(e,t){return e.find(function(e){return e.data===t})?.id||null},za=function(e,t){return e.getOptionLabel(t)},Ba=function(e,t){return e.getOptionValue(t)};function Va(e,t,n){return typeof e.isOptionDisabled==`function`?e.isOptionDisabled(t,n):!1}function Ha(e,t,n){if(n.indexOf(t)>-1)return!0;if(typeof e.isOptionSelected==`function`)return e.isOptionSelected(t,n);var r=Ba(e,t);return n.some(function(t){return Ba(e,t)===r})}function Ua(e,t,n){return e.filterOption?e.filterOption(t,n):!0}var Wa=function(e){var t=e.hideSelectedOptions,n=e.isMulti;return t===void 0?n:t},Ga=1,Ka=function(e){re(n,e);var t=O(n);function n(e){var r;if(ee(this,n),r=t.call(this,e),r.state={ariaSelection:null,focusedOption:null,focusedOptionId:null,focusableOptionsWithIds:[],focusedValue:null,inputIsHidden:!1,isFocused:!1,selectValue:[],clearFocusValueOnUpdate:!1,prevWasFocused:!1,inputIsHiddenAfterUpdate:void 0,prevProps:void 0,instancePrefix:``,isAppleDevice:!1},r.blockOptionHover=!1,r.isComposing=!1,r.commonProps=void 0,r.initialTouchX=0,r.initialTouchY=0,r.openAfterFocus=!1,r.scrollToFocusedOptionOnUpdate=!1,r.userIsDragging=void 0,r.controlRef=null,r.getControlRef=function(e){r.controlRef=e},r.focusedOptionRef=null,r.getFocusedOptionRef=function(e){r.focusedOptionRef=e},r.menuListRef=null,r.getMenuListRef=function(e){r.menuListRef=e},r.inputRef=null,r.getInputRef=function(e){r.inputRef=e},r.focus=r.focusInput,r.blur=r.blurInput,r.onChange=function(e,t){var n=r.props,i=n.onChange;t.name=n.name,r.ariaOnChange(e,t),i(e,t)},r.setValue=function(e,t,n){var i=r.props,a=i.closeMenuOnSelect,o=i.isMulti,s=i.inputValue;r.onInputChange(``,{action:`set-value`,prevInputValue:s}),a&&(r.setState({inputIsHiddenAfterUpdate:!o}),r.onMenuClose()),r.setState({clearFocusValueOnUpdate:!0}),r.onChange(e,{action:t,option:n})},r.selectOption=function(e){var t=r.props,n=t.blurInputOnSelect,i=t.isMulti,a=t.name,o=r.state.selectValue,s=i&&r.isOptionSelected(e,o),c=r.isOptionDisabled(e,o);if(s){var l=r.getOptionValue(e);r.setValue(pr(o.filter(function(e){return r.getOptionValue(e)!==l})),`deselect-option`,e)}else if(!c)i?r.setValue(pr([].concat(ue(o),[e])),`select-option`,e):r.setValue(fr(e),`select-option`);else{r.ariaOnChange(fr(e),{action:`select-option`,option:e,name:a});return}n&&r.blurInput()},r.removeValue=function(e){var t=r.props.isMulti,n=r.state.selectValue,i=r.getOptionValue(e),a=n.filter(function(e){return r.getOptionValue(e)!==i}),o=dr(t,a,a[0]||null);r.onChange(o,{action:`remove-value`,removedValue:e}),r.focusInput()},r.clearValue=function(){var e=r.state.selectValue;r.onChange(dr(r.props.isMulti,[],null),{action:`clear`,removedValues:e})},r.popValue=function(){var e=r.props.isMulti,t=r.state.selectValue,n=t[t.length-1],i=t.slice(0,t.length-1),a=dr(e,i,i[0]||null);n&&r.onChange(a,{action:`pop-value`,removedValue:n})},r.getFocusedOptionId=function(e){return Ra(r.state.focusableOptionsWithIds,e)},r.getFocusableOptionsWithIds=function(){return Na(ja(r.props,r.state.selectValue),r.getElementId(`option`))},r.getValue=function(){return r.state.selectValue},r.cx=function(){var e=[...arguments];return Gn.apply(void 0,[r.props.classNamePrefix].concat(e))},r.getOptionLabel=function(e){return za(r.props,e)},r.getOptionValue=function(e){return Ba(r.props,e)},r.getStyles=function(e,t){var n=r.props.unstyled,i=wa[e](t,n);i.boxSizing=`border-box`;var a=r.props.styles[e];return a?a(i,t):i},r.getClassNames=function(e,t){var n;return(n=r.props.classNames)[e]?.call(n,t)},r.getElementId=function(e){return`${r.state.instancePrefix}-${e}`},r.getComponents=function(){return ji(r.props)},r.buildCategorizedOptions=function(){return ja(r.props,r.state.selectValue)},r.getCategorizedOptions=function(){return r.props.menuIsOpen?r.buildCategorizedOptions():[]},r.buildFocusableOptions=function(){return Ma(r.buildCategorizedOptions())},r.getFocusableOptions=function(){return r.props.menuIsOpen?r.buildFocusableOptions():[]},r.ariaOnChange=function(e,t){r.setState({ariaSelection:h({value:e},t)})},r.onMenuMouseDown=function(e){e.button===0&&(e.stopPropagation(),e.preventDefault(),r.focusInput())},r.onMenuMouseMove=function(e){r.blockOptionHover=!1},r.onControlMouseDown=function(e){if(!e.defaultPrevented){var t=r.props.openMenuOnClick;r.state.isFocused?r.props.menuIsOpen?e.target.tagName!==`INPUT`&&e.target.tagName!==`TEXTAREA`&&r.onMenuClose():t&&r.openMenu(`first`):(t&&(r.openAfterFocus=!0),r.focusInput()),e.target.tagName!==`INPUT`&&e.target.tagName!==`TEXTAREA`&&e.preventDefault()}},r.onDropdownIndicatorMouseDown=function(e){if(!(e&&e.type===`mousedown`&&e.button!==0)&&!r.props.isDisabled){var t=r.props,n=t.isMulti,i=t.menuIsOpen;r.focusInput(),i?(r.setState({inputIsHiddenAfterUpdate:!n}),r.onMenuClose()):r.openMenu(`first`),e.preventDefault()}},r.onClearIndicatorMouseDown=function(e){e&&e.type===`mousedown`&&e.button!==0||(r.clearValue(),e.preventDefault(),r.openAfterFocus=!1,e.type===`touchend`?r.focusInput():setTimeout(function(){return r.focusInput()}))},r.onScroll=function(e){typeof r.props.closeMenuOnScroll==`boolean`?e.target instanceof HTMLElement&&Jn(e.target)&&r.props.onMenuClose():typeof r.props.closeMenuOnScroll==`function`&&r.props.closeMenuOnScroll(e)&&r.props.onMenuClose()},r.onCompositionStart=function(){r.isComposing=!0},r.onCompositionEnd=function(){r.isComposing=!1},r.onTouchStart=function(e){var t=e.touches,n=t&&t.item(0);n&&(r.initialTouchX=n.clientX,r.initialTouchY=n.clientY,r.userIsDragging=!1)},r.onTouchMove=function(e){var t=e.touches,n=t&&t.item(0);if(n){var i=Math.abs(n.clientX-r.initialTouchX),a=Math.abs(n.clientY-r.initialTouchY),o=5;r.userIsDragging=i>o||a>o}},r.onTouchEnd=function(e){r.userIsDragging||(r.controlRef&&!r.controlRef.contains(e.target)&&r.menuListRef&&!r.menuListRef.contains(e.target)&&r.blurInput(),r.initialTouchX=0,r.initialTouchY=0)},r.onControlTouchEnd=function(e){r.userIsDragging||r.onControlMouseDown(e)},r.onClearIndicatorTouchEnd=function(e){r.userIsDragging||r.onClearIndicatorMouseDown(e)},r.onDropdownIndicatorTouchEnd=function(e){r.userIsDragging||r.onDropdownIndicatorMouseDown(e)},r.handleInputChange=function(e){var t=r.props.inputValue,n=e.currentTarget.value;r.setState({inputIsHiddenAfterUpdate:!1}),r.onInputChange(n,{action:`input-change`,prevInputValue:t}),r.props.menuIsOpen||r.onMenuOpen()},r.onInputFocus=function(e){r.props.onFocus&&r.props.onFocus(e),r.setState({inputIsHiddenAfterUpdate:!1,isFocused:!0}),(r.openAfterFocus||r.props.openMenuOnFocus)&&r.openMenu(`first`),r.openAfterFocus=!1},r.onInputBlur=function(e){var t=r.props.inputValue;if(r.menuListRef&&r.menuListRef.contains(document.activeElement)){r.inputRef.focus();return}r.props.onBlur&&r.props.onBlur(e),r.onInputChange(``,{action:`input-blur`,prevInputValue:t}),r.onMenuClose(),r.setState({focusedValue:null,isFocused:!1})},r.onOptionHover=function(e){if(!(r.blockOptionHover||r.state.focusedOption===e)){var t=r.getFocusableOptions().indexOf(e);r.setState({focusedOption:e,focusedOptionId:t>-1?r.getFocusedOptionId(e):null})}},r.shouldHideSelectedOptions=function(){return Wa(r.props)},r.onValueInputFocus=function(e){e.preventDefault(),e.stopPropagation(),r.focus()},r.onKeyDown=function(e){var t=r.props,n=t.isMulti,i=t.backspaceRemovesValue,a=t.escapeClearsValue,o=t.inputValue,s=t.isClearable,c=t.isDisabled,l=t.menuIsOpen,u=t.onKeyDown,d=t.tabSelectsValue,f=t.openMenuOnFocus,p=r.state,m=p.focusedOption,h=p.focusedValue,g=p.selectValue;if(!c&&!(typeof u==`function`&&(u(e),e.defaultPrevented))){switch(r.blockOptionHover=!0,e.key){case`ArrowLeft`:if(!n||o)return;r.focusValue(`previous`);break;case`ArrowRight`:if(!n||o)return;r.focusValue(`next`);break;case`Delete`:case`Backspace`:if(o)return;if(h)r.removeValue(h);else{if(!i)return;n?r.popValue():s&&r.clearValue()}break;case`Tab`:if(r.isComposing||e.shiftKey||!l||!d||!m||f&&r.isOptionSelected(m,g))return;r.selectOption(m);break;case`Enter`:if(e.keyCode===229)break;if(l){if(!m||r.isComposing)return;r.selectOption(m);break}return;case`Escape`:l?(r.setState({inputIsHiddenAfterUpdate:!1}),r.onInputChange(``,{action:`menu-close`,prevInputValue:o}),r.onMenuClose()):s&&a&&r.clearValue();break;case` `:if(o)return;if(!l){r.openMenu(`first`);break}if(!m)return;r.selectOption(m);break;case`ArrowUp`:l?r.focusOption(`up`):r.openMenu(`last`);break;case`ArrowDown`:l?r.focusOption(`down`):r.openMenu(`first`);break;case`PageUp`:if(!l)return;r.focusOption(`pageup`);break;case`PageDown`:if(!l)return;r.focusOption(`pagedown`);break;case`Home`:if(!l)return;r.focusOption(`first`);break;case`End`:if(!l)return;r.focusOption(`last`);break;default:return}e.preventDefault()}},r.state.instancePrefix=`react-select-`+(r.props.instanceId||++Ga),r.state.selectValue=Kn(e.value),e.menuIsOpen&&r.state.selectValue.length){var i=r.getFocusableOptionsWithIds(),a=r.buildFocusableOptions(),o=a.indexOf(r.state.selectValue[0]);r.state.focusableOptionsWithIds=i,r.state.focusedOption=a[o],r.state.focusedOptionId=Ra(i,a[o])}return r}return te(n,[{key:`componentDidMount`,value:function(){this.startListeningComposition(),this.startListeningToTouch(),this.props.closeMenuOnScroll&&document&&document.addEventListener&&document.addEventListener(`scroll`,this.onScroll,!0),this.props.autoFocus&&this.focusInput(),this.props.menuIsOpen&&this.state.focusedOption&&this.menuListRef&&this.focusedOptionRef&&tr(this.menuListRef,this.focusedOptionRef),ya()&&this.setState({isAppleDevice:!0})}},{key:`componentDidUpdate`,value:function(e){var t=this.props,n=t.isDisabled,r=t.menuIsOpen,i=this.state.isFocused;(i&&!n&&e.isDisabled||i&&r&&!e.menuIsOpen)&&this.focusInput(),i&&n&&!e.isDisabled?this.setState({isFocused:!1},this.onMenuClose):!i&&!n&&e.isDisabled&&this.inputRef===document.activeElement&&this.setState({isFocused:!0}),this.menuListRef&&this.focusedOptionRef&&this.scrollToFocusedOptionOnUpdate&&(tr(this.menuListRef,this.focusedOptionRef),this.scrollToFocusedOptionOnUpdate=!1)}},{key:`componentWillUnmount`,value:function(){this.stopListeningComposition(),this.stopListeningToTouch(),document.removeEventListener(`scroll`,this.onScroll,!0)}},{key:`onMenuOpen`,value:function(){this.props.onMenuOpen()}},{key:`onMenuClose`,value:function(){this.onInputChange(``,{action:`menu-close`,prevInputValue:this.props.inputValue}),this.props.onMenuClose()}},{key:`onInputChange`,value:function(e,t){this.props.onInputChange(e,t)}},{key:`focusInput`,value:function(){this.inputRef&&this.inputRef.focus()}},{key:`blurInput`,value:function(){this.inputRef&&this.inputRef.blur()}},{key:`openMenu`,value:function(e){var t=this,n=this.state,r=n.selectValue,i=n.isFocused,a=this.buildFocusableOptions(),o=e===`first`?0:a.length-1;if(!this.props.isMulti){var s=a.indexOf(r[0]);s>-1&&(o=s)}this.scrollToFocusedOptionOnUpdate=!(i&&this.menuListRef),this.setState({inputIsHiddenAfterUpdate:!1,focusedValue:null,focusedOption:a[o],focusedOptionId:this.getFocusedOptionId(a[o])},function(){return t.onMenuOpen()})}},{key:`focusValue`,value:function(e){var t=this.state,n=t.selectValue,r=t.focusedValue;if(this.props.isMulti){this.setState({focusedOption:null});var i=n.indexOf(r);r||(i=-1);var a=n.length-1,o=-1;if(n.length){switch(e){case`previous`:o=i===0?0:i===-1?a:i-1;break;case`next`:i>-1&&i<a&&(o=i+1);break}this.setState({inputIsHidden:o!==-1,focusedValue:n[o]})}}}},{key:`focusOption`,value:function(){var e=arguments.length>0&&arguments[0]!==void 0?arguments[0]:`first`,t=this.props.pageSize,n=this.state.focusedOption,r=this.getFocusableOptions();if(r.length){var i=0,a=r.indexOf(n);n||(a=-1),e===`up`?i=a>0?a-1:r.length-1:e===`down`?i=(a+1)%r.length:e===`pageup`?(i=a-t,i<0&&(i=0)):e===`pagedown`?(i=a+t,i>r.length-1&&(i=r.length-1)):e===`last`&&(i=r.length-1),this.scrollToFocusedOptionOnUpdate=!0,this.setState({focusedOption:r[i],focusedValue:null,focusedOptionId:this.getFocusedOptionId(r[i])})}}},{key:`getTheme`,value:function(){return this.props.theme?typeof this.props.theme==`function`?this.props.theme(Oa):h(h({},Oa),this.props.theme):Oa}},{key:`getCommonProps`,value:function(){var e=this.clearValue,t=this.cx,n=this.getStyles,r=this.getClassNames,i=this.getValue,a=this.selectOption,o=this.setValue,s=this.props,c=s.isMulti,l=s.isRtl,u=s.options;return{clearValue:e,cx:t,getStyles:n,getClassNames:r,getValue:i,hasValue:this.hasValue(),isMulti:c,isRtl:l,options:u,selectOption:a,selectProps:s,setValue:o,theme:this.getTheme()}}},{key:`hasValue`,value:function(){return this.state.selectValue.length>0}},{key:`hasOptions`,value:function(){return!!this.getFocusableOptions().length}},{key:`isClearable`,value:function(){var e=this.props,t=e.isClearable,n=e.isMulti;return t===void 0?n:t}},{key:`isOptionDisabled`,value:function(e,t){return Va(this.props,e,t)}},{key:`isOptionSelected`,value:function(e,t){return Ha(this.props,e,t)}},{key:`filterOption`,value:function(e,t){return Ua(this.props,e,t)}},{key:`formatOptionLabel`,value:function(e,t){if(typeof this.props.formatOptionLabel==`function`){var n=this.props.inputValue,r=this.state.selectValue;return this.props.formatOptionLabel(e,{context:t,inputValue:n,selectValue:r})}else return this.getOptionLabel(e)}},{key:`formatGroupLabel`,value:function(e){return this.props.formatGroupLabel(e)}},{key:`startListeningComposition`,value:function(){document&&document.addEventListener&&(document.addEventListener(`compositionstart`,this.onCompositionStart,!1),document.addEventListener(`compositionend`,this.onCompositionEnd,!1))}},{key:`stopListeningComposition`,value:function(){document&&document.removeEventListener&&(document.removeEventListener(`compositionstart`,this.onCompositionStart),document.removeEventListener(`compositionend`,this.onCompositionEnd))}},{key:`startListeningToTouch`,value:function(){document&&document.addEventListener&&(document.addEventListener(`touchstart`,this.onTouchStart,!1),document.addEventListener(`touchmove`,this.onTouchMove,!1),document.addEventListener(`touchend`,this.onTouchEnd,!1))}},{key:`stopListeningToTouch`,value:function(){document&&document.removeEventListener&&(document.removeEventListener(`touchstart`,this.onTouchStart),document.removeEventListener(`touchmove`,this.onTouchMove),document.removeEventListener(`touchend`,this.onTouchEnd))}},{key:`renderInput`,value:function(){var e=this.props,t=e.isDisabled,n=e.isSearchable,r=e.inputId,i=e.inputValue,a=e.tabIndex,o=e.form,s=e.menuIsOpen,c=e.required,u=this.getComponents().Input,d=this.state,f=d.inputIsHidden,p=d.ariaSelection,m=this.commonProps,g=r||this.getElementId(`input`),_=h(h(h({"aria-autocomplete":`list`,"aria-expanded":s,"aria-haspopup":!0,"aria-errormessage":this.props[`aria-errormessage`],"aria-invalid":this.props[`aria-invalid`],"aria-label":this.props[`aria-label`],"aria-labelledby":this.props[`aria-labelledby`],"aria-required":c,role:`combobox`,"aria-activedescendant":this.state.isAppleDevice?void 0:this.state.focusedOptionId||``},s&&{"aria-controls":this.getElementId(`listbox`)}),!n&&{"aria-readonly":!0}),this.hasValue()?p?.action===`initial-input-focus`&&{"aria-describedby":this.getElementId(`live-region`)}:{"aria-describedby":this.getElementId(`placeholder`)});return n?l.createElement(u,E({},m,{autoCapitalize:`none`,autoComplete:`off`,autoCorrect:`off`,id:g,innerRef:this.getInputRef,isDisabled:t,isHidden:f,onBlur:this.onInputBlur,onChange:this.handleInputChange,onFocus:this.onInputFocus,spellCheck:`false`,tabIndex:a,form:o,type:`text`,value:i},_)):l.createElement(Xi,E({id:g,innerRef:this.getInputRef,onBlur:this.onInputBlur,onChange:Un,onFocus:this.onInputFocus,disabled:t,tabIndex:a,inputMode:`none`,form:o,value:``},_))}},{key:`renderPlaceholderOrValue`,value:function(){var e=this,t=this.getComponents(),n=t.MultiValue,r=t.MultiValueContainer,i=t.MultiValueLabel,a=t.MultiValueRemove,o=t.SingleValue,s=t.Placeholder,c=this.commonProps,u=this.props,d=u.controlShouldRenderValue,f=u.isDisabled,p=u.isMulti,m=u.inputValue,h=u.placeholder,g=this.state,_=g.selectValue,v=g.focusedValue,y=g.isFocused;if(!this.hasValue()||!d)return m?null:l.createElement(s,E({},c,{key:`placeholder`,isDisabled:f,isFocused:y,innerProps:{id:this.getElementId(`placeholder`)}}),h);if(p)return _.map(function(t,o){var s=t===v,u=`${e.getOptionLabel(t)}-${e.getOptionValue(t)}`;return l.createElement(n,E({},c,{components:{Container:r,Label:i,Remove:a},isFocused:s,isDisabled:f,key:u,index:o,removeProps:{onClick:function(){return e.removeValue(t)},onTouchEnd:function(){return e.removeValue(t)},onMouseDown:function(e){e.preventDefault()}},data:t}),e.formatOptionLabel(t,`value`))});if(m)return null;var b=_[0];return l.createElement(o,E({},c,{data:b,isDisabled:f}),this.formatOptionLabel(b,`value`))}},{key:`renderClearIndicator`,value:function(){var e=this.getComponents().ClearIndicator,t=this.commonProps,n=this.props,r=n.isDisabled,i=n.isLoading,a=this.state.isFocused;if(!this.isClearable()||!e||r||!this.hasValue()||i)return null;var o={onMouseDown:this.onClearIndicatorMouseDown,onTouchEnd:this.onClearIndicatorTouchEnd,"aria-hidden":`true`};return l.createElement(e,E({},t,{innerProps:o,isFocused:a}))}},{key:`renderLoadingIndicator`,value:function(){var e=this.getComponents().LoadingIndicator,t=this.commonProps,n=this.props,r=n.isDisabled,i=n.isLoading,a=this.state.isFocused;return!e||!i?null:l.createElement(e,E({},t,{innerProps:{"aria-hidden":`true`},isDisabled:r,isFocused:a}))}},{key:`renderIndicatorSeparator`,value:function(){var e=this.getComponents(),t=e.DropdownIndicator,n=e.IndicatorSeparator;if(!t||!n)return null;var r=this.commonProps,i=this.props.isDisabled,a=this.state.isFocused;return l.createElement(n,E({},r,{isDisabled:i,isFocused:a}))}},{key:`renderDropdownIndicator`,value:function(){var e=this.getComponents().DropdownIndicator;if(!e)return null;var t=this.commonProps,n=this.props.isDisabled,r=this.state.isFocused,i={onMouseDown:this.onDropdownIndicatorMouseDown,onTouchEnd:this.onDropdownIndicatorTouchEnd,"aria-hidden":`true`};return l.createElement(e,E({},t,{innerProps:i,isDisabled:n,isFocused:r}))}},{key:`renderMenu`,value:function(){var e=this,t=this.getComponents(),n=t.Group,r=t.GroupHeading,i=t.Menu,a=t.MenuList,o=t.MenuPortal,s=t.LoadingMessage,c=t.NoOptionsMessage,u=t.Option,d=this.commonProps,f=this.state.focusedOption,p=this.props,m=p.captureMenuScroll,h=p.inputValue,g=p.isLoading,_=p.loadingMessage,v=p.minMenuHeight,y=p.maxMenuHeight,b=p.menuIsOpen,x=p.menuPlacement,S=p.menuPosition,C=p.menuPortalTarget,w=p.menuShouldBlockScroll,T=p.menuShouldScrollIntoView,ee=p.noOptionsMessage,D=p.onMenuScrollToTop,te=p.onMenuScrollToBottom;if(!b)return null;var ne=function(t,n){var r=t.type,i=t.data,a=t.isDisabled,o=t.isSelected,s=t.label,c=t.value,p=f===i,m=a?void 0:function(){return e.onOptionHover(i)},h=a?void 0:function(){return e.selectOption(i)},g=`${e.getElementId(`option`)}-${n}`,_={id:g,onClick:h,onMouseMove:m,onMouseOver:m,tabIndex:-1,role:`option`,"aria-selected":e.state.isAppleDevice?void 0:o};return l.createElement(u,E({},d,{innerProps:_,data:i,isDisabled:a,isSelected:o,key:g,label:s,type:r,value:c,isFocused:p,innerRef:p?e.getFocusedOptionRef:void 0}),e.formatOptionLabel(t.data,`menu`))},re;if(this.hasOptions())re=this.getCategorizedOptions().map(function(t){if(t.type===`group`){var i=t.data,a=t.options,o=t.index,s=`${e.getElementId(`group`)}-${o}`,c=`${s}-heading`;return l.createElement(n,E({},d,{key:s,data:i,options:a,Heading:r,headingProps:{id:c,data:t.data},label:e.formatGroupLabel(t.data)}),t.options.map(function(e){return ne(e,`${o}-${e.index}`)}))}else if(t.type===`option`)return ne(t,`${t.index}`)});else if(g){var ie=_({inputValue:h});if(ie===null)return null;re=l.createElement(s,d,ie)}else{var ae=ee({inputValue:h});if(ae===null)return null;re=l.createElement(c,d,ae)}var oe={minMenuHeight:v,maxMenuHeight:y,menuPlacement:x,menuPosition:S,menuShouldScrollIntoView:T},se=l.createElement(Sr,E({},d,oe),function(t){var n=t.ref,r=t.placerProps,o=r.placement,s=r.maxHeight;return l.createElement(i,E({},d,oe,{innerRef:n,innerProps:{onMouseDown:e.onMenuMouseDown,onMouseMove:e.onMenuMouseMove},isLoading:g,placement:o}),l.createElement(da,{captureEnabled:m,onTopArrive:D,onBottomArrive:te,lockEnabled:w},function(t){return l.createElement(a,E({},d,{innerRef:function(n){e.getMenuListRef(n),t(n)},innerProps:{role:`listbox`,"aria-multiselectable":d.isMulti,id:e.getElementId(`listbox`)},isLoading:g,maxHeight:s,focusedOption:f}),re)}))});return C||S===`fixed`?l.createElement(o,E({},d,{appendTo:C,controlElement:this.controlRef,menuPlacement:x,menuPosition:S}),se):se}},{key:`renderFormField`,value:function(){var e=this,t=this.props,n=t.delimiter,r=t.isDisabled,i=t.isMulti,a=t.name,o=t.required,s=this.state.selectValue;if(o&&!this.hasValue()&&!r)return l.createElement(pa,{name:a,onFocus:this.onValueInputFocus});if(!(!a||r))if(i)if(n){var c=s.map(function(t){return e.getOptionValue(t)}).join(n);return l.createElement(`input`,{name:a,type:`hidden`,value:c})}else{var u=s.length>0?s.map(function(t,n){return l.createElement(`input`,{key:`i-${n}`,name:a,type:`hidden`,value:e.getOptionValue(t)})}):l.createElement(`input`,{name:a,type:`hidden`,value:``});return l.createElement(`div`,null,u)}else{var d=s[0]?this.getOptionValue(s[0]):``;return l.createElement(`input`,{name:a,type:`hidden`,value:d})}}},{key:`renderLiveRegion`,value:function(){var e=this.commonProps,t=this.state,n=t.ariaSelection,r=t.focusedOption,i=t.focusedValue,a=t.isFocused,o=t.selectValue,s=this.getFocusableOptions();return l.createElement(I,E({},e,{id:this.getElementId(`live-region`),ariaSelection:n,focusedOption:r,focusedValue:i,isFocused:a,selectValue:o,focusableOptions:s,isAppleDevice:this.state.isAppleDevice}))}},{key:`render`,value:function(){var e=this.getComponents(),t=e.Control,n=e.IndicatorsContainer,r=e.SelectContainer,i=e.ValueContainer,a=this.props,o=a.className,s=a.id,c=a.isDisabled,u=a.menuIsOpen,d=this.state.isFocused,f=this.commonProps=this.getCommonProps();return l.createElement(r,E({},f,{className:o,innerProps:{id:s,onKeyDown:this.onKeyDown},isDisabled:c,isFocused:d}),this.renderLiveRegion(),l.createElement(t,E({},f,{innerRef:this.getControlRef,innerProps:{onMouseDown:this.onControlMouseDown,onTouchEnd:this.onControlTouchEnd},isDisabled:c,isFocused:d,menuIsOpen:u}),l.createElement(i,E({},f,{isDisabled:c}),this.renderPlaceholderOrValue(),this.renderInput()),l.createElement(n,E({},f,{isDisabled:c}),this.renderClearIndicator(),this.renderLoadingIndicator(),this.renderIndicatorSeparator(),this.renderDropdownIndicator())),this.renderMenu(),this.renderFormField())}}],[{key:`getDerivedStateFromProps`,value:function(e,t){var n=t.prevProps,r=t.clearFocusValueOnUpdate,i=t.inputIsHiddenAfterUpdate,a=t.ariaSelection,o=t.isFocused,s=t.prevWasFocused,c=t.instancePrefix,l=e.options,u=e.value,d=e.menuIsOpen,f=e.inputValue,p=e.isMulti,m=Kn(u),g={};if(n&&(u!==n.value||l!==n.options||d!==n.menuIsOpen||f!==n.inputValue)){var _=d?Pa(e,m):[],v=d?Na(ja(e,m),`${c}-option`):[],y=r?Ia(t,m):null,b=La(t,_);g={selectValue:m,focusedOption:b,focusedOptionId:Ra(v,b),focusableOptionsWithIds:v,focusedValue:y,clearFocusValueOnUpdate:!1}}var x=i!=null&&e!==n?{inputIsHidden:i,inputIsHiddenAfterUpdate:void 0}:{},S=a,C=o&&s;return o&&!C&&(S={value:dr(p,m,m[0]||null),options:m,action:`initial-input-focus`},C=!s),a?.action===`initial-input-focus`&&(S=null),h(h(h({},g),x),{},{prevProps:e,ariaSelection:S,prevWasFocused:C})}}]),n}(l.Component);Ka.defaultProps=ka,o();var qa=(0,l.forwardRef)(function(e,t){var n=T(e);return l.createElement(Ka,E({ref:t},n))});const Ja=()=>{let e=new Date;return`${e.toLocaleDateString(`id-ID`)} ${String(e.getHours()).padStart(2,`0`)}:${String(e.getMinutes()).padStart(2,`0`)}`},Ya=()=>new Date().toLocaleDateString(`id-ID`),Xa=()=>[{id:1,case:`Internet Lambat/Tidak bisa internet`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case :  Internet 
 Solusi :  minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala internetnya boleh infoin data ini ya biar biar bisa aku cek : 
@@ -107,7 +107,7 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
 `},{id:2,case:`Tidak bisa aktivasi Error Lain`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case :  gabisa aktivasi Error Lain
 Solusi : minta data
 `,Solusi:`Makasih udah nunggu. Kak maaf, kalau aku cek di nomor xxxxxx, ada  masalah di nomor atau SIM Card by.U Kakak. Untuk pengecekan lebih lanjut, boleh infoin data ini ya :
@@ -137,7 +137,7 @@ Tidak bisa aktivasi Error Lain
 1x24 jam`},{id:3,case:`Bugs Lain`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case :  bugs aplikasi
 Solusi :  minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy.Kak maaf banget untuk kendala aplikasinya ,boleh coba dulu untuk ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih gak bisa, boleh coba install ulang aplikasi by.U kakak dan pastikan koneksi internet ada. Kalau di aplikasi masih berkendala, Kakak bisa coba akses di website by.U ya. Kalau udah tapi masih berkendala, boleh infoin data ini ya :
@@ -201,7 +201,7 @@ Bugs Lain
 `},{id:4,case:`Bugs Ganti Sim Card`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : bugs ganti sim card
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih, untuk kendala ganti SIM card nya di apps by.U, Coba di clear cache dulu apps nya dan pastiin pakai apps versi terbaru ya. Kalau udah tapi masih berkendala boleh diinfoin data ini :
@@ -241,7 +241,7 @@ Bugs Ganti Sim Card
 `},{id:5,case:`Tidak bisa Kirim/Terima SMS`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa kirim/terima SMS
 Solusi :  minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala SMS nya, boleh coba panduan ini dulu ya :
@@ -301,53 +301,227 @@ Tidak bisa kirim / Terima SMS
 1x24 jam`},{id:6,case:`Panggilan Telepon Masuk / Telepon Keluar`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa telepon masuk/keluar
 Solusi : minta data
-`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget untuk kendala teleponnya, boleh pastiin dulu kakak berada dalam lokasi yang mendapatkan sinyal by.U dan sudah mencoba on-off-kan airplane mode. kalau masih gabisa, boleh infoin data ini ya :
-1. Email akun by.U :
-2. Nomor by.U : 
-3. Printscreen dashboard di apps dan keterangan sinyal : 
-4. Waktu dan Lama Kejadian :
-5. Tipe HP yang dipakai :
-6. Capture keterangan error yang muncul saat telepon :
-7. Kendala terjadi hanya saat menerima panggilan, melakukan panggilan, atau keduanya :
-8. Kendala terjadi hanya ke nomor tertentu atau semua nomor :
-9. Nomor lain yang bisa dihubungi : 
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget untuk kendala teleponnya, boleh infoin data ini ya biar bisa aku cek:
+1. Nomor by.U dan  Akun SignUp :
+2. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
+3. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
+4. Notifikasi gagal saat telepon/Notifikasi gagal terima telepon : *silakan untuk notifikasi yang ditanyakan sesuai dengan keluhan dan hapus yang tidak perlu
+5. Kendala terjadi hanya ke nomor tertentu atau semua nomor?
+6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
 
 Aku tunggu datanya ya :)
-`:`Makasih udah nunggu. Kak maaf, untuk kendala teleponnya di nomor xxxxxx , boleh pastiin dulu kakak berada dalam lokasi yang mendapatkan sinyal by.U dan sudah mencoba on-off-kan airplane mode. kalau masih gabisa, boleh infoin data ini ya :
-1. Email akun by.U :
-2. Printscreen dashboard di apps dan keterangan sinyal : 
-3. Waktu dan Lama Kejadian :
-4. Tipe HP yang dipakai :
-5. Capture keterangan error yang muncul saat telepon :
-6. Kendala terjadi hanya saat menerima panggilan, melakukan panggilan, atau keduanya :
-7. Kendala terjadi hanya ke nomor tertentu atau semua nomor :
-8. Nomor lain yang bisa dihubungi : 
 
-`,Mandatory:(e,t)=>`#Pelangganbyu
-[byU ${e}] 
-Pelanggan by.U
-${t} 
-Tidak bisa melakukan panggilan on-net & off-net
+Lakukan panggilan : 
+4.1. Keterangan Busy (jaringan sibuk)   
+a. Jika kendala ke satu nomor indikasi kendala di nomor tujuan, bisa dikarenakan: 
+Kak aku cek nomor xxxxxx aktif, Kalau keterangannya jaringan sibuk, bisa dikarenakan :  
+-    No tujuan sedang lakukan panggilan dan nomor tersebut tidak mengaktifkan call waiting.
+-    Nomor tujuan sedang melakukan pengalihan panggilan dan nomor pengalihannya sedang lakukan panggilan.   
+-    Nomor Kakak sedang di blok olah nomor tujuan.    
+-    nomor tujuan digunakan pada perangkat yang tidak memiliki fitur voice (iPad atau modem).    
+b. Jika kesemua nomor, 
+Kak aku cek nomor xxxxxx aktif, boleh coba dulu refresh Jaringan dengan cara Restart Handphone dan Kakak bisa pindahin SIM card ke HP lain sebagai perbandingan.
+c. Jika masih berkendala, create tiket.
+
+4.2. Keterangan Call not allowed (panggilan ditolak)        
+Lakukan pengecekan nomor pelanggan di OperatorX untuk mengetahui nomor aktif, dan lakukan pengecekan history panggilan di CDR.  
+
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya :
+- refresh Jaringan dengan cara Restart Handphone
+- pindahin SIM card ke HP lain sebagai perbandingan
+- pastikan fitur FDN (Fix Dialling Number)/Pembatasan panggilan dalam keadaan OFF pada pengaturan HP
+
+4.3. Keterangan pulsa tidak cukup melakukan panggilan .
+
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya :
+- refresh Jaringan dengan cara Restart Handphone
+- pindahin SIM card ke HP lain sebagai perbandingan
+
+
+4.4. Keterangan The number you are calling is not active or out of coverage area    
+a. Jika kendala ke satu nomor indikasi kendala di nomor tujuan, bisa dikarenakan No tujuan sedang tidak aktif atau berada di jangkauan area.    
+
+b. Jika kesemua nomor, 
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya :
+- refresh Jaringan dengan cara Restart Handphone
+- pindahin SIM card ke HP lain sebagai perbandingan
+
+
+
+4.5. Keterangan Nomor yg anda hubungi kurang lengkap kemudian langsung terputus     
+a. Jika ke satu nomor   
+- Pastikan nomor tujuan benar   
+(Jika nomor tujuan adalah nomor by.U cek status nomor tujuannya di aplikasi OperatorX / Nomor Telkomsel cek status nomor di DSC apakah masih aktif atau tidak). 
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya : 
+- Coba Kakak menghubungi ke no tersebut minimal 3 kali dalam jeda waktu 5 menit per panggilan.    
+- Coba kakak lakukan panggilan juga dari nomor by.U yang lain ke No tersebut sebagai pembanding.   
+- Jika dari semua nomor tetap sama, indikasi kendala di nomor tujuan yang berkendala ya Kak. 
+b. Jika kesemua nomor   
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya :
+- refresh Jaringan dengan cara Restart Handphone
+- pindahin SIM card ke HP lain sebagai perbandingan
+
+
+4.6. Cross connect/tersambung ke nomor lain (lihat pansol da jarang)
+
+4.7. Keterangan lain    
+a. Jika hanya ke 1 nomor
+Kak aku cek nomor xxxxxx aktif. Coba panduan ini ya : 
+- Pastikan nomor tujuan benar dan masih aktif.     
+- Sarankan Refresh Jaringan dengan cara Restart Handphone
+- Pindahkan SIM card ke hp lain sebagai perbandingan.    
+b. Jika Kesemua nomor   
+Kak aku cek nomor xxxxxx aktif. Coba panduan ini ya : 
+- Sarankan Refresh Jaringan dengan cara Restart Handphone
+- Pindahkan SIM card ke hp lain sebagai perbandingan.    
+ 
+
+Terima Telepon : 
+5.1. Keterangan nomor dialihkan:
+Kak aku cek nomor xxxxxx aktif. Coba pastiin dulu ini ya :
+- layanan voice mail pada HP ga aktif ya
+- oof kan layanan call forward, Caranya : Dial ##002# > ok/yes
+- Refresh Jaringan dengan cara Restart Handphone
+- coba pindahkan SIM card ke HP lain
+- Kalau masih gabisa, Kakak bisa tunggu 1x24jam untuk mengantisipasi gangguan jaringan sementara
+Semoga membantu :)
+
+
+5.2. Keterangan lainnya lanjut ke tahap selanjutnya
+Tanyakan ke pelanggan kendalanya jika terima Panggilan dari satu nomor atau dari banyak nomor.
+
+Jika dari banyak nomor: 
+Kak aku cek nomor xxxxxx aktif. Coba pandan ini ya :
+- Refresh Jaringan dengan cara Restart Handphone
+- Coba gunakan SIM card di HP lain sebagai perbandingan
+
+Jika masih tidak dapat menerima panggilan, lanjut ke Step berikutnya (langkah 6)
+
+Jika hanya dari satu nomor: 
+- Pastikan nomor pemanggil tidak ada di list blokir di settingan Handphone Kakak.
+- Jika masih berkendala sarankan nomor pemanggil untuk coba di HP yang lain
+- Kalau semua udah di coba tapi masih berkendala, ada indikasi nomor yang melakukan panggilannya yang berkendala dan disarankan hubungi kami untuk bisa dibantu :)
+`:`Makasih udah nunggu. Kak maaf, untuk kendala teleponnya di nomor xxxxxx , boleh infoin data ini ya biar bisa aku cek :
+1. Email akun by.U :
+2. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
+3. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
+4. Notifikasi gagal saat telepon/Notifikasi gagal terima telepon : *silakan untuk notifikasi yang ditanyakan sesuai dengan keluhan dan hapus yang tidak perlu
+5. Kendala terjadi hanya ke nomor tertentu atau semua nomor?
+6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
+
+
+4.1. Keterangan Busy (jaringan sibuk)   
+a. Jika kendala ke satu nomor indikasi kendala di nomor tujuan, bisa dikarenakan: 
+Kak aku cek nomor xxxxxx aktif, Kalau keterangannya jaringan sibuk, bisa dikarenakan :  
+-    No tujuan sedang lakukan panggilan dan nomor tersebut tidak mengaktifkan call waiting.
+-    Nomor tujuan sedang melakukan pengalihan panggilan dan nomor pengalihannya sedang lakukan panggilan.   
+-    Nomor Kakak sedang di blok olah nomor tujuan.    
+-    nomor tujuan digunakan pada perangkat yang tidak memiliki fitur voice (iPad atau modem).    
+b. Jika kesemua nomor, 
+Kak aku cek nomor xxxxxx aktif, boleh coba dulu refresh Jaringan dengan cara Restart Handphone dan Kakak bisa pindahin SIM card ke HP lain sebagai perbandingan.
+c. Jika masih berkendala, create tiket.
+
+4.2. Keterangan Call not allowed (panggilan ditolak)        
+Lakukan pengecekan nomor pelanggan di OperatorX untuk mengetahui nomor aktif, dan lakukan pengecekan history panggilan di CDR.  
+
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya :
+- refresh Jaringan dengan cara Restart Handphone
+- pindahin SIM card ke HP lain sebagai perbandingan
+- pastikan fitur FDN (Fix Dialling Number)/Pembatasan panggilan dalam keadaan OFF pada pengaturan HP
+
+4.3. Keterangan pulsa tidak cukup melakukan panggilan .
+
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya :
+- refresh Jaringan dengan cara Restart Handphone
+- pindahin SIM card ke HP lain sebagai perbandingan
+
+
+4.4. Keterangan The number you are calling is not active or out of coverage area    
+a. Jika kendala ke satu nomor indikasi kendala di nomor tujuan, bisa dikarenakan No tujuan sedang tidak aktif atau berada di jangkauan area.    
+
+b. Jika kesemua nomor, 
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya :
+- refresh Jaringan dengan cara Restart Handphone
+- pindahin SIM card ke HP lain sebagai perbandingan
+
+
+
+4.5. Keterangan Nomor yg anda hubungi kurang lengkap kemudian langsung terputus     
+a. Jika ke satu nomor   
+- Pastikan nomor tujuan benar   
+(Jika nomor tujuan adalah nomor by.U cek status nomor tujuannya di aplikasi OperatorX / Nomor Telkomsel cek status nomor di DSC apakah masih aktif atau tidak). 
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya : 
+- Coba Kakak menghubungi ke no tersebut minimal 3 kali dalam jeda waktu 5 menit per panggilan.    
+- Coba kakak lakukan panggilan juga dari nomor by.U yang lain ke No tersebut sebagai pembanding.   
+- Jika dari semua nomor tetap sama, indikasi kendala di nomor tujuan yang berkendala ya Kak. 
+b. Jika kesemua nomor   
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya :
+- refresh Jaringan dengan cara Restart Handphone
+- pindahin SIM card ke HP lain sebagai perbandingan
+
+
+4.6. Cross connect/tersambung ke nomor lain (lihat pansol da jarang)
+
+4.7. Keterangan lain    
+a. Jika hanya ke 1 nomor
+Kak aku cek nomor xxxxxx aktif. Coba panduan ini ya : 
+- Pastikan nomor tujuan benar dan masih aktif.     
+- Sarankan Refresh Jaringan dengan cara Restart Handphone
+- Pindahkan SIM card ke hp lain sebagai perbandingan.    
+b. Jika Kesemua nomor   
+Kak aku cek nomor xxxxxx aktif. Coba panduan ini ya : 
+- Sarankan Refresh Jaringan dengan cara Restart Handphone
+- Pindahkan SIM card ke hp lain sebagai perbandingan.    
+ 
+
+Terima Telepon : 
+5.1. Keterangan nomor dialihkan:
+Kak aku cek nomor xxxxxx aktif. Coba pastiin dulu ini ya :
+- layanan voice mail pada HP ga aktif ya
+- oof kan layanan call forward, Caranya : Dial ##002# > ok/yes
+- Refresh Jaringan dengan cara Restart Handphone
+- coba pindahkan SIM card ke HP lain
+- Kalau masih gabisa, Kakak bisa tunggu 1x24jam untuk mengantisipasi gangguan jaringan sementara
+Semoga membantu :)
+
+
+5.2. Keterangan lainnya lanjut ke tahap selanjutnya
+Tanyakan ke pelanggan kendalanya jika terima Panggilan dari satu nomor atau dari banyak nomor.
+
+Jika dari banyak nomor: 
+Kak aku cek nomor xxxxxx aktif. Coba pandan ini ya :
+- Refresh Jaringan dengan cara Restart Handphone
+- Coba gunakan SIM card di HP lain sebagai perbandingan
+
+Jika masih tidak dapat menerima panggilan, lanjut ke Step berikutnya (langkah 6)
+
+Jika hanya dari satu nomor: 
+- Pastikan nomor pemanggil tidak ada di list blokir di settingan Handphone Kakak.
+- Jika masih berkendala sarankan nomor pemanggil untuk coba di HP yang lain
+- Kalau semua udah di coba tapi masih berkendala, ada indikasi nomor yang melakukan panggilannya yang berkendala dan disarankan hubungi kami untuk bisa dibantu :)
+`,Mandatory:e=>`#Pelangganbyu
+ID Omnix :
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${e}
 
 1. Nomor by.U : xxxxxx
-2. Email akun by.U : 
-3. Printscreen dashboard di apps dan keterangan sinyal : 
-4. Waktu dan Lama Kejadian : 
-5. Tipe HP yang dipakai : 
-6. Capture keterangan error yang muncul saat telepon : 
-7. Kendala terjadi hanya saat menerima panggilan, melakukan panggilan, atau keduanya : 
-8. Kendala terjadi hanya ke nomor tertentu atau semua nomor : 
-9. Nomor lain yang bisa dihubungi : 
+2. Email akun by.U : zz
+3. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
+4. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
+5. Notifikasi gagal saat telepon :
+6. Kendala terjadi hanya saat menerima panggilan, melakukan panggilan, atau keduanya?  
+7. Kendala terjadi hanya ke nomor tertentu atau semua nomor?
+8. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
 
 
 
 1x24 jam`},{id:7,case:`Tidak bisa request OTP Meta Product`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : ga dapat OTP Whatsapp/Telegram
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala kode OTP nya, boleh coba panduan ini dulu ya :
@@ -396,7 +570,7 @@ TIDAK BISA REQUEST OTP META PRODUCT
 1x24 jam`},{id:8,case:`Unreg hapus NIK`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : unreg
 Solusi :  minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy.Untuk permintaan Unreg nya, bisa melalui aplikasi ya dengan cara berikut : 
@@ -416,7 +590,7 @@ DISCLAIMER
 
 Makasih udah nunggu. Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu UNREG SIM Card di akun berikut:
 1. Nomor by.U : xxxxxx
-2. Email: --
+2. Email: zz
 
 Nomor yang sudah berhasil di unregistrasi ga akan bisa diaktifkan kembali dalam kondisi apapun ya kak, lalu NIK yang terdaftar di nomor ini juga akan ikut terhapus. Kalo data diatas udah sesuai dan Kakak setuju boleh tolong konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :)
 `:`Makasih udah nunggu. Kak maaf untuk unreg/deaktivasi SIM card by.U, bisa melalui aplikasi ya dengan cara berikut : 
@@ -464,7 +638,7 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 1x24 jam`},{id:9,case:`Unreg hapus NIK lupa nomor`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : unreg
 Solusi : minta data
 `,Solusi:``,Mandatory:(e,t)=>`#Pelangganbyu
@@ -485,7 +659,7 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 1x24 jam`},{id:10,case:`Gagal Aktivasi eSIM Account Status Tidak Sesuai`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa aktivasi esim acount
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. untuk kendala eSIM di nomor xxxxxx , aku cek ada kendala nih dari proses aktivasinya. Boleh infoin data ini ya biar bisa aku proses :
@@ -518,7 +692,7 @@ Gagal Aktivasi eSIM Account Status Tidak Sesuai
 1x24 jam`},{id:11,case:`Sinyal lemah/tidak stabil/Tidak ada sinyal`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Sinyal
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala sinyalnya, boleh infoin data ini ya biar bisa aku cek :
@@ -614,7 +788,7 @@ Kak maaf, kalau udah dilakukan tapi masih berkendala, boleh lengkapin data ini y
 `},{id:12,case:`Ganti SIM Card active`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Ganti sim card
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hai Kak. Saat ini terhubung dengan Nindy. Kak maaf, aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) Jadi gabisa dilakkan ganti SIM card ya :)
@@ -648,7 +822,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu Permintaan Ganti SIM Card Active dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: --
+2. Email: zz
 3. NIK KTP valid : 
 4. Nama & nomor penerima :
 5. Alamat pengiriman :
@@ -688,7 +862,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu Permintaan Ganti SIM Card Active dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: --
+2. Email: zz
 3. NIK KTP valid : 
 4. Nama & nomor penerima :
 5. Alamat pengiriman :
@@ -711,7 +885,7 @@ Permintaan Ganti SIM Card Active
 `},{id:13,case:`Miskoordinasi JNE (AWB)`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : misskoordinasi JNE ada AWB
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala pengiriman SIM card , boleh infoin data ini ya biar bisa aku proses : 
@@ -745,7 +919,7 @@ Keluhan SIM Card Tidak Sampai via JNE ada AWB
 `},{id:14,case:`Miskoordinasi JNE `,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : misskoordinasi ga ada awb
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala pengiriman SIM card nya, boleh infoin data ini ya biar bisa aku proses : 
@@ -778,7 +952,7 @@ Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
 `},{id:15,case:`Pembelian paket IRENEW virtual account Paid `,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : irenew va
 Solusi : minta data
 `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,Mandatory:(e,t)=>`#Pelangganbyu
@@ -803,7 +977,7 @@ paid
 `},{id:16,case:`Penyalahgunaan NIK `,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : penyalahgunaan nik
 Solusi : minta data
 `,Solusi:`Makasih udah nunggu. Kak maaf untuk permintaan unreg di NIK Kakak boleh infoin aku data ini ya biar bisa aku proses : 
@@ -840,7 +1014,7 @@ Penyalahgunaan NIK
 `},{id:17,case:`Pembelian paket Irenew virtual account Unpaid `,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : irenew VA unpaid
 Solusi : minta data
 `,Solusi:`Makasih udah nunggu. Kak maaf, aku cek transaksi di nomor xxxxxx, ada kendala dari pihak pembayarannya jadinya transaksinya gabisa dilanjutin nih. Boleh infoin data ini ya biar bisa aku proses : 
@@ -873,7 +1047,7 @@ Unpaid
 `},{id:18,case:`Permintaan Refund karena kesalahan sistem `,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : refund karena
 Solusi : minta data
 `,Solusi:``,Mandatory:(e,t)=>`#Pelangganbyu
@@ -884,13 +1058,13 @@ ${t}
 Permintaan Refund karena kesalahan sistem
 
 1.Nomor by.U : xxxxxx
-2.Email by.U : --
+2.Email by.U : zz
 3.Capture bukti pembayaran : 
 4. Data refund :
 `},{id:19,case:`Tidak Mendapatkan Kuota Monthversary  `,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : ga dapat kuota Monthversary
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala ga dapat kuota Monthversary, boleh infoin aku data ini ya biar bisa aku proses : 
@@ -924,7 +1098,7 @@ Tidak Mendapatkan Kuota Monthversary
 `},{id:20,case:`SMS - Gagal Aktivasi M-Banking `,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gagal Aktivasi M-Banking
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hai, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala fitur banking nya, pastiin cuma ada SIM Card by.U di hp saat aktivasi fitur banking tersebut dan terkoneksi dengan jaringan by.U. Kalau masih tidak bisa, boleh tolong infokan beberapa data berikut agar dapat dibantu pengecekan :
@@ -960,7 +1134,7 @@ SMS - Gagal Aktivasi M-Banking
 `},{id:21,case:`Pembelian paket IRENEW OVO/DANA/ShopeePay/lainnya `,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : irenew
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala transaksinya boleh infoin aku data ini ya biar bisa aku cek : 
@@ -994,7 +1168,7 @@ ${t}
 Masalah Pembelian Kuota/Pulsa I RENEW Via 
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : --
+2. Email by.U : zz
 3. Capture bukti pembayaran : 
 4. Order detail ID (CXO) (Pengecekan OperatorX)  : 
 5. Transaction ID (CXT) (Pengecekan OperatorX) :
@@ -1002,7 +1176,7 @@ Masalah Pembelian Kuota/Pulsa I RENEW Via
 `},{id:22,case:`Tidak Bisa Aktivasi SIM Card Legacy `,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa aktivasi legacy
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala aktivasi SIM card nya, kalau nomornya beli di konter, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
@@ -1045,7 +1219,7 @@ Tidak Bisa Aktivasi SIM Card Legacy
 `},{id:23,case:`Cara Aktivasi SIM card Digital `,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : cara aktivasi sim card digital
 Solusi : info cara aktivasi di apps
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak kalau nomornya beli di apps by.U, aku bantu infoin untuk cara aktivasinya Kakak bisa coba cara berikut ya Kak:
@@ -1065,7 +1239,7 @@ Semoga berhasil ya Kak, kalau berkendala bisa Kakak coba aktivasi via web byu.id
 `},{id:24,case:`Tidak dapat langganan weTV`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : ga dapat langganan weTV
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala langganan weTV nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
@@ -1099,7 +1273,7 @@ Tidak dapat langganan weTV
 `},{id:25,case:`Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy (indomaret)`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : sim card yang didapat legacy
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hai, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala SIM card nya, boleh infoin data ini ya biar bisa aku proses :
@@ -1139,7 +1313,7 @@ Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy
 `},{id:26,case:`Tidak Bisa Aktivasi SIM Card Dengan Kode Error Asset Not Found `,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa aktivasi asset notfound
 Solusi : minta data
 `,Solusi:`Makasih udah nunggu ya Kak. Maaf banget nih untuk kendala aktivasi SIM card nya di nomor xxxxxx, Kalau sudah mencoba lagi dan masih tidak bisa, boleh diinfokan beberapa data berikut ya supaya kami bisa melakukan pengecekan lebih lanjut :
@@ -1166,7 +1340,7 @@ Tidak Bisa Aktivasi SIM Card Dengan Kode Error "Asset Not Found"
 `},{id:27,case:`Ketidaksesuaian Penggunaan Kuota `,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : kuota tiba-tiba berkurang
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Halo, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala penggunaan kuotanya, boleh infoin data ini ya biar bisa aku proses :
@@ -1210,7 +1384,7 @@ Ketidaksesuaian Penggunaan Kuota
 `},{id:28,case:`Tidak bisa login dengan Nomor BYU / terima kode OTP pakai nomor by.U`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa login nomor by.U
 Solusi : solusi gabisa login nomor by.u
 `,Solusi:`
@@ -1234,7 +1408,7 @@ Tidak bisa login dengan Nomor BYU
 `},{id:29,case:`Tidak Mendapatkan Voucher Non-Telco uCoin`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : non telco
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hai, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala uCoin nya, boleh infoin data ini ya biar bisa aku proses : 
@@ -1259,7 +1433,7 @@ ${t}
 Tidak Mendapatkan Voucher Non-Telco
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : --
+2. Email by.U : zz
 3. Jenis voucher yang ditukarkan : 
 4. Tanggal penukaran U-Coin : 
 5. Capture bukti redeem di halaman Reward Saya : 
@@ -1267,7 +1441,7 @@ Tidak Mendapatkan Voucher Non-Telco
 `},{id:30,case:`Pergantian SIM Card Legacy ditolak GraPARI`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : ganti sim card ditolak grapari
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hai, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk ganti SIM card nya karena gabisa di GraPARI, boleh infoin data ini ya biar bisa aku proses : 
@@ -1316,7 +1490,7 @@ Pergantian SIM Card Legacy ditolak GraPARI
 `},{id:31,case:`Esim Sinyal hilang`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : esim sinyal hilang
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala eSIM nya, boleh infoin data ini ya biar bisa aku proses : 
@@ -1356,7 +1530,7 @@ eSIM sinyal hilang
 `},{id:32,case:`eSIM barcode/QR tidak tersimpan `,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : minta barcode esim
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk barcode/qr eSIM nya, boleh infoin data ini ya biar bisa aku proses : 
@@ -1389,7 +1563,7 @@ eSIM  QR tidak tersimpan
 `},{id:33,case:`Bugs Ganti SIM card (mandatory E)`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : bugs ganti sim card
 Solusi : minta data
 `,Solusi:`Makasih udah nunggu. Kak maaf, kalau keterangannya seperti itu, boleh infoin data ini ya biar bisa aku proses : 
@@ -1412,7 +1586,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu  Ganti SIM Card dengan data :
 1. Nomor by.U : xxxxxx
-2. Email akun by.U: --
+2. Email akun by.U: zz
 3. NIK KTP valid : 
 4. Nama & nomor penerima :
 5. Alamat pengiriman :
@@ -1439,58 +1613,73 @@ Bugs Ganti SIM card
 `},{id:34,case:`Keluhan Tidak Bisa Akses Internet di Luar Negeri Roaming`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa internet roaming
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala gabisa internet di luar negeri,boleh infoin data ini ya biar bisa aku cek :
-1. Nomor by.U :
-2. Email akun by.U :
-3. Tanggal dan waktu kejadian sejak kapan :
-4. Jaringan/operator negara setempat yang digunakan :
-5. Capture speedtest :
+Hai Kak, maaf udah bikin ga nyaman ya. Boleh infokan beberapa data di bawah ini supaya bisa dibantu pengecekan :
+1. Nomor by.U : 
+2. Email akun by.U : 
+3. Lokasi negara :
+4. Tanggal dan waktu kejadian sejak kapan :
+5. Jaringan/operator negara setempat yang digunakan :
 6. Capture setting APN di HP :
-7. Lokasi negara :
+7. Capture sinyal yang didapat :
+8. Capture speedtest :
 
 Aku tunggu datanya ya :)
-`:`Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
-1. Email akun by.U :
-2. Tanggal dan waktu kejadian sejak kapan :
-3. Jaringan/operator negara setempat yang digunakan :
-4. Capture speedtest :
-5. Capture setting APN di HP :
-6. Lokasi negara :
+
+Pastikan ada fitur roaming barring di menu DSC "Unblocked"
 
 Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif  dan punya kuota roaming, serta kondisi jaringan di lokasi negara Kakak ga ada info gangguan. Bisa dicoba langkah-langkah ini ya kak :
-1. Coba ON-kan airplane mode dan OFF-kan kembali, OFF-kan mobile data dan ON-kan kembali.
-2. Lakukan refresh jaringan :
-3. Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih operator yang bekerja sama dengan Telkomsel, yaitu STC
-4. iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
-5. Isi APN dengan "byu", username dan password kosongkan.
-6.Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.
+1. Coba ON-kan airplane mode dan OFF-kan kembali, 
+2. Ubah pengaturan jaringan dari otomatis menjadi manual, lalu cari Operator yang bekerjasama di negara tersebut,
+3. Pastikan kolom APN diisi dengan "byu" (tanpa tanda kutip), username dan password kosongkan.
+4. Pastikan hanya ada 1 SIM Card yang aktif, jika masih tidak bisa coba pindahkan SIM card ke HP lain untuk perbandingan.
+5. Pastikan tombol data seluler dan data roaming aktif/ON
 
-Jika cara di atas sudah dicoba dan akses internet tetap bermasalah, tolong hubungi kita lagi. Terima kasih`,Mandatory:(e,t)=>`#Pelangganbyu
-[byU ${e}] 
-Pelanggan by.U
-${t} 
-DATA - Tidak Bisa Akses Internet di Luar Negeri
+Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX yaitu xxx  . Jika cara di atas sudah dicoba dan sinyalnya masih berkendala, tolong hubungi kita lagi. Terima kasih.
 
-1. nomor by.U : xxxxxx
-2. Akun by.U : 
-2. Lokasi negara : 
-3. Nama Paket Roaming : 
-4. Jenis device yang digunakan : 
-5. Tanggal dan waktu kendala : 
-6. Jaringan yang digunakan apa? 4G, 5G? : 
-7. Jumlah sinyal bar atau titik yang didapat : 
-8. Jaringan/operator negara setempat yang digunakan : 
-9. Email aktif yang bisa dihubungi : 
-10. Sisa kuota yang dimiliki oleh pelanggan : 
-11. Capture speedtest : 
-12. Capture APN : 
+
+https://www.telkomsel.com/roaming/setdevice
+`:`Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
+1. Email akun by.U :
+2. Lokasi negara :
+3. Tanggal dan waktu kejadian sejak kapan :
+4. Jaringan/operator negara setempat yang digunakan :
+5. Capture setting APN di HP :
+6. Capture sinyal yang didapat :
+7. Capture speedtest :
+
+Pastikan ada fitur roaming barring di menu DSC "Unblocked"
+
+Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif  dan punya kuota roaming, serta kondisi jaringan di lokasi negara Kakak ga ada info gangguan. Bisa dicoba langkah-langkah ini ya kak :
+1. Coba ON-kan airplane mode dan OFF-kan kembali, 
+2. Ubah pengaturan jaringan dari otomatis menjadi manual, lalu cari Operator yang bekerjasama di negara tersebut,
+3. Pastikan kolom APN diisi dengan "byu" (tanpa tanda kutip), username dan password kosongkan.
+4. Pastikan hanya ada 1 SIM Card yang aktif, jika masih tidak bisa coba pindahkan SIM card ke HP lain untuk perbandingan.
+
+Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX yaitu xxx  . Jika cara di atas sudah dicoba dan sinyalnya masih berkendala, tolong hubungi kita lagi. Terima kasih.
+
+
+https://www.telkomsel.com/roaming/setdevice`,Mandatory:e=>`#Pelangganbyu
+[NO][IR][${e}]
+
+1. Nomor by.U : xxxxxx
+2. Email akun by.U : zz
+3. Lokasi negara : 
+4. Tanggal dan waktu kejadian sejak kapan : 
+5. Jaringan/operator negara setempat yang digunakan : 
+6. Gangguan sinyal terjadi sepanjang hari atau pada waktu tertentu aja? 
+7. Jaringan yang digunakan apa? 2G, 4G, 5G? : 
+8. Jenis device/hp yang dipakai? 
+9. Capture setting APN di hp : 
+10. Capture bar sinyal yang didapat : 
+11. Email aktif yang bisa dihubungi ? 
 `},{id:35,case:`Pulsa berkurang tiba-tiba`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : pulsa berkurang tiba-tiba
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Halo, Kak . Saat ini udah terhubung dengan Nindy. Maaf nih untuk kendala pulsa yang berkurang tiba-tiba, boleh infoin data ini ya biar bisa aku proses :
@@ -1522,14 +1711,14 @@ Pulsa berkurang tiba-tiba
 `},{id:36,case:`Tidak bisa aktivasi inject paket`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa aktivasi sim card legacy
 Solusi : hubungi pihak penjual
 `,Solusi:`Makasih udah nunggu Kak maaf kalau keterangan gabisa aktivasinya seperti itu, Kakak bisa tukerin SIM card nya di tempat Kakak beli/dapetin SIM card nya ya`,Mandatory:`      
 `},{id:37,case:`Tidak bisa aktivasi NIK invalid Dukcapil/Disdukcapil`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa aktivasi nik invalid
 Solusi : hubungi dukcapil
 `,Solusi:`Makasih udah nunggu. Kak maaf untuk gabisa aktivasi SIM card nya di nomor xxxxxx, aku cek NIK Kakak ga terdaftar nih di sistem Dukcapil, Boleh pastiin lagi NIK yang diinputnya sesuai yang di KTP dan pastiin ada 16 digit ya Kak. Kalo masih berkendala dikhawatirkan ada error data dukcapil. Untuk kendala ini silakan kakak bisa update data ke Contact Center Ditjen Dukcapil. Bilang aja mau update data registrasi SIM Card ya.
@@ -1566,13 +1755,13 @@ Tidak Bisa Aktivasi SIM Card Dengan Kode Error NIK Tidak Ditemukan
 `},{id:38,case:`Tidak bisa aktivasi exceed limit (udah 3 kali percobaan)`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa aktivasi sim card
 Solusi : diinfoin coba besok
 `,Solusi:`Makasih udah nunggu. Kak maaf aku cek di nomor xxxxxx , hari ini udah lebih dari 3 kali nyoba aktivasi. Boleh dicoba lagi besok hari ya. Pastiin saat proses aktivasi sudah terkoneksi ke jaringan by.U - bukan wifi atau jaringan lain, dan NIK-NO.KK yang dimasukkan benar 16 angka. Kalo besok masih belum bisa, jangan coba berulang ya, silahkan konfirmasi lagi biar bisa langsung di proses :)`,Mandatory:``},{id:39,case:`Tidak bisa aktivasi maximum NIK`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa aktivasi maximum nik
 Solusi : diinfoin unreg nomor telkomsel
 `,Solusi:`Makasih udah nunggu ya Kak, mengenai kendala gagal daftar NIK-NOKK di nomor xxxxxx. Setelah kami cek di sistem rupanya NIK kakak sudah terdaftar di 3 Nomor Telkomsel/ by.U. Untuk case seperti ini jika kakak masih memegang nomor Telkomsel (selain by.U), bisa melakukan unregistrasi sendiri melalui SMS UNREG#NO NIK 
@@ -1608,7 +1797,7 @@ Tidak Bisa Aktivasi SIM Card Dengan Keterangan Maximum Number
 `},{id:40,case:`Perubahan Data Pelanggan`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : perubahan data pelanggan
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Berikut form perubahan datanya ya, silakan Kakak isi dulu dengan tandatangan diatas materai ya :)
@@ -1635,7 +1824,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu Permintaan Perubahan data  dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: --
+2. Email: zz
 3. NIK KTP pelanggan baru : 
 4. No KK pelanggan baru   : 
 
@@ -1659,7 +1848,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu Permintaan Perubahan data  dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: --
+2. Email: zz
 3. NIK KTP pelanggan baru : 
 4. No KK pelanggan baru   : 
 
@@ -1680,7 +1869,7 @@ Perubahan data pelanggan
 `},{id:41,case:`Perubahan Data pindah tangan (pindah tangan)`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : perubahan data 
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. ak maaf untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
@@ -1699,7 +1888,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu Permintaan Perubahan data karena pindah tangan dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: --
+2. Email: zz
 3. NIK KTP pelanggan baru : 
 4. No KK pelanggan baru   : 
 
@@ -1719,7 +1908,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu Permintaan Perubahan data karena pindah tangan dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: --
+2. Email: zz
 3. NIK KTP pelanggan baru : 
 4. No KK pelanggan baru   : 
 
@@ -1742,7 +1931,7 @@ Perubahan data pelanggan pindah tangan
 `},{id:42,case:`PUK`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : puk
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak untuk permintaan kode PUK, boleh infoin data ini ya biar bisa aku bantu :
@@ -1793,7 +1982,7 @@ c. Kode PUK tidak akan berubah, Kakak bisa menyimpan kode PUK jika diperlukan ke
 `,Mandatory:``},{id:43,case:`Tidak dapat langganan ZOOM Premium`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Tidak dapat langganan ZOOM Premium"
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat langganan Zoom nya, boleh infoin data ini ya biar bisa aku proses :
@@ -1830,7 +2019,7 @@ Tidak dapat langganan ZOOM Premium
 `},{id:44,case:`Tidak dapat langganan Netflix`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Tidak dapat langganan Netflix
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat langganan Netflix nya, boleh infoin data ini ya biar bisa aku proses :
@@ -1872,7 +2061,7 @@ Tidak dapat langganan Netflix
 `},{id:45,case:`Tidak dapat langganan Vidio`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Tidak dapat langganan Vidio
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat langganan Vidio nya, boleh infoin data ini ya biar bisa aku proses :
@@ -1908,7 +2097,7 @@ Tidak dapat langganan Vidio
 `},{id:46,case:`Tidak dapat kuota Birthday reward`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Tidak dapat kuota Birthday reward
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat kuota bonus birthday, boleh infoin data ini ya biar bisa aku proses :
@@ -1940,7 +2129,7 @@ Tidak Mendapatkan Kuota Birthday Reward
 `},{id:47,case:`IRENEW Voucher fisik`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : IRENEW Voucher fisik
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik, boleh infoin data ini ya biar bisa aku proses :
@@ -1980,7 +2169,7 @@ Masalah Pembelian Kuota Via Tukar Kode Voucher
 `},{id:48,case:`Sponsorship/kerjasama`,Bracket:e=>e===`Email`?`#Pelangganbyu
 [byU Email]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Sponsorship
 Solusi : diteruskan ke email  event@byu.id
 
@@ -2001,7 +2190,7 @@ Aku tunggu datanya ya Kak :)
 `:`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Sponsorship
 Solusi : arahin hubungi email
 `,Solusi:e=>e===`Email`?`Hi, Kak. Saat ini udah terhubung dengan Nindy. Terkait pengajuan Sponsorship/kerjasama udah aku bantu ajuin dulu ke tim terkait, kalo sesuai akan dihubungi melalui CPnya ya :)
@@ -2023,7 +2212,7 @@ Aku tunggu datanya ya Kak :)
 `,Mandatory:``},{id:49,case:`SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan / Gagal pairing`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gagal pairing
 Solusi : minta data
 `,Solusi:` Makasih udah nungu. Kak maaf sepertinya ada kendala nih untuk  SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
@@ -2042,7 +2231,7 @@ SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan
 4. Capture SIM Card tidak terdeteksi : `},{id:50,case:` greeting`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : greeting
 Solusi : greeting
 
@@ -2067,21 +2256,21 @@ https://web.telegram.org/k/
 `},{id:51,case:`SIM card Deactive`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case :  sim card deactive
 Solusi : info  sim card deactive
 `,Solusi:` Makasih udah nungu. Kak maaf untuk kendala SIM card nya, aku cek nomor xxxxxx udah gabisa di aktivasi/registrasi karena nomornya udah ga aktif/ga di atifin lebih dari 30 hari dari waktu pembayaran berhasil. Aku saranin beli nomor baru di apps by.U pakai akun baru ya :)
 `,Mandatory:``},{id:52,case:`Pulsa terpotong karena SMS dari luar negeri`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Pulsa terpotong karena SMS dari luar negeri
 Solusi : info nomor SMS nya
 `,Solusi:` Maaf udah bikin Kakak nunggu ya. Aku cek di sistem untuk nomor xxxxxx ada pengurangan pulsa sebesar Rp500 untuk SMS ke nomor +41415737017. Untuk SMS ini adalah SMS verifikasi dari apps tertentu yang developernya dari luar negeri dan membebankan biaya registrasi ke pulsa customer. Ini settingan dari apps yang terisntall di HP Kakak yang otomatis menarik biaya pulsa ya, bukan settingan dari by.U 🙂
 `,Mandatory:``},{id:53,case:`SIM card tidak terdeteksi`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : SIM card tidak terdeteksi
 Solusi : solusi SIM card tidak terdeteksi
 `,Solusi:` Makasih udah nunggu. Kak maaf, untuk kendala SIM card yang ga kedeteksi, kalau IMEI nya udah terdaftar tapi masih berkendala, boleh coba panduan ini ya :
@@ -2093,7 +2282,7 @@ Solusi : solusi SIM card tidak terdeteksi
 `,Mandatory:``},{id:54,case:`Kuota tiba-tiba hilang karena kesalahan by.U`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Kuota tiba-tiba hilang karena kesalahan by.U
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala kuotanya, boleh infoin data ini ya biar bisa aku proses : 
@@ -2157,7 +2346,7 @@ u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
 `},{id:56,case:`Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)
 Solusi : minta data
 `,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala masalah pemesanan sim card via e-Commerce yang dialami, boleh infoin data ini ya biar aku bantu cek dulu transaksinya :
@@ -2174,7 +2363,7 @@ ${t}
 Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)
 
 1. Nomor by.U : xxxxxx
-2. Email akun by.U : --
+2. Email akun by.U : zz
 2. Printscreen bukti bayar yang tertera Invoice dan capture resi di aplikasi e-Commerce :
 3. Printscreen status pengiriman yang tertera resi di aplikasi e-Commerce : (dicek oleh agent)
 4. Capture profil apps : ( yang tertulis email login pelanggan)
@@ -2184,7 +2373,7 @@ Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Toko
 `},{id:57,case:` transfer pulsa`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : info send gift/tf pulsa
 Solusi : info send gift/tf pulsa
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
@@ -2192,7 +2381,7 @@ Solusi : info send gift/tf pulsa
 `,Mandatory:``},{id:58,case:`Tidak Mendapatkan Langganan Prime Video`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : Tidak Mendapatkan Langganan Prime Video
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk ga dapat langganan Prime Video nya , boleh infoin data ini ya biar bisa aku proses : 
@@ -2227,7 +2416,7 @@ Tidak Mendapatkan Langganan Prime Video
 `},{id:59,case:`cek masa aktif`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : informasi status kartu
 Solusi : informasi status kartu
 `,Solusi:`Makasih udah nunggu. Kak maaf, kalau aku cek nomor xxxxxx, statusnya aktif kok. Ini harusnya bisa digunakan SMS,internet maupun internet ya Kak. Boleh coba cek ya :)
@@ -2237,7 +2426,7 @@ Kak maaf, aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih da
 `,Mandatory:``},{id:60,case:`Info Paket/ Tarif Harga paket berubah/jadi mahal/promo`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : info paket
 Solusi : info paket
 `,Solusi:`Kak, maaf ya udah dibuat ga nyaman, untuk harga paket yang tertera di aplikasi bersifat penawaran ya, jadi akan berubah sesuai dengan promo yang sedang berjalan, yang merupakan bagian dari upaya kita buat terus ningkatin kualitas layanan by.U. Silakan untuk melakukan pembelian paket yang tersedia di aplikasi by.U ya kak :)
@@ -2250,7 +2439,7 @@ Maaf kak, saat ini ada penyesuaian tarif paket internet merupakan salah satu upa
 `,Mandatory:``},{id:61,case:`Cara pasang eSIM`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : cara pasang esim
 Solusi : info pasang eSIM
 `,Solusi:`Buat iPhone:
@@ -2293,7 +2482,7 @@ Silakan dicoba dulu ya Kak :)
 `,Mandatory:``},{id:62,case:`Gagal Registrasi 5g`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case :  Gagal Registrasi 5g
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala 5G nya, Pastiin HP Kakak udah support 5G dan Kakak juga bisa cek apakah lokasi Kakak udah tercover jaringan 5G melalui https://www.telkomsel.com/check-5G-coverage. Kakak bisa melakukan daftar mandiri melalui https://my.telkomsel.com/provisioning/5g. Pastiin juga saat akses link tersebut SIM Card terpasang di SIM 1, data selular dalam keadaan on, dan fitur lokasi aktif.
@@ -2330,14 +2519,14 @@ ${t}
 `},{id:63,case:`Cek Tiket/Ticket`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : Cek Tiket
 Solusi : Cek hasil tiket
 `,Solusi:`Kak maaf, aku cek untuk ID laporan xx, masih dalam proses penanganan tim kami. Ditunggu aja dulu prosesnya ya. Semoga cepet beres :)
 `,Mandatory:``},{id:64,case:`Request bikin/buat nomor 4 digit/angka`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : Info request nomor
 Solusi : Info request nomor
 `,Solusi:`Hi, Kak Asep. Saat ini udah terhubung dengan Nindy. Mengenai request nomor hanya bisa dilakukan maksimal 4 digit pada fitur "Bikin Nomor" di aplikasi by.U atau Web byu.id dengan cara berikut :
@@ -2351,7 +2540,7 @@ Klik "Cari Nomor"
 `,Mandatory:``},{id:65,case:`Permintaan Hapus Profil eSIM Karena Device Hilang`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : Permintaan Hapus Profil eSIM Karena Device Hilang
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk hapus eSIM di perangkat lamanya yang udah hilang, boleh infoin data ini ya biar bisa aku proses : 
@@ -2387,7 +2576,7 @@ Permintaan Hapus Profil eSIM Karena Device Hilang
 `},{id:66,case:`CCA UE_Handset_Data_Setting_Off`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device atau sim card yang digunakan. Jika restart HP tidak menyelesaikan masalah, maka disarankan untuk ajuin ganti SIM card ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
@@ -2427,7 +2616,7 @@ Solusi : sesuai hasil cca disarankan ganti SIM card
 `},{id:67,case:`CCA UE_Handset_Problem_4G`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device atau sim card yang digunakan. Jika restart HP tidak menyelesaikan masalah, maka disarankan untuk ajuin ganti SIM card ya :) `,Mandatory:(e,t)=>`#Pelangganbyu
@@ -2467,7 +2656,7 @@ Solusi : sesuai hasil cca disarankan ganti SIM card
 `},{id:68,case:`CCA Radio_lambat`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
@@ -2515,7 +2704,7 @@ Solusi : minta data
 `},{id:69,case:`CCA Neighbor_BTS_Problem`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : sarankan tunggu sesuai CCA
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
@@ -2546,7 +2735,7 @@ Solusi : sarankan tunggu sesuai CCA
     Neighbor_BTS_Problem
     Remarks
     Bapak atau Ibu Yth, kendala Bapak atau Ibu yang dialami saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala.
-    Cause : --
+    Cause : zz
     Level : 0
     Alarm meaning : 0 = Low, 1 = Critical, 2 = Major, 3 = Minor
     Suggestion
@@ -2557,7 +2746,7 @@ Solusi : sarankan tunggu sesuai CCA
 `},{id:70,case:`CCA Kapasitas_jaringan`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : Minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
@@ -2603,7 +2792,7 @@ Solusi : Minta data
 `},{id:71,case:`CCA Sinyal_tidak_stabil`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : Minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
@@ -2649,7 +2838,7 @@ Solusi : Minta data
 `},{id:72,case:`SMS broadcast`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sms konten
 Solusi : Minta data
 `,Solusi:e=>e===`Email`?`Halo, Kak . Saat ini udah terhubung dengan Nindy. Kalo yang dimaksud permintaan berhenti layanan SMS konten atau Broadcast, Kakak bisa balasa SMS yang didapat dengan Cara ketik UNREG. Kalo ada kendala, boleh infoin data berikut agar dibantu lebih lanjut ya:
@@ -2682,7 +2871,7 @@ Permintaan berhenti layanan SMS Broadcast
 `},{id:73,case:`CCA Layanan_data_tidak_tersedia`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : Minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, kami menemukan indikasi bahwa sim card yang sedang digunakan tidak memiliki paket untuk mengakses atau menggunakan layanan internet. Mohon dicek kembali :) 
@@ -2738,7 +2927,7 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
 `},{id:74,case:`CCA Kendala_sinyal_4G`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : Minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
@@ -2784,7 +2973,7 @@ Solusi : Minta data
 `},{id:75,case:`CCA UE_Handset_tidak_connect_ke_network`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device atau sim card yang digunakan. Jika restart HP tidak menyelesaikan masalah, maka disarankan untuk ajuin ganti SIM card ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
@@ -2823,7 +3012,7 @@ Solusi : sesuai hasil cca disarankan ganti SIM card
 `},{id:76,case:`CCA Network_browsing_lambat`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
@@ -2869,7 +3058,7 @@ Solusi : minta data
 `},{id:77,case:`Cara membagikan kode refferal`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : Cara membagikan kode refferal
 Solusi : edukasi
 `,Solusi:`Hi, Kak Herman. Saat ni udah terhubung dengan Nindy. Aku konfirmasi apakah yang dimaksud cara ajak teman menggunakan nomor by.U? Kalo iya, sebelumnya Pastiin dulu udah pake aplikasi versi terbaru ya!
@@ -2882,13 +3071,13 @@ Nah ada 2 cara buat share link referral:
 Oh iya! Kamu bisa kamu share referal kamu lewat Whatsapp, Line, IG direct, Twitter, Email, Linkedin, Facebook Messenger, SMS, Email, Flipboard, dan pilihan channel lainnya ya :)`,Mandatory:``},{id:78,case:`Paket unlimited/Mbps`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : Paket unlimited
 Solusi : edukasi ga tersedia
 `,Solusi:e=>e===`Email`?`Hi, Kak Ardi. Saat ini udah terhubung dengan Nindy. Mengenai paket unlimited atau Mbps lagi engga tersedia dulu nih atas pertimbangan tim dan buat info kedepannya masih ada paketnya atau engga Kaka bisa cek berkala siapa tau tim lagi siapin kejutan kuota yg lebih menarik buat kamu dan bisa juga beli dulu paket lainnya yg tersedia si Apps ya Kak, makasih udah antusias banget :)`:`Kak maaf, untuk paket unlimited atau Mbps lagi engga tersedia dulu nih atas pertimbangan tim dan buat info kedepannya masih ada paketnya atau engga Kaka bisa cek berkala siapa tau tim lagi siapin kejutan kuota yg lebih menarik buat kamu dan bisa juga beli dulu paket lainnya yg tersedia si Apps ya Kak, makasih udah antusias banget :)`,Mandatory:``},{id:79,case:`CCA Cell_Colo_Problem`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : sarankan tunggu sesuai CCA
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
@@ -2934,7 +3123,7 @@ Solusi : sarankan tunggu sesuai CCA
 `},{id:80,case:`CCA BTS_Down`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : sarankan tunggu sesuai CCA
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
@@ -2977,7 +3166,7 @@ Solusi : sarankan tunggu sesuai CCA
 `},{id:81,case:`CCA Red_Cell_Capacity_Solution`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dikarenakan BTS sedang mengalami isu yang berkaitan dengan kapasitas jaringan yang penuh di BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
@@ -3024,7 +3213,7 @@ Solusi : minta data
 `},{id:82,case:`CCA Kendala_Sinyal`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dikarenakan BTS sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
@@ -3071,7 +3260,7 @@ Solusi : minta data
 `},{id:83,case:`Beli Paket/Pulsa/SIM card`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : cara pembelian SIM card/eSIM
 Solusi : info cara pembelian SIM card/eSIM
 `,Solusi:`Kak maaf, untuk beli paket internet bisa lewat apps by.U dengan pilih menu isi kuota pada halaman dashboard ya :)
@@ -3083,7 +3272,7 @@ Kak untuk beli SIM card/nomor baru bisa beli lewat apps/web by.U ya, nanti setel
 Kak untuk beli eSIM bisa lewat apps by.U langsung ya, pastiin pilih menu eSIM sebelum login/sign up :)`,Mandatory:``},{id:85,case:`Tidak dapat Langganan Youtube Premium`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : Tidak Mendapatkan Langganan Youtube Premium
 Solusi : minta data
 `,Solusi:`Hai, Kak. Maaf banget jadi ga nyaman karena ga dapet SMS link akun Youtube Premium-nya di nomor xxxxxx. Silakan coba aktivasi dulu melalui link berikut : https://tsel.id/ytact ya. Kalo masih kendala infoin data berikut biar dibantu lebih lanjut :
@@ -3109,7 +3298,7 @@ Tidak Mendapatkan Langganan Youtube Premium
 `},{id:86,case:`Closing`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : closing
 Solusi : closing
 `,Solusi:e=>e===`Live`?`Makasih juga udah interaksi ya Kak :) Ohiya, aku akhiri obrolan kita ya, Kaka jangan dulu tutup chatnya ya karena setelah ini juga ada pop-up survey yang lain. Dibantu isi ya Kak kalau Kaka merasa puas boleh banget isi dengan angka (10) dan seterusnya ya. Makasih banget udah selalu setia sama by.U Kak :)  sehat selalu :)
@@ -3118,7 +3307,7 @@ Nindy bakal tingkatin terus kualitas layanan by.U biar kamu seneng dan tetep set
 `},{id:87,case:`Pengambilan SIM card di GraPARI`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : Pengambilan SIM card di GraPARI
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`
@@ -3164,50 +3353,71 @@ Pick Up GRAPARI tutup
 `},{id:88,case:`Keluhan sinyal di Luar Negeri Roaming`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa sinyal roaming
 Solusi : minta data
-`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala gabisa internet di luar negeri,boleh infoin data ini ya biar bisa aku cek :
-1. Nomor by.U :
-2. Email akun by.U :
+`,Solusi:e=>e===`Email`?`
+Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala gabisa internet di luar negeri,boleh infoin data ini ya biar bisa aku cek :
+Hai Kak, maaf udah bikin ga nyaman ya. Boleh infokan beberapa data di bawah ini supaya bisa dibantu pengecekan :
+1. Nomor by.U : 
+2. Email akun by.U : 
+3. Lokasi negara :
+4. Tanggal dan waktu kejadian sejak kapan :
+5. Jaringan/operator negara setempat yang digunakan :
+6. Capture setting APN di HP :
+7. Capture sinyal yang didapat :
+8. Capture speedtest :
+
+Aku tunggu datanya ya :)
+
+Pastikan ada fitur roaming barring di menu DSC "Unblocked"
+
+Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif  dan punya kuota roaming, serta kondisi jaringan di lokasi negara Kakak ga ada info gangguan. Bisa dicoba langkah-langkah ini ya kak :
+1. Coba ON-kan airplane mode dan OFF-kan kembali, 
+2. Ubah pengaturan jaringan dari otomatis menjadi manual, lalu cari Operator yang bekerjasama di negara tersebut,
+3. Pastikan kolom APN diisi dengan "byu" (tanpa tanda kutip), username dan password kosongkan.
+4. Pastikan hanya ada 1 SIM Card yang aktif, jika masih tidak bisa coba pindahkan SIM card ke HP lain untuk perbandingan.
+5. Pastikan tombol data seluler dan data roaming aktif/ON
+
+Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX yaitu xxx  . Jika cara di atas sudah dicoba dan sinyalnya masih berkendala, tolong hubungi kita lagi. Terima kasih.
+
+
+https://www.telkomsel.com/roaming/setdevice
+`:`Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
+1. Email akun by.U :
+2. Lokasi negara :
 3. Tanggal dan waktu kejadian sejak kapan :
 4. Jaringan/operator negara setempat yang digunakan :
 5. Capture setting APN di HP :
-6. Capture sinyal:
+6. Capture sinyal yang didapat :
+7. Capture speedtest :
 
-Aku tunggu datanya ya Kak :)
-`:`Makasih udah nunggu. Kak maaf untuk kendala sinyal di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
-1. Email akun by.U :
-2. Tanggal dan waktu kejadian sejak kapan :
-3. Jaringan/operator negara setempat yang digunakan :
-4. Capture setting APN di HP :
-5. Capture sinyal yang didapat :
+Pastikan ada fitur roaming barring di menu DSC "Unblocked"
 
 Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif  dan punya kuota roaming, serta kondisi jaringan di lokasi negara Kakak ga ada info gangguan. Bisa dicoba langkah-langkah ini ya kak :
-1. Coba ON-kan airplane mode dan OFF-kan kembali, OFF-kan mobile data dan ON-kan kembali.
-2. Lakukan refresh jaringan :
- Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih operator yang bekerja sama dengan Telkomsel, yaitu STC
- iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
-3. Isi APN dengan "byu", username dan password kosongkan.
-4.Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.
+1. Coba ON-kan airplane mode dan OFF-kan kembali, 
+2. Ubah pengaturan jaringan dari otomatis menjadi manual, lalu cari Operator yang bekerjasama di negara tersebut,
+3. Pastikan kolom APN diisi dengan "byu" (tanpa tanda kutip), username dan password kosongkan.
+4. Pastikan hanya ada 1 SIM Card yang aktif, jika masih tidak bisa coba pindahkan SIM card ke HP lain untuk perbandingan.
 
-Jika cara di atas sudah dicoba dan akses internet tetap bermasalah, tolong hubungi kita lagi. Terima kasih`,Mandatory:(e,t)=>`#Pelangganbyu
-[byU ${e}] 
-Pelanggan by.U
-${t} 
-Tidak ada sinyal di Luar Negeri
+Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX yaitu xxx  . Jika cara di atas sudah dicoba dan sinyalnya masih berkendala, tolong hubungi kita lagi. Terima kasih.
 
-1. nomor by.U : xxxxxx
-2. Akun by.U : 
+
+https://www.telkomsel.com/roaming/setdevice
+`,Mandatory:e=>`#Pelangganbyu
+[NO][IR][${e}]
+
+1. Nomor by.U : xxxxxx
+2. Email akun by.U : zz
 3. Lokasi negara : 
-4. Tanggal dan waktu kendala : 
+4. Tanggal dan waktu kejadian sejak kapan : 
 5. Jaringan/operator negara setempat yang digunakan : 
-6. Jenis device/hp yang dipakai : 
-7. Gangguan sinyal terjadi sepanjang hari atau pada waktu tertentu aja : 
-8. Jaringan yang digunakan apa? 2G, 4G, 5G? : 
-9. Email aktif yang bisa dihubungi : 
-10. Capture APN  : 
-11. Capture bar sinyal yang didapat : 
+6. Gangguan sinyal terjadi sepanjang hari atau pada waktu tertentu aja? 
+7. Jaringan yang digunakan apa? 2G, 4G, 5G? : 
+8. Jenis device/hp yang dipakai? 
+9. Capture setting APN di hp : 
+10. Capture bar sinyal yang didapat : 
+11. Email aktif yang bisa dihubungi ? 
 `}];var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e,selectedId:t})=>{let n=e=>e??``,r=Xa().slice().sort((e,t)=>n(e.case).toLocaleLowerCase().localeCompare(n(t.case).toLocaleLowerCase()));return(0,L.jsx)(qa,{options:r.map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),value:r.map(e=>({value:e.id,label:e.case})).find(e=>e.value===t)||null,styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),r(!0),setTimeout(()=>r(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,L.jsx)(`p`,{className:` ${n?`invisible!`:`visible`}`,children:n?`copy!`:t}),(0,L.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,n?`anjay`:``,` `]})]})};function eo(){let e=(0,l.useRef)([]),t=(0,l.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var to=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=eo(),c=e=>{let t=e.split(`
@@ -3231,7 +3441,7 @@ Tidak ada sinyal di Luar Negeri
 `).length+(d>0?1:0)),_=f.slice(0,g),v=f.slice(g);h[d]=`${Number(p[1])}. ${_.replace(/^(\d+)\.\s*/,``).trimEnd()}`,h.splice(d+1,0,`${m}. ${v.trimStart()}`),a(h,d+2);let y=h.join(`
 `),b=h.slice(0,d+1).join(`
 `).length+`\n${m}. `.length;u(y,b),setTimeout(()=>{n.current?.setSelectionRange(b,b)},0)},placeholder:`Pilih dulu kategorinya .....`})},ro=({segment:e})=>{let[t,n]=(0,l.useState)(()=>{let e=localStorage.getItem(`selectedId`);return e?Number(e):null}),r=Xa().find(e=>e.id===t),[i,a]=(0,l.useState)(``),[o,s]=(0,l.useState)(``);return(0,l.useEffect)(()=>{if(!r)return;localStorage.setItem(`selectedId`,String(t));let n=Ja();a(typeof r.Mandatory==`function`?r.Mandatory(e,n):r.Mandatory);let i=typeof r.Solusi==`function`?r.Solusi(e):r.Solusi;s([r.Bracket(e),i].filter(Boolean).join(`
-`))},[t,e]),(0,l.useEffect)(()=>{let e=async e=>{if(e.ctrlKey&&!e.shiftKey&&e.code===`Space`){if(e.preventDefault(),!navigator.clipboard)return;let t=await navigator.clipboard.readText();a(e=>e.replace(/xxxxxx/g,t)),s(e=>e.replace(/xxxxxx/g,t))}if(e.ctrlKey&&e.shiftKey&&e.code===`Space`){if(e.preventDefault(),!navigator.clipboard)return;let t=await navigator.clipboard.readText();a(e=>e.replace(/--/g,t)),s(e=>e.replace(/--/g,t))}};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[]),(0,L.jsxs)(`div`,{className:`flex flex-col w-screen `,children:[(0,L.jsx)(Qa,{onSelect:n,selectedId:t}),(0,L.jsxs)(`div`,{className:`flex gap-2`,children:[(0,L.jsxs)(`div`,{className:`w-full`,children:[r&&(0,L.jsx)($a,{text:i,label:`Mandatory`}),(0,L.jsx)(to,{selectedId:t,value:i,onChange:a},t)]}),(0,L.jsxs)(`div`,{className:`w-full  `,children:[r&&(0,L.jsx)($a,{text:o,label:`Bracket + Solusi`}),(0,L.jsx)(no,{value:o,onChange:s},t)]})]})]})},io=()=>{let[e,t]=(0,l.useState)(null),[n,r]=(0,l.useState)(()=>{let e=localStorage.getItem(`my-templates`);return e?JSON.parse(e):Array(22).fill(``)});(0,l.useEffect)(()=>{let e=()=>{let e=localStorage.getItem(`my-templates`);e&&r(JSON.parse(e))};return window.addEventListener(`templates-updated`,e),()=>window.removeEventListener(`templates-updated`,e)},[]),(0,l.useEffect)(()=>{localStorage.setItem(`my-templates`,JSON.stringify(n))},[n]);let i=(e,t)=>{let i=[...n];i[e]=t,r(i)};return(0,L.jsx)(`div`,{className:`w-full `,children:[0,1,2,3,4,5,6,7,8,9,10].map(r=>(0,L.jsx)(`div`,{className:`flex`,children:[0,1].map(a=>{let o=r*2+a,s={0:`F1`,2:`F2`,4:`F3`,1:`F4`,3:`F6`,5:`F7`};return(0,L.jsxs)(`div`,{className:`relative w-full`,children:[(0,L.jsx)(`textarea`,{value:n[o],onChange:e=>i(o,e.target.value),onClick:e=>{e.altKey&&(navigator.clipboard.writeText(n[o]),t(o),setTimeout(()=>t(null),500))},className:`h-30 w-full p-1 border-1 border-solid hover:bg-yellow-200 hover:text-black `}),s[o]&&(0,L.jsx)(`span`,{className:`\r
+`))},[t,e]),(0,l.useEffect)(()=>{let e=async e=>{if(e.ctrlKey&&!e.shiftKey&&e.code===`Space`){if(e.preventDefault(),!navigator.clipboard)return;let t=await navigator.clipboard.readText();a(e=>e.replace(/xxxxxx/g,t)),s(e=>e.replace(/xxxxxx/g,t))}if(e.ctrlKey&&e.shiftKey&&e.code===`Space`){if(e.preventDefault(),!navigator.clipboard)return;let t=await navigator.clipboard.readText();a(e=>e.replace(/zz/g,t)),s(e=>e.replace(/zz/g,t))}};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[]),(0,L.jsxs)(`div`,{className:`flex flex-col w-screen `,children:[(0,L.jsx)(Qa,{onSelect:n,selectedId:t}),(0,L.jsxs)(`div`,{className:`flex gap-2`,children:[(0,L.jsxs)(`div`,{className:`w-full`,children:[r&&(0,L.jsx)($a,{text:i,label:`Mandatory`}),(0,L.jsx)(to,{selectedId:t,value:i,onChange:a},t)]}),(0,L.jsxs)(`div`,{className:`w-full  `,children:[r&&(0,L.jsx)($a,{text:o,label:`Bracket + Solusi`}),(0,L.jsx)(no,{value:o,onChange:s},t)]})]})]})},io=()=>{let[e,t]=(0,l.useState)(null),[n,r]=(0,l.useState)(()=>{let e=localStorage.getItem(`my-templates`);return e?JSON.parse(e):Array(22).fill(``)});(0,l.useEffect)(()=>{let e=()=>{let e=localStorage.getItem(`my-templates`);e&&r(JSON.parse(e))};return window.addEventListener(`templates-updated`,e),()=>window.removeEventListener(`templates-updated`,e)},[]),(0,l.useEffect)(()=>{localStorage.setItem(`my-templates`,JSON.stringify(n))},[n]);let i=(e,t)=>{let i=[...n];i[e]=t,r(i)};return(0,L.jsx)(`div`,{className:`w-full `,children:[0,1,2,3,4,5,6,7,8,9,10].map(r=>(0,L.jsx)(`div`,{className:`flex`,children:[0,1].map(a=>{let o=r*2+a,s={0:`F1`,2:`F2`,4:`F3`,1:`F4`,3:`F6`,5:`F7`};return(0,L.jsxs)(`div`,{className:`relative w-full`,children:[(0,L.jsx)(`textarea`,{value:n[o],onChange:e=>i(o,e.target.value),onClick:e=>{e.altKey&&(navigator.clipboard.writeText(n[o]),t(o),setTimeout(()=>t(null),500))},className:`h-30 w-full p-1 border-1 border-solid hover:bg-yellow-200 hover:text-black `}),s[o]&&(0,L.jsx)(`span`,{className:`\r
                                 pointer-events-none\r
                                 absolute\r
                                 top-1/2 left-1/2\r
