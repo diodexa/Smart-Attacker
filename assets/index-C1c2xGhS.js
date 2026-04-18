@@ -963,7 +963,7 @@ Masalah Pembelian Kuota/Pulsa I RENEW Via VA
 
 1. Nomor by.U : xxxxxx
 2. Email by.U : 
-3. Printscreen halaman bukti pembayaran : terlampir
+3. Printscreen halaman bukti pembayaran : 
 4. Rincian Keluhan : kuota belum masuk
 5. Order detail ID (CXO) (Pengecekan OperatorX) : -
 6. Transaction ID (CXT) (Pengecekan OperatorX) : -
@@ -1032,7 +1032,7 @@ Masalah Pembelian Kuota/Pulsa I RENEW Via Virtual Account
 
 1. Nomor by.U : xxxxxx
 2. Email by.U : 
-3. Bukti pembayaran yang tercantum waktu transaksinya : terlampir
+3. Bukti pembayaran yang tercantum waktu transaksinya : 
 4. Rincian Keluhan : kuota belum masuk, pembayaran berhasil
 5. Order detail ID (CXO) (Pengecekan OperatorX) :
 6. Transaction ID (CXT) (Pengecekan OperatorX) :
@@ -1090,7 +1090,7 @@ Tidak Mendapatkan Kuota Monthversary
 2. Email akun by.U : 
 3. Kuota berapa bulan yang belum didapatkan (3, 6, 9, atau 12 bulan) : 
 4. Tanggal aktivasi nomor by.U : 
-5. Capture halaman Reward (Sudah dan Belum Terpakai) : Terlampir
+5. Capture halaman Reward (Sudah dan Belum Terpakai) : 
 6. Bukti bayar (jika kendalanya pelanggan sudah bayar tapi belum menerima paket Monthiversary Reward) :-
 7. Hasil pengecekan Add Ons di CRM (berupa text dan tidak boleh printscreen) : 
 
