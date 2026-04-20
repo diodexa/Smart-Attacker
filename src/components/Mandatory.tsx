@@ -8,7 +8,7 @@ case : "Internet Lambat/Tidak bisa internet",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case :  Internet 
 Solusi :  minta data
 `,
@@ -114,7 +114,7 @@ case : "Tidak bisa aktivasi Error Lain",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case :  gabisa aktivasi Error Lain
 Solusi : minta data
 `,
@@ -154,7 +154,7 @@ case : "Bugs Lain",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case :  bugs aplikasi
 Solusi :  minta data
 `,
@@ -169,6 +169,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
 8. Waktu dan Lama Kejadian : 
 9. Lokasi Kejadian :  
+
+Aku tunggu datanya ya :)
 
 ============
 Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf mengenai kendala aplikasi Error bisa dicoba dulu cara berikut ya :
@@ -231,11 +233,25 @@ case : "Bugs Ganti Sim Card",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : bugs ganti sim card
 Solusi : minta data
 `,
-Solusi : `Makasih udah nunggu :) Oke Kak maaf. Ini SIM card Kakak di nomor xxxxxx harusnya bisa lanjut dengan Kakak pilih menu ganti SIM card di apps, nantinya bakal muncul halaman pengambilan/pengantaran. Coba di clear cache dulu apps nya dan pastiin pakai apps versi terbaru ya. Kalau udah tapi masih ga muncul halaman pengambilan/pengantarannya boleh diinfoin data ini :
+Solusi : (segment: string) => segment ==='Email' ? 
+`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih, untuk kendala ganti SIM card nya di apps by.U, Coba di clear cache dulu apps nya dan pastiin pakai apps versi terbaru ya. Kalau udah tapi masih berkendala boleh diinfoin data ini :
+1. Nomor by.U :
+2. Email akun by.U : 
+3. Tipe/merek Gadget :
+4. Versi OS Gadget :
+5. Versi aplikasi by.U :
+6. Apakah bisa akses menggunakan wifi/jaringan lain :
+7. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :
+8. Waktu dan Lama Kejadian :
+
+Aku Tunggu datanya ya :)
+`
+:
+`Makasih udah nunggu :) Oke Kak maaf. Ini SIM card Kakak di nomor xxxxxx harusnya bisa lanjut dengan Kakak pilih menu ganti SIM card di apps, nantinya bakal muncul halaman pengambilan/pengantaran. Coba di clear cache dulu apps nya dan pastiin pakai apps versi terbaru ya. Kalau udah tapi masih ga muncul halaman pengambilan/pengantarannya boleh diinfoin data ini :
 1. Email akun by.U : 
 2. Tipe/merek Gadget :
 3. Versi OS Gadget :
@@ -270,64 +286,92 @@ case : "Tidak bisa Kirim/Terima SMS",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa kirim/terima SMS
 Solusi :  minta data
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
-`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala SMS nya, boleh coba panduan ini dulu ya :
-1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
-2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 
-3. Coba on-off-kan airplane mode
-Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan beberapa data berikut supaya kami bisa bantu pengecekan ya Kak :
-1. Email akun by.U :
-2. Nomor by.U : 
-3. Printscreen dashboard di apps dan keterangan sinyal : 
-4. Waktu dan Lama Kejadian :
-5. Tipe gadget yang dipakai :
-6. Keterangan gagal yang muncul saat menerima atau mengirim SMS :
-7. Kendala yang terjadi tidak bisa terima SMS, kirim SMS atau keduanya :
-8. Kendala terjadi hanya saat menerima SMS atau mengirim SMS ke nomor tertentu atau semua :
-9. Capture Keterangan gagal yang muncul saat menerima atau mengirim SMS : 
-10. Nomor lain yang bisa dihubungi : 
-11. Nomor tujuan saat menerima atau mengirim SMS : 
+`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala SMS nya, boleh infoin dulu data ini ya :
+1. Nomor dan Email akun by.U :
+2. Nomor tujuan SMS (semua nomor, hanya khusus nomor tertentu saja atau SMS Premium) :
+3. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
+4. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
+5. Notifikasi gagal kirim/terima SMS : 
+6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
+7. Tipe HP : 
+
+Aku tunggu datanya ya :)
+
+
+4.1 Keterangan SMS gagal terkirim
+Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya : 
+• Pastikan nomor pusat pesan sudah +6281100000 (hanya untuk device Android)
+• Refresh Jaringan dengan cara Restart Handphone kemudian mengirim SMS ke nomor sendiri 
+• Coba gunakan SIM card pada HP lain sebagai perbandingan.
+
+4.2 Keterangan SMS Pending
+Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya : 
+• Refresh Jaringan dengan cara Restart Handphone dan menunggu proses Pengiriman SMS 1x24 Jam
+
+• Jika kendala di satu nomor aja dan setelah 1x24 jam masih berkendala, coba nomor tujuan dikirim dari nomor lain sebagai perbandingan. Pastiin nomor tujuan aktif dan HP nya ga berkendala
+
+terima OTP
+Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya : 
+• Refresh Jaringan dengan cara Restart Handphone
+• Coba untuk ubah mode jaringan ke 2G Only terlebih dahulu, kemudian tunggu maksimal 1x24 jam untuk memastikan SMS Kode OTP dapat diterima
+• Periksa juga folder Spam & diblokir jika pesan tidak muncul.
+• Kalau masih berkendala, boleh coba hubungi pihak aplikasi dulu ya :)
+
+
 ` :
 
-`Makasih udah nunggu. Kak maaf banget nih untuk kendala SMS nya di nomor xxxxxx. Boleh coba panduan ini dulu ya :
-1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
-2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 
-3. Coba on-off-kan airplane mode
-Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan beberapa data berikut supaya kami bisa bantu pengecekan ya Kak :
+`Makasih udah nunggu. Kak maaf banget nih untuk kendala SMS nya di nomor xxxxxx. Boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
-2. Printscreen dashboard di apps dan keterangan sinyal : 
-3. Waktu dan Lama Kejadian :
-4. Tipe gadget yang dipakai :
-5. Keterangan gagal yang muncul saat menerima atau mengirim SMS :
-6. Kendala yang terjadi tidak bisa terima SMS, kirim SMS atau keduanya :
-7. Kendala terjadi hanya saat menerima SMS atau mengirim SMS ke nomor tertentu atau semua :
-8. Capture Keterangan gagal yang muncul saat menerima atau mengirim SMS : 
-9. Nomor lain yang bisa dihubungi : 
-10. Nomor tujuan saat menerima atau mengirim SMS : 
+2. Nomor tujuan SMS (semua nomor, hanya khusus nomor tertentu saja atau SMS Premium) :
+3. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
+4. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
+5. Notifikasi gagal kirim/terima SMS : 
+6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
+7. Tipe HP : 
+
+4.1 Keterangan SMS gagal terkirim
+Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya : 
+• Pastikan nomor pusat pesan sudah +6281100000 (hanya untuk device Android)
+• Refresh Jaringan dengan cara Restart Handphone kemudian mengirim SMS ke nomor sendiri 
+• Coba gunakan SIM card pada HP lain sebagai perbandingan.
+
+4.2 Keterangan SMS Pending
+Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya : 
+• Refresh Jaringan dengan cara Restart Handphone dan menunggu proses Pengiriman SMS 1x24 Jam
+
+• Jika kendala di satu nomor aja dan setelah 1x24 jam masih berkendala, coba nomor tujuan dikirim dari nomor lain sebagai perbandingan. Pastiin nomor tujuan aktif dan HP nya ga berkendala
+
+terima OTP
+Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya : 
+• Refresh Jaringan dengan cara Restart Handphone
+• Coba untuk ubah mode jaringan ke 2G Only terlebih dahulu, kemudian tunggu maksimal 1x24 jam untuk memastikan SMS Kode OTP dapat diterima
+• Periksa juga folder Spam & diblokir jika pesan tidak muncul.
+• Kalau masih berkendala, boleh coba hubungi pihak aplikasi dulu ya :)
+
+
 
 `,
-Mandatory : (segment: string,DateTime: string ) =>
+Mandatory : (DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak bisa kirim / Terima SMS 
+ID Omnix :
+Nama Pelanggan : pelanggan
+Tanggal lapor : ${DateTime} 
+
 
 1. Nomor by.U : xxxxxx
 2. Email akun by.U : 
-3. Printscreen dashboard di apps dan keterangan sinyal : 
-4. Waktu dan Lama Kejadian : 
-5. Tipe gadget yang dipakai : 
-6. Keterangan gagal yang muncul saat menerima atau mengirim SMS : 
-7. Kendala yang terjadi tidak bisa terima SMS, kirim SMS atau keduanya : 
-8. Kendala terjadi hanya saat menerima SMS atau mengirim SMS ke nomor tertentu atau semua : 
-9. Capture Keterangan gagal yang muncul saat menerima atau mengirim SMS : 
-10. Nomor lain yang bisa dihubungi : 
-11. Nomor tujuan saat menerima atau mengirim SMS : 
+3. Nomor tujuan SMS (semua nomor, hanya khusus nomor tertentu saja atau SMS Premium) : 
+4. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) : 
+5. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  : 
+6. Notifikasi gagal kirim SMS (capture/text) : 
+7. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ? 
+8. Tipe HP : 
+9. Detail permasalahan : gabisa kirim SMS
 
 
 
@@ -341,50 +385,227 @@ case : "Panggilan Telepon Masuk / Telepon Keluar",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa telepon masuk/keluar
 Solusi : minta data
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
-`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget untuk kendala teleponnya, boleh pastiin dulu kakak berada dalam lokasi yang mendapatkan sinyal by.U dan sudah mencoba on-off-kan airplane mode. kalau masih gabisa, boleh infoin data ini ya :
-1. Email akun by.U :
-2. Nomor by.U : 
-3. Printscreen dashboard di apps dan keterangan sinyal : 
-4. Waktu dan Lama Kejadian :
-5. Tipe HP yang dipakai :
-6. Capture keterangan error yang muncul saat telepon :
-7. Kendala terjadi hanya saat menerima panggilan, melakukan panggilan, atau keduanya :
-8. Kendala terjadi hanya ke nomor tertentu atau semua nomor :
-9. Nomor lain yang bisa dihubungi : 
+`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget untuk kendala teleponnya, boleh infoin data ini ya biar bisa aku cek:
+1. Nomor by.U dan  Akun SignUp :
+2. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
+3. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
+4. Notifikasi gagal saat telepon/Notifikasi gagal terima telepon : *silakan untuk notifikasi yang ditanyakan sesuai dengan keluhan dan hapus yang tidak perlu
+5. Kendala terjadi hanya ke nomor tertentu atau semua nomor?
+6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
+
+Aku tunggu datanya ya :)
+
+Lakukan panggilan : 
+4.1. Keterangan Busy (jaringan sibuk)   
+a. Jika kendala ke satu nomor indikasi kendala di nomor tujuan, bisa dikarenakan: 
+Kak aku cek nomor xxxxxx aktif, Kalau keterangannya jaringan sibuk, bisa dikarenakan :  
+-    No tujuan sedang lakukan panggilan dan nomor tersebut tidak mengaktifkan call waiting.
+-    Nomor tujuan sedang melakukan pengalihan panggilan dan nomor pengalihannya sedang lakukan panggilan.   
+-    Nomor Kakak sedang di blok olah nomor tujuan.    
+-    nomor tujuan digunakan pada perangkat yang tidak memiliki fitur voice (iPad atau modem).    
+b. Jika kesemua nomor, 
+Kak aku cek nomor xxxxxx aktif, boleh coba dulu refresh Jaringan dengan cara Restart Handphone dan Kakak bisa pindahin SIM card ke HP lain sebagai perbandingan.
+c. Jika masih berkendala, create tiket.
+
+4.2. Keterangan Call not allowed (panggilan ditolak)        
+Lakukan pengecekan nomor pelanggan di OperatorX untuk mengetahui nomor aktif, dan lakukan pengecekan history panggilan di CDR.  
+
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya :
+- refresh Jaringan dengan cara Restart Handphone
+- pindahin SIM card ke HP lain sebagai perbandingan
+- pastikan fitur FDN (Fix Dialling Number)/Pembatasan panggilan dalam keadaan OFF pada pengaturan HP
+
+4.3. Keterangan pulsa tidak cukup melakukan panggilan .
+
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya :
+- refresh Jaringan dengan cara Restart Handphone
+- pindahin SIM card ke HP lain sebagai perbandingan
+
+
+4.4. Keterangan The number you are calling is not active or out of coverage area    
+a. Jika kendala ke satu nomor indikasi kendala di nomor tujuan, bisa dikarenakan No tujuan sedang tidak aktif atau berada di jangkauan area.    
+
+b. Jika kesemua nomor, 
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya :
+- refresh Jaringan dengan cara Restart Handphone
+- pindahin SIM card ke HP lain sebagai perbandingan
+
+
+
+4.5. Keterangan Nomor yg anda hubungi kurang lengkap kemudian langsung terputus     
+a. Jika ke satu nomor   
+- Pastikan nomor tujuan benar   
+(Jika nomor tujuan adalah nomor by.U cek status nomor tujuannya di aplikasi OperatorX / Nomor Telkomsel cek status nomor di DSC apakah masih aktif atau tidak). 
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya : 
+- Coba Kakak menghubungi ke no tersebut minimal 3 kali dalam jeda waktu 5 menit per panggilan.    
+- Coba kakak lakukan panggilan juga dari nomor by.U yang lain ke No tersebut sebagai pembanding.   
+- Jika dari semua nomor tetap sama, indikasi kendala di nomor tujuan yang berkendala ya Kak. 
+b. Jika kesemua nomor   
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya :
+- refresh Jaringan dengan cara Restart Handphone
+- pindahin SIM card ke HP lain sebagai perbandingan
+
+
+4.6. Cross connect/tersambung ke nomor lain (lihat pansol da jarang)
+
+4.7. Keterangan lain    
+a. Jika hanya ke 1 nomor
+Kak aku cek nomor xxxxxx aktif. Coba panduan ini ya : 
+- Pastikan nomor tujuan benar dan masih aktif.     
+- Sarankan Refresh Jaringan dengan cara Restart Handphone
+- Pindahkan SIM card ke hp lain sebagai perbandingan.    
+b. Jika Kesemua nomor   
+Kak aku cek nomor xxxxxx aktif. Coba panduan ini ya : 
+- Sarankan Refresh Jaringan dengan cara Restart Handphone
+- Pindahkan SIM card ke hp lain sebagai perbandingan.    
+ 
+
+Terima Telepon : 
+5.1. Keterangan nomor dialihkan:
+Kak aku cek nomor xxxxxx aktif. Coba pastiin dulu ini ya :
+- layanan voice mail pada HP ga aktif ya
+- Off kan layanan call forward, Caranya : Dial ##002# > ok/yes
+- Refresh Jaringan dengan cara Restart Handphone
+- coba pindahkan SIM card ke HP lain
+- Kalau masih gabisa, Kakak bisa tunggu 1x24jam untuk mengantisipasi gangguan jaringan sementara
+Semoga membantu :)
+
+
+5.2. Keterangan lainnya lanjut ke tahap selanjutnya
+Tanyakan ke pelanggan kendalanya jika terima Panggilan dari satu nomor atau dari banyak nomor.
+
+Jika dari banyak nomor: 
+Kak aku cek nomor xxxxxx aktif. Coba pandan ini ya :
+- Refresh Jaringan dengan cara Restart Handphone
+- Coba gunakan SIM card di HP lain sebagai perbandingan
+
+Jika masih tidak dapat menerima panggilan, lanjut ke Step berikutnya (langkah 6)
+
+Jika hanya dari satu nomor: 
+Kak aku cek nomor xxxxxx aktif. Coba pandan ini ya :
+- Pastikan nomor pemanggil tidak ada di list blokir di settingan Handphone Kakak.
+- Jika masih berkendala sarankan nomor pemanggil untuk coba di HP yang lain
+- Kalau semua udah di coba tapi masih berkendala, ada indikasi nomor yang melakukan panggilannya yang berkendala dan disarankan hubungi kami untuk bisa dibantu :)
 ` :
 
-`Makasih udah nunggu. Kak maaf, untuk kendala teleponnya di nomor xxxxxx , boleh pastiin dulu kakak berada dalam lokasi yang mendapatkan sinyal by.U dan sudah mencoba on-off-kan airplane mode. kalau masih gabisa, boleh infoin data ini ya :
+`Makasih udah nunggu. Kak maaf, untuk kendala teleponnya di nomor xxxxxx , boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
-2. Printscreen dashboard di apps dan keterangan sinyal : 
-3. Waktu dan Lama Kejadian :
-4. Tipe HP yang dipakai :
-5. Capture keterangan error yang muncul saat telepon :
-6. Kendala terjadi hanya saat menerima panggilan, melakukan panggilan, atau keduanya :
-7. Kendala terjadi hanya ke nomor tertentu atau semua nomor :
-8. Nomor lain yang bisa dihubungi : 
+2. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
+3. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
+4. Notifikasi gagal saat telepon/Notifikasi gagal terima telepon : *silakan untuk notifikasi yang ditanyakan sesuai dengan keluhan dan hapus yang tidak perlu
+5. Kendala terjadi hanya ke nomor tertentu atau semua nomor?
+6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
 
+
+4.1. Keterangan Busy (jaringan sibuk)   
+a. Jika kendala ke satu nomor indikasi kendala di nomor tujuan, bisa dikarenakan: 
+Kak aku cek nomor xxxxxx aktif, Kalau keterangannya jaringan sibuk, bisa dikarenakan :  
+-    No tujuan sedang lakukan panggilan dan nomor tersebut tidak mengaktifkan call waiting.
+-    Nomor tujuan sedang melakukan pengalihan panggilan dan nomor pengalihannya sedang lakukan panggilan.   
+-    Nomor Kakak sedang di blok olah nomor tujuan.    
+-    nomor tujuan digunakan pada perangkat yang tidak memiliki fitur voice (iPad atau modem).    
+b. Jika kesemua nomor, 
+Kak aku cek nomor xxxxxx aktif, boleh coba dulu refresh Jaringan dengan cara Restart Handphone dan Kakak bisa pindahin SIM card ke HP lain sebagai perbandingan.
+c. Jika masih berkendala, create tiket.
+
+4.2. Keterangan Call not allowed (panggilan ditolak)        
+Lakukan pengecekan nomor pelanggan di OperatorX untuk mengetahui nomor aktif, dan lakukan pengecekan history panggilan di CDR.  
+
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya :
+- refresh Jaringan dengan cara Restart Handphone
+- pindahin SIM card ke HP lain sebagai perbandingan
+- pastikan fitur FDN (Fix Dialling Number)/Pembatasan panggilan dalam keadaan OFF pada pengaturan HP
+
+4.3. Keterangan pulsa tidak cukup melakukan panggilan .
+
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya :
+- refresh Jaringan dengan cara Restart Handphone
+- pindahin SIM card ke HP lain sebagai perbandingan
+
+
+4.4. Keterangan The number you are calling is not active or out of coverage area    
+a. Jika kendala ke satu nomor indikasi kendala di nomor tujuan, bisa dikarenakan No tujuan sedang tidak aktif atau berada di jangkauan area.    
+
+b. Jika kesemua nomor, 
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya :
+- refresh Jaringan dengan cara Restart Handphone
+- pindahin SIM card ke HP lain sebagai perbandingan
+
+
+
+4.5. Keterangan Nomor yg anda hubungi kurang lengkap kemudian langsung terputus     
+a. Jika ke satu nomor   
+- Pastikan nomor tujuan benar   
+(Jika nomor tujuan adalah nomor by.U cek status nomor tujuannya di aplikasi OperatorX / Nomor Telkomsel cek status nomor di DSC apakah masih aktif atau tidak). 
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya : 
+- Coba Kakak menghubungi ke no tersebut minimal 3 kali dalam jeda waktu 5 menit per panggilan.    
+- Coba kakak lakukan panggilan juga dari nomor by.U yang lain ke No tersebut sebagai pembanding.   
+- Jika dari semua nomor tetap sama, indikasi kendala di nomor tujuan yang berkendala ya Kak. 
+b. Jika kesemua nomor   
+Kak aku cek nomor xxxxxx aktif. Boleh coba panduan ini ya :
+- refresh Jaringan dengan cara Restart Handphone
+- pindahin SIM card ke HP lain sebagai perbandingan
+
+
+4.6. Cross connect/tersambung ke nomor lain (lihat pansol da jarang)
+
+4.7. Keterangan lain    
+a. Jika hanya ke 1 nomor
+Kak aku cek nomor xxxxxx aktif. Coba panduan ini ya : 
+- Pastikan nomor tujuan benar dan masih aktif.     
+- Sarankan Refresh Jaringan dengan cara Restart Handphone
+- Pindahkan SIM card ke hp lain sebagai perbandingan.    
+b. Jika Kesemua nomor   
+Kak aku cek nomor xxxxxx aktif. Coba panduan ini ya : 
+- Sarankan Refresh Jaringan dengan cara Restart Handphone
+- Pindahkan SIM card ke hp lain sebagai perbandingan.    
+ 
+
+Terima Telepon : 
+5.1. Keterangan nomor dialihkan:
+Kak aku cek nomor xxxxxx aktif. Coba pastiin dulu ini ya :
+- layanan voice mail pada HP ga aktif ya
+- oof kan layanan call forward, Caranya : Dial ##002# > ok/yes
+- Refresh Jaringan dengan cara Restart Handphone
+- coba pindahkan SIM card ke HP lain
+- Kalau masih gabisa, Kakak bisa tunggu 1x24jam untuk mengantisipasi gangguan jaringan sementara
+Semoga membantu :)
+
+
+5.2. Keterangan lainnya lanjut ke tahap selanjutnya
+Tanyakan ke pelanggan kendalanya jika terima Panggilan dari satu nomor atau dari banyak nomor.
+
+Jika dari banyak nomor: 
+Kak aku cek nomor xxxxxx aktif. Coba pandan ini ya :
+- Refresh Jaringan dengan cara Restart Handphone
+- Coba gunakan SIM card di HP lain sebagai perbandingan
+
+Jika masih tidak dapat menerima panggilan, lanjut ke Step berikutnya (langkah 6)
+
+Jika hanya dari satu nomor: 
+- Pastikan nomor pemanggil tidak ada di list blokir di settingan Handphone Kakak.
+- Jika masih berkendala sarankan nomor pemanggil untuk coba di HP yang lain
+- Kalau semua udah di coba tapi masih berkendala, ada indikasi nomor yang melakukan panggilannya yang berkendala dan disarankan hubungi kami untuk bisa dibantu :)
 `,
-Mandatory : (segment: string,DateTime: string ) =>
+Mandatory : (DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak bisa melakukan panggilan on-net & off-net
+ID Omnix :
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
-2. Email akun by.U : 
-3. Printscreen dashboard di apps dan keterangan sinyal : 
-4. Waktu dan Lama Kejadian : 
-5. Tipe HP yang dipakai : 
-6. Capture keterangan error yang muncul saat telepon : 
-7. Kendala terjadi hanya saat menerima panggilan, melakukan panggilan, atau keduanya : 
-8. Kendala terjadi hanya ke nomor tertentu atau semua nomor : 
-9. Nomor lain yang bisa dihubungi : 
+2. Email akun by.U : zz
+3. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
+4. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
+5. Notifikasi gagal saat telepon :
+6. Kendala terjadi hanya saat menerima panggilan, melakukan panggilan, atau keduanya?  
+7. Kendala terjadi hanya ke nomor tertentu atau semua nomor?
+8. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
 
 
 
@@ -398,37 +619,14 @@ case : "Tidak bisa request OTP Meta Product",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : ga dapat OTP Whatsapp/Telegram
 Solusi : minta data
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
-`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala kode OTP nya, boleh coba panduan ini dulu ya :
-1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
-2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 
-3. Coba on-off-kan airplane mode
-Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan beberapa data berikut supaya kami bisa bantu pengecekan ya Kak :
-1. Email akun by.U :
-2. Nomor by.U : 
-3. Waktu Kejadian :
-4. Nomor lain yang bisa dihubungi :
-5. Tipe gadget yang digunakan :
-6. Capture dashboard di apps dan keterangan sinyal : 
-7. Capture keterangan gagal yang muncul saat melakukan request/menerima OTP : 
-8. Keterangan gagal yang muncul saat melakukan request/menerima OTP :
+`ke SMS dulu
 ` :
-`Kak maaf banget nih untuk kendala kode OTP nya di nomor xxxxxx. Boleh coba panduan ini dulu ya :
-1. Kalau kakak berada dalam lokasi yang mendapatkan sinyal by.U.
-2. Periksa settingan SMS bahwa nomor pusat layanan SMS (message center-nya) adalah +6281100000 
-3. Coba on-off-kan airplane mode
-Jika nomor 1-3 sudah dicek tapi layanan SMS tetap bermasalah, mohon diinfokan beberapa data berikut supaya kami bisa bantu pengecekan ya Kak :
-1. Email akun by.U :
-2. Waktu Kejadian :
-3. Nomor lain yang bisa dihubungi :
-4. Tipe gadget yang digunakan :
-5. Capture dashboard di apps dan keterangan sinyal : 
-6. Capture keterangan gagal yang muncul saat melakukan request/menerima OTP : 
-7. Keterangan gagal yang muncul saat melakukan request/menerima OTP :
+`ke SMS dulu:
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
@@ -457,7 +655,7 @@ case : "Unreg hapus NIK",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : unreg
 Solusi :  minta data
 `,
@@ -479,7 +677,7 @@ DISCLAIMER
 
 Makasih udah nunggu. Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu UNREG SIM Card di akun berikut:
 1. Nomor by.U : xxxxxx
-2. Email: --
+2. Email: zz
 
 Nomor yang sudah berhasil di unregistrasi ga akan bisa diaktifkan kembali dalam kondisi apapun ya kak, lalu NIK yang terdaftar di nomor ini juga akan ikut terhapus. Kalo data diatas udah sesuai dan Kakak setuju boleh tolong konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :)
 ` :
@@ -537,7 +735,7 @@ case : "Unreg hapus NIK lupa nomor",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : unreg
 Solusi : minta data
 `,
@@ -568,7 +766,7 @@ case : "Gagal Aktivasi eSIM Account Status Tidak Sesuai",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa aktivasi esim acount
 Solusi : minta data
 `,
@@ -579,6 +777,8 @@ Solusi :   (segment: string) => segment ==='Email' ?
 3.Nomor yang bisa dihubungi : 
 4.Email yang bisa dihubungi : 
 5.Capture gagal aktivasi di apps : 
+
+Aku tunggu datanya ya :)
 ` :
 `Makasih udah nunggu. Kak maaf, untuk kendala eSIM di nomor xxxxxx , aku cek ada kendala nih dari proses aktivasinya. Boleh infoin data ini ya biar bisa aku proses :
 1.Email akun by.U : 
@@ -611,7 +811,7 @@ case : "Sinyal lemah/tidak stabil/Tidak ada sinyal",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Sinyal
 Solusi : minta data
 `,
@@ -720,7 +920,7 @@ case : "Ganti SIM Card active",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Ganti sim card
 Solusi : minta data
 `,
@@ -731,6 +931,8 @@ Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ganti SIM card ny
 1. Nomor by.U
 2. Email akun by.U
 3. NIK yang didaftarin
+
+Aku tunggu datanya ya :)
 
 Hi, Kak . Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM card nya, jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
 1. Pastiin Versi aplikasi sudah yang terbaru 
@@ -754,7 +956,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Ganti SIM Card Active dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: --
+2. Email: zz
 3. NIK KTP valid : 
 4. Nama & nomor penerima :
 5. Alamat pengiriman :
@@ -795,7 +997,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Ganti SIM Card Active dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: --
+2. Email: zz
 3. NIK KTP valid : 
 4. Nama & nomor penerima :
 5. Alamat pengiriman :
@@ -827,7 +1029,7 @@ case : "Miskoordinasi JNE (AWB)",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : misskoordinasi JNE ada AWB
 Solusi : minta data
 `,
@@ -839,6 +1041,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 4. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) :
 5. Capture pengecekan nomor resi di web tracking JNE : 
 6. Konfirmasi dari JNE (jika Kakak sempat komplain ke JNE) :
+
+Aku tunggu datanya ya :)
 ` :
 
 `Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari proses pengantarannya. Boleh infoin data ini ya biar bisa aku proses : 
@@ -872,7 +1076,7 @@ case : "Miskoordinasi JNE ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : misskoordinasi ga ada awb
 Solusi : minta data
 `,
@@ -884,6 +1088,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 4. Nama Penerima : 
 5. Nomor Penerima : 
 6. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) : 
+
+Aku tunggu datanya ya :)
 ` :
 
 `Makasih udah nunggu. Kak maaf, untuk kendala pengiriman SIM card nya di nomor xxxxxx , aku cek ada kendala nih dari aplikasinya jadinya SIM card Kakak belum di kirimin. Boleh infoin data ini ya biar bisa aku proses : 
@@ -916,7 +1122,7 @@ case : "Pembelian paket IRENEW virtual account Paid ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : irenew va
 Solusi : minta data
 `,
@@ -930,7 +1136,7 @@ Masalah Pembelian Kuota/Pulsa I RENEW Via VA
 
 1. Nomor by.U : xxxxxx
 2. Email by.U : 
-3. Printscreen halaman bukti pembayaran : terlampir
+3. Printscreen halaman bukti pembayaran : 
 4. Rincian Keluhan : kuota belum masuk
 5. Order detail ID (CXO) (Pengecekan OperatorX) : -
 6. Transaction ID (CXT) (Pengecekan OperatorX) : -
@@ -951,7 +1157,7 @@ case : "Penyalahgunaan NIK ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : penyalahgunaan nik
 Solusi : minta data
 `,
@@ -999,7 +1205,7 @@ case : "Pembelian paket Irenew virtual account Unpaid ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : irenew VA unpaid
 Solusi : minta data
 `,
@@ -1020,7 +1226,7 @@ Masalah Pembelian Kuota/Pulsa I RENEW Via Virtual Account
 
 1. Nomor by.U : xxxxxx
 2. Email by.U : 
-3. Bukti pembayaran yang tercantum waktu transaksinya : terlampir
+3. Bukti pembayaran yang tercantum waktu transaksinya : 
 4. Rincian Keluhan : kuota belum masuk, pembayaran berhasil
 5. Order detail ID (CXO) (Pengecekan OperatorX) :
 6. Transaction ID (CXT) (Pengecekan OperatorX) :
@@ -1042,7 +1248,7 @@ case : "Permintaan Refund karena kesalahan sistem ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : refund karena
 Solusi : minta data
 `,
@@ -1056,7 +1262,7 @@ ${DateTime}
 Permintaan Refund karena kesalahan sistem
 
 1.Nomor by.U : xxxxxx
-2.Email by.U : --
+2.Email by.U : zz
 3.Capture bukti pembayaran : 
 4. Data refund :
 `   
@@ -1069,7 +1275,7 @@ case : "Tidak Mendapatkan Kuota Monthversary  ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : ga dapat kuota Monthversary
 Solusi : minta data
 `,
@@ -1079,7 +1285,9 @@ Solusi : (segment: string) => segment ==='Email' ?
 2. Email akun by.U : 
 3. Kuota berapa bulan yang belum didapatkan (3, 6, 9, atau 12 bulan) : 
 4. Tanggal aktivasi nomor by.U : 
-5. Capture halaman Reward (Sudah dan Belum Terpakai) : 
+5. Capture halaman Reward (Sudah dan Belum Terpakai) :
+
+Aku tunggu datanya ya :)
 ` :
 `Makasih udah nunggu. Kak maaf, untuk kendala ga dapat kuota Monthversary di nomor xxxxxx, boleh infoin aku data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
@@ -1098,7 +1306,7 @@ Tidak Mendapatkan Kuota Monthversary
 2. Email akun by.U : 
 3. Kuota berapa bulan yang belum didapatkan (3, 6, 9, atau 12 bulan) : 
 4. Tanggal aktivasi nomor by.U : 
-5. Capture halaman Reward (Sudah dan Belum Terpakai) : Terlampir
+5. Capture halaman Reward (Sudah dan Belum Terpakai) : 
 6. Bukti bayar (jika kendalanya pelanggan sudah bayar tapi belum menerima paket Monthiversary Reward) :-
 7. Hasil pengecekan Add Ons di CRM (berupa text dan tidak boleh printscreen) : 
 
@@ -1113,7 +1321,7 @@ case : "SMS - Gagal Aktivasi M-Banking ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gagal Aktivasi M-Banking
 Solusi : minta data
 `,
@@ -1126,6 +1334,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 5. Capture dashboard apps :
 6. Capture kirim atau terima SMS ke nomor lain berhasil :
 7. Capture keterangan gagal aktivasi fitur banking :
+
+Aku tunggu datanya ya :)
 ` :
 
 `Makasih udah nunggu. Kak maaf, untuk kendala fitur banking nya di nomor xxxxxx, pastiin cuma ada SIM Card by.U di hp saat aktivasi fitur banking tersebut dan terkoneksi dengan jaringan by.U. Kalau masih tidak bisa, boleh tolong infokan beberapa data berikut agar dapat dibantu pengecekan :
@@ -1160,7 +1370,7 @@ case : "Pembelian paket IRENEW OVO/DANA/ShopeePay/lainnya ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : irenew
 Solusi : minta data
 `,
@@ -1169,6 +1379,7 @@ Solusi : (segment: string) => segment ==='Email' ?
 1. Nomor by.U :
 2. Email akun by.U :
 3. Capture bukti pembayaran :
+
 Aku tunggu datanya ya :)
 
 Oke Kak, untuk bukti bayar yang di Shopee dengan tertera Merchant Reff IDnya silahkan coba cara ini :
@@ -1198,7 +1409,7 @@ ${DateTime}
 Masalah Pembelian Kuota/Pulsa I RENEW Via 
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : --
+2. Email by.U : zz
 3. Capture bukti pembayaran : 
 4. Order detail ID (CXO) (Pengecekan OperatorX)  : 
 5. Transaction ID (CXT) (Pengecekan OperatorX) :
@@ -1213,7 +1424,7 @@ case : "Tidak Bisa Aktivasi SIM Card Legacy ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa aktivasi legacy
 Solusi : minta data
 `,
@@ -1224,6 +1435,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 3. Capture Gagal/berhasil Aktivasi via SMS :
 4. SN barcode yang ada di cangkang SIM Card :
 5. CP dan Email yang bisa dihubungi :
+
+Aku tunggu datanya ya :)
 ` :
 
 `Makasih udah nunggu. Kak maaf untuk kendala gabisa aktivasi/registrasi di nomor xxxxxx, aku cek nomornya belum berhasil di aktivasi nih. Kalau nomornya udah sesuai dengan yang di bagian depan bungkus SIM card, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
@@ -1267,7 +1480,7 @@ case : "Cara Aktivasi SIM card Digital ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : cara aktivasi sim card digital
 Solusi : info cara aktivasi di apps
 `,
@@ -1298,7 +1511,7 @@ case : "Tidak dapat langganan weTV",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : ga dapat langganan weTV
 Solusi : minta data
 `,
@@ -1310,6 +1523,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 4. Capture notifikasi berhasil aktivasi :
 5. Tanggal pembelian paket:
 6. Tipe HP :
+
+Aku tunggu datanya ya :)
 ` :
 `Makasih udah nunggu. Kak maaf, untuk kendala langganan weTV nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
@@ -1342,7 +1557,7 @@ case : "Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy (indoma
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : sim card yang didapat legacy
 Solusi : minta data
 `,
@@ -1356,6 +1571,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 6. Nama penerima : 
 7. Nomor penerima : 
 8. Alamat pengiriman :
+
+Aku tunggu datanya ya :)
 ` :
 `Makasih udah nunggu. Kak maaf, untuk kendala SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
 1. Akun by.U : 
@@ -1392,7 +1609,7 @@ case : "Tidak Bisa Aktivasi SIM Card Dengan Kode Error Asset Not Found ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa aktivasi asset notfound
 Solusi : minta data
 `,
@@ -1429,7 +1646,7 @@ case : "Ketidaksesuaian Penggunaan Kuota ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : kuota tiba-tiba berkurang
 Solusi : minta data
 `,
@@ -1444,6 +1661,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 7. Jumlah kuota awal dan kuota akhir :
 8. Capture data usage :
 9. Capture dashboard apps by.U (yang ada detail pemakaian Data) : 
+
+Aku tunggu datanya ya :)
 ` :
 `Makasih udah nunggu. Kak maaf untuk kendala penggunaan kuota yang ga sesuai di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U:
@@ -1470,7 +1689,7 @@ Ketidaksesuaian Penggunaan Kuota
 6. Paket yang dikeluhkan : 
 7. Jumlah kuota awal dan kuota akhir : 
 8. Capture data usage : 
-9. Capture dashboard apps by.U : 
+9. Capture dashboard apps by.U  (yang ada detail pemakaian Data): 
 10. Apakah customer pernah mencoba di gadget lain dan mengalami masalah yang sama? TIDAK
 11. Apakah ada VPN dsb di gadget customer? TIDAK 
 `   
@@ -1483,7 +1702,7 @@ case : "Tidak bisa login dengan Nomor BYU / terima kode OTP pakai nomor by.U",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa login nomor by.U
 Solusi : solusi gabisa login nomor by.u
 `,
@@ -1517,7 +1736,7 @@ case : "Tidak Mendapatkan Voucher Non-Telco uCoin",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : non telco
 Solusi : minta data
 `,
@@ -1529,6 +1748,8 @@ Solusi :(segment: string) => segment ==='Email' ?
 4. Tanggal penukaran U-Coin : 
 5. Capture bukti redeem di halaman Reward Saya : 
 6. Capture kendala penukaran : 
+
+Aku tunggu datanya ya :)
 ` : 
 `Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
@@ -1545,7 +1766,7 @@ ${DateTime}
 Tidak Mendapatkan Voucher Non-Telco
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : --
+2. Email by.U : zz
 3. Jenis voucher yang ditukarkan : 
 4. Tanggal penukaran U-Coin : 
 5. Capture bukti redeem di halaman Reward Saya : 
@@ -1560,7 +1781,7 @@ case : "Pergantian SIM Card Legacy ditolak GraPARI",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : ganti sim card ditolak grapari
 Solusi : minta data
 `,
@@ -1577,6 +1798,8 @@ Solusi :(segment: string) => segment ==='Email' ?
 9. NIK KTP Valid : 
 10. Foto KTP : 
 11. Foto selfie KTP : 
+
+Aku tunggu datanya ya :)
 ` : 
 `Makasih udah nunggu. Kak maaf, untuk ganti SIM card nya karena gabisa di GraPARI di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Nama Pelanggan/pengunjung : 
@@ -1619,7 +1842,7 @@ case : "Esim Sinyal hilang",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : esim sinyal hilang
 Solusi : minta data
 `,
@@ -1633,6 +1856,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 6. Capture Sinyal :
 7. Capture settingan eSIM di handphone :
 8. Capture bukti pembayaran : 
+
+Aku tunggu datanya ya :)
 ` :
 `Makasih udah nunggu. Kak maaf untuk kendala eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
@@ -1669,7 +1894,7 @@ case : "eSIM barcode/QR tidak tersimpan ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : minta barcode esim
 Solusi : minta data
 `,
@@ -1680,6 +1905,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 3. Nomor yang bisa dihubungi : 
 4. Email yang bisa dihubungi : 
 5. Capture bukti pembayaran : 
+
+Aku tunggu datanya ya :)
 ` :
 `Makasih udah nunggu. Kak maaf untuk barcode/qr eSIM nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
@@ -1712,7 +1939,7 @@ case : "Bugs Ganti SIM card (mandatory E)",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : bugs ganti sim card
 Solusi : minta data
 `,
@@ -1737,7 +1964,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu  Ganti SIM Card dengan data :
 1. Nomor by.U : xxxxxx
-2. Email akun by.U: --
+2. Email akun by.U: zz
 3. NIK KTP valid : 
 4. Nama & nomor penerima :
 5. Alamat pengiriman :
@@ -1773,57 +2000,74 @@ case : "Keluhan Tidak Bisa Akses Internet di Luar Negeri Roaming",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa internet roaming
 Solusi : minta data
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala gabisa internet di luar negeri,boleh infoin data ini ya biar bisa aku cek :
-1. Nomor by.U :
-2. Email akun by.U :
-3. Tanggal dan waktu kejadian sejak kapan :
-4. Jaringan/operator negara setempat yang digunakan :
-5. Capture speedtest :
+Hai Kak, maaf udah bikin ga nyaman ya. Boleh infokan beberapa data di bawah ini supaya bisa dibantu pengecekan :
+1. Nomor by.U : 
+2. Email akun by.U : 
+3. Lokasi negara :
+4. Tanggal dan waktu kejadian sejak kapan :
+5. Jaringan/operator negara setempat yang digunakan :
 6. Capture setting APN di HP :
-7. Lokasi negara :
+7. Capture sinyal yang didapat :
+8. Capture speedtest :
+
+Aku tunggu datanya ya :)
+
+Pastikan ada fitur roaming barring di menu DSC "Unblocked"
+
+Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif  dan punya kuota roaming, serta kondisi jaringan di lokasi negara Kakak ga ada info gangguan. Bisa dicoba langkah-langkah ini ya kak :
+1. Coba ON-kan airplane mode dan OFF-kan kembali, 
+2. Ubah pengaturan jaringan dari otomatis menjadi manual, lalu cari Operator yang bekerjasama di negara tersebut,
+3. Pastikan kolom APN diisi dengan "byu" (tanpa tanda kutip), username dan password kosongkan.
+4. Pastikan hanya ada 1 SIM Card yang aktif, jika masih tidak bisa coba pindahkan SIM card ke HP lain untuk perbandingan.
+5. Pastikan tombol data seluler dan data roaming aktif/ON
+
+Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX yaitu xxx  . Jika cara di atas sudah dicoba dan sinyalnya masih berkendala, tolong hubungi kita lagi. Terima kasih.
+
+
+https://www.telkomsel.com/roaming/setdevice
 ` :
 `Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
-2. Tanggal dan waktu kejadian sejak kapan :
-3. Jaringan/operator negara setempat yang digunakan :
-4. Capture speedtest :
+2. Lokasi negara :
+3. Tanggal dan waktu kejadian sejak kapan :
+4. Jaringan/operator negara setempat yang digunakan :
 5. Capture setting APN di HP :
-6. Lokasi negara :
+6. Capture sinyal yang didapat :
+7. Capture speedtest :
+
+Pastikan ada fitur roaming barring di menu DSC "Unblocked"
 
 Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif  dan punya kuota roaming, serta kondisi jaringan di lokasi negara Kakak ga ada info gangguan. Bisa dicoba langkah-langkah ini ya kak :
-1. Coba ON-kan airplane mode dan OFF-kan kembali, OFF-kan mobile data dan ON-kan kembali.
-2. Lakukan refresh jaringan :
-3. Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih operator yang bekerja sama dengan Telkomsel, yaitu STC
-4. iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
-5. Isi APN dengan "byu", username dan password kosongkan.
-6.Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.
+1. Coba ON-kan airplane mode dan OFF-kan kembali, 
+2. Ubah pengaturan jaringan dari otomatis menjadi manual, lalu cari Operator yang bekerjasama di negara tersebut,
+3. Pastikan kolom APN diisi dengan "byu" (tanpa tanda kutip), username dan password kosongkan.
+4. Pastikan hanya ada 1 SIM Card yang aktif, jika masih tidak bisa coba pindahkan SIM card ke HP lain untuk perbandingan.
 
-Jika cara di atas sudah dicoba dan akses internet tetap bermasalah, tolong hubungi kita lagi. Terima kasih`,
-Mandatory : (segment: string,DateTime: string ) =>
+Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX yaitu xxx  . Jika cara di atas sudah dicoba dan sinyalnya masih berkendala, tolong hubungi kita lagi. Terima kasih.
+
+
+https://www.telkomsel.com/roaming/setdevice`,
+Mandatory : (segment: string) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-DATA - Tidak Bisa Akses Internet di Luar Negeri
+[NO][IR][${segment}]
 
-1. nomor by.U : xxxxxx
-2. Akun by.U : 
-2. Lokasi negara : 
-3. Nama Paket Roaming : 
-4. Jenis device yang digunakan : 
-5. Tanggal dan waktu kendala : 
-6. Jaringan yang digunakan apa? 4G, 5G? : 
-7. Jumlah sinyal bar atau titik yang didapat : 
-8. Jaringan/operator negara setempat yang digunakan : 
-9. Email aktif yang bisa dihubungi : 
-10. Sisa kuota yang dimiliki oleh pelanggan : 
-11. Capture speedtest : 
-12. Capture APN : 
+1. Nomor by.U : xxxxxx
+2. Email akun by.U : zz
+3. Lokasi negara : 
+4. Tanggal dan waktu kejadian sejak kapan : 
+5. Jaringan/operator negara setempat yang digunakan : 
+6. Gangguan sinyal terjadi sepanjang hari atau pada waktu tertentu aja? 
+7. Jaringan yang digunakan apa? 2G, 4G, 5G? : 
+8. Jenis device/hp yang dipakai? 
+9. Capture setting APN di hp : 
+10. Capture bar sinyal yang didapat : 
+11. Email aktif yang bisa dihubungi ? 
 `   
 },
 
@@ -1834,7 +2078,7 @@ case : "Pulsa berkurang tiba-tiba",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : pulsa berkurang tiba-tiba
 Solusi : minta data
 `,
@@ -1845,6 +2089,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 3. Pulsa awal dan pulsa akhir :
 4. Tipe Hp :
 5. Tanggal dan Waktu kejadian :
+
+Aku tunggu datanya ya :)
 ` :
 `Makasih udah nunggu Kak. Maaf nih untuk kendala pulsa yang berkurang tiba-tiba di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun By.U :
@@ -1876,7 +2122,7 @@ case : "Tidak bisa aktivasi inject paket",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa aktivasi sim card legacy
 Solusi : hubungi pihak penjual
 `,
@@ -1893,7 +2139,7 @@ case : "Tidak bisa aktivasi NIK invalid Dukcapil/Disdukcapil",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa aktivasi nik invalid
 Solusi : hubungi dukcapil
 `,
@@ -1940,7 +2186,7 @@ case : "Tidak bisa aktivasi exceed limit (udah 3 kali percobaan)",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa aktivasi sim card
 Solusi : diinfoin coba besok
 `,
@@ -1955,7 +2201,7 @@ case : "Tidak bisa aktivasi maximum NIK",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa aktivasi maximum nik
 Solusi : diinfoin unreg nomor telkomsel
 `,
@@ -2001,7 +2247,7 @@ case : "Perubahan Data Pelanggan",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : perubahan data pelanggan
 Solusi : minta data
 `,
@@ -2023,12 +2269,14 @@ Untuk validasi tambahannya bisa infoin salah satu dari data ini ya :
 4. 5 Transaksi terakhir (minimum 3 transaksi valid) :
 5. Tipe dan merk HP terakhir digunakan :
 
+Aku tunggu datanya ya :)
+
 
 DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Perubahan data  dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: --
+2. Email: zz
 3. NIK KTP pelanggan baru : 
 4. No KK pelanggan baru   : 
 
@@ -2053,7 +2301,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Perubahan data  dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: --
+2. Email: zz
 3. NIK KTP pelanggan baru : 
 4. No KK pelanggan baru   : 
 
@@ -2083,7 +2331,7 @@ case : "Perubahan Data pindah tangan (pindah tangan)",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : perubahan data 
 Solusi : minta data
 `,
@@ -2096,13 +2344,15 @@ Solusi : (segment: string) => segment ==='Email' ?
 5. Foto KTP pelanggan baru :
 6. Surat pernyataan yang ada di lampiran:
 
+Aku tunggu datanya ya :)
+
 
 
 DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Perubahan data karena pindah tangan dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: --
+2. Email: zz
 3. NIK KTP pelanggan baru : 
 4. No KK pelanggan baru   : 
 
@@ -2123,7 +2373,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Perubahan data karena pindah tangan dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: --
+2. Email: zz
 3. NIK KTP pelanggan baru : 
 4. No KK pelanggan baru   : 
 
@@ -2155,7 +2405,7 @@ case : "PUK",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : puk
 Solusi : minta data
 `,
@@ -2164,6 +2414,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 1. Nomor by.U : 
 2. Alamat email akun by.U :
 3. NIK yang terdaftar :
+
+Aku tunggu datanya ya :)
 
 Makasih udah nunggu. Kak untuk permintaan kode PUK, boleh infoin data ini ya biar bisa aku bantu :
 1. Nomor by.U :
@@ -2175,6 +2427,8 @@ Untuk validasi tambahannya Kakak bisa isi salah satu dari data ini ya :
 3. Nominal harga paket yang dibeli terakhir.
 4. 5 Transaksi terakhir (minimum 3 transaksi valid)
 5. Tipe dan merk HP terakhir digunakan.
+
+Aku tunggu datanya ya :)
 
 
 Makasih udah nunggu. Kak untuk permintaan kode PUK 1 di nomor xxxxxx adalah 1111111. Silakan bisa input PUK 1 dan diikuti memasukkan PIN baru 4 digit angka secara acak dan mudah diingat. Untuk syarat dan ketentuannya sebagai berikut Kak:
@@ -2213,7 +2467,7 @@ case : "Tidak dapat langganan ZOOM Premium",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Tidak dapat langganan ZOOM Premium"
 Solusi : minta data
 `,
@@ -2226,6 +2480,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 5. Tipe topping Zoom yang dibeli :
 6. Capture SMS dari TSELZOOM :
 7. Capture halaman profil di aplikasi web ZOOM :
+
+Aku tunggu datanya ya :)
 ` :
 `Makasih udah nunggu. Kak maaf untuk ga dapat langganan Zoom nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
@@ -2260,7 +2516,7 @@ case : "Tidak dapat langganan Netflix",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Tidak dapat langganan Netflix
 Solusi : minta data
 `,
@@ -2272,6 +2528,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 4. Capture sms dari Netlfix atau 9943 (kalau ada) :
 5. Capture notifikasi berhasil aktivasi di aplikasi :
 6. Capture kendala :
+
+Aku tunggu datanya ya :)
 ` :
 `Makasih udah nunggu. Kak maaf untuk ga dapat langganan Netflix nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
@@ -2312,7 +2570,7 @@ case : "Tidak dapat langganan Vidio",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Tidak dapat langganan Vidio
 Solusi : minta data
 `,
@@ -2324,6 +2582,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 4. Tipe topping Vidio yang dibeli :
 5. Capture SMS dari 97080 :
 6. Capture halaman paket subscription di aplikasi Vidio :
+
+Aku tunggu datanya ya :)
 ` :
 `Makasih udah nunggu. Kak maaf untuk ga dapat langganan Vidio nya di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
@@ -2358,7 +2618,7 @@ case : "Tidak dapat kuota Birthday reward",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Tidak dapat kuota Birthday reward
 Solusi : minta data
 `,
@@ -2369,6 +2629,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 3. Capture profile di aplikasi by.U :
 4. Capture halaman notifikasi di apps by.U :
 5. Capture halaman paket aktif :
+
+Aku tunggu datanya ya :)
 ` :
 `Makasih udah nunggu. Kak maaf untuk ga dapat kuota bonus birthday di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
@@ -2400,7 +2662,7 @@ case : "IRENEW Voucher fisik",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : IRENEW Voucher fisik
 Solusi : minta data
 `,
@@ -2413,6 +2675,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 5. Serial Number Voucher Fisik :
 6. Capture keterangan gagal redeem voucher :
 7. Foto Voucher fisik :
+
+Aku tunggu datanya ya :)
 ` :
 `Makasih udah nunggu. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
 1. Email akun by.U :
@@ -2451,15 +2715,30 @@ Bracket : (segment: string) => segment ==='Email' ?
 `#Pelangganbyu
 [byU Email]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Sponsorship
 Solusi : diteruskan ke email  event@byu.id
+
+Hi, Kak. Saat ini udah terhubung dengan Nindy. Terkait pengajuan Sponsorship/kerjasama udah aku bantu ajuin dulu ke tim terkait, kalo sesuai akan dihubungi melalui CPnya ya :)
+
+
+Hi, Kak. Saat ini udah terhubung dengan Nindy. Terkait pengajuan Sponsorship/kerjasama bisa lampirkan juga data berikut agar dibantu teruskan dulu ke tim terkait ya:
+
+1. Subject email : Pengajuan Kerjasama/Sponsorship
+
+1. Isi email sertakan 
+- Nama Lengkap :
+- Contact Person : 
+- Lampiran Data Pendukung :
+(Lampiran Proposal)
+
+Aku tunggu datanya ya Kak :)
 `
 :
 `#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Sponsorship
 Solusi : arahin hubungi email
 `,
@@ -2493,7 +2772,7 @@ case : "SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan / Gagal pairing",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gagal pairing
 Solusi : minta data
 `,
@@ -2521,7 +2800,7 @@ case : " greeting",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : greeting
 Solusi : greeting
 
@@ -2559,7 +2838,7 @@ case : "SIM card Deactive",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case :  sim card deactive
 Solusi : info  sim card deactive
 `,
@@ -2575,7 +2854,7 @@ case : "Pulsa terpotong karena SMS dari luar negeri",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Pulsa terpotong karena SMS dari luar negeri
 Solusi : info nomor SMS nya
 `,
@@ -2591,7 +2870,7 @@ case : "SIM card tidak terdeteksi",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : SIM card tidak terdeteksi
 Solusi : solusi SIM card tidak terdeteksi
 `,
@@ -2612,7 +2891,7 @@ case : "Kuota tiba-tiba hilang karena kesalahan by.U",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Kuota tiba-tiba hilang karena kesalahan by.U
 Solusi : minta data
 `,
@@ -2623,6 +2902,8 @@ Solusi :(segment: string) => segment ==='Email' ?
 3. Channel Pembayaran : 
 4. Tanggal & Waktu Kejadian : 
 5. Capture Detail Riwayat Transaksi Kuota yang hilang : 
+
+Aku tunggu datanya ya Kak :)
 ` : 
 `Makasih udah nunggu. Kak maaf, untuk kendala kuotanya di nomor xxxxxx , boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
@@ -2664,6 +2945,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 2. Email akun by.U : 
 3. Capture keterangan detail transaksi yang u-coinnya tidak masuk :
 4. Capture Halaman Histori U-Coin Terkumpul :
+
+Aku tunggu datanya ya Kak :)
 ` : 
 `Makasih udah nunggu. Kak maaf, untuk kendala uCoin nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
@@ -2696,7 +2979,7 @@ case : "Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tikt
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)
 Solusi : minta data
 `,
@@ -2716,7 +2999,7 @@ ${DateTime}
 Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)
 
 1. Nomor by.U : xxxxxx
-2. Email akun by.U : --
+2. Email akun by.U : zz
 2. Printscreen bukti bayar yang tertera Invoice dan capture resi di aplikasi e-Commerce :
 3. Printscreen status pengiriman yang tertera resi di aplikasi e-Commerce : (dicek oleh agent)
 4. Capture profil apps : ( yang tertulis email login pelanggan)
@@ -2733,7 +3016,7 @@ case : " transfer pulsa",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : info send gift/tf pulsa
 Solusi : info send gift/tf pulsa
 `,
@@ -2752,7 +3035,7 @@ case : "Tidak Mendapatkan Langganan Prime Video",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : Tidak Mendapatkan Langganan Prime Video
 Solusi : minta data
 `,
@@ -2764,6 +3047,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 4. Tipe topping Prime Video yang dibeli :
 5. Tanggal pembelian topping Prime Video :
 6. Capture kendala :
+
+Aku tunggu datanya ya Kak :)
 ` :
 `Makasih udah nunggu. Kak maaf, untuk ga dapat langganan Prime Video nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
@@ -2797,7 +3082,7 @@ case : "cek masa aktif",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : informasi status kartu
 Solusi : informasi status kartu
 `,
@@ -2816,7 +3101,7 @@ case : "Info Paket/ Tarif Harga paket berubah/jadi mahal/promo",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : info paket
 Solusi : info paket
 `,
@@ -2838,7 +3123,7 @@ case : "Cara pasang eSIM",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : cara pasang esim
 Solusi : info pasang eSIM
 `,
@@ -2890,7 +3175,7 @@ case : "Gagal Registrasi 5g",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case :  Gagal Registrasi 5g
 Solusi : minta data
 `,
@@ -2903,7 +3188,9 @@ Jika masih berkendala, boleh infokan beberapa data di bawah ini supaya bisa diba
 3. Lokasi (nama jalan, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos, patokan lokasi) :
 4. Tipe HP :
 5. Capture kendala di web https://my.telkomsel.com/provisioning/5g :
-6. Capture settingan APN
+6. Capture settingan APN :
+
+Aku tunggu datanya ya Kak :)
 ` : 
 `Kak makasih udah nunggu. Kak maaf, untuk kendala 5G nya di nomor xxxxxx, Pastiin HP Kakak udah support 5G dan Kakak juga bisa cek apakah lokasi Kakak udah tercover jaringan 5G melalui https://www.telkomsel.com/check-5G-coverage. Kakak bisa melakukan daftar mandiri melalui https://my.telkomsel.com/provisioning/5g. Pastiin juga saat akses link tersebut SIM Card terpasang di SIM 1, data selular dalam keadaan on, dan fitur lokasi aktif.
 
@@ -2937,7 +3224,7 @@ case : "Cek Tiket/Ticket",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : Cek Tiket
 Solusi : Cek hasil tiket
 `,
@@ -2953,7 +3240,7 @@ case : "Request bikin/buat nomor 4 digit/angka",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : Info request nomor
 Solusi : Info request nomor
 `,
@@ -2975,7 +3262,7 @@ case : "Permintaan Hapus Profil eSIM Karena Device Hilang",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : Permintaan Hapus Profil eSIM Karena Device Hilang
 Solusi : minta data
 `,
@@ -2988,6 +3275,8 @@ Solusi : (segment: string) => segment ==='Email' ?
 5. Foto selfie dengan KTP asli :
 6. Jenis dan type Device yang hilang :
 7. Email lain yang bisa dihubungi :
+
+Aku tunggu datanya ya Kak :)
 ` :
 `Makasih udah nunggu, untuk hapus eSIM di perangkat lamanya yang udah hilang di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email registrasi by.U 
@@ -3020,7 +3309,7 @@ case : "CCA UE_Handset_Data_Setting_Off",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,
@@ -3070,7 +3359,7 @@ case : "CCA UE_Handset_Problem_4G",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,
@@ -3118,7 +3407,7 @@ case : "CCA Radio_lambat",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : minta data
 `,
@@ -3175,7 +3464,7 @@ case : "CCA Neighbor_BTS_Problem",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : sarankan tunggu sesuai CCA
 `,
@@ -3209,7 +3498,7 @@ Mandatory : (segment:string, DateTime:string) =>
     Neighbor_BTS_Problem
     Remarks
     Bapak atau Ibu Yth, kendala Bapak atau Ibu yang dialami saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala.
-    Cause : --
+    Cause : zz
     Level : 0
     Alarm meaning : 0 = Low, 1 = Critical, 2 = Major, 3 = Minor
     Suggestion
@@ -3226,7 +3515,7 @@ case : "CCA Kapasitas_jaringan",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : Minta data
 `,
@@ -3281,7 +3570,7 @@ case : "CCA Sinyal_tidak_stabil",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : Minta data
 `,
@@ -3336,7 +3625,7 @@ case : "SMS broadcast",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sms konten
 Solusi : Minta data
 `,
@@ -3380,7 +3669,7 @@ case : "CCA Layanan_data_tidak_tersedia",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : Minta data
 `,
@@ -3445,7 +3734,7 @@ case : "CCA Kendala_sinyal_4G",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : Minta data
 `,
@@ -3500,7 +3789,7 @@ case : "CCA UE_Handset_tidak_connect_ke_network",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,
@@ -3548,7 +3837,7 @@ case : "CCA Network_browsing_lambat",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : minta data
 `,
@@ -3603,7 +3892,7 @@ case : "Cara membagikan kode refferal",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : Cara membagikan kode refferal
 Solusi : edukasi
 `,
@@ -3625,7 +3914,7 @@ case : "Paket unlimited/Mbps",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : Paket unlimited
 Solusi : edukasi ga tersedia
 `,
@@ -3641,7 +3930,7 @@ case : "CCA Cell_Colo_Problem",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : sarankan tunggu sesuai CCA
 `,
@@ -3696,7 +3985,7 @@ case : "CCA BTS_Down",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : sarankan tunggu sesuai CCA
 `,
@@ -3748,7 +4037,7 @@ case : "CCA Red_Cell_Capacity_Solution",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : minta data
 `,
@@ -3804,7 +4093,7 @@ case : "CCA Kendala_Sinyal",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : sinyal/internet
 Solusi : minta data
 `,
@@ -3859,7 +4148,7 @@ case : "Beli Paket/Pulsa/SIM card",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : cara pembelian SIM card/eSIM
 Solusi : info cara pembelian SIM card/eSIM
 `,
@@ -3879,7 +4168,7 @@ case : "Tidak dapat Langganan Youtube Premium",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : Tidak Mendapatkan Langganan Youtube Premium
 Solusi : minta data
 `,
@@ -3914,7 +4203,7 @@ case : "Closing",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : closing
 Solusi : closing
 `,
@@ -3932,7 +4221,7 @@ case : "Pengambilan SIM card di GraPARI",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : --
+Email akun by.U : zz
 Detail case : Pengambilan SIM card di GraPARI
 Solusi : minta data
 `,
@@ -3988,53 +4277,76 @@ case : "Keluhan sinyal di Luar Negeri Roaming",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : --
+Email by.U : zz
 Detail case : gabisa sinyal roaming
 Solusi : minta data
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
-`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala gabisa internet di luar negeri,boleh infoin data ini ya biar bisa aku cek :
-1. Nomor by.U :
-2. Email akun by.U :
+`
+Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala gabisa internet di luar negeri,boleh infoin data ini ya biar bisa aku cek :
+Hai Kak, maaf udah bikin ga nyaman ya. Boleh infokan beberapa data di bawah ini supaya bisa dibantu pengecekan :
+1. Nomor by.U : 
+2. Email akun by.U : 
+3. Lokasi negara :
+4. Tanggal dan waktu kejadian sejak kapan :
+5. Jaringan/operator negara setempat yang digunakan :
+6. Capture setting APN di HP :
+7. Capture sinyal yang didapat :
+8. Capture speedtest :
+
+Aku tunggu datanya ya :)
+
+Pastikan ada fitur roaming barring di menu DSC "Unblocked"
+
+Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif  dan punya kuota roaming, serta kondisi jaringan di lokasi negara Kakak ga ada info gangguan. Bisa dicoba langkah-langkah ini ya kak :
+1. Coba ON-kan airplane mode dan OFF-kan kembali, 
+2. Ubah pengaturan jaringan dari otomatis menjadi manual, lalu cari Operator yang bekerjasama di negara tersebut,
+3. Pastikan kolom APN diisi dengan "byu" (tanpa tanda kutip), username dan password kosongkan.
+4. Pastikan hanya ada 1 SIM Card yang aktif, jika masih tidak bisa coba pindahkan SIM card ke HP lain untuk perbandingan.
+5. Pastikan tombol data seluler dan data roaming aktif/ON
+
+Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX yaitu xxx  . Jika cara di atas sudah dicoba dan sinyalnya masih berkendala, tolong hubungi kita lagi. Terima kasih.
+
+
+https://www.telkomsel.com/roaming/setdevice
+` :
+`Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
+1. Email akun by.U :
+2. Lokasi negara :
 3. Tanggal dan waktu kejadian sejak kapan :
 4. Jaringan/operator negara setempat yang digunakan :
 5. Capture setting APN di HP :
-6. Capture sinyal:
-` :
-`Makasih udah nunggu. Kak maaf untuk kendala sinyal di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
-1. Email akun by.U :
-2. Tanggal dan waktu kejadian sejak kapan :
-3. Jaringan/operator negara setempat yang digunakan :
-4. Capture setting APN di HP :
-5. Capture sinyal yang didapat :
+6. Capture sinyal yang didapat :
+7. Capture speedtest :
+
+Pastikan ada fitur roaming barring di menu DSC "Unblocked"
 
 Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif  dan punya kuota roaming, serta kondisi jaringan di lokasi negara Kakak ga ada info gangguan. Bisa dicoba langkah-langkah ini ya kak :
-1. Coba ON-kan airplane mode dan OFF-kan kembali, OFF-kan mobile data dan ON-kan kembali.
-2. Lakukan refresh jaringan :
- Android : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih operator yang bekerja sama dengan Telkomsel, yaitu STC
- iOS : pilih menu Settings, pilih General, klik Reset dan Reset Network Setting
-3. Isi APN dengan "byu", username dan password kosongkan.
-4.Jika masih tidak bisa, coba pindahkan SIM card ke slot lain (SIM Card 1 ke 2 atau sebaliknya untuk HP dual SIM) atau ke HP lain untuk perbandingan.
+1. Coba ON-kan airplane mode dan OFF-kan kembali, 
+2. Ubah pengaturan jaringan dari otomatis menjadi manual, lalu cari Operator yang bekerjasama di negara tersebut,
+3. Pastikan kolom APN diisi dengan "byu" (tanpa tanda kutip), username dan password kosongkan.
+4. Pastikan hanya ada 1 SIM Card yang aktif, jika masih tidak bisa coba pindahkan SIM card ke HP lain untuk perbandingan.
 
-Jika cara di atas sudah dicoba dan akses internet tetap bermasalah, tolong hubungi kita lagi. Terima kasih`,
-Mandatory : (segment: string,DateTime: string ) =>
+Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX yaitu xxx  . Jika cara di atas sudah dicoba dan sinyalnya masih berkendala, tolong hubungi kita lagi. Terima kasih.
+
+
+https://www.telkomsel.com/roaming/setdevice
+`,
+Mandatory : (segment: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak ada sinyal di Luar Negeri
+[NO][IR][${segment}]
 
-1. nomor by.U : xxxxxx
-2. Akun by.U : 
+1. Nomor by.U : xxxxxx
+2. Email akun by.U : zz
 3. Lokasi negara : 
-4. Tanggal dan waktu kendala : 
+4. Tanggal dan waktu kejadian sejak kapan : 
 5. Jaringan/operator negara setempat yang digunakan : 
-6. Jenis device/hp yang dipakai : 
-7. Gangguan sinyal terjadi sepanjang hari atau pada waktu tertentu aja : 
-8. Jaringan yang digunakan apa? 2G, 4G, 5G? : 
-9. Email aktif yang bisa dihubungi : 
-10. Capture APN  : 
-11. Capture bar sinyal yang didapat : 
+6. Gangguan sinyal terjadi sepanjang hari atau pada waktu tertentu aja? 
+7. Jaringan yang digunakan apa? 2G, 4G, 5G? : 
+8. Jenis device/hp yang dipakai? 
+9. Capture setting APN di hp : 
+10. Capture bar sinyal yang didapat : 
+11. Email aktif yang bisa dihubungi ? 
 `   
 },
 

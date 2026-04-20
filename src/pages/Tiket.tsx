@@ -74,11 +74,11 @@ const TiketPages = ({ segment }: Props) => {
             const clipboardText = await navigator.clipboard.readText();
 
             setMandatoryText(prev =>
-              prev.replace(/--/g, clipboardText)
+              prev.replace(/zz/g, clipboardText)
             );
 
             setSolusiText(prev =>
-              prev.replace(/--/g, clipboardText)
+              prev.replace(/zz/g, clipboardText)
             );
           }
 

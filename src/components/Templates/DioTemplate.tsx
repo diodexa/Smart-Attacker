@@ -8,7 +8,7 @@ const templatesDio: string[] = [
   `agungrohm
 Agung_byu3#
 d_deska_x@telkomsel.co.id 
-s*r!17#i
+Os=+_-/u
 Ayu BeHappy!022XO
 `
 ];
