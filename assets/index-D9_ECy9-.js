@@ -306,10 +306,10 @@ Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya :
 
 
 
-`,Mandatory:e=>`#Pelangganbyu
+`,Mandatory:`#Pelangganbyu
 ID Omnix :
 Nama Pelanggan : pelanggan
-Tanggal lapor : ${e} 
+Tanggal lapor : ${Ya()} 
 
 
 1. Nomor by.U : xxxxxx
@@ -529,10 +529,10 @@ Jika hanya dari satu nomor:
 - Pastikan nomor pemanggil tidak ada di list blokir di settingan Handphone Kakak.
 - Jika masih berkendala sarankan nomor pemanggil untuk coba di HP yang lain
 - Kalau semua udah di coba tapi masih berkendala, ada indikasi nomor yang melakukan panggilannya yang berkendala dan disarankan hubungi kami untuk bisa dibantu :)
-`,Mandatory:e=>`#Pelangganbyu
+`,Mandatory:`#Pelangganbyu
 ID Omnix :
 Nama Pelanggan : Pelanggan
-Tanggal lapor : ${e}
+Tanggal lapor : ${Ya()}
 
 1. Nomor by.U : xxxxxx
 2. Email akun by.U : zz
