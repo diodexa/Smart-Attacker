@@ -595,7 +595,7 @@ Makasih udah nunggu. Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Ak
 2. Email: zz
 
 Nomor yang sudah berhasil di unregistrasi ga akan bisa diaktifkan kembali dalam kondisi apapun ya kak, lalu NIK yang terdaftar di nomor ini juga akan ikut terhapus. Kalo data diatas udah sesuai dan Kakak setuju boleh tolong konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :)
-`:`Makasih udah nunggu. Kak maaf untuk unreg/deaktivasi SIM card by.U, bisa melalui aplikasi ya dengan cara berikut : 
+`:`Makasih udah nunggu. Kak untuk unreg/deaktivasi SIM card by.U, bisa melalui aplikasi ya dengan cara berikut : 
 1. Masukan SIM Card by.U yang mau di unreg ke gadget kamu
 2. Matikan WiFi dan pastikan gadget kamu udah nyambung ke jaringan seluler by.U
 3. Buka halaman profil
@@ -616,12 +616,20 @@ Makasih udah nunggu. Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Ak
 
 Nomor yang sudah berhasil di unregistrasi ga akan bisa diaktifkan kembali dalam kondisi apapun ya kak, kuota/sisa pulsa akan hangus, lalu NIK yang terdaftar di nomor ini juga akan ikut terhapus. Kalo data diatas udah sesuai dan Kakak "SETUJU" boleh tolong konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :)
 
-Kak maaf, aku cek NIK yang Kakak infoin ga ada yang sesuai nih untuk nomor xxxxxx. Boleh infoin salah satu dari data ini ya biar bisa aku proses :
+Kak aku cek NIK yang Kakak infoin ga ada yang sesuai nih untuk nomor xxxxxx. Boleh infoin salah satu dari data ini ya biar bisa aku proses :
 1. Tanggal dan jenis paket terakhir yang dibeli.
 2. Jumlah kuota data yang dimiliki sekarang.
 3. Nominal harga paket yang dibeli terakhir.
 4. Akun Email yang terdaftar
 5. Tipe dan merk HP terakhir digunakan.
+
+Kak, buat nomor yang hangus bakal otomatis terhapus kok Kak dari NIK yg terdaftar. Kakak juga bisa cek di *444# pake nomor Telkomsel/by.U yang terdaftar NIK Kakak dan kalo nomor yang udah hangus masih terdaftar, bisa aku bantu unreg dengan infoin data ini ya :
+1. Nomor by.U yang ingin di unreg : 
+2. Nomor Identitas KTP : 
+3. Foto Selfie (tidak dengan KTP) :
+4. Scan/Foto KTP asli/KTP Digital :
+5. Email yang bisa dihubungi :
+
 `,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
@@ -793,7 +801,7 @@ Nomor by.U : xxxxxx
 Email by.U : zz
 Detail case : Ganti sim card
 Solusi : minta data
-`,Solusi:e=>e===`Email`?`Hai Kak. Saat ini terhubung dengan Nindy. Kak maaf, aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) Jadi gabisa dilakkan ganti SIM card ya :)
+`,Solusi:e=>e===`Email`?`Hai Kak. Saat ini terhubung dengan Nindy. Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) Jadi gabisa dilakkan ganti SIM card ya :)
 
 Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ganti SIM card nya boleh infoin data ini dulu ya biar aku cocokin : 
 1. Nomor by.U
@@ -817,7 +825,7 @@ Hi, Kak . Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM card 
 Kak maaf, aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
 
 =========Hangus==========
-Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Jadi Kakak udah gabisa ganti SIM card nya ya :)
+Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Jadi Kakak udah gabisa ganti SIM card nya ya :)
 Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :)
 
 DISCLAIMER
@@ -830,13 +838,13 @@ Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kemb
 5. Alamat pengiriman :
 
 Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
-`:`Makasih udah nunggu. Kak maaf untuk ganti SIM card nya boleh infoin data ini dulu ya biar aku cocokin : 
+`:`Makasih udah nunggu. Kak untuk ganti SIM card nya boleh infoin data ini dulu ya biar aku cocokin : 
 1. Nomor by.U
 2. Email akun by.U
 3. NIK yang didaftarin
 
 
-Kak maaf, untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+Kak untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Nomor Identitas valid : 
 3. Scan/Foto KTP asli :  
@@ -845,7 +853,7 @@ Kak maaf, untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya bi
 6. Alasan ganti SIM Card : 
 
 ===========Di Apps ============
-Makasih udah nunggu. Kak maaf kalau maksudnya permintaan ganti SIM Card nya di nomor xxxxxx,  jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
+Makasih udah nunggu. Kak kalau maksudnya permintaan ganti SIM Card nya di nomor xxxxxx,  jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
 1. Pastiin Versi aplikasi sudah yang terbaru 
 2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak
 3. Masuk Ke profil by.U pojok kiri atas
@@ -856,7 +864,7 @@ Makasih udah nunggu. Kak maaf kalau maksudnya permintaan ganti SIM Card nya di n
 8. Tunggu proses validasi dari tim by.U
 9. Kalo rikuesmu di terima dan kakak pilih SIM Cardnya di kirim, tunggu SIM Cardnya sampai via JNE maksimal 7 hari kerja atau kalo kakak pilihnya diambil, kakak bisa langsung ambil SIM Cardnya di GraPARI/Indomaret yg sebelumnya dipilih
 ====================legacy============================
-Kak maaf, aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
+Kak aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
 
 ====================================
 
@@ -982,7 +990,7 @@ Nomor by.U : xxxxxx
 Email by.U : zz
 Detail case : penyalahgunaan nik
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf untuk permintaan unreg di NIK Kakak boleh infoin aku data ini ya biar bisa aku proses : 
+`,Solusi:`Makasih udah nunggu. Kak untuk permintaan unreg di NIK Kakak boleh infoin aku data ini ya biar bisa aku proses : 
 1. Nomor by.U yang ingin di UNREGISTRASI :
 2. Nomor Identitas KTP :
 3. Foto Selfie (tidak dengan KTP) :
@@ -1874,7 +1882,7 @@ Nomor by.U : xxxxxx
 Email by.U : zz
 Detail case : perubahan data 
 Solusi : minta data
-`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. ak maaf untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
 1. Alamat Email login by.U :
 2. NIK & NOK pelanggan lama :
 3. NIK & NOK pelanggan baru :
@@ -1895,7 +1903,7 @@ Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kemb
 4. No KK pelanggan baru   : 
 
 Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
-`:`Makasih udah nunggu. Kak maaf untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
+`:`Makasih udah nunggu. Kak untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
 1. Alamat Email login by.U :
 2. NIK & NOK pelanggan lama :
 3. NIK & NOK pelanggan baru :
@@ -2378,8 +2386,8 @@ Nomor by.U : xxxxxx
 Email akun by.U : zz
 Detail case : info send gift/tf pulsa
 Solusi : info send gift/tf pulsa
-`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
-`:`Makasih udah nunggu. Kak maaf, untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
+`:`Makasih udah nunggu. Kak untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
 `,Mandatory:``},{id:58,case:`Tidak Mendapatkan Langganan Prime Video`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
@@ -2421,9 +2429,9 @@ Nomor by.U : xxxxxx
 Email akun by.U : zz
 Detail case : informasi status kartu
 Solusi : informasi status kartu
-`,Solusi:`Makasih udah nunggu. Kak maaf, kalau aku cek nomor xxxxxx, statusnya aktif kok. Ini harusnya bisa digunakan SMS,internet maupun internet ya Kak. Boleh coba cek ya :)
+`,Solusi:`Makasih udah nunggu. Kak kalau aku cek nomor xxxxxx, statusnya aktif kok. Ini harusnya bisa digunakan SMS,internet maupun internet ya Kak. Boleh coba cek ya :)
 
-Kak maaf, aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) 
+Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) 
 
 `,Mandatory:``},{id:60,case:`Info Paket/ Tarif Harga paket berubah/jadi mahal/promo`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
@@ -2435,7 +2443,7 @@ Solusi : info paket
 
 Kak maaf, kalau ga tersedia paket yang Kakak inginin, artinya penawaran paketnya udah ga ada. Kakak bisa pilih paket yang tersedia saat ini di apps by.U ya :)
 
-Kak maaf, aku cek nomor xxxxxx saat ini kuota internetnya udah habis, jadi gabisa internetan. Kakak bisa beli kuota baru di apps by.U pake wifi/jaringan lain dulu ya :)
+Kak  aku cek nomor xxxxxx saat ini kuota internetnya udah habis, jadi gabisa internetan. Kakak bisa beli kuota baru di apps by.U pake wifi/jaringan lain dulu ya :)
 
 Maaf kak, saat ini ada penyesuaian tarif paket internet merupakan salah satu upaya by.U untuk tetap menjaga kualitas layanan kepada pelanggan. Nindy dan team akan terus tingkatin produk dan layanan by.U biar Kakak bisa selalu nyaman pakai by.U. Keep supporting us ya! :)
 `,Mandatory:``},{id:61,case:`Cara pasang eSIM`,Bracket:e=>`#Pelangganbyu
@@ -2524,7 +2532,7 @@ Nomor by.U : xxxxxx
 Email akun by.U : zz
 Detail case : Cek Tiket
 Solusi : Cek hasil tiket
-`,Solusi:`Kak maaf, aku cek untuk ID laporan xx, masih dalam proses penanganan tim kami. Ditunggu aja dulu prosesnya ya. Semoga cepet beres :)
+`,Solusi:`Kak aku cek untuk ID laporan xx, masih dalam proses penanganan tim kami. Ditunggu aja dulu prosesnya ya. Semoga cepet beres :)
 `,Mandatory:``},{id:64,case:`Request bikin/buat nomor 4 digit/angka`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
 Nomor by.U : xxxxxx
@@ -3265,9 +3273,9 @@ Nomor by.U : xxxxxx
 Email akun by.U : zz
 Detail case : cara pembelian SIM card/eSIM
 Solusi : info cara pembelian SIM card/eSIM
-`,Solusi:`Kak maaf, untuk beli paket internet bisa lewat apps by.U dengan pilih menu isi kuota pada halaman dashboard ya :)
+`,Solusi:`Kak untuk beli paket internet bisa lewat apps by.U dengan pilih menu isi kuota pada halaman dashboard ya :)
 
-Kak maaf, untuk beli pulsa bisa lewat apps by.U dengan pilih menu isi pulsa pada halaman dashboard ya :)
+Kak untuk beli pulsa bisa lewat apps by.U dengan pilih menu isi pulsa pada halaman dashboard ya :)
 
 Kak untuk beli SIM card/nomor baru bisa beli lewat apps/web by.U ya, nanti setelah pilih paket langsung masuk ke halaman pembayaran. Pilih nomor yang tersedia aja disana ya :)
 
