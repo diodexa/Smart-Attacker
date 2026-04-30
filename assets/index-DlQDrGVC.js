@@ -11,10 +11,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}function ue(e){return k(e)||ce(e)||y(e)||le()}var de=!1;function fe(e){if(e.sheet)return e.sheet;for(var t=0;t<document.styleSheets.length;t++)if(document.styleSheets[t].ownerNode===e)return document.styleSheets[t]}function A(e){var t=document.createElement(`style`);return t.setAttribute(`data-emotion`,e.key),e.nonce!==void 0&&t.setAttribute(`nonce`,e.nonce),t.appendChild(document.createTextNode(``)),t.setAttribute(`data-s`,``),t}var pe=function(){function e(e){var t=this;this._insertTag=function(e){var n=t.tags.length===0?t.insertionPoint?t.insertionPoint.nextSibling:t.prepend?t.container.firstChild:t.before:t.tags[t.tags.length-1].nextSibling;t.container.insertBefore(e,n),t.tags.push(e)},this.isSpeedy=e.speedy===void 0?!de:e.speedy,this.tags=[],this.ctr=0,this.nonce=e.nonce,this.key=e.key,this.container=e.container,this.prepend=e.prepend,this.insertionPoint=e.insertionPoint,this.before=null}var t=e.prototype;return t.hydrate=function(e){e.forEach(this._insertTag)},t.insert=function(e){this.ctr%(this.isSpeedy?65e3:1)==0&&this._insertTag(A(this));var t=this.tags[this.tags.length-1];if(this.isSpeedy){var n=fe(t);try{n.insertRule(e,n.cssRules.length)}catch{}}else t.appendChild(document.createTextNode(e));this.ctr++},t.flush=function(){this.tags.forEach(function(e){return e.parentNode?.removeChild(e)}),this.tags=[],this.ctr=0},e}(),me=`-ms-`,he=`-moz-`,j=`-webkit-`,ge=`comm`,_e=`rule`,ve=`decl`,ye=`@import`,be=`@keyframes`,xe=`@layer`,Se=Math.abs,Ce=String.fromCharCode,we=Object.assign;function Te(e,t){return ke(e,0)^45?(((t<<2^ke(e,0))<<2^ke(e,1))<<2^ke(e,2))<<2^ke(e,3):0}function Ee(e){return e.trim()}function De(e,t){return(e=t.exec(e))?e[0]:e}function M(e,t,n){return e.replace(t,n)}function Oe(e,t){return e.indexOf(t)}function ke(e,t){return e.charCodeAt(t)|0}function Ae(e,t,n){return e.slice(t,n)}function je(e){return e.length}function Me(e){return e.length}function Ne(e,t){return t.push(e),e}function Pe(e,t){return e.map(t).join(``)}var Fe=1,Ie=1,Le=0,Re=0,ze=0,Be=``;function Ve(e,t,n,r,i,a,o){return{value:e,root:t,parent:n,type:r,props:i,children:a,line:Fe,column:Ie,length:o,return:``}}function He(e,t){return we(Ve(``,null,null,``,null,null,0),e,{length:-e.length},t)}function Ue(){return ze}function We(){return ze=Re>0?ke(Be,--Re):0,Ie--,ze===10&&(Ie=1,Fe--),ze}function Ge(){return ze=Re<Le?ke(Be,Re++):0,Ie++,ze===10&&(Ie=1,Fe++),ze}function Ke(){return ke(Be,Re)}function qe(){return Re}function Je(e,t){return Ae(Be,e,t)}function Ye(e){switch(e){case 0:case 9:case 10:case 13:case 32:return 5;case 33:case 43:case 44:case 47:case 62:case 64:case 126:case 59:case 123:case 125:return 4;case 58:return 3;case 34:case 39:case 40:case 91:return 2;case 41:case 93:return 1}return 0}function Xe(e){return Fe=Ie=1,Le=je(Be=e),Re=0,[]}function Ze(e){return Be=``,e}function Qe(e){return Ee(Je(Re-1,tt(e===91?e+2:e===40?e+1:e)))}function $e(e){for(;(ze=Ke())&&ze<33;)Ge();return Ye(e)>2||Ye(ze)>3?``:` `}function et(e,t){for(;--t&&Ge()&&!(ze<48||ze>102||ze>57&&ze<65||ze>70&&ze<97););return Je(e,qe()+(t<6&&Ke()==32&&Ge()==32))}function tt(e){for(;Ge();)switch(ze){case e:return Re;case 34:case 39:e!==34&&e!==39&&tt(ze);break;case 40:e===41&&tt(e);break;case 92:Ge();break}return Re}function nt(e,t){for(;Ge()&&e+ze!==57&&!(e+ze===84&&Ke()===47););return`/*`+Je(t,Re-1)+`*`+Ce(e===47?e:Ge())}function rt(e){for(;!Ye(Ke());)Ge();return Je(e,Re)}function it(e){return Ze(at(``,null,null,null,[``],e=Xe(e),0,[0],e))}function at(e,t,n,r,i,a,o,s,c){for(var l=0,u=0,d=o,f=0,p=0,m=0,h=1,g=1,_=1,v=0,y=``,b=i,x=a,S=r,C=y;g;)switch(m=v,v=Ge()){case 40:if(m!=108&&ke(C,d-1)==58){Oe(C+=M(Qe(v),`&`,`&\f`),`&\f`)!=-1&&(_=-1);break}case 34:case 39:case 91:C+=Qe(v);break;case 9:case 10:case 13:case 32:C+=$e(m);break;case 92:C+=et(qe()-1,7);continue;case 47:switch(Ke()){case 42:case 47:Ne(st(nt(Ge(),qe()),t,n),c);break;default:C+=`/`}break;case 123*h:s[l++]=je(C)*_;case 125*h:case 59:case 0:switch(v){case 0:case 125:g=0;case 59+u:_==-1&&(C=M(C,/\f/g,``)),p>0&&je(C)-d&&Ne(p>32?ct(C+`;`,r,n,d-1):ct(M(C,` `,``)+`;`,r,n,d-2),c);break;case 59:C+=`;`;default:if(Ne(S=ot(C,t,n,l,u,i,s,y,b=[],x=[],d),a),v===123)if(u===0)at(C,t,S,S,b,a,d,s,x);else switch(f===99&&ke(C,3)===110?100:f){case 100:case 108:case 109:case 115:at(e,S,S,r&&Ne(ot(e,S,S,0,0,i,s,y,i,b=[],d),x),i,x,d,s,r?b:x);break;default:at(C,S,S,S,[``],x,0,s,x)}}l=u=p=0,h=_=1,y=C=``,d=o;break;case 58:d=1+je(C),p=m;default:if(h<1){if(v==123)--h;else if(v==125&&h++==0&&We()==125)continue}switch(C+=Ce(v),v*h){case 38:_=u>0?1:(C+=`\f`,-1);break;case 44:s[l++]=(je(C)-1)*_,_=1;break;case 64:Ke()===45&&(C+=Qe(Ge())),f=Ke(),u=d=je(y=C+=rt(qe())),v++;break;case 45:m===45&&je(C)==2&&(h=0)}}return a}function ot(e,t,n,r,i,a,o,s,c,l,u){for(var d=i-1,f=i===0?a:[``],p=Me(f),m=0,h=0,g=0;m<r;++m)for(var _=0,v=Ae(e,d+1,d=Se(h=o[m])),y=e;_<p;++_)(y=Ee(h>0?f[_]+` `+v:M(v,/&\f/g,f[_])))&&(c[g++]=y);return Ve(e,t,n,i===0?_e:s,c,l,u)}function st(e,t,n){return Ve(e,t,n,ge,Ce(Ue()),Ae(e,2,-2),0)}function ct(e,t,n,r){return Ve(e,t,n,ve,Ae(e,0,r),Ae(e,r+1,-1),r)}function lt(e,t){for(var n=``,r=Me(e),i=0;i<r;i++)n+=t(e[i],i,e,t)||``;return n}function ut(e,t,n,r){switch(e.type){case xe:if(e.children.length)break;case ye:case ve:return e.return=e.return||e.value;case ge:return``;case be:return e.return=e.value+`{`+lt(e.children,r)+`}`;case _e:e.value=e.props.join(`,`)}return je(n=lt(e.children,r))?e.return=e.value+`{`+n+`}`:``}function dt(e){var t=Me(e);return function(n,r,i,a){for(var o=``,s=0;s<t;s++)o+=e[s](n,r,i,a)||``;return o}}function ft(e){return function(t){t.root||(t=t.return)&&e(t)}}function pt(e){var t=Object.create(null);return function(n){return t[n]===void 0&&(t[n]=e(n)),t[n]}}var mt=function(e,t,n){for(var r=0,i=0;r=i,i=Ke(),r===38&&i===12&&(t[n]=1),!Ye(i);)Ge();return Je(e,Re)},ht=function(e,t){var n=-1,r=44;do switch(Ye(r)){case 0:r===38&&Ke()===12&&(t[n]=1),e[n]+=mt(Re-1,t,n);break;case 2:e[n]+=Qe(r);break;case 4:if(r===44){e[++n]=Ke()===58?`&\f`:``,t[n]=e[n].length;break}default:e[n]+=Ce(r)}while(r=Ge());return e},gt=function(e,t){return Ze(ht(Xe(e),t))},_t=new WeakMap,vt=function(e){if(!(e.type!==`rule`||!e.parent||e.length<1)){for(var t=e.value,n=e.parent,r=e.column===n.column&&e.line===n.line;n.type!==`rule`;)if(n=n.parent,!n)return;if(!(e.props.length===1&&t.charCodeAt(0)!==58&&!_t.get(n))&&!r){_t.set(e,!0);for(var i=[],a=gt(t,i),o=n.props,s=0,c=0;s<a.length;s++)for(var l=0;l<o.length;l++,c++)e.props[c]=i[s]?a[s].replace(/&\f/g,o[l]):o[l]+` `+a[s]}}},yt=function(e){if(e.type===`decl`){var t=e.value;t.charCodeAt(0)===108&&t.charCodeAt(2)===98&&(e.return=``,e.value=``)}};function bt(e,t){switch(Te(e,t)){case 5103:return j+`print-`+e+e;case 5737:case 4201:case 3177:case 3433:case 1641:case 4457:case 2921:case 5572:case 6356:case 5844:case 3191:case 6645:case 3005:case 6391:case 5879:case 5623:case 6135:case 4599:case 4855:case 4215:case 6389:case 5109:case 5365:case 5621:case 3829:return j+e+e;case 5349:case 4246:case 4810:case 6968:case 2756:return j+e+he+e+me+e+e;case 6828:case 4268:return j+e+me+e+e;case 6165:return j+e+me+`flex-`+e+e;case 5187:return j+e+M(e,/(\w+).+(:[^]+)/,j+`box-$1$2`+me+`flex-$1$2`)+e;case 5443:return j+e+me+`flex-item-`+M(e,/flex-|-self/,``)+e;case 4675:return j+e+me+`flex-line-pack`+M(e,/align-content|flex-|-self/,``)+e;case 5548:return j+e+me+M(e,`shrink`,`negative`)+e;case 5292:return j+e+me+M(e,`basis`,`preferred-size`)+e;case 6060:return j+`box-`+M(e,`-grow`,``)+j+e+me+M(e,`grow`,`positive`)+e;case 4554:return j+M(e,/([^-])(transform)/g,`$1`+j+`$2`)+e;case 6187:return M(M(M(e,/(zoom-|grab)/,j+`$1`),/(image-set)/,j+`$1`),e,``)+e;case 5495:case 3959:return M(e,/(image-set\([^]*)/,j+"$1$`$1");case 4968:return M(M(e,/(.+:)(flex-)?(.*)/,j+`box-pack:$3`+me+`flex-pack:$3`),/s.+-b[^;]+/,`justify`)+j+e+e;case 4095:case 3583:case 4068:case 2532:return M(e,/(.+)-inline(.+)/,j+`$1$2`)+e;case 8116:case 7059:case 5753:case 5535:case 5445:case 5701:case 4933:case 4677:case 5533:case 5789:case 5021:case 4765:if(je(e)-1-t>6)switch(ke(e,t+1)){case 109:if(ke(e,t+4)!==45)break;case 102:return M(e,/(.+:)(.+)-([^]+)/,`$1`+j+`$2-$3$1`+he+(ke(e,t+3)==108?`$3`:`$2-$3`))+e;case 115:return~Oe(e,`stretch`)?bt(M(e,`stretch`,`fill-available`),t)+e:e}break;case 4949:if(ke(e,t+1)!==115)break;case 6444:switch(ke(e,je(e)-3-(~Oe(e,`!important`)&&10))){case 107:return M(e,`:`,`:`+j)+e;case 101:return M(e,/(.+:)([^;!]+)(;|!.+)?/,`$1`+j+(ke(e,14)===45?`inline-`:``)+`box$3$1`+j+`$2$3$1`+me+`$2box$3`)+e}break;case 5936:switch(ke(e,t+11)){case 114:return j+e+me+M(e,/[svh]\w+-[tblr]{2}/,`tb`)+e;case 108:return j+e+me+M(e,/[svh]\w+-[tblr]{2}/,`tb-rl`)+e;case 45:return j+e+me+M(e,/[svh]\w+-[tblr]{2}/,`lr`)+e}return j+e+me+e+e}return e}var xt=[function(e,t,n,r){if(e.length>-1&&!e.return)switch(e.type){case ve:e.return=bt(e.value,e.length);break;case be:return lt([He(e,{value:M(e.value,`@`,`@`+j)})],r);case _e:if(e.length)return Pe(e.props,function(t){switch(De(t,/(::plac\w+|:read-\w+)/)){case`:read-only`:case`:read-write`:return lt([He(e,{props:[M(t,/:(read-\w+)/,`:`+he+`$1`)]})],r);case`::placeholder`:return lt([He(e,{props:[M(t,/:(plac\w+)/,`:`+j+`input-$1`)]}),He(e,{props:[M(t,/:(plac\w+)/,`:`+he+`$1`)]}),He(e,{props:[M(t,/:(plac\w+)/,me+`input-$1`)]})],r)}return``})}}],St=function(e){var t=e.key;if(t===`css`){var n=document.querySelectorAll(`style[data-emotion]:not([data-s])`);Array.prototype.forEach.call(n,function(e){e.getAttribute(`data-emotion`).indexOf(` `)!==-1&&(document.head.appendChild(e),e.setAttribute(`data-s`,``))})}var r=e.stylisPlugins||xt,i={},a,o=[];a=e.container||document.head,Array.prototype.forEach.call(document.querySelectorAll(`style[data-emotion^="`+t+` "]`),function(e){for(var t=e.getAttribute(`data-emotion`).split(` `),n=1;n<t.length;n++)i[t[n]]=!0;o.push(e)});var s,c=[vt,yt],l,u=[ut,ft(function(e){l.insert(e)})],d=dt(c.concat(r,u)),f=function(e){return lt(it(e),d)};s=function(e,t,n,r){l=n,f(e?e+`{`+t.styles+`}`:t.styles),r&&(p.inserted[t.name]=!0)};var p={key:t,sheet:new pe({key:t,container:a,nonce:e.nonce,speedy:e.speedy,prepend:e.prepend,insertionPoint:e.insertionPoint}),nonce:e.nonce,inserted:i,registered:{},insert:s};return p.sheet.hydrate(o),p},Ct=e((e=>{var t=typeof Symbol==`function`&&Symbol.for,n=t?Symbol.for(`react.element`):60103,r=t?Symbol.for(`react.portal`):60106,i=t?Symbol.for(`react.fragment`):60107,a=t?Symbol.for(`react.strict_mode`):60108,o=t?Symbol.for(`react.profiler`):60114,s=t?Symbol.for(`react.provider`):60109,c=t?Symbol.for(`react.context`):60110,l=t?Symbol.for(`react.async_mode`):60111,u=t?Symbol.for(`react.concurrent_mode`):60111,d=t?Symbol.for(`react.forward_ref`):60112,f=t?Symbol.for(`react.suspense`):60113,p=t?Symbol.for(`react.suspense_list`):60120,m=t?Symbol.for(`react.memo`):60115,h=t?Symbol.for(`react.lazy`):60116,g=t?Symbol.for(`react.block`):60121,_=t?Symbol.for(`react.fundamental`):60117,v=t?Symbol.for(`react.responder`):60118,y=t?Symbol.for(`react.scope`):60119;function b(e){if(typeof e==`object`&&e){var t=e.$$typeof;switch(t){case n:switch(e=e.type,e){case l:case u:case i:case o:case a:case f:return e;default:switch(e&&=e.$$typeof,e){case c:case d:case h:case m:case s:return e;default:return t}}case r:return t}}}function x(e){return b(e)===u}e.AsyncMode=l,e.ConcurrentMode=u,e.ContextConsumer=c,e.ContextProvider=s,e.Element=n,e.ForwardRef=d,e.Fragment=i,e.Lazy=h,e.Memo=m,e.Portal=r,e.Profiler=o,e.StrictMode=a,e.Suspense=f,e.isAsyncMode=function(e){return x(e)||b(e)===l},e.isConcurrentMode=x,e.isContextConsumer=function(e){return b(e)===c},e.isContextProvider=function(e){return b(e)===s},e.isElement=function(e){return typeof e==`object`&&!!e&&e.$$typeof===n},e.isForwardRef=function(e){return b(e)===d},e.isFragment=function(e){return b(e)===i},e.isLazy=function(e){return b(e)===h},e.isMemo=function(e){return b(e)===m},e.isPortal=function(e){return b(e)===r},e.isProfiler=function(e){return b(e)===o},e.isStrictMode=function(e){return b(e)===a},e.isSuspense=function(e){return b(e)===f},e.isValidElementType=function(e){return typeof e==`string`||typeof e==`function`||e===i||e===u||e===o||e===a||e===f||e===p||typeof e==`object`&&!!e&&(e.$$typeof===h||e.$$typeof===m||e.$$typeof===s||e.$$typeof===c||e.$$typeof===d||e.$$typeof===_||e.$$typeof===v||e.$$typeof===y||e.$$typeof===g)},e.typeOf=b})),wt=e(((e,t)=>{t.exports=Ct()})),Tt=e(((e,t)=>{var n=wt(),r={childContextTypes:!0,contextType:!0,contextTypes:!0,defaultProps:!0,displayName:!0,getDefaultProps:!0,getDerivedStateFromError:!0,getDerivedStateFromProps:!0,mixins:!0,propTypes:!0,type:!0},i={name:!0,length:!0,prototype:!0,caller:!0,callee:!0,arguments:!0,arity:!0},a={$$typeof:!0,render:!0,defaultProps:!0,displayName:!0,propTypes:!0},o={$$typeof:!0,compare:!0,defaultProps:!0,displayName:!0,propTypes:!0,type:!0},s={};s[n.ForwardRef]=a,s[n.Memo]=o;function c(e){return n.isMemo(e)?o:s[e.$$typeof]||r}var l=Object.defineProperty,u=Object.getOwnPropertyNames,d=Object.getOwnPropertySymbols,f=Object.getOwnPropertyDescriptor,p=Object.getPrototypeOf,m=Object.prototype;function h(e,t,n){if(typeof t!=`string`){if(m){var r=p(t);r&&r!==m&&h(e,r,n)}var a=u(t);d&&(a=a.concat(d(t)));for(var o=c(e),s=c(t),g=0;g<a.length;++g){var _=a[g];if(!i[_]&&!(n&&n[_])&&!(s&&s[_])&&!(o&&o[_])){var v=f(t,_);try{l(e,_,v)}catch{}}}}return e}t.exports=h})),Et=!0;function Dt(e,t,n){var r=``;return n.split(` `).forEach(function(n){e[n]===void 0?n&&(r+=n+` `):t.push(e[n]+`;`)}),r}var Ot=function(e,t,n){var r=e.key+`-`+t.name;(n===!1||Et===!1)&&e.registered[r]===void 0&&(e.registered[r]=t.styles)},kt=function(e,t,n){Ot(e,t,n);var r=e.key+`-`+t.name;if(e.inserted[t.name]===void 0){var i=t;do e.insert(t===i?`.`+r:``,i,e.sheet,!0),i=i.next;while(i!==void 0)}};function At(e){for(var t=0,n,r=0,i=e.length;i>=4;++r,i-=4)n=e.charCodeAt(r)&255|(e.charCodeAt(++r)&255)<<8|(e.charCodeAt(++r)&255)<<16|(e.charCodeAt(++r)&255)<<24,n=(n&65535)*1540483477+((n>>>16)*59797<<16),n^=n>>>24,t=(n&65535)*1540483477+((n>>>16)*59797<<16)^(t&65535)*1540483477+((t>>>16)*59797<<16);switch(i){case 3:t^=(e.charCodeAt(r+2)&255)<<16;case 2:t^=(e.charCodeAt(r+1)&255)<<8;case 1:t^=e.charCodeAt(r)&255,t=(t&65535)*1540483477+((t>>>16)*59797<<16)}return t^=t>>>13,t=(t&65535)*1540483477+((t>>>16)*59797<<16),((t^t>>>15)>>>0).toString(36)}var jt={animationIterationCount:1,aspectRatio:1,borderImageOutset:1,borderImageSlice:1,borderImageWidth:1,boxFlex:1,boxFlexGroup:1,boxOrdinalGroup:1,columnCount:1,columns:1,flex:1,flexGrow:1,flexPositive:1,flexShrink:1,flexNegative:1,flexOrder:1,gridRow:1,gridRowEnd:1,gridRowSpan:1,gridRowStart:1,gridColumn:1,gridColumnEnd:1,gridColumnSpan:1,gridColumnStart:1,msGridRow:1,msGridRowSpan:1,msGridColumn:1,msGridColumnSpan:1,fontWeight:1,lineHeight:1,opacity:1,order:1,orphans:1,scale:1,tabSize:1,widows:1,zIndex:1,zoom:1,WebkitLineClamp:1,fillOpacity:1,floodOpacity:1,stopOpacity:1,strokeDasharray:1,strokeDashoffset:1,strokeMiterlimit:1,strokeOpacity:1,strokeWidth:1},Mt=!1,Nt=/[A-Z]|^ms/g,Pt=/_EMO_([^_]+?)_([^]*?)_EMO_/g,Ft=function(e){return e.charCodeAt(1)===45},It=function(e){return e!=null&&typeof e!=`boolean`},Lt=pt(function(e){return Ft(e)?e:e.replace(Nt,`-$&`).toLowerCase()}),Rt=function(e,t){switch(e){case`animation`:case`animationName`:if(typeof t==`string`)return t.replace(Pt,function(e,t,n){return Ut={name:t,styles:n,next:Ut},t})}return jt[e]!==1&&!Ft(e)&&typeof t==`number`&&t!==0?t+`px`:t},zt=`Component selectors can only be used in conjunction with @emotion/babel-plugin, the swc Emotion plugin, or another Emotion-aware compiler transform.`;function Bt(e,t,n){if(n==null)return``;var r=n;if(r.__emotion_styles!==void 0)return r;switch(typeof n){case`boolean`:return``;case`object`:var i=n;if(i.anim===1)return Ut={name:i.name,styles:i.styles,next:Ut},i.name;var a=n;if(a.styles!==void 0){var o=a.next;if(o!==void 0)for(;o!==void 0;)Ut={name:o.name,styles:o.styles,next:Ut},o=o.next;return a.styles+`;`}return Vt(e,t,n);case`function`:if(e!==void 0){var s=Ut,c=n(e);return Ut=s,Bt(e,t,c)}break}var l=n;if(t==null)return l;var u=t[l];return u===void 0?l:u}function Vt(e,t,n){var r=``;if(Array.isArray(n))for(var i=0;i<n.length;i++)r+=Bt(e,t,n[i])+`;`;else for(var a in n){var o=n[a];if(typeof o!=`object`){var s=o;t!=null&&t[s]!==void 0?r+=a+`{`+t[s]+`}`:It(s)&&(r+=Lt(a)+`:`+Rt(a,s)+`;`)}else{if(a===`NO_COMPONENT_SELECTOR`&&Mt)throw Error(zt);if(Array.isArray(o)&&typeof o[0]==`string`&&(t==null||t[o[0]]===void 0))for(var c=0;c<o.length;c++)It(o[c])&&(r+=Lt(a)+`:`+Rt(a,o[c])+`;`);else{var l=Bt(e,t,o);switch(a){case`animation`:case`animationName`:r+=Lt(a)+`:`+l+`;`;break;default:r+=a+`{`+l+`}`}}}}return r}var Ht=/label:\s*([^\s;{]+)\s*(;|$)/g,Ut;function Wt(e,t,n){if(e.length===1&&typeof e[0]==`object`&&e[0]!==null&&e[0].styles!==void 0)return e[0];var r=!0,i=``;Ut=void 0;var a=e[0];a==null||a.raw===void 0?(r=!1,i+=Bt(n,t,a)):i+=a[0];for(var o=1;o<e.length;o++)i+=Bt(n,t,e[o]),r&&(i+=a[o]);Ht.lastIndex=0;for(var s=``,c;(c=Ht.exec(i))!==null;)s+=`-`+c[1];return{name:At(i)+s,styles:i,next:Ut}}var Gt=function(e){return e()},Kt=l.useInsertionEffect?l.useInsertionEffect:!1,qt=Kt||Gt;Kt||l.useLayoutEffect;var Jt=l.createContext(typeof HTMLElement<`u`?St({key:`css`}):null);Jt.Provider;var Yt=function(e){return(0,l.forwardRef)(function(t,n){return e(t,(0,l.useContext)(Jt),n)})},Xt=l.createContext({}),Zt={}.hasOwnProperty,Qt=`__EMOTION_TYPE_PLEASE_DO_NOT_USE__`,$t=function(e,t){var n={};for(var r in t)Zt.call(t,r)&&(n[r]=t[r]);return n[Qt]=e,n},en=function(e){var t=e.cache,n=e.serialized,r=e.isStringTag;return Ot(t,n,r),qt(function(){return kt(t,n,r)}),null},tn=Yt(function(e,t,n){var r=e.css;typeof r==`string`&&t.registered[r]!==void 0&&(r=t.registered[r]);var i=e[Qt],a=[r],o=``;typeof e.className==`string`?o=Dt(t.registered,a,e.className):e.className!=null&&(o=e.className+` `);var s=Wt(a,void 0,l.useContext(Xt));o+=t.key+`-`+s.name;var c={};for(var u in e)Zt.call(e,u)&&u!==`css`&&u!==Qt&&(c[u]=e[u]);return c.className=o,n&&(c.ref=n),l.createElement(l.Fragment,null,l.createElement(en,{cache:t,serialized:s,isStringTag:typeof i==`string`}),l.createElement(i,c))});Tt();var N=function(e,t){var n=arguments;if(t==null||!Zt.call(t,`css`))return l.createElement.apply(void 0,n);var r=n.length,i=Array(r);i[0]=tn,i[1]=$t(e,t);for(var a=2;a<r;a++)i[a]=n[a];return l.createElement.apply(null,i)};(function(e){var t;(function(e){})(t||=e.JSX||={})})(N||={});function nn(){return Wt([...arguments])}function rn(){var e=nn.apply(void 0,arguments),t=`animation-`+e.name;return{name:t,styles:`@keyframes `+t+`{`+e.styles+`}`,anim:1,toString:function(){return`_EMO_`+this.name+`_`+this.styles+`_EMO_`}}}function an(e,t){return t||=e.slice(0),Object.freeze(Object.defineProperties(e,{raw:{value:Object.freeze(t)}}))}var on=o(),sn=Math.min,cn=Math.max,ln=Math.round,un=Math.floor,dn=e=>({x:e,y:e});function fn(e){let{x:t,y:n,width:r,height:i}=e;return{width:r,height:i,top:n,left:t,right:t+r,bottom:n+i,x:t,y:n}}function pn(){return typeof window<`u`}function mn(e){return _n(e)?(e.nodeName||``).toLowerCase():`#document`}function hn(e){var t;return(e==null||(t=e.ownerDocument)==null?void 0:t.defaultView)||window}function gn(e){return((_n(e)?e.ownerDocument:e.document)||window.document)?.documentElement}function _n(e){return pn()?e instanceof Node||e instanceof hn(e).Node:!1}function vn(e){return pn()?e instanceof Element||e instanceof hn(e).Element:!1}function yn(e){return pn()?e instanceof HTMLElement||e instanceof hn(e).HTMLElement:!1}function bn(e){return!pn()||typeof ShadowRoot>`u`?!1:e instanceof ShadowRoot||e instanceof hn(e).ShadowRoot}var xn=new Set([`inline`,`contents`]);function Sn(e){let{overflow:t,overflowX:n,overflowY:r,display:i}=En(e);return/auto|scroll|overlay|hidden|clip/.test(t+r+n)&&!xn.has(i)}function Cn(){return typeof CSS>`u`||!CSS.supports?!1:CSS.supports(`-webkit-backdrop-filter`,`none`)}var wn=new Set([`html`,`body`,`#document`]);function Tn(e){return wn.has(mn(e))}function En(e){return hn(e).getComputedStyle(e)}function Dn(e){if(mn(e)===`html`)return e;let t=e.assignedSlot||e.parentNode||bn(e)&&e.host||gn(e);return bn(t)?t.host:t}function On(e){let t=Dn(e);return Tn(t)?e.ownerDocument?e.ownerDocument.body:e.body:yn(t)&&Sn(t)?t:On(t)}function kn(e,t,n){t===void 0&&(t=[]),n===void 0&&(n=!0);let r=On(e),i=r===e.ownerDocument?.body,a=hn(r);if(i){let e=An(a);return t.concat(a,a.visualViewport||[],Sn(r)?r:[],e&&n?kn(e):[])}return t.concat(r,kn(r,[],n))}function An(e){return e.parent&&Object.getPrototypeOf(e.parent)?e.frameElement:null}function jn(e){let t=En(e),n=parseFloat(t.width)||0,r=parseFloat(t.height)||0,i=yn(e),a=i?e.offsetWidth:n,o=i?e.offsetHeight:r,s=ln(n)!==a||ln(r)!==o;return s&&(n=a,r=o),{width:n,height:r,$:s}}function Mn(e){return vn(e)?e:e.contextElement}function Nn(e){let t=Mn(e);if(!yn(t))return dn(1);let n=t.getBoundingClientRect(),{width:r,height:i,$:a}=jn(t),o=(a?ln(n.width):n.width)/r,s=(a?ln(n.height):n.height)/i;return(!o||!Number.isFinite(o))&&(o=1),(!s||!Number.isFinite(s))&&(s=1),{x:o,y:s}}var Pn=dn(0);function Fn(e){let t=hn(e);return!Cn()||!t.visualViewport?Pn:{x:t.visualViewport.offsetLeft,y:t.visualViewport.offsetTop}}function In(e,t,n){return t===void 0&&(t=!1),!n||t&&n!==hn(e)?!1:t}function Ln(e,t,n,r){t===void 0&&(t=!1),n===void 0&&(n=!1);let i=e.getBoundingClientRect(),a=Mn(e),o=dn(1);t&&(r?vn(r)&&(o=Nn(r)):o=Nn(e));let s=In(a,n,r)?Fn(a):dn(0),c=(i.left+s.x)/o.x,l=(i.top+s.y)/o.y,u=i.width/o.x,d=i.height/o.y;if(a){let e=hn(a),t=r&&vn(r)?hn(r):r,n=e,i=An(n);for(;i&&r&&t!==n;){let e=Nn(i),t=i.getBoundingClientRect(),r=En(i),a=t.left+(i.clientLeft+parseFloat(r.paddingLeft))*e.x,o=t.top+(i.clientTop+parseFloat(r.paddingTop))*e.y;c*=e.x,l*=e.y,u*=e.x,d*=e.y,c+=a,l+=o,n=hn(i),i=An(n)}}return fn({width:u,height:d,x:c,y:l})}function Rn(e,t){return e.x===t.x&&e.y===t.y&&e.width===t.width&&e.height===t.height}function zn(e,t){let n=null,r,i=gn(e);function a(){var e;clearTimeout(r),(e=n)==null||e.disconnect(),n=null}function o(s,c){s===void 0&&(s=!1),c===void 0&&(c=1),a();let l=e.getBoundingClientRect(),{left:u,top:d,width:f,height:p}=l;if(s||t(),!f||!p)return;let m=un(d),h=un(i.clientWidth-(u+f)),g=un(i.clientHeight-(d+p)),_=un(u),v={rootMargin:-m+`px `+-h+`px `+-g+`px `+-_+`px`,threshold:cn(0,sn(1,c))||1},y=!0;function b(t){let n=t[0].intersectionRatio;if(n!==c){if(!y)return o();n?o(!1,n):r=setTimeout(()=>{o(!1,1e-7)},1e3)}n===1&&!Rn(l,e.getBoundingClientRect())&&o(),y=!1}try{n=new IntersectionObserver(b,{...v,root:i.ownerDocument})}catch{n=new IntersectionObserver(b,v)}n.observe(e)}return o(!0),a}function Bn(e,t,n,r){r===void 0&&(r={});let{ancestorScroll:i=!0,ancestorResize:a=!0,elementResize:o=typeof ResizeObserver==`function`,layoutShift:s=typeof IntersectionObserver==`function`,animationFrame:c=!1}=r,l=Mn(e),u=i||a?[...l?kn(l):[],...kn(t)]:[];u.forEach(e=>{i&&e.addEventListener(`scroll`,n,{passive:!0}),a&&e.addEventListener(`resize`,n)});let d=l&&s?zn(l,n):null,f=-1,p=null;o&&(p=new ResizeObserver(e=>{let[r]=e;r&&r.target===l&&p&&(p.unobserve(t),cancelAnimationFrame(f),f=requestAnimationFrame(()=>{var e;(e=p)==null||e.observe(t)})),n()}),l&&!c&&p.observe(l),p.observe(t));let m,h=c?Ln(e):null;c&&g();function g(){let t=Ln(e);h&&!Rn(h,t)&&n(),h=t,m=requestAnimationFrame(g)}return n(),()=>{var e;u.forEach(e=>{i&&e.removeEventListener(`scroll`,n),a&&e.removeEventListener(`resize`,n)}),d?.(),(e=p)==null||e.disconnect(),p=null,c&&cancelAnimationFrame(m)}}var Vn=l.useLayoutEffect,Hn=[`className`,`clearValue`,`cx`,`getStyles`,`getClassNames`,`getValue`,`hasValue`,`isMulti`,`isRtl`,`options`,`selectOption`,`selectProps`,`setValue`,`theme`],Un=function(){};function Wn(e,t){return t?t[0]===`-`?e+t:e+`__`+t:e}function Gn(e,t){var n=[...arguments].slice(2),r=[].concat(n);if(t&&e)for(var i in t)t.hasOwnProperty(i)&&t[i]&&r.push(`${Wn(e,i)}`);return r.filter(function(e){return e}).map(function(e){return String(e).trim()}).join(` `)}var Kn=function(e){return ur(e)?e.filter(Boolean):u(e)===`object`&&e!==null?[e]:[]},qn=function(e){return e.className,e.clearValue,e.cx,e.getStyles,e.getClassNames,e.getValue,e.hasValue,e.isMulti,e.isRtl,e.options,e.selectOption,e.selectProps,e.setValue,e.theme,h({},C(e,Hn))},P=function(e,t,n){var r=e.cx,i=e.getStyles,a=e.getClassNames,o=e.className;return{css:i(t,e),className:r(n??{},a(t,e),o)}};function Jn(e){return[document.documentElement,document.body,window].indexOf(e)>-1}function Yn(e){return Jn(e)?window.innerHeight:e.clientHeight}function Xn(e){return Jn(e)?window.pageYOffset:e.scrollTop}function Zn(e,t){if(Jn(e)){window.scrollTo(0,t);return}e.scrollTop=t}function Qn(e){var t=getComputedStyle(e),n=t.position===`absolute`,r=/(auto|scroll)/;if(t.position===`fixed`)return document.documentElement;for(var i=e;i=i.parentElement;)if(t=getComputedStyle(i),!(n&&t.position===`static`)&&r.test(t.overflow+t.overflowY+t.overflowX))return i;return document.documentElement}function $n(e,t,n,r){return n*((e=e/r-1)*e*e+1)+t}function er(e,t){var n=arguments.length>2&&arguments[2]!==void 0?arguments[2]:200,r=arguments.length>3&&arguments[3]!==void 0?arguments[3]:Un,i=Xn(e),a=t-i,o=10,s=0;function c(){s+=o,Zn(e,$n(s,i,a,n)),s<n?window.requestAnimationFrame(c):r(e)}c()}function tr(e,t){var n=e.getBoundingClientRect(),r=t.getBoundingClientRect(),i=t.offsetHeight/3;r.bottom+i>n.bottom?Zn(e,Math.min(t.offsetTop+t.clientHeight-e.offsetHeight+i,e.scrollHeight)):r.top-i<n.top&&Zn(e,Math.max(t.offsetTop-i,0))}function nr(e){var t=e.getBoundingClientRect();return{bottom:t.bottom,height:t.height,left:t.left,right:t.right,top:t.top,width:t.width}}function rr(){try{return document.createEvent(`TouchEvent`),!0}catch{return!1}}function ir(){try{return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)}catch{return!1}}var ar=!1,or={get passive(){return ar=!0}},sr=typeof window<`u`?window:{};sr.addEventListener&&sr.removeEventListener&&(sr.addEventListener(`p`,Un,or),sr.removeEventListener(`p`,Un,!1));var cr=ar;function lr(e){return e!=null}function ur(e){return Array.isArray(e)}function dr(e,t,n){return e?t:n}function fr(e){return e}function pr(e){return e}var mr=function(e){var t=[...arguments].slice(1);return Object.entries(e).filter(function(e){var n=x(e,1)[0];return!t.includes(n)}).reduce(function(e,t){var n=x(t,2),r=n[0];return e[r]=n[1],e},{})},hr=[`children`,`innerProps`],gr=[`children`,`innerProps`];function _r(e){var t=e.maxHeight,n=e.menuEl,r=e.minHeight,i=e.placement,a=e.shouldScroll,o=e.isFixedPosition,s=e.controlHeight,c=Qn(n),l={placement:`bottom`,maxHeight:t};if(!n||!n.offsetParent)return l;var u=c.getBoundingClientRect().height,d=n.getBoundingClientRect(),f=d.bottom,p=d.height,m=d.top,h=n.offsetParent.getBoundingClientRect().top,g=o?window.innerHeight:Yn(c),_=Xn(c),v=parseInt(getComputedStyle(n).marginBottom,10),y=parseInt(getComputedStyle(n).marginTop,10),b=h-y,x=g-m,S=b+_,C=u-_-m,w=f-g+_+v,T=_+m-y,E=160;switch(i){case`auto`:case`bottom`:if(x>=p)return{placement:`bottom`,maxHeight:t};if(C>=p&&!o)return a&&er(c,w,E),{placement:`bottom`,maxHeight:t};if(!o&&C>=r||o&&x>=r)return a&&er(c,w,E),{placement:`bottom`,maxHeight:o?x-v:C-v};if(i===`auto`||o){var ee=t,D=o?b:S;return D>=r&&(ee=Math.min(D-v-s,t)),{placement:`top`,maxHeight:ee}}if(i===`bottom`)return a&&Zn(c,w),{placement:`bottom`,maxHeight:t};break;case`top`:if(b>=p)return{placement:`top`,maxHeight:t};if(S>=p&&!o)return a&&er(c,T,E),{placement:`top`,maxHeight:t};if(!o&&S>=r||o&&b>=r){var te=t;return(!o&&S>=r||o&&b>=r)&&(te=o?b-y:S-y),a&&er(c,T,E),{placement:`top`,maxHeight:te}}return{placement:`bottom`,maxHeight:t};default:throw Error(`Invalid placement provided "${i}".`)}return l}function vr(e){return e?{bottom:`top`,top:`bottom`}[e]:`bottom`}var yr=function(e){return e===`auto`?`bottom`:e},br=function(e,t){var n,r=e.placement,i=e.theme,a=i.borderRadius,o=i.spacing,s=i.colors;return h((n={label:`menu`},p(n,vr(r),`100%`),p(n,`position`,`absolute`),p(n,`width`,`100%`),p(n,`zIndex`,1),n),t?{}:{backgroundColor:s.neutral0,borderRadius:a,boxShadow:`0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 11px hsla(0, 0%, 0%, 0.1)`,marginBottom:o.menuGutter,marginTop:o.menuGutter})},xr=(0,l.createContext)(null),Sr=function(e){var t=e.children,n=e.minMenuHeight,r=e.maxMenuHeight,i=e.menuPlacement,a=e.menuPosition,o=e.menuShouldScrollIntoView,s=e.theme,c=((0,l.useContext)(xr)||{}).setPortalPlacement,u=(0,l.useRef)(null),d=x((0,l.useState)(r),2),f=d[0],p=d[1],m=x((0,l.useState)(null),2),g=m[0],_=m[1],v=s.spacing.controlHeight;return Vn(function(){var e=u.current;if(e){var t=a===`fixed`,s=_r({maxHeight:r,menuEl:e,minHeight:n,placement:i,shouldScroll:o&&!t,isFixedPosition:t,controlHeight:v});p(s.maxHeight),_(s.placement),c?.(s.placement)}},[r,i,a,o,n,c,v]),t({ref:u,placerProps:h(h({},e),{},{placement:g||yr(i),maxHeight:f})})},Cr=function(e){var t=e.children,n=e.innerRef,r=e.innerProps;return N(`div`,E({},P(e,`menu`,{menu:!0}),{ref:n},r),t)},wr=function(e,t){var n=e.maxHeight,r=e.theme.spacing.baseUnit;return h({maxHeight:n,overflowY:`auto`,position:`relative`,WebkitOverflowScrolling:`touch`},t?{}:{paddingBottom:r,paddingTop:r})},Tr=function(e){var t=e.children,n=e.innerProps,r=e.innerRef,i=e.isMulti;return N(`div`,E({},P(e,`menuList`,{"menu-list":!0,"menu-list--is-multi":i}),{ref:r},n),t)},Er=function(e,t){var n=e.theme,r=n.spacing.baseUnit,i=n.colors;return h({textAlign:`center`},t?{}:{color:i.neutral40,padding:`${r*2}px ${r*3}px`})},Dr=Er,Or=Er,kr=function(e){var t=e.children,n=t===void 0?`No options`:t,r=e.innerProps;return N(`div`,E({},P(h(h({},C(e,hr)),{},{children:n,innerProps:r}),`noOptionsMessage`,{"menu-notice":!0,"menu-notice--no-options":!0}),r),n)},Ar=function(e){var t=e.children,n=t===void 0?`Loading...`:t,r=e.innerProps;return N(`div`,E({},P(h(h({},C(e,gr)),{},{children:n,innerProps:r}),`loadingMessage`,{"menu-notice":!0,"menu-notice--loading":!0}),r),n)},jr=function(e){var t=e.rect,n=e.offset,r=e.position;return{left:t.left,position:r,top:n,width:t.width,zIndex:1}},Mr=function(e){var t=e.appendTo,n=e.children,r=e.controlElement,i=e.innerProps,a=e.menuPlacement,o=e.menuPosition,s=(0,l.useRef)(null),c=(0,l.useRef)(null),u=x((0,l.useState)(yr(a)),2),d=u[0],f=u[1],p=(0,l.useMemo)(function(){return{setPortalPlacement:f}},[]),m=x((0,l.useState)(null),2),g=m[0],_=m[1],v=(0,l.useCallback)(function(){if(r){var e=nr(r),t=o===`fixed`?0:window.pageYOffset,n=e[d]+t;(n!==g?.offset||e.left!==g?.rect.left||e.width!==g?.rect.width)&&_({offset:n,rect:e})}},[r,o,d,g?.offset,g?.rect.left,g?.rect.width]);Vn(function(){v()},[v]);var y=(0,l.useCallback)(function(){typeof c.current==`function`&&(c.current(),c.current=null),r&&s.current&&(c.current=Bn(r,s.current,v,{elementResize:`ResizeObserver`in window}))},[r,v]);Vn(function(){y()},[y]);var b=(0,l.useCallback)(function(e){s.current=e,y()},[y]);if(!t&&o!==`fixed`||!g)return null;var S=N(`div`,E({ref:b},P(h(h({},e),{},{offset:g.offset,position:o,rect:g.rect}),`menuPortal`,{"menu-portal":!0}),i),n);return N(xr.Provider,{value:p},t?(0,on.createPortal)(S,t):S)},Nr=function(e){var t=e.isDisabled;return{label:`container`,direction:e.isRtl?`rtl`:void 0,pointerEvents:t?`none`:void 0,position:`relative`}},Pr=function(e){var t=e.children,n=e.innerProps,r=e.isDisabled,i=e.isRtl;return N(`div`,E({},P(e,`container`,{"--is-disabled":r,"--is-rtl":i}),n),t)},Fr=function(e,t){var n=e.theme.spacing,r=e.isMulti,i=e.hasValue,a=e.selectProps.controlShouldRenderValue;return h({alignItems:`center`,display:r&&i&&a?`flex`:`grid`,flex:1,flexWrap:`wrap`,WebkitOverflowScrolling:`touch`,position:`relative`,overflow:`hidden`},t?{}:{padding:`${n.baseUnit/2}px ${n.baseUnit*2}px`})},Ir=function(e){var t=e.children,n=e.innerProps,r=e.isMulti,i=e.hasValue;return N(`div`,E({},P(e,`valueContainer`,{"value-container":!0,"value-container--is-multi":r,"value-container--has-value":i}),n),t)},Lr=function(){return{alignItems:`center`,alignSelf:`stretch`,display:`flex`,flexShrink:0}},Rr=function(e){var t=e.children,n=e.innerProps;return N(`div`,E({},P(e,`indicatorsContainer`,{indicators:!0}),n),t)},zr,Br=[`size`],Vr=[`innerProps`,`isRtl`,`size`],Hr={name:`8mmkcg`,styles:`display:inline-block;fill:currentColor;line-height:1;stroke:currentColor;stroke-width:0`},Ur=function(e){var t=e.size,n=C(e,Br);return N(`svg`,E({height:t,width:t,viewBox:`0 0 20 20`,"aria-hidden":`true`,focusable:`false`,css:Hr},n))},Wr=function(e){return N(Ur,E({size:20},e),N(`path`,{d:`M14.348 14.849c-0.469 0.469-1.229 0.469-1.697 0l-2.651-3.030-2.651 3.029c-0.469 0.469-1.229 0.469-1.697 0-0.469-0.469-0.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-0.469-0.469-0.469-1.228 0-1.697s1.228-0.469 1.697 0l2.652 3.031 2.651-3.031c0.469-0.469 1.228-0.469 1.697 0s0.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c0.469 0.469 0.469 1.229 0 1.698z`}))},Gr=function(e){return N(Ur,E({size:20},e),N(`path`,{d:`M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z`}))},Kr=function(e,t){var n=e.isFocused,r=e.theme,i=r.spacing.baseUnit,a=r.colors;return h({label:`indicatorContainer`,display:`flex`,transition:`color 150ms`},t?{}:{color:n?a.neutral60:a.neutral20,padding:i*2,":hover":{color:n?a.neutral80:a.neutral40}})},qr=Kr,Jr=function(e){var t=e.children,n=e.innerProps;return N(`div`,E({},P(e,`dropdownIndicator`,{indicator:!0,"dropdown-indicator":!0}),n),t||N(Gr,null))},Yr=Kr,Xr=function(e){var t=e.children,n=e.innerProps;return N(`div`,E({},P(e,`clearIndicator`,{indicator:!0,"clear-indicator":!0}),n),t||N(Wr,null))},Zr=function(e,t){var n=e.isDisabled,r=e.theme,i=r.spacing.baseUnit,a=r.colors;return h({label:`indicatorSeparator`,alignSelf:`stretch`,width:1},t?{}:{backgroundColor:n?a.neutral10:a.neutral20,marginBottom:i*2,marginTop:i*2})},Qr=function(e){var t=e.innerProps;return N(`span`,E({},t,P(e,`indicatorSeparator`,{"indicator-separator":!0})))},$r=rn(zr||=an([`
   0%, 80%, 100% { opacity: 0; }
   40% { opacity: 1; }
-`])),ei=function(e,t){var n=e.isFocused,r=e.size,i=e.theme,a=i.colors,o=i.spacing.baseUnit;return h({label:`loadingIndicator`,display:`flex`,transition:`color 150ms`,alignSelf:`center`,fontSize:r,lineHeight:1,marginRight:r,textAlign:`center`,verticalAlign:`middle`},t?{}:{color:n?a.neutral60:a.neutral20,padding:o*2})},ti=function(e){var t=e.delay,n=e.offset;return N(`span`,{css:nn({animation:`${$r} 1s ease-in-out ${t}ms infinite;`,backgroundColor:`currentColor`,borderRadius:`1em`,display:`inline-block`,marginLeft:n?`1em`:void 0,height:`1em`,verticalAlign:`top`,width:`1em`},``,``)})},ni=function(e){var t=e.innerProps,n=e.isRtl,r=e.size,i=r===void 0?4:r;return N(`div`,E({},P(h(h({},C(e,Vr)),{},{innerProps:t,isRtl:n,size:i}),`loadingIndicator`,{indicator:!0,"loading-indicator":!0}),t),N(ti,{delay:0,offset:n}),N(ti,{delay:160,offset:!0}),N(ti,{delay:320,offset:!n}))},ri=function(e,t){var n=e.isDisabled,r=e.isFocused,i=e.theme,a=i.colors,o=i.borderRadius,s=i.spacing;return h({label:`control`,alignItems:`center`,cursor:`default`,display:`flex`,flexWrap:`wrap`,justifyContent:`space-between`,minHeight:s.controlHeight,outline:`0 !important`,position:`relative`,transition:`all 100ms`},t?{}:{backgroundColor:n?a.neutral5:a.neutral0,borderColor:n?a.neutral10:r?a.primary:a.neutral20,borderRadius:o,borderStyle:`solid`,borderWidth:1,boxShadow:r?`0 0 0 1px ${a.primary}`:void 0,"&:hover":{borderColor:r?a.primary:a.neutral30}})},ii=function(e){var t=e.children,n=e.isDisabled,r=e.isFocused,i=e.innerRef,a=e.innerProps,o=e.menuIsOpen;return N(`div`,E({ref:i},P(e,`control`,{control:!0,"control--is-disabled":n,"control--is-focused":r,"control--menu-is-open":o}),a,{"aria-disabled":n||void 0}),t)},ai=[`data`],oi=function(e,t){var n=e.theme.spacing;return t?{}:{paddingBottom:n.baseUnit*2,paddingTop:n.baseUnit*2}},si=function(e){var t=e.children,n=e.cx,r=e.getStyles,i=e.getClassNames,a=e.Heading,o=e.headingProps,s=e.innerProps,c=e.label,l=e.theme,u=e.selectProps;return N(`div`,E({},P(e,`group`,{group:!0}),s),N(a,E({},o,{selectProps:u,theme:l,getStyles:r,getClassNames:i,cx:n}),c),N(`div`,null,t))},ci=function(e,t){var n=e.theme,r=n.colors,i=n.spacing;return h({label:`group`,cursor:`default`,display:`block`},t?{}:{color:r.neutral40,fontSize:`75%`,fontWeight:500,marginBottom:`0.25em`,paddingLeft:i.baseUnit*3,paddingRight:i.baseUnit*3,textTransform:`uppercase`})},li=function(e){var t=qn(e);t.data;var n=C(t,ai);return N(`div`,E({},P(e,`groupHeading`,{"group-heading":!0}),n))},ui=si,di=[`innerRef`,`isDisabled`,`isHidden`,`inputClassName`],fi=function(e,t){var n=e.isDisabled,r=e.value,i=e.theme,a=i.spacing,o=i.colors;return h(h({visibility:n?`hidden`:`visible`,transform:r?`translateZ(0)`:``},mi),t?{}:{margin:a.baseUnit/2,paddingBottom:a.baseUnit/2,paddingTop:a.baseUnit/2,color:o.neutral80})},pi={gridArea:`1 / 2`,font:`inherit`,minWidth:`2px`,border:0,margin:0,outline:0,padding:0},mi={flex:`1 1 auto`,display:`inline-grid`,gridArea:`1 / 1 / 2 / 3`,gridTemplateColumns:`0 min-content`,"&:after":h({content:`attr(data-value) " "`,visibility:`hidden`,whiteSpace:`pre`},pi)},hi=function(e){return h({label:`input`,color:`inherit`,background:0,opacity:e?0:1,width:`100%`},pi)},gi=function(e){var t=e.cx,n=e.value,r=qn(e),i=r.innerRef,a=r.isDisabled,o=r.isHidden,s=r.inputClassName,c=C(r,di);return N(`div`,E({},P(e,`input`,{"input-container":!0}),{"data-value":n||``}),N(`input`,E({className:t({input:!0},s),ref:i,style:hi(o),disabled:a},c)))},_i=function(e,t){var n=e.theme,r=n.spacing,i=n.borderRadius,a=n.colors;return h({label:`multiValue`,display:`flex`,minWidth:0},t?{}:{backgroundColor:a.neutral10,borderRadius:i/2,margin:r.baseUnit/2})},vi=function(e,t){var n=e.theme,r=n.borderRadius,i=n.colors,a=e.cropWithEllipsis;return h({overflow:`hidden`,textOverflow:a||a===void 0?`ellipsis`:void 0,whiteSpace:`nowrap`},t?{}:{borderRadius:r/2,color:i.neutral80,fontSize:`85%`,padding:3,paddingLeft:6})},yi=function(e,t){var n=e.theme,r=n.spacing,i=n.borderRadius,a=n.colors,o=e.isFocused;return h({alignItems:`center`,display:`flex`},t?{}:{borderRadius:i/2,backgroundColor:o?a.dangerLight:void 0,paddingLeft:r.baseUnit,paddingRight:r.baseUnit,":hover":{backgroundColor:a.dangerLight,color:a.danger}})},bi=function(e){var t=e.children,n=e.innerProps;return N(`div`,n,t)},xi=bi,Si=bi;function Ci(e){var t=e.children,n=e.innerProps;return N(`div`,E({role:`button`},n),t||N(Wr,{size:14}))}var wi=function(e){var t=e.children,n=e.components,r=e.data,i=e.innerProps,a=e.isDisabled,o=e.removeProps,s=e.selectProps,c=n.Container,l=n.Label,u=n.Remove;return N(c,{data:r,innerProps:h(h({},P(e,`multiValue`,{"multi-value":!0,"multi-value--is-disabled":a})),i),selectProps:s},N(l,{data:r,innerProps:h({},P(e,`multiValueLabel`,{"multi-value__label":!0})),selectProps:s},t),N(u,{data:r,innerProps:h(h({},P(e,`multiValueRemove`,{"multi-value__remove":!0})),{},{"aria-label":`Remove ${t||`option`}`},o),selectProps:s}))},Ti=function(e,t){var n=e.isDisabled,r=e.isFocused,i=e.isSelected,a=e.theme,o=a.spacing,s=a.colors;return h({label:`option`,cursor:`default`,display:`block`,fontSize:`inherit`,width:`100%`,userSelect:`none`,WebkitTapHighlightColor:`rgba(0, 0, 0, 0)`},t?{}:{backgroundColor:i?s.primary:r?s.primary25:`transparent`,color:n?s.neutral20:i?s.neutral0:`inherit`,padding:`${o.baseUnit*2}px ${o.baseUnit*3}px`,":active":{backgroundColor:n?void 0:i?s.primary:s.primary50}})},Ei=function(e){var t=e.children,n=e.isDisabled,r=e.isFocused,i=e.isSelected,a=e.innerRef,o=e.innerProps;return N(`div`,E({},P(e,`option`,{option:!0,"option--is-disabled":n,"option--is-focused":r,"option--is-selected":i}),{ref:a,"aria-disabled":n},o),t)},Di=function(e,t){var n=e.theme,r=n.spacing,i=n.colors;return h({label:`placeholder`,gridArea:`1 / 1 / 2 / 3`},t?{}:{color:i.neutral50,marginLeft:r.baseUnit/2,marginRight:r.baseUnit/2})},Oi=function(e){var t=e.children,n=e.innerProps;return N(`div`,E({},P(e,`placeholder`,{placeholder:!0}),n),t)},ki=function(e,t){var n=e.isDisabled,r=e.theme,i=r.spacing,a=r.colors;return h({label:`singleValue`,gridArea:`1 / 1 / 2 / 3`,maxWidth:`100%`,overflow:`hidden`,textOverflow:`ellipsis`,whiteSpace:`nowrap`},t?{}:{color:n?a.neutral40:a.neutral80,marginLeft:i.baseUnit/2,marginRight:i.baseUnit/2})},Ai={ClearIndicator:Xr,Control:ii,DropdownIndicator:Jr,DownChevron:Gr,CrossIcon:Wr,Group:ui,GroupHeading:li,IndicatorsContainer:Rr,IndicatorSeparator:Qr,Input:gi,LoadingIndicator:ni,Menu:Cr,MenuList:Tr,MenuPortal:Mr,LoadingMessage:Ar,NoOptionsMessage:kr,MultiValue:wi,MultiValueContainer:xi,MultiValueLabel:Si,MultiValueRemove:Ci,Option:Ei,Placeholder:Oi,SelectContainer:Pr,SingleValue:function(e){var t=e.children,n=e.isDisabled,r=e.innerProps;return N(`div`,E({},P(e,`singleValue`,{"single-value":!0,"single-value--is-disabled":n}),r),t)},ValueContainer:Ir},ji=function(e){return h(h({},Ai),e.components)},Mi=Number.isNaN||function(e){return typeof e==`number`&&e!==e};function Ni(e,t){return!!(e===t||Mi(e)&&Mi(t))}function Pi(e,t){if(e.length!==t.length)return!1;for(var n=0;n<e.length;n++)if(!Ni(e[n],t[n]))return!1;return!0}function Fi(e,t){t===void 0&&(t=Pi);var n=null;function r(){var r=[...arguments];if(n&&n.lastThis===this&&t(r,n.lastArgs))return n.lastResult;var i=e.apply(this,r);return n={lastResult:i,lastArgs:r,lastThis:this},i}return r.clear=function(){n=null},r}for(var Ii={name:`7pg0cj-a11yText`,styles:`label:a11yText;z-index:9999;border:0;clip:rect(1px, 1px, 1px, 1px);height:1px;width:1px;position:absolute;overflow:hidden;padding:0;white-space:nowrap`},Li=function(e){return N(`span`,E({css:Ii},e))},F={guidance:function(e){var t=e.isSearchable,n=e.isMulti,r=e.tabSelectsValue,i=e.context,a=e.isInitialFocus;switch(i){case`menu`:return`Use Up and Down to choose options, press Enter to select the currently focused option, press Escape to exit the menu${r?`, press Tab to select the option and exit the menu`:``}.`;case`input`:return a?`${e[`aria-label`]||`Select`} is focused ${t?`,type to refine list`:``}, press Down to open the menu, ${n?` press left to focus selected values`:``}`:``;case`value`:return`Use left and right to toggle between focused values, press Backspace to remove the currently focused value`;default:return``}},onChange:function(e){var t=e.action,n=e.label,r=n===void 0?``:n,i=e.labels,a=e.isDisabled;switch(t){case`deselect-option`:case`pop-value`:case`remove-value`:return`option ${r}, deselected.`;case`clear`:return`All selected options have been cleared.`;case`initial-input-focus`:return`option${i.length>1?`s`:``} ${i.join(`,`)}, selected.`;case`select-option`:return a?`option ${r} is disabled. Select another option.`:`option ${r}, selected.`;default:return``}},onFocus:function(e){var t=e.context,n=e.focused,r=e.options,i=e.label,a=i===void 0?``:i,o=e.selectValue,s=e.isDisabled,c=e.isSelected,l=e.isAppleDevice,u=function(e,t){return e&&e.length?`${e.indexOf(t)+1} of ${e.length}`:``};return t===`value`&&o?`value ${a} focused, ${u(o,n)}.`:t===`menu`&&l?`${a}${`${c?` selected`:``}${s?` disabled`:``}`}, ${u(r,n)}.`:``},onFilter:function(e){var t=e.inputValue;return`${e.resultsMessage}${t?` for search term `+t:``}.`}},I=function(e){var t=e.ariaSelection,n=e.focusedOption,r=e.focusedValue,i=e.focusableOptions,a=e.isFocused,o=e.selectValue,s=e.selectProps,c=e.id,u=e.isAppleDevice,d=s.ariaLiveMessages,f=s.getOptionLabel,p=s.inputValue,m=s.isMulti,g=s.isOptionDisabled,_=s.isSearchable,v=s.menuIsOpen,y=s.options,b=s.screenReaderStatus,x=s.tabSelectsValue,S=s.isLoading,C=s[`aria-label`],w=s[`aria-live`],T=(0,l.useMemo)(function(){return h(h({},F),d||{})},[d]),E=(0,l.useMemo)(function(){var e=``;if(t&&T.onChange){var n=t.option,r=t.options,i=t.removedValue,a=t.removedValues,s=t.value,c=i||n||function(e){return Array.isArray(e)?null:e}(s),l=c?f(c):``,u=r||a||void 0,d=u?u.map(f):[],p=h({isDisabled:c&&g(c,o),label:l,labels:d},t);e=T.onChange(p)}return e},[t,T,g,o,f]),ee=(0,l.useMemo)(function(){var e=``,t=n||r,a=!!(n&&o&&o.includes(n));if(t&&T.onFocus){var s={focused:t,label:f(t),isDisabled:g(t,o),isSelected:a,options:i,context:t===n?`menu`:`value`,selectValue:o,isAppleDevice:u};e=T.onFocus(s)}return e},[n,r,f,g,T,i,o,u]),D=(0,l.useMemo)(function(){var e=``;if(v&&y.length&&!S&&T.onFilter){var t=b({count:i.length});e=T.onFilter({inputValue:p,resultsMessage:t})}return e},[i,p,v,T,y,b,S]),te=t?.action===`initial-input-focus`,ne=(0,l.useMemo)(function(){var e=``;if(T.guidance){var t=r?`value`:v?`menu`:`input`;e=T.guidance({"aria-label":C,context:t,isDisabled:n&&g(n,o),isMulti:m,isSearchable:_,tabSelectsValue:x,isInitialFocus:te})}return e},[C,n,r,m,g,_,v,T,o,x,te]),re=N(l.Fragment,null,N(`span`,{id:`aria-selection`},E),N(`span`,{id:`aria-focused`},ee),N(`span`,{id:`aria-results`},D),N(`span`,{id:`aria-guidance`},ne));return N(l.Fragment,null,N(Li,{id:c},te&&re),N(Li,{"aria-live":w,"aria-atomic":`false`,"aria-relevant":`additions text`,role:`log`},a&&!te&&re))},Ri=[{base:`A`,letters:`AⒶＡÀÁÂẦẤẪẨÃĀĂẰẮẴẲȦǠÄǞẢÅǺǍȀȂẠẬẶḀĄȺⱯ`},{base:`AA`,letters:`Ꜳ`},{base:`AE`,letters:`ÆǼǢ`},{base:`AO`,letters:`Ꜵ`},{base:`AU`,letters:`Ꜷ`},{base:`AV`,letters:`ꜸꜺ`},{base:`AY`,letters:`Ꜽ`},{base:`B`,letters:`BⒷＢḂḄḆɃƂƁ`},{base:`C`,letters:`CⒸＣĆĈĊČÇḈƇȻꜾ`},{base:`D`,letters:`DⒹＤḊĎḌḐḒḎĐƋƊƉꝹ`},{base:`DZ`,letters:`ǱǄ`},{base:`Dz`,letters:`ǲǅ`},{base:`E`,letters:`EⒺＥÈÉÊỀẾỄỂẼĒḔḖĔĖËẺĚȄȆẸỆȨḜĘḘḚƐƎ`},{base:`F`,letters:`FⒻＦḞƑꝻ`},{base:`G`,letters:`GⒼＧǴĜḠĞĠǦĢǤƓꞠꝽꝾ`},{base:`H`,letters:`HⒽＨĤḢḦȞḤḨḪĦⱧⱵꞍ`},{base:`I`,letters:`IⒾＩÌÍÎĨĪĬİÏḮỈǏȈȊỊĮḬƗ`},{base:`J`,letters:`JⒿＪĴɈ`},{base:`K`,letters:`KⓀＫḰǨḲĶḴƘⱩꝀꝂꝄꞢ`},{base:`L`,letters:`LⓁＬĿĹĽḶḸĻḼḺŁȽⱢⱠꝈꝆꞀ`},{base:`LJ`,letters:`Ǉ`},{base:`Lj`,letters:`ǈ`},{base:`M`,letters:`MⓂＭḾṀṂⱮƜ`},{base:`N`,letters:`NⓃＮǸŃÑṄŇṆŅṊṈȠƝꞐꞤ`},{base:`NJ`,letters:`Ǌ`},{base:`Nj`,letters:`ǋ`},{base:`O`,letters:`OⓄＯÒÓÔỒỐỖỔÕṌȬṎŌṐṒŎȮȰÖȪỎŐǑȌȎƠỜỚỠỞỢỌỘǪǬØǾƆƟꝊꝌ`},{base:`OI`,letters:`Ƣ`},{base:`OO`,letters:`Ꝏ`},{base:`OU`,letters:`Ȣ`},{base:`P`,letters:`PⓅＰṔṖƤⱣꝐꝒꝔ`},{base:`Q`,letters:`QⓆＱꝖꝘɊ`},{base:`R`,letters:`RⓇＲŔṘŘȐȒṚṜŖṞɌⱤꝚꞦꞂ`},{base:`S`,letters:`SⓈＳẞŚṤŜṠŠṦṢṨȘŞⱾꞨꞄ`},{base:`T`,letters:`TⓉＴṪŤṬȚŢṰṮŦƬƮȾꞆ`},{base:`TZ`,letters:`Ꜩ`},{base:`U`,letters:`UⓊＵÙÚÛŨṸŪṺŬÜǛǗǕǙỦŮŰǓȔȖƯỪỨỮỬỰỤṲŲṶṴɄ`},{base:`V`,letters:`VⓋＶṼṾƲꝞɅ`},{base:`VY`,letters:`Ꝡ`},{base:`W`,letters:`WⓌＷẀẂŴẆẄẈⱲ`},{base:`X`,letters:`XⓍＸẊẌ`},{base:`Y`,letters:`YⓎＹỲÝŶỸȲẎŸỶỴƳɎỾ`},{base:`Z`,letters:`ZⓏＺŹẐŻŽẒẔƵȤⱿⱫꝢ`},{base:`a`,letters:`aⓐａẚàáâầấẫẩãāăằắẵẳȧǡäǟảåǻǎȁȃạậặḁąⱥɐ`},{base:`aa`,letters:`ꜳ`},{base:`ae`,letters:`æǽǣ`},{base:`ao`,letters:`ꜵ`},{base:`au`,letters:`ꜷ`},{base:`av`,letters:`ꜹꜻ`},{base:`ay`,letters:`ꜽ`},{base:`b`,letters:`bⓑｂḃḅḇƀƃɓ`},{base:`c`,letters:`cⓒｃćĉċčçḉƈȼꜿↄ`},{base:`d`,letters:`dⓓｄḋďḍḑḓḏđƌɖɗꝺ`},{base:`dz`,letters:`ǳǆ`},{base:`e`,letters:`eⓔｅèéêềếễểẽēḕḗĕėëẻěȅȇẹệȩḝęḙḛɇɛǝ`},{base:`f`,letters:`fⓕｆḟƒꝼ`},{base:`g`,letters:`gⓖｇǵĝḡğġǧģǥɠꞡᵹꝿ`},{base:`h`,letters:`hⓗｈĥḣḧȟḥḩḫẖħⱨⱶɥ`},{base:`hv`,letters:`ƕ`},{base:`i`,letters:`iⓘｉìíîĩīĭïḯỉǐȉȋịįḭɨı`},{base:`j`,letters:`jⓙｊĵǰɉ`},{base:`k`,letters:`kⓚｋḱǩḳķḵƙⱪꝁꝃꝅꞣ`},{base:`l`,letters:`lⓛｌŀĺľḷḹļḽḻſłƚɫⱡꝉꞁꝇ`},{base:`lj`,letters:`ǉ`},{base:`m`,letters:`mⓜｍḿṁṃɱɯ`},{base:`n`,letters:`nⓝｎǹńñṅňṇņṋṉƞɲŉꞑꞥ`},{base:`nj`,letters:`ǌ`},{base:`o`,letters:`oⓞｏòóôồốỗổõṍȭṏōṑṓŏȯȱöȫỏőǒȍȏơờớỡởợọộǫǭøǿɔꝋꝍɵ`},{base:`oi`,letters:`ƣ`},{base:`ou`,letters:`ȣ`},{base:`oo`,letters:`ꝏ`},{base:`p`,letters:`pⓟｐṕṗƥᵽꝑꝓꝕ`},{base:`q`,letters:`qⓠｑɋꝗꝙ`},{base:`r`,letters:`rⓡｒŕṙřȑȓṛṝŗṟɍɽꝛꞧꞃ`},{base:`s`,letters:`sⓢｓßśṥŝṡšṧṣṩșşȿꞩꞅẛ`},{base:`t`,letters:`tⓣｔṫẗťṭțţṱṯŧƭʈⱦꞇ`},{base:`tz`,letters:`ꜩ`},{base:`u`,letters:`uⓤｕùúûũṹūṻŭüǜǘǖǚủůűǔȕȗưừứữửựụṳųṷṵʉ`},{base:`v`,letters:`vⓥｖṽṿʋꝟʌ`},{base:`vy`,letters:`ꝡ`},{base:`w`,letters:`wⓦｗẁẃŵẇẅẘẉⱳ`},{base:`x`,letters:`xⓧｘẋẍ`},{base:`y`,letters:`yⓨｙỳýŷỹȳẏÿỷẙỵƴɏỿ`},{base:`z`,letters:`zⓩｚźẑżžẓẕƶȥɀⱬꝣ`}],zi=RegExp(`[`+Ri.map(function(e){return e.letters}).join(``)+`]`,`g`),Bi={},Vi=0;Vi<Ri.length;Vi++)for(var Hi=Ri[Vi],Ui=0;Ui<Hi.letters.length;Ui++)Bi[Hi.letters[Ui]]=Hi.base;var Wi=function(e){return e.replace(zi,function(e){return Bi[e]})},Gi=Fi(Wi),Ki=function(e){return e.replace(/^\s+|\s+$/g,``)},qi=function(e){return`${e.label} ${e.value}`},Ji=function(e){return function(t,n){if(t.data.__isNew__)return!0;var r=h({ignoreCase:!0,ignoreAccents:!0,stringify:qi,trim:!0,matchFrom:`any`},e),i=r.ignoreCase,a=r.ignoreAccents,o=r.stringify,s=r.trim,c=r.matchFrom,l=s?Ki(n):n,u=s?Ki(o(t)):o(t);return i&&(l=l.toLowerCase(),u=u.toLowerCase()),a&&(l=Gi(l),u=Wi(u)),c===`start`?u.substr(0,l.length)===l:u.indexOf(l)>-1}},Yi=[`innerRef`];function Xi(e){var t=e.innerRef,n=mr(C(e,Yi),`onExited`,`in`,`enter`,`exit`,`appear`);return N(`input`,E({ref:t},n,{css:nn({label:`dummyInput`,background:0,border:0,caretColor:`transparent`,fontSize:`inherit`,gridArea:`1 / 1 / 2 / 3`,outline:0,padding:0,width:1,color:`transparent`,left:-100,opacity:0,position:`relative`,transform:`scale(.01)`},``,``)}))}var Zi=function(e){e.cancelable&&e.preventDefault(),e.stopPropagation()};function Qi(e){var t=e.isEnabled,n=e.onBottomArrive,r=e.onBottomLeave,i=e.onTopArrive,a=e.onTopLeave,o=(0,l.useRef)(!1),s=(0,l.useRef)(!1),c=(0,l.useRef)(0),u=(0,l.useRef)(null),d=(0,l.useCallback)(function(e,t){if(u.current!==null){var c=u.current,l=c.scrollTop,d=c.scrollHeight,f=c.clientHeight,p=u.current,m=t>0,h=d-f-l,g=!1;h>t&&o.current&&(r&&r(e),o.current=!1),m&&s.current&&(a&&a(e),s.current=!1),m&&t>h?(n&&!o.current&&n(e),p.scrollTop=d,g=!0,o.current=!0):!m&&-t>l&&(i&&!s.current&&i(e),p.scrollTop=0,g=!0,s.current=!0),g&&Zi(e)}},[n,r,i,a]),f=(0,l.useCallback)(function(e){d(e,e.deltaY)},[d]),p=(0,l.useCallback)(function(e){c.current=e.changedTouches[0].clientY},[]),m=(0,l.useCallback)(function(e){d(e,c.current-e.changedTouches[0].clientY)},[d]),h=(0,l.useCallback)(function(e){if(e){var t=cr?{passive:!1}:!1;e.addEventListener(`wheel`,f,t),e.addEventListener(`touchstart`,p,t),e.addEventListener(`touchmove`,m,t)}},[m,p,f]),g=(0,l.useCallback)(function(e){e&&(e.removeEventListener(`wheel`,f,!1),e.removeEventListener(`touchstart`,p,!1),e.removeEventListener(`touchmove`,m,!1))},[m,p,f]);return(0,l.useEffect)(function(){if(t){var e=u.current;return h(e),function(){g(e)}}},[t,h,g]),function(e){u.current=e}}var $i=[`boxSizing`,`height`,`overflow`,`paddingRight`,`position`],ea={boxSizing:`border-box`,overflow:`hidden`,position:`relative`,height:`100%`};function ta(e){e.cancelable&&e.preventDefault()}function na(e){e.stopPropagation()}function ra(){var e=this.scrollTop,t=this.scrollHeight,n=e+this.offsetHeight;e===0?this.scrollTop=1:n===t&&(this.scrollTop=e-1)}function ia(){return`ontouchstart`in window||navigator.maxTouchPoints}var aa=!!(typeof window<`u`&&window.document&&window.document.createElement),oa=0,sa={capture:!1,passive:!1};function ca(e){var t=e.isEnabled,n=e.accountForScrollbars,r=n===void 0?!0:n,i=(0,l.useRef)({}),a=(0,l.useRef)(null),o=(0,l.useCallback)(function(e){if(aa){var t=document.body,n=t&&t.style;if(r&&$i.forEach(function(e){var t=n&&n[e];i.current[e]=t}),r&&oa<1){var a=parseInt(i.current.paddingRight,10)||0,o=document.body?document.body.clientWidth:0,s=window.innerWidth-o+a||0;Object.keys(ea).forEach(function(e){var t=ea[e];n&&(n[e]=t)}),n&&(n.paddingRight=`${s}px`)}t&&ia()&&(t.addEventListener(`touchmove`,ta,sa),e&&(e.addEventListener(`touchstart`,ra,sa),e.addEventListener(`touchmove`,na,sa))),oa+=1}},[r]),s=(0,l.useCallback)(function(e){if(aa){var t=document.body,n=t&&t.style;oa=Math.max(oa-1,0),r&&oa<1&&$i.forEach(function(e){var t=i.current[e];n&&(n[e]=t)}),t&&ia()&&(t.removeEventListener(`touchmove`,ta,sa),e&&(e.removeEventListener(`touchstart`,ra,sa),e.removeEventListener(`touchmove`,na,sa)))}},[r]);return(0,l.useEffect)(function(){if(t){var e=a.current;return o(e),function(){s(e)}}},[t,o,s]),function(e){a.current=e}}var la=function(e){var t=e.target;return t.ownerDocument.activeElement&&t.ownerDocument.activeElement.blur()},ua={name:`1kfdb0e`,styles:`position:fixed;left:0;bottom:0;right:0;top:0`};function da(e){var t=e.children,n=e.lockEnabled,r=e.captureEnabled,i=r===void 0?!0:r,a=e.onBottomArrive,o=e.onBottomLeave,s=e.onTopArrive,c=e.onTopLeave,u=Qi({isEnabled:i,onBottomArrive:a,onBottomLeave:o,onTopArrive:s,onTopLeave:c}),d=ca({isEnabled:n});return N(l.Fragment,null,n&&N(`div`,{onClick:la,css:ua}),t(function(e){u(e),d(e)}))}var fa={name:`1a0ro4n-requiredInput`,styles:`label:requiredInput;opacity:0;pointer-events:none;position:absolute;bottom:0;left:0;right:0;width:100%`},pa=function(e){var t=e.name,n=e.onFocus;return N(`input`,{required:!0,name:t,tabIndex:-1,"aria-hidden":`true`,onFocus:n,css:fa,value:``,onChange:function(){}})};function ma(e){return typeof window<`u`&&window.navigator!=null?e.test(window.navigator.userAgentData?.platform||window.navigator.platform):!1}function ha(){return ma(/^iPhone/i)}function ga(){return ma(/^Mac/i)}function _a(){return ma(/^iPad/i)||ga()&&navigator.maxTouchPoints>1}function va(){return ha()||_a()}function ya(){return ga()||va()}var ba=function(e){return e.label},xa=function(e){return e.label},Sa=function(e){return e.value},Ca=function(e){return!!e.isDisabled},wa={clearIndicator:Yr,container:Nr,control:ri,dropdownIndicator:qr,group:oi,groupHeading:ci,indicatorsContainer:Lr,indicatorSeparator:Zr,input:fi,loadingIndicator:ei,loadingMessage:Or,menu:br,menuList:wr,menuPortal:jr,multiValue:_i,multiValueLabel:vi,multiValueRemove:yi,noOptionsMessage:Dr,option:Ti,placeholder:Di,singleValue:ki,valueContainer:Fr},Ta={primary:`#2684FF`,primary75:`#4C9AFF`,primary50:`#B2D4FF`,primary25:`#DEEBFF`,danger:`#DE350B`,dangerLight:`#FFBDAD`,neutral0:`hsl(0, 0%, 100%)`,neutral5:`hsl(0, 0%, 95%)`,neutral10:`hsl(0, 0%, 90%)`,neutral20:`hsl(0, 0%, 80%)`,neutral30:`hsl(0, 0%, 70%)`,neutral40:`hsl(0, 0%, 60%)`,neutral50:`hsl(0, 0%, 50%)`,neutral60:`hsl(0, 0%, 40%)`,neutral70:`hsl(0, 0%, 30%)`,neutral80:`hsl(0, 0%, 20%)`,neutral90:`hsl(0, 0%, 10%)`},Ea=4,Da=4,Oa={borderRadius:Ea,colors:Ta,spacing:{baseUnit:Da,controlHeight:38,menuGutter:Da*2}},ka={"aria-live":`polite`,backspaceRemovesValue:!0,blurInputOnSelect:rr(),captureMenuScroll:!rr(),classNames:{},closeMenuOnSelect:!0,closeMenuOnScroll:!1,components:{},controlShouldRenderValue:!0,escapeClearsValue:!1,filterOption:Ji(),formatGroupLabel:ba,getOptionLabel:xa,getOptionValue:Sa,isDisabled:!1,isLoading:!1,isMulti:!1,isRtl:!1,isSearchable:!0,isOptionDisabled:Ca,loadingMessage:function(){return`Loading...`},maxMenuHeight:300,minMenuHeight:140,menuIsOpen:!1,menuPlacement:`bottom`,menuPosition:`absolute`,menuShouldBlockScroll:!1,menuShouldScrollIntoView:!ir(),noOptionsMessage:function(){return`No options`},openMenuOnFocus:!1,openMenuOnClick:!0,options:[],pageSize:5,placeholder:`Select...`,screenReaderStatus:function(e){var t=e.count;return`${t} result${t===1?``:`s`} available`},styles:{},tabIndex:0,tabSelectsValue:!0,unstyled:!1};function Aa(e,t,n,r){return{type:`option`,data:t,isDisabled:Va(e,t,n),isSelected:Ha(e,t,n),label:za(e,t),value:Ba(e,t),index:r}}function ja(e,t){return e.options.map(function(n,r){if(`options`in n){var i=n.options.map(function(n,r){return Aa(e,n,t,r)}).filter(function(t){return Fa(e,t)});return i.length>0?{type:`group`,data:n,options:i,index:r}:void 0}var a=Aa(e,n,t,r);return Fa(e,a)?a:void 0}).filter(lr)}function Ma(e){return e.reduce(function(e,t){return t.type===`group`?e.push.apply(e,ue(t.options.map(function(e){return e.data}))):e.push(t.data),e},[])}function Na(e,t){return e.reduce(function(e,n){return n.type===`group`?e.push.apply(e,ue(n.options.map(function(e){return{data:e.data,id:`${t}-${n.index}-${e.index}`}}))):e.push({data:n.data,id:`${t}-${n.index}`}),e},[])}function Pa(e,t){return Ma(ja(e,t))}function Fa(e,t){var n=e.inputValue,r=n===void 0?``:n,i=t.data,a=t.isSelected,o=t.label,s=t.value;return(!Wa(e)||!a)&&Ua(e,{label:o,value:s,data:i},r)}function Ia(e,t){var n=e.focusedValue,r=e.selectValue.indexOf(n);if(r>-1){if(t.indexOf(n)>-1)return n;if(r<t.length)return t[r]}return null}function La(e,t){var n=e.focusedOption;return n&&t.indexOf(n)>-1?n:t[0]}var Ra=function(e,t){return e.find(function(e){return e.data===t})?.id||null},za=function(e,t){return e.getOptionLabel(t)},Ba=function(e,t){return e.getOptionValue(t)};function Va(e,t,n){return typeof e.isOptionDisabled==`function`?e.isOptionDisabled(t,n):!1}function Ha(e,t,n){if(n.indexOf(t)>-1)return!0;if(typeof e.isOptionSelected==`function`)return e.isOptionSelected(t,n);var r=Ba(e,t);return n.some(function(t){return Ba(e,t)===r})}function Ua(e,t,n){return e.filterOption?e.filterOption(t,n):!0}var Wa=function(e){var t=e.hideSelectedOptions,n=e.isMulti;return t===void 0?n:t},Ga=1,Ka=function(e){re(n,e);var t=O(n);function n(e){var r;if(ee(this,n),r=t.call(this,e),r.state={ariaSelection:null,focusedOption:null,focusedOptionId:null,focusableOptionsWithIds:[],focusedValue:null,inputIsHidden:!1,isFocused:!1,selectValue:[],clearFocusValueOnUpdate:!1,prevWasFocused:!1,inputIsHiddenAfterUpdate:void 0,prevProps:void 0,instancePrefix:``,isAppleDevice:!1},r.blockOptionHover=!1,r.isComposing=!1,r.commonProps=void 0,r.initialTouchX=0,r.initialTouchY=0,r.openAfterFocus=!1,r.scrollToFocusedOptionOnUpdate=!1,r.userIsDragging=void 0,r.controlRef=null,r.getControlRef=function(e){r.controlRef=e},r.focusedOptionRef=null,r.getFocusedOptionRef=function(e){r.focusedOptionRef=e},r.menuListRef=null,r.getMenuListRef=function(e){r.menuListRef=e},r.inputRef=null,r.getInputRef=function(e){r.inputRef=e},r.focus=r.focusInput,r.blur=r.blurInput,r.onChange=function(e,t){var n=r.props,i=n.onChange;t.name=n.name,r.ariaOnChange(e,t),i(e,t)},r.setValue=function(e,t,n){var i=r.props,a=i.closeMenuOnSelect,o=i.isMulti,s=i.inputValue;r.onInputChange(``,{action:`set-value`,prevInputValue:s}),a&&(r.setState({inputIsHiddenAfterUpdate:!o}),r.onMenuClose()),r.setState({clearFocusValueOnUpdate:!0}),r.onChange(e,{action:t,option:n})},r.selectOption=function(e){var t=r.props,n=t.blurInputOnSelect,i=t.isMulti,a=t.name,o=r.state.selectValue,s=i&&r.isOptionSelected(e,o),c=r.isOptionDisabled(e,o);if(s){var l=r.getOptionValue(e);r.setValue(pr(o.filter(function(e){return r.getOptionValue(e)!==l})),`deselect-option`,e)}else if(!c)i?r.setValue(pr([].concat(ue(o),[e])),`select-option`,e):r.setValue(fr(e),`select-option`);else{r.ariaOnChange(fr(e),{action:`select-option`,option:e,name:a});return}n&&r.blurInput()},r.removeValue=function(e){var t=r.props.isMulti,n=r.state.selectValue,i=r.getOptionValue(e),a=n.filter(function(e){return r.getOptionValue(e)!==i}),o=dr(t,a,a[0]||null);r.onChange(o,{action:`remove-value`,removedValue:e}),r.focusInput()},r.clearValue=function(){var e=r.state.selectValue;r.onChange(dr(r.props.isMulti,[],null),{action:`clear`,removedValues:e})},r.popValue=function(){var e=r.props.isMulti,t=r.state.selectValue,n=t[t.length-1],i=t.slice(0,t.length-1),a=dr(e,i,i[0]||null);n&&r.onChange(a,{action:`pop-value`,removedValue:n})},r.getFocusedOptionId=function(e){return Ra(r.state.focusableOptionsWithIds,e)},r.getFocusableOptionsWithIds=function(){return Na(ja(r.props,r.state.selectValue),r.getElementId(`option`))},r.getValue=function(){return r.state.selectValue},r.cx=function(){var e=[...arguments];return Gn.apply(void 0,[r.props.classNamePrefix].concat(e))},r.getOptionLabel=function(e){return za(r.props,e)},r.getOptionValue=function(e){return Ba(r.props,e)},r.getStyles=function(e,t){var n=r.props.unstyled,i=wa[e](t,n);i.boxSizing=`border-box`;var a=r.props.styles[e];return a?a(i,t):i},r.getClassNames=function(e,t){var n;return(n=r.props.classNames)[e]?.call(n,t)},r.getElementId=function(e){return`${r.state.instancePrefix}-${e}`},r.getComponents=function(){return ji(r.props)},r.buildCategorizedOptions=function(){return ja(r.props,r.state.selectValue)},r.getCategorizedOptions=function(){return r.props.menuIsOpen?r.buildCategorizedOptions():[]},r.buildFocusableOptions=function(){return Ma(r.buildCategorizedOptions())},r.getFocusableOptions=function(){return r.props.menuIsOpen?r.buildFocusableOptions():[]},r.ariaOnChange=function(e,t){r.setState({ariaSelection:h({value:e},t)})},r.onMenuMouseDown=function(e){e.button===0&&(e.stopPropagation(),e.preventDefault(),r.focusInput())},r.onMenuMouseMove=function(e){r.blockOptionHover=!1},r.onControlMouseDown=function(e){if(!e.defaultPrevented){var t=r.props.openMenuOnClick;r.state.isFocused?r.props.menuIsOpen?e.target.tagName!==`INPUT`&&e.target.tagName!==`TEXTAREA`&&r.onMenuClose():t&&r.openMenu(`first`):(t&&(r.openAfterFocus=!0),r.focusInput()),e.target.tagName!==`INPUT`&&e.target.tagName!==`TEXTAREA`&&e.preventDefault()}},r.onDropdownIndicatorMouseDown=function(e){if(!(e&&e.type===`mousedown`&&e.button!==0)&&!r.props.isDisabled){var t=r.props,n=t.isMulti,i=t.menuIsOpen;r.focusInput(),i?(r.setState({inputIsHiddenAfterUpdate:!n}),r.onMenuClose()):r.openMenu(`first`),e.preventDefault()}},r.onClearIndicatorMouseDown=function(e){e&&e.type===`mousedown`&&e.button!==0||(r.clearValue(),e.preventDefault(),r.openAfterFocus=!1,e.type===`touchend`?r.focusInput():setTimeout(function(){return r.focusInput()}))},r.onScroll=function(e){typeof r.props.closeMenuOnScroll==`boolean`?e.target instanceof HTMLElement&&Jn(e.target)&&r.props.onMenuClose():typeof r.props.closeMenuOnScroll==`function`&&r.props.closeMenuOnScroll(e)&&r.props.onMenuClose()},r.onCompositionStart=function(){r.isComposing=!0},r.onCompositionEnd=function(){r.isComposing=!1},r.onTouchStart=function(e){var t=e.touches,n=t&&t.item(0);n&&(r.initialTouchX=n.clientX,r.initialTouchY=n.clientY,r.userIsDragging=!1)},r.onTouchMove=function(e){var t=e.touches,n=t&&t.item(0);if(n){var i=Math.abs(n.clientX-r.initialTouchX),a=Math.abs(n.clientY-r.initialTouchY),o=5;r.userIsDragging=i>o||a>o}},r.onTouchEnd=function(e){r.userIsDragging||(r.controlRef&&!r.controlRef.contains(e.target)&&r.menuListRef&&!r.menuListRef.contains(e.target)&&r.blurInput(),r.initialTouchX=0,r.initialTouchY=0)},r.onControlTouchEnd=function(e){r.userIsDragging||r.onControlMouseDown(e)},r.onClearIndicatorTouchEnd=function(e){r.userIsDragging||r.onClearIndicatorMouseDown(e)},r.onDropdownIndicatorTouchEnd=function(e){r.userIsDragging||r.onDropdownIndicatorMouseDown(e)},r.handleInputChange=function(e){var t=r.props.inputValue,n=e.currentTarget.value;r.setState({inputIsHiddenAfterUpdate:!1}),r.onInputChange(n,{action:`input-change`,prevInputValue:t}),r.props.menuIsOpen||r.onMenuOpen()},r.onInputFocus=function(e){r.props.onFocus&&r.props.onFocus(e),r.setState({inputIsHiddenAfterUpdate:!1,isFocused:!0}),(r.openAfterFocus||r.props.openMenuOnFocus)&&r.openMenu(`first`),r.openAfterFocus=!1},r.onInputBlur=function(e){var t=r.props.inputValue;if(r.menuListRef&&r.menuListRef.contains(document.activeElement)){r.inputRef.focus();return}r.props.onBlur&&r.props.onBlur(e),r.onInputChange(``,{action:`input-blur`,prevInputValue:t}),r.onMenuClose(),r.setState({focusedValue:null,isFocused:!1})},r.onOptionHover=function(e){if(!(r.blockOptionHover||r.state.focusedOption===e)){var t=r.getFocusableOptions().indexOf(e);r.setState({focusedOption:e,focusedOptionId:t>-1?r.getFocusedOptionId(e):null})}},r.shouldHideSelectedOptions=function(){return Wa(r.props)},r.onValueInputFocus=function(e){e.preventDefault(),e.stopPropagation(),r.focus()},r.onKeyDown=function(e){var t=r.props,n=t.isMulti,i=t.backspaceRemovesValue,a=t.escapeClearsValue,o=t.inputValue,s=t.isClearable,c=t.isDisabled,l=t.menuIsOpen,u=t.onKeyDown,d=t.tabSelectsValue,f=t.openMenuOnFocus,p=r.state,m=p.focusedOption,h=p.focusedValue,g=p.selectValue;if(!c&&!(typeof u==`function`&&(u(e),e.defaultPrevented))){switch(r.blockOptionHover=!0,e.key){case`ArrowLeft`:if(!n||o)return;r.focusValue(`previous`);break;case`ArrowRight`:if(!n||o)return;r.focusValue(`next`);break;case`Delete`:case`Backspace`:if(o)return;if(h)r.removeValue(h);else{if(!i)return;n?r.popValue():s&&r.clearValue()}break;case`Tab`:if(r.isComposing||e.shiftKey||!l||!d||!m||f&&r.isOptionSelected(m,g))return;r.selectOption(m);break;case`Enter`:if(e.keyCode===229)break;if(l){if(!m||r.isComposing)return;r.selectOption(m);break}return;case`Escape`:l?(r.setState({inputIsHiddenAfterUpdate:!1}),r.onInputChange(``,{action:`menu-close`,prevInputValue:o}),r.onMenuClose()):s&&a&&r.clearValue();break;case` `:if(o)return;if(!l){r.openMenu(`first`);break}if(!m)return;r.selectOption(m);break;case`ArrowUp`:l?r.focusOption(`up`):r.openMenu(`last`);break;case`ArrowDown`:l?r.focusOption(`down`):r.openMenu(`first`);break;case`PageUp`:if(!l)return;r.focusOption(`pageup`);break;case`PageDown`:if(!l)return;r.focusOption(`pagedown`);break;case`Home`:if(!l)return;r.focusOption(`first`);break;case`End`:if(!l)return;r.focusOption(`last`);break;default:return}e.preventDefault()}},r.state.instancePrefix=`react-select-`+(r.props.instanceId||++Ga),r.state.selectValue=Kn(e.value),e.menuIsOpen&&r.state.selectValue.length){var i=r.getFocusableOptionsWithIds(),a=r.buildFocusableOptions(),o=a.indexOf(r.state.selectValue[0]);r.state.focusableOptionsWithIds=i,r.state.focusedOption=a[o],r.state.focusedOptionId=Ra(i,a[o])}return r}return te(n,[{key:`componentDidMount`,value:function(){this.startListeningComposition(),this.startListeningToTouch(),this.props.closeMenuOnScroll&&document&&document.addEventListener&&document.addEventListener(`scroll`,this.onScroll,!0),this.props.autoFocus&&this.focusInput(),this.props.menuIsOpen&&this.state.focusedOption&&this.menuListRef&&this.focusedOptionRef&&tr(this.menuListRef,this.focusedOptionRef),ya()&&this.setState({isAppleDevice:!0})}},{key:`componentDidUpdate`,value:function(e){var t=this.props,n=t.isDisabled,r=t.menuIsOpen,i=this.state.isFocused;(i&&!n&&e.isDisabled||i&&r&&!e.menuIsOpen)&&this.focusInput(),i&&n&&!e.isDisabled?this.setState({isFocused:!1},this.onMenuClose):!i&&!n&&e.isDisabled&&this.inputRef===document.activeElement&&this.setState({isFocused:!0}),this.menuListRef&&this.focusedOptionRef&&this.scrollToFocusedOptionOnUpdate&&(tr(this.menuListRef,this.focusedOptionRef),this.scrollToFocusedOptionOnUpdate=!1)}},{key:`componentWillUnmount`,value:function(){this.stopListeningComposition(),this.stopListeningToTouch(),document.removeEventListener(`scroll`,this.onScroll,!0)}},{key:`onMenuOpen`,value:function(){this.props.onMenuOpen()}},{key:`onMenuClose`,value:function(){this.onInputChange(``,{action:`menu-close`,prevInputValue:this.props.inputValue}),this.props.onMenuClose()}},{key:`onInputChange`,value:function(e,t){this.props.onInputChange(e,t)}},{key:`focusInput`,value:function(){this.inputRef&&this.inputRef.focus()}},{key:`blurInput`,value:function(){this.inputRef&&this.inputRef.blur()}},{key:`openMenu`,value:function(e){var t=this,n=this.state,r=n.selectValue,i=n.isFocused,a=this.buildFocusableOptions(),o=e===`first`?0:a.length-1;if(!this.props.isMulti){var s=a.indexOf(r[0]);s>-1&&(o=s)}this.scrollToFocusedOptionOnUpdate=!(i&&this.menuListRef),this.setState({inputIsHiddenAfterUpdate:!1,focusedValue:null,focusedOption:a[o],focusedOptionId:this.getFocusedOptionId(a[o])},function(){return t.onMenuOpen()})}},{key:`focusValue`,value:function(e){var t=this.state,n=t.selectValue,r=t.focusedValue;if(this.props.isMulti){this.setState({focusedOption:null});var i=n.indexOf(r);r||(i=-1);var a=n.length-1,o=-1;if(n.length){switch(e){case`previous`:o=i===0?0:i===-1?a:i-1;break;case`next`:i>-1&&i<a&&(o=i+1);break}this.setState({inputIsHidden:o!==-1,focusedValue:n[o]})}}}},{key:`focusOption`,value:function(){var e=arguments.length>0&&arguments[0]!==void 0?arguments[0]:`first`,t=this.props.pageSize,n=this.state.focusedOption,r=this.getFocusableOptions();if(r.length){var i=0,a=r.indexOf(n);n||(a=-1),e===`up`?i=a>0?a-1:r.length-1:e===`down`?i=(a+1)%r.length:e===`pageup`?(i=a-t,i<0&&(i=0)):e===`pagedown`?(i=a+t,i>r.length-1&&(i=r.length-1)):e===`last`&&(i=r.length-1),this.scrollToFocusedOptionOnUpdate=!0,this.setState({focusedOption:r[i],focusedValue:null,focusedOptionId:this.getFocusedOptionId(r[i])})}}},{key:`getTheme`,value:function(){return this.props.theme?typeof this.props.theme==`function`?this.props.theme(Oa):h(h({},Oa),this.props.theme):Oa}},{key:`getCommonProps`,value:function(){var e=this.clearValue,t=this.cx,n=this.getStyles,r=this.getClassNames,i=this.getValue,a=this.selectOption,o=this.setValue,s=this.props,c=s.isMulti,l=s.isRtl,u=s.options;return{clearValue:e,cx:t,getStyles:n,getClassNames:r,getValue:i,hasValue:this.hasValue(),isMulti:c,isRtl:l,options:u,selectOption:a,selectProps:s,setValue:o,theme:this.getTheme()}}},{key:`hasValue`,value:function(){return this.state.selectValue.length>0}},{key:`hasOptions`,value:function(){return!!this.getFocusableOptions().length}},{key:`isClearable`,value:function(){var e=this.props,t=e.isClearable,n=e.isMulti;return t===void 0?n:t}},{key:`isOptionDisabled`,value:function(e,t){return Va(this.props,e,t)}},{key:`isOptionSelected`,value:function(e,t){return Ha(this.props,e,t)}},{key:`filterOption`,value:function(e,t){return Ua(this.props,e,t)}},{key:`formatOptionLabel`,value:function(e,t){if(typeof this.props.formatOptionLabel==`function`){var n=this.props.inputValue,r=this.state.selectValue;return this.props.formatOptionLabel(e,{context:t,inputValue:n,selectValue:r})}else return this.getOptionLabel(e)}},{key:`formatGroupLabel`,value:function(e){return this.props.formatGroupLabel(e)}},{key:`startListeningComposition`,value:function(){document&&document.addEventListener&&(document.addEventListener(`compositionstart`,this.onCompositionStart,!1),document.addEventListener(`compositionend`,this.onCompositionEnd,!1))}},{key:`stopListeningComposition`,value:function(){document&&document.removeEventListener&&(document.removeEventListener(`compositionstart`,this.onCompositionStart),document.removeEventListener(`compositionend`,this.onCompositionEnd))}},{key:`startListeningToTouch`,value:function(){document&&document.addEventListener&&(document.addEventListener(`touchstart`,this.onTouchStart,!1),document.addEventListener(`touchmove`,this.onTouchMove,!1),document.addEventListener(`touchend`,this.onTouchEnd,!1))}},{key:`stopListeningToTouch`,value:function(){document&&document.removeEventListener&&(document.removeEventListener(`touchstart`,this.onTouchStart),document.removeEventListener(`touchmove`,this.onTouchMove),document.removeEventListener(`touchend`,this.onTouchEnd))}},{key:`renderInput`,value:function(){var e=this.props,t=e.isDisabled,n=e.isSearchable,r=e.inputId,i=e.inputValue,a=e.tabIndex,o=e.form,s=e.menuIsOpen,c=e.required,u=this.getComponents().Input,d=this.state,f=d.inputIsHidden,p=d.ariaSelection,m=this.commonProps,g=r||this.getElementId(`input`),_=h(h(h({"aria-autocomplete":`list`,"aria-expanded":s,"aria-haspopup":!0,"aria-errormessage":this.props[`aria-errormessage`],"aria-invalid":this.props[`aria-invalid`],"aria-label":this.props[`aria-label`],"aria-labelledby":this.props[`aria-labelledby`],"aria-required":c,role:`combobox`,"aria-activedescendant":this.state.isAppleDevice?void 0:this.state.focusedOptionId||``},s&&{"aria-controls":this.getElementId(`listbox`)}),!n&&{"aria-readonly":!0}),this.hasValue()?p?.action===`initial-input-focus`&&{"aria-describedby":this.getElementId(`live-region`)}:{"aria-describedby":this.getElementId(`placeholder`)});return n?l.createElement(u,E({},m,{autoCapitalize:`none`,autoComplete:`off`,autoCorrect:`off`,id:g,innerRef:this.getInputRef,isDisabled:t,isHidden:f,onBlur:this.onInputBlur,onChange:this.handleInputChange,onFocus:this.onInputFocus,spellCheck:`false`,tabIndex:a,form:o,type:`text`,value:i},_)):l.createElement(Xi,E({id:g,innerRef:this.getInputRef,onBlur:this.onInputBlur,onChange:Un,onFocus:this.onInputFocus,disabled:t,tabIndex:a,inputMode:`none`,form:o,value:``},_))}},{key:`renderPlaceholderOrValue`,value:function(){var e=this,t=this.getComponents(),n=t.MultiValue,r=t.MultiValueContainer,i=t.MultiValueLabel,a=t.MultiValueRemove,o=t.SingleValue,s=t.Placeholder,c=this.commonProps,u=this.props,d=u.controlShouldRenderValue,f=u.isDisabled,p=u.isMulti,m=u.inputValue,h=u.placeholder,g=this.state,_=g.selectValue,v=g.focusedValue,y=g.isFocused;if(!this.hasValue()||!d)return m?null:l.createElement(s,E({},c,{key:`placeholder`,isDisabled:f,isFocused:y,innerProps:{id:this.getElementId(`placeholder`)}}),h);if(p)return _.map(function(t,o){var s=t===v,u=`${e.getOptionLabel(t)}-${e.getOptionValue(t)}`;return l.createElement(n,E({},c,{components:{Container:r,Label:i,Remove:a},isFocused:s,isDisabled:f,key:u,index:o,removeProps:{onClick:function(){return e.removeValue(t)},onTouchEnd:function(){return e.removeValue(t)},onMouseDown:function(e){e.preventDefault()}},data:t}),e.formatOptionLabel(t,`value`))});if(m)return null;var b=_[0];return l.createElement(o,E({},c,{data:b,isDisabled:f}),this.formatOptionLabel(b,`value`))}},{key:`renderClearIndicator`,value:function(){var e=this.getComponents().ClearIndicator,t=this.commonProps,n=this.props,r=n.isDisabled,i=n.isLoading,a=this.state.isFocused;if(!this.isClearable()||!e||r||!this.hasValue()||i)return null;var o={onMouseDown:this.onClearIndicatorMouseDown,onTouchEnd:this.onClearIndicatorTouchEnd,"aria-hidden":`true`};return l.createElement(e,E({},t,{innerProps:o,isFocused:a}))}},{key:`renderLoadingIndicator`,value:function(){var e=this.getComponents().LoadingIndicator,t=this.commonProps,n=this.props,r=n.isDisabled,i=n.isLoading,a=this.state.isFocused;return!e||!i?null:l.createElement(e,E({},t,{innerProps:{"aria-hidden":`true`},isDisabled:r,isFocused:a}))}},{key:`renderIndicatorSeparator`,value:function(){var e=this.getComponents(),t=e.DropdownIndicator,n=e.IndicatorSeparator;if(!t||!n)return null;var r=this.commonProps,i=this.props.isDisabled,a=this.state.isFocused;return l.createElement(n,E({},r,{isDisabled:i,isFocused:a}))}},{key:`renderDropdownIndicator`,value:function(){var e=this.getComponents().DropdownIndicator;if(!e)return null;var t=this.commonProps,n=this.props.isDisabled,r=this.state.isFocused,i={onMouseDown:this.onDropdownIndicatorMouseDown,onTouchEnd:this.onDropdownIndicatorTouchEnd,"aria-hidden":`true`};return l.createElement(e,E({},t,{innerProps:i,isDisabled:n,isFocused:r}))}},{key:`renderMenu`,value:function(){var e=this,t=this.getComponents(),n=t.Group,r=t.GroupHeading,i=t.Menu,a=t.MenuList,o=t.MenuPortal,s=t.LoadingMessage,c=t.NoOptionsMessage,u=t.Option,d=this.commonProps,f=this.state.focusedOption,p=this.props,m=p.captureMenuScroll,h=p.inputValue,g=p.isLoading,_=p.loadingMessage,v=p.minMenuHeight,y=p.maxMenuHeight,b=p.menuIsOpen,x=p.menuPlacement,S=p.menuPosition,C=p.menuPortalTarget,w=p.menuShouldBlockScroll,T=p.menuShouldScrollIntoView,ee=p.noOptionsMessage,D=p.onMenuScrollToTop,te=p.onMenuScrollToBottom;if(!b)return null;var ne=function(t,n){var r=t.type,i=t.data,a=t.isDisabled,o=t.isSelected,s=t.label,c=t.value,p=f===i,m=a?void 0:function(){return e.onOptionHover(i)},h=a?void 0:function(){return e.selectOption(i)},g=`${e.getElementId(`option`)}-${n}`,_={id:g,onClick:h,onMouseMove:m,onMouseOver:m,tabIndex:-1,role:`option`,"aria-selected":e.state.isAppleDevice?void 0:o};return l.createElement(u,E({},d,{innerProps:_,data:i,isDisabled:a,isSelected:o,key:g,label:s,type:r,value:c,isFocused:p,innerRef:p?e.getFocusedOptionRef:void 0}),e.formatOptionLabel(t.data,`menu`))},re;if(this.hasOptions())re=this.getCategorizedOptions().map(function(t){if(t.type===`group`){var i=t.data,a=t.options,o=t.index,s=`${e.getElementId(`group`)}-${o}`,c=`${s}-heading`;return l.createElement(n,E({},d,{key:s,data:i,options:a,Heading:r,headingProps:{id:c,data:t.data},label:e.formatGroupLabel(t.data)}),t.options.map(function(e){return ne(e,`${o}-${e.index}`)}))}else if(t.type===`option`)return ne(t,`${t.index}`)});else if(g){var ie=_({inputValue:h});if(ie===null)return null;re=l.createElement(s,d,ie)}else{var ae=ee({inputValue:h});if(ae===null)return null;re=l.createElement(c,d,ae)}var oe={minMenuHeight:v,maxMenuHeight:y,menuPlacement:x,menuPosition:S,menuShouldScrollIntoView:T},se=l.createElement(Sr,E({},d,oe),function(t){var n=t.ref,r=t.placerProps,o=r.placement,s=r.maxHeight;return l.createElement(i,E({},d,oe,{innerRef:n,innerProps:{onMouseDown:e.onMenuMouseDown,onMouseMove:e.onMenuMouseMove},isLoading:g,placement:o}),l.createElement(da,{captureEnabled:m,onTopArrive:D,onBottomArrive:te,lockEnabled:w},function(t){return l.createElement(a,E({},d,{innerRef:function(n){e.getMenuListRef(n),t(n)},innerProps:{role:`listbox`,"aria-multiselectable":d.isMulti,id:e.getElementId(`listbox`)},isLoading:g,maxHeight:s,focusedOption:f}),re)}))});return C||S===`fixed`?l.createElement(o,E({},d,{appendTo:C,controlElement:this.controlRef,menuPlacement:x,menuPosition:S}),se):se}},{key:`renderFormField`,value:function(){var e=this,t=this.props,n=t.delimiter,r=t.isDisabled,i=t.isMulti,a=t.name,o=t.required,s=this.state.selectValue;if(o&&!this.hasValue()&&!r)return l.createElement(pa,{name:a,onFocus:this.onValueInputFocus});if(!(!a||r))if(i)if(n){var c=s.map(function(t){return e.getOptionValue(t)}).join(n);return l.createElement(`input`,{name:a,type:`hidden`,value:c})}else{var u=s.length>0?s.map(function(t,n){return l.createElement(`input`,{key:`i-${n}`,name:a,type:`hidden`,value:e.getOptionValue(t)})}):l.createElement(`input`,{name:a,type:`hidden`,value:``});return l.createElement(`div`,null,u)}else{var d=s[0]?this.getOptionValue(s[0]):``;return l.createElement(`input`,{name:a,type:`hidden`,value:d})}}},{key:`renderLiveRegion`,value:function(){var e=this.commonProps,t=this.state,n=t.ariaSelection,r=t.focusedOption,i=t.focusedValue,a=t.isFocused,o=t.selectValue,s=this.getFocusableOptions();return l.createElement(I,E({},e,{id:this.getElementId(`live-region`),ariaSelection:n,focusedOption:r,focusedValue:i,isFocused:a,selectValue:o,focusableOptions:s,isAppleDevice:this.state.isAppleDevice}))}},{key:`render`,value:function(){var e=this.getComponents(),t=e.Control,n=e.IndicatorsContainer,r=e.SelectContainer,i=e.ValueContainer,a=this.props,o=a.className,s=a.id,c=a.isDisabled,u=a.menuIsOpen,d=this.state.isFocused,f=this.commonProps=this.getCommonProps();return l.createElement(r,E({},f,{className:o,innerProps:{id:s,onKeyDown:this.onKeyDown},isDisabled:c,isFocused:d}),this.renderLiveRegion(),l.createElement(t,E({},f,{innerRef:this.getControlRef,innerProps:{onMouseDown:this.onControlMouseDown,onTouchEnd:this.onControlTouchEnd},isDisabled:c,isFocused:d,menuIsOpen:u}),l.createElement(i,E({},f,{isDisabled:c}),this.renderPlaceholderOrValue(),this.renderInput()),l.createElement(n,E({},f,{isDisabled:c}),this.renderClearIndicator(),this.renderLoadingIndicator(),this.renderIndicatorSeparator(),this.renderDropdownIndicator())),this.renderMenu(),this.renderFormField())}}],[{key:`getDerivedStateFromProps`,value:function(e,t){var n=t.prevProps,r=t.clearFocusValueOnUpdate,i=t.inputIsHiddenAfterUpdate,a=t.ariaSelection,o=t.isFocused,s=t.prevWasFocused,c=t.instancePrefix,l=e.options,u=e.value,d=e.menuIsOpen,f=e.inputValue,p=e.isMulti,m=Kn(u),g={};if(n&&(u!==n.value||l!==n.options||d!==n.menuIsOpen||f!==n.inputValue)){var _=d?Pa(e,m):[],v=d?Na(ja(e,m),`${c}-option`):[],y=r?Ia(t,m):null,b=La(t,_);g={selectValue:m,focusedOption:b,focusedOptionId:Ra(v,b),focusableOptionsWithIds:v,focusedValue:y,clearFocusValueOnUpdate:!1}}var x=i!=null&&e!==n?{inputIsHidden:i,inputIsHiddenAfterUpdate:void 0}:{},S=a,C=o&&s;return o&&!C&&(S={value:dr(p,m,m[0]||null),options:m,action:`initial-input-focus`},C=!s),a?.action===`initial-input-focus`&&(S=null),h(h(h({},g),x),{},{prevProps:e,ariaSelection:S,prevWasFocused:C})}}]),n}(l.Component);Ka.defaultProps=ka,o();var qa=(0,l.forwardRef)(function(e,t){var n=T(e);return l.createElement(Ka,E({ref:t},n))});const Ja=()=>{let e=new Date;return`${e.toLocaleDateString(`id-ID`)} ${String(e.getHours()).padStart(2,`0`)}:${String(e.getMinutes()).padStart(2,`0`)}`},Ya=()=>new Date().toLocaleDateString(`id-ID`),Xa=()=>[{id:1,case:`Internet Lambat/Tidak bisa internet`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`])),ei=function(e,t){var n=e.isFocused,r=e.size,i=e.theme,a=i.colors,o=i.spacing.baseUnit;return h({label:`loadingIndicator`,display:`flex`,transition:`color 150ms`,alignSelf:`center`,fontSize:r,lineHeight:1,marginRight:r,textAlign:`center`,verticalAlign:`middle`},t?{}:{color:n?a.neutral60:a.neutral20,padding:o*2})},ti=function(e){var t=e.delay,n=e.offset;return N(`span`,{css:nn({animation:`${$r} 1s ease-in-out ${t}ms infinite;`,backgroundColor:`currentColor`,borderRadius:`1em`,display:`inline-block`,marginLeft:n?`1em`:void 0,height:`1em`,verticalAlign:`top`,width:`1em`},``,``)})},ni=function(e){var t=e.innerProps,n=e.isRtl,r=e.size,i=r===void 0?4:r;return N(`div`,E({},P(h(h({},C(e,Vr)),{},{innerProps:t,isRtl:n,size:i}),`loadingIndicator`,{indicator:!0,"loading-indicator":!0}),t),N(ti,{delay:0,offset:n}),N(ti,{delay:160,offset:!0}),N(ti,{delay:320,offset:!n}))},ri=function(e,t){var n=e.isDisabled,r=e.isFocused,i=e.theme,a=i.colors,o=i.borderRadius,s=i.spacing;return h({label:`control`,alignItems:`center`,cursor:`default`,display:`flex`,flexWrap:`wrap`,justifyContent:`space-between`,minHeight:s.controlHeight,outline:`0 !important`,position:`relative`,transition:`all 100ms`},t?{}:{backgroundColor:n?a.neutral5:a.neutral0,borderColor:n?a.neutral10:r?a.primary:a.neutral20,borderRadius:o,borderStyle:`solid`,borderWidth:1,boxShadow:r?`0 0 0 1px ${a.primary}`:void 0,"&:hover":{borderColor:r?a.primary:a.neutral30}})},ii=function(e){var t=e.children,n=e.isDisabled,r=e.isFocused,i=e.innerRef,a=e.innerProps,o=e.menuIsOpen;return N(`div`,E({ref:i},P(e,`control`,{control:!0,"control--is-disabled":n,"control--is-focused":r,"control--menu-is-open":o}),a,{"aria-disabled":n||void 0}),t)},ai=[`data`],oi=function(e,t){var n=e.theme.spacing;return t?{}:{paddingBottom:n.baseUnit*2,paddingTop:n.baseUnit*2}},si=function(e){var t=e.children,n=e.cx,r=e.getStyles,i=e.getClassNames,a=e.Heading,o=e.headingProps,s=e.innerProps,c=e.label,l=e.theme,u=e.selectProps;return N(`div`,E({},P(e,`group`,{group:!0}),s),N(a,E({},o,{selectProps:u,theme:l,getStyles:r,getClassNames:i,cx:n}),c),N(`div`,null,t))},ci=function(e,t){var n=e.theme,r=n.colors,i=n.spacing;return h({label:`group`,cursor:`default`,display:`block`},t?{}:{color:r.neutral40,fontSize:`75%`,fontWeight:500,marginBottom:`0.25em`,paddingLeft:i.baseUnit*3,paddingRight:i.baseUnit*3,textTransform:`uppercase`})},li=function(e){var t=qn(e);t.data;var n=C(t,ai);return N(`div`,E({},P(e,`groupHeading`,{"group-heading":!0}),n))},ui=si,di=[`innerRef`,`isDisabled`,`isHidden`,`inputClassName`],fi=function(e,t){var n=e.isDisabled,r=e.value,i=e.theme,a=i.spacing,o=i.colors;return h(h({visibility:n?`hidden`:`visible`,transform:r?`translateZ(0)`:``},mi),t?{}:{margin:a.baseUnit/2,paddingBottom:a.baseUnit/2,paddingTop:a.baseUnit/2,color:o.neutral80})},pi={gridArea:`1 / 2`,font:`inherit`,minWidth:`2px`,border:0,margin:0,outline:0,padding:0},mi={flex:`1 1 auto`,display:`inline-grid`,gridArea:`1 / 1 / 2 / 3`,gridTemplateColumns:`0 min-content`,"&:after":h({content:`attr(data-value) " "`,visibility:`hidden`,whiteSpace:`pre`},pi)},hi=function(e){return h({label:`input`,color:`inherit`,background:0,opacity:e?0:1,width:`100%`},pi)},gi=function(e){var t=e.cx,n=e.value,r=qn(e),i=r.innerRef,a=r.isDisabled,o=r.isHidden,s=r.inputClassName,c=C(r,di);return N(`div`,E({},P(e,`input`,{"input-container":!0}),{"data-value":n||``}),N(`input`,E({className:t({input:!0},s),ref:i,style:hi(o),disabled:a},c)))},_i=function(e,t){var n=e.theme,r=n.spacing,i=n.borderRadius,a=n.colors;return h({label:`multiValue`,display:`flex`,minWidth:0},t?{}:{backgroundColor:a.neutral10,borderRadius:i/2,margin:r.baseUnit/2})},vi=function(e,t){var n=e.theme,r=n.borderRadius,i=n.colors,a=e.cropWithEllipsis;return h({overflow:`hidden`,textOverflow:a||a===void 0?`ellipsis`:void 0,whiteSpace:`nowrap`},t?{}:{borderRadius:r/2,color:i.neutral80,fontSize:`85%`,padding:3,paddingLeft:6})},yi=function(e,t){var n=e.theme,r=n.spacing,i=n.borderRadius,a=n.colors,o=e.isFocused;return h({alignItems:`center`,display:`flex`},t?{}:{borderRadius:i/2,backgroundColor:o?a.dangerLight:void 0,paddingLeft:r.baseUnit,paddingRight:r.baseUnit,":hover":{backgroundColor:a.dangerLight,color:a.danger}})},bi=function(e){var t=e.children,n=e.innerProps;return N(`div`,n,t)},xi=bi,Si=bi;function Ci(e){var t=e.children,n=e.innerProps;return N(`div`,E({role:`button`},n),t||N(Wr,{size:14}))}var wi=function(e){var t=e.children,n=e.components,r=e.data,i=e.innerProps,a=e.isDisabled,o=e.removeProps,s=e.selectProps,c=n.Container,l=n.Label,u=n.Remove;return N(c,{data:r,innerProps:h(h({},P(e,`multiValue`,{"multi-value":!0,"multi-value--is-disabled":a})),i),selectProps:s},N(l,{data:r,innerProps:h({},P(e,`multiValueLabel`,{"multi-value__label":!0})),selectProps:s},t),N(u,{data:r,innerProps:h(h({},P(e,`multiValueRemove`,{"multi-value__remove":!0})),{},{"aria-label":`Remove ${t||`option`}`},o),selectProps:s}))},Ti=function(e,t){var n=e.isDisabled,r=e.isFocused,i=e.isSelected,a=e.theme,o=a.spacing,s=a.colors;return h({label:`option`,cursor:`default`,display:`block`,fontSize:`inherit`,width:`100%`,userSelect:`none`,WebkitTapHighlightColor:`rgba(0, 0, 0, 0)`},t?{}:{backgroundColor:i?s.primary:r?s.primary25:`transparent`,color:n?s.neutral20:i?s.neutral0:`inherit`,padding:`${o.baseUnit*2}px ${o.baseUnit*3}px`,":active":{backgroundColor:n?void 0:i?s.primary:s.primary50}})},Ei=function(e){var t=e.children,n=e.isDisabled,r=e.isFocused,i=e.isSelected,a=e.innerRef,o=e.innerProps;return N(`div`,E({},P(e,`option`,{option:!0,"option--is-disabled":n,"option--is-focused":r,"option--is-selected":i}),{ref:a,"aria-disabled":n},o),t)},Di=function(e,t){var n=e.theme,r=n.spacing,i=n.colors;return h({label:`placeholder`,gridArea:`1 / 1 / 2 / 3`},t?{}:{color:i.neutral50,marginLeft:r.baseUnit/2,marginRight:r.baseUnit/2})},Oi=function(e){var t=e.children,n=e.innerProps;return N(`div`,E({},P(e,`placeholder`,{placeholder:!0}),n),t)},ki=function(e,t){var n=e.isDisabled,r=e.theme,i=r.spacing,a=r.colors;return h({label:`singleValue`,gridArea:`1 / 1 / 2 / 3`,maxWidth:`100%`,overflow:`hidden`,textOverflow:`ellipsis`,whiteSpace:`nowrap`},t?{}:{color:n?a.neutral40:a.neutral80,marginLeft:i.baseUnit/2,marginRight:i.baseUnit/2})},Ai={ClearIndicator:Xr,Control:ii,DropdownIndicator:Jr,DownChevron:Gr,CrossIcon:Wr,Group:ui,GroupHeading:li,IndicatorsContainer:Rr,IndicatorSeparator:Qr,Input:gi,LoadingIndicator:ni,Menu:Cr,MenuList:Tr,MenuPortal:Mr,LoadingMessage:Ar,NoOptionsMessage:kr,MultiValue:wi,MultiValueContainer:xi,MultiValueLabel:Si,MultiValueRemove:Ci,Option:Ei,Placeholder:Oi,SelectContainer:Pr,SingleValue:function(e){var t=e.children,n=e.isDisabled,r=e.innerProps;return N(`div`,E({},P(e,`singleValue`,{"single-value":!0,"single-value--is-disabled":n}),r),t)},ValueContainer:Ir},ji=function(e){return h(h({},Ai),e.components)},Mi=Number.isNaN||function(e){return typeof e==`number`&&e!==e};function Ni(e,t){return!!(e===t||Mi(e)&&Mi(t))}function Pi(e,t){if(e.length!==t.length)return!1;for(var n=0;n<e.length;n++)if(!Ni(e[n],t[n]))return!1;return!0}function Fi(e,t){t===void 0&&(t=Pi);var n=null;function r(){var r=[...arguments];if(n&&n.lastThis===this&&t(r,n.lastArgs))return n.lastResult;var i=e.apply(this,r);return n={lastResult:i,lastArgs:r,lastThis:this},i}return r.clear=function(){n=null},r}for(var Ii={name:`7pg0cj-a11yText`,styles:`label:a11yText;z-index:9999;border:0;clip:rect(1px, 1px, 1px, 1px);height:1px;width:1px;position:absolute;overflow:hidden;padding:0;white-space:nowrap`},Li=function(e){return N(`span`,E({css:Ii},e))},F={guidance:function(e){var t=e.isSearchable,n=e.isMulti,r=e.tabSelectsValue,i=e.context,a=e.isInitialFocus;switch(i){case`menu`:return`Use Up and Down to choose options, press Enter to select the currently focused option, press Escape to exit the menu${r?`, press Tab to select the option and exit the menu`:``}.`;case`input`:return a?`${e[`aria-label`]||`Select`} is focused ${t?`,type to refine list`:``}, press Down to open the menu, ${n?` press left to focus selected values`:``}`:``;case`value`:return`Use left and right to toggle between focused values, press Backspace to remove the currently focused value`;default:return``}},onChange:function(e){var t=e.action,n=e.label,r=n===void 0?``:n,i=e.labels,a=e.isDisabled;switch(t){case`deselect-option`:case`pop-value`:case`remove-value`:return`option ${r}, deselected.`;case`clear`:return`All selected options have been cleared.`;case`initial-input-focus`:return`option${i.length>1?`s`:``} ${i.join(`,`)}, selected.`;case`select-option`:return a?`option ${r} is disabled. Select another option.`:`option ${r}, selected.`;default:return``}},onFocus:function(e){var t=e.context,n=e.focused,r=e.options,i=e.label,a=i===void 0?``:i,o=e.selectValue,s=e.isDisabled,c=e.isSelected,l=e.isAppleDevice,u=function(e,t){return e&&e.length?`${e.indexOf(t)+1} of ${e.length}`:``};return t===`value`&&o?`value ${a} focused, ${u(o,n)}.`:t===`menu`&&l?`${a}${`${c?` selected`:``}${s?` disabled`:``}`}, ${u(r,n)}.`:``},onFilter:function(e){var t=e.inputValue;return`${e.resultsMessage}${t?` for search term `+t:``}.`}},I=function(e){var t=e.ariaSelection,n=e.focusedOption,r=e.focusedValue,i=e.focusableOptions,a=e.isFocused,o=e.selectValue,s=e.selectProps,c=e.id,u=e.isAppleDevice,d=s.ariaLiveMessages,f=s.getOptionLabel,p=s.inputValue,m=s.isMulti,g=s.isOptionDisabled,_=s.isSearchable,v=s.menuIsOpen,y=s.options,b=s.screenReaderStatus,x=s.tabSelectsValue,S=s.isLoading,C=s[`aria-label`],w=s[`aria-live`],T=(0,l.useMemo)(function(){return h(h({},F),d||{})},[d]),E=(0,l.useMemo)(function(){var e=``;if(t&&T.onChange){var n=t.option,r=t.options,i=t.removedValue,a=t.removedValues,s=t.value,c=i||n||function(e){return Array.isArray(e)?null:e}(s),l=c?f(c):``,u=r||a||void 0,d=u?u.map(f):[],p=h({isDisabled:c&&g(c,o),label:l,labels:d},t);e=T.onChange(p)}return e},[t,T,g,o,f]),ee=(0,l.useMemo)(function(){var e=``,t=n||r,a=!!(n&&o&&o.includes(n));if(t&&T.onFocus){var s={focused:t,label:f(t),isDisabled:g(t,o),isSelected:a,options:i,context:t===n?`menu`:`value`,selectValue:o,isAppleDevice:u};e=T.onFocus(s)}return e},[n,r,f,g,T,i,o,u]),D=(0,l.useMemo)(function(){var e=``;if(v&&y.length&&!S&&T.onFilter){var t=b({count:i.length});e=T.onFilter({inputValue:p,resultsMessage:t})}return e},[i,p,v,T,y,b,S]),te=t?.action===`initial-input-focus`,ne=(0,l.useMemo)(function(){var e=``;if(T.guidance){var t=r?`value`:v?`menu`:`input`;e=T.guidance({"aria-label":C,context:t,isDisabled:n&&g(n,o),isMulti:m,isSearchable:_,tabSelectsValue:x,isInitialFocus:te})}return e},[C,n,r,m,g,_,v,T,o,x,te]),re=N(l.Fragment,null,N(`span`,{id:`aria-selection`},E),N(`span`,{id:`aria-focused`},ee),N(`span`,{id:`aria-results`},D),N(`span`,{id:`aria-guidance`},ne));return N(l.Fragment,null,N(Li,{id:c},te&&re),N(Li,{"aria-live":w,"aria-atomic":`false`,"aria-relevant":`additions text`,role:`log`},a&&!te&&re))},Ri=[{base:`A`,letters:`AⒶＡÀÁÂẦẤẪẨÃĀĂẰẮẴẲȦǠÄǞẢÅǺǍȀȂẠẬẶḀĄȺⱯ`},{base:`AA`,letters:`Ꜳ`},{base:`AE`,letters:`ÆǼǢ`},{base:`AO`,letters:`Ꜵ`},{base:`AU`,letters:`Ꜷ`},{base:`AV`,letters:`ꜸꜺ`},{base:`AY`,letters:`Ꜽ`},{base:`B`,letters:`BⒷＢḂḄḆɃƂƁ`},{base:`C`,letters:`CⒸＣĆĈĊČÇḈƇȻꜾ`},{base:`D`,letters:`DⒹＤḊĎḌḐḒḎĐƋƊƉꝹ`},{base:`DZ`,letters:`ǱǄ`},{base:`Dz`,letters:`ǲǅ`},{base:`E`,letters:`EⒺＥÈÉÊỀẾỄỂẼĒḔḖĔĖËẺĚȄȆẸỆȨḜĘḘḚƐƎ`},{base:`F`,letters:`FⒻＦḞƑꝻ`},{base:`G`,letters:`GⒼＧǴĜḠĞĠǦĢǤƓꞠꝽꝾ`},{base:`H`,letters:`HⒽＨĤḢḦȞḤḨḪĦⱧⱵꞍ`},{base:`I`,letters:`IⒾＩÌÍÎĨĪĬİÏḮỈǏȈȊỊĮḬƗ`},{base:`J`,letters:`JⒿＪĴɈ`},{base:`K`,letters:`KⓀＫḰǨḲĶḴƘⱩꝀꝂꝄꞢ`},{base:`L`,letters:`LⓁＬĿĹĽḶḸĻḼḺŁȽⱢⱠꝈꝆꞀ`},{base:`LJ`,letters:`Ǉ`},{base:`Lj`,letters:`ǈ`},{base:`M`,letters:`MⓂＭḾṀṂⱮƜ`},{base:`N`,letters:`NⓃＮǸŃÑṄŇṆŅṊṈȠƝꞐꞤ`},{base:`NJ`,letters:`Ǌ`},{base:`Nj`,letters:`ǋ`},{base:`O`,letters:`OⓄＯÒÓÔỒỐỖỔÕṌȬṎŌṐṒŎȮȰÖȪỎŐǑȌȎƠỜỚỠỞỢỌỘǪǬØǾƆƟꝊꝌ`},{base:`OI`,letters:`Ƣ`},{base:`OO`,letters:`Ꝏ`},{base:`OU`,letters:`Ȣ`},{base:`P`,letters:`PⓅＰṔṖƤⱣꝐꝒꝔ`},{base:`Q`,letters:`QⓆＱꝖꝘɊ`},{base:`R`,letters:`RⓇＲŔṘŘȐȒṚṜŖṞɌⱤꝚꞦꞂ`},{base:`S`,letters:`SⓈＳẞŚṤŜṠŠṦṢṨȘŞⱾꞨꞄ`},{base:`T`,letters:`TⓉＴṪŤṬȚŢṰṮŦƬƮȾꞆ`},{base:`TZ`,letters:`Ꜩ`},{base:`U`,letters:`UⓊＵÙÚÛŨṸŪṺŬÜǛǗǕǙỦŮŰǓȔȖƯỪỨỮỬỰỤṲŲṶṴɄ`},{base:`V`,letters:`VⓋＶṼṾƲꝞɅ`},{base:`VY`,letters:`Ꝡ`},{base:`W`,letters:`WⓌＷẀẂŴẆẄẈⱲ`},{base:`X`,letters:`XⓍＸẊẌ`},{base:`Y`,letters:`YⓎＹỲÝŶỸȲẎŸỶỴƳɎỾ`},{base:`Z`,letters:`ZⓏＺŹẐŻŽẒẔƵȤⱿⱫꝢ`},{base:`a`,letters:`aⓐａẚàáâầấẫẩãāăằắẵẳȧǡäǟảåǻǎȁȃạậặḁąⱥɐ`},{base:`aa`,letters:`ꜳ`},{base:`ae`,letters:`æǽǣ`},{base:`ao`,letters:`ꜵ`},{base:`au`,letters:`ꜷ`},{base:`av`,letters:`ꜹꜻ`},{base:`ay`,letters:`ꜽ`},{base:`b`,letters:`bⓑｂḃḅḇƀƃɓ`},{base:`c`,letters:`cⓒｃćĉċčçḉƈȼꜿↄ`},{base:`d`,letters:`dⓓｄḋďḍḑḓḏđƌɖɗꝺ`},{base:`dz`,letters:`ǳǆ`},{base:`e`,letters:`eⓔｅèéêềếễểẽēḕḗĕėëẻěȅȇẹệȩḝęḙḛɇɛǝ`},{base:`f`,letters:`fⓕｆḟƒꝼ`},{base:`g`,letters:`gⓖｇǵĝḡğġǧģǥɠꞡᵹꝿ`},{base:`h`,letters:`hⓗｈĥḣḧȟḥḩḫẖħⱨⱶɥ`},{base:`hv`,letters:`ƕ`},{base:`i`,letters:`iⓘｉìíîĩīĭïḯỉǐȉȋịįḭɨı`},{base:`j`,letters:`jⓙｊĵǰɉ`},{base:`k`,letters:`kⓚｋḱǩḳķḵƙⱪꝁꝃꝅꞣ`},{base:`l`,letters:`lⓛｌŀĺľḷḹļḽḻſłƚɫⱡꝉꞁꝇ`},{base:`lj`,letters:`ǉ`},{base:`m`,letters:`mⓜｍḿṁṃɱɯ`},{base:`n`,letters:`nⓝｎǹńñṅňṇņṋṉƞɲŉꞑꞥ`},{base:`nj`,letters:`ǌ`},{base:`o`,letters:`oⓞｏòóôồốỗổõṍȭṏōṑṓŏȯȱöȫỏőǒȍȏơờớỡởợọộǫǭøǿɔꝋꝍɵ`},{base:`oi`,letters:`ƣ`},{base:`ou`,letters:`ȣ`},{base:`oo`,letters:`ꝏ`},{base:`p`,letters:`pⓟｐṕṗƥᵽꝑꝓꝕ`},{base:`q`,letters:`qⓠｑɋꝗꝙ`},{base:`r`,letters:`rⓡｒŕṙřȑȓṛṝŗṟɍɽꝛꞧꞃ`},{base:`s`,letters:`sⓢｓßśṥŝṡšṧṣṩșşȿꞩꞅẛ`},{base:`t`,letters:`tⓣｔṫẗťṭțţṱṯŧƭʈⱦꞇ`},{base:`tz`,letters:`ꜩ`},{base:`u`,letters:`uⓤｕùúûũṹūṻŭüǜǘǖǚủůűǔȕȗưừứữửựụṳųṷṵʉ`},{base:`v`,letters:`vⓥｖṽṿʋꝟʌ`},{base:`vy`,letters:`ꝡ`},{base:`w`,letters:`wⓦｗẁẃŵẇẅẘẉⱳ`},{base:`x`,letters:`xⓧｘẋẍ`},{base:`y`,letters:`yⓨｙỳýŷỹȳẏÿỷẙỵƴɏỿ`},{base:`z`,letters:`zⓩｚźẑżžẓẕƶȥɀⱬꝣ`}],zi=RegExp(`[`+Ri.map(function(e){return e.letters}).join(``)+`]`,`g`),Bi={},Vi=0;Vi<Ri.length;Vi++)for(var Hi=Ri[Vi],Ui=0;Ui<Hi.letters.length;Ui++)Bi[Hi.letters[Ui]]=Hi.base;var Wi=function(e){return e.replace(zi,function(e){return Bi[e]})},Gi=Fi(Wi),Ki=function(e){return e.replace(/^\s+|\s+$/g,``)},qi=function(e){return`${e.label} ${e.value}`},Ji=function(e){return function(t,n){if(t.data.__isNew__)return!0;var r=h({ignoreCase:!0,ignoreAccents:!0,stringify:qi,trim:!0,matchFrom:`any`},e),i=r.ignoreCase,a=r.ignoreAccents,o=r.stringify,s=r.trim,c=r.matchFrom,l=s?Ki(n):n,u=s?Ki(o(t)):o(t);return i&&(l=l.toLowerCase(),u=u.toLowerCase()),a&&(l=Gi(l),u=Wi(u)),c===`start`?u.substr(0,l.length)===l:u.indexOf(l)>-1}},Yi=[`innerRef`];function Xi(e){var t=e.innerRef,n=mr(C(e,Yi),`onExited`,`in`,`enter`,`exit`,`appear`);return N(`input`,E({ref:t},n,{css:nn({label:`dummyInput`,background:0,border:0,caretColor:`transparent`,fontSize:`inherit`,gridArea:`1 / 1 / 2 / 3`,outline:0,padding:0,width:1,color:`transparent`,left:-100,opacity:0,position:`relative`,transform:`scale(.01)`},``,``)}))}var Zi=function(e){e.cancelable&&e.preventDefault(),e.stopPropagation()};function Qi(e){var t=e.isEnabled,n=e.onBottomArrive,r=e.onBottomLeave,i=e.onTopArrive,a=e.onTopLeave,o=(0,l.useRef)(!1),s=(0,l.useRef)(!1),c=(0,l.useRef)(0),u=(0,l.useRef)(null),d=(0,l.useCallback)(function(e,t){if(u.current!==null){var c=u.current,l=c.scrollTop,d=c.scrollHeight,f=c.clientHeight,p=u.current,m=t>0,h=d-f-l,g=!1;h>t&&o.current&&(r&&r(e),o.current=!1),m&&s.current&&(a&&a(e),s.current=!1),m&&t>h?(n&&!o.current&&n(e),p.scrollTop=d,g=!0,o.current=!0):!m&&-t>l&&(i&&!s.current&&i(e),p.scrollTop=0,g=!0,s.current=!0),g&&Zi(e)}},[n,r,i,a]),f=(0,l.useCallback)(function(e){d(e,e.deltaY)},[d]),p=(0,l.useCallback)(function(e){c.current=e.changedTouches[0].clientY},[]),m=(0,l.useCallback)(function(e){d(e,c.current-e.changedTouches[0].clientY)},[d]),h=(0,l.useCallback)(function(e){if(e){var t=cr?{passive:!1}:!1;e.addEventListener(`wheel`,f,t),e.addEventListener(`touchstart`,p,t),e.addEventListener(`touchmove`,m,t)}},[m,p,f]),g=(0,l.useCallback)(function(e){e&&(e.removeEventListener(`wheel`,f,!1),e.removeEventListener(`touchstart`,p,!1),e.removeEventListener(`touchmove`,m,!1))},[m,p,f]);return(0,l.useEffect)(function(){if(t){var e=u.current;return h(e),function(){g(e)}}},[t,h,g]),function(e){u.current=e}}var $i=[`boxSizing`,`height`,`overflow`,`paddingRight`,`position`],ea={boxSizing:`border-box`,overflow:`hidden`,position:`relative`,height:`100%`};function ta(e){e.cancelable&&e.preventDefault()}function na(e){e.stopPropagation()}function ra(){var e=this.scrollTop,t=this.scrollHeight,n=e+this.offsetHeight;e===0?this.scrollTop=1:n===t&&(this.scrollTop=e-1)}function ia(){return`ontouchstart`in window||navigator.maxTouchPoints}var aa=!!(typeof window<`u`&&window.document&&window.document.createElement),oa=0,sa={capture:!1,passive:!1};function ca(e){var t=e.isEnabled,n=e.accountForScrollbars,r=n===void 0?!0:n,i=(0,l.useRef)({}),a=(0,l.useRef)(null),o=(0,l.useCallback)(function(e){if(aa){var t=document.body,n=t&&t.style;if(r&&$i.forEach(function(e){var t=n&&n[e];i.current[e]=t}),r&&oa<1){var a=parseInt(i.current.paddingRight,10)||0,o=document.body?document.body.clientWidth:0,s=window.innerWidth-o+a||0;Object.keys(ea).forEach(function(e){var t=ea[e];n&&(n[e]=t)}),n&&(n.paddingRight=`${s}px`)}t&&ia()&&(t.addEventListener(`touchmove`,ta,sa),e&&(e.addEventListener(`touchstart`,ra,sa),e.addEventListener(`touchmove`,na,sa))),oa+=1}},[r]),s=(0,l.useCallback)(function(e){if(aa){var t=document.body,n=t&&t.style;oa=Math.max(oa-1,0),r&&oa<1&&$i.forEach(function(e){var t=i.current[e];n&&(n[e]=t)}),t&&ia()&&(t.removeEventListener(`touchmove`,ta,sa),e&&(e.removeEventListener(`touchstart`,ra,sa),e.removeEventListener(`touchmove`,na,sa)))}},[r]);return(0,l.useEffect)(function(){if(t){var e=a.current;return o(e),function(){s(e)}}},[t,o,s]),function(e){a.current=e}}var la=function(e){var t=e.target;return t.ownerDocument.activeElement&&t.ownerDocument.activeElement.blur()},ua={name:`1kfdb0e`,styles:`position:fixed;left:0;bottom:0;right:0;top:0`};function da(e){var t=e.children,n=e.lockEnabled,r=e.captureEnabled,i=r===void 0?!0:r,a=e.onBottomArrive,o=e.onBottomLeave,s=e.onTopArrive,c=e.onTopLeave,u=Qi({isEnabled:i,onBottomArrive:a,onBottomLeave:o,onTopArrive:s,onTopLeave:c}),d=ca({isEnabled:n});return N(l.Fragment,null,n&&N(`div`,{onClick:la,css:ua}),t(function(e){u(e),d(e)}))}var fa={name:`1a0ro4n-requiredInput`,styles:`label:requiredInput;opacity:0;pointer-events:none;position:absolute;bottom:0;left:0;right:0;width:100%`},pa=function(e){var t=e.name,n=e.onFocus;return N(`input`,{required:!0,name:t,tabIndex:-1,"aria-hidden":`true`,onFocus:n,css:fa,value:``,onChange:function(){}})};function ma(e){return typeof window<`u`&&window.navigator!=null?e.test(window.navigator.userAgentData?.platform||window.navigator.platform):!1}function ha(){return ma(/^iPhone/i)}function ga(){return ma(/^Mac/i)}function _a(){return ma(/^iPad/i)||ga()&&navigator.maxTouchPoints>1}function va(){return ha()||_a()}function ya(){return ga()||va()}var ba=function(e){return e.label},xa=function(e){return e.label},Sa=function(e){return e.value},Ca=function(e){return!!e.isDisabled},wa={clearIndicator:Yr,container:Nr,control:ri,dropdownIndicator:qr,group:oi,groupHeading:ci,indicatorsContainer:Lr,indicatorSeparator:Zr,input:fi,loadingIndicator:ei,loadingMessage:Or,menu:br,menuList:wr,menuPortal:jr,multiValue:_i,multiValueLabel:vi,multiValueRemove:yi,noOptionsMessage:Dr,option:Ti,placeholder:Di,singleValue:ki,valueContainer:Fr},Ta={primary:`#2684FF`,primary75:`#4C9AFF`,primary50:`#B2D4FF`,primary25:`#DEEBFF`,danger:`#DE350B`,dangerLight:`#FFBDAD`,neutral0:`hsl(0, 0%, 100%)`,neutral5:`hsl(0, 0%, 95%)`,neutral10:`hsl(0, 0%, 90%)`,neutral20:`hsl(0, 0%, 80%)`,neutral30:`hsl(0, 0%, 70%)`,neutral40:`hsl(0, 0%, 60%)`,neutral50:`hsl(0, 0%, 50%)`,neutral60:`hsl(0, 0%, 40%)`,neutral70:`hsl(0, 0%, 30%)`,neutral80:`hsl(0, 0%, 20%)`,neutral90:`hsl(0, 0%, 10%)`},Ea=4,Da=4,Oa={borderRadius:Ea,colors:Ta,spacing:{baseUnit:Da,controlHeight:38,menuGutter:Da*2}},ka={"aria-live":`polite`,backspaceRemovesValue:!0,blurInputOnSelect:rr(),captureMenuScroll:!rr(),classNames:{},closeMenuOnSelect:!0,closeMenuOnScroll:!1,components:{},controlShouldRenderValue:!0,escapeClearsValue:!1,filterOption:Ji(),formatGroupLabel:ba,getOptionLabel:xa,getOptionValue:Sa,isDisabled:!1,isLoading:!1,isMulti:!1,isRtl:!1,isSearchable:!0,isOptionDisabled:Ca,loadingMessage:function(){return`Loading...`},maxMenuHeight:300,minMenuHeight:140,menuIsOpen:!1,menuPlacement:`bottom`,menuPosition:`absolute`,menuShouldBlockScroll:!1,menuShouldScrollIntoView:!ir(),noOptionsMessage:function(){return`No options`},openMenuOnFocus:!1,openMenuOnClick:!0,options:[],pageSize:5,placeholder:`Select...`,screenReaderStatus:function(e){var t=e.count;return`${t} result${t===1?``:`s`} available`},styles:{},tabIndex:0,tabSelectsValue:!0,unstyled:!1};function Aa(e,t,n,r){return{type:`option`,data:t,isDisabled:Va(e,t,n),isSelected:Ha(e,t,n),label:za(e,t),value:Ba(e,t),index:r}}function ja(e,t){return e.options.map(function(n,r){if(`options`in n){var i=n.options.map(function(n,r){return Aa(e,n,t,r)}).filter(function(t){return Fa(e,t)});return i.length>0?{type:`group`,data:n,options:i,index:r}:void 0}var a=Aa(e,n,t,r);return Fa(e,a)?a:void 0}).filter(lr)}function Ma(e){return e.reduce(function(e,t){return t.type===`group`?e.push.apply(e,ue(t.options.map(function(e){return e.data}))):e.push(t.data),e},[])}function Na(e,t){return e.reduce(function(e,n){return n.type===`group`?e.push.apply(e,ue(n.options.map(function(e){return{data:e.data,id:`${t}-${n.index}-${e.index}`}}))):e.push({data:n.data,id:`${t}-${n.index}`}),e},[])}function Pa(e,t){return Ma(ja(e,t))}function Fa(e,t){var n=e.inputValue,r=n===void 0?``:n,i=t.data,a=t.isSelected,o=t.label,s=t.value;return(!Wa(e)||!a)&&Ua(e,{label:o,value:s,data:i},r)}function Ia(e,t){var n=e.focusedValue,r=e.selectValue.indexOf(n);if(r>-1){if(t.indexOf(n)>-1)return n;if(r<t.length)return t[r]}return null}function La(e,t){var n=e.focusedOption;return n&&t.indexOf(n)>-1?n:t[0]}var Ra=function(e,t){return e.find(function(e){return e.data===t})?.id||null},za=function(e,t){return e.getOptionLabel(t)},Ba=function(e,t){return e.getOptionValue(t)};function Va(e,t,n){return typeof e.isOptionDisabled==`function`?e.isOptionDisabled(t,n):!1}function Ha(e,t,n){if(n.indexOf(t)>-1)return!0;if(typeof e.isOptionSelected==`function`)return e.isOptionSelected(t,n);var r=Ba(e,t);return n.some(function(t){return Ba(e,t)===r})}function Ua(e,t,n){return e.filterOption?e.filterOption(t,n):!0}var Wa=function(e){var t=e.hideSelectedOptions,n=e.isMulti;return t===void 0?n:t},Ga=1,Ka=function(e){re(n,e);var t=O(n);function n(e){var r;if(ee(this,n),r=t.call(this,e),r.state={ariaSelection:null,focusedOption:null,focusedOptionId:null,focusableOptionsWithIds:[],focusedValue:null,inputIsHidden:!1,isFocused:!1,selectValue:[],clearFocusValueOnUpdate:!1,prevWasFocused:!1,inputIsHiddenAfterUpdate:void 0,prevProps:void 0,instancePrefix:``,isAppleDevice:!1},r.blockOptionHover=!1,r.isComposing=!1,r.commonProps=void 0,r.initialTouchX=0,r.initialTouchY=0,r.openAfterFocus=!1,r.scrollToFocusedOptionOnUpdate=!1,r.userIsDragging=void 0,r.controlRef=null,r.getControlRef=function(e){r.controlRef=e},r.focusedOptionRef=null,r.getFocusedOptionRef=function(e){r.focusedOptionRef=e},r.menuListRef=null,r.getMenuListRef=function(e){r.menuListRef=e},r.inputRef=null,r.getInputRef=function(e){r.inputRef=e},r.focus=r.focusInput,r.blur=r.blurInput,r.onChange=function(e,t){var n=r.props,i=n.onChange;t.name=n.name,r.ariaOnChange(e,t),i(e,t)},r.setValue=function(e,t,n){var i=r.props,a=i.closeMenuOnSelect,o=i.isMulti,s=i.inputValue;r.onInputChange(``,{action:`set-value`,prevInputValue:s}),a&&(r.setState({inputIsHiddenAfterUpdate:!o}),r.onMenuClose()),r.setState({clearFocusValueOnUpdate:!0}),r.onChange(e,{action:t,option:n})},r.selectOption=function(e){var t=r.props,n=t.blurInputOnSelect,i=t.isMulti,a=t.name,o=r.state.selectValue,s=i&&r.isOptionSelected(e,o),c=r.isOptionDisabled(e,o);if(s){var l=r.getOptionValue(e);r.setValue(pr(o.filter(function(e){return r.getOptionValue(e)!==l})),`deselect-option`,e)}else if(!c)i?r.setValue(pr([].concat(ue(o),[e])),`select-option`,e):r.setValue(fr(e),`select-option`);else{r.ariaOnChange(fr(e),{action:`select-option`,option:e,name:a});return}n&&r.blurInput()},r.removeValue=function(e){var t=r.props.isMulti,n=r.state.selectValue,i=r.getOptionValue(e),a=n.filter(function(e){return r.getOptionValue(e)!==i}),o=dr(t,a,a[0]||null);r.onChange(o,{action:`remove-value`,removedValue:e}),r.focusInput()},r.clearValue=function(){var e=r.state.selectValue;r.onChange(dr(r.props.isMulti,[],null),{action:`clear`,removedValues:e})},r.popValue=function(){var e=r.props.isMulti,t=r.state.selectValue,n=t[t.length-1],i=t.slice(0,t.length-1),a=dr(e,i,i[0]||null);n&&r.onChange(a,{action:`pop-value`,removedValue:n})},r.getFocusedOptionId=function(e){return Ra(r.state.focusableOptionsWithIds,e)},r.getFocusableOptionsWithIds=function(){return Na(ja(r.props,r.state.selectValue),r.getElementId(`option`))},r.getValue=function(){return r.state.selectValue},r.cx=function(){var e=[...arguments];return Gn.apply(void 0,[r.props.classNamePrefix].concat(e))},r.getOptionLabel=function(e){return za(r.props,e)},r.getOptionValue=function(e){return Ba(r.props,e)},r.getStyles=function(e,t){var n=r.props.unstyled,i=wa[e](t,n);i.boxSizing=`border-box`;var a=r.props.styles[e];return a?a(i,t):i},r.getClassNames=function(e,t){var n;return(n=r.props.classNames)[e]?.call(n,t)},r.getElementId=function(e){return`${r.state.instancePrefix}-${e}`},r.getComponents=function(){return ji(r.props)},r.buildCategorizedOptions=function(){return ja(r.props,r.state.selectValue)},r.getCategorizedOptions=function(){return r.props.menuIsOpen?r.buildCategorizedOptions():[]},r.buildFocusableOptions=function(){return Ma(r.buildCategorizedOptions())},r.getFocusableOptions=function(){return r.props.menuIsOpen?r.buildFocusableOptions():[]},r.ariaOnChange=function(e,t){r.setState({ariaSelection:h({value:e},t)})},r.onMenuMouseDown=function(e){e.button===0&&(e.stopPropagation(),e.preventDefault(),r.focusInput())},r.onMenuMouseMove=function(e){r.blockOptionHover=!1},r.onControlMouseDown=function(e){if(!e.defaultPrevented){var t=r.props.openMenuOnClick;r.state.isFocused?r.props.menuIsOpen?e.target.tagName!==`INPUT`&&e.target.tagName!==`TEXTAREA`&&r.onMenuClose():t&&r.openMenu(`first`):(t&&(r.openAfterFocus=!0),r.focusInput()),e.target.tagName!==`INPUT`&&e.target.tagName!==`TEXTAREA`&&e.preventDefault()}},r.onDropdownIndicatorMouseDown=function(e){if(!(e&&e.type===`mousedown`&&e.button!==0)&&!r.props.isDisabled){var t=r.props,n=t.isMulti,i=t.menuIsOpen;r.focusInput(),i?(r.setState({inputIsHiddenAfterUpdate:!n}),r.onMenuClose()):r.openMenu(`first`),e.preventDefault()}},r.onClearIndicatorMouseDown=function(e){e&&e.type===`mousedown`&&e.button!==0||(r.clearValue(),e.preventDefault(),r.openAfterFocus=!1,e.type===`touchend`?r.focusInput():setTimeout(function(){return r.focusInput()}))},r.onScroll=function(e){typeof r.props.closeMenuOnScroll==`boolean`?e.target instanceof HTMLElement&&Jn(e.target)&&r.props.onMenuClose():typeof r.props.closeMenuOnScroll==`function`&&r.props.closeMenuOnScroll(e)&&r.props.onMenuClose()},r.onCompositionStart=function(){r.isComposing=!0},r.onCompositionEnd=function(){r.isComposing=!1},r.onTouchStart=function(e){var t=e.touches,n=t&&t.item(0);n&&(r.initialTouchX=n.clientX,r.initialTouchY=n.clientY,r.userIsDragging=!1)},r.onTouchMove=function(e){var t=e.touches,n=t&&t.item(0);if(n){var i=Math.abs(n.clientX-r.initialTouchX),a=Math.abs(n.clientY-r.initialTouchY),o=5;r.userIsDragging=i>o||a>o}},r.onTouchEnd=function(e){r.userIsDragging||(r.controlRef&&!r.controlRef.contains(e.target)&&r.menuListRef&&!r.menuListRef.contains(e.target)&&r.blurInput(),r.initialTouchX=0,r.initialTouchY=0)},r.onControlTouchEnd=function(e){r.userIsDragging||r.onControlMouseDown(e)},r.onClearIndicatorTouchEnd=function(e){r.userIsDragging||r.onClearIndicatorMouseDown(e)},r.onDropdownIndicatorTouchEnd=function(e){r.userIsDragging||r.onDropdownIndicatorMouseDown(e)},r.handleInputChange=function(e){var t=r.props.inputValue,n=e.currentTarget.value;r.setState({inputIsHiddenAfterUpdate:!1}),r.onInputChange(n,{action:`input-change`,prevInputValue:t}),r.props.menuIsOpen||r.onMenuOpen()},r.onInputFocus=function(e){r.props.onFocus&&r.props.onFocus(e),r.setState({inputIsHiddenAfterUpdate:!1,isFocused:!0}),(r.openAfterFocus||r.props.openMenuOnFocus)&&r.openMenu(`first`),r.openAfterFocus=!1},r.onInputBlur=function(e){var t=r.props.inputValue;if(r.menuListRef&&r.menuListRef.contains(document.activeElement)){r.inputRef.focus();return}r.props.onBlur&&r.props.onBlur(e),r.onInputChange(``,{action:`input-blur`,prevInputValue:t}),r.onMenuClose(),r.setState({focusedValue:null,isFocused:!1})},r.onOptionHover=function(e){if(!(r.blockOptionHover||r.state.focusedOption===e)){var t=r.getFocusableOptions().indexOf(e);r.setState({focusedOption:e,focusedOptionId:t>-1?r.getFocusedOptionId(e):null})}},r.shouldHideSelectedOptions=function(){return Wa(r.props)},r.onValueInputFocus=function(e){e.preventDefault(),e.stopPropagation(),r.focus()},r.onKeyDown=function(e){var t=r.props,n=t.isMulti,i=t.backspaceRemovesValue,a=t.escapeClearsValue,o=t.inputValue,s=t.isClearable,c=t.isDisabled,l=t.menuIsOpen,u=t.onKeyDown,d=t.tabSelectsValue,f=t.openMenuOnFocus,p=r.state,m=p.focusedOption,h=p.focusedValue,g=p.selectValue;if(!c&&!(typeof u==`function`&&(u(e),e.defaultPrevented))){switch(r.blockOptionHover=!0,e.key){case`ArrowLeft`:if(!n||o)return;r.focusValue(`previous`);break;case`ArrowRight`:if(!n||o)return;r.focusValue(`next`);break;case`Delete`:case`Backspace`:if(o)return;if(h)r.removeValue(h);else{if(!i)return;n?r.popValue():s&&r.clearValue()}break;case`Tab`:if(r.isComposing||e.shiftKey||!l||!d||!m||f&&r.isOptionSelected(m,g))return;r.selectOption(m);break;case`Enter`:if(e.keyCode===229)break;if(l){if(!m||r.isComposing)return;r.selectOption(m);break}return;case`Escape`:l?(r.setState({inputIsHiddenAfterUpdate:!1}),r.onInputChange(``,{action:`menu-close`,prevInputValue:o}),r.onMenuClose()):s&&a&&r.clearValue();break;case` `:if(o)return;if(!l){r.openMenu(`first`);break}if(!m)return;r.selectOption(m);break;case`ArrowUp`:l?r.focusOption(`up`):r.openMenu(`last`);break;case`ArrowDown`:l?r.focusOption(`down`):r.openMenu(`first`);break;case`PageUp`:if(!l)return;r.focusOption(`pageup`);break;case`PageDown`:if(!l)return;r.focusOption(`pagedown`);break;case`Home`:if(!l)return;r.focusOption(`first`);break;case`End`:if(!l)return;r.focusOption(`last`);break;default:return}e.preventDefault()}},r.state.instancePrefix=`react-select-`+(r.props.instanceId||++Ga),r.state.selectValue=Kn(e.value),e.menuIsOpen&&r.state.selectValue.length){var i=r.getFocusableOptionsWithIds(),a=r.buildFocusableOptions(),o=a.indexOf(r.state.selectValue[0]);r.state.focusableOptionsWithIds=i,r.state.focusedOption=a[o],r.state.focusedOptionId=Ra(i,a[o])}return r}return te(n,[{key:`componentDidMount`,value:function(){this.startListeningComposition(),this.startListeningToTouch(),this.props.closeMenuOnScroll&&document&&document.addEventListener&&document.addEventListener(`scroll`,this.onScroll,!0),this.props.autoFocus&&this.focusInput(),this.props.menuIsOpen&&this.state.focusedOption&&this.menuListRef&&this.focusedOptionRef&&tr(this.menuListRef,this.focusedOptionRef),ya()&&this.setState({isAppleDevice:!0})}},{key:`componentDidUpdate`,value:function(e){var t=this.props,n=t.isDisabled,r=t.menuIsOpen,i=this.state.isFocused;(i&&!n&&e.isDisabled||i&&r&&!e.menuIsOpen)&&this.focusInput(),i&&n&&!e.isDisabled?this.setState({isFocused:!1},this.onMenuClose):!i&&!n&&e.isDisabled&&this.inputRef===document.activeElement&&this.setState({isFocused:!0}),this.menuListRef&&this.focusedOptionRef&&this.scrollToFocusedOptionOnUpdate&&(tr(this.menuListRef,this.focusedOptionRef),this.scrollToFocusedOptionOnUpdate=!1)}},{key:`componentWillUnmount`,value:function(){this.stopListeningComposition(),this.stopListeningToTouch(),document.removeEventListener(`scroll`,this.onScroll,!0)}},{key:`onMenuOpen`,value:function(){this.props.onMenuOpen()}},{key:`onMenuClose`,value:function(){this.onInputChange(``,{action:`menu-close`,prevInputValue:this.props.inputValue}),this.props.onMenuClose()}},{key:`onInputChange`,value:function(e,t){this.props.onInputChange(e,t)}},{key:`focusInput`,value:function(){this.inputRef&&this.inputRef.focus()}},{key:`blurInput`,value:function(){this.inputRef&&this.inputRef.blur()}},{key:`openMenu`,value:function(e){var t=this,n=this.state,r=n.selectValue,i=n.isFocused,a=this.buildFocusableOptions(),o=e===`first`?0:a.length-1;if(!this.props.isMulti){var s=a.indexOf(r[0]);s>-1&&(o=s)}this.scrollToFocusedOptionOnUpdate=!(i&&this.menuListRef),this.setState({inputIsHiddenAfterUpdate:!1,focusedValue:null,focusedOption:a[o],focusedOptionId:this.getFocusedOptionId(a[o])},function(){return t.onMenuOpen()})}},{key:`focusValue`,value:function(e){var t=this.state,n=t.selectValue,r=t.focusedValue;if(this.props.isMulti){this.setState({focusedOption:null});var i=n.indexOf(r);r||(i=-1);var a=n.length-1,o=-1;if(n.length){switch(e){case`previous`:o=i===0?0:i===-1?a:i-1;break;case`next`:i>-1&&i<a&&(o=i+1);break}this.setState({inputIsHidden:o!==-1,focusedValue:n[o]})}}}},{key:`focusOption`,value:function(){var e=arguments.length>0&&arguments[0]!==void 0?arguments[0]:`first`,t=this.props.pageSize,n=this.state.focusedOption,r=this.getFocusableOptions();if(r.length){var i=0,a=r.indexOf(n);n||(a=-1),e===`up`?i=a>0?a-1:r.length-1:e===`down`?i=(a+1)%r.length:e===`pageup`?(i=a-t,i<0&&(i=0)):e===`pagedown`?(i=a+t,i>r.length-1&&(i=r.length-1)):e===`last`&&(i=r.length-1),this.scrollToFocusedOptionOnUpdate=!0,this.setState({focusedOption:r[i],focusedValue:null,focusedOptionId:this.getFocusedOptionId(r[i])})}}},{key:`getTheme`,value:function(){return this.props.theme?typeof this.props.theme==`function`?this.props.theme(Oa):h(h({},Oa),this.props.theme):Oa}},{key:`getCommonProps`,value:function(){var e=this.clearValue,t=this.cx,n=this.getStyles,r=this.getClassNames,i=this.getValue,a=this.selectOption,o=this.setValue,s=this.props,c=s.isMulti,l=s.isRtl,u=s.options;return{clearValue:e,cx:t,getStyles:n,getClassNames:r,getValue:i,hasValue:this.hasValue(),isMulti:c,isRtl:l,options:u,selectOption:a,selectProps:s,setValue:o,theme:this.getTheme()}}},{key:`hasValue`,value:function(){return this.state.selectValue.length>0}},{key:`hasOptions`,value:function(){return!!this.getFocusableOptions().length}},{key:`isClearable`,value:function(){var e=this.props,t=e.isClearable,n=e.isMulti;return t===void 0?n:t}},{key:`isOptionDisabled`,value:function(e,t){return Va(this.props,e,t)}},{key:`isOptionSelected`,value:function(e,t){return Ha(this.props,e,t)}},{key:`filterOption`,value:function(e,t){return Ua(this.props,e,t)}},{key:`formatOptionLabel`,value:function(e,t){if(typeof this.props.formatOptionLabel==`function`){var n=this.props.inputValue,r=this.state.selectValue;return this.props.formatOptionLabel(e,{context:t,inputValue:n,selectValue:r})}else return this.getOptionLabel(e)}},{key:`formatGroupLabel`,value:function(e){return this.props.formatGroupLabel(e)}},{key:`startListeningComposition`,value:function(){document&&document.addEventListener&&(document.addEventListener(`compositionstart`,this.onCompositionStart,!1),document.addEventListener(`compositionend`,this.onCompositionEnd,!1))}},{key:`stopListeningComposition`,value:function(){document&&document.removeEventListener&&(document.removeEventListener(`compositionstart`,this.onCompositionStart),document.removeEventListener(`compositionend`,this.onCompositionEnd))}},{key:`startListeningToTouch`,value:function(){document&&document.addEventListener&&(document.addEventListener(`touchstart`,this.onTouchStart,!1),document.addEventListener(`touchmove`,this.onTouchMove,!1),document.addEventListener(`touchend`,this.onTouchEnd,!1))}},{key:`stopListeningToTouch`,value:function(){document&&document.removeEventListener&&(document.removeEventListener(`touchstart`,this.onTouchStart),document.removeEventListener(`touchmove`,this.onTouchMove),document.removeEventListener(`touchend`,this.onTouchEnd))}},{key:`renderInput`,value:function(){var e=this.props,t=e.isDisabled,n=e.isSearchable,r=e.inputId,i=e.inputValue,a=e.tabIndex,o=e.form,s=e.menuIsOpen,c=e.required,u=this.getComponents().Input,d=this.state,f=d.inputIsHidden,p=d.ariaSelection,m=this.commonProps,g=r||this.getElementId(`input`),_=h(h(h({"aria-autocomplete":`list`,"aria-expanded":s,"aria-haspopup":!0,"aria-errormessage":this.props[`aria-errormessage`],"aria-invalid":this.props[`aria-invalid`],"aria-label":this.props[`aria-label`],"aria-labelledby":this.props[`aria-labelledby`],"aria-required":c,role:`combobox`,"aria-activedescendant":this.state.isAppleDevice?void 0:this.state.focusedOptionId||``},s&&{"aria-controls":this.getElementId(`listbox`)}),!n&&{"aria-readonly":!0}),this.hasValue()?p?.action===`initial-input-focus`&&{"aria-describedby":this.getElementId(`live-region`)}:{"aria-describedby":this.getElementId(`placeholder`)});return n?l.createElement(u,E({},m,{autoCapitalize:`none`,autoComplete:`off`,autoCorrect:`off`,id:g,innerRef:this.getInputRef,isDisabled:t,isHidden:f,onBlur:this.onInputBlur,onChange:this.handleInputChange,onFocus:this.onInputFocus,spellCheck:`false`,tabIndex:a,form:o,type:`text`,value:i},_)):l.createElement(Xi,E({id:g,innerRef:this.getInputRef,onBlur:this.onInputBlur,onChange:Un,onFocus:this.onInputFocus,disabled:t,tabIndex:a,inputMode:`none`,form:o,value:``},_))}},{key:`renderPlaceholderOrValue`,value:function(){var e=this,t=this.getComponents(),n=t.MultiValue,r=t.MultiValueContainer,i=t.MultiValueLabel,a=t.MultiValueRemove,o=t.SingleValue,s=t.Placeholder,c=this.commonProps,u=this.props,d=u.controlShouldRenderValue,f=u.isDisabled,p=u.isMulti,m=u.inputValue,h=u.placeholder,g=this.state,_=g.selectValue,v=g.focusedValue,y=g.isFocused;if(!this.hasValue()||!d)return m?null:l.createElement(s,E({},c,{key:`placeholder`,isDisabled:f,isFocused:y,innerProps:{id:this.getElementId(`placeholder`)}}),h);if(p)return _.map(function(t,o){var s=t===v,u=`${e.getOptionLabel(t)}-${e.getOptionValue(t)}`;return l.createElement(n,E({},c,{components:{Container:r,Label:i,Remove:a},isFocused:s,isDisabled:f,key:u,index:o,removeProps:{onClick:function(){return e.removeValue(t)},onTouchEnd:function(){return e.removeValue(t)},onMouseDown:function(e){e.preventDefault()}},data:t}),e.formatOptionLabel(t,`value`))});if(m)return null;var b=_[0];return l.createElement(o,E({},c,{data:b,isDisabled:f}),this.formatOptionLabel(b,`value`))}},{key:`renderClearIndicator`,value:function(){var e=this.getComponents().ClearIndicator,t=this.commonProps,n=this.props,r=n.isDisabled,i=n.isLoading,a=this.state.isFocused;if(!this.isClearable()||!e||r||!this.hasValue()||i)return null;var o={onMouseDown:this.onClearIndicatorMouseDown,onTouchEnd:this.onClearIndicatorTouchEnd,"aria-hidden":`true`};return l.createElement(e,E({},t,{innerProps:o,isFocused:a}))}},{key:`renderLoadingIndicator`,value:function(){var e=this.getComponents().LoadingIndicator,t=this.commonProps,n=this.props,r=n.isDisabled,i=n.isLoading,a=this.state.isFocused;return!e||!i?null:l.createElement(e,E({},t,{innerProps:{"aria-hidden":`true`},isDisabled:r,isFocused:a}))}},{key:`renderIndicatorSeparator`,value:function(){var e=this.getComponents(),t=e.DropdownIndicator,n=e.IndicatorSeparator;if(!t||!n)return null;var r=this.commonProps,i=this.props.isDisabled,a=this.state.isFocused;return l.createElement(n,E({},r,{isDisabled:i,isFocused:a}))}},{key:`renderDropdownIndicator`,value:function(){var e=this.getComponents().DropdownIndicator;if(!e)return null;var t=this.commonProps,n=this.props.isDisabled,r=this.state.isFocused,i={onMouseDown:this.onDropdownIndicatorMouseDown,onTouchEnd:this.onDropdownIndicatorTouchEnd,"aria-hidden":`true`};return l.createElement(e,E({},t,{innerProps:i,isDisabled:n,isFocused:r}))}},{key:`renderMenu`,value:function(){var e=this,t=this.getComponents(),n=t.Group,r=t.GroupHeading,i=t.Menu,a=t.MenuList,o=t.MenuPortal,s=t.LoadingMessage,c=t.NoOptionsMessage,u=t.Option,d=this.commonProps,f=this.state.focusedOption,p=this.props,m=p.captureMenuScroll,h=p.inputValue,g=p.isLoading,_=p.loadingMessage,v=p.minMenuHeight,y=p.maxMenuHeight,b=p.menuIsOpen,x=p.menuPlacement,S=p.menuPosition,C=p.menuPortalTarget,w=p.menuShouldBlockScroll,T=p.menuShouldScrollIntoView,ee=p.noOptionsMessage,D=p.onMenuScrollToTop,te=p.onMenuScrollToBottom;if(!b)return null;var ne=function(t,n){var r=t.type,i=t.data,a=t.isDisabled,o=t.isSelected,s=t.label,c=t.value,p=f===i,m=a?void 0:function(){return e.onOptionHover(i)},h=a?void 0:function(){return e.selectOption(i)},g=`${e.getElementId(`option`)}-${n}`,_={id:g,onClick:h,onMouseMove:m,onMouseOver:m,tabIndex:-1,role:`option`,"aria-selected":e.state.isAppleDevice?void 0:o};return l.createElement(u,E({},d,{innerProps:_,data:i,isDisabled:a,isSelected:o,key:g,label:s,type:r,value:c,isFocused:p,innerRef:p?e.getFocusedOptionRef:void 0}),e.formatOptionLabel(t.data,`menu`))},re;if(this.hasOptions())re=this.getCategorizedOptions().map(function(t){if(t.type===`group`){var i=t.data,a=t.options,o=t.index,s=`${e.getElementId(`group`)}-${o}`,c=`${s}-heading`;return l.createElement(n,E({},d,{key:s,data:i,options:a,Heading:r,headingProps:{id:c,data:t.data},label:e.formatGroupLabel(t.data)}),t.options.map(function(e){return ne(e,`${o}-${e.index}`)}))}else if(t.type===`option`)return ne(t,`${t.index}`)});else if(g){var ie=_({inputValue:h});if(ie===null)return null;re=l.createElement(s,d,ie)}else{var ae=ee({inputValue:h});if(ae===null)return null;re=l.createElement(c,d,ae)}var oe={minMenuHeight:v,maxMenuHeight:y,menuPlacement:x,menuPosition:S,menuShouldScrollIntoView:T},se=l.createElement(Sr,E({},d,oe),function(t){var n=t.ref,r=t.placerProps,o=r.placement,s=r.maxHeight;return l.createElement(i,E({},d,oe,{innerRef:n,innerProps:{onMouseDown:e.onMenuMouseDown,onMouseMove:e.onMenuMouseMove},isLoading:g,placement:o}),l.createElement(da,{captureEnabled:m,onTopArrive:D,onBottomArrive:te,lockEnabled:w},function(t){return l.createElement(a,E({},d,{innerRef:function(n){e.getMenuListRef(n),t(n)},innerProps:{role:`listbox`,"aria-multiselectable":d.isMulti,id:e.getElementId(`listbox`)},isLoading:g,maxHeight:s,focusedOption:f}),re)}))});return C||S===`fixed`?l.createElement(o,E({},d,{appendTo:C,controlElement:this.controlRef,menuPlacement:x,menuPosition:S}),se):se}},{key:`renderFormField`,value:function(){var e=this,t=this.props,n=t.delimiter,r=t.isDisabled,i=t.isMulti,a=t.name,o=t.required,s=this.state.selectValue;if(o&&!this.hasValue()&&!r)return l.createElement(pa,{name:a,onFocus:this.onValueInputFocus});if(!(!a||r))if(i)if(n){var c=s.map(function(t){return e.getOptionValue(t)}).join(n);return l.createElement(`input`,{name:a,type:`hidden`,value:c})}else{var u=s.length>0?s.map(function(t,n){return l.createElement(`input`,{key:`i-${n}`,name:a,type:`hidden`,value:e.getOptionValue(t)})}):l.createElement(`input`,{name:a,type:`hidden`,value:``});return l.createElement(`div`,null,u)}else{var d=s[0]?this.getOptionValue(s[0]):``;return l.createElement(`input`,{name:a,type:`hidden`,value:d})}}},{key:`renderLiveRegion`,value:function(){var e=this.commonProps,t=this.state,n=t.ariaSelection,r=t.focusedOption,i=t.focusedValue,a=t.isFocused,o=t.selectValue,s=this.getFocusableOptions();return l.createElement(I,E({},e,{id:this.getElementId(`live-region`),ariaSelection:n,focusedOption:r,focusedValue:i,isFocused:a,selectValue:o,focusableOptions:s,isAppleDevice:this.state.isAppleDevice}))}},{key:`render`,value:function(){var e=this.getComponents(),t=e.Control,n=e.IndicatorsContainer,r=e.SelectContainer,i=e.ValueContainer,a=this.props,o=a.className,s=a.id,c=a.isDisabled,u=a.menuIsOpen,d=this.state.isFocused,f=this.commonProps=this.getCommonProps();return l.createElement(r,E({},f,{className:o,innerProps:{id:s,onKeyDown:this.onKeyDown},isDisabled:c,isFocused:d}),this.renderLiveRegion(),l.createElement(t,E({},f,{innerRef:this.getControlRef,innerProps:{onMouseDown:this.onControlMouseDown,onTouchEnd:this.onControlTouchEnd},isDisabled:c,isFocused:d,menuIsOpen:u}),l.createElement(i,E({},f,{isDisabled:c}),this.renderPlaceholderOrValue(),this.renderInput()),l.createElement(n,E({},f,{isDisabled:c}),this.renderClearIndicator(),this.renderLoadingIndicator(),this.renderIndicatorSeparator(),this.renderDropdownIndicator())),this.renderMenu(),this.renderFormField())}}],[{key:`getDerivedStateFromProps`,value:function(e,t){var n=t.prevProps,r=t.clearFocusValueOnUpdate,i=t.inputIsHiddenAfterUpdate,a=t.ariaSelection,o=t.isFocused,s=t.prevWasFocused,c=t.instancePrefix,l=e.options,u=e.value,d=e.menuIsOpen,f=e.inputValue,p=e.isMulti,m=Kn(u),g={};if(n&&(u!==n.value||l!==n.options||d!==n.menuIsOpen||f!==n.inputValue)){var _=d?Pa(e,m):[],v=d?Na(ja(e,m),`${c}-option`):[],y=r?Ia(t,m):null,b=La(t,_);g={selectValue:m,focusedOption:b,focusedOptionId:Ra(v,b),focusableOptionsWithIds:v,focusedValue:y,clearFocusValueOnUpdate:!1}}var x=i!=null&&e!==n?{inputIsHidden:i,inputIsHiddenAfterUpdate:void 0}:{},S=a,C=o&&s;return o&&!C&&(S={value:dr(p,m,m[0]||null),options:m,action:`initial-input-focus`},C=!s),a?.action===`initial-input-focus`&&(S=null),h(h(h({},g),x),{},{prevProps:e,ariaSelection:S,prevWasFocused:C})}}]),n}(l.Component);Ka.defaultProps=ka,o();var qa=(0,l.forwardRef)(function(e,t){var n=T(e);return l.createElement(Ka,E({ref:t},n))});const Ja=()=>{let e=new Date;return`${e.toLocaleDateString(`id-ID`)} ${String(e.getHours()).padStart(2,`0`)}:${String(e.getMinutes()).padStart(2,`0`)}`},Ya=()=>new Date().toLocaleDateString(`id-ID`),Xa=()=>{let e=`​​`;return[{id:1,case:`Internet Lambat/Tidak bisa internet`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case :  Internet 
 Solusi :  minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala internetnya boleh infoin data ini ya biar biar bisa aku cek : 
@@ -104,10 +104,10 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
 #CheckbyCCA
 
 
-`},{id:2,case:`Tidak bisa aktivasi Error Lain`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:2,case:`Tidak bisa aktivasi Error Lain`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case :  gabisa aktivasi Error Lain
 Solusi : minta data
 `,Solusi:`Makasih udah nunggu. Kak maaf, kalau aku cek di nomor xxxxxx, ada  masalah di nomor atau SIM Card by.U Kakak. Untuk pengecekan lebih lanjut, boleh infoin data ini ya :
@@ -134,10 +134,10 @@ Tidak bisa aktivasi Error Lain
 
 
 
-1x24 jam`},{id:3,case:`Bugs Lain`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+1x24 jam`},{id:3,case:`Bugs Lain`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case :  bugs aplikasi
 Solusi :  minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy.Kak maaf banget untuk kendala aplikasinya ,boleh coba dulu untuk ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih gak bisa, boleh coba install ulang aplikasi by.U kakak dan pastikan koneksi internet ada. Kalau di aplikasi masih berkendala, Kakak bisa coba akses di website by.U ya. Kalau udah tapi masih berkendala, boleh infoin data ini ya :
@@ -198,10 +198,10 @@ Bugs Lain
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
 8. Waktu dan Lama Kejadian : 
 9. Lokasi Kejadian : 
-`},{id:4,case:`Bugs Ganti Sim Card`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:4,case:`Bugs Ganti Sim Card`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : bugs ganti sim card
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih, untuk kendala ganti SIM card nya di apps by.U, Coba di clear cache dulu apps nya dan pastiin pakai apps versi terbaru ya. Kalau udah tapi masih berkendala boleh diinfoin data ini :
@@ -238,10 +238,10 @@ Bugs Ganti Sim Card
 6. Detail keluhan yang disampaikan customer apakah bisa akses menggunakan wifi/jaringan lain : YA 
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :  
 8. Waktu dan Lama Kejadian : 
-`},{id:5,case:`Tidak bisa Kirim/Terima SMS`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:5,case:`Tidak bisa Kirim/Terima SMS`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : gabisa kirim/terima SMS
 Solusi :  minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala SMS nya, boleh infoin dulu data ini ya :
@@ -324,10 +324,10 @@ Tanggal lapor : ${Ya()}
 
 
 
-1x24 jam`},{id:6,case:`Panggilan Telepon Masuk / Telepon Keluar`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+1x24 jam`},{id:6,case:`Panggilan Telepon Masuk / Telepon Keluar`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : gabisa telepon masuk/keluar
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget untuk kendala teleponnya, boleh infoin data ini ya biar bisa aku cek:
@@ -535,7 +535,7 @@ Nama Pelanggan : Pelanggan
 Tanggal lapor : ${Ya()}
 
 1. Nomor by.U : xxxxxx
-2. Email akun by.U : zz
+2. Email akun by.U : ${e}
 3. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
 4. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
 5. Notifikasi gagal saat telepon :
@@ -545,10 +545,10 @@ Tanggal lapor : ${Ya()}
 
 
 
-1x24 jam`},{id:7,case:`Tidak bisa request OTP Meta Product`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+1x24 jam`},{id:7,case:`Tidak bisa request OTP Meta Product`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : ga dapat OTP Whatsapp/Telegram
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`ke SMS dulu
@@ -569,13 +569,13 @@ TIDAK BISA REQUEST OTP META PRODUCT
 8. Keterangan gagal yang muncul saat melakukan request/menerima OTP : 
 9. Nomor tujuan saat menerima atau mengirim SMS OTP : 
 
-1x24 jam`},{id:8,case:`Unreg hapus NIK`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+1x24 jam`},{id:8,case:`Unreg hapus NIK`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : unreg
 Solusi :  minta data
-`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy.Untuk permintaan Unreg nya, bisa melalui aplikasi ya dengan cara berikut : 
+`,Solusi:t=>t===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy.Untuk permintaan Unreg nya, bisa melalui aplikasi ya dengan cara berikut : 
 1. Masukan SIM Card by.U yang mau di unreg ke gadget kamu
 2. Matikan WiFi dan pastikan gadget kamu udah nyambung ke jaringan seluler by.U
 3. Buka halaman profil
@@ -592,7 +592,7 @@ DISCLAIMER
 
 Makasih udah nunggu. Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu UNREG SIM Card di akun berikut:
 1. Nomor by.U : xxxxxx
-2. Email: zz
+2. Email: ${e}
 
 Nomor yang sudah berhasil di unregistrasi ga akan bisa diaktifkan kembali dalam kondisi apapun ya kak, lalu NIK yang terdaftar di nomor ini juga akan ikut terhapus. Kalo data diatas udah sesuai dan Kakak setuju boleh tolong konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :)
 `:`Makasih udah nunggu. Kak untuk unreg/deaktivasi SIM card by.U, bisa melalui aplikasi ya dengan cara berikut : 
@@ -645,20 +645,20 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 
 
 
-1x24 jam`},{id:9,case:`Unreg hapus NIK lupa nomor`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+1x24 jam`},{id:9,case:`Unreg hapus NIK lupa nomor`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : unreg
 Solusi : minta data
-`,Solusi:``,Mandatory:(e,t)=>`#Pelangganbyu
-[byU ${e}] 
+`,Solusi:``,Mandatory:(t,n)=>`#Pelangganbyu
+[byU ${t}] 
 Pelanggan by.U
-${t} 
+${n} 
 Permintaan Deaktivasi SIM Card dan Hapus NIK
 
 1. Nomor by.U : xxxxxx
-2. Nomor Identitas KTP (sesuai yang tercantum di sistem) :
+2. Nomor Identitas KTP (sesuai yang tercantum di sistem) : ${e}
 3. Foto Selfie (tidak dengan KTP) :
 4. Scan/Foto KTP asli/KTP Digital :
 5. Alasan tidak ingin menggunakan by.U lagi :
@@ -666,10 +666,10 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 7. Email yang bisa dihubungi :
 
 
-1x24 jam`},{id:10,case:`Gagal Aktivasi eSIM Account Status Tidak Sesuai`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+1x24 jam`},{id:10,case:`Gagal Aktivasi eSIM Account Status Tidak Sesuai`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : gabisa aktivasi esim acount
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. untuk kendala eSIM di nomor xxxxxx , aku cek ada kendala nih dari proses aktivasinya. Boleh infoin data ini ya biar bisa aku proses :
@@ -699,10 +699,10 @@ Gagal Aktivasi eSIM Account Status Tidak Sesuai
 
 
 
-1x24 jam`},{id:11,case:`Sinyal lemah/tidak stabil/Tidak ada sinyal`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+1x24 jam`},{id:11,case:`Sinyal lemah/tidak stabil/Tidak ada sinyal`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : Sinyal
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala sinyalnya, boleh infoin data ini ya biar bisa aku cek :
@@ -795,13 +795,13 @@ Kak maaf, kalau udah dilakukan tapi masih berkendala, boleh lengkapin data ini y
 
 
 
-`},{id:12,case:`Ganti SIM Card active`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:12,case:`Ganti SIM Card active`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : Ganti sim card
 Solusi : minta data
-`,Solusi:e=>e===`Email`?`Hai Kak. Saat ini terhubung dengan Nindy. Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) Jadi gabisa dilakkan ganti SIM card ya :)
+`,Solusi:t=>t===`Email`?`Hai Kak. Saat ini terhubung dengan Nindy. Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) Jadi gabisa dilakkan ganti SIM card ya :)
 
 Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ganti SIM card nya boleh infoin data ini dulu ya biar aku cocokin : 
 1. Nomor by.U
@@ -832,7 +832,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu Permintaan Ganti SIM Card Active dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: zz
+2. Email: ${e}
 3. NIK KTP valid : 
 4. Nama & nomor penerima :
 5. Alamat pengiriman :
@@ -872,7 +872,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu Permintaan Ganti SIM Card Active dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: zz
+2. Email: ${e}
 3. NIK KTP valid : 
 4. Nama & nomor penerima :
 5. Alamat pengiriman :
@@ -892,10 +892,10 @@ Permintaan Ganti SIM Card Active
 6. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
 7. Alasan ganti SIM Card : 
 8. Capture SIM card rusak : -
-`},{id:13,case:`Miskoordinasi JNE (AWB)`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:13,case:`Miskoordinasi JNE (AWB)`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : misskoordinasi JNE ada AWB
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala pengiriman SIM card , boleh infoin data ini ya biar bisa aku proses : 
@@ -926,10 +926,10 @@ Keluhan SIM Card Tidak Sampai via JNE ada AWB
 5. Capture pengecekan nomor resi di web tracking JNE : 
 6. Konfirmasi dari JNE (jika customer sempat komplain ke JNE) : -
 
-`},{id:14,case:`Miskoordinasi JNE `,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:14,case:`Miskoordinasi JNE `,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : misskoordinasi ga ada awb
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala pengiriman SIM card nya, boleh infoin data ini ya biar bisa aku proses : 
@@ -959,10 +959,10 @@ Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
 4. Nama Penerima : 
 5. Nomor Penerima : 
 6. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) : 
-`},{id:15,case:`Pembelian paket IRENEW virtual account Paid `,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:15,case:`Pembelian paket IRENEW virtual account Paid `,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : irenew va
 Solusi : minta data
 `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,Mandatory:(e,t)=>`#Pelangganbyu
@@ -984,10 +984,10 @@ No VA :
 paid
       
 
-`},{id:16,case:`Penyalahgunaan NIK `,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:16,case:`Penyalahgunaan NIK `,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : penyalahgunaan nik
 Solusi : minta data
 `,Solusi:`Makasih udah nunggu. Kak untuk permintaan unreg di NIK Kakak boleh infoin aku data ini ya biar bisa aku proses : 
@@ -1021,10 +1021,10 @@ Penyalahgunaan NIK
 7. Alasan ingin Unregistrasi nomor by.U : MSISDN terdapat penyalahgunaan NIK yang bukan punya pemilik NIK
 
         
-`},{id:17,case:`Pembelian paket Irenew virtual account Unpaid `,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:17,case:`Pembelian paket Irenew virtual account Unpaid `,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : irenew VA unpaid
 Solusi : minta data
 `,Solusi:`Makasih udah nunggu. Kak maaf, aku cek transaksi di nomor xxxxxx, ada kendala dari pihak pembayarannya jadinya transaksinya gabisa dilanjutin nih. Boleh infoin data ini ya biar bisa aku proses : 
@@ -1054,27 +1054,27 @@ TRX ID :
 No VA : 
 Unpaid
         
-`},{id:18,case:`Permintaan Refund karena kesalahan sistem `,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:18,case:`Permintaan Refund karena kesalahan sistem `,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : refund karena
 Solusi : minta data
-`,Solusi:``,Mandatory:(e,t)=>`#Pelangganbyu
+`,Solusi:``,Mandatory:(t,n)=>`#Pelangganbyu
 [REFUND]
-[byU ${e}] 
+[byU ${t}] 
 Pelanggan by.U
-${t} 
+${n} 
 Permintaan Refund karena kesalahan sistem
 
 1.Nomor by.U : xxxxxx
-2.Email by.U : zz
+2.Email by.U : ${e}
 3.Capture bukti pembayaran : 
 4. Data refund :
-`},{id:19,case:`Tidak Mendapatkan Kuota Monthversary  `,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:19,case:`Tidak Mendapatkan Kuota Monthversary  `,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : ga dapat kuota Monthversary
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala ga dapat kuota Monthversary, boleh infoin aku data ini ya biar bisa aku proses : 
@@ -1105,10 +1105,10 @@ Tidak Mendapatkan Kuota Monthversary
 7. Hasil pengecekan Add Ons di CRM (berupa text dan tidak boleh printscreen) : 
 
         
-`},{id:20,case:`SMS - Gagal Aktivasi M-Banking `,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:20,case:`SMS - Gagal Aktivasi M-Banking `,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : gagal Aktivasi M-Banking
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hai, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala fitur banking nya, pastiin cuma ada SIM Card by.U di hp saat aktivasi fitur banking tersebut dan terkoneksi dengan jaringan by.U. Kalau masih tidak bisa, boleh tolong infokan beberapa data berikut agar dapat dibantu pengecekan :
@@ -1141,10 +1141,10 @@ SMS - Gagal Aktivasi M-Banking
 5. Capture dashboard apps : 
 6. Capture kirim atau terima SMS ke nomor lain berhasil : 
 7. Capture keterangan gagal aktivasi fitur banking : 
-`},{id:21,case:`Pembelian paket IRENEW OVO/DANA/ShopeePay/lainnya `,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:21,case:`Pembelian paket IRENEW OVO/DANA/ShopeePay/lainnya `,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : irenew
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala transaksinya boleh infoin aku data ini ya biar bisa aku cek : 
@@ -1171,22 +1171,22 @@ Oke Kak, untuk bukti bayar yang di Shopee dengan tertera Merchant Reff IDnya sil
 3. Pilih Transaksi: Pilih transaksi yang ingin dilihat detailnya.
 4. Cari Merchant Ref ID: Rincian transaksi akan menampilkan informasi detail termasuk Merchant Ref ID. Merchant Ref ID ini biasanya tertera dalam format yang mirip dengan nomor ID.
 
-Kak maaf, untuk capture bukti bayar yang di DANA, pastiin tertera ID order merchant nya yang angkanya tanpa di sensor ya:)`,Mandatory:(e,t)=>`#Pelangganbyu
-[byU ${e}] 
+Kak maaf, untuk capture bukti bayar yang di DANA, pastiin tertera ID order merchant nya yang angkanya tanpa di sensor ya:)`,Mandatory:(t,n)=>`#Pelangganbyu
+[byU ${t}] 
 Pelanggan by.U
-${t} 
+${n} 
 Masalah Pembelian Kuota/Pulsa I RENEW Via 
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : zz
+2. Email by.U : ${e}
 3. Capture bukti pembayaran : 
 4. Order detail ID (CXO) (Pengecekan OperatorX)  : 
 5. Transaction ID (CXT) (Pengecekan OperatorX) :
 6. Rincian Keluhan : kuota/pulsa belum masuk
-`},{id:22,case:`Tidak Bisa Aktivasi SIM Card Legacy `,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:22,case:`Tidak Bisa Aktivasi SIM Card Legacy `,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : gabisa aktivasi legacy
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala aktivasi SIM card nya, kalau nomornya beli di konter, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
@@ -1226,10 +1226,10 @@ Tidak Bisa Aktivasi SIM Card Legacy
 7. Order ID CXT/CXO (Pengecekan OperatorX) : 
 8. Keterangan pengecekan : 
         
-`},{id:23,case:`Cara Aktivasi SIM card Digital `,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:23,case:`Cara Aktivasi SIM card Digital `,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : cara aktivasi sim card digital
 Solusi : info cara aktivasi di apps
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak kalau nomornya beli di apps by.U, aku bantu infoin untuk cara aktivasinya Kakak bisa coba cara berikut ya Kak:
@@ -1246,10 +1246,10 @@ Semoga berhasil ya Kak, kalau berkendala bisa Kakak coba aktivasi via web byu.id
 4. Saat masukkan NIK dan No.KK pastikan sudah sesuai, cek secara manual kembali ya.
 5. Pastiin saat masukkan NIK dan no.KK pakai jaringan by.U aja yang ingin di aktivasi ya
 Semoga berhasil ya Kak, kalau berkendala bisa Kakak coba aktivasi via web byu.id/aktivasi dan bisa gunakan jaringan lain untuk perbandingan ya Kak.`,Mandatory:`
-`},{id:24,case:`Tidak dapat langganan weTV`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:24,case:`Tidak dapat langganan weTV`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : ga dapat langganan weTV
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala langganan weTV nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
@@ -1280,10 +1280,10 @@ Tidak dapat langganan weTV
 5. Tanggal pembelian paket: 
 6. Type HP : 
 7. Capture kendala (disesuaikan dengan kendala pelanggan) : 
-`},{id:25,case:`Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy (indomaret)`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:25,case:`Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy (indomaret)`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : sim card yang didapat legacy
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hai, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala SIM card nya, boleh infoin data ini ya biar bisa aku proses :
@@ -1320,10 +1320,10 @@ Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy
 7. Nomor penerima : 
 8. Alamat pengiriman : 
 9. Order ID CXT/CXO (Pengecekan OperatorX) :         
-`},{id:26,case:`Tidak Bisa Aktivasi SIM Card Dengan Kode Error Asset Not Found `,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:26,case:`Tidak Bisa Aktivasi SIM Card Dengan Kode Error Asset Not Found `,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : gabisa aktivasi asset notfound
 Solusi : minta data
 `,Solusi:`Makasih udah nunggu ya Kak. Maaf banget nih untuk kendala aktivasi SIM card nya di nomor xxxxxx, Kalau sudah mencoba lagi dan masih tidak bisa, boleh diinfokan beberapa data berikut ya supaya kami bisa melakukan pengecekan lebih lanjut :
@@ -1347,10 +1347,10 @@ Tidak Bisa Aktivasi SIM Card Dengan Kode Error "Asset Not Found"
 6. Capture gagal aktivasi SIM Card : 
 7. Order ID CXT/CXO (Pengecekan OperatorX) : 
         
-`},{id:27,case:`Ketidaksesuaian Penggunaan Kuota `,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:27,case:`Ketidaksesuaian Penggunaan Kuota `,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : kuota tiba-tiba berkurang
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Halo, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala penggunaan kuotanya, boleh infoin data ini ya biar bisa aku proses :
@@ -1391,10 +1391,10 @@ Ketidaksesuaian Penggunaan Kuota
 9. Capture dashboard apps by.U  (yang ada detail pemakaian Data): 
 10. Apakah customer pernah mencoba di gadget lain dan mengalami masalah yang sama? TIDAK
 11. Apakah ada VPN dsb di gadget customer? TIDAK 
-`},{id:28,case:`Tidak bisa login dengan Nomor BYU / terima kode OTP pakai nomor by.U`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:28,case:`Tidak bisa login dengan Nomor BYU / terima kode OTP pakai nomor by.U`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : gabisa login nomor by.U
 Solusi : solusi gabisa login nomor by.u
 `,Solusi:`
@@ -1415,10 +1415,10 @@ Tidak bisa login dengan Nomor BYU
 7. Hari dan Tanggal waktu terjadi keluhan : 
 8. Penjelasan keluhan pelanggan : 
 9. Lokasi Pelanggan : 
-`},{id:29,case:`Tidak Mendapatkan Voucher Non-Telco uCoin`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:29,case:`Tidak Mendapatkan Voucher Non-Telco uCoin`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : non telco
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hai, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala uCoin nya, boleh infoin data ini ya biar bisa aku proses : 
@@ -1436,22 +1436,22 @@ Aku tunggu datanya ya :)
 3. Tanggal penukaran U-Coin : 
 4. Capture bukti redeem di halaman Reward Saya : 
 5. Capture kendala penukaran : 
- `,Mandatory:(e,t)=>`#Pelangganbyu
-[byU ${e}] 
+ `,Mandatory:(t,n)=>`#Pelangganbyu
+[byU ${t}] 
 Pelanggan by.U
-${t} 
+${n} 
 Tidak Mendapatkan Voucher Non-Telco
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : zz
+2. Email by.U : ${e}
 3. Jenis voucher yang ditukarkan : 
 4. Tanggal penukaran U-Coin : 
 5. Capture bukti redeem di halaman Reward Saya : 
 6. Capture kendala penukaran : 
-`},{id:30,case:`Pergantian SIM Card Legacy ditolak GraPARI`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:30,case:`Pergantian SIM Card Legacy ditolak GraPARI`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : ganti sim card ditolak grapari
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hai, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk ganti SIM card nya karena gabisa di GraPARI, boleh infoin data ini ya biar bisa aku proses : 
@@ -1497,10 +1497,10 @@ Pergantian SIM Card Legacy ditolak GraPARI
 9. Foto identitas : 
 10. Foto selfie identitas : 
 11. Alasan ganti SIM Card : SIM Card Hilang
-`},{id:31,case:`Esim Sinyal hilang`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:31,case:`Esim Sinyal hilang`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : esim sinyal hilang
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala eSIM nya, boleh infoin data ini ya biar bisa aku proses : 
@@ -1537,10 +1537,10 @@ eSIM sinyal hilang
 7. Capture settingan eSIM di handphone : 
 8. Capture bukti pembayaran : 
 9. Order ID CXT/CXO (Pengecekan OperatorX): 
-`},{id:32,case:`eSIM barcode/QR tidak tersimpan `,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:32,case:`eSIM barcode/QR tidak tersimpan `,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : minta barcode esim
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk barcode/qr eSIM nya, boleh infoin data ini ya biar bisa aku proses : 
@@ -1570,10 +1570,10 @@ eSIM  QR tidak tersimpan
 6. Keterangan gagal : (KHUSUS APABILA QR YANG DIMILIKI PELANGGAN TIDAK VALID)
 7. Order ID CXT/CXO (Pengecekan OperatorX) : 
         
-`},{id:33,case:`Bugs Ganti SIM card (mandatory E)`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:33,case:`Bugs Ganti SIM card (mandatory E)`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : bugs ganti sim card
 Solusi : minta data
 `,Solusi:`Makasih udah nunggu. Kak maaf, kalau keterangannya seperti itu, boleh infoin data ini ya biar bisa aku proses : 
@@ -1596,7 +1596,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu  Ganti SIM Card dengan data :
 1. Nomor by.U : xxxxxx
-2. Email akun by.U: zz
+2. Email akun by.U: ${e}
 3. NIK KTP valid : 
 4. Nama & nomor penerima :
 5. Alamat pengiriman :
@@ -1620,10 +1620,10 @@ Bugs Ganti SIM card
 10. Tipe/merek Gadget : 
 11. Versi OS Gadget : 
 12. Versi aplikasi by.U : 
-`},{id:34,case:`Keluhan Tidak Bisa Akses Internet di Luar Negeri Roaming`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:34,case:`Keluhan Tidak Bisa Akses Internet di Luar Negeri Roaming`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : gabisa internet roaming
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala gabisa internet di luar negeri,boleh infoin data ini ya biar bisa aku cek :
@@ -1672,11 +1672,11 @@ Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif  dan punya kuota roaming, se
 Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX yaitu xxx  . Jika cara di atas sudah dicoba dan sinyalnya masih berkendala, tolong hubungi kita lagi. Terima kasih.
 
 
-https://www.telkomsel.com/roaming/setdevice`,Mandatory:e=>`#Pelangganbyu
-[NO][IR][${e}]
+https://www.telkomsel.com/roaming/setdevice`,Mandatory:t=>`#Pelangganbyu
+[NO][IR][${t}]
 
 1. Nomor by.U : xxxxxx
-2. Email akun by.U : zz
+2. Email akun by.U : ${e}
 3. Lokasi negara : 
 4. Tanggal dan waktu kejadian sejak kapan : 
 5. Jaringan/operator negara setempat yang digunakan : 
@@ -1686,10 +1686,10 @@ https://www.telkomsel.com/roaming/setdevice`,Mandatory:e=>`#Pelangganbyu
 9. Capture setting APN di hp : 
 10. Capture bar sinyal yang didapat : 
 11. Email aktif yang bisa dihubungi ? 
-`},{id:35,case:`Pulsa berkurang tiba-tiba`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:35,case:`Pulsa berkurang tiba-tiba`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : pulsa berkurang tiba-tiba
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Halo, Kak . Saat ini udah terhubung dengan Nindy. Maaf nih untuk kendala pulsa yang berkurang tiba-tiba, boleh infoin data ini ya biar bisa aku proses :
@@ -1718,17 +1718,17 @@ Pulsa berkurang tiba-tiba
 5. Tanggal dan Waktu kejadian : 
 6. Rincian kendala/Capture kendala dan hasil pengecekkan agent : 
         
-`},{id:36,case:`Tidak bisa aktivasi inject paket`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:36,case:`Tidak bisa aktivasi inject paket`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : gabisa aktivasi sim card legacy
 Solusi : hubungi pihak penjual
 `,Solusi:`Makasih udah nunggu Kak maaf kalau keterangan gabisa aktivasinya seperti itu, Kakak bisa tukerin SIM card nya di tempat Kakak beli/dapetin SIM card nya ya`,Mandatory:`      
-`},{id:37,case:`Tidak bisa aktivasi NIK invalid Dukcapil/Disdukcapil`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:37,case:`Tidak bisa aktivasi NIK invalid Dukcapil/Disdukcapil`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : gabisa aktivasi nik invalid
 Solusi : hubungi dukcapil
 `,Solusi:`Makasih udah nunggu. Kak maaf untuk gabisa aktivasi SIM card nya di nomor xxxxxx, aku cek NIK Kakak ga terdaftar nih di sistem Dukcapil, Boleh pastiin lagi NIK yang diinputnya sesuai yang di KTP dan pastiin ada 16 digit ya Kak. Kalo masih berkendala dikhawatirkan ada error data dukcapil. Untuk kendala ini silakan kakak bisa update data ke Contact Center Ditjen Dukcapil. Bilang aja mau update data registrasi SIM Card ya.
@@ -1762,16 +1762,16 @@ Tidak Bisa Aktivasi SIM Card Dengan Kode Error NIK Tidak Ditemukan
 6. Capture gagal aktivasi SIM Card : 
 7. Capture bukti dari dukcapil bahwa data sudah update : 
 8. Order ID CXT/CXO (Pengecekan OperatorX) : 
-`},{id:38,case:`Tidak bisa aktivasi exceed limit (udah 3 kali percobaan)`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:38,case:`Tidak bisa aktivasi exceed limit (udah 3 kali percobaan)`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : gabisa aktivasi sim card
 Solusi : diinfoin coba besok
-`,Solusi:`Makasih udah nunggu. Kak maaf aku cek di nomor xxxxxx , hari ini udah lebih dari 3 kali nyoba aktivasi. Boleh dicoba lagi besok hari ya. Pastiin saat proses aktivasi sudah terkoneksi ke jaringan by.U - bukan wifi atau jaringan lain, dan NIK-NO.KK yang dimasukkan benar 16 angka. Kalo besok masih belum bisa, jangan coba berulang ya, silahkan konfirmasi lagi biar bisa langsung di proses :)`,Mandatory:``},{id:39,case:`Tidak bisa aktivasi maximum NIK`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`,Solusi:`Makasih udah nunggu. Kak maaf aku cek di nomor xxxxxx , hari ini udah lebih dari 3 kali nyoba aktivasi. Boleh dicoba lagi besok hari ya. Pastiin saat proses aktivasi sudah terkoneksi ke jaringan by.U - bukan wifi atau jaringan lain, dan NIK-NO.KK yang dimasukkan benar 16 angka. Kalo besok masih belum bisa, jangan coba berulang ya, silahkan konfirmasi lagi biar bisa langsung di proses :)`,Mandatory:``},{id:39,case:`Tidak bisa aktivasi maximum NIK`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : gabisa aktivasi maximum nik
 Solusi : diinfoin unreg nomor telkomsel
 `,Solusi:`Makasih udah nunggu ya Kak, mengenai kendala gagal daftar NIK-NOKK di nomor xxxxxx. Setelah kami cek di sistem rupanya NIK kakak sudah terdaftar di 3 Nomor Telkomsel/ by.U. Untuk case seperti ini jika kakak masih memegang nomor Telkomsel (selain by.U), bisa melakukan unregistrasi sendiri melalui SMS UNREG#NO NIK 
@@ -1804,13 +1804,13 @@ Tidak Bisa Aktivasi SIM Card Dengan Keterangan Maximum Number
 6. Capture gagal aktivasi SIM Card : 
 7. Capture bukti sudah melakukan unregistrasi : 
 8. Order ID CXT/CXO (Pengecekan OperatorX) : 
-`},{id:40,case:`Perubahan Data Pelanggan`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:40,case:`Perubahan Data Pelanggan`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : perubahan data pelanggan
 Solusi : minta data
-`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Berikut form perubahan datanya ya, silakan Kakak isi dulu dengan tandatangan diatas materai ya :)
+`,Solusi:t=>t===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Berikut form perubahan datanya ya, silakan Kakak isi dulu dengan tandatangan diatas materai ya :)
 
 Halo, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk perubahan data nya, boleh infoin data ini ya biar bisa aku proses : 
 1. Nomor by.U : 
@@ -1834,7 +1834,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu Permintaan Perubahan data  dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: zz
+2. Email: ${e}
 3. NIK KTP pelanggan baru : 
 4. No KK pelanggan baru   : 
 
@@ -1858,7 +1858,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu Permintaan Perubahan data  dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: zz
+2. Email: ${e}
 3. NIK KTP pelanggan baru : 
 4. No KK pelanggan baru   : 
 
@@ -1876,13 +1876,13 @@ Perubahan data pelanggan
 4. Foto identitas pelanggan baru : 
 5. Surat pernyataan : 
 6. Validasi tambahan : 
-`},{id:41,case:`Perubahan Data pindah tangan (pindah tangan)`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:41,case:`Perubahan Data pindah tangan (pindah tangan)`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : perubahan data 
 Solusi : minta data
-`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
+`,Solusi:t=>t===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
 1. Alamat Email login by.U :
 2. NIK & NOK pelanggan lama :
 3. NIK & NOK pelanggan baru :
@@ -1898,7 +1898,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu Permintaan Perubahan data karena pindah tangan dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: zz
+2. Email: ${e}
 3. NIK KTP pelanggan baru : 
 4. No KK pelanggan baru   : 
 
@@ -1918,7 +1918,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${Ya()} Kakak mau dibantu Permintaan Perubahan data karena pindah tangan dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: zz
+2. Email: ${e}
 3. NIK KTP pelanggan baru : 
 4. No KK pelanggan baru   : 
 
@@ -1938,10 +1938,10 @@ Perubahan data pelanggan pindah tangan
 7. Foto identitas pelanggan lama : 
 8. Foto identitas pelanggan baru : 
 9.  Surper : 
-`},{id:42,case:`PUK`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:42,case:`PUK`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : puk
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak untuk permintaan kode PUK, boleh infoin data ini ya biar bisa aku bantu :
@@ -1989,10 +1989,10 @@ a. Batas maksimal memasukkan PUK adalah 10 kali
 b. Setelah 10 kali gagal, pelanggan diharuskan ganti kartu. Pastikan menginputnya sesuai dengan PUK yang diberikan
 c. Kode PUK tidak akan berubah, Kakak bisa menyimpan kode PUK jika diperlukan kembali. Semoga berhasil Kak :)
 
-`,Mandatory:``},{id:43,case:`Tidak dapat langganan ZOOM Premium`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`,Mandatory:``},{id:43,case:`Tidak dapat langganan ZOOM Premium`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : Tidak dapat langganan ZOOM Premium"
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat langganan Zoom nya, boleh infoin data ini ya biar bisa aku proses :
@@ -2026,10 +2026,10 @@ Tidak dapat langganan ZOOM Premium
 5. Tipe topping Zoom yang dibeli : 
 6. Capture SMS dari TSELZOOM : 
 7. Capture halaman profil di aplikasi web ZOOM : 
-`},{id:44,case:`Tidak dapat langganan Netflix`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:44,case:`Tidak dapat langganan Netflix`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : Tidak dapat langganan Netflix
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat langganan Netflix nya, boleh infoin data ini ya biar bisa aku proses :
@@ -2068,10 +2068,10 @@ Tidak dapat langganan Netflix
 6. Capture kendala : 
 7. Order detail ID (CXO) (Pengecekan OperatorX) : 
 8. Transaction ID (CXT) (Pengecekan OperatorX) : 
-`},{id:45,case:`Tidak dapat langganan Vidio`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:45,case:`Tidak dapat langganan Vidio`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : Tidak dapat langganan Vidio
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat langganan Vidio nya, boleh infoin data ini ya biar bisa aku proses :
@@ -2104,10 +2104,10 @@ Tidak dapat langganan Vidio
 6. Capture halaman paket subscription di aplikasi Vidio : 
 7. Order detail ID (CXO) (Pengecekan OperatorX) : 
 8. Transaction ID (CXT) (Pengecekan OperatorX) : 
-`},{id:46,case:`Tidak dapat kuota Birthday reward`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:46,case:`Tidak dapat kuota Birthday reward`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : Tidak dapat kuota Birthday reward
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat kuota bonus birthday, boleh infoin data ini ya biar bisa aku proses :
@@ -2136,10 +2136,10 @@ Tidak Mendapatkan Kuota Birthday Reward
 4. Capture halaman notifikasi di apps by.U : 
 5. Capture halaman paket aktif : 
 6. Hasil pengecekan Add Ons di CRM (berupa text dan tidak boleh printscreen) : 
-`},{id:47,case:`IRENEW Voucher fisik`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:47,case:`IRENEW Voucher fisik`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : IRENEW Voucher fisik
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik, boleh infoin data ini ya biar bisa aku proses :
@@ -2176,10 +2176,10 @@ Masalah Pembelian Kuota Via Tukar Kode Voucher
 8. Order detail ID (CXO) (Pengecekan OperatorX) : 
 9. Transaction ID (CXT) (Pengecekan OperatorX) : 
 10. Tanggal dan waktu kejadian : 
-`},{id:48,case:`Sponsorship/kerjasama`,Bracket:e=>e===`Email`?`#Pelangganbyu
+`},{id:48,case:`Sponsorship/kerjasama`,Bracket:t=>t===`Email`?`#Pelangganbyu
 [byU Email]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : Sponsorship
 Solusi : diteruskan ke email  event@byu.id
 
@@ -2198,9 +2198,9 @@ Hi, Kak. Saat ini udah terhubung dengan Nindy. Terkait pengajuan Sponsorship/ker
 
 Aku tunggu datanya ya Kak :)
 `:`#Pelangganbyu
-[byU ${e}]
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : Sponsorship
 Solusi : arahin hubungi email
 `,Solusi:e=>e===`Email`?`Hi, Kak. Saat ini udah terhubung dengan Nindy. Terkait pengajuan Sponsorship/kerjasama udah aku bantu ajuin dulu ke tim terkait, kalo sesuai akan dihubungi melalui CPnya ya :)
@@ -2219,10 +2219,10 @@ Hi, Kak. Saat ini udah terhubung dengan Nindy. Terkait pengajuan Sponsorship/ker
 Aku tunggu datanya ya Kak :)
 `:` Makasih udah nunggu Kak :) Mengenai pengajuan sponsorship atau kerjasama proposalnya bisa langsung dikirim ke email nindy@byu.id ya, have a good day :)
 
-`,Mandatory:``},{id:49,case:`SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan / Gagal pairing`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`,Mandatory:``},{id:49,case:`SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan / Gagal pairing`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : gagal pairing
 Solusi : minta data
 `,Solusi:` Makasih udah nungu. Kak maaf sepertinya ada kendala nih untuk  SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
@@ -2238,10 +2238,10 @@ SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan
 1. Nomor by.U : xxxxxx
 2. Akun by.U : 
 3. SN Kartu Pengganti :
-4. Capture SIM Card tidak terdeteksi : `},{id:50,case:` greeting`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+4. Capture SIM Card tidak terdeteksi : `},{id:50,case:` greeting`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : greeting
 Solusi : greeting
 
@@ -2263,24 +2263,24 @@ https://docs.google.com/spreadsheets/d/1uZiJ3pb1dVJr3Wvw9-D0mOpevhUOhQ1hX2thMy02
 
 https://web.telegram.org/k/
 
-`},{id:51,case:`SIM card Deactive`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:51,case:`SIM card Deactive`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case :  sim card deactive
 Solusi : info  sim card deactive
 `,Solusi:` Makasih udah nungu. Kak maaf untuk kendala SIM card nya, aku cek nomor xxxxxx udah gabisa di aktivasi/registrasi karena nomornya udah ga aktif/ga di atifin lebih dari 30 hari dari waktu pembayaran berhasil. Aku saranin beli nomor baru di apps by.U pakai akun baru ya :)
-`,Mandatory:``},{id:52,case:`Pulsa terpotong karena SMS dari luar negeri`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`,Mandatory:``},{id:52,case:`Pulsa terpotong karena SMS dari luar negeri`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : Pulsa terpotong karena SMS dari luar negeri
 Solusi : info nomor SMS nya
 `,Solusi:` Maaf udah bikin Kakak nunggu ya. Aku cek di sistem untuk nomor xxxxxx ada pengurangan pulsa sebesar Rp500 untuk SMS ke nomor +41415737017. Untuk SMS ini adalah SMS verifikasi dari apps tertentu yang developernya dari luar negeri dan membebankan biaya registrasi ke pulsa customer. Ini settingan dari apps yang terisntall di HP Kakak yang otomatis menarik biaya pulsa ya, bukan settingan dari by.U 🙂
-`,Mandatory:``},{id:53,case:`SIM card tidak terdeteksi`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`,Mandatory:``},{id:53,case:`SIM card tidak terdeteksi`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : SIM card tidak terdeteksi
 Solusi : solusi SIM card tidak terdeteksi
 `,Solusi:` Makasih udah nunggu. Kak maaf, untuk kendala SIM card yang ga kedeteksi, kalau IMEI nya udah terdaftar tapi masih berkendala, boleh coba panduan ini ya :
@@ -2289,10 +2289,10 @@ Solusi : solusi SIM card tidak terdeteksi
 3. Pastikan posisi sim card dan slotnya pas
 4. Refresh jaringan : pada menu mobile networks, pilih operator lain terlebih dahulu, kemudian pilih by.U (Telkomsel).
 5. Coba airplane mode dan ON-OFF kan mobile data.
-`,Mandatory:``},{id:54,case:`Kuota tiba-tiba hilang karena kesalahan by.U`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`,Mandatory:``},{id:54,case:`Kuota tiba-tiba hilang karena kesalahan by.U`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : Kuota tiba-tiba hilang karena kesalahan by.U
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala kuotanya, boleh infoin data ini ya biar bisa aku proses : 
@@ -2353,10 +2353,10 @@ u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
 7. Nomor BSS Order ID yang u-coin nya tidak masuk : (hasil pengecekan agent)
 8. Nomor Transaction ID dan waktu transaksi di CRM yang u-coin nya tidak masuk : (hasil pengecekan agent)
 9. Printscreen history u-Coin di LMS : (hasil pengecekan agent)
-`},{id:56,case:`Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:56,case:`Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)
 Solusi : minta data
 `,Solusi:`Makasih udah nunggu. Kak maaf, untuk kendala masalah pemesanan sim card via e-Commerce yang dialami, boleh infoin data ini ya biar aku bantu cek dulu transaksinya :
@@ -2366,32 +2366,32 @@ Solusi : minta data
 
 
 Kak maaf, untuk aktivasinya kalau Kakak beli di Shopee toko resmi by.U, pastiin waktu beli SIM card nya kasih notes email biar didaftarin akun by.U nya. Kalau Kakak belum kasih notes nya, boleh Kakak hubungi admin by.U di Shopee ya biar bisa di bantu daftarin dulu akun by.U nya. Pastiin emailnya yang belum pernah didaftarin akun by.U sebelumnya ya :)
-`,Mandatory:(e,t)=>`#Pelangganbyu
-[byU ${e}] 
+`,Mandatory:(t,n)=>`#Pelangganbyu
+[byU ${t}] 
 Pelanggan by.U
-${t} 
+${n} 
 Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)
 
 1. Nomor by.U : xxxxxx
-2. Email akun by.U : zz
+2. Email akun by.U : ${e}
 2. Printscreen bukti bayar yang tertera Invoice dan capture resi di aplikasi e-Commerce :
 3. Printscreen status pengiriman yang tertera resi di aplikasi e-Commerce : (dicek oleh agent)
 4. Capture profil apps : ( yang tertulis email login pelanggan)
 5. Tuliskan alasan tidak ada tombol aktivasi adalah karena alasan :
 6. Email alternatif yang belum terdaftar di akun by.U : 
 7. Order ID CXT/CXO (Pengecekan OperatorX) : 
-`},{id:57,case:` transfer pulsa`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:57,case:` transfer pulsa`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : info send gift/tf pulsa
 Solusi : info send gift/tf pulsa
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
 `:`Makasih udah nunggu. Kak untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
-`,Mandatory:``},{id:58,case:`Tidak Mendapatkan Langganan Prime Video`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`,Mandatory:``},{id:58,case:`Tidak Mendapatkan Langganan Prime Video`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : Tidak Mendapatkan Langganan Prime Video
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk ga dapat langganan Prime Video nya , boleh infoin data ini ya biar bisa aku proses : 
@@ -2423,20 +2423,20 @@ Tidak Mendapatkan Langganan Prime Video
 6. Capture kendala :
 7. Order detail ID (CXO) (Pengecekan OperatorX) :
 8. Transaction ID (CXT) (Pengecekan OperatorX) :
-`},{id:59,case:`cek masa aktif`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:59,case:`cek masa aktif`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : informasi status kartu
 Solusi : informasi status kartu
 `,Solusi:`Makasih udah nunggu. Kak kalau aku cek nomor xxxxxx, statusnya aktif kok. Ini harusnya bisa digunakan SMS,internet maupun internet ya Kak. Boleh coba cek ya :)
 
 Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) 
 
-`,Mandatory:``},{id:60,case:`Info Paket/ Tarif Harga paket berubah/jadi mahal/promo`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`,Mandatory:``},{id:60,case:`Info Paket/ Tarif Harga paket berubah/jadi mahal/promo`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : info paket
 Solusi : info paket
 `,Solusi:`Kak, maaf ya udah dibuat ga nyaman, untuk harga paket yang tertera di aplikasi bersifat penawaran ya, jadi akan berubah sesuai dengan promo yang sedang berjalan, yang merupakan bagian dari upaya kita buat terus ningkatin kualitas layanan by.U. Silakan untuk melakukan pembelian paket yang tersedia di aplikasi by.U ya kak :)
@@ -2446,10 +2446,10 @@ Kak maaf, kalau ga tersedia paket yang Kakak inginin, artinya penawaran paketnya
 Kak  aku cek nomor xxxxxx saat ini kuota internetnya udah habis, jadi gabisa internetan. Kakak bisa beli kuota baru di apps by.U pake wifi/jaringan lain dulu ya :)
 
 Maaf kak, saat ini ada penyesuaian tarif paket internet merupakan salah satu upaya by.U untuk tetap menjaga kualitas layanan kepada pelanggan. Nindy dan team akan terus tingkatin produk dan layanan by.U biar Kakak bisa selalu nyaman pakai by.U. Keep supporting us ya! :)
-`,Mandatory:``},{id:61,case:`Cara pasang eSIM`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`,Mandatory:``},{id:61,case:`Cara pasang eSIM`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : cara pasang esim
 Solusi : info pasang eSIM
 `,Solusi:`Buat iPhone:
@@ -2489,10 +2489,10 @@ pesen eSIM by.U via aplikasi dengan langkah-langkah di bawah ini yaa:
 7. Selanjutnya, kamu akan dikasih QR Code dengan profile eSIM yang bisa kamu download.
 
 Silakan dicoba dulu ya Kak :)
-`,Mandatory:``},{id:62,case:`Gagal Registrasi 5g`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`,Mandatory:``},{id:62,case:`Gagal Registrasi 5g`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case :  Gagal Registrasi 5g
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala 5G nya, Pastiin HP Kakak udah support 5G dan Kakak juga bisa cek apakah lokasi Kakak udah tercover jaringan 5G melalui https://www.telkomsel.com/check-5G-coverage. Kakak bisa melakukan daftar mandiri melalui https://my.telkomsel.com/provisioning/5g. Pastiin juga saat akses link tersebut SIM Card terpasang di SIM 1, data selular dalam keadaan on, dan fitur lokasi aktif.
@@ -2526,17 +2526,17 @@ ${t}
 4. Tanggan dan waktu kejadian :
 5. Tipe HP :
 6. Capture kendala di https://my.telkomsel.com/provisioning/5g :
-`},{id:63,case:`Cek Tiket/Ticket`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:63,case:`Cek Tiket/Ticket`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : Cek Tiket
 Solusi : Cek hasil tiket
 `,Solusi:`Kak aku cek untuk ID laporan xx, masih dalam proses penanganan tim kami. Ditunggu aja dulu prosesnya ya. Semoga cepet beres :)
-`,Mandatory:``},{id:64,case:`Request bikin/buat nomor 4 digit/angka`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`,Mandatory:``},{id:64,case:`Request bikin/buat nomor 4 digit/angka`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : Info request nomor
 Solusi : Info request nomor
 `,Solusi:`Hi, Kak Asep. Saat ini udah terhubung dengan Nindy. Mengenai request nomor hanya bisa dilakukan maksimal 4 digit pada fitur "Bikin Nomor" di aplikasi by.U atau Web byu.id dengan cara berikut :
@@ -2547,10 +2547,10 @@ Solusi : Info request nomor
 Klik "Cari Nomor"
 4. Lalu akan muncul 5 pilihan nomor dengan 4 digit yang kamu pilih
 5. Setelah muncul pilihan nomor yang tersedia, kamu punya waktu 1 menit untuk memilih dan 5x kesempatan untuk mengganti kombinasi 4 digit angka favorit kamu. Kalo kamu sudah menggunakan 5x kesempatan, kamu baru bisa coba lagi buat bikin kombinasi 4 digit angka setelah 1x24 jam ya :)
-`,Mandatory:``},{id:65,case:`Permintaan Hapus Profil eSIM Karena Device Hilang`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`,Mandatory:``},{id:65,case:`Permintaan Hapus Profil eSIM Karena Device Hilang`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : Permintaan Hapus Profil eSIM Karena Device Hilang
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk hapus eSIM di perangkat lamanya yang udah hilang, boleh infoin data ini ya biar bisa aku proses : 
@@ -2583,10 +2583,10 @@ Permintaan Hapus Profil eSIM Karena Device Hilang
 5. Foto selfie dengan KTP asli : 
 6. Jenis dan type Device yang hilang : 
 7. Email lain yang bisa dihubungi : 
-`},{id:66,case:`CCA UE_Handset_Data_Setting_Off`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:66,case:`CCA UE_Handset_Data_Setting_Off`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device atau sim card yang digunakan. Jika restart HP tidak menyelesaikan masalah, maka disarankan untuk ajuin ganti SIM card ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
@@ -2623,10 +2623,10 @@ Solusi : sesuai hasil cca disarankan ganti SIM card
 #CheckbyCCA
 
 
-`},{id:67,case:`CCA UE_Handset_Problem_4G`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:67,case:`CCA UE_Handset_Problem_4G`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device atau sim card yang digunakan. Jika restart HP tidak menyelesaikan masalah, maka disarankan untuk ajuin ganti SIM card ya :) `,Mandatory:(e,t)=>`#Pelangganbyu
@@ -2663,10 +2663,10 @@ Solusi : sesuai hasil cca disarankan ganti SIM card
 #CheckbyCCA
 
 
-`},{id:68,case:`CCA Radio_lambat`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:68,case:`CCA Radio_lambat`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : sinyal/internet
 Solusi : minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
@@ -2711,18 +2711,18 @@ Solusi : minta data
 #CheckbyCCA
 
 
-`},{id:69,case:`CCA Neighbor_BTS_Problem`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:69,case:`CCA Neighbor_BTS_Problem`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : sinyal/internet
 Solusi : sarankan tunggu sesuai CCA
-`,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
+`,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala ya :)`,Mandatory:(t,n)=>`#Pelangganbyu
+[NO] [byU ${t}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
-4. Tanggal/Jam Kejadian : ${t} 
+4. Tanggal/Jam Kejadian : ${n} 
 5. Lokasi Pelanggan (alamat) : 
 6. Koordinat Customer : 
 7. Segmentasi Kartu :byU
@@ -2745,7 +2745,7 @@ Solusi : sarankan tunggu sesuai CCA
     Neighbor_BTS_Problem
     Remarks
     Bapak atau Ibu Yth, kendala Bapak atau Ibu yang dialami saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala.
-    Cause : zz
+    Cause : ${e}
     Level : 0
     Alarm meaning : 0 = Low, 1 = Critical, 2 = Major, 3 = Minor
     Suggestion
@@ -2753,10 +2753,10 @@ Solusi : sarankan tunggu sesuai CCA
     Ticket No: IM-20260207-00000898
 16. Solusi Yang telah di berikan : disarankan menunggu
 #CheckbyCCA
-`},{id:70,case:`CCA Kapasitas_jaringan`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:70,case:`CCA Kapasitas_jaringan`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : sinyal/internet
 Solusi : Minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
@@ -2799,10 +2799,10 @@ Solusi : Minta data
     SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi masalah kapasitas jaringan yang penuh.
 16. Solusi Yang telah di berikan : tiket
 #CheckbyCCA
-`},{id:71,case:`CCA Sinyal_tidak_stabil`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:71,case:`CCA Sinyal_tidak_stabil`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : sinyal/internet
 Solusi : Minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
@@ -2845,10 +2845,10 @@ Solusi : Minta data
     SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi jaringan yang dirasakan pelanggan sedang tidak stabil sehingga pelanggan merasakan internet lamban.
 16. Solusi Yang telah di berikan : tiket
 #CheckbyCCA
-`},{id:72,case:`SMS broadcast`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:72,case:`SMS broadcast`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : sms konten
 Solusi : Minta data
 `,Solusi:e=>e===`Email`?`Halo, Kak . Saat ini udah terhubung dengan Nindy. Kalo yang dimaksud permintaan berhenti layanan SMS konten atau Broadcast, Kakak bisa balasa SMS yang didapat dengan Cara ketik UNREG. Kalo ada kendala, boleh infoin data berikut agar dibantu lebih lanjut ya:
@@ -2878,10 +2878,10 @@ Permintaan berhenti layanan SMS Broadcast
 3. Capture SMS :
 4. Tanggal dan waktu kejadian :
 5. Nomor pengirim Broadcast :
-`},{id:73,case:`CCA Layanan_data_tidak_tersedia`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:73,case:`CCA Layanan_data_tidak_tersedia`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : sinyal/internet
 Solusi : Minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, kami menemukan indikasi bahwa sim card yang sedang digunakan tidak memiliki paket untuk mengakses atau menggunakan layanan internet. Mohon dicek kembali :) 
@@ -2934,10 +2934,10 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
     TIDAK PERLU CREATE TIKET KE TIM NETWORK. Adanya indikasi bahwa pelanggan tidak menggunakan layanan roaming, saran kepada agent untuk mengecek profile dan paketnya kembali.
 16. Solusi Yang telah di berikan : sesuai remarks
 #CheckbyCCA
-`},{id:74,case:`CCA Kendala_sinyal_4G`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:74,case:`CCA Kendala_sinyal_4G`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : sinyal/internet
 Solusi : Minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
@@ -2980,10 +2980,10 @@ Solusi : Minta data
     SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi kondisi jangkauan sinyal 4G pada pelanggan yang kurang baik.
 16. Solusi Yang telah di berikan : Tiket
 #CheckbyCCA
-`},{id:75,case:`CCA UE_Handset_tidak_connect_ke_network`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:75,case:`CCA UE_Handset_tidak_connect_ke_network`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device atau sim card yang digunakan. Jika restart HP tidak menyelesaikan masalah, maka disarankan untuk ajuin ganti SIM card ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
@@ -3019,10 +3019,10 @@ Solusi : sesuai hasil cca disarankan ganti SIM card
 16. Solusi Yang telah di berikan : restart HP dan arahin ganti SIM card
 #CheckbyCCA
 
-`},{id:76,case:`CCA Network_browsing_lambat`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:76,case:`CCA Network_browsing_lambat`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : sinyal/internet
 Solusi : minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
@@ -3065,10 +3065,10 @@ Solusi : minta data
     SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi masalah pada jaringan yang lambat.
 16. Solusi Yang telah di berikan : tiket
 #CheckbyCCA
-`},{id:77,case:`Cara membagikan kode refferal`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:77,case:`Cara membagikan kode refferal`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : Cara membagikan kode refferal
 Solusi : edukasi
 `,Solusi:`Hi, Kak Herman. Saat ni udah terhubung dengan Nindy. Aku konfirmasi apakah yang dimaksud cara ajak teman menggunakan nomor by.U? Kalo iya, sebelumnya Pastiin dulu udah pake aplikasi versi terbaru ya!
@@ -3078,16 +3078,16 @@ Nah ada 2 cara buat share link referral:
 1. Buka aplikasi lalu klik foto profile di pojok kiri atas aplikasi. Klik tombol "Ajak Teman" lalu bagikan link/QR code referral lewat channel yang kamu mau
 2. Buka aplikasi by.U lalu klik carding "Rich Giga" di halaman Updates, lalu klik "Link Referal" dan bagikan lewat channel yang kamu mau atau ajak teman kamu untuk scan QR code referal yang ada di aplikasi.
 
-Oh iya! Kamu bisa kamu share referal kamu lewat Whatsapp, Line, IG direct, Twitter, Email, Linkedin, Facebook Messenger, SMS, Email, Flipboard, dan pilihan channel lainnya ya :)`,Mandatory:``},{id:78,case:`Paket unlimited/Mbps`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+Oh iya! Kamu bisa kamu share referal kamu lewat Whatsapp, Line, IG direct, Twitter, Email, Linkedin, Facebook Messenger, SMS, Email, Flipboard, dan pilihan channel lainnya ya :)`,Mandatory:``},{id:78,case:`Paket unlimited/Mbps`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : Paket unlimited
 Solusi : edukasi ga tersedia
-`,Solusi:e=>e===`Email`?`Hi, Kak Ardi. Saat ini udah terhubung dengan Nindy. Mengenai paket unlimited atau Mbps lagi engga tersedia dulu nih atas pertimbangan tim dan buat info kedepannya masih ada paketnya atau engga Kaka bisa cek berkala siapa tau tim lagi siapin kejutan kuota yg lebih menarik buat kamu dan bisa juga beli dulu paket lainnya yg tersedia si Apps ya Kak, makasih udah antusias banget :)`:`Kak maaf, untuk paket unlimited atau Mbps lagi engga tersedia dulu nih atas pertimbangan tim dan buat info kedepannya masih ada paketnya atau engga Kaka bisa cek berkala siapa tau tim lagi siapin kejutan kuota yg lebih menarik buat kamu dan bisa juga beli dulu paket lainnya yg tersedia si Apps ya Kak, makasih udah antusias banget :)`,Mandatory:``},{id:79,case:`CCA Cell_Colo_Problem`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`,Solusi:e=>e===`Email`?`Hi, Kak Ardi. Saat ini udah terhubung dengan Nindy. Mengenai paket unlimited atau Mbps lagi engga tersedia dulu nih atas pertimbangan tim dan buat info kedepannya masih ada paketnya atau engga Kaka bisa cek berkala siapa tau tim lagi siapin kejutan kuota yg lebih menarik buat kamu dan bisa juga beli dulu paket lainnya yg tersedia si Apps ya Kak, makasih udah antusias banget :)`:`Kak maaf, untuk paket unlimited atau Mbps lagi engga tersedia dulu nih atas pertimbangan tim dan buat info kedepannya masih ada paketnya atau engga Kaka bisa cek berkala siapa tau tim lagi siapin kejutan kuota yg lebih menarik buat kamu dan bisa juga beli dulu paket lainnya yg tersedia si Apps ya Kak, makasih udah antusias banget :)`,Mandatory:``},{id:79,case:`CCA Cell_Colo_Problem`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : sinyal/internet
 Solusi : sarankan tunggu sesuai CCA
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
@@ -3130,10 +3130,10 @@ Solusi : sarankan tunggu sesuai CCA
     Ticket No: EM-20260214-00000957
 16. Solusi Yang telah di berikan : disarankan menunggu
 #CheckbyCCA
-`},{id:80,case:`CCA BTS_Down`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:80,case:`CCA BTS_Down`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : sinyal/internet
 Solusi : sarankan tunggu sesuai CCA
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
@@ -3173,10 +3173,10 @@ Solusi : sarankan tunggu sesuai CCA
     Ticket No: IM-20260216-00000058
 16. Solusi Yang telah di berikan : disarankan menunggu
 #CheckbyCCA
-`},{id:81,case:`CCA Red_Cell_Capacity_Solution`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:81,case:`CCA Red_Cell_Capacity_Solution`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : sinyal/internet
 Solusi : minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dikarenakan BTS sedang mengalami isu yang berkaitan dengan kapasitas jaringan yang penuh di BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
@@ -3220,10 +3220,10 @@ Solusi : minta data
 16. Solusi Yang telah di berikan : tiket
 #CheckbyCCA
 
-`},{id:82,case:`CCA Kendala_Sinyal`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:82,case:`CCA Kendala_Sinyal`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : sinyal/internet
 Solusi : minta data
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dikarenakan BTS sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
@@ -3267,10 +3267,10 @@ Solusi : minta data
 16. Solusi Yang telah di berikan : tiket
 #CheckbyCCA
 
-`},{id:83,case:`Beli Paket/Pulsa/SIM card`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:83,case:`Beli Paket/Pulsa/SIM card`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : cara pembelian SIM card/eSIM
 Solusi : info cara pembelian SIM card/eSIM
 `,Solusi:`Kak untuk beli paket internet bisa lewat apps by.U dengan pilih menu isi kuota pada halaman dashboard ya :)
@@ -3279,10 +3279,10 @@ Kak untuk beli pulsa bisa lewat apps by.U dengan pilih menu isi pulsa pada halam
 
 Kak untuk beli SIM card/nomor baru bisa beli lewat apps/web by.U ya, nanti setelah pilih paket langsung masuk ke halaman pembayaran. Pilih nomor yang tersedia aja disana ya :)
 
-Kak untuk beli eSIM bisa lewat apps by.U langsung ya, pastiin pilih menu eSIM sebelum login/sign up :)`,Mandatory:``},{id:85,case:`Tidak dapat Langganan Youtube Premium`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+Kak untuk beli eSIM bisa lewat apps by.U langsung ya, pastiin pilih menu eSIM sebelum login/sign up :)`,Mandatory:``},{id:85,case:`Tidak dapat Langganan Youtube Premium`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : Tidak Mendapatkan Langganan Youtube Premium
 Solusi : minta data
 `,Solusi:`Hai, Kak. Maaf banget jadi ga nyaman karena ga dapet SMS link akun Youtube Premium-nya di nomor xxxxxx. Silakan coba aktivasi dulu melalui link berikut : https://tsel.id/ytact ya. Kalo masih kendala infoin data berikut biar dibantu lebih lanjut :
@@ -3305,19 +3305,19 @@ Tidak Mendapatkan Langganan Youtube Premium
 7. Order detail ID (CXO) (Pengecekan OperatorX) :
 8. Transaction ID (CXT) (Pengecekan OperatorX) :
 
-`},{id:86,case:`Closing`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:86,case:`Closing`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : closing
 Solusi : closing
 `,Solusi:e=>e===`Live`?`Makasih juga udah interaksi ya Kak :) Ohiya, aku akhiri obrolan kita ya, Kaka jangan dulu tutup chatnya ya karena setelah ini juga ada pop-up survey yang lain. Dibantu isi ya Kak kalau Kaka merasa puas boleh banget isi dengan angka (10) dan seterusnya ya. Makasih banget udah selalu setia sama by.U Kak :)  sehat selalu :)
 `:`Oke, Kak. Kalau nantinya masih ada yang mau ditanyain lagi terkait layanan by.U-nya, jangan sungkan buat hubungi aku ya.Aku izin akhiri obrolan kita ya, Agar pelayanannya bisa lebih baik lagi nih Kak, bisa isi link berikut https://tsel.id/survey-byu . Boleh banget isi dengan angka (10) kalau merasa terbantu dan kalau merasa belum terbantu boleh di isi dari mulai angka (1) dan seterusnya, ya Kak.
 Nindy bakal tingkatin terus kualitas layanan by.U biar kamu seneng dan tetep setia sama by.U 💙`,Mandatory:`
-`},{id:87,case:`Pengambilan SIM card di GraPARI`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:87,case:`Pengambilan SIM card di GraPARI`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${e}
 Detail case : Pengambilan SIM card di GraPARI
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`
@@ -3360,10 +3360,10 @@ Pick Up GRAPARI tutup
 8. Order detail ID (CXO) (Pengecekan OperatorX) :
 9. Transaction ID (CXT) (Pengecekan OperatorX) :
 
-`},{id:88,case:`Keluhan sinyal di Luar Negeri Roaming`,Bracket:e=>`#Pelangganbyu
-[byU ${e}]
+`},{id:88,case:`Keluhan sinyal di Luar Negeri Roaming`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${e}
 Detail case : gabisa sinyal roaming
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`
@@ -3414,11 +3414,11 @@ Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX ya
 
 
 https://www.telkomsel.com/roaming/setdevice
-`,Mandatory:e=>`#Pelangganbyu
-[NO][IR][${e}]
+`,Mandatory:t=>`#Pelangganbyu
+[NO][IR][${t}]
 
 1. Nomor by.U : xxxxxx
-2. Email akun by.U : zz
+2. Email akun by.U : ${e}
 3. Lokasi negara : 
 4. Tanggal dan waktu kejadian sejak kapan : 
 5. Jaringan/operator negara setempat yang digunakan : 
@@ -3428,7 +3428,7 @@ https://www.telkomsel.com/roaming/setdevice
 9. Capture setting APN di hp : 
 10. Capture bar sinyal yang didapat : 
 11. Email aktif yang bisa dihubungi ? 
-`}];var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e,selectedId:t})=>{let n=e=>e??``,r=Xa().slice().sort((e,t)=>n(e.case).toLocaleLowerCase().localeCompare(n(t.case).toLocaleLowerCase()));return(0,L.jsx)(qa,{options:r.map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),value:r.map(e=>({value:e.id,label:e.case})).find(e=>e.value===t)||null,styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
+`}]};var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e,selectedId:t})=>{let n=e=>e??``,r=Xa().slice().sort((e,t)=>n(e.case).toLocaleLowerCase().localeCompare(n(t.case).toLocaleLowerCase()));return(0,L.jsx)(qa,{options:r.map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),value:r.map(e=>({value:e.id,label:e.case})).find(e=>e.value===t)||null,styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),r(!0),setTimeout(()=>r(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,L.jsx)(`p`,{className:` ${n?`invisible!`:`visible`}`,children:n?`copy!`:t}),(0,L.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,n?`anjay`:``,` `]})]})};function eo(){let e=(0,l.useRef)([]),t=(0,l.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var to=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=eo(),c=e=>{let t=e.split(`
 `),n=1;for(let e=0;e<t.length;e++){if(t[e].trim()===``){n=1;continue}let r=t[e].match(/^(\d+)\.\s*(.*)/);if(!r){n=1;continue}t[e]=`${n}. ${r[2]}`,n++}return t.join(`
@@ -3451,7 +3451,7 @@ https://www.telkomsel.com/roaming/setdevice
 `).length+(d>0?1:0)),_=f.slice(0,g),v=f.slice(g);h[d]=`${Number(p[1])}. ${_.replace(/^(\d+)\.\s*/,``).trimEnd()}`,h.splice(d+1,0,`${m}. ${v.trimStart()}`),a(h,d+2);let y=h.join(`
 `),b=h.slice(0,d+1).join(`
 `).length+`\n${m}. `.length;u(y,b),setTimeout(()=>{n.current?.setSelectionRange(b,b)},0)},placeholder:`Pilih dulu kategorinya .....`})},ro=({segment:e})=>{let[t,n]=(0,l.useState)(()=>{let e=localStorage.getItem(`selectedId`);return e?Number(e):null}),r=Xa().find(e=>e.id===t),[i,a]=(0,l.useState)(``),[o,s]=(0,l.useState)(``);return(0,l.useEffect)(()=>{if(!r)return;localStorage.setItem(`selectedId`,String(t));let n=Ja();a(typeof r.Mandatory==`function`?r.Mandatory(e,n):r.Mandatory);let i=typeof r.Solusi==`function`?r.Solusi(e):r.Solusi;s([r.Bracket(e),i].filter(Boolean).join(`
-`))},[t,e]),(0,l.useEffect)(()=>{let e=async e=>{if(e.ctrlKey&&!e.shiftKey&&e.code===`Space`){if(e.preventDefault(),!navigator.clipboard)return;let t=await navigator.clipboard.readText();a(e=>e.replace(/xxxxxx/g,t)),s(e=>e.replace(/xxxxxx/g,t))}if(e.ctrlKey&&e.shiftKey&&e.code===`Space`){if(e.preventDefault(),!navigator.clipboard)return;let t=await navigator.clipboard.readText();a(e=>e.replace(/zz/g,t)),s(e=>e.replace(/zz/g,t))}};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[]),(0,L.jsxs)(`div`,{className:`flex flex-col w-screen `,children:[(0,L.jsx)(Qa,{onSelect:n,selectedId:t}),(0,L.jsxs)(`div`,{className:`flex gap-2`,children:[(0,L.jsxs)(`div`,{className:`w-full`,children:[r&&(0,L.jsx)($a,{text:i,label:`Mandatory`}),(0,L.jsx)(to,{selectedId:t,value:i,onChange:a},t)]}),(0,L.jsxs)(`div`,{className:`w-full  `,children:[r&&(0,L.jsx)($a,{text:o,label:`Bracket + Solusi`}),(0,L.jsx)(no,{value:o,onChange:s},t)]})]})]})},io=()=>{let[e,t]=(0,l.useState)(null),[n,r]=(0,l.useState)(()=>{let e=localStorage.getItem(`my-templates`);return e?JSON.parse(e):Array(22).fill(``)});(0,l.useEffect)(()=>{let e=()=>{let e=localStorage.getItem(`my-templates`);e&&r(JSON.parse(e))};return window.addEventListener(`templates-updated`,e),()=>window.removeEventListener(`templates-updated`,e)},[]),(0,l.useEffect)(()=>{localStorage.setItem(`my-templates`,JSON.stringify(n))},[n]);let i=(e,t)=>{let i=[...n];i[e]=t,r(i)};return(0,L.jsx)(`div`,{className:`w-full `,children:[0,1,2,3,4,5,6,7,8,9,10].map(r=>(0,L.jsx)(`div`,{className:`flex`,children:[0,1].map(a=>{let o=r*2+a,s={0:`F1`,2:`F2`,4:`F3`,1:`F4`,3:`F6`,5:`F7`};return(0,L.jsxs)(`div`,{className:`relative w-full`,children:[(0,L.jsx)(`textarea`,{value:n[o],onChange:e=>i(o,e.target.value),onClick:e=>{e.altKey&&(navigator.clipboard.writeText(n[o]),t(o),setTimeout(()=>t(null),500))},className:`h-30 w-full p-1 border-1 border-solid hover:bg-yellow-200 hover:text-black `}),s[o]&&(0,L.jsx)(`span`,{className:`\r
+`))},[t,e]),(0,l.useEffect)(()=>{let e=async e=>{if(e.ctrlKey&&!e.shiftKey&&e.code===`Space`){if(e.preventDefault(),!navigator.clipboard)return;let t=await navigator.clipboard.readText();a(e=>e.replace(/xxxxxx/g,t)),s(e=>e.replace(/xxxxxx/g,t))}if(e.ctrlKey&&e.shiftKey&&e.code===`Space`){if(e.preventDefault(),!navigator.clipboard)return;let t=await navigator.clipboard.readText();a(e=>(console.log(`RAW:`,e),console.log(`STRINGIFIED:`,JSON.stringify(e)),e.replace(/\u200B{2}/g,t))),s(e=>(console.log(`RAW:`,e),console.log(`STRINGIFIED:`,JSON.stringify(e)),e.replace(/\u200B{2}/g,t)))}};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[]),(0,L.jsxs)(`div`,{className:`flex flex-col w-screen `,children:[(0,L.jsx)(Qa,{onSelect:n,selectedId:t}),(0,L.jsxs)(`div`,{className:`flex gap-2`,children:[(0,L.jsxs)(`div`,{className:`w-full`,children:[r&&(0,L.jsx)($a,{text:i,label:`Mandatory`}),(0,L.jsx)(to,{selectedId:t,value:i,onChange:a},t)]}),(0,L.jsxs)(`div`,{className:`w-full  `,children:[r&&(0,L.jsx)($a,{text:o,label:`Bracket + Solusi`}),(0,L.jsx)(no,{value:o,onChange:s},t)]})]})]})},io=()=>{let[e,t]=(0,l.useState)(null),[n,r]=(0,l.useState)(()=>{let e=localStorage.getItem(`my-templates`);return e?JSON.parse(e):Array(22).fill(``)});(0,l.useEffect)(()=>{let e=()=>{let e=localStorage.getItem(`my-templates`);e&&r(JSON.parse(e))};return window.addEventListener(`templates-updated`,e),()=>window.removeEventListener(`templates-updated`,e)},[]),(0,l.useEffect)(()=>{localStorage.setItem(`my-templates`,JSON.stringify(n))},[n]);let i=(e,t)=>{let i=[...n];i[e]=t,r(i)};return(0,L.jsx)(`div`,{className:`w-full `,children:[0,1,2,3,4,5,6,7,8,9,10].map(r=>(0,L.jsx)(`div`,{className:`flex`,children:[0,1].map(a=>{let o=r*2+a,s={0:`F1`,2:`F2`,4:`F3`,1:`F4`,3:`F6`,5:`F7`};return(0,L.jsxs)(`div`,{className:`relative w-full`,children:[(0,L.jsx)(`textarea`,{value:n[o],onChange:e=>i(o,e.target.value),onClick:e=>{e.altKey&&(navigator.clipboard.writeText(n[o]),t(o),setTimeout(()=>t(null),500))},className:`h-30 w-full p-1 border-1 border-solid hover:bg-yellow-200 hover:text-black `}),s[o]&&(0,L.jsx)(`span`,{className:`\r
                                 pointer-events-none\r
                                 absolute\r
                                 top-1/2 left-1/2\r
