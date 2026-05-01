@@ -110,7 +110,16 @@ Nomor by.U : xxxxxx
 Email by.U : ${e}
 Detail case :  gabisa aktivasi Error Lain
 Solusi : minta data
-`,Solusi:`Makasih udah nunggu. Kak maaf, kalau aku cek di nomor xxxxxx, ada  masalah di nomor atau SIM Card by.U Kakak. Untuk pengecekan lebih lanjut, boleh infoin data ini ya :
+`,Solusi:e=>e===`Email`?`Hai Kak saat ini terhubung dengan Nindy. Kak maaf banget untuk aktivasinya, boleh infoin data ini ya biar bis aku cek:
+
+1. Nomor by.U :
+2. Email akun by.U :
+3. Nomor Identitas KTP valid :
+4. NOKK :
+5. Serial Number di cangkang SIM Card :
+6. Capture gagal aktivasi yang menggunakan 1 SIM card di HP dan pastiin ga pakai wifi :
+
+Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U!`:`Makasih udah nunggu. Kak maaf, kalau aku cek di nomor xxxxxx, ada  masalah di nomor atau SIM Card by.U Kakak. Untuk pengecekan lebih lanjut, boleh infoin data ini ya :
 
 1. Email akun by.U :
 2. Nomor Identitas KTP valid :
@@ -198,6 +207,8 @@ Bugs Lain
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
 8. Waktu dan Lama Kejadian : 
 9. Lokasi Kejadian : 
+
+Digital Life Style | K26-Layanan aplikasi tidak bisa digunakan
 `},{id:4,case:`Bugs Ganti Sim Card`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
@@ -238,6 +249,8 @@ Bugs Ganti Sim Card
 6. Detail keluhan yang disampaikan customer apakah bisa akses menggunakan wifi/jaringan lain : YA 
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :  
 8. Waktu dan Lama Kejadian : 
+
+Ganti Kartu | K51-Gagal ganti kartu
 `},{id:5,case:`Tidak bisa Kirim/Terima SMS`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
@@ -545,14 +558,18 @@ Tanggal lapor : ${Ya()}
 
 
 
-1x24 jam`},{id:7,case:`Tidak bisa request OTP Meta Product`,Bracket:t=>`#Pelangganbyu
+1x24 jam`},{id:7,case:`Tarif/harga layanan Google`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Detail case : ga dapat OTP Whatsapp/Telegram
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`ke SMS dulu
-`:`ke SMS dulu:
+`:`Kak untuk tarif pembelian item bayar pake pulsa, pastiin pulsanya mencukupi ya. Berikut cara perhitungannya :
+Harga item + PPN (Google dan Telkomsel) 11% + Jasa 2% 
+
+Jadi, kalau harganya xxxxx, Kakak harus punya pulsa sekitar (harga x 1.2543)
+
 `,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
@@ -665,7 +682,7 @@ Permintaan Deaktivasi SIM Card dan Hapus NIK
 6. Capture hasil pengecekan dari *444# :
 7. Email yang bisa dihubungi :
 
-
+Unregistrasi Prabayar | Permintaan unregistrasi Prabayar
 1x24 jam`},{id:10,case:`Gagal Aktivasi eSIM Account Status Tidak Sesuai`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
@@ -699,7 +716,8 @@ Gagal Aktivasi eSIM Account Status Tidak Sesuai
 
 
 
-1x24 jam`},{id:11,case:`Sinyal lemah/tidak stabil/Tidak ada sinyal`,Bracket:t=>`#Pelangganbyu
+1x24 jam
+e-SIM | Gagal/error saat melakukan Registrasi`},{id:11,case:`Sinyal lemah/tidak stabil/Tidak ada sinyal`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
 Email by.U : ${e}
@@ -926,6 +944,7 @@ Keluhan SIM Card Tidak Sampai via JNE ada AWB
 5. Capture pengecekan nomor resi di web tracking JNE : 
 6. Konfirmasi dari JNE (jika customer sempat komplain ke JNE) : -
 
+Perdana PraBayar | K12-Kendala pengiriman kartu SIM
 `},{id:14,case:`Miskoordinasi JNE `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
@@ -959,6 +978,8 @@ Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
 4. Nama Penerima : 
 5. Nomor Penerima : 
 6. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) : 
+
+Perdana PraBayar | K12-Kendala pengiriman kartu SIM
 `},{id:15,case:`Pembelian paket IRENEW virtual account Paid `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
@@ -1071,6 +1092,9 @@ Permintaan Refund karena kesalahan sistem
 2.Email by.U : ${e}
 3.Capture bukti pembayaran : 
 4. Data refund :
+
+
+P44 - Paket darurat Permintaan refund pulsa
 `},{id:19,case:`Tidak Mendapatkan Kuota Monthversary  `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
@@ -1448,6 +1472,8 @@ Tidak Mendapatkan Voucher Non-Telco
 4. Tanggal penukaran U-Coin : 
 5. Capture bukti redeem di halaman Reward Saya : 
 6. Capture kendala penukaran : 
+
+Aktivasi Paket | K21-Tidak Mendapatkan Voucher Non-Telco
 `},{id:30,case:`Pergantian SIM Card Legacy ditolak GraPARI`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
@@ -1537,6 +1563,8 @@ eSIM sinyal hilang
 7. Capture settingan eSIM di handphone : 
 8. Capture bukti pembayaran : 
 9. Order ID CXT/CXO (Pengecekan OperatorX): 
+
+| e-SIM | Gagal/error saat melakukan Registrasi
 `},{id:32,case:`eSIM barcode/QR tidak tersimpan `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
@@ -1569,7 +1597,9 @@ eSIM  QR tidak tersimpan
 5. Bukti pembayaran : 
 6. Keterangan gagal : (KHUSUS APABILA QR YANG DIMILIKI PELANGGAN TIDAK VALID)
 7. Order ID CXT/CXO (Pengecekan OperatorX) : 
-        
+
+
+K32 - Aktivasi/download Barcode Gagal
 `},{id:33,case:`Bugs Ganti SIM card (mandatory E)`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
@@ -2532,7 +2562,7 @@ Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Detail case : Cek Tiket
 Solusi : Cek hasil tiket
-`,Solusi:`Kak aku cek untuk ID laporan xx, masih dalam proses penanganan tim kami. Ditunggu aja dulu prosesnya ya. Semoga cepet beres :)
+`,Solusi:e=>e===`Email`?`Hai Kak saat ini terhubung dengan Nindy. Kak aku cek untuk ID laporan xx, masih dalam proses penanganan tim kami. Ditunggu aja dulu prosesnya ya. Semoga cepet beres :)`:`Kak aku cek untuk ID laporan xx, masih dalam proses penanganan tim kami. Ditunggu aja dulu prosesnya ya. Semoga cepet beres :)
 `,Mandatory:``},{id:64,case:`Request bikin/buat nomor 4 digit/angka`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
