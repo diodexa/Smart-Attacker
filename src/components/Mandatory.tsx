@@ -1,6 +1,9 @@
 import { getCurrentDate } from "./DateTime"
 
 export const DataMandatory = () => {
+    const EMPTY = "\u200B\u200B"
+    
+    
 const Mandatory = [{ 
 id: 1 ,
 case : "Internet Lambat/Tidak bisa internet",
@@ -8,7 +11,7 @@ case : "Internet Lambat/Tidak bisa internet",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case :  Internet 
 Solusi :  minta data
 `,
@@ -114,11 +117,23 @@ case : "Tidak bisa aktivasi Error Lain",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case :  gabisa aktivasi Error Lain
 Solusi : minta data
 `,
-Solusi : `Makasih udah nunggu. Kak maaf, kalau aku cek di nomor xxxxxx, ada  masalah di nomor atau SIM Card by.U Kakak. Untuk pengecekan lebih lanjut, boleh infoin data ini ya :
+Solusi : (segment: string) => segment ==='Email' ? 
+`Hai Kak saat ini terhubung dengan Nindy. Kak maaf banget untuk aktivasinya, boleh infoin data ini ya biar bis aku cek:
+
+1. Nomor by.U :
+2. Email akun by.U :
+3. Nomor Identitas KTP valid :
+4. NOKK :
+5. Serial Number di cangkang SIM Card :
+6. Capture gagal aktivasi yang menggunakan 1 SIM card di HP dan pastiin ga pakai wifi :
+
+Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U!`
+:
+`Makasih udah nunggu. Kak maaf, kalau aku cek di nomor xxxxxx, ada  masalah di nomor atau SIM Card by.U Kakak. Untuk pengecekan lebih lanjut, boleh infoin data ini ya :
 
 1. Email akun by.U :
 2. Nomor Identitas KTP valid :
@@ -154,7 +169,7 @@ case : "Bugs Lain",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case :  bugs aplikasi
 Solusi :  minta data
 `,
@@ -222,6 +237,8 @@ Bugs Lain
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
 8. Waktu dan Lama Kejadian : 
 9. Lokasi Kejadian : 
+
+Digital Life Style | K26-Layanan aplikasi tidak bisa digunakan
 `   
 },
 
@@ -233,7 +250,7 @@ case : "Bugs Ganti Sim Card",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : bugs ganti sim card
 Solusi : minta data
 `,
@@ -276,6 +293,8 @@ Bugs Ganti Sim Card
 6. Detail keluhan yang disampaikan customer apakah bisa akses menggunakan wifi/jaringan lain : YA 
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :  
 8. Waktu dan Lama Kejadian : 
+
+Ganti Kartu | K51-Gagal ganti kartu
 `   
 },
 
@@ -286,7 +305,7 @@ case : "Tidak bisa Kirim/Terima SMS",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : gabisa kirim/terima SMS
 Solusi :  minta data
 `,
@@ -343,7 +362,6 @@ Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya :
 4.2 Keterangan SMS Pending
 Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya : 
 • Refresh Jaringan dengan cara Restart Handphone dan menunggu proses Pengiriman SMS 1x24 Jam
-
 • Jika kendala di satu nomor aja dan setelah 1x24 jam masih berkendala, coba nomor tujuan dikirim dari nomor lain sebagai perbandingan. Pastiin nomor tujuan aktif dan HP nya ga berkendala
 
 terima OTP
@@ -356,11 +374,11 @@ Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya :
 
 
 `,
-Mandatory : (DateTime: string ) =>
+Mandatory : 
 `#Pelangganbyu
 ID Omnix :
 Nama Pelanggan : pelanggan
-Tanggal lapor : ${DateTime} 
+Tanggal lapor : ${getCurrentDate()} 
 
 
 1. Nomor by.U : xxxxxx
@@ -385,7 +403,7 @@ case : "Panggilan Telepon Masuk / Telepon Keluar",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : gabisa telepon masuk/keluar
 Solusi : minta data
 `,
@@ -592,14 +610,14 @@ Jika hanya dari satu nomor:
 - Jika masih berkendala sarankan nomor pemanggil untuk coba di HP yang lain
 - Kalau semua udah di coba tapi masih berkendala, ada indikasi nomor yang melakukan panggilannya yang berkendala dan disarankan hubungi kami untuk bisa dibantu :)
 `,
-Mandatory : (DateTime: string ) =>
+Mandatory : 
 `#Pelangganbyu
 ID Omnix :
 Nama Pelanggan : Pelanggan
-Tanggal lapor : ${DateTime}
+Tanggal lapor : ${getCurrentDate()}
 
 1. Nomor by.U : xxxxxx
-2. Email akun by.U : zz
+2. Email akun by.U : ${EMPTY}
 3. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
 4. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
 5. Notifikasi gagal saat telepon :
@@ -614,19 +632,23 @@ Tanggal lapor : ${DateTime}
 
 {
 id: 7,
-case : "Tidak bisa request OTP Meta Product",
+case : "Tarif/harga layanan Google",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : ga dapat OTP Whatsapp/Telegram
 Solusi : minta data
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `ke SMS dulu
 ` :
-`ke SMS dulu:
+`Kak untuk tarif pembelian item bayar pake pulsa, pastiin pulsanya mencukupi ya. Berikut cara perhitungannya :
+Harga item + PPN (Google dan Telkomsel) 11% + Jasa 2% 
+
+Jadi, kalau harganya xxxxx, Kakak harus punya pulsa sekitar (harga x 1.2543)
+
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
@@ -655,7 +677,7 @@ case : "Unreg hapus NIK",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : unreg
 Solusi :  minta data
 `,
@@ -677,11 +699,11 @@ DISCLAIMER
 
 Makasih udah nunggu. Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu UNREG SIM Card di akun berikut:
 1. Nomor by.U : xxxxxx
-2. Email: zz
+2. Email: ${EMPTY}
 
 Nomor yang sudah berhasil di unregistrasi ga akan bisa diaktifkan kembali dalam kondisi apapun ya kak, lalu NIK yang terdaftar di nomor ini juga akan ikut terhapus. Kalo data diatas udah sesuai dan Kakak setuju boleh tolong konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :)
 ` :
-`Makasih udah nunggu. Kak maaf untuk unreg/deaktivasi SIM card by.U, bisa melalui aplikasi ya dengan cara berikut : 
+`Makasih udah nunggu. Kak untuk unreg/deaktivasi SIM card by.U, bisa melalui aplikasi ya dengan cara berikut : 
 1. Masukan SIM Card by.U yang mau di unreg ke gadget kamu
 2. Matikan WiFi dan pastikan gadget kamu udah nyambung ke jaringan seluler by.U
 3. Buka halaman profil
@@ -702,12 +724,20 @@ Makasih udah nunggu. Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Ak
 
 Nomor yang sudah berhasil di unregistrasi ga akan bisa diaktifkan kembali dalam kondisi apapun ya kak, kuota/sisa pulsa akan hangus, lalu NIK yang terdaftar di nomor ini juga akan ikut terhapus. Kalo data diatas udah sesuai dan Kakak "SETUJU" boleh tolong konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :)
 
-Kak maaf, aku cek NIK yang Kakak infoin ga ada yang sesuai nih untuk nomor xxxxxx. Boleh infoin salah satu dari data ini ya biar bisa aku proses :
+Kak aku cek NIK yang Kakak infoin ga ada yang sesuai nih untuk nomor xxxxxx. Boleh infoin salah satu dari data ini ya biar bisa aku proses :
 1. Tanggal dan jenis paket terakhir yang dibeli.
 2. Jumlah kuota data yang dimiliki sekarang.
 3. Nominal harga paket yang dibeli terakhir.
 4. Akun Email yang terdaftar
 5. Tipe dan merk HP terakhir digunakan.
+
+Kak, buat nomor yang hangus bakal otomatis terhapus kok Kak dari NIK yg terdaftar. Kakak juga bisa cek di *444# pake nomor Telkomsel/by.U yang terdaftar NIK Kakak dan kalo nomor yang udah hangus masih terdaftar, bisa aku bantu unreg dengan infoin data ini ya :
+1. Nomor by.U yang ingin di unreg : 
+2. Nomor Identitas KTP : 
+3. Foto Selfie (tidak dengan KTP) :
+4. Scan/Foto KTP asli/KTP Digital :
+5. Email yang bisa dihubungi :
+
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
@@ -735,7 +765,7 @@ case : "Unreg hapus NIK lupa nomor",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : unreg
 Solusi : minta data
 `,
@@ -748,14 +778,14 @@ ${DateTime}
 Permintaan Deaktivasi SIM Card dan Hapus NIK
 
 1. Nomor by.U : xxxxxx
-2. Nomor Identitas KTP (sesuai yang tercantum di sistem) :
+2. Nomor Identitas KTP (sesuai yang tercantum di sistem) : ${EMPTY}
 3. Foto Selfie (tidak dengan KTP) :
 4. Scan/Foto KTP asli/KTP Digital :
 5. Alasan tidak ingin menggunakan by.U lagi :
 6. Capture hasil pengecekan dari *444# :
 7. Email yang bisa dihubungi :
 
-
+Unregistrasi Prabayar | Permintaan unregistrasi Prabayar
 1x24 jam`   
 },
 
@@ -766,7 +796,7 @@ case : "Gagal Aktivasi eSIM Account Status Tidak Sesuai",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : gabisa aktivasi esim acount
 Solusi : minta data
 `,
@@ -801,7 +831,8 @@ Gagal Aktivasi eSIM Account Status Tidak Sesuai
 
 
 
-1x24 jam`   
+1x24 jam
+e-SIM | Gagal/error saat melakukan Registrasi`   
 },
 
 {
@@ -811,7 +842,7 @@ case : "Sinyal lemah/tidak stabil/Tidak ada sinyal",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : Sinyal
 Solusi : minta data
 `,
@@ -920,12 +951,12 @@ case : "Ganti SIM Card active",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : Ganti sim card
 Solusi : minta data
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
-`Hai Kak. Saat ini terhubung dengan Nindy. Kak maaf, aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) Jadi gabisa dilakkan ganti SIM card ya :)
+`Hai Kak. Saat ini terhubung dengan Nindy. Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) Jadi gabisa dilakkan ganti SIM card ya :)
 
 Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ganti SIM card nya boleh infoin data ini dulu ya biar aku cocokin : 
 1. Nomor by.U
@@ -949,27 +980,27 @@ Hi, Kak . Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM card 
 Kak maaf, aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
 
 =========Hangus==========
-Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Jadi Kakak udah gabisa ganti SIM card nya ya :)
+Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Jadi Kakak udah gabisa ganti SIM card nya ya :)
 Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :)
 
 DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Ganti SIM Card Active dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: zz
+2. Email: ${EMPTY}
 3. NIK KTP valid : 
 4. Nama & nomor penerima :
 5. Alamat pengiriman :
 
 Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
 ` :
-`Makasih udah nunggu. Kak maaf untuk ganti SIM card nya boleh infoin data ini dulu ya biar aku cocokin : 
+`Makasih udah nunggu. Kak untuk ganti SIM card nya boleh infoin data ini dulu ya biar aku cocokin : 
 1. Nomor by.U
 2. Email akun by.U
 3. NIK yang didaftarin
 
 
-Kak maaf, untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
+Kak untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
 2. Nomor Identitas valid : 
 3. Scan/Foto KTP asli :  
@@ -978,7 +1009,7 @@ Kak maaf, untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya bi
 6. Alasan ganti SIM Card : 
 
 ===========Di Apps ============
-Makasih udah nunggu. Kak maaf kalau maksudnya permintaan ganti SIM Card nya di nomor xxxxxx,  jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
+Makasih udah nunggu. Kak kalau maksudnya permintaan ganti SIM Card nya di nomor xxxxxx,  jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
 1. Pastiin Versi aplikasi sudah yang terbaru 
 2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak
 3. Masuk Ke profil by.U pojok kiri atas
@@ -989,7 +1020,7 @@ Makasih udah nunggu. Kak maaf kalau maksudnya permintaan ganti SIM Card nya di n
 8. Tunggu proses validasi dari tim by.U
 9. Kalo rikuesmu di terima dan kakak pilih SIM Cardnya di kirim, tunggu SIM Cardnya sampai via JNE maksimal 7 hari kerja atau kalo kakak pilihnya diambil, kakak bisa langsung ambil SIM Cardnya di GraPARI/Indomaret yg sebelumnya dipilih
 ====================legacy============================
-Kak maaf, aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
+Kak aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
 
 ====================================
 
@@ -997,7 +1028,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Ganti SIM Card Active dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: zz
+2. Email: ${EMPTY}
 3. NIK KTP valid : 
 4. Nama & nomor penerima :
 5. Alamat pengiriman :
@@ -1029,7 +1060,7 @@ case : "Miskoordinasi JNE (AWB)",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : misskoordinasi JNE ada AWB
 Solusi : minta data
 `,
@@ -1066,6 +1097,7 @@ Keluhan SIM Card Tidak Sampai via JNE ada AWB
 5. Capture pengecekan nomor resi di web tracking JNE : 
 6. Konfirmasi dari JNE (jika customer sempat komplain ke JNE) : -
 
+Perdana PraBayar | K12-Kendala pengiriman kartu SIM
 `   
 },
 
@@ -1076,7 +1108,7 @@ case : "Miskoordinasi JNE ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : misskoordinasi ga ada awb
 Solusi : minta data
 `,
@@ -1112,6 +1144,8 @@ Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
 4. Nama Penerima : 
 5. Nomor Penerima : 
 6. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) : 
+
+Perdana PraBayar | K12-Kendala pengiriman kartu SIM
 `   
 },
 
@@ -1122,7 +1156,7 @@ case : "Pembelian paket IRENEW virtual account Paid ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : irenew va
 Solusi : minta data
 `,
@@ -1157,12 +1191,12 @@ case : "Penyalahgunaan NIK ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : penyalahgunaan nik
 Solusi : minta data
 `,
 Solusi : 
-`Makasih udah nunggu. Kak maaf untuk permintaan unreg di NIK Kakak boleh infoin aku data ini ya biar bisa aku proses : 
+`Makasih udah nunggu. Kak untuk permintaan unreg di NIK Kakak boleh infoin aku data ini ya biar bisa aku proses : 
 1. Nomor by.U yang ingin di UNREGISTRASI :
 2. Nomor Identitas KTP :
 3. Foto Selfie (tidak dengan KTP) :
@@ -1205,7 +1239,7 @@ case : "Pembelian paket Irenew virtual account Unpaid ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : irenew VA unpaid
 Solusi : minta data
 `,
@@ -1248,7 +1282,7 @@ case : "Permintaan Refund karena kesalahan sistem ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : refund karena
 Solusi : minta data
 `,
@@ -1262,9 +1296,12 @@ ${DateTime}
 Permintaan Refund karena kesalahan sistem
 
 1.Nomor by.U : xxxxxx
-2.Email by.U : zz
+2.Email by.U : ${EMPTY}
 3.Capture bukti pembayaran : 
 4. Data refund :
+
+
+P44 - Paket darurat Permintaan refund pulsa
 `   
 },
 
@@ -1275,7 +1312,7 @@ case : "Tidak Mendapatkan Kuota Monthversary  ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : ga dapat kuota Monthversary
 Solusi : minta data
 `,
@@ -1321,7 +1358,7 @@ case : "SMS - Gagal Aktivasi M-Banking ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : gagal Aktivasi M-Banking
 Solusi : minta data
 `,
@@ -1370,7 +1407,7 @@ case : "Pembelian paket IRENEW OVO/DANA/ShopeePay/lainnya ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : irenew
 Solusi : minta data
 `,
@@ -1409,7 +1446,7 @@ ${DateTime}
 Masalah Pembelian Kuota/Pulsa I RENEW Via 
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : zz
+2. Email by.U : ${EMPTY}
 3. Capture bukti pembayaran : 
 4. Order detail ID (CXO) (Pengecekan OperatorX)  : 
 5. Transaction ID (CXT) (Pengecekan OperatorX) :
@@ -1424,7 +1461,7 @@ case : "Tidak Bisa Aktivasi SIM Card Legacy ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : gabisa aktivasi legacy
 Solusi : minta data
 `,
@@ -1480,7 +1517,7 @@ case : "Cara Aktivasi SIM card Digital ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : cara aktivasi sim card digital
 Solusi : info cara aktivasi di apps
 `,
@@ -1511,7 +1548,7 @@ case : "Tidak dapat langganan weTV",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : ga dapat langganan weTV
 Solusi : minta data
 `,
@@ -1557,7 +1594,7 @@ case : "Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy (indoma
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : sim card yang didapat legacy
 Solusi : minta data
 `,
@@ -1609,7 +1646,7 @@ case : "Tidak Bisa Aktivasi SIM Card Dengan Kode Error Asset Not Found ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : gabisa aktivasi asset notfound
 Solusi : minta data
 `,
@@ -1646,7 +1683,7 @@ case : "Ketidaksesuaian Penggunaan Kuota ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : kuota tiba-tiba berkurang
 Solusi : minta data
 `,
@@ -1702,7 +1739,7 @@ case : "Tidak bisa login dengan Nomor BYU / terima kode OTP pakai nomor by.U",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : gabisa login nomor by.U
 Solusi : solusi gabisa login nomor by.u
 `,
@@ -1736,7 +1773,7 @@ case : "Tidak Mendapatkan Voucher Non-Telco uCoin",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : non telco
 Solusi : minta data
 `,
@@ -1766,11 +1803,13 @@ ${DateTime}
 Tidak Mendapatkan Voucher Non-Telco
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : zz
+2. Email by.U : ${EMPTY}
 3. Jenis voucher yang ditukarkan : 
 4. Tanggal penukaran U-Coin : 
 5. Capture bukti redeem di halaman Reward Saya : 
 6. Capture kendala penukaran : 
+
+Aktivasi Paket | K21-Tidak Mendapatkan Voucher Non-Telco
 `   
 },
 
@@ -1781,7 +1820,7 @@ case : "Pergantian SIM Card Legacy ditolak GraPARI",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : ganti sim card ditolak grapari
 Solusi : minta data
 `,
@@ -1842,7 +1881,7 @@ case : "Esim Sinyal hilang",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : esim sinyal hilang
 Solusi : minta data
 `,
@@ -1884,6 +1923,8 @@ eSIM sinyal hilang
 7. Capture settingan eSIM di handphone : 
 8. Capture bukti pembayaran : 
 9. Order ID CXT/CXO (Pengecekan OperatorX): 
+
+| e-SIM | Gagal/error saat melakukan Registrasi
 `   
 },
 
@@ -1894,7 +1935,7 @@ case : "eSIM barcode/QR tidak tersimpan ",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : minta barcode esim
 Solusi : minta data
 `,
@@ -1928,7 +1969,9 @@ eSIM  QR tidak tersimpan
 5. Bukti pembayaran : 
 6. Keterangan gagal : (KHUSUS APABILA QR YANG DIMILIKI PELANGGAN TIDAK VALID)
 7. Order ID CXT/CXO (Pengecekan OperatorX) : 
-        
+
+
+K32 - Aktivasi/download Barcode Gagal
 `   
 },
 
@@ -1939,7 +1982,7 @@ case : "Bugs Ganti SIM card (mandatory E)",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : bugs ganti sim card
 Solusi : minta data
 `,
@@ -1964,7 +2007,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu  Ganti SIM Card dengan data :
 1. Nomor by.U : xxxxxx
-2. Email akun by.U: zz
+2. Email akun by.U: ${EMPTY}
 3. NIK KTP valid : 
 4. Nama & nomor penerima :
 5. Alamat pengiriman :
@@ -2000,7 +2043,7 @@ case : "Keluhan Tidak Bisa Akses Internet di Luar Negeri Roaming",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : gabisa internet roaming
 Solusi : minta data
 `,
@@ -2058,7 +2101,7 @@ Mandatory : (segment: string) =>
 [NO][IR][${segment}]
 
 1. Nomor by.U : xxxxxx
-2. Email akun by.U : zz
+2. Email akun by.U : ${EMPTY}
 3. Lokasi negara : 
 4. Tanggal dan waktu kejadian sejak kapan : 
 5. Jaringan/operator negara setempat yang digunakan : 
@@ -2078,7 +2121,7 @@ case : "Pulsa berkurang tiba-tiba",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : pulsa berkurang tiba-tiba
 Solusi : minta data
 `,
@@ -2122,7 +2165,7 @@ case : "Tidak bisa aktivasi inject paket",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : gabisa aktivasi sim card legacy
 Solusi : hubungi pihak penjual
 `,
@@ -2139,7 +2182,7 @@ case : "Tidak bisa aktivasi NIK invalid Dukcapil/Disdukcapil",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : gabisa aktivasi nik invalid
 Solusi : hubungi dukcapil
 `,
@@ -2186,7 +2229,7 @@ case : "Tidak bisa aktivasi exceed limit (udah 3 kali percobaan)",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : gabisa aktivasi sim card
 Solusi : diinfoin coba besok
 `,
@@ -2201,7 +2244,7 @@ case : "Tidak bisa aktivasi maximum NIK",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : gabisa aktivasi maximum nik
 Solusi : diinfoin unreg nomor telkomsel
 `,
@@ -2247,7 +2290,7 @@ case : "Perubahan Data Pelanggan",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : perubahan data pelanggan
 Solusi : minta data
 `,
@@ -2276,7 +2319,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Perubahan data  dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: zz
+2. Email: ${EMPTY}
 3. NIK KTP pelanggan baru : 
 4. No KK pelanggan baru   : 
 
@@ -2301,7 +2344,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Perubahan data  dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: zz
+2. Email: ${EMPTY}
 3. NIK KTP pelanggan baru : 
 4. No KK pelanggan baru   : 
 
@@ -2331,12 +2374,12 @@ case : "Perubahan Data pindah tangan (pindah tangan)",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : perubahan data 
 Solusi : minta data
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
-`Hi, Kak . Saat ini udah terhubung dengan Nindy. ak maaf untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
+`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
 1. Alamat Email login by.U :
 2. NIK & NOK pelanggan lama :
 3. NIK & NOK pelanggan baru :
@@ -2352,13 +2395,13 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Perubahan data karena pindah tangan dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: zz
+2. Email: ${EMPTY}
 3. NIK KTP pelanggan baru : 
 4. No KK pelanggan baru   : 
 
 Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
 ` :
-`Makasih udah nunggu. Kak maaf untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
+`Makasih udah nunggu. Kak untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
 1. Alamat Email login by.U :
 2. NIK & NOK pelanggan lama :
 3. NIK & NOK pelanggan baru :
@@ -2373,7 +2416,7 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Perubahan data karena pindah tangan dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: zz
+2. Email: ${EMPTY}
 3. NIK KTP pelanggan baru : 
 4. No KK pelanggan baru   : 
 
@@ -2405,7 +2448,7 @@ case : "PUK",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : puk
 Solusi : minta data
 `,
@@ -2467,7 +2510,7 @@ case : "Tidak dapat langganan ZOOM Premium",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : Tidak dapat langganan ZOOM Premium"
 Solusi : minta data
 `,
@@ -2516,7 +2559,7 @@ case : "Tidak dapat langganan Netflix",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : Tidak dapat langganan Netflix
 Solusi : minta data
 `,
@@ -2570,7 +2613,7 @@ case : "Tidak dapat langganan Vidio",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : Tidak dapat langganan Vidio
 Solusi : minta data
 `,
@@ -2618,7 +2661,7 @@ case : "Tidak dapat kuota Birthday reward",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : Tidak dapat kuota Birthday reward
 Solusi : minta data
 `,
@@ -2662,7 +2705,7 @@ case : "IRENEW Voucher fisik",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : IRENEW Voucher fisik
 Solusi : minta data
 `,
@@ -2715,7 +2758,7 @@ Bracket : (segment: string) => segment ==='Email' ?
 `#Pelangganbyu
 [byU Email]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : Sponsorship
 Solusi : diteruskan ke email  event@byu.id
 
@@ -2738,7 +2781,7 @@ Aku tunggu datanya ya Kak :)
 `#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : Sponsorship
 Solusi : arahin hubungi email
 `,
@@ -2772,7 +2815,7 @@ case : "SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan / Gagal pairing",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : gagal pairing
 Solusi : minta data
 `,
@@ -2800,7 +2843,7 @@ case : " greeting",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : greeting
 Solusi : greeting
 
@@ -2838,7 +2881,7 @@ case : "SIM card Deactive",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case :  sim card deactive
 Solusi : info  sim card deactive
 `,
@@ -2854,7 +2897,7 @@ case : "Pulsa terpotong karena SMS dari luar negeri",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : Pulsa terpotong karena SMS dari luar negeri
 Solusi : info nomor SMS nya
 `,
@@ -2870,7 +2913,7 @@ case : "SIM card tidak terdeteksi",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : SIM card tidak terdeteksi
 Solusi : solusi SIM card tidak terdeteksi
 `,
@@ -2891,7 +2934,7 @@ case : "Kuota tiba-tiba hilang karena kesalahan by.U",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : Kuota tiba-tiba hilang karena kesalahan by.U
 Solusi : minta data
 `,
@@ -2979,7 +3022,7 @@ case : "Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tikt
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)
 Solusi : minta data
 `,
@@ -2999,7 +3042,7 @@ ${DateTime}
 Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)
 
 1. Nomor by.U : xxxxxx
-2. Email akun by.U : zz
+2. Email akun by.U : ${EMPTY}
 2. Printscreen bukti bayar yang tertera Invoice dan capture resi di aplikasi e-Commerce :
 3. Printscreen status pengiriman yang tertera resi di aplikasi e-Commerce : (dicek oleh agent)
 4. Capture profil apps : ( yang tertulis email login pelanggan)
@@ -3016,14 +3059,14 @@ case : " transfer pulsa",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : info send gift/tf pulsa
 Solusi : info send gift/tf pulsa
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
-`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
+`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
 ` :
-`Makasih udah nunggu. Kak maaf, untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
+`Makasih udah nunggu. Kak untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
 `,
 Mandatory : ``
 },
@@ -3035,7 +3078,7 @@ case : "Tidak Mendapatkan Langganan Prime Video",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : Tidak Mendapatkan Langganan Prime Video
 Solusi : minta data
 `,
@@ -3082,13 +3125,13 @@ case : "cek masa aktif",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : informasi status kartu
 Solusi : informasi status kartu
 `,
-Solusi : `Makasih udah nunggu. Kak maaf, kalau aku cek nomor xxxxxx, statusnya aktif kok. Ini harusnya bisa digunakan SMS,internet maupun internet ya Kak. Boleh coba cek ya :)
+Solusi : `Makasih udah nunggu. Kak kalau aku cek nomor xxxxxx, statusnya aktif kok. Ini harusnya bisa digunakan SMS,internet maupun internet ya Kak. Boleh coba cek ya :)
 
-Kak maaf, aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) 
+Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) 
 
 `,
 Mandatory : ``
@@ -3101,7 +3144,7 @@ case : "Info Paket/ Tarif Harga paket berubah/jadi mahal/promo",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : info paket
 Solusi : info paket
 `,
@@ -3109,7 +3152,7 @@ Solusi : `Kak, maaf ya udah dibuat ga nyaman, untuk harga paket yang tertera di 
 
 Kak maaf, kalau ga tersedia paket yang Kakak inginin, artinya penawaran paketnya udah ga ada. Kakak bisa pilih paket yang tersedia saat ini di apps by.U ya :)
 
-Kak maaf, aku cek nomor xxxxxx saat ini kuota internetnya udah habis, jadi gabisa internetan. Kakak bisa beli kuota baru di apps by.U pake wifi/jaringan lain dulu ya :)
+Kak  aku cek nomor xxxxxx saat ini kuota internetnya udah habis, jadi gabisa internetan. Kakak bisa beli kuota baru di apps by.U pake wifi/jaringan lain dulu ya :)
 
 Maaf kak, saat ini ada penyesuaian tarif paket internet merupakan salah satu upaya by.U untuk tetap menjaga kualitas layanan kepada pelanggan. Nindy dan team akan terus tingkatin produk dan layanan by.U biar Kakak bisa selalu nyaman pakai by.U. Keep supporting us ya! :)
 `,
@@ -3123,7 +3166,7 @@ case : "Cara pasang eSIM",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : cara pasang esim
 Solusi : info pasang eSIM
 `,
@@ -3175,7 +3218,7 @@ case : "Gagal Registrasi 5g",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case :  Gagal Registrasi 5g
 Solusi : minta data
 `,
@@ -3224,11 +3267,14 @@ case : "Cek Tiket/Ticket",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : Cek Tiket
 Solusi : Cek hasil tiket
 `,
-Solusi : `Kak maaf, aku cek untuk ID laporan xx, masih dalam proses penanganan tim kami. Ditunggu aja dulu prosesnya ya. Semoga cepet beres :)
+Solusi : (segment: string) => segment ==='Email' ? 
+'Hai Kak saat ini terhubung dengan Nindy. Kak aku cek untuk ID laporan xx, masih dalam proses penanganan tim kami. Ditunggu aja dulu prosesnya ya. Semoga cepet beres :)'
+:
+`Kak aku cek untuk ID laporan xx, masih dalam proses penanganan tim kami. Ditunggu aja dulu prosesnya ya. Semoga cepet beres :)
 `,
 Mandatory : ``
 },
@@ -3240,7 +3286,7 @@ case : "Request bikin/buat nomor 4 digit/angka",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : Info request nomor
 Solusi : Info request nomor
 `,
@@ -3262,7 +3308,7 @@ case : "Permintaan Hapus Profil eSIM Karena Device Hilang",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : Permintaan Hapus Profil eSIM Karena Device Hilang
 Solusi : minta data
 `,
@@ -3309,7 +3355,7 @@ case : "CCA UE_Handset_Data_Setting_Off",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,
@@ -3359,7 +3405,7 @@ case : "CCA UE_Handset_Problem_4G",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,
@@ -3407,7 +3453,7 @@ case : "CCA Radio_lambat",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : sinyal/internet
 Solusi : minta data
 `,
@@ -3464,7 +3510,7 @@ case : "CCA Neighbor_BTS_Problem",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : sinyal/internet
 Solusi : sarankan tunggu sesuai CCA
 `,
@@ -3498,7 +3544,7 @@ Mandatory : (segment:string, DateTime:string) =>
     Neighbor_BTS_Problem
     Remarks
     Bapak atau Ibu Yth, kendala Bapak atau Ibu yang dialami saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala.
-    Cause : zz
+    Cause : ${EMPTY}
     Level : 0
     Alarm meaning : 0 = Low, 1 = Critical, 2 = Major, 3 = Minor
     Suggestion
@@ -3515,7 +3561,7 @@ case : "CCA Kapasitas_jaringan",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : sinyal/internet
 Solusi : Minta data
 `,
@@ -3570,7 +3616,7 @@ case : "CCA Sinyal_tidak_stabil",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : sinyal/internet
 Solusi : Minta data
 `,
@@ -3625,7 +3671,7 @@ case : "SMS broadcast",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : sms konten
 Solusi : Minta data
 `,
@@ -3669,7 +3715,7 @@ case : "CCA Layanan_data_tidak_tersedia",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : sinyal/internet
 Solusi : Minta data
 `,
@@ -3734,7 +3780,7 @@ case : "CCA Kendala_sinyal_4G",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : sinyal/internet
 Solusi : Minta data
 `,
@@ -3789,7 +3835,7 @@ case : "CCA UE_Handset_tidak_connect_ke_network",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,
@@ -3837,7 +3883,7 @@ case : "CCA Network_browsing_lambat",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : sinyal/internet
 Solusi : minta data
 `,
@@ -3892,7 +3938,7 @@ case : "Cara membagikan kode refferal",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : Cara membagikan kode refferal
 Solusi : edukasi
 `,
@@ -3914,7 +3960,7 @@ case : "Paket unlimited/Mbps",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : Paket unlimited
 Solusi : edukasi ga tersedia
 `,
@@ -3930,7 +3976,7 @@ case : "CCA Cell_Colo_Problem",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : sinyal/internet
 Solusi : sarankan tunggu sesuai CCA
 `,
@@ -3985,7 +4031,7 @@ case : "CCA BTS_Down",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : sinyal/internet
 Solusi : sarankan tunggu sesuai CCA
 `,
@@ -4037,7 +4083,7 @@ case : "CCA Red_Cell_Capacity_Solution",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : sinyal/internet
 Solusi : minta data
 `,
@@ -4093,7 +4139,7 @@ case : "CCA Kendala_Sinyal",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : sinyal/internet
 Solusi : minta data
 `,
@@ -4148,13 +4194,13 @@ case : "Beli Paket/Pulsa/SIM card",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : cara pembelian SIM card/eSIM
 Solusi : info cara pembelian SIM card/eSIM
 `,
-Solusi : `Kak maaf, untuk beli paket internet bisa lewat apps by.U dengan pilih menu isi kuota pada halaman dashboard ya :)
+Solusi : `Kak untuk beli paket internet bisa lewat apps by.U dengan pilih menu isi kuota pada halaman dashboard ya :)
 
-Kak maaf, untuk beli pulsa bisa lewat apps by.U dengan pilih menu isi pulsa pada halaman dashboard ya :)
+Kak untuk beli pulsa bisa lewat apps by.U dengan pilih menu isi pulsa pada halaman dashboard ya :)
 
 Kak untuk beli SIM card/nomor baru bisa beli lewat apps/web by.U ya, nanti setelah pilih paket langsung masuk ke halaman pembayaran. Pilih nomor yang tersedia aja disana ya :)
 
@@ -4168,7 +4214,7 @@ case : "Tidak dapat Langganan Youtube Premium",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : Tidak Mendapatkan Langganan Youtube Premium
 Solusi : minta data
 `,
@@ -4203,7 +4249,7 @@ case : "Closing",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : closing
 Solusi : closing
 `,
@@ -4221,7 +4267,7 @@ case : "Pengambilan SIM card di GraPARI",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email akun by.U : zz
+Email akun by.U : ${EMPTY}
 Detail case : Pengambilan SIM card di GraPARI
 Solusi : minta data
 `,
@@ -4277,7 +4323,7 @@ case : "Keluhan sinyal di Luar Negeri Roaming",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
-Email by.U : zz
+Email by.U : ${EMPTY}
 Detail case : gabisa sinyal roaming
 Solusi : minta data
 `,
@@ -4337,7 +4383,7 @@ Mandatory : (segment: string ) =>
 [NO][IR][${segment}]
 
 1. Nomor by.U : xxxxxx
-2. Email akun by.U : zz
+2. Email akun by.U : ${EMPTY}
 3. Lokasi negara : 
 4. Tanggal dan waktu kejadian sejak kapan : 
 5. Jaringan/operator negara setempat yang digunakan : 

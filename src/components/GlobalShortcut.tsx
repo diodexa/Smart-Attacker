@@ -54,11 +54,10 @@ const GlobalShortcut = () => {
         const urls = [
           "https://sites.google.com/view/modulhappiness",
           "https://byu.omnix.co.id/login",
-          "https://cs.byu.id/id/user/login",
-          "https://crm.byu.id/crm/",
           "https://sso.identity.telkomsel.co.id/dsc/",
-          "https://pidaw-keycloak.cx.byu.id/realms/Circles-OperatorX/protocol/openid-connect/auth?client_id=jc-client&redirect_uri=https%3A%2F%2Fpidaw-operatorux.cx.byu.id%2Fsignin%2F&response_type=code",
+          "https://crm.byu.id/crm/",
           "https://docs.google.com/spreadsheets/d/1gvMeepRq_WNZ0iwilZn_RFz3xORem03sjh0yF0ekD14/edit?gid=645015539#gid=645015539",
+          "https://pidaw-keycloak.cx.byu.id/realms/Circles-OperatorX/protocol/openid-connect/auth?client_id=jc-client&redirect_uri=https%3A%2F%2Fpidaw-operatorux.cx.byu.id%2Fsignin%2F&response_type=code",
           "https://docs.google.com/spreadsheets/d/1uZiJ3pb1dVJr3Wvw9-D0mOpevhUOhQ1hX2thMy02WEs/edit?usp=sharing",
           "https://web.telegram.org/k/",
         ];

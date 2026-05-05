@@ -73,13 +73,19 @@ const TiketPages = ({ segment }: Props) => {
 
             const clipboardText = await navigator.clipboard.readText();
 
-            setMandatoryText(prev =>
-              prev.replace(/zz/g, clipboardText)
-            );
+            setMandatoryText(prev => {
+              console.log("RAW:", prev);
+              console.log("STRINGIFIED:", JSON.stringify(prev));
 
-            setSolusiText(prev =>
-              prev.replace(/zz/g, clipboardText)
-            );
+              return prev.replace(/\u200B{2}/g, clipboardText);
+            });
+            setSolusiText(prev => {
+              console.log("RAW:", prev);
+              console.log("STRINGIFIED:", JSON.stringify(prev));
+
+              return prev.replace(/\u200B{2}/g, clipboardText);
+            });
+
           }
 
         };
