@@ -2587,7 +2587,7 @@ Solusi : minta data
 2. Email registrasi by.U :
 3. Nomor Identitas KTP valid :
 4. Scan/Foto KTP asli :
-5. Foto selfie dengan KTP asli :
+5. Foto selfie tanpa KTP :
 6. Jenis dan type Device yang hilang :
 7. Email lain yang bisa dihubungi :
 
