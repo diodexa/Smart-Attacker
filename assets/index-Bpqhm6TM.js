@@ -1704,17 +1704,27 @@ Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX ya
 https://www.telkomsel.com/roaming/setdevice`,Mandatory:t=>`#Pelangganbyu
 [NO][IR][${t}]
 
-1. Nomor by.U : xxxxxx
-2. Email akun by.U : ${e}
+1. nomor by.U : xxxxxx
+2. Email by.U : ${e}
 3. Lokasi negara : 
-4. Tanggal dan waktu kejadian sejak kapan : 
-5. Jaringan/operator negara setempat yang digunakan : 
-6. Gangguan sinyal terjadi sepanjang hari atau pada waktu tertentu aja? 
-7. Jaringan yang digunakan apa? 2G, 4G, 5G? : 
-8. Jenis device/hp yang dipakai? 
-9. Capture setting APN di hp : 
-10. Capture bar sinyal yang didapat : 
-11. Email aktif yang bisa dihubungi ? 
+4. Tanggal dan waktu kendala : 
+5. Jaringan yang digunakan apa? 4G, 5G? 
+6. Jumlah sinyal bar atau titik yang didapat? 
+7. Jaringan/operator negara setempat yang digunakan 
+8. Nama Paket Roaming : 
+9. Sisa kuota yang dimiliki oleh pelanggan: 
+10. Capture speedtest: 
+11. Capture setting APN di hp: 
+12. Jenis device/HP yang digunakan: 
+13. Email aktif yang bisa dihubungi: 
+14. Detail Kendala : Ga bisa internet roaming
+15. Solusi: sesuai pansol
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
+Baring Roam | NOBAR
 `},{id:35,case:`Pulsa berkurang tiba-tiba`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
@@ -3396,7 +3406,7 @@ Email by.U : ${e}
 Detail case : gabisa sinyal roaming
 Solusi : minta data
 `,Solusi:e=>e===`Email`?`
-Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala gabisa internet di luar negeri,boleh infoin data ini ya biar bisa aku cek :
+Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala sinyalnya di luar negeri,boleh infoin data ini ya biar bisa aku cek :
 Hai Kak, maaf udah bikin ga nyaman ya. Boleh infokan beberapa data di bawah ini supaya bisa dibantu pengecekan :
 1. Nomor by.U : 
 2. Email akun by.U : 
@@ -3405,7 +3415,7 @@ Hai Kak, maaf udah bikin ga nyaman ya. Boleh infokan beberapa data di bawah ini 
 5. Jaringan/operator negara setempat yang digunakan :
 6. Capture setting APN di HP :
 7. Capture sinyal yang didapat :
-8. Capture speedtest :
+
 
 Aku tunggu datanya ya :)
 
@@ -3422,7 +3432,7 @@ Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX ya
 
 
 https://www.telkomsel.com/roaming/setdevice
-`:`Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
+`:`Makasih udah nunggu. Kak maaf untuk kendala sinyalnya di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
 2. Lokasi negara :
 3. Tanggal dan waktu kejadian sejak kapan :
@@ -3456,7 +3466,15 @@ https://www.telkomsel.com/roaming/setdevice
 8. Jenis device/hp yang dipakai? 
 9. Capture setting APN di hp : 
 10. Capture bar sinyal yang didapat : 
-11. Email aktif yang bisa dihubungi ? 
+11. Email aktif yang bisa dihubungi: 
+12. Detail kendala: Ga ada sinyal roaming
+13. Solusi: sesuai pansol
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
+Baring Roam | NOBAR
 `}]};var Za=e((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),L=e(((e,t)=>{t.exports=Za()}))(),Qa=({onSelect:e,selectedId:t})=>{let n=e=>e??``,r=Xa().slice().sort((e,t)=>n(e.case).toLocaleLowerCase().localeCompare(n(t.case).toLocaleLowerCase()));return(0,L.jsx)(qa,{options:r.map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:t=>e(t?.value||null),value:r.map(e=>({value:e.id,label:e.case})).find(e=>e.value===t)||null,styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},$a=({text:e,label:t})=>{let[n,r]=(0,l.useState)(!1);return(0,L.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),r(!0),setTimeout(()=>r(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,L.jsx)(`p`,{className:` ${n?`invisible!`:`visible`}`,children:n?`copy!`:t}),(0,L.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,n?`anjay`:``,` `]})]})};function eo(){let e=(0,l.useRef)([]),t=(0,l.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var to=({value:e,onChange:t})=>{let n=(0,l.useRef)(null),r=(0,l.useRef)(null),i=(0,l.useRef)(``),{push:a,undo:o,redo:s}=eo(),c=e=>{let t=e.split(`
