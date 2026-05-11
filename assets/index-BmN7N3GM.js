@@ -2028,15 +2028,14 @@ Waktu Kejadian    : ${u()}
 Lokasi Pelanggan  : 
 Detail case : perubahan data pelanggan
 Solusi : Permintaan data Mandatory
-`,Solusi:t=>t===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Berikut form perubahan datanya ya, silakan Kakak isi dulu dengan tandatangan diatas materai ya :)
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Berikut form perubahan datanya ya, silakan Kakak isi dulu dengan tandatangan diatas materai ya :)
 
 Halo, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk perubahan data nya, boleh infoin data ini ya biar bisa aku proses : 
 1. Nomor by.U : 
-2. Alamat Email login by.U :
-3. NIK & NOK pelanggan baru :
-4. Foto KTP pelanggan baru :
-5. Surat pernyataan yang ada di lampiran :
-6. Validasi tambahan :
+2. NIK & NOK pelanggan baru :
+3. Foto KTP pelanggan baru :
+4. Surat pernyataan yang ada di lampiran :
+5. Validasi tambahan :
 
 Untuk validasi tambahannya bisa infoin salah satu dari data ini ya : 
 1. Tanggal dan jenis paket terakhir yang dibeli :
@@ -2052,17 +2051,14 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${u()} Kakak mau dibantu Permintaan Perubahan data  dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: ${e}
-3. NIK KTP pelanggan baru : 
-4. No KK pelanggan baru   : 
+2. NIK KTP pelanggan baru : 
 
 Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
 `:`Makasih udah nunggu. Kak maaf untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
-1. Alamat Email login by.U :
-2. NIK & NOK pelanggan baru :
-3. Foto KTP pelanggan baru :
-4. Surat pernyataan yang bisa minta ke email nindy@byu.id :
-5. Validasi tambahan :
+1. NIK & NOK pelanggan baru :
+2. Foto KTP pelanggan baru :
+3. Surat pernyataan yang bisa minta ke email nindy@byu.id :
+4. Validasi tambahan :
 
 Untuk validasi tambahannya bisa infoin salah satu dari data ini ya : 
 1. Tanggal dan jenis paket terakhir yang dibeli :
@@ -2076,9 +2072,8 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${u()} Kakak mau dibantu Permintaan Perubahan data  dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: ${e}
-3. NIK KTP pelanggan baru : 
-4. No KK pelanggan baru   : 
+2.  NIK KTP pelanggan baru : 
+
 
 Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
 `,Mandatory:(e,t)=>` 
@@ -2089,8 +2084,8 @@ ${t}
 Perubahan data pelanggan
 
 1. Nomor by.U : xxxxxx
-2. Alamat Email login by.U : 
-3. nomor identitas & NOK pelanggan baru : 
+2. Nomor identitas pelanggan baru: 
+3. NOK pelanggan baru : 
 4. Foto identitas pelanggan baru : 
 5. Surat pernyataan : 
 6. Validasi tambahan : 
@@ -2103,13 +2098,12 @@ Waktu Kejadian    : ${u()}
 Lokasi Pelanggan  : 
 Detail case : perubahan data 
 Solusi : Permintaan data Mandatory
-`,Solusi:t=>t===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
-1. Alamat Email login by.U :
-2. NIK & NOK pelanggan lama :
-3. NIK & NOK pelanggan baru :
-4. Foto KTP pelanggan lama :
-5. Foto KTP pelanggan baru :
-6. Surat pernyataan yang ada di lampiran:
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
+1. NIK & NOK pelanggan lama :
+2. NIK & NOK pelanggan baru :
+3. Foto KTP pelanggan lama :
+4. Foto KTP pelanggan baru :
+5. Surat pernyataan yang ada di lampiran:
 
 Aku tunggu datanya ya :)
 
@@ -2119,19 +2113,17 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${u()} Kakak mau dibantu Permintaan Perubahan data karena pindah tangan dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: ${e}
-3. NIK KTP pelanggan baru : 
-4. No KK pelanggan baru   : 
+2. NIK KTP pelanggan baru : 
+
 
 Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
 `:`Makasih udah nunggu. Kak untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
-1. Alamat Email login by.U :
-2. NIK & NOK pelanggan lama :
-3. NIK & NOK pelanggan baru :
-4. Foto KTP pelanggan lama :
-5. Foto KTP pelanggan baru :
-6. Foto selfie dengan KTP pelanggan baru :
-7. Surat pernyataan yang bisa minta ke email nindy@byu.id :
+1. NIK & NOK pelanggan lama :
+2. NIK & NOK pelanggan baru :
+3. Foto KTP pelanggan lama :
+4. Foto KTP pelanggan baru :
+5. Foto selfie dengan KTP pelanggan baru :
+6. Surat pernyataan yang bisa minta ke email nindy@byu.id :
 Kirimnya ke email nindy@byu.id aja ya biar aman :)
 
 
@@ -2139,9 +2131,8 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${u()} Kakak mau dibantu Permintaan Perubahan data karena pindah tangan dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: ${e}
-3. NIK KTP pelanggan baru : 
-4. No KK pelanggan baru   : 
+2. NIK KTP pelanggan baru : 
+
 
 Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
 `,Mandatory:(e,t)=>`#Pelangganbyu
@@ -2151,14 +2142,13 @@ ${t}
 Perubahan data pelanggan pindah tangan 
 
 1. Nomor by.U : xxxxxx
-2. Alamat Email login by.U : 
-3. Nomor identitas pelanggan lama : 
-4. NOK pelanggan lama : 
-5. Nomor identitas pelanggan baru : 
-6. NOK pelanggan baru : 
-7. Foto identitas pelanggan lama : 
-8. Foto identitas pelanggan baru : 
-9.  Surper : 
+2. Nomor identitas pelanggan lama : 
+3. NOK pelanggan lama : 
+4. Nomor identitas pelanggan baru : 
+5. NOK pelanggan baru : 
+6. Foto identitas pelanggan lama : 
+7. Foto identitas pelanggan baru : 
+8.  Surper : 
 `},{id:42,case:`PUK`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
@@ -3791,7 +3781,7 @@ Email akun by.U : ${e}
 Waktu Transaksi   :  
 Waktu Kejadian    : ${u()}
 Lokasi Pelanggan  : 
-Detail case : Pengambilan SIM card di GraPARI
+Detail case : Pengambilan SIM card di GraPARI/Indomaret
 Solusi : Permintaan data Mandatory
 `,Solusi:e=>e===`Email`?`
 Hi, Kak Dalela. Saat ini udah terhubung dengan Nindy. Maaf mengenai kendala pengambilan SIM Card baru di GraPARI, boeh infoin data berikut agar dibantu cek dulu ya :
@@ -3912,47 +3902,6 @@ status ACTIVE
 GPRSLOCK | FALSE
 EPSLOCK | FALSE
 Baring Roam | NOBAR
-`},{id:89,case:`Pengambilan SIM card Indomaret Habis/tutup`,Bracket:t=>`#Pelangganbyu
-[byU ${t}]
-Nomor by.U : xxxxxx
-Email by.U : ${e}
-Waktu Transaksi   :  
-Waktu Kejadian    : ${u()}
-Lokasi Pelanggan  : 
-Detail case : gabisa lakukan pengambilan SIM card di Indomaret karena habis/tutup
-Solusi : Permintaan data Mandatory
-`,Solusi:e=>e===`Email`?`
-Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala gabisa ambil SIM card nya di Indomaret, Kakak bisa ambil SIM card nya di GraPARI terdekat dengan tunjukin halaman pengambilan saat ini ya :)
-
-Kalau Kakak gabisa ke GraPARI bisa infoin data ini ya biar bisa aku proses : 
-1. Nomor by.U yang dipesan:
-2. Email akun by.U : 
-3. Printscreen page pengambilan SIM Card di aplikasi : 
-4. Lokasi/alamat lengkap Indomaret yang dikunjungi : 
-5. Nama penerima : 
-6. Nomor Penerima : 
-7. Alamat lengkap (nama jalan, no rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota dan kode POS) : 
-`:`Makasih udah nunggu. Kak maaf untuk kendala pengambilan SIM card nya di Indomaret di nomor xxxxxx, Kakak bisa ambil SIM card nya di GraPARI terdekat dengan tunjukin halaman pengambilan saat ini ya :)
-
-Kalau Kakak gabisa ke GraPARI bisa infoin data ini ya biar bisa aku proses : 
-1. Email akun by.U : 
-2. Printscreen page pengambilan SIM Card di aplikasi : 
-3. Lokasi/alamat lengkap Indomaret yang dikunjungi : 
-4. Nama penerima : 
-5. Nomor Penerima : 
-6. Alamat lengkap (nama jalan, no rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota dan kode POS) : 
-`,Mandatory:t=>`#Pelangganbyu
-[NO][IR][${t}]
-
-1. Nomor : xxxxxx
-2. Email by.U : ${e}
-2. Printscreen page pengambilan SIM Card di aplikasi :
-3. Lokasi/alamat lengkap Indomaret yang dikunjungi :
-4. Nama penerima :
-5. Nomor Penerima :
-6. Alamat lengkap (nama jalan, no rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota dan kode POS) :
-7. Order detail ID (CXO) : 
-8. Transaction ID (CXT) : 
 `}]};var f=t(),p=({onSelect:t,selectedId:n})=>{let r=e=>e??``,i=d().slice().sort((e,t)=>r(e.case).toLocaleLowerCase().localeCompare(r(t.case).toLocaleLowerCase()));return(0,f.jsx)(e,{options:i.map(e=>({value:e.id,label:e.case})),className:`w-full  listText`,onChange:e=>t(e?.value||null),value:i.map(e=>({value:e.id,label:e.case})).find(e=>e.value===n)||null,styles:{control:e=>({...e,backgroundColor:` rgb(238, 255, 249)`}),menu:e=>({...e,backgroundColor:`rgb(235, 250, 247)`}),option:(e,t)=>({...e,backgroundColor:t.isFocused?`#f6e387`:`transparent`})}})},m=({text:e,label:t})=>{let[n,r]=(0,c.useState)(!1);return(0,f.jsxs)(`button`,{onClick:()=>{let t=e.split(`
 `).map(e=>e.trim()).join(`
 `).trim();navigator.clipboard.writeText(t),r(!0),setTimeout(()=>r(!1),500)},className:`flex w-full items-center justify-center mb-3 px-4 py-2 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-2 border-solid bg-gray-500 text-white`,children:[(0,f.jsx)(`p`,{className:` ${n?`invisible!`:`visible`}`,children:n?`copy!`:t}),(0,f.jsxs)(`p`,{className:` m-0 text-center`,children:[` `,n?`anjay`:``,` `]})]})};function h(){let e=(0,c.useRef)([]),t=(0,c.useRef)([]);return{push:(n,r)=>{let i=e.current[e.current.length-1];i&&i.value===n||(e.current.push({value:n,cursor:r}),t.current=[])},undo:()=>{let n=e.current.pop();return n?(t.current.push(n),n):null},redo:()=>{let n=t.current.pop();return n?(e.current.push(n),n):null}}}var g=({value:e,onChange:t})=>{let n=(0,c.useRef)(null),r=(0,c.useRef)(null),i=(0,c.useRef)(``),{push:a,undo:o,redo:s}=h(),l=e=>{let t=e.split(`
