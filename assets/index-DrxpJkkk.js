@@ -1047,15 +1047,22 @@ Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
 6. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) : 
 
 Perdana PraBayar | K12-Kendala pengiriman kartu SIM
-`},{id:15,case:`Pembelian paket IRENEW virtual account Paid `,Bracket:t=>`#Pelangganbyu
-[byU ${t}]
-Nomor by.U : xxxxxx
-Email by.U : ${e}
-Waktu Transaksi   : ${l()}
-Waktu Kejadian    : ${u()}
-Lokasi Pelanggan  : 
-Detail case : pembelian kuota gamasuk VA
-Solusi : Permintaan data Mandatory
+`},{id:15,case:`Pembelian paket IRENEW virtual account Paid `,Bracket:e=>`#Pelangganbyu
+[byU ${e}] 
+ID Omnix : #
+Nama Pelanggan : Pelanggan 
+Tanggal lapor : ${u} 
+
+1. Nomor by.U : xxxxxx
+2. Waktu Transaksi : ${l()}
+3. Metode Bayar : Virtual Accont
+4. Capture bukti pembayaran : 
+5. Capture riwayat transaksi apps by.U : -
+6. Nama paket/Nominal pulsa : 
+7. Order detail ID (CXO)  : 
+8. Transaction ID (CXT)  :
+9. Detail Permasalahan : kuota/pulsa belum masuk (paid)
+10. Solusi : Minta data Mandatory
 `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
@@ -1069,8 +1076,6 @@ Masalah Pembelian Kuota/Pulsa I RENEW Via VA
 5. Order detail ID (CXO) (Pengecekan OperatorX) : -
 6. Transaction ID (CXT) (Pengecekan OperatorX) : -
 
-pending payment
-TRX ID : 
 No VA : 
 paid
       
@@ -1115,20 +1120,26 @@ Penyalahgunaan NIK
 7. Alasan ingin Unregistrasi nomor by.U : MSISDN terdapat penyalahgunaan NIK yang bukan punya pemilik NIK
 
         
-`},{id:17,case:`Pembelian paket Irenew virtual account Unpaid `,Bracket:t=>`#Pelangganbyu
-[byU ${t}]
-Nomor by.U : xxxxxx
-Email by.U : ${e}
-Waktu Transaksi   : ${l()}
-Waktu Kejadian    : ${u()}
-Lokasi Pelanggan  : 
-Detail case : pembelian kuota ga masuk unpaid
-Solusi : Permintaan data Mandatory
+`},{id:17,case:`Pembelian paket Irenew virtual account Unpaid `,Bracket:e=>`#Pelangganbyu
+[byU ${e}] 
+ID Omnix : #
+Nama Pelanggan : Pelanggan 
+Tanggal lapor : ${u} 
+
+1. Nomor by.U : xxxxxx
+2. Waktu Transaksi : ${l()}
+3. Metode Bayar : Virtual Accont
+4. Capture bukti pembayaran : 
+5. Capture riwayat transaksi apps by.U : -
+6. Nama paket/Nominal pulsa : 
+7. Order detail ID (CXO)  : 
+8. Transaction ID (CXT)  :
+9. Detail Permasalahan : kuota/pulsa belum masuk (unpaid)
+10. Solusi : Minta data Mandatory
 `,Solusi:`Makasih udah nunggu. Kak maaf, aku cek transaksi di nomor xxxxxx, ada kendala dari pihak pembayarannya jadinya transaksinya gabisa dilanjutin nih. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U
 2. Nomor rekening bank BCA
 3. Atas nama pemilik rekening
-
 
 4. Kantor cabang pembuka
 `,Mandatory:(e,t)=>`#Pelangganbyu
@@ -1147,7 +1158,6 @@ Masalah Pembelian Kuota/Pulsa I RENEW Via Virtual Account
 8. Atas nama :
 9. Cabang pembuka rekening refund :
 
-TRX ID :
 No VA : 
 Unpaid
         
@@ -1251,15 +1261,22 @@ SMS - Gagal Aktivasi M-Banking
 5. Capture dashboard apps : 
 6. Capture kirim atau terima SMS ke nomor lain berhasil : 
 7. Capture keterangan gagal aktivasi fitur banking : 
-`},{id:21,case:`Pembelian paket IRENEW OVO/DANA/ShopeePay/lainnya `,Bracket:t=>`#Pelangganbyu
-[byU ${t}]
-Nomor by.U : xxxxxx
-Email by.U : ${e}
-Waktu Transaksi   : ${l()}
-Waktu Kejadian    : ${u()}
-Lokasi Pelanggan  : 
-Detail case : Pembelian paket berhasil kuota/pulsa gamasuk
-Solusi : Permintaan data Mandatory
+`},{id:21,case:`Pembelian paket IRENEW OVO/DANA/ShopeePay/lainnya `,Bracket:e=>`#Pelangganbyu
+[byU ${e}] 
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${u} 
+
+1. Nomor by.U : xxxxxx
+2. Waktu Transaksi : ${l()}
+3. Metode Bayar :
+4. Capture bukti pembayaran : 
+5. Capture riwayat transaksi apps by.U : 
+6. Nama paket/Nominal pulsa : 
+7. Order detail ID (CXO)  : 
+8. Transaction ID (CXT)  :
+9. Detail Permasalahan : kuota/pulsa belum masuk
+10. Solusi : Minta data mandatory
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala transaksinya boleh infoin aku data ini ya biar bisa aku cek : 
 1. Nomor by.U :
 2. Email akun by.U :
@@ -1311,11 +1328,12 @@ Tanggal lapor : ${t}
 4. Capture bukti pembayaran : 
 5. Capture riwayat transaksi apps by.U : 
 6. Nama paket/Nominal pulsa : 
-7. Order detail ID (CXO) (Pengecekan OperatorX)  : 
-8. Transaction ID (CXT) (Pengecekan OperatorX) :
-9. Rincian Keluhan : kuota/pulsa belum masuk
+7. Order detail ID (CXO)  : 
+8. Transaction ID (CXT)  :
+9. Detail Permasalahan : kuota/pulsa belum masuk
+10. Solusi : Tiket
 
-Activation Status Failed
+Activation Status Pending
 
 `},{id:22,case:`Tidak Bisa Aktivasi SIM Card Legacy `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
