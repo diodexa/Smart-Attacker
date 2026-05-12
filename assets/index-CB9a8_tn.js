@@ -1051,7 +1051,7 @@ Perdana PraBayar | K12-Kendala pengiriman kartu SIM
 [byU ${e}] 
 ID Omnix : #
 Nama Pelanggan : Pelanggan 
-Tanggal lapor : ${u} 
+Tanggal lapor : ${u()} 
 
 1. Nomor by.U : xxxxxx
 2. Waktu Transaksi : ${l()}
@@ -1124,7 +1124,7 @@ Penyalahgunaan NIK
 [byU ${e}] 
 ID Omnix : #
 Nama Pelanggan : Pelanggan 
-Tanggal lapor : ${u} 
+Tanggal lapor : ${u()} 
 
 1. Nomor by.U : xxxxxx
 2. Waktu Transaksi : ${l()}
@@ -1265,7 +1265,7 @@ SMS - Gagal Aktivasi M-Banking
 [byU ${e}] 
 ID Omnix : #
 Nama Pelanggan : Pelanggan
-Tanggal lapor : ${u} 
+Tanggal lapor : ${u()} 
 
 1. Nomor by.U : xxxxxx
 2. Waktu Transaksi : ${l()}
