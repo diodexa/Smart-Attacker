@@ -1,4 +1,4 @@
-import { getCurrentDate } from "./DateTime"
+import { getCurrentDate, getCurrentDateTime } from "./DateTime"
 
 export const DataMandatory = () => {
     const EMPTY = "\u200B\u200B"
@@ -12,8 +12,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case :  Internet 
-Solusi :  minta data
+Solusi :  Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala internetnya boleh infoin data ini ya biar biar bisa aku cek : 
@@ -104,7 +107,14 @@ Mandatory : (segment: string,DateTime: string ) =>
     Suggestion
     -
 16. Solusi Yang telah di berikan : Update Location (REQID)
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
 #CheckbyCCA
+
+N-90001-Network Service Desk-Head Office-INT404
 
 
 ` 
@@ -118,8 +128,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case :  gabisa aktivasi Error Lain
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hai Kak saat ini terhubung dengan Nindy. Kak maaf banget untuk aktivasinya, boleh infoin data ini ya biar bis aku cek:
@@ -170,8 +183,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case :  bugs aplikasi
-Solusi :  minta data
+Solusi :  Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy.Kak maaf banget untuk kendala aplikasinya ,boleh coba dulu untuk ON-kan airplane mode beberapa saat, kemudian OFF-kan kembali. Kalau masih gak bisa, boleh coba install ulang aplikasi by.U kakak dan pastikan koneksi internet ada. Kalau di aplikasi masih berkendala, Kakak bisa coba akses di website by.U ya. Kalau udah tapi masih berkendala, boleh infoin data ini ya :
@@ -251,8 +267,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : bugs ganti sim card
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih, untuk kendala ganti SIM card nya di apps by.U, Coba di clear cache dulu apps nya dan pastiin pakai apps versi terbaru ya. Kalau udah tapi masih berkendala boleh diinfoin data ini :
@@ -306,12 +325,36 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : gabisa kirim/terima SMS
-Solusi :  minta data
+Solusi :  Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
-`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala SMS nya, boleh infoin dulu data ini ya :
-1. Nomor dan Email akun by.U :
+`
+Hi, Kak Yuuta. Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala SMS nya, boleh dicoba dulu saran berikut ya :
+
+• Refresh Jaringan dengan cara Restart Handphone
+• Coba untuk mengubah mode jaringan ke 2G Only terlebih dahulu, kemudian menunggu maksimal 1 x 24 jam untuk memastikan SMS Kode OTP dapat diterima
+• Periksa juga folder Spam & diblokir jika pesan tidak muncul.
+• Jika OTP untuk aplikasi Meta Product (WA,dll) & Telegram, silakan konfirmasi ke penyedia aplikasi dulu agar dibantu lebih lanjut. 
+
+Jika sudah menghubungi pihak aplikasi boleh lengkapi data berikut ya :
+
+1. Nomor by.U :
+2. Nomor pengirim SMS (semua nomor, hanya khusus nomor tertentu saja atau SMS Premium) :
+3. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
+4. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
+5. Notifikasi gagal terima SMS :
+6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
+7. Tipe HP :
+
+Silakan dicoba dulu ya Kak :)
+
+
+Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala SMS nya, boleh infoin dulu data ini ya :
+1. Nomor by.U :
 2. Nomor tujuan SMS (semua nomor, hanya khusus nomor tertentu saja atau SMS Premium) :
 3. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
 4. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
@@ -345,13 +388,12 @@ Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya :
 ` :
 
 `Makasih udah nunggu. Kak maaf banget nih untuk kendala SMS nya di nomor xxxxxx. Boleh infoin data ini ya biar bisa aku cek :
-1. Email akun by.U :
-2. Nomor tujuan SMS (semua nomor, hanya khusus nomor tertentu saja atau SMS Premium) :
-3. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
-4. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
-5. Notifikasi gagal kirim/terima SMS : 
-6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
-7. Tipe HP : 
+1. Nomor tujuan SMS (semua nomor, hanya khusus nomor tertentu saja atau SMS Premium) :
+2. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
+3. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
+4. Notifikasi gagal kirim/terima SMS : 
+5. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
+6. Tipe HP : 
 
 4.1 Keterangan SMS gagal terkirim
 Kak aku cek nomor xxxxxx aktif. Boleh coba dulu panduan ini ya : 
@@ -382,18 +424,23 @@ Tanggal lapor : ${getCurrentDate()}
 
 
 1. Nomor by.U : xxxxxx
-2. Email akun by.U : 
-3. Nomor tujuan SMS (semua nomor, hanya khusus nomor tertentu saja atau SMS Premium) : 
-4. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) : 
-5. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  : 
-6. Notifikasi gagal kirim SMS (capture/text) : 
-7. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ? 
-8. Tipe HP : 
-9. Detail permasalahan : gabisa kirim SMS
+2. Nomor tujuan SMS (semua nomor, hanya khusus nomor tertentu saja atau SMS Premium) : 
+3. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) : 
+4. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  : 
+5. Notifikasi gagal kirim SMS (capture/text) : 
+6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ? 
+7. Tipe HP : 
+8. Detail permasalahan : gabisa kirim SMS
+9. Solusi : Sesuai Pansol
+
+HLR Status Active
+TS22 Active
 
 
-
-1x24 jam`   
+1x24 jam
+K31-SMS - Tidak bisa terima 
+K31-SMS - Tidak bisa kirim
+ `   
 },
 
 {
@@ -404,15 +451,18 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : gabisa telepon masuk/keluar
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget untuk kendala teleponnya, boleh infoin data ini ya biar bisa aku cek:
 1. Nomor by.U dan  Akun SignUp :
 2. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
 3. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
-4. Notifikasi gagal saat telepon/Notifikasi gagal terima telepon : *silakan untuk notifikasi yang ditanyakan sesuai dengan keluhan dan hapus yang tidak perlu
+4. Notifikasi gagal saat telepon/Notifikasi gagal terima telepon : 
 5. Kendala terjadi hanya ke nomor tertentu atau semua nomor?
 6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
 
@@ -515,7 +565,7 @@ Kak aku cek nomor xxxxxx aktif. Coba pandan ini ya :
 1. Email akun by.U :
 2. Waktu Kejadian (tgl/bulan/tahun dan jam kejadian) :
 3. Lokasi detail kendala (indoor/outdoor dan alamat lengkap seperti nama jalan, kelurahan, kecamatan, kota/kabupaten)  :
-4. Notifikasi gagal saat telepon/Notifikasi gagal terima telepon : *silakan untuk notifikasi yang ditanyakan sesuai dengan keluhan dan hapus yang tidak perlu
+4. Notifikasi gagal saat telepon/Notifikasi gagal terima telepon : 
 5. Kendala terjadi hanya ke nomor tertentu atau semua nomor?
 6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
 
@@ -624,10 +674,18 @@ Tanggal lapor : ${getCurrentDate()}
 6. Kendala terjadi hanya saat menerima panggilan, melakukan panggilan, atau keduanya?  
 7. Kendala terjadi hanya ke nomor tertentu atau semua nomor?
 8. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
+9. Detail Permasalahan : Gabisa lakukan panggilan
+10. Solusi : Udah disarankan sesuai pansol
 
+HLR STATUS Active
+TS11/TS12 Aktif
+IC | FALSE
+OC | FALSE
 
-
-1x24 jam`   
+1x24 jam
+Network > Voice > K33-Tidak bisa melakukan panggilan
+LAYANAN JARINGAN > Use Service > K31-Call - Tidak bisa terima call
+`   
 },
 
 {
@@ -638,36 +696,30 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
-Detail case : ga dapat OTP Whatsapp/Telegram
-Solusi : minta data
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
+Detail case : Informasi biaya layanan Google
+Solusi : Informasi perhitungan biaya
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
-`ke SMS dulu
+`Kak untuk tarif pembelian item bayar pake pulsa, pastiin pulsanya mencukupi ya. Berikut cara perhitungannya :
+Pajak Pemerintah 11% : 0.11*harga item+ harga item = 1.11 harga item
+Pajak layanan Google Play 18% (11% + 7%) dari pajak pertama : 0.18(1.11 harga item) = 0.198 harga item
+Total : 1.11 harga item + 0.198 harga item = 1.3098 harga item
+
+Jadi, kalau harganya Rpxxxxx, Kakak harus punya pulsa sekitar (harga x 1.3098)
 ` :
 `Kak untuk tarif pembelian item bayar pake pulsa, pastiin pulsanya mencukupi ya. Berikut cara perhitungannya :
-Harga item + PPN (Google dan Telkomsel) 11% + Jasa 2% 
+Pajak Pemerintah 11% : 0.11*harga item+ harga item = 1.11 harga item
+Pajak layanan Google Play 18% (11% + 7%) dari pajak pertama : 0.18(1.11 harga item) = 0.198 harga item
+Total : 1.11 harga item + 0.198 harga item = 1.3098 harga item
 
-Jadi, kalau harganya xxxxx, Kakak harus punya pulsa sekitar (harga x 1.2543)
+Jadi, kalau harganya Rpxxxxx, Kakak harus punya pulsa sekitar (harga x 1.3098)
 
 `,
-Mandatory : (segment: string,DateTime: string ) =>
-`#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-TIDAK BISA REQUEST OTP META PRODUCT
-
-1. Email by.U : 
-2. Nomor by.U : xxxxxx
-3. Waktu Kejadian : 
-4. Nomor lain yang bisa dihubungi : 
-5. Tipe gadget yang digunakan : 
-6. Capture dashboard di apps dan keterangan sinyal : 
-7. Capture keterangan gagal yang muncul saat melakukan request/menerima OTP : 
-8. Keterangan gagal yang muncul saat melakukan request/menerima OTP : 
-9. Nomor tujuan saat menerima atau mengirim SMS OTP : 
-
-1x24 jam`   
+Mandatory : ( ) =>
+``   
 },
 
 {
@@ -678,8 +730,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : unreg
-Solusi :  minta data
+Solusi :  Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy.Untuk permintaan Unreg nya, bisa melalui aplikasi ya dengan cara berikut : 
@@ -766,8 +821,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : unreg
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : "",
 Mandatory : (segment: string,DateTime: string ) =>
@@ -797,8 +855,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : gabisa aktivasi esim acount
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi :   (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. untuk kendala eSIM di nomor xxxxxx , aku cek ada kendala nih dari proses aktivasinya. Boleh infoin data ini ya biar bisa aku proses :
@@ -843,8 +904,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Sinyal
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala sinyalnya, boleh infoin data ini ya biar bisa aku cek :
@@ -937,7 +1001,15 @@ Mandatory : (segment: string,DateTime: string ) =>
     Suggestion
     -
 16. Solusi Yang telah di berikan : Update Location (reqID)
+
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
 #CheckbyCCA
+
+N-90001-Network Service Desk-Head Office-INT404
 
 
 
@@ -952,8 +1024,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Ganti sim card
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hai Kak. Saat ini terhubung dengan Nindy. Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) Jadi gabisa dilakkan ganti SIM card ya :)
@@ -1061,8 +1136,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : misskoordinasi JNE ada AWB
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala pengiriman SIM card , boleh infoin data ini ya biar bisa aku proses : 
@@ -1109,8 +1187,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : misskoordinasi ga ada awb
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala pengiriman SIM card nya, boleh infoin data ini ya biar bisa aku proses : 
@@ -1153,13 +1234,24 @@ Perdana PraBayar | K12-Kendala pengiriman kartu SIM
 id: 15,
 case : "Pembelian paket IRENEW virtual account Paid ",
 
-Bracket : (segment: string) =>`#Pelangganbyu
-[byU ${segment}]
-Nomor by.U : xxxxxx
-Email by.U : ${EMPTY}
-Detail case : irenew va
-Solusi : minta data
-`,
+Bracket : (segment: string ) =>
+`#Pelangganbyu
+[byU ${segment}] 
+ID Omnix : #
+Nama Pelanggan : Pelanggan 
+Tanggal lapor : ${getCurrentDate()} 
+
+1. Nomor by.U : xxxxxx
+2. Waktu Transaksi : ${getCurrentDateTime()}
+3. Metode Bayar : Virtual Accont
+4. Capture bukti pembayaran : 
+5. Capture riwayat transaksi apps by.U : -
+6. Nama paket/Nominal pulsa : 
+7. Order detail ID (CXO)  : 
+8. Transaction ID (CXT)  :
+9. Detail Permasalahan : kuota/pulsa belum masuk (paid)
+10. Solusi : Minta data Mandatory
+`   ,
 Solusi : 'Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)',
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
@@ -1175,8 +1267,6 @@ Masalah Pembelian Kuota/Pulsa I RENEW Via VA
 5. Order detail ID (CXO) (Pengecekan OperatorX) : -
 6. Transaction ID (CXT) (Pengecekan OperatorX) : -
 
-pending payment
-TRX ID : 
 No VA : 
 paid
       
@@ -1192,8 +1282,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : penyalahgunaan nik
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : 
 `Makasih udah nunggu. Kak untuk permintaan unreg di NIK Kakak boleh infoin aku data ini ya biar bisa aku proses : 
@@ -1237,17 +1330,26 @@ id: 17,
 case : "Pembelian paket Irenew virtual account Unpaid ",
 
 Bracket : (segment: string) =>`#Pelangganbyu
-[byU ${segment}]
-Nomor by.U : xxxxxx
-Email by.U : ${EMPTY}
-Detail case : irenew VA unpaid
-Solusi : minta data
-`,
+[byU ${segment}] 
+ID Omnix : #
+Nama Pelanggan : Pelanggan 
+Tanggal lapor : ${getCurrentDate()} 
+
+1. Nomor by.U : xxxxxx
+2. Waktu Transaksi : ${getCurrentDateTime()}
+3. Metode Bayar : Virtual Accont
+4. Capture bukti pembayaran : 
+5. Capture riwayat transaksi apps by.U : -
+6. Nama paket/Nominal pulsa : 
+7. Order detail ID (CXO)  : 
+8. Transaction ID (CXT)  :
+9. Detail Permasalahan : kuota/pulsa belum masuk (unpaid)
+10. Solusi : Minta data Mandatory
+` ,
 Solusi : `Makasih udah nunggu. Kak maaf, aku cek transaksi di nomor xxxxxx, ada kendala dari pihak pembayarannya jadinya transaksinya gabisa dilanjutin nih. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U
 2. Nomor rekening bank BCA
 3. Atas nama pemilik rekening
-
 
 4. Kantor cabang pembuka
 `,
@@ -1268,7 +1370,6 @@ Masalah Pembelian Kuota/Pulsa I RENEW Via Virtual Account
 8. Atas nama :
 9. Cabang pembuka rekening refund :
 
-TRX ID :
 No VA : 
 Unpaid
         
@@ -1283,22 +1384,26 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : refund karena
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : "",
-Mandatory : (segment: string,DateTime: string ) =>
+Mandatory : (DateTime: string ) =>
 `#Pelangganbyu
-[REFUND]
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Permintaan Refund karena kesalahan sistem
+ID Omnix :
+Nama Pelanggan :
+Tanggal lapor : ${DateTime} 
 
-1.Nomor by.U : xxxxxx
-2.Email by.U : ${EMPTY}
-3.Capture bukti pembayaran : 
-4. Data refund :
+1. Nomor by.U : xxxxxx
+2. Capture bukti pembayaran : 
+3. Data Refund : 
+4. Order detail ID (CXO) : 
+5. Transaction ID (CXT) : 
+6. Detail permasalahan : 
+7. Solusi : eskalasi, mohon dibantu. Tks
 
 
 P44 - Paket darurat Permintaan refund pulsa
@@ -1313,8 +1418,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : ga dapat kuota Monthversary
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala ga dapat kuota Monthversary, boleh infoin aku data ini ya biar bisa aku proses : 
@@ -1359,8 +1467,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : gagal Aktivasi M-Banking
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hai, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala fitur banking nya, pastiin cuma ada SIM Card by.U di hp saat aktivasi fitur banking tersebut dan terkoneksi dengan jaringan by.U. Kalau masih tidak bisa, boleh tolong infokan beberapa data berikut agar dapat dibantu pengecekan :
@@ -1405,17 +1516,28 @@ id: 21,
 case : "Pembelian paket IRENEW OVO/DANA/ShopeePay/lainnya ",
 
 Bracket : (segment: string) =>`#Pelangganbyu
-[byU ${segment}]
-Nomor by.U : xxxxxx
-Email by.U : ${EMPTY}
-Detail case : irenew
-Solusi : minta data
+[byU ${segment}] 
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${getCurrentDate()} 
+
+1. Nomor by.U : xxxxxx
+2. Waktu Transaksi : ${getCurrentDateTime()}
+3. Metode Bayar :
+4. Capture bukti pembayaran : 
+5. Capture riwayat transaksi apps by.U : 
+6. Nama paket/Nominal pulsa : 
+7. Order detail ID (CXO)  : 
+8. Transaction ID (CXT)  :
+9. Detail Permasalahan : kuota/pulsa belum masuk
+10. Solusi : Minta data mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala transaksinya boleh infoin aku data ini ya biar bisa aku cek : 
 1. Nomor by.U :
 2. Email akun by.U :
 3. Capture bukti pembayaran :
+4. Capture riwayat detail transaksi di aplikasi by.U : 
 
 Aku tunggu datanya ya :)
 
@@ -1426,10 +1548,17 @@ Oke Kak, untuk bukti bayar yang di Shopee dengan tertera Merchant Reff IDnya sil
 4. Cari Merchant Ref ID: Rincian transaksi akan menampilkan informasi detail termasuk Merchant Ref ID. Merchant Ref ID ini biasanya tertera dalam format yang mirip dengan nomor ID.
 
 Kak maaf, untuk capture bukti bayar yang di DANA, pastiin tertera ID order merchant nya yang angkanya tanpa di sensor ya:)
+
+Kak untuk riwayat transaksi bisa pilih dulu ke menu profil terus pilih menu riwayat transaksi ya. Pastiin capture nya tertera ID transaksi
+
+** Jika dari bukti bayar pelanggan statusnya "sedang diproses" dan pengecekan OperatorX data transaksi tidak ditemukan atau "Created", edukasi ke pelanggan tunggu 1 x 24 jam karena dari bukti bayar statusnya sedang di proses dan tidak mencoba berkala, karena dikhawatirkan terpotong lebih dari 1 kali jika pelanggan mencoba secara terus-menerus.
+
+Kak maaf, karena pada capture Kakak status pembayarannya sedang di proses, Kakak bisa tunggu dulu maksimal 1x24 jam ya untuk proses transaksinya. Kakak jangan dulu coba secara berkala ya karena dikhawatirkan terpotong lebih dari 1 kali jika Kakak mencoba secara terus-menerus
 ` :
 `Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx boleh infoin aku data ini ya biar bisa aku cek : 
 1. Email akun by.U 
 2. Capture bukti pembayaran
+3. Capture riwayat detail transaksi di aplikasi by.U 
 
 Oke Kak, untuk bukti bayar yang di Shopee dengan tertera Merchant Reff IDnya silahkan coba cara ini :
 1. Buka Aplikasi Shopee: Buka aplikasi Shopee di ponsel Kakak.
@@ -1437,20 +1566,34 @@ Oke Kak, untuk bukti bayar yang di Shopee dengan tertera Merchant Reff IDnya sil
 3. Pilih Transaksi: Pilih transaksi yang ingin dilihat detailnya.
 4. Cari Merchant Ref ID: Rincian transaksi akan menampilkan informasi detail termasuk Merchant Ref ID. Merchant Ref ID ini biasanya tertera dalam format yang mirip dengan nomor ID.
 
-Kak maaf, untuk capture bukti bayar yang di DANA, pastiin tertera ID order merchant nya yang angkanya tanpa di sensor ya:)`,
+Kak  untuk capture bukti bayar yang di DANA, pastiin tertera ID order merchant nya yang angkanya tanpa di sensor ya:)
+
+Kak untuk riwayat transaksi bisa pilih dulu ke menu profil terus pilih menu riwayat transaksi ya. Pastiin capture nya tertera ID transaksi
+
+** Jika dari bukti bayar pelanggan statusnya "sedang diproses" dan pengecekan OperatorX data transaksi tidak ditemukan atau "Created", edukasi ke pelanggan tunggu 1 x 24 jam karena dari bukti bayar statusnya sedang di proses dan tidak mencoba berkala, karena dikhawatirkan terpotong lebih dari 1 kali jika pelanggan mencoba secara terus-menerus.
+
+Kak maaf, karena pada capture Kakak status pembayarannya sedang di proses, Kakak bisa tunggu dulu maksimal 1x24 jam ya untuk proses transaksinya. Kakak jangan dulu coba secara berkala ya karena dikhawatirkan terpotong lebih dari 1 kali jika Kakak mencoba secara terus-menerus
+`,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
 [byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Masalah Pembelian Kuota/Pulsa I RENEW Via 
+ID Omnix :
+Nama Pelanggan :
+Tanggal lapor : ${DateTime} 
 
 1. Nomor by.U : xxxxxx
-2. Email by.U : ${EMPTY}
-3. Capture bukti pembayaran : 
-4. Order detail ID (CXO) (Pengecekan OperatorX)  : 
-5. Transaction ID (CXT) (Pengecekan OperatorX) :
-6. Rincian Keluhan : kuota/pulsa belum masuk
+2. Waktu Transaksi : ${getCurrentDateTime()}
+3. Metode Bayar :
+4. Capture bukti pembayaran : 
+5. Capture riwayat transaksi apps by.U : 
+6. Nama paket/Nominal pulsa : 
+7. Order detail ID (CXO)  : 
+8. Transaction ID (CXT)  :
+9. Detail Permasalahan : kuota/pulsa belum masuk
+10. Solusi : Tiket
+
+Activation Status Pending
+
 `   
 },
 
@@ -1462,8 +1605,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : gabisa aktivasi legacy
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala aktivasi SIM card nya, kalau nomornya beli di konter, coba Kakak lakukan aktivasi lagi dengan pasang hanya 1 SIM card by.U saja yang ingin di aktivasi terus pasang di slot SIM 1 ya kak. Kakak bisa juga aktivasi lewat *444# atau SMS ketik REG (spasi) NIK#NoKK# kirim ke 4444. Kalau masih gabisa Kakak bisa infoin ke aku data ini :
@@ -1512,13 +1658,16 @@ Tidak Bisa Aktivasi SIM Card Legacy
 
 {
 id: 23,
-case : "Cara Aktivasi SIM card Digital ",
+case : "Cara Aktivasi SIM card  ",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
-Detail case : cara aktivasi sim card digital
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
+Detail case : cara aktivasi sim card 
 Solusi : info cara aktivasi di apps
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
@@ -1530,13 +1679,25 @@ Solusi : (segment: string) => segment ==='Email' ?
 5. Pastiin saat masukkan NIK dan no.KK pakai jaringan by.U aja yang ingin di aktivasi ya
 Semoga berhasil ya Kak, kalau berkendala bisa Kakak coba aktivasi via web byu.id/aktivasi dan bisa gunakan jaringan lain untuk perbandingan ya Kak.
 ` :
-`Kak maaf, untuk aktivasi di nomor xxxxxx, Aku bantu infoin untuk cara aktivasinya Kakak bisa coba cara berikut ya Kak:
-1. Buka apps, lalu login dengan menggunakan akun yang digunakan pada saat pemesanan kartu by.U > klik tombol aktifin SIM Card,
-2. Pastiin SIM Card di HP hanya ada SIM by.U,
-3. Pastiin settingan HP jaringan internet terkoneksi ke jaringan by.U,
-4. Saat masukkan NIK dan No.KK pastikan sudah sesuai, cek secara manual kembali ya.
-5. Pastiin saat masukkan NIK dan no.KK pakai jaringan by.U aja yang ingin di aktivasi ya
-Semoga berhasil ya Kak, kalau berkendala bisa Kakak coba aktivasi via web byu.id/aktivasi dan bisa gunakan jaringan lain untuk perbandingan ya Kak.`,
+`Maaf udah bikin kakak ngga nyaman, buat aktivasi SIM Card by.U jika kakak membeli di apps by.U, silakan Kakak lakukan melalui aplikasi by.U. Pastiin udah login menggunakan akun email/facebook/nomor yang didaftarin saat pembelian SIM Card diawal lalu ikutin langkah berikut:
+- Sudah login menggunakan email/facebook yang didaftakan saat pembelian SIM Card by.U
+- Matikan WI-fi, cabut semua SIM Card dan masukan SIM Card by.U di SIM1 (Di HP hanya ada SIM Card by.U)
+- Nyalakan mobile data dan lakukan aktivasi kembali
+- Harusnya secara otomatis akan masuk page daftar NIK NOKK
+- Sewaktu memasukkan NIK NOKK, mohon memasukkan NIK NOKK secara manual, tidak perlu pakai scan. Pastikan datanya benar
+Kalo sudah dipastikan sesuai prosedur dan masih berkendala boleh infokan beberapa data berikut yaa :
+- Nomor by.U : 
+- Email by.U :
+- NIK dan Nomor KK :
+- Capture keterangan gagal aktivasi pada apps :
+- Serial Number yang ada dibelakang cangkang/starterpack SIM Card by.U (076XXX atau 006XXX)
+
+Namun jika kakak membeli di outlet atau konter aku saranin kakak melakukan aktivasi melalui SMS ketik REG NIK#NOKK# kirim ke 4444 ya kak. Jika ada kendala kakak bantu infoin ke aku data berikut :
+- Nomor by.U :  
+- Capture berhasil aktivasi via SMS
+- NIK dan NOKK
+- CP dan Email yang bisa dihubungi
+- SN barcode yang ada di cangkang SIM Card`,
 Mandatory : `
 `   
 },
@@ -1549,8 +1710,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : ga dapat langganan weTV
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala langganan weTV nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
@@ -1595,8 +1759,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : sim card yang didapat legacy
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hai, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala SIM card nya, boleh infoin data ini ya biar bisa aku proses :
@@ -1647,8 +1814,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : gabisa aktivasi asset notfound
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : `Makasih udah nunggu ya Kak. Maaf banget nih untuk kendala aktivasi SIM card nya di nomor xxxxxx, Kalau sudah mencoba lagi dan masih tidak bisa, boleh diinfokan beberapa data berikut ya supaya kami bisa melakukan pengecekan lebih lanjut :
 1. Akun by.U :
@@ -1684,8 +1854,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : kuota tiba-tiba berkurang
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Halo, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala penggunaan kuotanya, boleh infoin data ini ya biar bisa aku proses :
@@ -1740,6 +1913,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : gabisa login nomor by.U
 Solusi : solusi gabisa login nomor by.u
 `,
@@ -1774,8 +1950,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : non telco
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi :(segment: string) => segment ==='Email' ? 
 `Hai, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala uCoin nya, boleh infoin data ini ya biar bisa aku proses : 
@@ -1821,8 +2000,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : ganti sim card ditolak grapari
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi :(segment: string) => segment ==='Email' ? 
 `Hai, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk ganti SIM card nya karena gabisa di GraPARI, boleh infoin data ini ya biar bisa aku proses : 
@@ -1882,8 +2064,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : esim sinyal hilang
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala eSIM nya, boleh infoin data ini ya biar bisa aku proses : 
@@ -1936,8 +2121,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : minta barcode esim
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk barcode/qr eSIM nya, boleh infoin data ini ya biar bisa aku proses : 
@@ -1983,8 +2171,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : bugs ganti sim card
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : 
 `Makasih udah nunggu. Kak maaf, kalau keterangannya seperti itu, boleh infoin data ini ya biar bisa aku proses : 
@@ -2044,8 +2235,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : gabisa internet roaming
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala gabisa internet di luar negeri,boleh infoin data ini ya biar bisa aku cek :
@@ -2068,7 +2262,6 @@ Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif  dan punya kuota roaming, se
 2. Ubah pengaturan jaringan dari otomatis menjadi manual, lalu cari Operator yang bekerjasama di negara tersebut,
 3. Pastikan kolom APN diisi dengan "byu" (tanpa tanda kutip), username dan password kosongkan.
 4. Pastikan hanya ada 1 SIM Card yang aktif, jika masih tidak bisa coba pindahkan SIM card ke HP lain untuk perbandingan.
-5. Pastikan tombol data seluler dan data roaming aktif/ON
 
 Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX yaitu xxx  . Jika cara di atas sudah dicoba dan sinyalnya masih berkendala, tolong hubungi kita lagi. Terima kasih.
 
@@ -2100,17 +2293,27 @@ Mandatory : (segment: string) =>
 `#Pelangganbyu
 [NO][IR][${segment}]
 
-1. Nomor by.U : xxxxxx
-2. Email akun by.U : ${EMPTY}
+1. nomor by.U : xxxxxx
+2. Email by.U : ${EMPTY}
 3. Lokasi negara : 
-4. Tanggal dan waktu kejadian sejak kapan : 
-5. Jaringan/operator negara setempat yang digunakan : 
-6. Gangguan sinyal terjadi sepanjang hari atau pada waktu tertentu aja? 
-7. Jaringan yang digunakan apa? 2G, 4G, 5G? : 
-8. Jenis device/hp yang dipakai? 
-9. Capture setting APN di hp : 
-10. Capture bar sinyal yang didapat : 
-11. Email aktif yang bisa dihubungi ? 
+4. Tanggal dan waktu kendala : 
+5. Jaringan yang digunakan apa? 4G, 5G? 
+6. Jumlah sinyal bar atau titik yang didapat? 
+7. Jaringan/operator negara setempat yang digunakan 
+8. Nama Paket Roaming : 
+9. Sisa kuota yang dimiliki oleh pelanggan: 
+10. Capture speedtest: 
+11. Capture setting APN di hp: 
+12. Jenis device/HP yang digunakan: 
+13. Email aktif yang bisa dihubungi: 
+14. Detail Kendala : Ga bisa internet roaming
+15. Solusi: sesuai pansol
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
+Baring Roam | NOBAR
 `   
 },
 
@@ -2122,8 +2325,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : pulsa berkurang tiba-tiba
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Halo, Kak . Saat ini udah terhubung dengan Nindy. Maaf nih untuk kendala pulsa yang berkurang tiba-tiba, boleh infoin data ini ya biar bisa aku proses :
@@ -2166,6 +2372,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : gabisa aktivasi sim card legacy
 Solusi : hubungi pihak penjual
 `,
@@ -2183,6 +2392,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : gabisa aktivasi nik invalid
 Solusi : hubungi dukcapil
 `,
@@ -2230,6 +2442,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : gabisa aktivasi sim card
 Solusi : diinfoin coba besok
 `,
@@ -2245,6 +2460,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : gabisa aktivasi maximum nik
 Solusi : diinfoin unreg nomor telkomsel
 `,
@@ -2291,19 +2509,21 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : perubahan data pelanggan
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Berikut form perubahan datanya ya, silakan Kakak isi dulu dengan tandatangan diatas materai ya :)
 
 Halo, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk perubahan data nya, boleh infoin data ini ya biar bisa aku proses : 
 1. Nomor by.U : 
-2. Alamat Email login by.U :
-3. NIK & NOK pelanggan baru :
-4. Foto KTP pelanggan baru :
-5. Surat pernyataan yang ada di lampiran :
-6. Validasi tambahan :
+2. NIK & NOK pelanggan baru :
+3. Foto KTP pelanggan baru :
+4. Surat pernyataan yang ada di lampiran :
+5. Validasi tambahan :
 
 Untuk validasi tambahannya bisa infoin salah satu dari data ini ya : 
 1. Tanggal dan jenis paket terakhir yang dibeli :
@@ -2319,18 +2539,15 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Perubahan data  dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: ${EMPTY}
-3. NIK KTP pelanggan baru : 
-4. No KK pelanggan baru   : 
+2. NIK KTP pelanggan baru : 
 
 Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
 ` :
 `Makasih udah nunggu. Kak maaf untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
-1. Alamat Email login by.U :
-2. NIK & NOK pelanggan baru :
-3. Foto KTP pelanggan baru :
-4. Surat pernyataan yang bisa minta ke email nindy@byu.id :
-5. Validasi tambahan :
+1. NIK & NOK pelanggan baru :
+2. Foto KTP pelanggan baru :
+3. Surat pernyataan yang bisa minta ke email nindy@byu.id :
+4. Validasi tambahan :
 
 Untuk validasi tambahannya bisa infoin salah satu dari data ini ya : 
 1. Tanggal dan jenis paket terakhir yang dibeli :
@@ -2344,9 +2561,8 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Perubahan data  dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: ${EMPTY}
-3. NIK KTP pelanggan baru : 
-4. No KK pelanggan baru   : 
+2.  NIK KTP pelanggan baru : 
+
 
 Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
 `,
@@ -2359,8 +2575,8 @@ ${DateTime}
 Perubahan data pelanggan
 
 1. Nomor by.U : xxxxxx
-2. Alamat Email login by.U : 
-3. nomor identitas & NOK pelanggan baru : 
+2. Nomor identitas pelanggan baru: 
+3. NOK pelanggan baru : 
 4. Foto identitas pelanggan baru : 
 5. Surat pernyataan : 
 6. Validasi tambahan : 
@@ -2375,17 +2591,19 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : perubahan data 
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
-1. Alamat Email login by.U :
-2. NIK & NOK pelanggan lama :
-3. NIK & NOK pelanggan baru :
-4. Foto KTP pelanggan lama :
-5. Foto KTP pelanggan baru :
-6. Surat pernyataan yang ada di lampiran:
+1. NIK & NOK pelanggan lama :
+2. NIK & NOK pelanggan baru :
+3. Foto KTP pelanggan lama :
+4. Foto KTP pelanggan baru :
+5. Surat pernyataan yang ada di lampiran:
 
 Aku tunggu datanya ya :)
 
@@ -2395,20 +2613,18 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Perubahan data karena pindah tangan dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: ${EMPTY}
-3. NIK KTP pelanggan baru : 
-4. No KK pelanggan baru   : 
+2. NIK KTP pelanggan baru : 
+
 
 Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
 ` :
 `Makasih udah nunggu. Kak untuk perubahan data nya di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku proses : 
-1. Alamat Email login by.U :
-2. NIK & NOK pelanggan lama :
-3. NIK & NOK pelanggan baru :
-4. Foto KTP pelanggan lama :
-5. Foto KTP pelanggan baru :
-6. Foto selfie dengan KTP pelanggan baru :
-7. Surat pernyataan yang bisa minta ke email nindy@byu.id :
+1. NIK & NOK pelanggan lama :
+2. NIK & NOK pelanggan baru :
+3. Foto KTP pelanggan lama :
+4. Foto KTP pelanggan baru :
+5. Foto selfie dengan KTP pelanggan baru :
+6. Surat pernyataan yang bisa minta ke email nindy@byu.id :
 Kirimnya ke email nindy@byu.id aja ya biar aman :)
 
 
@@ -2416,9 +2632,8 @@ DISCLAIMER
 
 Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu Permintaan Perubahan data karena pindah tangan dengan data :
 1. Nomor by.U : xxxxxx
-2. Email: ${EMPTY}
-3. NIK KTP pelanggan baru : 
-4. No KK pelanggan baru   : 
+2. NIK KTP pelanggan baru : 
+
 
 Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
 `,
@@ -2430,14 +2645,13 @@ ${DateTime}
 Perubahan data pelanggan pindah tangan 
 
 1. Nomor by.U : xxxxxx
-2. Alamat Email login by.U : 
-3. Nomor identitas pelanggan lama : 
-4. NOK pelanggan lama : 
-5. Nomor identitas pelanggan baru : 
-6. NOK pelanggan baru : 
-7. Foto identitas pelanggan lama : 
-8. Foto identitas pelanggan baru : 
-9.  Surper : 
+2. Nomor identitas pelanggan lama : 
+3. NOK pelanggan lama : 
+4. Nomor identitas pelanggan baru : 
+5. NOK pelanggan baru : 
+6. Foto identitas pelanggan lama : 
+7. Foto identitas pelanggan baru : 
+8.  Surper : 
 `   
 },
 
@@ -2449,8 +2663,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : puk
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak untuk permintaan kode PUK, boleh infoin data ini ya biar bisa aku bantu :
@@ -2511,8 +2728,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Tidak dapat langganan ZOOM Premium"
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat langganan Zoom nya, boleh infoin data ini ya biar bisa aku proses :
@@ -2560,8 +2780,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Tidak dapat langganan Netflix
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat langganan Netflix nya, boleh infoin data ini ya biar bisa aku proses :
@@ -2614,8 +2837,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Tidak dapat langganan Vidio
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat langganan Vidio nya, boleh infoin data ini ya biar bisa aku proses :
@@ -2662,8 +2888,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Tidak dapat kuota Birthday reward
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat kuota bonus birthday, boleh infoin data ini ya biar bisa aku proses :
@@ -2706,8 +2935,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : IRENEW Voucher fisik
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik, boleh infoin data ini ya biar bisa aku proses :
@@ -2759,6 +2991,9 @@ Bracket : (segment: string) => segment ==='Email' ?
 [byU Email]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Sponsorship
 Solusi : diteruskan ke email  event@byu.id
 
@@ -2782,6 +3017,9 @@ Aku tunggu datanya ya Kak :)
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Sponsorship
 Solusi : arahin hubungi email
 `,
@@ -2816,8 +3054,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : gagal pairing
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : ` Makasih udah nungu. Kak maaf sepertinya ada kendala nih untuk  SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U :
@@ -2844,6 +3085,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : greeting
 Solusi : greeting
 
@@ -2882,6 +3126,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case :  sim card deactive
 Solusi : info  sim card deactive
 `,
@@ -2898,6 +3145,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Pulsa terpotong karena SMS dari luar negeri
 Solusi : info nomor SMS nya
 `,
@@ -2914,6 +3164,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : SIM card tidak terdeteksi
 Solusi : solusi SIM card tidak terdeteksi
 `,
@@ -2935,8 +3188,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Kuota tiba-tiba hilang karena kesalahan by.U
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi :(segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala kuotanya, boleh infoin data ini ya biar bisa aku proses : 
@@ -2979,8 +3235,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : 
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala uCoin nya, boleh infoin data ini ya biar bisa aku proses : 
@@ -3023,8 +3282,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala masalah pemesanan sim card via e-Commerce yang dialami, boleh infoin data ini ya biar aku bantu cek dulu transaksinya :
 1. Email akun by.U yang didaftarin :
@@ -3060,8 +3322,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : info send gift/tf pulsa
-Solusi : info send gift/tf pulsa
+Solusi : diinfoin udah gabisa
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
@@ -3079,8 +3344,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Tidak Mendapatkan Langganan Prime Video
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk ga dapat langganan Prime Video nya , boleh infoin data ini ya biar bisa aku proses : 
@@ -3126,6 +3394,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : informasi status kartu
 Solusi : informasi status kartu
 `,
@@ -3145,6 +3416,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : info paket
 Solusi : info paket
 `,
@@ -3167,6 +3441,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : cara pasang esim
 Solusi : info pasang eSIM
 `,
@@ -3219,8 +3496,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case :  Gagal Registrasi 5g
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk kendala 5G nya, Pastiin HP Kakak udah support 5G dan Kakak juga bisa cek apakah lokasi Kakak udah tercover jaringan 5G melalui https://www.telkomsel.com/check-5G-coverage. Kakak bisa melakukan daftar mandiri melalui https://my.telkomsel.com/provisioning/5g. Pastiin juga saat akses link tersebut SIM Card terpasang di SIM 1, data selular dalam keadaan on, dan fitur lokasi aktif.
@@ -3268,6 +3548,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Cek Tiket
 Solusi : Cek hasil tiket
 `,
@@ -3287,6 +3570,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Info request nomor
 Solusi : Info request nomor
 `,
@@ -3309,8 +3595,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Permintaan Hapus Profil eSIM Karena Device Hilang
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf, untuk hapus eSIM di perangkat lamanya yang udah hilang, boleh infoin data ini ya biar bisa aku proses : 
@@ -3318,7 +3607,7 @@ Solusi : (segment: string) => segment ==='Email' ?
 2. Email registrasi by.U :
 3. Nomor Identitas KTP valid :
 4. Scan/Foto KTP asli :
-5. Foto selfie dengan KTP asli :
+5. Foto selfie tanpa KTP :
 6. Jenis dan type Device yang hilang :
 7. Email lain yang bisa dihubungi :
 
@@ -3356,6 +3645,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,
@@ -3392,7 +3684,14 @@ Mandatory : (segment:string, DateTime:string) =>
     Suggestion
     TIDAK PERLU CREATE TIKET KE TIM NETWORK. Adanya indikasi sim card atau handphone pelanggan bermasalah, anjurkan pelanggan untuk restart handphone. Jika masalah tetap ada, anjurkan pelanggan untuk mengganti sim card pada Grapari terdekat.
 16. Solusi Yang telah di berikan : restart HP dan arahin ganti SIM card
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
 #CheckbyCCA
+
+N-90001-Network Service Desk-Head Office-INT404
 
 
 ` 
@@ -3406,6 +3705,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,
@@ -3442,7 +3744,14 @@ Mandatory : (segment:string, DateTime:string) =>
     Suggestion
     TIDAK PERLU CREATE TIKET KE TIM NETWORK. Adanya indikasi sim card atau handphone pelanggan bermasalah, anjurkan pelanggan untuk restart handphone. Jika masalah tetap ada, anjurkan pelanggan untuk mengganti sim card pada Grapari terdekat.
 16. Solusi Yang telah di berikan : restart HP dan arahin ganti SIM card
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
 #CheckbyCCA
+
+N-90001-Network Service Desk-Head Office-INT404
 
 
 ` 
@@ -3454,8 +3763,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : sinyal/internet
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
 1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
@@ -3498,7 +3810,14 @@ Mandatory : (segment:string, DateTime:string) =>
     Suggestion
     SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi masalah pada jaringan yang lambat.
 16. Solusi Yang telah di berikan : tiket
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
 #CheckbyCCA
+
+N-90001-Network Service Desk-Head Office-INT404
 
 
 ` 
@@ -3511,10 +3830,21 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : sinyal/internet
 Solusi : sarankan tunggu sesuai CCA
 `,
-Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala ya :)`,
+Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari jaringan di lokasi Kakak. Boleh infoin data ini ya biar bisa aku proses :
+1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Apakah terjadi di dalam Gedung atau di luar gedung?
+3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+7. CP lain yang dapat dihubungi 
+8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
@@ -3551,7 +3881,14 @@ Mandatory : (segment:string, DateTime:string) =>
     TIDAK PERLU CREATE TIKET KE TIM NETWORK. Pelanggan mengalami masalah dan sudah ada tiket yang dicreate ke Network dengan
     Ticket No: IM-20260207-00000898
 16. Solusi Yang telah di berikan : disarankan menunggu
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
 #CheckbyCCA
+
+N-90001-Network Service Desk-Head Office-INT404
 `
 },
 
@@ -3562,8 +3899,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : sinyal/internet
-Solusi : Minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
 1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
@@ -3606,7 +3946,14 @@ Mandatory : (segment:string, DateTime:string) =>
     Suggestion
     SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi masalah kapasitas jaringan yang penuh.
 16. Solusi Yang telah di berikan : tiket
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
 #CheckbyCCA
+
+N-90001-Network Service Desk-Head Office-INT404
 `
 },
 
@@ -3617,8 +3964,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : sinyal/internet
-Solusi : Minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
 1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
@@ -3661,7 +4011,14 @@ Mandatory : (segment:string, DateTime:string) =>
     Suggestion
     SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi jaringan yang dirasakan pelanggan sedang tidak stabil sehingga pelanggan merasakan internet lamban.
 16. Solusi Yang telah di berikan : tiket
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
 #CheckbyCCA
+
+N-90001-Network Service Desk-Head Office-INT404
 `
 },
 
@@ -3672,8 +4029,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : sms konten
-Solusi : Minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Halo, Kak . Saat ini udah terhubung dengan Nindy. Kalo yang dimaksud permintaan berhenti layanan SMS konten atau Broadcast, Kakak bisa balasa SMS yang didapat dengan Cara ketik UNREG. Kalo ada kendala, boleh infoin data berikut agar dibantu lebih lanjut ya:
@@ -3716,8 +4076,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : sinyal/internet
-Solusi : Minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, kami menemukan indikasi bahwa sim card yang sedang digunakan tidak memiliki paket untuk mengakses atau menggunakan layanan internet. Mohon dicek kembali :) 
 
@@ -3770,7 +4133,14 @@ Mandatory : (segment:string, DateTime:string) =>
     Suggestion
     TIDAK PERLU CREATE TIKET KE TIM NETWORK. Adanya indikasi bahwa pelanggan tidak menggunakan layanan roaming, saran kepada agent untuk mengecek profile dan paketnya kembali.
 16. Solusi Yang telah di berikan : sesuai remarks
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
 #CheckbyCCA
+
+N-90001-Network Service Desk-Head Office-INT404
 `
 },
 
@@ -3781,8 +4151,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : sinyal/internet
-Solusi : Minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
 1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
@@ -3825,7 +4198,14 @@ Mandatory : (segment:string, DateTime:string) =>
     Suggestion
     SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi kondisi jangkauan sinyal 4G pada pelanggan yang kurang baik.
 16. Solusi Yang telah di berikan : Tiket
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
 #CheckbyCCA
+
+N-90001-Network Service Desk-Head Office-INT404
 `
 },
 
@@ -3836,6 +4216,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,
@@ -3872,7 +4255,14 @@ Mandatory : (segment:string, DateTime:string) =>
     Suggestion
     TIDAK PERLU CREATE TIKET KE TIM NETWORK. Adanya indikasi sim card atau handphone pelanggan bermasalah, anjurkan pelanggan untuk restart handphone. Jika masalah tetap ada, anjurkan pelanggan untuk mengganti sim card pada Grapari terdekat.
 16. Solusi Yang telah di berikan : restart HP dan arahin ganti SIM card
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
 #CheckbyCCA
+
+N-90001-Network Service Desk-Head Office-INT404
 
 ` 
 },
@@ -3884,8 +4274,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : sinyal/internet
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
 1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
@@ -3928,7 +4321,14 @@ Mandatory : (segment:string, DateTime:string) =>
     Suggestion
     SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi masalah pada jaringan yang lambat.
 16. Solusi Yang telah di berikan : tiket
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
 #CheckbyCCA
+
+N-90001-Network Service Desk-Head Office-INT404
 ` 
 },
 
@@ -3939,6 +4339,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Cara membagikan kode refferal
 Solusi : edukasi
 `,
@@ -3961,6 +4364,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Paket unlimited
 Solusi : edukasi ga tersedia
 `,
@@ -3977,10 +4383,21 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : sinyal/internet
 Solusi : sarankan tunggu sesuai CCA
 `,
-Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala ya :)`,
+Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari jaringan di lokasi Kakak. Boleh infoin data ini ya biar bisa aku proses :
+1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
+2. Apakah terjadi di dalam Gedung atau di luar gedung?
+3. Apakah berkendalanya di semua lokasi atau hanya lokasi tertentu
+4. Nomor lain yang berkendala sama di lokasi tersebut (jika mengetahui)
+5. Jaringan yang terdapat di handset (2G/3G/HSDPA/4G LTE/5G) dan jumlah bar sinyal yang diterimanya
+6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
+7. CP lain yang dapat dihubungi 
+8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
 [NO] [byU ${segment}] 
@@ -4021,7 +4438,14 @@ Mandatory : (segment:string, DateTime:string) =>
     TIDAK PERLU CREATE TIKET KE TIM NETWORK. Pelanggan mengalami masalah dan sudah ada tiket yang dicreate.
     Ticket No: EM-20260214-00000957
 16. Solusi Yang telah di berikan : disarankan menunggu
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
 #CheckbyCCA
+
+N-90001-Network Service Desk-Head Office-INT404
 `
 },
 
@@ -4032,6 +4456,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : sinyal/internet
 Solusi : sarankan tunggu sesuai CCA
 `,
@@ -4073,7 +4500,14 @@ Mandatory : (segment:string, DateTime:string) =>
     TIDAK PERLU CREATE TIKET KE TIM NETWORK. Pelanggan mengalami masalah dan sudah ada tiket yang dicreate ke Network dengan
     Ticket No: IM-20260216-00000058
 16. Solusi Yang telah di berikan : disarankan menunggu
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
 #CheckbyCCA
+
+N-90001-Network Service Desk-Head Office-INT404
 `
 },
 
@@ -4084,8 +4518,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : sinyal/internet
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dikarenakan BTS sedang mengalami isu yang berkaitan dengan kapasitas jaringan yang penuh di BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
 1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
@@ -4128,7 +4565,14 @@ Mandatory : (segment:string, DateTime:string) =>
     Suggestion
     SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi masalah kapasitas jaringan yang penuh.
 16. Solusi Yang telah di berikan : tiket
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
 #CheckbyCCA
+
+N-90001-Network Service Desk-Head Office-INT404
 
 ` 
 },
@@ -4140,8 +4584,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : sinyal/internet
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dikarenakan BTS sedang mengalami isu yang berkaitan dengan performa BTS tersebut. Boleh infoin data ini ya biar bisa aku proses :
 1. Lokasi detail kendala (nama jalan, RT/RW, kode pos, patokan lokasi dan titik koordinat) saat berkendala :
@@ -4184,7 +4631,14 @@ Mandatory : (segment:string, DateTime:string) =>
     Suggestion
     SILAHKAN CREATE TIKET KE TIM NETWORK. Adanya indikasi BTS mengalami gangguan sehingga pelanggan tidak dapat mengakses internet.
 16. Solusi Yang telah di berikan : tiket
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
 #CheckbyCCA
+
+N-90001-Network Service Desk-Head Office-INT404
 
 ` 
 },
@@ -4195,6 +4649,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : cara pembelian SIM card/eSIM
 Solusi : info cara pembelian SIM card/eSIM
 `,
@@ -4215,8 +4672,11 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : Tidak Mendapatkan Langganan Youtube Premium
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : `Hai, Kak. Maaf banget jadi ga nyaman karena ga dapet SMS link akun Youtube Premium-nya di nomor xxxxxx. Silakan coba aktivasi dulu melalui link berikut : https://tsel.id/ytact ya. Kalo masih kendala infoin data berikut biar dibantu lebih lanjut :
 1. Email akun by.U
@@ -4250,6 +4710,9 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : closing
 Solusi : closing
 `,
@@ -4263,13 +4726,16 @@ Mandatory :
 
 {
 id: 87,
-case : "Pengambilan SIM card di GraPARI",
+case : "Pengambilan SIM card di GraPARI/Indomaret",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
-Detail case : Pengambilan SIM card di GraPARI
-Solusi : minta data
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
+Detail case : Pengambilan SIM card di GraPARI/Indomaret
+Solusi : Permintaan data Mandatory
 `,
 Solusi:  (segment: string) => segment ==='Email' ?  `
 Hi, Kak Dalela. Saat ini udah terhubung dengan Nindy. Maaf mengenai kendala pengambilan SIM Card baru di GraPARI, boeh infoin data berikut agar dibantu cek dulu ya :
@@ -4283,7 +4749,7 @@ Hi, Kak Dalela. Saat ini udah terhubung dengan Nindy. Maaf mengenai kendala peng
 
 Aku tunggu datanya ya Kak :)
 `: `
-Makasih udah nunggu. Kak maaf, untuk pengambilan SIM card nya kalau berkendala, Kakak bisa ke GraPARI lain ya dengan tunjukin halaman pengambilan SIM card nya yang saat ini :)
+Makasih udah nunggu. Kak maaf, untuk pengambilan SIM card nya kalau berkendala, Kakak bisa ke GraPARI lain yang terdekat ya dengan tunjukin halaman pengambilan SIM card nya yang saat ini :)
 
 Oke Kak untuk pengajuan pengirimannya di nomor xxxxxx boleh infoin data ini ya :
 1. Email akun by.U:
@@ -4301,13 +4767,13 @@ Mandatory : (segment: string, DateTime:string) =>
 [byU ${segment}] 
 Pelanggan by.U
 ${DateTime} 
-Pick Up GRAPARI tutup
+Pick Up GRAPARI/indomaret tutup
 
-1. Email by.u :
-2. Nomor by.U :
+1. Email by.u : ${EMPTY}
+2. Nomor by.U : xxxxxx
 3. Bukti bayar: 
 4. Capture pengambilan kartu: 
-5. Nama dan alamat booth/grapari/outlet: 
+5. Nama dan alamat grapari/indomaret: 
 6. Nama dan nomor penerima: 
 7. Alamat lengkap (nama jalan, no rumah, RT/RW, Kelurahan. Kecamatan, kabupaten/kota, patokan lokasi dan kode POS) :
 8. Order detail ID (CXO) (Pengecekan OperatorX) :
@@ -4324,12 +4790,15 @@ Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${getCurrentDate()}
+Lokasi Pelanggan  : 
 Detail case : gabisa sinyal roaming
-Solusi : minta data
+Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `
-Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala gabisa internet di luar negeri,boleh infoin data ini ya biar bisa aku cek :
+Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala sinyalnya di luar negeri,boleh infoin data ini ya biar bisa aku cek :
 Hai Kak, maaf udah bikin ga nyaman ya. Boleh infokan beberapa data di bawah ini supaya bisa dibantu pengecekan :
 1. Nomor by.U : 
 2. Email akun by.U : 
@@ -4338,7 +4807,7 @@ Hai Kak, maaf udah bikin ga nyaman ya. Boleh infokan beberapa data di bawah ini 
 5. Jaringan/operator negara setempat yang digunakan :
 6. Capture setting APN di HP :
 7. Capture sinyal yang didapat :
-8. Capture speedtest :
+
 
 Aku tunggu datanya ya :)
 
@@ -4349,14 +4818,13 @@ Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif  dan punya kuota roaming, se
 2. Ubah pengaturan jaringan dari otomatis menjadi manual, lalu cari Operator yang bekerjasama di negara tersebut,
 3. Pastikan kolom APN diisi dengan "byu" (tanpa tanda kutip), username dan password kosongkan.
 4. Pastikan hanya ada 1 SIM Card yang aktif, jika masih tidak bisa coba pindahkan SIM card ke HP lain untuk perbandingan.
-5. Pastikan tombol data seluler dan data roaming aktif/ON
 
 Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX yaitu xxx  . Jika cara di atas sudah dicoba dan sinyalnya masih berkendala, tolong hubungi kita lagi. Terima kasih.
 
-
-https://www.telkomsel.com/roaming/setdevice
+======Gapunya paket roaming=====
+Kak aku cek nomor xxxxxx aktif tapi gapunya kuota roaming. Untuk ketentuan nomor by.U saat ini biar dapet sinyal di luar negeri, harus memiliki paket internet roaming ya. Silakan aktivasi paketnya di aplikasi by.U ya. Makasih :)
 ` :
-`Makasih udah nunggu. Kak maaf untuk kendala gabisa internet di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
+`Makasih udah nunggu. Kak maaf untuk kendala sinyalnya di luar negeri di nomor xxxxxx ,boleh infoin data ini ya biar bisa aku cek :
 1. Email akun by.U :
 2. Lokasi negara :
 3. Tanggal dan waktu kejadian sejak kapan :
@@ -4376,7 +4844,8 @@ Makasih udah nunggu. Kak aku cek nomor xxxxxx aktif  dan punya kuota roaming, se
 Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX yaitu xxx  . Jika cara di atas sudah dicoba dan sinyalnya masih berkendala, tolong hubungi kita lagi. Terima kasih.
 
 
-https://www.telkomsel.com/roaming/setdevice
+======Gapunya paket roaming=====
+Kak aku cek nomor xxxxxx aktif tapi gapunya kuota roaming. Untuk ketentuan nomor by.U saat ini biar dapet sinyal di luar negeri, harus memiliki paket internet roaming ya. Silakan aktivasi paketnya di aplikasi by.U ya. Makasih :)
 `,
 Mandatory : (segment: string ) =>
 `#Pelangganbyu
@@ -4392,9 +4861,18 @@ Mandatory : (segment: string ) =>
 8. Jenis device/hp yang dipakai? 
 9. Capture setting APN di hp : 
 10. Capture bar sinyal yang didapat : 
-11. Email aktif yang bisa dihubungi ? 
+11. Email aktif yang bisa dihubungi: 
+12. Detail kendala: Ga ada sinyal roaming
+13. Solusi: sesuai pansol
+GPRSLOCK UNBLOCK
+EPSLOCK UNBLOCK
+status ACTIVE
+GPRSLOCK | FALSE
+EPSLOCK | FALSE
+Baring Roam | NOBAR
 `   
 },
+
 
 
 ]
