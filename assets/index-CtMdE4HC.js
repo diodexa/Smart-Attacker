@@ -1057,7 +1057,7 @@ Tanggal lapor : ${u()}
 2. Waktu Transaksi : ${l()}
 3. Metode Bayar : Virtual Accont
 4. Capture bukti pembayaran : 
-5. Capture riwayat transaksi apps by.U : -
+5. Capture riwayat detail transaksi di aplikasi by.U : : -
 6. Nama paket/Nominal pulsa : 
 7. Order detail ID (CXO)  : 
 8. Transaction ID (CXT)  :
@@ -1130,7 +1130,7 @@ Tanggal lapor : ${u()}
 2. Waktu Transaksi : ${l()}
 3. Metode Bayar : Virtual Accont
 4. Capture bukti pembayaran : 
-5. Capture riwayat transaksi apps by.U : -
+5. Capture riwayat detail transaksi di aplikasi by.U : : -
 6. Nama paket/Nominal pulsa : 
 7. Order detail ID (CXO)  : 
 8. Transaction ID (CXT)  :
@@ -1271,7 +1271,7 @@ Tanggal lapor : ${u()}
 2. Waktu Transaksi : ${l()}
 3. Metode Bayar :
 4. Capture bukti pembayaran : 
-5. Capture riwayat transaksi apps by.U : 
+5. Capture riwayat detail transaksi di aplikasi by.U : : 
 6. Nama paket/Nominal pulsa : 
 7. Order detail ID (CXO)  : 
 8. Transaction ID (CXT)  :
