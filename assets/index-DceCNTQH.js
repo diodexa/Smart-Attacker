@@ -1052,17 +1052,16 @@ Perdana PraBayar | K12-Kendala pengiriman kartu SIM
 ID Omnix : #
 Nama Pelanggan : Pelanggan 
 Tanggal lapor : ${u()} 
-
-1. Nomor by.U : xxxxxx
-2. Waktu Transaksi : ${l()}
-3. Metode Bayar : Virtual Accont
-4. Capture bukti pembayaran : 
-5. Capture riwayat detail transaksi di aplikasi by.U : -
-6. Nama paket/Nominal pulsa : 
-7. Order detail ID (CXO)  : 
-8. Transaction ID (CXT)  :
-9. Detail Permasalahan : kuota/pulsa belum masuk (paid)
-10. Solusi : Minta data Mandatory
+Nomor by.U : xxxxxx
+Waktu Transaksi : ${l()}
+Metode Bayar : Virtual Accont
+Capture bukti pembayaran : 
+Capture riwayat detail transaksi di aplikasi by.U : -
+Nama paket/Nominal pulsa : 
+Order detail ID (CXO)  : 
+Transaction ID (CXT)  :
+Detail Permasalahan : kuota/pulsa belum masuk (paid)
+Solusi : Minta data Mandatory
 `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
@@ -1125,17 +1124,16 @@ Penyalahgunaan NIK
 ID Omnix : #
 Nama Pelanggan : Pelanggan 
 Tanggal lapor : ${u()} 
-
-1. Nomor by.U : xxxxxx
-2. Waktu Transaksi : ${l()}
-3. Metode Bayar : Virtual Accont
-4. Capture bukti pembayaran : 
-5. Capture riwayat detail transaksi di aplikasi by.U : -
-6. Nama paket/Nominal pulsa : 
-7. Order detail ID (CXO)  : 
-8. Transaction ID (CXT)  :
-9. Detail Permasalahan : kuota/pulsa belum masuk (unpaid)
-10. Solusi : Minta data Mandatory
+Nomor by.U : xxxxxx
+Waktu Transaksi : ${l()}
+Metode Bayar : Virtual Accont
+Capture bukti pembayaran : 
+Capture riwayat detail transaksi di aplikasi by.U : -
+Nama paket/Nominal pulsa : 
+Order detail ID (CXO)  : 
+Transaction ID (CXT)  :
+Detail Permasalahan : kuota/pulsa belum masuk (unpaid)
+Solusi : Minta data Mandatory
 `,Solusi:`Makasih udah nunggu. Kak maaf, aku cek transaksi di nomor xxxxxx, ada kendala dari pihak pembayarannya jadinya transaksinya gabisa dilanjutin nih. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U
 2. Nomor rekening bank BCA
@@ -1266,17 +1264,16 @@ SMS - Gagal Aktivasi M-Banking
 ID Omnix : #
 Nama Pelanggan : Pelanggan
 Tanggal lapor : ${u()} 
-
-1. Nomor by.U : xxxxxx
-2. Waktu Transaksi : ${l()}
-3. Metode Bayar :
-4. Capture bukti pembayaran : 
-5. Capture riwayat detail transaksi di aplikasi by.U : 
-6. Nama paket/Nominal pulsa : 
-7. Order detail ID (CXO)  : 
-8. Transaction ID (CXT)  :
-9. Detail Permasalahan : kuota/pulsa belum masuk
-10. Solusi : Minta data mandatory
+Nomor by.U : xxxxxx
+Waktu Transaksi : ${l()}
+Metode Bayar :
+Capture bukti pembayaran : 
+Capture riwayat detail transaksi di aplikasi by.U : 
+Nama paket/Nominal pulsa : 
+Order detail ID (CXO)  : 
+Transaction ID (CXT)  :
+Detail Permasalahan : kuota/pulsa belum masuk
+Solusi : Minta data mandatory
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala transaksinya boleh infoin aku data ini ya biar bisa aku cek : 
 1. Nomor by.U :
 2. Email akun by.U :
