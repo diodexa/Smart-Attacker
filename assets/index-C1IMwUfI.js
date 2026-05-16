@@ -1055,12 +1055,12 @@ Tanggal lapor : ${u()}
 Nomor by.U : xxxxxx
 Waktu Transaksi : ${l()}
 Metode Bayar : Virtual Accont
-Capture bukti pembayaran : 
+Capture halaman bukti pembayaran : 
 Capture riwayat detail transaksi di aplikasi by.U : -
 Nama paket/Nominal pulsa : 
 Order detail ID (CXO)  : 
 Transaction ID (CXT)  :
-Detail Permasalahan : kuota/pulsa belum masuk (paid)
+Detail Permasalahan : Pelanggan beli kuota/pulsa belum masuk. status finnet paid
 Solusi : Minta data Mandatory
 `,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
@@ -1127,12 +1127,12 @@ Tanggal lapor : ${u()}
 Nomor by.U : xxxxxx
 Waktu Transaksi : ${l()}
 Metode Bayar : Virtual Accont
-Capture bukti pembayaran : 
+Capture halaman bukti pembayaran : 
 Capture riwayat detail transaksi di aplikasi by.U : -
 Nama paket/Nominal pulsa : 
 Order detail ID (CXO)  : 
 Transaction ID (CXT)  :
-Detail Permasalahan : kuota/pulsa belum masuk (unpaid)
+Detail Permasalahan : Pelanggan beli kuota/pulsa belum masuk. cek finnet unpaid
 Solusi : Minta data Mandatory
 `,Solusi:`Makasih udah nunggu. Kak maaf, aku cek transaksi di nomor xxxxxx, ada kendala dari pihak pembayarannya jadinya transaksinya gabisa dilanjutin nih. Boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U
@@ -1267,7 +1267,7 @@ Tanggal lapor : ${u()}
 Nomor by.U : xxxxxx
 Waktu Transaksi : ${l()}
 Metode Bayar :
-Capture bukti pembayaran : 
+Capture halaman bukti pembayaran : 
 Capture riwayat detail transaksi di aplikasi by.U : 
 Nama paket/Nominal pulsa : 
 Order detail ID (CXO)  : 
