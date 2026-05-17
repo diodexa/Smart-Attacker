@@ -1062,7 +1062,9 @@ Order detail ID (CXO)  :
 Transaction ID (CXT)  :
 Detail Permasalahan : Pelanggan beli kuota/pulsa belum masuk. status finnet paid
 Solusi : Minta data Mandatory
-`,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)`,Mandatory:(e,t)=>`#Pelangganbyu
+`,Solusi:`Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku data ini ya biar bisa aku proses :
+1. capture bukti pembayarannya :
+2. Capture riwayat detail transaksi di aplikasi by.U : `,Mandatory:(e,t)=>`#Pelangganbyu
 [byU ${e}] 
 Pelanggan by.U
 ${t} 
@@ -1135,29 +1137,11 @@ Transaction ID (CXT)  :
 Detail Permasalahan : Pelanggan beli kuota/pulsa belum masuk. cek finnet unpaid
 Solusi : Minta data Mandatory
 `,Solusi:`Makasih udah nunggu. Kak maaf, aku cek transaksi di nomor xxxxxx, ada kendala dari pihak pembayarannya jadinya transaksinya gabisa dilanjutin nih. Boleh infoin data ini ya biar bisa aku proses : 
-1. Email akun by.U
-2. Nomor rekening bank BCA
-3. Atas nama pemilik rekening
+1. Nomor rekening bank BCA
+2. Atas nama pemilik rekening
 
-4. Kantor cabang pembuka
-`,Mandatory:(e,t)=>`#Pelangganbyu
-[byU ${e}] 
-Pelanggan by.U
-${t} 
-Masalah Pembelian Kuota/Pulsa I RENEW Via Virtual Account
-
-1. Nomor by.U : xxxxxx
-2. Email by.U : 
-3. Bukti pembayaran yang tercantum waktu transaksinya : 
-4. Rincian Keluhan : kuota belum masuk, pembayaran berhasil
-5. Order detail ID (CXO) (Pengecekan OperatorX) :
-6. Transaction ID (CXT) (Pengecekan OperatorX) :
-7. Norek :
-8. Atas nama :
-9. Cabang pembuka rekening refund :
-
-No VA : 
-Unpaid
+3. Kantor cabang pembuka
+`,Mandatory:()=>`
         
 `},{id:18,case:`Permintaan Refund karena kesalahan sistem `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
@@ -1276,9 +1260,8 @@ Detail Permasalahan : kuota/pulsa belum masuk
 Solusi : Minta data mandatory
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala transaksinya boleh infoin aku data ini ya biar bisa aku cek : 
 1. Nomor by.U :
-2. Email akun by.U :
-3. Capture bukti pembayaran :
-4. Capture riwayat detail transaksi di aplikasi by.U : 
+2. Capture bukti pembayaran :
+3. Capture riwayat detail transaksi di aplikasi by.U : 
 
 Aku tunggu datanya ya :)
 
@@ -1296,9 +1279,8 @@ Kak untuk riwayat transaksi bisa pilih dulu ke menu profil terus pilih menu riwa
 
 Kak maaf, karena pada capture Kakak status pembayarannya sedang di proses, Kakak bisa tunggu dulu maksimal 1x24 jam ya untuk proses transaksinya. Kakak jangan dulu coba secara berkala ya karena dikhawatirkan terpotong lebih dari 1 kali jika Kakak mencoba secara terus-menerus
 `:`Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx boleh infoin aku data ini ya biar bisa aku cek : 
-1. Email akun by.U 
-2. Capture bukti pembayaran
-3. Capture riwayat detail transaksi di aplikasi by.U 
+1. Capture bukti pembayaran
+2. Capture riwayat detail transaksi di aplikasi by.U 
 
 Oke Kak, untuk bukti bayar yang di Shopee dengan tertera Merchant Reff IDnya silahkan coba cara ini :
 1. Buka Aplikasi Shopee: Buka aplikasi Shopee di ponsel Kakak.
@@ -1313,24 +1295,7 @@ Kak untuk riwayat transaksi bisa pilih dulu ke menu profil terus pilih menu riwa
 ** Jika dari bukti bayar pelanggan statusnya "sedang diproses" dan pengecekan OperatorX data transaksi tidak ditemukan atau "Created", edukasi ke pelanggan tunggu 1 x 24 jam karena dari bukti bayar statusnya sedang di proses dan tidak mencoba berkala, karena dikhawatirkan terpotong lebih dari 1 kali jika pelanggan mencoba secara terus-menerus.
 
 Kak maaf, karena pada capture Kakak status pembayarannya sedang di proses, Kakak bisa tunggu dulu maksimal 1x24 jam ya untuk proses transaksinya. Kakak jangan dulu coba secara berkala ya karena dikhawatirkan terpotong lebih dari 1 kali jika Kakak mencoba secara terus-menerus
-`,Mandatory:(e,t)=>`#Pelangganbyu
-[byU ${e}] 
-ID Omnix :
-Nama Pelanggan :
-Tanggal lapor : ${t} 
-
-1. Nomor by.U : xxxxxx
-2. Waktu Transaksi : ${l()}
-3. Metode Bayar :
-4. Capture bukti pembayaran : 
-5. Capture riwayat transaksi apps by.U : 
-6. Nama paket/Nominal pulsa : 
-7. Order detail ID (CXO)  : 
-8. Transaction ID (CXT)  :
-9. Detail Permasalahan : kuota/pulsa belum masuk
-10. Solusi : Tiket
-
-Activation Status Pending
+`,Mandatory:()=>`
 
 `},{id:22,case:`Tidak Bisa Aktivasi SIM Card Legacy `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
@@ -2377,23 +2342,28 @@ Tidak Mendapatkan Kuota Birthday Reward
 4. Capture halaman notifikasi di apps by.U : 
 5. Capture halaman paket aktif : 
 6. Hasil pengecekan Add Ons di CRM (berupa text dan tidak boleh printscreen) : 
-`},{id:47,case:`IRENEW Voucher fisik`,Bracket:t=>`#Pelangganbyu
-[byU ${t}]
+`},{id:47,case:`IRENEW Voucher fisik`,Bracket:e=>`#Pelangganbyu
+[byU ${e}] 
+ID Omnix : #
+Nama Pelanggan : Pelanggan 
+Tanggal lapor : ${u()} 
 Nomor by.U : xxxxxx
-Email by.U : ${e}
-Waktu Transaksi   :  
-Waktu Kejadian    : ${u()}
-Lokasi Pelanggan  : 
-Detail case : IRENEW Voucher fisik
-Solusi : Permintaan data Mandatory
+Waktu Transaksi : ${l()}
+Metode Bayar : Voucher Fisik
+Capture halaman bukti pembayaran : 
+Capture riwayat detail transaksi di aplikasi by.U : -
+Nama paket/Nominal pulsa : 
+Order detail ID (CXO)  : 
+Transaction ID (CXT)  :
+Detail Permasalahan : Pelanggan beli kuota via voucher tapi gabisa/belum masuk
+Solusi : Minta data Mandatory
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik, boleh infoin data ini ya biar bisa aku proses :
 1. Nomor by.U : 
-2. Email akun by.U :
-3. Nama Paket Kuota :
-4. Kode hasil Gesek Voucher Fisik :
-5. Serial Number Voucher Fisik :
-6. Capture keterangan gagal redeem voucher :
-7. Foto Voucher fisik :
+2. Nama Paket Kuota :
+3. Kode hasil Gesek Voucher Fisik :
+4. Serial Number Voucher Fisik :
+5. Capture keterangan gagal redeem voucher :
+6. Foto Voucher fisik :
 
 Aku tunggu datanya ya :)
 `:`Makasih udah nunggu. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik di nomor xxxxxx boleh infoin data ini ya biar bisa aku proses :
@@ -2826,7 +2796,8 @@ Waktu Transaksi   :
 Waktu Kejadian    : ${u()}
 Lokasi Pelanggan  : 
 Detail case : Cek Tiket
-Solusi : Cek hasil tiket
+Solusi : infoin  hasil tiket
+#CekHasilTiket
 `,Solusi:e=>e===`Email`?`Hai Kak saat ini terhubung dengan Nindy. Kak aku cek untuk ID laporan xx, masih dalam proses penanganan tim kami. Ditunggu aja dulu prosesnya ya. Semoga cepet beres :)`:`Kak aku cek untuk ID laporan xx, masih dalam proses penanganan tim kami. Ditunggu aja dulu prosesnya ya. Semoga cepet beres :)
 `,Mandatory:``},{id:64,case:`Request bikin/buat nomor 4 digit/angka`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
@@ -3957,6 +3928,6 @@ Baring Roam | NOBAR
 `),l=c[c.length-1].match(/^(\d+)\.\s*/);if(!l)return;e.preventDefault();let u=Number(l[1])+1,d=o+`\n${u}. `+s;t.current=o.length+`\n${u}. `.length,i(a(d))},className:`border w-full h-screen p-2`,placeholder:`Isi note kamu.....`})}var S=[`Hai Kak aku Odi temennya Nindy.`,`Kak, aku cek dulu ya. Ditunggu :)`,`Aku cek dulu interaksinya ya nanti aku balik lagi :)`,`Makasih juga udah interaksi ya Kak :) Ohiya, aku akhiri obrolan kita ya, Kaka jangan dulu tutup chatnya ya karena setelah ini juga ada pop-up survey yang lain. Dibantu isi ya Kak kalau Kaka merasa puas boleh banget isi dengan angka (10) dan seterusnya ya. Makasih banget udah selalu setia sama by.U Kak :) `,`Makasih datanya. Aku cek dulu ya. Ditunggu :)`,`Makasih udah nunggu ya Kak aku ajuin pelaporan dulu dengan ID xxxxx ya. Nanti hasilnya bakal dikabarin sama tim kami lewat SMS/email ya :) Ditunggu maksimal 1x24 jam ya :) Ohiya, aku akhiri obrolan kita ya, Kaka jangan dulu tutup chatnya ya karena setelah ini juga ada pop-up survey yang lain. Dibantu isi ya Kak kalau Kaka merasa puas boleh banget isi dengan angka (10) dan seterusnya ya. Jangan sungkan buat chat aku lagi ya.  Hihi🤗💙💛💚`,`agungrohm
 Agung_byu4$
 d_deska_x@telkomsel.co.id 
-Os=+_-/u
-Ayu BeHappy!022XO
-`],C=()=>((0,c.useEffect)(()=>{let e=e=>{let t={F1:0,F2:2,F3:4,F4:1,F6:3,F7:5};if(e.ctrlKey&&e.key===`F1`){e.preventDefault();let t=localStorage.getItem(`my-templates`);if(!t)return;try{let e=JSON.parse(t);S.forEach((t,n)=>{e[n]=t}),localStorage.setItem(`my-templates`,JSON.stringify(e)),window.dispatchEvent(new Event(`templates-updated`))}catch{console.error(`Invalid JSON in localStorage`)}return}if(e.key in t){e.preventDefault();let n=localStorage.getItem(`my-templates`);if(!n)return;try{let r=JSON.parse(n)[t[e.key]];r&&navigator.clipboard.writeText(r)}catch{console.error(`Invalid JSON in localStorage`)}}e.ctrlKey&&e.key==="`"&&(e.preventDefault(),[`https://sites.google.com/view/modulhappiness`,`https://byu.omnix.co.id/login`,`https://sso.identity.telkomsel.co.id/dsc/`,`https://crm.byu.id/crm/`,`https://docs.google.com/spreadsheets/d/1gvMeepRq_WNZ0iwilZn_RFz3xORem03sjh0yF0ekD14/edit?gid=645015539#gid=645015539`,`https://pidaw-keycloak.cx.byu.id/realms/Circles-OperatorX/protocol/openid-connect/auth?client_id=jc-client&redirect_uri=https%3A%2F%2Fpidaw-operatorux.cx.byu.id%2Fsignin%2F&response_type=code`,`https://docs.google.com/spreadsheets/d/1uZiJ3pb1dVJr3Wvw9-D0mOpevhUOhQ1hX2thMy02WEs/edit?usp=sharing`,`https://web.telegram.org/k/`].forEach(e=>{window.open(e,`_blank`,`noopener,noreferrer`)}))};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[]),null),w=[`Live`,`Email`,`igdm`,`Xdm`,`dmFb`,`Playstore`,`VA`],T=({Segment:e,onChange:t})=>(0,f.jsx)(`select`,{className:`mr-30 border-2 border-black text-center border-select`,value:e,onChange:e=>t(e.target.value),children:w.map(n=>(0,f.jsx)(`option`,{onClick:()=>t(n),value:n,className:`px-1 py-1 border ${e===n?`text black`:``}`,children:n},n))});function E(){let[e,t]=(0,c.useState)(`notepad`),[n,r]=(0,c.useState)(()=>localStorage.getItem(`segment`)||`Live`);return(0,c.useEffect)(()=>{localStorage.setItem(`segment`,n)},[n]),(0,f.jsxs)(`div`,{className:`flex flex-col `,children:[(0,f.jsx)(C,{}),(0,f.jsxs)(`div`,{className:`flex gap-2 p-2 border-b`,children:[(0,f.jsx)(`button`,{className:`border px-4 ${e===`notepad`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`notepad`),children:`Notepad`}),(0,f.jsx)(`button`,{className:`border px-4 ${e===`tiket`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`tiket`),children:`Mandatory`}),(0,f.jsx)(`button`,{className:`border px-4 ${e===`Template`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`Template`),children:`Template`}),(0,f.jsx)(`div`,{className:`ml-auto flex items-center gap-2`,children:(0,f.jsx)(T,{Segment:n,onChange:r})}),(0,f.jsxs)(`div`,{className:`absolute top-1 right-0 flex gap-1`,children:[(0,f.jsx)(b,{}),(0,f.jsxs)(`h1`,{className:`text-3xl tracking-[.2em]`,children:[`di`,(0,f.jsx)(`span`,{className:`text-red-600`,children:`N`})]})]})]}),(0,f.jsxs)(`div`,{className:`flex `,children:[e===`notepad`&&(0,f.jsx)(x,{}),e===`tiket`&&(0,f.jsx)(v,{segment:n}),e===`Template`&&(0,f.jsx)(y,{})]})]})}(0,s.createRoot)(document.getElementById(`root`)).render((0,f.jsx)(c.StrictMode,{children:(0,f.jsx)(o,{children:(0,f.jsx)(E,{})})}));
+^TW+6/Cx
+22248747
+`],C=()=>((0,c.useEffect)(()=>{let e=e=>{let t={F1:0,F2:2,F3:4,F4:1,F6:3,F7:5};if(e.ctrlKey&&e.key===`F1`){e.preventDefault();let t=localStorage.getItem(`my-templates`);if(!t)return;try{let e=JSON.parse(t);S.forEach((t,n)=>{e[n]=t}),localStorage.setItem(`my-templates`,JSON.stringify(e)),window.dispatchEvent(new Event(`templates-updated`))}catch{console.error(`Invalid JSON in localStorage`)}return}if(e.key in t){e.preventDefault();let n=localStorage.getItem(`my-templates`);if(!n)return;try{let r=JSON.parse(n)[t[e.key]];r&&navigator.clipboard.writeText(r)}catch{console.error(`Invalid JSON in localStorage`)}}e.ctrlKey&&e.key==="`"&&(e.preventDefault(),[`https://sites.google.com/view/modulhappiness`,`https://byu.omnix.co.id/login`,`https://sso.identity.telkomsel.co.id/dsc/`,`https://crm.byu.id/crm/`,`https://docs.google.com/spreadsheets/d/1gvMeepRq_WNZ0iwilZn_RFz3xORem03sjh0yF0ekD14/edit?gid=645015539#gid=645015539`,`https://pidaw-keycloak.cx.byu.id/realms/Circles-OperatorX/protocol/openid-connect/auth?client_id=jc-client&redirect_uri=https%3A%2F%2Fpidaw-operatorux.cx.byu.id%2Fsignin%2F&response_type=code`,`https://docs.google.com/spreadsheets/d/1uZiJ3pb1dVJr3Wvw9-D0mOpevhUOhQ1hX2thMy02WEs/edit?usp=sharing`,`https://web.telegram.org/k/`].forEach(e=>{window.open(e,`_blank`,`noopener,noreferrer`)}))};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[]),null),w=[`Live`,`Email`,`igdm`,`Xdm`,`dmFb`,`Playstore`,`VA`],T=({Segment:e,onChange:t})=>(0,f.jsx)(`select`,{className:`mr-30 border-2 border-black text-center border-select`,value:e,onChange:e=>t(e.target.value),children:w.map(n=>(0,f.jsx)(`option`,{onClick:()=>t(n),value:n,className:`px-1 py-1 border ${e===n?`text black`:``}`,children:n},n))});const E=()=>{let[e,t]=(0,c.useState)(!1);return(0,f.jsxs)(`div`,{children:[(0,f.jsx)(`button`,{onClick:()=>{navigator.clipboard.writeText(`6285159940470`),t(!0),setTimeout(()=>t(!1),500)},className:`flex w-full items-center justify-center px-1 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-1 border-solid bg-transparent `,children:`📱`}),e&&(0,f.jsxs)(`p`,{className:`absolute bg-gray-800 text-white ${e?`visible!`:`invisible`}`,children:[` `,e?`Copied`:``,` `]})]})};function D(){let[e,t]=(0,c.useState)(`notepad`),[n,r]=(0,c.useState)(()=>localStorage.getItem(`segment`)||`Live`);return(0,c.useEffect)(()=>{localStorage.setItem(`segment`,n)},[n]),(0,f.jsxs)(`div`,{className:`flex flex-col `,children:[(0,f.jsx)(C,{}),(0,f.jsxs)(`div`,{className:`flex gap-2 p-2 border-b`,children:[(0,f.jsx)(`button`,{className:`border px-2 ${e===`notepad`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`notepad`),children:`Notepad`}),(0,f.jsx)(`button`,{className:`border px-2 ${e===`tiket`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`tiket`),children:`Mandatory`}),(0,f.jsx)(`button`,{className:`border px-2 ${e===`Template`&&`bg-yellow-200 text-black`}`,onClick:()=>t(`Template`),children:`Template`}),(0,f.jsx)(E,{}),(0,f.jsx)(`div`,{className:`ml-auto flex items-center gap-2`,children:(0,f.jsx)(T,{Segment:n,onChange:r})}),(0,f.jsxs)(`div`,{className:`absolute top-1 right-0 flex gap-1`,children:[(0,f.jsx)(b,{}),(0,f.jsxs)(`h1`,{className:`text-3xl tracking-[.2em]`,children:[`di`,(0,f.jsx)(`span`,{className:`text-red-600`,children:`N`})]})]})]}),(0,f.jsxs)(`div`,{className:`flex `,children:[e===`notepad`&&(0,f.jsx)(x,{}),e===`tiket`&&(0,f.jsx)(v,{segment:n}),e===`Template`&&(0,f.jsx)(y,{})]})]})}(0,s.createRoot)(document.getElementById(`root`)).render((0,f.jsx)(c.StrictMode,{children:(0,f.jsx)(o,{children:(0,f.jsx)(D,{})})}));
