@@ -7,7 +7,7 @@ Waktu Kejadian    : ${u()}
 Lokasi Pelanggan  : 
 Detail case :  Internet 
 Solusi :  Permintaan data Mandatory
-`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala internetnya boleh infoin data ini ya biar biar bisa aku cek : 
+`,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala internetnya boleh infoin data ini ya biar bisa aku cek : 
 1. Nomor by.U : 
 2. Email akun by.U : 
 3. Lokasi detail kendala (kelurahan, kecamatan, kabupaten/kota) saat berkendala :
@@ -688,11 +688,10 @@ Kak, buat nomor yang hangus bakal otomatis terhapus kok Kak dari NIK yg terdafta
 4. Scan/Foto KTP asli/KTP Digital :
 5. Email yang bisa dihubungi :
 
-`,Mandatory:(e,t)=>`#Pelangganbyu
-[byU ${e}] 
-Pelanggan by.U
-${t} 
-Permintaan Deaktivasi SIM Card dan Hapus NIK
+`,Mandatory:e=>`#Pelangganbyu
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${e}
 
 1. Nomor by.U : xxxxxx
 2. Nomor Identitas KTP : 
@@ -712,11 +711,10 @@ Waktu Kejadian    : ${u()}
 Lokasi Pelanggan  : 
 Detail case : unreg
 Solusi : Permintaan data Mandatory
-`,Solusi:``,Mandatory:(t,n)=>`#Pelangganbyu
-[byU ${t}] 
-Pelanggan by.U
-${n} 
-Permintaan Deaktivasi SIM Card dan Hapus NIK
+`,Solusi:``,Mandatory:t=>`#Pelangganbyu
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${t}
 
 1. Nomor by.U : xxxxxx
 2. Nomor Identitas KTP (sesuai yang tercantum di sistem) : ${e}
@@ -880,7 +878,7 @@ Waktu Kejadian    : ${u()}
 Lokasi Pelanggan  : 
 Detail case : Ganti sim card
 Solusi : Permintaan data Mandatory
-`,Solusi:t=>t===`Email`?`Hai Kak. Saat ini terhubung dengan Nindy. Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) Jadi gabisa dilakkan ganti SIM card ya :)
+`,Solusi:t=>t===`Email`?`Hai Kak. Saat ini terhubung dengan Nindy. Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) Jadi gabisa dilakukan ganti SIM card ya :)
 
 Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ganti SIM card nya boleh infoin data ini dulu ya biar aku cocokin : 
 1. Nomor by.U
@@ -2342,21 +2340,15 @@ Tidak Mendapatkan Kuota Birthday Reward
 4. Capture halaman notifikasi di apps by.U : 
 5. Capture halaman paket aktif : 
 6. Hasil pengecekan Add Ons di CRM (berupa text dan tidak boleh printscreen) : 
-`},{id:47,case:`IRENEW Voucher fisik`,Bracket:e=>`#Pelangganbyu
-[byU ${e}] 
-ID Omnix : #
-Nama Pelanggan : Pelanggan 
-Tanggal lapor : ${u()} 
+`},{id:47,case:`IRENEW Voucher fisik`,Bracket:t=>`#Pelangganbyu
+[byU ${t}]
 Nomor by.U : xxxxxx
-Waktu Transaksi : ${l()}
-Metode Bayar : Voucher Fisik
-Capture halaman bukti pembayaran : 
-Capture riwayat detail transaksi di aplikasi by.U : -
-Nama paket/Nominal pulsa : 
-Order detail ID (CXO)  : 
-Transaction ID (CXT)  :
-Detail Permasalahan : Pelanggan beli kuota via voucher tapi gabisa/belum masuk
-Solusi : Minta data Mandatory
+Email by.U : ${e}
+Waktu Transaksi   :  
+Waktu Kejadian    : ${u()}
+Lokasi Pelanggan  : 
+Detail case : Pelanggan isi kuota voucher fisik gabisa/kuota belum didapat
+Solusi : Permintaan data Mandatory
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik, boleh infoin data ini ya biar bisa aku proses :
 1. Nomor by.U : 
 2. Nama Paket Kuota :
