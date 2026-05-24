@@ -688,10 +688,10 @@ Kak, buat nomor yang hangus bakal otomatis terhapus kok Kak dari NIK yg terdafta
 4. Scan/Foto KTP asli/KTP Digital :
 5. Email yang bisa dihubungi :
 
-`,Mandatory:e=>`#Pelangganbyu
+`,Mandatory:()=>`#Pelangganbyu
 ID Omnix : #
 Nama Pelanggan : Pelanggan
-Tanggal lapor : ${e}
+Tanggal lapor : ${l()}
 
 1. Nomor by.U : xxxxxx
 2. Nomor Identitas KTP : 
@@ -711,10 +711,10 @@ Waktu Kejadian    : ${u()}
 Lokasi Pelanggan  : 
 Detail case : unreg
 Solusi : Permintaan data Mandatory
-`,Solusi:``,Mandatory:t=>`#Pelangganbyu
+`,Solusi:``,Mandatory:()=>`#Pelangganbyu
 ID Omnix : #
 Nama Pelanggan : Pelanggan
-Tanggal lapor : ${t}
+Tanggal lapor : ${l()}
 
 1. Nomor by.U : xxxxxx
 2. Nomor Identitas KTP (sesuai yang tercantum di sistem) : ${e}
@@ -930,7 +930,7 @@ Kak untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bis
 6. Alasan ganti SIM Card : 
 
 ===========Di Apps ============
-Makasih udah nunggu. Kak kalau maksudnya permintaan ganti SIM Card nya di nomor xxxxxx,  jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
+Makasih udah nunggu. Kak kalau maksudnya permintaan ganti SIM Card nya,  jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
 1. Pastiin Versi aplikasi sudah yang terbaru 
 2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak
 3. Masuk Ke profil by.U pojok kiri atas
@@ -940,8 +940,8 @@ Makasih udah nunggu. Kak kalau maksudnya permintaan ganti SIM Card nya di nomor 
 7. Pilih SIM Cardnya dikirim pake JNE atau pilih Ambil di GraPARI/Indomaret terdekat tanpa biaya pengambilan
 8. Tunggu proses validasi dari tim by.U
 9. Kalo rikuesmu di terima dan kakak pilih SIM Cardnya di kirim, tunggu SIM Cardnya sampai via JNE maksimal 7 hari kerja atau kalo kakak pilihnya diambil, kakak bisa langsung ambil SIM Cardnya di GraPARI/Indomaret yg sebelumnya dipilih
-====================legacy============================
-Kak aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
+
+Tapi kalau nomornya beli di konter, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
 
 ====================================
 
@@ -2465,21 +2465,7 @@ Solusi : greeting
 
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Untuk datanya udah aku terima, silakan konfirmasi ke channel sebelumnya Live Chat agar dibantu lebih lanjut ya :)`:`Kak boleh infoin pertanyaan atau kendalanya lebih detail seputar by.U ya biar bisa aku bantu :)
 
-`,Mandatory:`https://byu.omnix.co.id/login
-
-https://cs.byu.id/id/user/login
-
-https://crm.byu.id/crm/
-
-https://sso.identity.telkomsel.co.id/dsc/
-
-https://sites.google.com/view/modulhappiness
-
-https://docs.google.com/spreadsheets/d/1gvMeepRq_WNZ0iwilZn_RFz3xORem03sjh0yF0ekD14/edit?gid=645015539#gid=645015539
-
-https://docs.google.com/spreadsheets/d/1uZiJ3pb1dVJr3Wvw9-D0mOpevhUOhQ1hX2thMy02WEs/edit?usp=sharing
-
-https://web.telegram.org/k/
+`,Mandatory:`
 
 `},{id:51,case:`SIM card Deactive`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
@@ -3917,7 +3903,7 @@ Baring Roam | NOBAR
 `)};return(0,c.useEffect)(()=>{localStorage.setItem(`my-note`,r)},[r]),(0,c.useLayoutEffect)(()=>{t.current!==null&&e.current&&(e.current.setSelectionRange(t.current,t.current),t.current=null)},[r]),(0,f.jsx)(`textarea`,{ref:e,value:r,onChange:e=>{let r=e.target,o=r.value,s=r.selectionStart,c=n.current.split(`
 `);o.split(`
 `).length<c.length?(t.current=s,i(a(o))):i(o),n.current=o},onKeyDown:e=>{if(e.key!==`Enter`||e.key==`Enter`&&e.shiftKey)return;let n=e.currentTarget.selectionStart,o=r.slice(0,n),s=r.slice(n),c=o.split(`
-`),l=c[c.length-1].match(/^(\d+)\.\s*/);if(!l)return;e.preventDefault();let u=Number(l[1])+1,d=o+`\n${u}. `+s;t.current=o.length+`\n${u}. `.length,i(a(d))},className:`border w-full h-screen p-2`,placeholder:`Isi note kamu.....`})}var S=[`Hai Kak aku Odi temennya Nindy.`,`Kak, aku cek dulu ya. Ditunggu :)`,`Aku cek dulu interaksinya ya nanti aku balik lagi :)`,`Makasih juga udah interaksi ya Kak :) Ohiya, aku akhiri obrolan kita ya, Kaka jangan dulu tutup chatnya ya karena setelah ini juga ada pop-up survey yang lain. Dibantu isi ya Kak kalau Kaka merasa puas boleh banget isi dengan angka (10) dan seterusnya ya. Makasih banget udah selalu setia sama by.U Kak :) `,`Makasih datanya. Aku cek dulu ya. Ditunggu :)`,`Makasih udah nunggu ya Kak aku ajuin pelaporan dulu dengan ID xxxxx ya. Nanti hasilnya bakal dikabarin sama tim kami lewat SMS/email ya :) Ditunggu maksimal 1x24 jam ya :) Ohiya, aku akhiri obrolan kita ya, Kaka jangan dulu tutup chatnya ya karena setelah ini juga ada pop-up survey yang lain. Dibantu isi ya Kak kalau Kaka merasa puas boleh banget isi dengan angka (10) dan seterusnya ya. Jangan sungkan buat chat aku lagi ya.  Hihi🤗💙💛💚`,`agungrohm
+`),l=c[c.length-1].match(/^(\d+)\.\s*/);if(!l)return;e.preventDefault();let u=Number(l[1])+1,d=o+`\n${u}. `+s;t.current=o.length+`\n${u}. `.length,i(a(d))},className:`border w-full h-screen p-2`,placeholder:`Isi note kamu.....`})}var S=[`Hai Kak aku Odi temennya Nindy.`,`Kak, aku cek dulu ya. Ditunggu :)`,`Aku cek dulu interaksinya ya nanti aku balik lagi :)`,`Makasih juga udah interaksi ya Kak :) Ohiya, aku akhiri obrolan kita ya, Kaka jangan dulu tutup chatnya ya karena setelah ini juga ada pop-up survey yang lain. Dibantu isi ya Kak kalau Kaka merasa puas boleh banget isi dengan angka (10) dan seterusnya ya. Selain melalui pop up, Kaka juga bisa mengisi survey penilaian yang dikirimkan melalui SMS dari 1166. Makasih banget udah selalu setia sama by.U ya Kak :) `,`Makasih datanya. Aku cek dulu ya. Ditunggu :)`,`Makasih udah nunggu ya Kak aku ajuin pelaporan dulu dengan ID xxxxx ya. Nanti hasilnya bakal dikabarin sama tim kami lewat SMS/email ya :) Ditunggu maksimal 1x24 jam ya :) Ohiya, aku akhiri obrolan kita ya, Kaka jangan dulu tutup chatnya ya karena setelah ini juga ada pop-up survey yang lain. Dibantu isi ya Kak kalau Kaka merasa puas boleh banget isi dengan angka (10) dan seterusnya ya. Selain melalui pop up, Kaka juga bisa mengisi survey penilaian yang dikirimkan melalui SMS dari 1166. Jangan sungkan buat chat aku lagi ya.  Hihi🤗💙💛💚`,`agungrohm
 Agung_byu4$
 d_deska_x@telkomsel.co.id 
 ^TW+6/Cx
