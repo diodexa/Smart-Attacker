@@ -19,7 +19,7 @@ Detail case :  Internet
 Solusi :  Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
-`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala internetnya boleh infoin data ini ya biar biar bisa aku cek : 
+`Hi, Kak . Saat ini udah terhubung dengan Nindy. Maaf banget nih untuk kendala internetnya boleh infoin data ini ya biar bisa aku cek : 
 1. Nomor by.U : 
 2. Email akun by.U : 
 3. Lokasi detail kendala (kelurahan, kecamatan, kabupaten/kota) saat berkendala :
@@ -794,12 +794,11 @@ Kak, buat nomor yang hangus bakal otomatis terhapus kok Kak dari NIK yg terdafta
 5. Email yang bisa dihubungi :
 
 `,
-Mandatory : (segment: string,DateTime: string ) =>
+Mandatory : () =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Permintaan Deaktivasi SIM Card dan Hapus NIK
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${getCurrentDateTime()}
 
 1. Nomor by.U : xxxxxx
 2. Nomor Identitas KTP : 
@@ -828,12 +827,11 @@ Detail case : unreg
 Solusi : Permintaan data Mandatory
 `,
 Solusi : "",
-Mandatory : (segment: string,DateTime: string ) =>
+Mandatory : () =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Permintaan Deaktivasi SIM Card dan Hapus NIK
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${getCurrentDateTime()}
 
 1. Nomor by.U : xxxxxx
 2. Nomor Identitas KTP (sesuai yang tercantum di sistem) : ${EMPTY}
@@ -1031,7 +1029,7 @@ Detail case : Ganti sim card
 Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
-`Hai Kak. Saat ini terhubung dengan Nindy. Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) Jadi gabisa dilakkan ganti SIM card ya :)
+`Hai Kak. Saat ini terhubung dengan Nindy. Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) Jadi gabisa dilakukan ganti SIM card ya :)
 
 Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ganti SIM card nya boleh infoin data ini dulu ya biar aku cocokin : 
 1. Nomor by.U
@@ -1084,7 +1082,7 @@ Kak untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bis
 6. Alasan ganti SIM Card : 
 
 ===========Di Apps ============
-Makasih udah nunggu. Kak kalau maksudnya permintaan ganti SIM Card nya di nomor xxxxxx,  jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
+Makasih udah nunggu. Kak kalau maksudnya permintaan ganti SIM Card nya,  jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
 1. Pastiin Versi aplikasi sudah yang terbaru 
 2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak
 3. Masuk Ke profil by.U pojok kiri atas
@@ -1094,8 +1092,8 @@ Makasih udah nunggu. Kak kalau maksudnya permintaan ganti SIM Card nya di nomor 
 7. Pilih SIM Cardnya dikirim pake JNE atau pilih Ambil di GraPARI/Indomaret terdekat tanpa biaya pengambilan
 8. Tunggu proses validasi dari tim by.U
 9. Kalo rikuesmu di terima dan kakak pilih SIM Cardnya di kirim, tunggu SIM Cardnya sampai via JNE maksimal 7 hari kerja atau kalo kakak pilihnya diambil, kakak bisa langsung ambil SIM Cardnya di GraPARI/Indomaret yg sebelumnya dipilih
-====================legacy============================
-Kak aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
+
+Tapi kalau nomornya beli di konter, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
 
 ====================================
 
@@ -1243,15 +1241,17 @@ Tanggal lapor : ${getCurrentDate()}
 Nomor by.U : xxxxxx
 Waktu Transaksi : ${getCurrentDateTime()}
 Metode Bayar : Virtual Accont
-Capture bukti pembayaran : 
+Capture halaman bukti pembayaran : 
 Capture riwayat detail transaksi di aplikasi by.U : -
 Nama paket/Nominal pulsa : 
 Order detail ID (CXO)  : 
 Transaction ID (CXT)  :
-Detail Permasalahan : kuota/pulsa belum masuk (paid)
+Detail Permasalahan : Pelanggan beli kuota/pulsa belum masuk. status finnet paid
 Solusi : Minta data Mandatory
 `   ,
-Solusi : 'Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku email akun by.U sama capture bukti pembayarannya ya biar bisa aku proses :)',
+Solusi : `Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku data ini ya biar bisa aku proses :
+1. capture bukti pembayarannya :
+2. Capture riwayat detail transaksi di aplikasi by.U : `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
 [byU ${segment}] 
@@ -1336,40 +1336,22 @@ Tanggal lapor : ${getCurrentDate()}
 Nomor by.U : xxxxxx
 Waktu Transaksi : ${getCurrentDateTime()}
 Metode Bayar : Virtual Accont
-Capture bukti pembayaran : 
+Capture halaman bukti pembayaran : 
 Capture riwayat detail transaksi di aplikasi by.U : -
 Nama paket/Nominal pulsa : 
 Order detail ID (CXO)  : 
 Transaction ID (CXT)  :
-Detail Permasalahan : kuota/pulsa belum masuk (unpaid)
+Detail Permasalahan : Pelanggan beli kuota/pulsa belum masuk. cek finnet unpaid
 Solusi : Minta data Mandatory
 ` ,
 Solusi : `Makasih udah nunggu. Kak maaf, aku cek transaksi di nomor xxxxxx, ada kendala dari pihak pembayarannya jadinya transaksinya gabisa dilanjutin nih. Boleh infoin data ini ya biar bisa aku proses : 
-1. Email akun by.U
-2. Nomor rekening bank BCA
-3. Atas nama pemilik rekening
+1. Nomor rekening bank BCA
+2. Atas nama pemilik rekening
 
-4. Kantor cabang pembuka
+3. Kantor cabang pembuka
 `,
-Mandatory : (segment: string,DateTime: string ) =>
-`#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Masalah Pembelian Kuota/Pulsa I RENEW Via Virtual Account
-
-1. Nomor by.U : xxxxxx
-2. Email by.U : 
-3. Bukti pembayaran yang tercantum waktu transaksinya : 
-4. Rincian Keluhan : kuota belum masuk, pembayaran berhasil
-5. Order detail ID (CXO) (Pengecekan OperatorX) :
-6. Transaction ID (CXT) (Pengecekan OperatorX) :
-7. Norek :
-8. Atas nama :
-9. Cabang pembuka rekening refund :
-
-No VA : 
-Unpaid
+Mandatory : ( ) =>
+`
         
 `   
 },
@@ -1521,7 +1503,7 @@ Tanggal lapor : ${getCurrentDate()}
 Nomor by.U : xxxxxx
 Waktu Transaksi : ${getCurrentDateTime()}
 Metode Bayar :
-Capture bukti pembayaran : 
+Capture halaman bukti pembayaran : 
 Capture riwayat detail transaksi di aplikasi by.U : 
 Nama paket/Nominal pulsa : 
 Order detail ID (CXO)  : 
@@ -1532,9 +1514,8 @@ Solusi : Minta data mandatory
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala transaksinya boleh infoin aku data ini ya biar bisa aku cek : 
 1. Nomor by.U :
-2. Email akun by.U :
-3. Capture bukti pembayaran :
-4. Capture riwayat detail transaksi di aplikasi by.U : 
+2. Capture bukti pembayaran :
+3. Capture riwayat detail transaksi di aplikasi by.U : 
 
 Aku tunggu datanya ya :)
 
@@ -1553,9 +1534,8 @@ Kak untuk riwayat transaksi bisa pilih dulu ke menu profil terus pilih menu riwa
 Kak maaf, karena pada capture Kakak status pembayarannya sedang di proses, Kakak bisa tunggu dulu maksimal 1x24 jam ya untuk proses transaksinya. Kakak jangan dulu coba secara berkala ya karena dikhawatirkan terpotong lebih dari 1 kali jika Kakak mencoba secara terus-menerus
 ` :
 `Makasih udah nunggu. Kak maaf untuk kendala transaksinya di nomor xxxxxx boleh infoin aku data ini ya biar bisa aku cek : 
-1. Email akun by.U 
-2. Capture bukti pembayaran
-3. Capture riwayat detail transaksi di aplikasi by.U 
+1. Capture bukti pembayaran
+2. Capture riwayat detail transaksi di aplikasi by.U 
 
 Oke Kak, untuk bukti bayar yang di Shopee dengan tertera Merchant Reff IDnya silahkan coba cara ini :
 1. Buka Aplikasi Shopee: Buka aplikasi Shopee di ponsel Kakak.
@@ -1571,25 +1551,8 @@ Kak untuk riwayat transaksi bisa pilih dulu ke menu profil terus pilih menu riwa
 
 Kak maaf, karena pada capture Kakak status pembayarannya sedang di proses, Kakak bisa tunggu dulu maksimal 1x24 jam ya untuk proses transaksinya. Kakak jangan dulu coba secara berkala ya karena dikhawatirkan terpotong lebih dari 1 kali jika Kakak mencoba secara terus-menerus
 `,
-Mandatory : (segment: string,DateTime: string ) =>
-`#Pelangganbyu
-[byU ${segment}] 
-ID Omnix :
-Nama Pelanggan :
-Tanggal lapor : ${DateTime} 
-
-1. Nomor by.U : xxxxxx
-2. Waktu Transaksi : ${getCurrentDateTime()}
-3. Metode Bayar :
-4. Capture bukti pembayaran : 
-5. Capture riwayat transaksi apps by.U : 
-6. Nama paket/Nominal pulsa : 
-7. Order detail ID (CXO)  : 
-8. Transaction ID (CXT)  :
-9. Detail Permasalahan : kuota/pulsa belum masuk
-10. Solusi : Tiket
-
-Activation Status Pending
+Mandatory : () =>
+`
 
 `   
 },
@@ -2935,18 +2898,17 @@ Email by.U : ${EMPTY}
 Waktu Transaksi   :  
 Waktu Kejadian    : ${getCurrentDate()}
 Lokasi Pelanggan  : 
-Detail case : IRENEW Voucher fisik
+Detail case : Pelanggan isi kuota voucher fisik gabisa/kuota belum didapat
 Solusi : Permintaan data Mandatory
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ga dapat kuota dari pengisian di voucher fisik, boleh infoin data ini ya biar bisa aku proses :
 1. Nomor by.U : 
-2. Email akun by.U :
-3. Nama Paket Kuota :
-4. Kode hasil Gesek Voucher Fisik :
-5. Serial Number Voucher Fisik :
-6. Capture keterangan gagal redeem voucher :
-7. Foto Voucher fisik :
+2. Nama Paket Kuota :
+3. Kode hasil Gesek Voucher Fisik :
+4. Serial Number Voucher Fisik :
+5. Capture keterangan gagal redeem voucher :
+6. Foto Voucher fisik :
 
 Aku tunggu datanya ya :)
 ` :
@@ -3096,21 +3058,7 @@ Solusi :  (segment: string) => segment ==='Email' ?
 
 `,
 Mandatory :
-`https://byu.omnix.co.id/login
-
-https://cs.byu.id/id/user/login
-
-https://crm.byu.id/crm/
-
-https://sso.identity.telkomsel.co.id/dsc/
-
-https://sites.google.com/view/modulhappiness
-
-https://docs.google.com/spreadsheets/d/1gvMeepRq_WNZ0iwilZn_RFz3xORem03sjh0yF0ekD14/edit?gid=645015539#gid=645015539
-
-https://docs.google.com/spreadsheets/d/1uZiJ3pb1dVJr3Wvw9-D0mOpevhUOhQ1hX2thMy02WEs/edit?usp=sharing
-
-https://web.telegram.org/k/
+`
 
 `
 },
@@ -3549,7 +3497,8 @@ Waktu Transaksi   :
 Waktu Kejadian    : ${getCurrentDate()}
 Lokasi Pelanggan  : 
 Detail case : Cek Tiket
-Solusi : Cek hasil tiket
+Solusi : infoin  hasil tiket
+#CekHasilTiket
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 'Hai Kak saat ini terhubung dengan Nindy. Kak aku cek untuk ID laporan xx, masih dalam proses penanganan tim kami. Ditunggu aja dulu prosesnya ya. Semoga cepet beres :)'

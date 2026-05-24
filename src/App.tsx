@@ -5,6 +5,7 @@ import DarkMode from "./components/ButtonDarkLight";
 import NotePages from "./pages/Note";
 import GlobalShortcut from "./components/GlobalShortcut";
 import SegmentList from "./components/SegmentList";
+import { ButtonCopyDummy } from "./components/ButtonCopyDummy";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState("notepad");
@@ -22,24 +23,26 @@ export default function App() {
       {/* TAB BUTTONS */}
       <div className="flex gap-2 p-2 border-b">
         <button
-          className={`border px-4 ${activeTab === "notepad" && "bg-yellow-200 text-black"}`}
+          className={`border px-2 ${activeTab === "notepad" && "bg-yellow-200 text-black"}`}
           onClick={() => setActiveTab("notepad")}
         >
           Notepad
         </button>
 
         <button
-          className={`border px-4 ${activeTab === "tiket" && "bg-yellow-200 text-black"}`}
+          className={`border px-2 ${activeTab === "tiket" && "bg-yellow-200 text-black"}`}
           onClick={() => setActiveTab("tiket")}
         >
           Mandatory
         </button>
         <button
-          className={`border px-4 ${activeTab === "Template" && "bg-yellow-200 text-black"}`}
+          className={`border px-2 ${activeTab === "Template" && "bg-yellow-200 text-black"}`}
           onClick={() => setActiveTab("Template")}
         >
           Template
         </button>
+
+        <ButtonCopyDummy/>
 
 
         <div className="ml-auto flex items-center gap-2">
