@@ -61,7 +61,7 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
 7. CP lain yang dapat dihubungi 
 8. Capture keterangan internet/sinyal berkendala :
 `,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
+[byU ${e}][NO] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -840,7 +840,7 @@ Kak maaf, kalau udah dilakukan tapi masih berkendala, boleh lengkapin data ini y
 8. Capture keterangan sinyal :
 
 `,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
+[byU ${e}][NO] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -1853,8 +1853,8 @@ Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX ya
 
 
 https://www.telkomsel.com/roaming/setdevice`,Mandatory:t=>`#Pelangganbyu
-[NO][IR][${t}]
-
+IR][${t}]
+[NO]
 1. nomor by.U : xxxxxx
 2. Email by.U : ${e}
 3. Lokasi negara : 
@@ -2872,7 +2872,7 @@ Lokasi Pelanggan  :
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device atau sim card yang digunakan. Jika restart HP tidak menyelesaikan masalah, maka disarankan untuk ajuin ganti SIM card ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
+[byU ${e}][NO] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -2922,7 +2922,7 @@ Lokasi Pelanggan  :
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device atau sim card yang digunakan. Jika restart HP tidak menyelesaikan masalah, maka disarankan untuk ajuin ganti SIM card ya :) `,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
+[byU ${e}][NO] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -2980,7 +2980,7 @@ Solusi : Permintaan data Mandatory
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
 8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
+[byU ${e}][NO] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3038,7 +3038,7 @@ Solusi : sarankan tunggu sesuai CCA
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
 8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(t,n)=>`#Pelangganbyu
-[NO] [byU ${t}] 
+[byU ${t}][NO] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3098,7 +3098,7 @@ Solusi : Permintaan data Mandatory
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
 8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
+[byU ${e}][NO] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3154,7 +3154,7 @@ Solusi : Permintaan data Mandatory
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
 8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
+[byU ${e}][NO] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3257,7 +3257,7 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
 8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
+[byU ${e}][NO] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3313,7 +3313,7 @@ Solusi : Permintaan data Mandatory
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
 8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
+[byU ${e}][NO] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3361,7 +3361,7 @@ Lokasi Pelanggan  :
 Detail case : sinyal/internet
 Solusi : sesuai hasil cca disarankan ganti SIM card
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device atau sim card yang digunakan. Jika restart HP tidak menyelesaikan masalah, maka disarankan untuk ajuin ganti SIM card ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
+[byU ${e}][NO] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3418,7 +3418,7 @@ Solusi : Permintaan data Mandatory
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
 8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
+[byU ${e}][NO] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3499,7 +3499,7 @@ Solusi : sarankan tunggu sesuai CCA
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
 8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
+[byU ${e}][NO] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3555,7 +3555,7 @@ Lokasi Pelanggan  :
 Detail case : sinyal/internet
 Solusi : sarankan tunggu sesuai CCA
 `,Solusi:`Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala ya :)`,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
+[byU ${e}][NO] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3616,7 +3616,7 @@ Solusi : Permintaan data Mandatory
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
 8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
+[byU ${e}][NO] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3673,7 +3673,7 @@ Solusi : Permintaan data Mandatory
 6. Aplikasi/web yang berkendala. (Jika kendala aplikasi/web tertentu)
 7. CP lain yang dapat dihubungi 
 8. Capture keterangan internet/sinyal berkendala :)`,Mandatory:(e,t)=>`#Pelangganbyu
-[NO] [byU ${e}] 
+[byU ${e}][NO] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3879,8 +3879,8 @@ Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX ya
 ======Gapunya paket roaming=====
 Kak aku cek nomor xxxxxx aktif tapi gapunya kuota roaming. Untuk ketentuan nomor by.U saat ini biar dapet sinyal di luar negeri, harus memiliki paket internet roaming ya. Silakan aktivasi paketnya di aplikasi by.U ya. Makasih :)
 `,Mandatory:t=>`#Pelangganbyu
-[NO][IR][${t}]
-
+IR][${t}]
+[NO]
 1. Nomor by.U : xxxxxx
 2. Email akun by.U : ${e}
 3. Lokasi negara : 
