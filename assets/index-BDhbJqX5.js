@@ -889,7 +889,7 @@ Email by.U : ${e}
 Waktu Transaksi   :  
 Waktu Kejadian    : ${u()}
 Lokasi Pelanggan  : 
-Detail case : Ganti sim card dibawah 17 tahun
+Detail case : Ganti sim card
 Solusi : Permintaan data Mandatory
 `,Solusi:t=>t===`Email`?`Hai Kak. Saat ini terhubung dengan Nindy. Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Kakak bisa beli nomor baru di apps by.U pakai akun baru ya :) Jadi gabisa dilakukan ganti SIM card ya :)
 
@@ -912,7 +912,7 @@ Hi, Kak . Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM card 
 9. Kalo rikuesmu di terima dan kakak pilih SIM Cardnya di kirim, tunggu SIM Cardnya sampai via JNE maksimal 7 hari kerja atau kalo kakak pilihnya diambil, kakak bisa langsung ambil SIM Cardnya di GraPARI/Indomaret yg sebelumnya dipilih
 
 ====================legacy============================
-Kak maaf, aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
+Tapi kalau nomornya beli di konter, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
 
 =========Hangus==========
 Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Jadi Kakak udah gabisa ganti SIM card nya ya :)
@@ -924,8 +924,6 @@ Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kemb
 1. Nomor by.U : xxxxxx
 2. Email: ${e}
 3. NIK KTP valid : 
-4. Nama & nomor penerima :
-5. Alamat pengiriman :
 
 Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
 `:`Makasih udah nunggu. Kak untuk ganti SIM card nya boleh infoin data ini dulu ya biar aku cocokin : 
@@ -936,10 +934,8 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 
 Kak untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
-2. Nomor Identitas valid : 
+2. Nomor Kartu Keluarga/ KIA : 
 3. Scan/Foto KTP asli :  
-4. Nama & nomor penerima : 
-5. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
 6. Alasan ganti SIM Card : 
 
 ===========Di Apps ============
@@ -1468,23 +1464,27 @@ Tanggal lapor : ${t}
 9. Order ID CXT/CXO : 
 10. Detail Permasalahan : Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy
 11. Solusi: Tiket. Mohon dibantu. tks       
-`},{id:26,case:`Tidak Bisa Aktivasi SIM Card Dengan Kode Error Asset Not Found `,Bracket:t=>`#Pelangganbyu
+`},{id:26,case:`Verifikasi 2 langkah karena ga bisa login email/gmail `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
 Waktu Kejadian    : ${u()}
 Lokasi Pelanggan  : 
-Detail case : gabisa aktivasi asset notfound
-Solusi : Permintaan data Mandatory
-`,Solusi:`Makasih udah nunggu ya Kak. Maaf banget nih untuk kendala aktivasi SIM card nya di nomor xxxxxx, Kalau sudah mencoba lagi dan masih tidak bisa, boleh diinfokan beberapa data berikut ya supaya kami bisa melakukan pengecekan lebih lanjut :
-1. Akun by.U :
-2. NIK :
-3. NOKK :
-4. Serial Number di cangkang SIM Card :
-5. Capture gagal aktivasi SIM Card :
+Detail case : gabisa login gmail
+Solusi : Verifikasi 2 langkah
+`,Solusi:`Maaf ya jadi gak nyaman. Karena Kakak engga bisa login ke gmail ${e}, coba lakukan ini ya:
+1. Pakai perangkat yang biasa dipakai
+Coba login pakai HP atau laptop yang sebelumnya pernah digunakan untuk akses Gmail Kakak.
+2. Cek perangkat lain
+Kalau akun Kakak masih login di device lain (misalnya tablet atau HP lain), nanti Google bisa kirim notifikasi ke sana untuk konfirmasi.
+3. Gunakan browser yang biasa
+Coba login lewat browser yang biasa di- pakai (misalnya Chrome atau Safari), supaya sistem lebih mudah mengenali akun.
+4. Tunggu proses dari Google (±72 jam)
+Kalau belum bisa verifikasi, Google biasanya akan minta email pemulihan. Setelah di-isi, tunggu sekitar 72 jam untuk prosesnya.
+Jangan lupa cek juga folder Spam/Junk, ya. Biasanya email dari Google berjudul “Permintaan dukungan Google Anda"
 
-Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U!`,Mandatory:()=>`       
+Silakan dicoba dulu ya Kak :)`,Mandatory:()=>`       
 `},{id:27,case:`Ketidaksesuaian Penggunaan Kuota `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
