@@ -900,19 +900,18 @@ Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ganti SIM card ny
 
 Aku tunggu datanya ya :)
 
-Hi, Kak . Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM card nya, jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
-1. Pastiin Versi aplikasi sudah yang terbaru 
-2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak
-3. Masuk Ke profil by.U pojok kiri atas
-4. Scroll kebawah 
-5. Klik Ganti SIM Card 
-6. Ikuti proses prosedur ganti SIM Card 
-7. Pilih SIM Cardnya dikirim pake JNE atau pilih Ambil di GraPARI/Indomaret terdekat tanpa biaya pengambilan
-8. Tunggu proses validasi dari tim by.U
-9. Kalo rikuesmu di terima dan kakak pilih SIM Cardnya di kirim, tunggu SIM Cardnya sampai via JNE maksimal 7 hari kerja atau kalo kakak pilihnya diambil, kakak bisa langsung ambil SIM Cardnya di GraPARI/Indomaret yg sebelumnya dipilih
+Hi, Kak Ajeng. Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM card nya, jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
+1. Pastiin Versi aplikasi sudah yang terbaru yaa
+2. Log In ke apps by.U pake email by.U yang terdaftar di nomor by.U yang hilang/rusak
+3. Masuk ke profil by.U pojok kiri atas
+4. Scroll kebawah
+5. Klik menu Ganti SIM Card
+6. Input data sesuai yang diminta
+7. Pilih Pengambilan/Pengantaran SIM Card (Jika pilih pengiriman akan diminta alamat, CP dan pembayaran Ekspedisi)
+8. OTP akan masuk ke Email kamu dan input OTP
+9. Data divalidasi dan Kalo rikuesmu di terima bisa langsung diambil jika memilih metode pengambilan di GraPARI atau menunggu maksimal 7 hari kerja sampai kerumahmu jika memilih metode pengiriman.
 
-====================legacy============================
-Tapi kalau nomornya beli di konter, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
+Sekedar informasi kalo Kakak pembelian SIM Card nya melalui outlet bisa datang ke GraPARI terdekat dengan membawa e-KTP terdaftar dan dikenakan biaya Rp10.000 ya :)
 
 =========Hangus==========
 Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Jadi Kakak udah gabisa ganti SIM card nya ya :)
