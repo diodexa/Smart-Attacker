@@ -909,7 +909,7 @@ Hi, Kak Ajeng. Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM 
 6. Input data sesuai yang diminta
 7. Pilih Pengambilan/Pengantaran SIM Card (Jika pilih pengiriman akan diminta alamat, CP dan pembayaran Ekspedisi)
 8. OTP akan masuk ke Email kamu dan input OTP
-9. Data divalidasi dan Kalo rikuesmu di terima bisa langsung diambil jika memilih metode pengambilan di GraPARI atau menunggu maksimal 7 hari kerja sampai kerumahmu jika memilih metode pengiriman.
+9. Data divalidasi dan Kalo rikuesmu di terima bisa langsung diambil jika memilih metode pengambilan di GraPARI atau menunggu maksimal 7 hari kerja sampai kerumahmu jika memilih metode pengiriman
 
 Sekedar informasi kalo Kakak pembelian SIM Card nya melalui outlet bisa datang ke GraPARI terdekat dengan membawa e-KTP terdaftar dan dikenakan biaya Rp10.000 ya :)
 
@@ -939,15 +939,15 @@ Kak untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bis
 
 ===========Di Apps ============
 Makasih udah nunggu. Kak kalau maksudnya permintaan ganti SIM Card nya,  jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
-1. Pastiin Versi aplikasi sudah yang terbaru 
-2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak
-3. Masuk Ke profil by.U pojok kiri atas
-4. Scroll kebawah 
-5. Klik Ganti SIM Card 
-6. Ikuti proses prosedur ganti SIM Card 
-7. Pilih SIM Cardnya dikirim pake JNE atau pilih Ambil di GraPARI/Indomaret terdekat tanpa biaya pengambilan
-8. Tunggu proses validasi dari tim by.U
-9. Kalo rikuesmu di terima dan kakak pilih SIM Cardnya di kirim, tunggu SIM Cardnya sampai via JNE maksimal 7 hari kerja atau kalo kakak pilihnya diambil, kakak bisa langsung ambil SIM Cardnya di GraPARI/Indomaret yg sebelumnya dipilih
+1. Pastiin Versi aplikasi sudah yang terbaru yaa
+2. Log In ke apps by.U pake email by.U yang terdaftar di nomor by.U yang hilang/rusak
+3. Masuk ke profil by.U pojok kiri atas
+4. Scroll kebawah
+5. Klik menu Ganti SIM Card
+6. Input data sesuai yang diminta
+7. Pilih Pengambilan/Pengantaran SIM Card (Jika pilih pengiriman akan diminta alamat, CP dan pembayaran Ekspedisi)
+8. OTP akan masuk ke Email kamu dan input OTP
+9. Data divalidasi dan Kalo rikuesmu di terima bisa langsung diambil jika memilih metode pengambilan di GraPARI atau menunggu maksimal 7 hari kerja sampai kerumahmu jika memilih metode pengiriman
 
 Tapi kalau nomornya beli di konter, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
 
@@ -1743,60 +1743,48 @@ Tanggal lapor : ${t}
 
 
 K32 - Aktivasi/download Barcode Gagal
-`},{id:33,case:`Bugs Ganti SIM card (mandatory E)`,Bracket:t=>`#Pelangganbyu
+`},{id:33,case:`Tidak bisa aktivasi eSIM issue NIK Nokk`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
 Waktu Kejadian    : ${u()}
 Lokasi Pelanggan  : 
-Detail case : bugs ganti sim card
+Detail case : Tidak bisa aktivasi eSIM issue NIK Nokk
 Solusi : Permintaan data Mandatory
-`,Solusi:`Makasih udah nunggu. Kak maaf, kalau keterangannya seperti itu, boleh infoin data ini ya biar bisa aku proses : 
-1. Email akun by.U :
-2. Nomor Identitas KTP :
-3. Scan/Foto kartu identitas Asli :
-4. Foto selfie dengan kartu identitas Asli :
-5. Screen record terbaru :
-6. Nama penerima :
-7. Nomor penerima :
-8. Alamat pengiriman :
-9. Tipe/merek Gadget :
-10. Versi OS Gadget :
-11. Versi aplikasi by.U :
-Kalau gabisa kirim Screen recorder, bisa kirim ke email nindy@byu.id, nanti kalau udah infoin email yang dipakai waktu ngirimnya ya :)
+`,Solusi:e=>e===`Email`?`Hi, Kak Ilham. Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala aktivasi eSIM nya, boleh infoin data berikut agar dibantu proses ya :
 
+1. Email Akun by.U :
+2. Nomor by.U :
+3. Nomor yang bisa dihubungi :
+4. Email yang bisa dihubungi :
+5. NIK :
+6. NOKK :
+7. Capture gagal aktivasi di aplikasi by.U :
 
-
-DISCLAIMER
-
-Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${u()} Kakak mau dibantu  Ganti SIM Card dengan data :
-1. Nomor by.U : xxxxxx
-2. Email akun by.U: ${e}
-3. NIK KTP valid : 
-4. Nama & nomor penerima :
-5. Alamat pengiriman :
-
-Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
-`,Mandatory:(e,t)=>`#Pelangganbyu
-[byU ${e}]
+Aku tunggu datanya ya Kak :)
+`:`Kak maaf banget untuk aktivasi eSIM nya aku cek nomor xxxxxx, ada kendala nih dari proses aktivasinya. Boleh infoin data ini ya biar bisa aku proses : 
+1. Email Akun by.U :
+2. Nomor yang bisa dihubungi :
+3. Email yang bisa dihubungi :
+4. NIK :
+5. NOKK :
+6. Capture gagal aktivasi di aplikasi by.U :
+`,Mandatory:(t,n)=>`#Pelangganbyu
+[byU ${t}]
 ID Omnix : #
 Nama Pelanggan : Pelanggan
-Tanggal lapor : ${t}
-Bugs Ganti SIM card
-
-1. Nomor by.U : xxxxxx
-2. Email akun by.U : 
-3. Nomor Identitas identitas : 
-4. Scan/Foto kartu identitas Asli : 
-5. Foto selfie dengan kartu identitas Asli : 
-6. Screen record terbaru : 
-7. Nama penerima : 
-8. Nomor penerima : 
-9. Alamat pengiriman : 
-10. Tipe/merek Gadget : 
-11. Versi OS Gadget : 
-12. Versi aplikasi by.U : 
+Tanggal lapor : ${n}
+1. Akun by.U : ${e}
+2. Nomor by.U : xxxxxx
+3. Nomor yang bisa dihubungi :
+5. Email yang bisa dihubungi : 
+6. NIK :
+7. NOKK :
+8. Capture gagal aktivasi di apps :
+9. Order ID CXT/CXO :
+10. Detail permasalahan : Tidak bisa aktivasi eSIM issue NIK Nokk
+11. Solusi : tiket mohon dibantu
 `},{id:34,case:`Keluhan Tidak Bisa Akses Internet di Luar Negeri Roaming`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
