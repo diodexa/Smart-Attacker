@@ -290,6 +290,7 @@ Jika sudah menghubungi pihak aplikasi boleh lengkapi data berikut ya :
 5. Notifikasi gagal terima SMS :
 6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
 7. Tipe HP :
+8. Capture konfirmasi dari pihak Meta Support : 
 
 Silakan dicoba dulu ya Kak :)
 
@@ -367,6 +368,7 @@ Tanggal lapor : ${u()}
 5. Notifikasi gagal kirim SMS (capture/text) : 
 6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ? 
 7. Tipe HP : 
+8. Capture konfirmasi dari pihak Meta Support : 
 8. Detail permasalahan : gabisa kirim SMS
 9. Solusi : Sesuai Pansol
 
@@ -1725,14 +1727,14 @@ Aku tunggu datanya ya :)
 2. Nomor yang bisa dihubungi : 
 3. Email yang bisa dihubungi : 
 4. Capture bukti pembayaran : 
-`,Mandatory:(e,t)=>`#Pelangganbyu
-[byU ${e}]
+`,Mandatory:(t,n)=>`#Pelangganbyu
+[byU ${t}]
 ID Omnix : #
 Nama Pelanggan : Pelanggan
-Tanggal lapor : ${t}
+Tanggal lapor : ${n}
 
 1. Nomor by.U : xxxxxx
-2. Akun by.U : 
+2. Akun by.U : ${e}
 3. Nomor yang bisa dihubungi : 
 4. Email yang bisa dihubungi : 
 5. Bukti pembayaran : 
@@ -2487,17 +2489,60 @@ Solusi : greeting
 
 `,Mandatory:`
 
-`},{id:51,case:`SIM card Deactive`,Bracket:t=>`#Pelangganbyu
+`},{id:51,case:`Un/Binding Email`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
 Waktu Kejadian    : ${u()}
 Lokasi Pelanggan  : 
-Detail case :  sim card deactive
-Solusi : info  sim card deactive
-`,Solusi:` Makasih udah nungu. Kak maaf untuk kendala SIM card nya, aku cek nomor xxxxxx udah gabisa di aktivasi/registrasi karena nomornya udah ga aktif/ga di atifin lebih dari 30 hari dari waktu pembayaran berhasil. Aku saranin beli nomor baru di apps by.U pakai akun baru ya :)
-`,Mandatory:``},{id:52,case:`Pulsa terpotong karena SMS dari luar negeri`,Bracket:t=>`#Pelangganbyu
+Detail case : Gabisa binding email
+Solusi : minta data
+`,Solusi:` Makasih udah nungu. Kak untuk kendala gabisa login ke aplikasi by.U karena masalah emailnya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
+1. Email baru yang mau digunakan :
+2. Email/akun by.U yang sudah terdaftar: 
+3. Tipe/merek Gadget
+5. Versi OS Gadget
+6. Versi aplikasi by.U
+7. NIK yang terdaftar (untuk ganti email)
+8. screen record Ketika login ke apps
+Kalau gabisa kirim Screen recorder, bisa kirim ke email nindy@byu.id, nanti kalau udah infoin email yang dipakai waktu ngirimnya ya :)
+
+Kalau gatau NIK yang terdaftar boleh infoin salah satu dari data ini : 
+1. Tanggal & Jenis paket terakhir dibeli 
+2. Jumlah pulsa yang dimiliki sekarang 
+4. Nominal Harga paket yang dibeli terakhir 
+5. 5 Transaksi terakhir (minimum 3 transaksi valid)
+6. Tipe dan Merk HP terakhir digunakan
+
+=======unbinding================================
+
+Kak maaf untuk gabisa unbinding email di nomor xxxxxx, boleh infoin data ini ya : 
+1. Email by.U
+2. Tipe/merek Gadget
+3. Versi OS Gadget
+4. Versi aplikasi by.U
+5. Screen record proses unbinding email yang gagal
+Kalau gabisa kirim Screen recorder, bisa kirim ke email nindy@byu.id, nanti kalau udah infoin email yang dipakai waktu ngirimnya ya :)
+
+`,Mandatory:(t,n)=>`#Pelangganbyu
+[byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${n}
+
+1. Nomor by.U : xxxxxx
+2. Account login : ${e}
+3. Email/akun yang sudah terdaftar : 
+4. Email by.U yang mau di binding : 
+5. Tipe/merek Gadget : 
+6. Versi OS Gadget : 
+7. Versi aplikasi by.U : 
+7. Screen record proses binding email yang gagal/screen record Ketika login ke apps (untuk kendala tidak bisa binding email diapps) : 
+8. NIK yang terdaftar (untuk ganti email) :
+9. Detail permasalahan : Tidak bisa binding email
+10. Solusi : Tiket. Mohon dibantu. Tks
+`},{id:52,case:`Pulsa terpotong karena SMS dari luar negeri`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
 Nomor by.U : xxxxxx
 Email by.U : ${e}
