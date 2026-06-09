@@ -2505,7 +2505,7 @@ Solusi : minta data
 5. Versi OS Gadget
 6. Versi aplikasi by.U
 7. NIK yang terdaftar (untuk ganti email)
-8. screen record Ketika login ke apps
+8. screen record Ketika login ke apps/gabisa bindin email
 Kalau gabisa kirim Screen recorder, bisa kirim ke email nindy@byu.id, nanti kalau udah infoin email yang dipakai waktu ngirimnya ya :)
 
 Kalau gatau NIK yang terdaftar boleh infoin salah satu dari data ini : 
