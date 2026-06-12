@@ -1713,7 +1713,7 @@ Waktu Transaksi   :
 Waktu Kejadian    : ${u()}
 Lokasi Pelanggan  : 
 Detail case : minta barcode esim
-Solusi : Permintaan data Mandatory
+Solusi : Permintaan data kendala esim
 `,Solusi:e=>e===`Email`?`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk barcode/qr eSIM nya, boleh infoin data ini ya biar bisa aku proses : 
 1. Nomor by.U : 
 2. Email akun by.U : 
