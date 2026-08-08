@@ -77,7 +77,7 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[NO] [byU ${segment}] 
+[NO][byU ${segment}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -157,10 +157,10 @@ Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak.
 Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U! `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak bisa aktivasi Error Lain 
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Akun by.U : 
@@ -169,6 +169,8 @@ Tidak bisa aktivasi Error Lain
 5. Serial Number di cangkang SIM Card : 
 6. Capture gagal aktivasi  : 
 7. Order ID CXT/CXO (Pengecekan OperatorX) : 
+8. Detail Case : Tidak bisa aktivasi Error Lain
+9. Solusi : Tiket. Mohon dibantu
 
 
 
@@ -239,10 +241,10 @@ Kalau gabisa kirim Screen recorder, bisa kirim ke email nindy@byu.id, nanti kala
 
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Bugs Lain 
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Email by.U : 
 2. Nomor by.U : xxxxxx
@@ -253,6 +255,9 @@ Bugs Lain
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul notifikasi error : 
 8. Waktu dan Lama Kejadian : 
 9. Lokasi Kejadian : 
+10. Detail Permasalahan : Bugs Lain
+11. Solusi : Tiket. Mohon dibantu
+ 
 
 Digital Life Style | K26-Layanan aplikasi tidak bisa digunakan
 `   
@@ -299,10 +304,10 @@ Kalau gabisa kirim Screen recorder, bisa kirim ke email nindy@byu.id, nanti kala
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Bugs Ganti Sim Card 
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Email by.U : 
 2. Nomor by.U : xxxxxx
@@ -312,6 +317,8 @@ Bugs Ganti Sim Card
 6. Detail keluhan yang disampaikan customer apakah bisa akses menggunakan wifi/jaringan lain : YA 
 7. Screen recorder dari awal masuk aplikasi by.U hingga muncul kendalanya seperti apa :  
 8. Waktu dan Lama Kejadian : 
+9. Detail Permasalah : Bugs Ganti Sim Card 
+10. Solusi: Tiket. Mohon dibantu. tks
 
 Ganti Kartu | K51-Gagal ganti kartu
 `   
@@ -349,6 +356,7 @@ Jika sudah menghubungi pihak aplikasi boleh lengkapi data berikut ya :
 5. Notifikasi gagal terima SMS :
 6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ?
 7. Tipe HP :
+8. Capture konfirmasi dari pihak Meta Support : 
 
 Silakan dicoba dulu ya Kak :)
 
@@ -430,6 +438,7 @@ Tanggal lapor : ${getCurrentDate()}
 5. Notifikasi gagal kirim SMS (capture/text) : 
 6. Jumlah bar sinyal dan keterangan sinyal  ( 2G, 3G, 4G, atau 5G) ? 
 7. Tipe HP : 
+8. Capture konfirmasi dari pihak Meta Support : 
 8. Detail permasalahan : gabisa kirim SMS
 9. Solusi : Sesuai Pansol
 
@@ -806,6 +815,8 @@ Tanggal lapor : ${getCurrentDateTime()}
 4. Scan/Foto KTP asli/KTP Digital :
 5. Alasan tidak ingin menggunakan by.U lagi :
 6. Email yang bisa dihubungi :
+7. Detail Permasalah : unreg
+8. Solusi: Tiket. Mohon dibantu. tks
 
 
 
@@ -840,6 +851,8 @@ Tanggal lapor : ${getCurrentDateTime()}
 5. Alasan tidak ingin menggunakan by.U lagi :
 6. Capture hasil pengecekan dari *444# :
 7. Email yang bisa dihubungi :
+8. Detail Permaslaahan : Unreg hapus NIK lupa nomor
+9. Solusi: Tiket. Mohon dibantu. tks
 
 Unregistrasi Prabayar | Permintaan unregistrasi Prabayar
 1x24 jam`   
@@ -877,16 +890,18 @@ Aku tunggu datanya ya :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Gagal Aktivasi eSIM Account Status Tidak Sesuai
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1.Email by.U : 
 2.Nomor by.U : xxxxxx
 3.Nomor yang bisa dihubungi : 
 4.Email yang bisa dihubungi : 
 5.Capture gagal aktivasi di apps : 
+6. Detail permasalahan : Gagal Aktivasi eSIM Account Status Tidak Sesuai
+7. Solusi: Tiket. Mohon dibantu. tk
 
 
 
@@ -969,7 +984,7 @@ Kak maaf, kalau udah dilakukan tapi masih berkendala, boleh lengkapin data ini y
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[NO] [byU ${segment}] 
+[NO][byU ${segment}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -1038,19 +1053,18 @@ Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk ganti SIM card ny
 
 Aku tunggu datanya ya :)
 
-Hi, Kak . Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM card nya, jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
-1. Pastiin Versi aplikasi sudah yang terbaru 
-2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak
-3. Masuk Ke profil by.U pojok kiri atas
-4. Scroll kebawah 
-5. Klik Ganti SIM Card 
-6. Ikuti proses prosedur ganti SIM Card 
-7. Pilih SIM Cardnya dikirim pake JNE atau pilih Ambil di GraPARI/Indomaret terdekat tanpa biaya pengambilan
-8. Tunggu proses validasi dari tim by.U
-9. Kalo rikuesmu di terima dan kakak pilih SIM Cardnya di kirim, tunggu SIM Cardnya sampai via JNE maksimal 7 hari kerja atau kalo kakak pilihnya diambil, kakak bisa langsung ambil SIM Cardnya di GraPARI/Indomaret yg sebelumnya dipilih
+Hi, Kak Ajeng. Saat ini udah terhubung dengan Nindy. Untuk permintaan ganti SIM card nya, jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
+1. Pastiin Versi aplikasi sudah yang terbaru yaa
+2. Log In ke apps by.U pake email by.U yang terdaftar di nomor by.U yang hilang/rusak
+3. Masuk ke profil by.U pojok kiri atas
+4. Scroll kebawah
+5. Klik menu Ganti SIM Card
+6. Input data sesuai yang diminta
+7. Pilih Pengambilan/Pengantaran SIM Card (Jika pilih pengiriman akan diminta alamat, CP dan pembayaran Ekspedisi)
+8. OTP akan masuk ke Email kamu dan input OTP
+9. Data divalidasi dan Kalo rikuesmu di terima bisa langsung diambil jika memilih metode pengambilan di GraPARI atau menunggu maksimal 7 hari kerja sampai kerumahmu jika memilih metode pengiriman
 
-====================legacy============================
-Kak maaf, aku cek nomor xxxxxx, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
+Sekedar informasi kalo Kakak pembelian SIM Card nya melalui outlet bisa datang ke GraPARI terdekat dengan membawa e-KTP terdaftar dan dikenakan biaya Rp10.000 ya :)
 
 =========Hangus==========
 Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 hari. Jadi Kakak udah gabisa ganti SIM card nya ya :)
@@ -1062,8 +1076,6 @@ Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kemb
 1. Nomor by.U : xxxxxx
 2. Email: ${EMPTY}
 3. NIK KTP valid : 
-4. Nama & nomor penerima :
-5. Alamat pengiriman :
 
 Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
 ` :
@@ -1075,23 +1087,21 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 
 Kak untuk  ganti SIM card nya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses : 
 1. Email akun by.U : 
-2. Nomor Identitas valid : 
+2. Nomor Kartu Keluarga/ KIA : 
 3. Scan/Foto KTP asli :  
-4. Nama & nomor penerima : 
-5. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
 6. Alasan ganti SIM Card : 
 
 ===========Di Apps ============
 Makasih udah nunggu. Kak kalau maksudnya permintaan ganti SIM Card nya,  jika SIM Card by.U nya hilang/rusak aku saranin Kakak untuk melakukan permintaan Ganti SIM Card melalui aplikasi by.U, supaya Kakak tetap bisa menggunakan nomor by.U nya nih, ikutin cara berikut ya:
-1. Pastiin Versi aplikasi sudah yang terbaru 
-2. Log In ke apps by.U pake akun dari nomor by.U yang hilang/ rusak
-3. Masuk Ke profil by.U pojok kiri atas
-4. Scroll kebawah 
-5. Klik Ganti SIM Card 
-6. Ikuti proses prosedur ganti SIM Card 
-7. Pilih SIM Cardnya dikirim pake JNE atau pilih Ambil di GraPARI/Indomaret terdekat tanpa biaya pengambilan
-8. Tunggu proses validasi dari tim by.U
-9. Kalo rikuesmu di terima dan kakak pilih SIM Cardnya di kirim, tunggu SIM Cardnya sampai via JNE maksimal 7 hari kerja atau kalo kakak pilihnya diambil, kakak bisa langsung ambil SIM Cardnya di GraPARI/Indomaret yg sebelumnya dipilih
+1. Pastiin Versi aplikasi sudah yang terbaru yaa
+2. Log In ke apps by.U pake email by.U yang terdaftar di nomor by.U yang hilang/rusak
+3. Masuk ke profil by.U pojok kiri atas
+4. Scroll kebawah
+5. Klik menu Ganti SIM Card
+6. Input data sesuai yang diminta
+7. Pilih Pengambilan/Pengantaran SIM Card (Jika pilih pengiriman akan diminta alamat, CP dan pembayaran Ekspedisi)
+8. OTP akan masuk ke Email kamu dan input OTP
+9. Data divalidasi dan Kalo rikuesmu di terima bisa langsung diambil jika memilih metode pengambilan di GraPARI atau menunggu maksimal 7 hari kerja sampai kerumahmu jika memilih metode pengiriman
 
 Tapi kalau nomornya beli di konter, SIM card nya bisa diganti di GraPARI terdekat dengan membawa KTP yang terdaftar dan dikenakan tarif Rp10.000 ya :)
 
@@ -1110,19 +1120,18 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Permintaan Ganti SIM Card Active
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Email registrasi by.U atau nomor HP jika registrasi by.U menggunakan nomor operator lain : 
 3. Nomor Identitas valid : 
 4. Scan/Foto identitas asli : 
-5. Nama & nomor penerima : 
-6. Alamat pengiriman (nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan, kabupaten/kota, kode pos) : 
-7. Alasan ganti SIM Card : 
-8. Capture SIM card rusak : -
+5. Capture SIM card rusak : -
+6. Detail permasalahan : ganti sim card dibawah 17 tahun
+7. Solusi: Tiket. Mohon dibantu. tks
 `   
 },
 
@@ -1161,10 +1170,10 @@ Aku tunggu datanya ya :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Keluhan SIM Card Tidak Sampai via JNE ada AWB
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Email by.U : 
@@ -1172,6 +1181,8 @@ Keluhan SIM Card Tidak Sampai via JNE ada AWB
 4. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) : 
 5. Capture pengecekan nomor resi di web tracking JNE : 
 6. Konfirmasi dari JNE (jika customer sempat komplain ke JNE) : -
+7. Detail permasalahan : Keluhan SIM Card Tidak Sampai via JNE ada AWB
+8. Solusi: Tiket. Mohon dibantu. tks
 
 Perdana PraBayar | K12-Kendala pengiriman kartu SIM
 `   
@@ -1212,10 +1223,10 @@ Aku tunggu datanya ya :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Email by.U : 
@@ -1223,6 +1234,8 @@ Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
 4. Nama Penerima : 
 5. Nomor Penerima : 
 6. Alamat pengiriman & Kode Pos (Nama Jalan, Nomor Rumah, RT/RW, Kelurahan, Kecamatan, Kabupaten/Kota, Patokan lokasi dan Kode Pos) : 
+7. Detail permasalahan : Keluhan SIM Card Tidak Sampai via JNE tidak ada AWB
+8. Solusi: Tiket. Mohon dibantu. tks
 
 Perdana PraBayar | K12-Kendala pengiriman kartu SIM
 `   
@@ -1252,22 +1265,8 @@ Solusi : Minta data Mandatory
 Solusi : `Makasih udah nunggu. Kak maaf untuk kendala kuotanya di nomor xxxxxx, aku cek ada kendala nih dari aplikasinya jadi kuotanya belum masuk. Boleh infoin aku data ini ya biar bisa aku proses :
 1. capture bukti pembayarannya :
 2. Capture riwayat detail transaksi di aplikasi by.U : `,
-Mandatory : (segment: string,DateTime: string ) =>
-`#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Masalah Pembelian Kuota/Pulsa I RENEW Via VA
-
-1. Nomor by.U : xxxxxx
-2. Email by.U : 
-3. Printscreen halaman bukti pembayaran : 
-4. Rincian Keluhan : kuota belum masuk
-5. Order detail ID (CXO) (Pengecekan OperatorX) : -
-6. Transaction ID (CXT) (Pengecekan OperatorX) : -
-
-No VA : 
-paid
+Mandatory : () =>
+`
       
 
 `   
@@ -1307,9 +1306,10 @@ NOKK :
 Silahkan dikonfirmasi ya kak, dengan membalas "benar" atau "setuju"`,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 Penyalahgunaan NIK
 
 1. Nomor by.U yang ingin di UNREGISTRASI :
@@ -1319,8 +1319,9 @@ Penyalahgunaan NIK
 5. Capture SMS cek registrasi dari 4444 :
 6. Email yang bisa dihubungi :
 7. Alasan ingin Unregistrasi nomor by.U : MSISDN terdapat penyalahgunaan NIK yang bukan punya pemilik NIK
-
-        
+8. Detail Permasalahan : Unreg penyalahgunaan NIK
+9. Solusi: Tiket. Mohon dibantu. tks
+    
 `   
 },
 
@@ -1422,10 +1423,10 @@ Aku tunggu datanya ya :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak Mendapatkan Kuota Monthversary 
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. MSISDN by.U : xxxxxx
 2. Email akun by.U : 
@@ -1434,7 +1435,8 @@ Tidak Mendapatkan Kuota Monthversary
 5. Capture halaman Reward (Sudah dan Belum Terpakai) : 
 6. Bukti bayar (jika kendalanya pelanggan sudah bayar tapi belum menerima paket Monthiversary Reward) :-
 7. Hasil pengecekan Add Ons di CRM (berupa text dan tidak boleh printscreen) : 
-
+8. Detail Permasalahan : Tidak Mendapatkan Kuota Monthversary 
+9. Solusi: Tiket. Mohon dibantu. tks
         
 `   
 },
@@ -1476,10 +1478,10 @@ Aku tunggu datanya ya :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-SMS - Gagal Aktivasi M-Banking
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Email akun by.U : 
@@ -1488,6 +1490,8 @@ SMS - Gagal Aktivasi M-Banking
 5. Capture dashboard apps : 
 6. Capture kirim atau terima SMS ke nomor lain berhasil : 
 7. Capture keterangan gagal aktivasi fitur banking : 
+8. Detail Permasalahan : SMS - Gagal Aktivasi M-Banking
+9. Solusi: Tiket. Mohon dibantu. tks
 `   
 },
 
@@ -1599,10 +1603,10 @@ Kak maaf, untuk aktivasi SIM card nya, kalau nomornya beli di konter, coba Kakak
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak Bisa Aktivasi SIM Card Legacy
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Capture berhasil aktivasi via SMS : 
@@ -1610,8 +1614,9 @@ Tidak Bisa Aktivasi SIM Card Legacy
 4. Nomor Kartu Keluarga : 
 5. CP dan Email yang bisa dihubungi : 
 6. SN barcode yang ada di cangkang SIM Card : 
-7. Order ID CXT/CXO (Pengecekan OperatorX) : 
-8. Keterangan pengecekan : 
+7. Order ID CXT/CXO  : 
+8. Detail Permasalahan : Tidak Bisa Aktivasi SIM Card Legacy
+9. Solusi: Tiket. Mohon dibantu. tks
         
 `   
 },
@@ -1696,18 +1701,20 @@ Aku tunggu datanya ya :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak dapat langganan weTV
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
-1. Email : 
+1. Email : ${EMPTY}
 2. Nomor by.U : xxxxxx
 3. Capture Akun profile di aplikasi WeTV (yang tertera keterangan Membership/Berlangganan) : 
 4. Capture notifikasi berhasil aktivasi : 
 5. Tanggal pembelian paket: 
 6. Type HP : 
 7. Capture kendala (disesuaikan dengan kendala pelanggan) : 
+8. Detail Permasalahan : Tidak dapat langganan weTV
+9. Solusi: Tiket. Mohon dibantu. tks
 `   
 },
 
@@ -1749,10 +1756,10 @@ Aku tunggu datanya ya :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Akun by.U : 
@@ -1762,13 +1769,15 @@ Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy
 6. Nama penerima : 
 7. Nomor penerima : 
 8. Alamat pengiriman : 
-9. Order ID CXT/CXO (Pengecekan OperatorX) :         
+9. Order ID CXT/CXO : 
+10. Detail Permasalahan : Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy
+11. Solusi: Tiket. Mohon dibantu. tks       
 `   
 },
 
 {
 id: 26,
-case : "Tidak Bisa Aktivasi SIM Card Dengan Kode Error Asset Not Found ",
+case : "Verifikasi 2 langkah karena ga bisa login email/gmail ",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
@@ -1777,32 +1786,23 @@ Email by.U : ${EMPTY}
 Waktu Transaksi   :  
 Waktu Kejadian    : ${getCurrentDate()}
 Lokasi Pelanggan  : 
-Detail case : gabisa aktivasi asset notfound
-Solusi : Permintaan data Mandatory
+Detail case : gabisa login gmail
+Solusi : Verifikasi 2 langkah
 `,
-Solusi : `Makasih udah nunggu ya Kak. Maaf banget nih untuk kendala aktivasi SIM card nya di nomor xxxxxx, Kalau sudah mencoba lagi dan masih tidak bisa, boleh diinfokan beberapa data berikut ya supaya kami bisa melakukan pengecekan lebih lanjut :
-1. Akun by.U :
-2. NIK :
-3. NOKK :
-4. Serial Number di cangkang SIM Card :
-5. Capture gagal aktivasi SIM Card :
+Solusi : `Maaf ya jadi gak nyaman. Karena Kakak engga bisa login ke gmail ${EMPTY}, coba lakukan ini ya:
+1. Pakai perangkat yang biasa dipakai
+Coba login pakai HP atau laptop yang sebelumnya pernah digunakan untuk akses Gmail Kakak.
+2. Cek perangkat lain
+Kalau akun Kakak masih login di device lain (misalnya tablet atau HP lain), nanti Google bisa kirim notifikasi ke sana untuk konfirmasi.
+3. Gunakan browser yang biasa
+Coba login lewat browser yang biasa di- pakai (misalnya Chrome atau Safari), supaya sistem lebih mudah mengenali akun.
+4. Tunggu proses dari Google (±72 jam)
+Kalau belum bisa verifikasi, Google biasanya akan minta email pemulihan. Setelah di-isi, tunggu sekitar 72 jam untuk prosesnya.
+Jangan lupa cek juga folder Spam/Junk, ya. Biasanya email dari Google berjudul “Permintaan dukungan Google Anda"
 
-Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak. Makasih banyak masih mau tetap bersabar dan setia support by.U!`,
-Mandatory : (segment: string,DateTime: string ) =>
-`#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak Bisa Aktivasi SIM Card Dengan Kode Error "Asset Not Found" 
-
-1. Akun by.U : 
-2. Nomor by.U : xxxxxx
-3. Nomor identitas : 
-4. NOKK : 
-5. Serial Number di cangkang SIM Card : 
-6. Capture gagal aktivasi SIM Card : 
-7. Order ID CXT/CXO (Pengecekan OperatorX) : 
-        
+Silakan dicoba dulu ya Kak :)`,
+Mandatory : ( ) =>
+`       
 `   
 },
 
@@ -1846,10 +1846,10 @@ Aku tunggu datanya ya :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Ketidaksesuaian Penggunaan Kuota 
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Email : 
@@ -1861,7 +1861,9 @@ Ketidaksesuaian Penggunaan Kuota
 8. Capture data usage : 
 9. Capture dashboard apps by.U  (yang ada detail pemakaian Data): 
 10. Apakah customer pernah mencoba di gadget lain dan mengalami masalah yang sama? TIDAK
-11. Apakah ada VPN dsb di gadget customer? TIDAK 
+11. Apakah ada VPN dsb di gadget customer? TIDAK
+12. Detail Permasalahan : Ketidaksesuaian Penggunaan Kuota 
+13. Solusi: Tiket. Mohon dibantu. tks
 `   
 },
 
@@ -1885,10 +1887,10 @@ Pastiin setting dengan memilih menu Setting > pilih manager aplikasi > all > mes
 Kakak bisa juga coba login menggunakan email akun by.U ya :) Semoga membantu :)`,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak bisa login dengan Nomor BYU 
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Email akun by.U : 
@@ -1899,6 +1901,8 @@ Tidak bisa login dengan Nomor BYU
 7. Hari dan Tanggal waktu terjadi keluhan : 
 8. Penjelasan keluhan pelanggan : 
 9. Lokasi Pelanggan : 
+10. Detail Permasalahan : Tidak bisa login dengan Nomor BYU 
+11. Solusi: Tiket. Mohon dibantu. tks
 `   
 },
 
@@ -1936,10 +1940,10 @@ Aku tunggu datanya ya :)
  `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak Mendapatkan Voucher Non-Telco
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Email by.U : ${EMPTY}
@@ -1947,6 +1951,8 @@ Tidak Mendapatkan Voucher Non-Telco
 4. Tanggal penukaran U-Coin : 
 5. Capture bukti redeem di halaman Reward Saya : 
 6. Capture kendala penukaran : 
+7. Detail Permasalahan : Tidak Mendapatkan Voucher Non-Telco
+8. Solusi: Tiket. Mohon dibantu. tks
 
 Aktivasi Paket | K21-Tidak Mendapatkan Voucher Non-Telco
 `   
@@ -1997,10 +2003,10 @@ Kirimnya ke email nindy@byu.id aja ya biar aman. Kakak bisa infoin email yang di
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Pergantian SIM Card Legacy ditolak GraPARI
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nama Pelanggan : 
 2. Nomor by.U : xxxxxx
@@ -2013,6 +2019,8 @@ Pergantian SIM Card Legacy ditolak GraPARI
 9. Foto identitas : 
 10. Foto selfie identitas : 
 11. Alasan ganti SIM Card : SIM Card Hilang
+12. Detail Permasalahan : Pergantian SIM Card Legacy ditolak GraPARI
+13. Solusi: Tiket. Mohon dibantu. tks
 `   
 },
 
@@ -2054,10 +2062,10 @@ Aku tunggu datanya ya :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-eSIM sinyal hilang
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Akun by.U : 
@@ -2067,9 +2075,11 @@ eSIM sinyal hilang
 6. Capture Sinyal : 
 7. Capture settingan eSIM di handphone : 
 8. Capture bukti pembayaran : 
-9. Order ID CXT/CXO (Pengecekan OperatorX): 
+9. Order ID CXT/CXO : 
+10. Detail Permasalahan : eSIM sinyal hilang
+11. Solusi: Tiket. Mohon dibantu. tks
 
-| e-SIM | Gagal/error saat melakukan Registrasi
+e-SIM | Gagal/error saat melakukan Registrasi
 `   
 },
 
@@ -2085,7 +2095,7 @@ Waktu Transaksi   :
 Waktu Kejadian    : ${getCurrentDate()}
 Lokasi Pelanggan  : 
 Detail case : minta barcode esim
-Solusi : Permintaan data Mandatory
+Solusi : Permintaan data kendala esim
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
 `Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak maaf untuk barcode/qr eSIM nya, boleh infoin data ini ya biar bisa aku proses : 
@@ -2105,18 +2115,20 @@ Aku tunggu datanya ya :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-eSIM  QR tidak tersimpan 
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
-2. Akun by.U : 
+2. Akun by.U : ${EMPTY}
 3. Nomor yang bisa dihubungi : 
 4. Email yang bisa dihubungi : 
 5. Bukti pembayaran : 
-6. Keterangan gagal : (KHUSUS APABILA QR YANG DIMILIKI PELANGGAN TIDAK VALID)
-7. Order ID CXT/CXO (Pengecekan OperatorX) : 
+6. Keterangan gagal : -
+7. Order ID CXT/CXO  : 
+8. Detail Permasalahan : eSIM  QR tidak tersimpan
+9. Solusi: Tiket. Mohon dibantu. tks
 
 
 K32 - Aktivasi/download Barcode Gagal
@@ -2125,7 +2137,7 @@ K32 - Aktivasi/download Barcode Gagal
 
 {
 id: 33,
-case : "Bugs Ganti SIM card (mandatory E)",
+case : "Tidak bisa aktivasi eSIM issue NIK Nokk",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
@@ -2134,56 +2146,46 @@ Email by.U : ${EMPTY}
 Waktu Transaksi   :  
 Waktu Kejadian    : ${getCurrentDate()}
 Lokasi Pelanggan  : 
-Detail case : bugs ganti sim card
+Detail case : Tidak bisa aktivasi eSIM issue NIK Nokk
 Solusi : Permintaan data Mandatory
 `,
-Solusi : 
-`Makasih udah nunggu. Kak maaf, kalau keterangannya seperti itu, boleh infoin data ini ya biar bisa aku proses : 
-1. Email akun by.U :
-2. Nomor Identitas KTP :
-3. Scan/Foto kartu identitas Asli :
-4. Foto selfie dengan kartu identitas Asli :
-5. Screen record terbaru :
-6. Nama penerima :
-7. Nomor penerima :
-8. Alamat pengiriman :
-9. Tipe/merek Gadget :
-10. Versi OS Gadget :
-11. Versi aplikasi by.U :
-Kalau gabisa kirim Screen recorder, bisa kirim ke email nindy@byu.id, nanti kalau udah infoin email yang dipakai waktu ngirimnya ya :)
+Solusi : (segment: string) => segment ==='Email' ? 
+`Hi, Kak Ilham. Saat ini udah terhubung dengan Nindy. Kak maaf untuk kendala aktivasi eSIM nya, boleh infoin data berikut agar dibantu proses ya :
 
+1. Email Akun by.U :
+2. Nomor by.U :
+3. Nomor yang bisa dihubungi :
+4. Email yang bisa dihubungi :
+5. NIK :
+6. NOKK :
+7. Capture gagal aktivasi di aplikasi by.U :
 
-
-DISCLAIMER
-
-Oke Kak, aku cek data-data yang Kakak infoin udah sesuai ya. Aku konfirmasi kembali, pada tanggal ${getCurrentDate()} Kakak mau dibantu  Ganti SIM Card dengan data :
-1. Nomor by.U : xxxxxx
-2. Email akun by.U: ${EMPTY}
-3. NIK KTP valid : 
-4. Nama & nomor penerima :
-5. Alamat pengiriman :
-
-Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera bantu lebih lanjut ya :) 
+Aku tunggu datanya ya Kak :)
+`: 
+`Kak maaf banget untuk aktivasi eSIM nya aku cek nomor xxxxxx, ada kendala nih dari proses aktivasinya. Boleh infoin data ini ya biar bisa aku proses : 
+1. Email Akun by.U :
+2. Nomor yang bisa dihubungi :
+3. Email yang bisa dihubungi :
+4. NIK :
+5. NOKK :
+6. Capture gagal aktivasi di aplikasi by.U :
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Bugs Ganti SIM card
-
-1. Nomor by.U : xxxxxx
-2. Email akun by.U : 
-3. Nomor Identitas identitas : 
-4. Scan/Foto kartu identitas Asli : 
-5. Foto selfie dengan kartu identitas Asli : 
-6. Screen record terbaru : 
-7. Nama penerima : 
-8. Nomor penerima : 
-9. Alamat pengiriman : 
-10. Tipe/merek Gadget : 
-11. Versi OS Gadget : 
-12. Versi aplikasi by.U : 
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
+1. Akun by.U : ${EMPTY}
+2. Nomor by.U : xxxxxx
+3. Nomor yang bisa dihubungi :
+5. Email yang bisa dihubungi : 
+6. NIK :
+7. NOKK :
+8. Capture gagal aktivasi di apps :
+9. Order ID CXT/CXO :
+10. Detail permasalahan : Tidak bisa aktivasi eSIM issue NIK Nokk
+11. Solusi : tiket mohon dibantu
 `   
 },
 
@@ -2251,7 +2253,7 @@ Sebagai tambahan bisa coba salah satu Operator yang berkejasama di negara XXX ya
 https://www.telkomsel.com/roaming/setdevice`,
 Mandatory : (segment: string) =>
 `#Pelangganbyu
-[NO][IR][${segment}]
+[NO]IR][${segment}]
 
 1. nomor by.U : xxxxxx
 2. Email by.U : ${EMPTY}
@@ -2309,10 +2311,10 @@ Aku tunggu datanya ya :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Pulsa berkurang tiba-tiba
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor By.U : xxxxxx
 2. Email akun By.U : 
@@ -2320,6 +2322,8 @@ Pulsa berkurang tiba-tiba
 4. Tipe Hp : 
 5. Tanggal dan Waktu kejadian : 
 6. Rincian kendala/Capture kendala dan hasil pengecekkan agent : 
+7. Detail Permasalahan : Pulsa berkurang tiba-tiba
+8. Solusi: Tiket. Mohon dibantu. tks
         
 `   
 },
@@ -2378,10 +2382,10 @@ Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak.
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak Bisa Aktivasi SIM Card Dengan Kode Error NIK Tidak Ditemukan
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Akun by.U : 
 2. Nomor by.U : xxxxxx
@@ -2390,7 +2394,9 @@ Tidak Bisa Aktivasi SIM Card Dengan Kode Error NIK Tidak Ditemukan
 5. Serial Number di cangkang SIM Card : 
 6. Capture gagal aktivasi SIM Card : 
 7. Capture bukti dari dukcapil bahwa data sudah update : 
-8. Order ID CXT/CXO (Pengecekan OperatorX) : 
+8. Order ID CXT/CXO : 
+9. Detail Permasalahan : Tidak Bisa Aktivasi SIM Card Dengan Kode Error NIK Tidak Ditemukan
+10. Solusi: Tiket. Mohon dibantu. tks
 `   
 },
 
@@ -2445,10 +2451,10 @@ Sekali lagi mohon maaf, jika sudah ketemu solusinya akan segera dikabari ya Kak.
 Mandatory : (segment: string,DateTime: string ) =>
 ` 
 #Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak Bisa Aktivasi SIM Card Dengan Keterangan Maximum Number
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Akun by.U : 
 2. Nomor by.U : xxxxxx
@@ -2457,7 +2463,9 @@ Tidak Bisa Aktivasi SIM Card Dengan Keterangan Maximum Number
 5. Serial Number di cangkang SIM Card : 
 6. Capture gagal aktivasi SIM Card : 
 7. Capture bukti sudah melakukan unregistrasi : 
-8. Order ID CXT/CXO (Pengecekan OperatorX) : 
+8. Order ID CXT/CXO : 
+9. Detail Permasalahan : Tidak Bisa Aktivasi SIM Card Dengan Keterangan Maximum Number
+10. Solusi : Tiket. Mohon dibantu. tks
 `   
 },
 
@@ -2529,10 +2537,10 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 Mandatory : (segment: string,DateTime: string ) =>
 ` 
 #Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Perubahan data pelanggan
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Nomor identitas pelanggan baru: 
@@ -2540,6 +2548,8 @@ Perubahan data pelanggan
 4. Foto identitas pelanggan baru : 
 5. Surat pernyataan : 
 6. Validasi tambahan : 
+7. Detail Permasalahan : Perubahan data pelanggan
+8. Solusi : Tiket. Mohon dibantu. tks
 `   
 },
 
@@ -2599,10 +2609,10 @@ Kalo data diatas udah sesuai, silakan konfirmasi kembali agar aku bisa segera ba
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Perubahan data pelanggan pindah tangan 
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Nomor identitas pelanggan lama : 
@@ -2612,6 +2622,8 @@ Perubahan data pelanggan pindah tangan
 6. Foto identitas pelanggan lama : 
 7. Foto identitas pelanggan baru : 
 8.  Surper : 
+9. Detail Permasalahan : Perubahan data pelanggan pindah tangan 
+10. Solusi : Tiket. Mohon dibantu. tks
 `   
 },
 
@@ -2717,10 +2729,10 @@ Aku tunggu datanya ya :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak dapat langganan ZOOM Premium
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Email akun by.U : 
 2. Nomor by.U : xxxxxx
@@ -2729,6 +2741,8 @@ Tidak dapat langganan ZOOM Premium
 5. Tipe topping Zoom yang dibeli : 
 6. Capture SMS dari TSELZOOM : 
 7. Capture halaman profil di aplikasi web ZOOM : 
+8. Detail Permasalahan : Tidak dapat langganan ZOOM Premium
+9. Solusi : Tiket. Mohon dibantu. Tks
 `   
 },
 
@@ -2773,10 +2787,10 @@ c. Nanti akan masuk SMS berupa kode verifikasi untuk konfirmasi aktivasi akun da
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak dapat langganan Netflix
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Email : 
@@ -2786,6 +2800,8 @@ Tidak dapat langganan Netflix
 6. Capture kendala : 
 7. Order detail ID (CXO) (Pengecekan OperatorX) : 
 8. Transaction ID (CXT) (Pengecekan OperatorX) : 
+9. Detail Permasalahan : Tidak dapat langganan Netflix
+10. Solusi: Tiket. Mohon dibantu. tks
 `   
 },
 
@@ -2824,10 +2840,10 @@ Aku tunggu datanya ya :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak dapat langganan Vidio
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Email akun by.U : 
 2. Nomor by.U : xxxxxx
@@ -2837,6 +2853,8 @@ Tidak dapat langganan Vidio
 6. Capture halaman paket subscription di aplikasi Vidio : 
 7. Order detail ID (CXO) (Pengecekan OperatorX) : 
 8. Transaction ID (CXT) (Pengecekan OperatorX) : 
+9. Detail Permasalahan : Tidak dapat langganan Vidio
+10. Solusi: Tiket. Mohon dibantu. tks
 `   
 },
 
@@ -2873,10 +2891,10 @@ Aku tunggu datanya ya :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak Mendapatkan Kuota Birthday Reward
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Akun by.U : 
@@ -2884,6 +2902,8 @@ Tidak Mendapatkan Kuota Birthday Reward
 4. Capture halaman notifikasi di apps by.U : 
 5. Capture halaman paket aktif : 
 6. Hasil pengecekan Add Ons di CRM (berupa text dan tidak boleh printscreen) : 
+7. Detail Permasalahan : Tidak Mendapatkan Kuota Birthday Reward
+8. Solusi: Tiket. Mohon dibantu. tks
 `   
 },
 
@@ -2923,10 +2943,10 @@ Aku tunggu datanya ya :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Masalah Pembelian Kuota Via Tukar Kode Voucher 
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Email akun by.U : 
@@ -2934,10 +2954,12 @@ Masalah Pembelian Kuota Via Tukar Kode Voucher
 4. Kode hasil Gesek Voucher Fisik : 
 5. Serial Number Voucher Fisik : 
 6. Capture keterangan gagal redeem voucher : 
-7. Foto Voucher Fisik : (untuk kendala voucher fisik rusak (nomor voucher tidak terlihat atau hilang)
-8. Order detail ID (CXO) (Pengecekan OperatorX) : 
-9. Transaction ID (CXT) (Pengecekan OperatorX) : 
+7. Foto Voucher Fisik : (bagian depan dan belakang)
+8. Order detail ID (CXO) : 
+9. Transaction ID (CXT): 
 10. Tanggal dan waktu kejadian : 
+11. Detail Permasalahan : Masalah Pembelian Kuota Via Tukar Kode Voucher 
+12. Solusi: Tiket. Mohon dibantu. tks
 `   
 },
 
@@ -3026,9 +3048,10 @@ Solusi : ` Makasih udah nungu. Kak maaf sepertinya ada kendala nih untuk  SIM ca
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan
 
 1. Nomor by.U : xxxxxx
@@ -3065,7 +3088,7 @@ Mandatory :
 
 {
 id: 51,
-case : "SIM card Deactive",
+case : "Un/Binding Email",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
@@ -3074,12 +3097,56 @@ Email by.U : ${EMPTY}
 Waktu Transaksi   :  
 Waktu Kejadian    : ${getCurrentDate()}
 Lokasi Pelanggan  : 
-Detail case :  sim card deactive
-Solusi : info  sim card deactive
+Detail case : Gabisa binding email
+Solusi : minta data
 `,
-Solusi : ` Makasih udah nungu. Kak maaf untuk kendala SIM card nya, aku cek nomor xxxxxx udah gabisa di aktivasi/registrasi karena nomornya udah ga aktif/ga di atifin lebih dari 30 hari dari waktu pembayaran berhasil. Aku saranin beli nomor baru di apps by.U pakai akun baru ya :)
+Solusi : ` Makasih udah nungu. Kak untuk kendala gabisa login ke aplikasi by.U karena masalah emailnya di nomor xxxxxx, boleh infoin data ini ya biar bisa aku proses :
+1. Email baru yang mau digunakan :
+2. Email/akun by.U yang sudah terdaftar: 
+3. Tipe/merek Gadget
+5. Versi OS Gadget
+6. Versi aplikasi by.U
+7. NIK yang terdaftar (untuk ganti email)
+8. screen record Ketika login ke apps/gabisa bindin email
+Kalau gabisa kirim Screen recorder, bisa kirim ke email nindy@byu.id, nanti kalau udah infoin email yang dipakai waktu ngirimnya ya :)
+
+Kalau gatau NIK yang terdaftar boleh infoin salah satu dari data ini : 
+1. Tanggal & Jenis paket terakhir dibeli 
+2. Jumlah pulsa yang dimiliki sekarang 
+4. Nominal Harga paket yang dibeli terakhir 
+5. 5 Transaksi terakhir (minimum 3 transaksi valid)
+6. Tipe dan Merk HP terakhir digunakan
+
+=======unbinding================================
+
+Kak maaf untuk gabisa unbinding email di nomor xxxxxx, boleh infoin data ini ya : 
+1. Email by.U
+2. Tipe/merek Gadget
+3. Versi OS Gadget
+4. Versi aplikasi by.U
+5. Screen record proses unbinding email yang gagal
+Kalau gabisa kirim Screen recorder, bisa kirim ke email nindy@byu.id, nanti kalau udah infoin email yang dipakai waktu ngirimnya ya :)
+
 `,
-Mandatory :``
+Mandatory :(segment: string,DateTime: string ) =>
+`#Pelangganbyu
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
+
+1. Nomor by.U : xxxxxx
+2. Account login : ${EMPTY}
+3. Email/akun yang sudah terdaftar : 
+4. Email by.U yang mau di binding : 
+5. Tipe/merek Gadget : 
+6. Versi OS Gadget : 
+7. Versi aplikasi by.U : 
+7. Screen record proses binding email yang gagal/screen record Ketika login ke apps (untuk kendala tidak bisa binding email diapps) : 
+8. NIK yang terdaftar (untuk ganti email) :
+9. Detail permasalahan : Tidak bisa binding email
+10. Solusi : Tiket. Mohon dibantu. Tks
+`
 },
 
 {
@@ -3157,18 +3224,19 @@ Aku tunggu datanya ya Kak :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Kuota tiba-tiba hilang karena kesalahan by.U
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Email akun by.U : 
 3. Channel Pembayaran : 
 4. Tanggal & Waktu Kejadian : 
 5. Capture Detail Riwayat Transaksi Kuota yang hilang : 
-6. Nama, Jumlah, Masa Aktif Kuota : (Agent yang melakukan pengecekan sendiri)
-7. Detail Kendala : 
+6. Nama, Jumlah, Masa Aktif Kuota : 
+7. Detail Kendala : Kuota tiba-tiba hilang karena kesalahan by.U
+8. Solusi: Tiket. Mohon dibantu. tks
 `
 },
 
@@ -3202,10 +3270,10 @@ Aku tunggu datanya ya Kak :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Email akun by.U : 
@@ -3215,7 +3283,9 @@ u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
 6. Transaction ID (CXT) (Pengecekan OperatorX) : (hasil pengecekan agent) 
 7. Nomor BSS Order ID yang u-coin nya tidak masuk : (hasil pengecekan agent)
 8. Nomor Transaction ID dan waktu transaksi di CRM yang u-coin nya tidak masuk : (hasil pengecekan agent)
-9. Printscreen history u-Coin di LMS : (hasil pengecekan agent)
+9. Printscreen history u-Coin di LMS : 
+10. Detail Permasalahan : u-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil
+11. Solusi: Tiket. Mohon dibantu. tks
 `
 },
 
@@ -3241,21 +3311,8 @@ Solusi : `Makasih udah nunggu. Kak maaf, untuk kendala masalah pemesanan sim car
 
 Kak maaf, untuk aktivasinya kalau Kakak beli di Shopee toko resmi by.U, pastiin waktu beli SIM card nya kasih notes email biar didaftarin akun by.U nya. Kalau Kakak belum kasih notes nya, boleh Kakak hubungi admin by.U di Shopee ya biar bisa di bantu daftarin dulu akun by.U nya. Pastiin emailnya yang belum pernah didaftarin akun by.U sebelumnya ya :)
 `,
-Mandatory : (segment: string,DateTime: string ) =>
-`#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)
-
-1. Nomor by.U : xxxxxx
-2. Email akun by.U : ${EMPTY}
-2. Printscreen bukti bayar yang tertera Invoice dan capture resi di aplikasi e-Commerce :
-3. Printscreen status pengiriman yang tertera resi di aplikasi e-Commerce : (dicek oleh agent)
-4. Capture profil apps : ( yang tertulis email login pelanggan)
-5. Tuliskan alasan tidak ada tombol aktivasi adalah karena alasan :
-6. Email alternatif yang belum terdaftar di akun by.U : 
-7. Order ID CXT/CXO (Pengecekan OperatorX) : 
+Mandatory : () =>
+`
 `
 },
 
@@ -3315,10 +3372,10 @@ Aku tunggu datanya ya Kak :)
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak Mendapatkan Langganan Prime Video
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Email by.U : 
@@ -3328,6 +3385,8 @@ Tidak Mendapatkan Langganan Prime Video
 6. Capture kendala :
 7. Order detail ID (CXO) (Pengecekan OperatorX) :
 8. Transaction ID (CXT) (Pengecekan OperatorX) :
+9. Detail Permasalahan : Tidak Mendapatkan Langganan Prime Video
+11. Solusi: Tiket. Mohon dibantu. tks
 `
 },
 
@@ -3471,10 +3530,10 @@ Jika masih berkendala, boleh infokan beberapa data di bawah ini supaya bisa diba
 `,
 Mandatory : (segment: string,DateTime: string ) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-5G - Gagal Aktivasi Layanan 5G
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Akun by.U :
@@ -3482,6 +3541,8 @@ ${DateTime}
 4. Tanggan dan waktu kejadian :
 5. Tipe HP :
 6. Capture kendala di https://my.telkomsel.com/provisioning/5g :
+7. Detail Permasalahan : 5G - Gagal Aktivasi Layanan 5G
+8. Solusi: Tiket. Mohon dibantu. tks
 `
 },
 
@@ -3569,10 +3630,10 @@ Aku tunggu datanya ya Kak :)
 `,
 Mandatory : (segment:string,DateTime:string)=> 
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Permintaan Hapus Profil eSIM Karena Device Hilang
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Nomor by.U : xxxxxx
 2. Email registrasi by.U : 
@@ -3581,6 +3642,8 @@ Permintaan Hapus Profil eSIM Karena Device Hilang
 5. Foto selfie dengan KTP asli : 
 6. Jenis dan type Device yang hilang : 
 7. Email lain yang bisa dihubungi : 
+8. Detail Permasalahan : Permintaan Hapus Profil eSIM Karena Device Hilang
+9. Solusi: Tiket. Mohon dibantu. tks
 `
 },
 
@@ -3600,7 +3663,7 @@ Solusi : sesuai hasil cca disarankan ganti SIM card
 Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device atau sim card yang digunakan. Jika restart HP tidak menyelesaikan masalah, maka disarankan untuk ajuin ganti SIM card ya :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
-[NO] [byU ${segment}] 
+[NO][byU ${segment}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3660,7 +3723,7 @@ Solusi : sesuai hasil cca disarankan ganti SIM card
 Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device atau sim card yang digunakan. Jika restart HP tidak menyelesaikan masalah, maka disarankan untuk ajuin ganti SIM card ya :) `,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
-[NO] [byU ${segment}] 
+[NO][byU ${segment}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3726,7 +3789,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya 
 8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
-[NO] [byU ${segment}] 
+[NO][byU ${segment}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3793,7 +3856,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari jaringan
 8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
-[NO] [byU ${segment}] 
+[NO][byU ${segment}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3862,7 +3925,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya 
 8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
-[NO] [byU ${segment}] 
+[NO][byU ${segment}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -3927,7 +3990,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya 
 8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
-[NO] [byU ${segment}] 
+[NO][byU ${segment}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -4002,9 +4065,10 @@ Kak aku cek nomor xxxxxx, ada langganan SMS berbayar yang aktif nih. Saat ini ud
 `,
 Mandatory : (segment:string,DateTime:string)=> 
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 Permintaan berhenti layanan SMS Broadcast
 
 1. Email by.U :
@@ -4049,7 +4113,7 @@ Kak maaf, kalau masih berkendala, boleh lengkapin data ini ya :
 8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
-[NO] [byU ${segment}] 
+[NO][byU ${segment}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -4114,7 +4178,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya 
 8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
-[NO] [byU ${segment}] 
+[NO][byU ${segment}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -4171,7 +4235,7 @@ Solusi : sesuai hasil cca disarankan ganti SIM card
 Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx ,ditemukan issue pada device atau sim card yang digunakan. Jika restart HP tidak menyelesaikan masalah, maka disarankan untuk ajuin ganti SIM card ya :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
-[NO] [byU ${segment}] 
+[NO][byU ${segment}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -4237,7 +4301,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari BTS nya 
 8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
-[NO] [byU ${segment}] 
+[NO][byU ${segment}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -4346,7 +4410,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dari jaringan
 8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
-[NO] [byU ${segment}] 
+[NO][byU ${segment}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -4411,7 +4475,7 @@ Solusi : sarankan tunggu sesuai CCA
 Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, saat ini sedang dalam proses peningkatan kualitas jaringan dan memerlukan waktu untuk dapat kembali normal. Mohon dicek secara berkala ya :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
-[NO] [byU ${segment}] 
+[NO][byU ${segment}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -4481,7 +4545,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dikarenakan B
 8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
-[NO] [byU ${segment}] 
+[NO][byU ${segment}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -4547,7 +4611,7 @@ Solusi : `Kak maaf, kalau aku cek di nomor xxxxxx, ada kendala nih dikarenakan B
 8. Capture keterangan internet/sinyal berkendala :)`,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
-[NO] [byU ${segment}] 
+[NO][byU ${segment}] 
 1. Nama Customer : Pelanggan 
 2. MSISDN-A Yang Menghubungi : xxxxxx
 3. MSISDN-B Yang Bermasalah : xxxxxx
@@ -4632,10 +4696,10 @@ Solusi : `Hai, Kak. Maaf banget jadi ga nyaman karena ga dapet SMS link akun You
 `,
 Mandatory : (segment:string, DateTime:string) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Tidak Mendapatkan Langganan Youtube Premium
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Email akun by.u :
 2. Nomor by.U :
@@ -4645,6 +4709,8 @@ Tidak Mendapatkan Langganan Youtube Premium
 6. Capture kendala (disesuaikan dengan kendala pelanggan) :
 7. Order detail ID (CXO) (Pengecekan OperatorX) :
 8. Transaction ID (CXT) (Pengecekan OperatorX) :
+9. Detail Permasalahan : Tidak Mendapatkan Langganan Youtube Premium
+10. Solusi: Tiket. Mohon dibantu. tks
 
 ` 
 },
@@ -4710,10 +4776,10 @@ Oke Kak untuk pengajuan pengirimannya di nomor xxxxxx boleh infoin data ini ya :
 `,
 Mandatory : (segment: string, DateTime:string) =>
 `#Pelangganbyu
-[byU ${segment}] 
-Pelanggan by.U
-${DateTime} 
-Pick Up GRAPARI/indomaret tutup
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor : ${DateTime}
 
 1. Email by.u : ${EMPTY}
 2. Nomor by.U : xxxxxx
@@ -4722,8 +4788,10 @@ Pick Up GRAPARI/indomaret tutup
 5. Nama dan alamat grapari/indomaret: 
 6. Nama dan nomor penerima: 
 7. Alamat lengkap (nama jalan, no rumah, RT/RW, Kelurahan. Kecamatan, kabupaten/kota, patokan lokasi dan kode POS) :
-8. Order detail ID (CXO) (Pengecekan OperatorX) :
-9. Transaction ID (CXT) (Pengecekan OperatorX) :
+8. Order detail ID (CXO) :
+9. Transaction ID (CXT) :
+10. Detail Permasalahan : Pick Up GRAPARI/indomaret tutup/habis 
+11. Solusi: Tiket. Mohon dibantu. tks
 
 ` 
 },
@@ -4795,7 +4863,7 @@ Kak aku cek nomor xxxxxx aktif tapi gapunya kuota roaming. Untuk ketentuan nomor
 `,
 Mandatory : (segment: string ) =>
 `#Pelangganbyu
-[NO][IR][${segment}]
+[NO]IR][${segment}]
 
 1. Nomor by.U : xxxxxx
 2. Email akun by.U : ${EMPTY}
