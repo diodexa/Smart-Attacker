@@ -1,16 +1,15 @@
 import { useEffect, useState } from 'react';
-import List from '../components/SelectItems'
-import { DataMandatory } from '../components/Mandatory';
+import List from '../components/SelectItems';
 import CopyButton from '../components/CopyButton';
 import MandatoryDisplay from '../components/MandatoryDisplay';
-
 import SolusiDisplay from '../components/SolusiDisplay';
 import { getCurrentDateTime } from '../components/DateTime';
+import { getMandatory } from '../components/MandatoryService';
+import type { MandatoryData } from '../components/MandatoryService';
 
 type Props = {
   segment: string;
 };
-
 
 const TiketPages = ({ segment }: Props) => {
   const [selectedId, setSelectedId] = useState<number | null>(() => {
@@ -18,107 +17,226 @@ const TiketPages = ({ segment }: Props) => {
     return saved ? Number(saved) : null;
   });
 
+  
 
   
-  const Mandatory = DataMandatory();
-  const selected = Mandatory.find(item => item.id === selectedId);
 
+  const [mandatory, setMandatory] = useState<MandatoryData[]>([]);
   const [mandatoryText, setMandatoryText] = useState("");
   const [solusiText, setSolusiText] = useState("");
 
-      // useEffect(() => {
-      //   if (selectedId !== null) {
-      //     localStorage.setItem("selectedId", String(selectedId));
-      //   }
-      // }, [selectedId]);
+  const replaceTemplateVariables = (
+  text: string,
+  variables: Record<string, string>
+  ) => {
+    return text.replace(
+      /\$\{([^}]+)\}/g,
+      (_, key) => variables[key.trim()] ?? `\${${key}}`
+    );
+  };
 
-      useEffect(() => {
-        if (!selected) return;
-        localStorage.setItem("selectedId", String(selectedId));
-        const createdDate = getCurrentDateTime();
-        setMandatoryText(
-          typeof selected.Mandatory === "function"? selected.Mandatory(segment, createdDate): selected.Mandatory
-        )
+  // Ambil data dari spreadsheet
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await getMandatory();
+        setMandatory(data);
+      } catch (error) {
+        console.error("Gagal mengambil data mandatory:", error);
+      }
+    };
 
-        const solusi = typeof selected.Solusi ==="function"? selected.Solusi(segment) :selected.Solusi
+    fetchData();
+  }, []);
 
-        const combinedSolusi = [selected.Bracket(segment),solusi].filter(Boolean).join("\n");
-        setSolusiText(combinedSolusi);
-      }, [selectedId,segment]);
+  const selected = mandatory.find(
+    item => item.id === selectedId
+  );
+
+  // Ketika case / segment berubah
+  useEffect(() => {
+    if (!selected) return;
+
+    localStorage.setItem("selectedId", String(selectedId));
+
+    const createdDate = getCurrentDateTime();
+
+    const EMPTY = "\u200B\u200B";
+
+    const variables = {
+      segment,
+      DateTime: createdDate,
+      datetime: createdDate,
+      date: createdDate,
+      EMPTY,
+
+    };
+
+    // =========================
+    // MANDATORY
+    // =========================
+
+    const mandatoryText = replaceTemplateVariables(
+      selected.mandatory,
+      variables
+    );
+
+    setMandatoryText(mandatoryText);
 
 
+    // =========================
+    // SOLUSI
+    // =========================
 
-      useEffect(() => {
-        const handleKeyDown = async (e: KeyboardEvent) => {
-          if (e.ctrlKey && !e.shiftKey && e.code === "Space") {
-            e.preventDefault();
+    const solusi =
+      segment === "Email"
+        ? selected.solusiemail
+        : selected.solusi;
 
-            if (!navigator.clipboard) return;
+    const bracketText = replaceTemplateVariables(
+      selected.bracket,
+      variables
+    );
 
-            const clipboardText = await navigator.clipboard.readText();
+    const solusiTextFinal = replaceTemplateVariables(
+      solusi,
+      variables
+    );
 
-            setMandatoryText(prev =>
-              prev.replace(/xxxxxx/g, clipboardText)
-            );
+    const combinedSolusi = [
+      bracketText,
+      solusiTextFinal,
+    ]
+      .filter(Boolean)
+      .join("\n\n")
 
-            setSolusiText(prev =>
-              prev.replace(/xxxxxx/g, clipboardText)
-            );
-          }
-          
-          if (e.ctrlKey && e.shiftKey && e.code === "Space") {
-            e.preventDefault();
+    setSolusiText(combinedSolusi);
 
-            if (!navigator.clipboard) return;
+  }, [selectedId, segment, selected]);
 
-            const clipboardText = await navigator.clipboard.readText();
 
-            setMandatoryText(prev => {
-              console.log("RAW:", prev);
-              console.log("STRINGIFIED:", JSON.stringify(prev));
+  // =========================
+  // COPY / REPLACE
+  // =========================
 
-              return prev.replace(/\u200B{2}/g, clipboardText);
-            });
-            setSolusiText(prev => {
-              console.log("RAW:", prev);
-              console.log("STRINGIFIED:", JSON.stringify(prev));
+  useEffect(() => {
+    const handleKeyDown = async (e: KeyboardEvent) => {
 
-              return prev.replace(/\u200B{2}/g, clipboardText);
-            });
+      // Ctrl + Space
+      if (
+        e.ctrlKey &&
+        !e.shiftKey &&
+        e.code === "Space"
+      ) {
+        e.preventDefault();
 
-          }
+        if (!navigator.clipboard) return;
 
-        };
+        const clipboardText =
+          await navigator.clipboard.readText();
 
-        window.addEventListener("keydown", handleKeyDown);
-        return () => window.removeEventListener("keydown", handleKeyDown); 
-      }, []);
+        setMandatoryText(prev =>
+          prev.replace(/xxxxxx/g, clipboardText)
+        );
 
-      
+        setSolusiText(prev =>
+          prev.replace(/xxxxxx/g, clipboardText)
+        );
+      }
 
-    return (
-      <div className='flex flex-col w-screen '>
-          <List onSelect={setSelectedId} selectedId={selectedId} />
-          <div className='flex gap-2'>
-            <div className='w-full'>
-                {selected && <CopyButton text={mandatoryText} label='Mandatory' />}
-                <MandatoryDisplay
-                  key={selectedId}         
-                  selectedId={selectedId}
-                  value={mandatoryText}     
-                  onChange={setMandatoryText}
-                />
-            </div>
-            <div className='w-full  '>
-                {selected && <CopyButton text={solusiText} label='Bracket + Solusi' />}
-                <SolusiDisplay 
-                  key={selectedId}         
-                  value={solusiText}     
-                  onChange={setSolusiText}
-                />
-            </div>
-          </div>
+      // Ctrl + Shift + Space
+      if (
+        e.ctrlKey &&
+        e.shiftKey &&
+        e.code === "Space"
+      ) {
+        e.preventDefault();
+
+        if (!navigator.clipboard) return;
+
+        const clipboardText =
+          await navigator.clipboard.readText();
+
+        setMandatoryText(prev =>
+          prev.replace(/\u200B{2}/g, clipboardText)
+        );
+
+        setSolusiText(prev =>
+          prev.replace(/\u200B{2}/g, clipboardText)
+        );
+      }
+    };
+
+    window.addEventListener(
+      "keydown",
+      handleKeyDown
+    );
+
+    return () =>
+      window.removeEventListener(
+        "keydown",
+        handleKeyDown
+      );
+  }, []);
+
+
+  // =========================
+  // RENDER
+  // =========================
+
+
+  return (
+    <div className="flex flex-col w-screen">
+
+      <List
+        onSelect={setSelectedId}
+        selectedId={selectedId}
+      />
+
+      <div className="flex gap-2">
+
+        {/* MANDATORY */}
+        <div className="w-full">
+
+          {selected && (
+            <CopyButton
+              text={mandatoryText}
+              label="Mandatory"
+            />
+          )}
+
+          <MandatoryDisplay
+            key={selectedId}
+            selectedId={selectedId}
+            value={mandatoryText}
+            onChange={setMandatoryText}
+          />
+
+        </div>
+
+
+        {/* SOLUSI */}
+        <div className="w-full">
+
+          {selected && (
+            <CopyButton
+              text={solusiText}
+              label="Bracket + Solusi"
+            />
+          )}
+
+          <SolusiDisplay
+            key={selectedId}
+            value={solusiText}
+            onChange={setSolusiText}
+          />
+
+        </div>
+
       </div>
-    )
-}
-export default TiketPages
+
+    </div>
+  );
+};
+
+export default TiketPages;
