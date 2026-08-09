@@ -2,15 +2,22 @@ import { useEffect, useState } from "react";
 import Select from "react-select";
 import { getMandatory } from "./MandatoryService";
 import type { MandatoryData } from "./MandatoryService";
+import { DataMandatory } from "./Mandatory";
 
 interface Props {
   onSelect: (id: number | null) => void;
   selectedId: number | null;
+  segment: string;
 }
 
-const MandatorySelect = ({ onSelect, selectedId }: Props) => {
+const MandatorySelect = ({
+  onSelect,
+  selectedId,
+  segment,
+}: Props) => {
   const [mandatory, setMandatory] = useState<MandatoryData[]>([]);
 
+  // Data dari spreadsheet
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -26,26 +33,44 @@ const MandatorySelect = ({ onSelect, selectedId }: Props) => {
 
   const normalizeCase = (v?: string) => v ?? "";
 
-  const sortedMandatory = mandatory
-    .slice()
-    .sort((a, b) =>
-      normalizeCase(a.case)
-        .toLocaleLowerCase()
-        .localeCompare(
-          normalizeCase(b.case).toLocaleLowerCase()
-        )
-    );
-
-  const options = sortedMandatory.map(item => ({
-    value: item.id,
-    label: item.case,
-  }));
+  // Kalau Email → ambil case dari mandatory.tsx
+  // Selain Email → ambil case dari spreadsheet
+  const options =
+    segment === "Email"
+      ? DataMandatory()
+          .slice()
+          .sort((a, b) =>
+            normalizeCase(a.case)
+              .toLocaleLowerCase()
+              .localeCompare(
+                normalizeCase(b.case).toLocaleLowerCase()
+              )
+          )
+          .map(item => ({
+            value: item.id,
+            label: item.case,
+          }))
+      : mandatory
+          .slice()
+          .sort((a, b) =>
+            normalizeCase(a.case)
+              .toLocaleLowerCase()
+              .localeCompare(
+                normalizeCase(b.case).toLocaleLowerCase()
+              )
+          )
+          .map(item => ({
+            value: item.id,
+            label: item.case,
+          }));
 
   return (
     <Select
       options={options}
       className="w-full listText"
-      onChange={(option) => onSelect(option?.value ?? null)}
+      onChange={(option) =>
+        onSelect(option?.value ?? null)
+      }
       value={
         options.find(
           option => option.value === selectedId

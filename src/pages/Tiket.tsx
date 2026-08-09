@@ -6,6 +6,8 @@ import SolusiDisplay from '../components/SolusiDisplay';
 import { getCurrentDateTime } from '../components/DateTime';
 import { getMandatory } from '../components/MandatoryService';
 import type { MandatoryData } from '../components/MandatoryService';
+import { DataMandatory } from '../components/Mandatory';
+
 
 type Props = {
   segment: string;
@@ -17,7 +19,7 @@ const TiketPages = ({ segment }: Props) => {
     return saved ? Number(saved) : null;
   });
 
-  
+  const oldMandatory = DataMandatory();
 
   
 
@@ -49,70 +51,95 @@ const TiketPages = ({ segment }: Props) => {
     fetchData();
   }, []);
 
-  const selected = mandatory.find(
-    item => item.id === selectedId
-  );
+  const selected = mandatory.find(item => item.id === selectedId);
+  const selectedOld = oldMandatory.find(item => item.id === selectedId);
 
   // Ketika case / segment berubah
   useEffect(() => {
-    if (!selected) return;
+  if (!selectedId) return;
 
-    localStorage.setItem("selectedId", String(selectedId));
+  localStorage.setItem("selectedId", String(selectedId));
 
-    const createdDate = getCurrentDateTime();
+  const createdDate = getCurrentDateTime();
+  const EMPTY = "\u200B\u200B";
 
-    const EMPTY = "\u200B\u200B";
+  const variables = {
+    segment,
+    DateTime: createdDate,
+    datetime: createdDate,
+    date: createdDate,
+    EMPTY,
+  };
 
-    const variables = {
-      segment,
-      DateTime: createdDate,
-      datetime: createdDate,
-      date: createdDate,
-      EMPTY,
+  // =========================
+  // SEGMENT EMAIL
+  // AMBIL DARI mandatory.tsx
+  // =========================
 
-    };
+  if (segment === "Email") {
+    if (!selectedOld) return;
 
-    // =========================
-    // MANDATORY
-    // =========================
-
-    const mandatoryText = replaceTemplateVariables(
-      selected.mandatory,
-      variables
-    );
+    const mandatoryText =
+      typeof selectedOld.Mandatory === "function"
+        ? selectedOld.Mandatory(segment, createdDate)
+        : selectedOld.Mandatory;
 
     setMandatoryText(mandatoryText);
 
-
-    // =========================
-    // SOLUSI
-    // =========================
-
     const solusi =
-      segment === "Email"
-        ? selected.solusiemail
-        : selected.solusi;
+      typeof selectedOld.Solusi === "function"
+        ? selectedOld.Solusi(segment)
+        : selectedOld.Solusi;
 
-    const bracketText = replaceTemplateVariables(
-      selected.bracket,
-      variables
+    const bracket =
+      typeof selectedOld.Bracket === "function"
+        ? selectedOld.Bracket(segment)
+        : selectedOld.Bracket;
+
+    setSolusiText(
+      [bracket, solusi]
+        .filter(Boolean)
+        .join("\n\n")
     );
 
-    const solusiTextFinal = replaceTemplateVariables(
-      solusi,
-      variables
-    );
+    return;
+  }
 
-    const combinedSolusi = [
-      bracketText,
-      solusiTextFinal,
-    ]
+  // =========================
+  // SEGMENT SELAIN EMAIL
+  // AMBIL DARI SPREADSHEET
+  // =========================
+
+  if (!selected) return;
+
+  const mandatoryText = replaceTemplateVariables(
+    selected.mandatory,
+    variables
+  );
+
+  setMandatoryText(mandatoryText);
+
+  const bracketText = replaceTemplateVariables(
+    selected.bracket,
+    variables
+  );
+
+  const solusiTextFinal = replaceTemplateVariables(
+    selected.solusi,
+    variables
+  );
+
+  setSolusiText(
+    [bracketText, solusiTextFinal]
       .filter(Boolean)
       .join("\n\n")
+  );
 
-    setSolusiText(combinedSolusi);
-
-  }, [selectedId, segment, selected]);
+}, [
+  selectedId,
+  segment,
+  mandatory,
+]);
 
 
   // =========================
@@ -191,6 +218,7 @@ const TiketPages = ({ segment }: Props) => {
       <List
         onSelect={setSelectedId}
         selectedId={selectedId}
+        segment={segment}
       />
 
       <div className="flex gap-2">
