@@ -6,7 +6,7 @@ import SolusiDisplay from '../components/SolusiDisplay';
 import { getCurrentDateTime } from '../components/DateTime';
 import { getMandatory } from '../components/MandatoryService';
 import type { MandatoryData } from '../components/MandatoryService';
-import { DataMandatory } from '../components/Mandatory';
+// import { DataMandatory } from '../components/Mandatory';
 
 
 type Props = {
@@ -19,7 +19,7 @@ const TiketPages = ({ segment }: Props) => {
     return saved ? Number(saved) : null;
   });
 
-  const oldMandatory = DataMandatory();
+  // const oldMandatory = DataMandatory();
 
   
 
@@ -52,7 +52,7 @@ const TiketPages = ({ segment }: Props) => {
   }, []);
 
   const selected = mandatory.find(item => item.id === selectedId);
-  const selectedOld = oldMandatory.find(item => item.id === selectedId);
+  // const selectedOld = oldMandatory.find(item => item.id === selectedId);
 
   // Ketika case / segment berubah
   useEffect(() => {
@@ -76,34 +76,34 @@ const TiketPages = ({ segment }: Props) => {
   // AMBIL DARI mandatory.tsx
   // =========================
 
-  if (segment === "Email") {
-    if (!selectedOld) return;
+  // if (segment === "Email") {
+  //   if (!selectedOld) return;
 
-    const mandatoryText =
-      typeof selectedOld.Mandatory === "function"
-        ? selectedOld.Mandatory(segment, createdDate)
-        : selectedOld.Mandatory;
+  //   const mandatoryText =
+  //     typeof selectedOld.Mandatory === "function"
+  //       ? selectedOld.Mandatory(segment, createdDate)
+  //       : selectedOld.Mandatory;
 
-    setMandatoryText(mandatoryText);
+  //   setMandatoryText(mandatoryText);
 
-    const solusi =
-      typeof selectedOld.Solusi === "function"
-        ? selectedOld.Solusi(segment)
-        : selectedOld.Solusi;
+  //   const solusi =
+  //     typeof selectedOld.Solusi === "function"
+  //       ? selectedOld.Solusi(segment)
+  //       : selectedOld.Solusi;
 
-    const bracket =
-      typeof selectedOld.Bracket === "function"
-        ? selectedOld.Bracket(segment)
-        : selectedOld.Bracket;
+  //   const bracket =
+  //     typeof selectedOld.Bracket === "function"
+  //       ? selectedOld.Bracket(segment)
+  //       : selectedOld.Bracket;
 
-    setSolusiText(
-      [bracket, solusi]
-        .filter(Boolean)
-        .join("\n\n")
-    );
+  //   setSolusiText(
+  //     [bracket, solusi]
+  //       .filter(Boolean)
+  //       .join("\n\n")
+  //   );
 
-    return;
-  }
+  //   return;
+  // }
 
   // =========================
   // SEGMENT SELAIN EMAIL
@@ -218,7 +218,7 @@ const TiketPages = ({ segment }: Props) => {
       <List
         onSelect={setSelectedId}
         selectedId={selectedId}
-        segment={segment}
+        
       />
 
       <div className="flex gap-2">

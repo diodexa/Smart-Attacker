@@ -18,7 +18,7 @@ export default function App() {
   }, [segment]);
 
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col text-xs ">
       <GlobalShortcut/>
       {/* TAB BUTTONS */}
       <div className="flex gap-2 p-2 border-b">
