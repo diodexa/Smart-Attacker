@@ -31,17 +31,17 @@ export default function App() {
         </button>
 
         <button
-          className={`border px-2 ${activeTab === "tiket" && "bg-yellow-200 text-black"}`}
-          onClick={() => setActiveTab("tiket")}
-        >
-          Template 1
-        </button>
-
-        <button
           className={`border px-2 ${activeTab === "tiketManual" && "bg-yellow-200 text-black"}`}
           onClick={() => setActiveTab("tiketManual")}
         >
-          Template 2
+          Mandatory 1
+        </button>
+
+        <button
+          className={`border px-2 ${activeTab === "tiket" && "bg-yellow-200 text-black"}`}
+          onClick={() => setActiveTab("tiket")}
+        >
+          Mandatory 2
         </button>
 
         <button
