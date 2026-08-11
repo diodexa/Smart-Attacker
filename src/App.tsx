@@ -1,11 +1,12 @@
 import {  useEffect, useState } from "react";
-import TiketPages from "./pages/Tiket";
+import TiketPages from "./pages/TiketAPI";
 import TemplatePages from "./pages/Template";
 import DarkMode from "./components/ButtonDarkLight";
 import NotePages from "./pages/Note";
 import GlobalShortcut from "./components/GlobalShortcut";
 import SegmentList from "./components/SegmentList";
 import { ButtonCopyDummy } from "./components/ButtonCopyDummy";
+import TiketPagesManual from "./pages/Tiket";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState("notepad");
@@ -33,8 +34,16 @@ export default function App() {
           className={`border px-2 ${activeTab === "tiket" && "bg-yellow-200 text-black"}`}
           onClick={() => setActiveTab("tiket")}
         >
-          Mandatory
+          Template 1
         </button>
+
+        <button
+          className={`border px-2 ${activeTab === "tiketManual" && "bg-yellow-200 text-black"}`}
+          onClick={() => setActiveTab("tiketManual")}
+        >
+          Template 2
+        </button>
+
         <button
           className={`border px-2 ${activeTab === "Template" && "bg-yellow-200 text-black"}`}
           onClick={() => setActiveTab("Template")}
@@ -64,6 +73,10 @@ export default function App() {
 
         {activeTab === "tiket" && (
           <TiketPages segment={segment} />
+        )}
+        
+        {activeTab === "tiketManual" && (
+          <TiketPagesManual segment={segment} />
         )}
         {activeTab === "Template" && (
           <TemplatePages />

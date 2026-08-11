@@ -1,146 +1,83 @@
-import { useEffect, useState } from 'react';
-import List from '../components/SelectItems';
-import CopyButton from '../components/CopyButton';
-import MandatoryDisplay from '../components/MandatoryDisplay';
-import SolusiDisplay from '../components/SolusiDisplay';
-import { getCurrentDateTime } from '../components/DateTime';
-import { getMandatory } from '../components/MandatoryService';
-import type { MandatoryData } from '../components/MandatoryService';
-// import { DataMandatory } from '../components/Mandatory';
-
+import { useEffect, useState } from "react";
+import List from "../components/SelectItems";
+import { DataMandatory } from "../components/Mandatory";
+import CopyButton from "../components/CopyButton";
+import MandatoryDisplay from "../components/MandatoryDisplay";
+import SolusiDisplay from "../components/SolusiDisplay";
+import { getCurrentDateTime } from "../components/DateTime";
 
 type Props = {
   segment: string;
 };
 
-const TiketPages = ({ segment }: Props) => {
+const TiketPagesManual = ({ segment }: Props) => {
   const [selectedId, setSelectedId] = useState<number | null>(() => {
     const saved = localStorage.getItem("selectedId");
     return saved ? Number(saved) : null;
   });
 
-  // const oldMandatory = DataMandatory();
-
-  
-
-  const [mandatory, setMandatory] = useState<MandatoryData[]>([]);
   const [mandatoryText, setMandatoryText] = useState("");
   const [solusiText, setSolusiText] = useState("");
 
-  const replaceTemplateVariables = (
-  text: string,
-  variables: Record<string, string>
-  ) => {
-    return text.replace(
-      /\$\{([^}]+)\}/g,
-      (_, key) => variables[key.trim()] ?? `\${${key}}`
+  // =========================
+  // DATA DARI MANDATORY.TSX
+  // =========================
+
+  const mandatory = DataMandatory();
+
+  const selected = mandatory.find(
+    (item) => item.id === selectedId
+  );
+
+  // =========================
+  // UPDATE TEMPLATE
+  // =========================
+
+  useEffect(() => {
+    if (!selected) return;
+
+    localStorage.setItem(
+      "selectedId",
+      String(selectedId)
     );
-  };
 
-  // Ambil data dari spreadsheet
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const data = await getMandatory();
-        setMandatory(data);
-      } catch (error) {
-        console.error("Gagal mengambil data mandatory:", error);
-      }
-    };
+    const createdDate = getCurrentDateTime();
 
-    fetchData();
-  }, []);
+    // =========================
+    // MANDATORY
+    // =========================
 
-  const selected = mandatory.find(item => item.id === selectedId);
-  // const selectedOld = oldMandatory.find(item => item.id === selectedId);
+    const mandatoryResult =
+      typeof selected.Mandatory === "function"
+        ? selected.Mandatory(segment, createdDate)
+        : selected.Mandatory;
 
-  // Ketika case / segment berubah
-  useEffect(() => {
-  if (!selectedId) return;
+    setMandatoryText(mandatoryResult);
 
-  localStorage.setItem("selectedId", String(selectedId));
+    // =========================
+    // SOLUSI
+    // =========================
 
-  const createdDate = getCurrentDateTime();
-  const EMPTY = "\u200B\u200B";
+    const solusi =
+      typeof selected.Solusi === "function"
+        ? selected.Solusi(segment)
+        : selected.Solusi;
 
-  const variables = {
-    segment,
-    DateTime: createdDate,
-    datetime: createdDate,
-    date: createdDate,
-    EMPTY,
-  };
+    const bracket =
+      typeof selected.Bracket === "function"
+        ? selected.Bracket(segment)
+        : selected.Bracket;
 
-  // =========================
-  // SEGMENT EMAIL
-  // AMBIL DARI mandatory.tsx
-  // =========================
-
-  // if (segment === "Email") {
-  //   if (!selectedOld) return;
-
-  //   const mandatoryText =
-  //     typeof selectedOld.Mandatory === "function"
-  //       ? selectedOld.Mandatory(segment, createdDate)
-  //       : selectedOld.Mandatory;
-
-  //   setMandatoryText(mandatoryText);
-
-  //   const solusi =
-  //     typeof selectedOld.Solusi === "function"
-  //       ? selectedOld.Solusi(segment)
-  //       : selectedOld.Solusi;
-
-  //   const bracket =
-  //     typeof selectedOld.Bracket === "function"
-  //       ? selectedOld.Bracket(segment)
-  //       : selectedOld.Bracket;
-
-  //   setSolusiText(
-  //     [bracket, solusi]
-  //       .filter(Boolean)
-  //       .join("\n\n")
-  //   );
-
-  //   return;
-  // }
-
-  // =========================
-  // SEGMENT SELAIN EMAIL
-  // AMBIL DARI SPREADSHEET
-  // =========================
-
-  if (!selected) return;
-
-  const mandatoryText = replaceTemplateVariables(
-    selected.mandatory,
-    variables
-  );
-
-  setMandatoryText(mandatoryText);
-
-  const bracketText = replaceTemplateVariables(
-    selected.bracket,
-    variables
-  );
-
-  const solusiTextFinal = replaceTemplateVariables(
-    selected.solusi,
-    variables
-  );
-
-  setSolusiText(
-    [bracketText, solusiTextFinal]
+    const combinedSolusi = [
+      bracket,
+      solusi,
+    ]
       .filter(Boolean)
-      .join("\n\n")
-  );
+      .join("\n\n");
 
-}, [
-  selectedId,
-  segment,
-  mandatory,
-]);
+    setSolusiText(combinedSolusi);
 
+  }, [selectedId, segment]);
 
   // =========================
   // COPY / REPLACE
@@ -162,12 +99,18 @@ const TiketPages = ({ segment }: Props) => {
         const clipboardText =
           await navigator.clipboard.readText();
 
-        setMandatoryText(prev =>
-          prev.replace(/xxxxxx/g, clipboardText)
+        setMandatoryText((prev) =>
+          prev.replace(
+            /xxxxxx/g,
+            clipboardText
+          )
         );
 
-        setSolusiText(prev =>
-          prev.replace(/xxxxxx/g, clipboardText)
+        setSolusiText((prev) =>
+          prev.replace(
+            /xxxxxx/g,
+            clipboardText
+          )
         );
       }
 
@@ -184,12 +127,18 @@ const TiketPages = ({ segment }: Props) => {
         const clipboardText =
           await navigator.clipboard.readText();
 
-        setMandatoryText(prev =>
-          prev.replace(/\u200B{2}/g, clipboardText)
+        setMandatoryText((prev) =>
+          prev.replace(
+            /\u200B{2}/g,
+            clipboardText
+          )
         );
 
-        setSolusiText(prev =>
-          prev.replace(/\u200B{2}/g, clipboardText)
+        setSolusiText((prev) =>
+          prev.replace(
+            /\u200B{2}/g,
+            clipboardText
+          )
         );
       }
     };
@@ -199,18 +148,18 @@ const TiketPages = ({ segment }: Props) => {
       handleKeyDown
     );
 
-    return () =>
+    return () => {
       window.removeEventListener(
         "keydown",
         handleKeyDown
       );
-  }, []);
+    };
 
+  }, []);
 
   // =========================
   // RENDER
   // =========================
-
 
   return (
     <div className="flex flex-col w-screen">
@@ -218,7 +167,6 @@ const TiketPages = ({ segment }: Props) => {
       <List
         onSelect={setSelectedId}
         selectedId={selectedId}
-        
       />
 
       <div className="flex gap-2">
@@ -241,7 +189,6 @@ const TiketPages = ({ segment }: Props) => {
           />
 
         </div>
-
 
         {/* SOLUSI */}
         <div className="w-full">
@@ -267,4 +214,4 @@ const TiketPages = ({ segment }: Props) => {
   );
 };
 
-export default TiketPages;
+export default TiketPagesManual;

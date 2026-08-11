@@ -1,5 +1,7 @@
+import { useEffect, useState } from "react";
 import Select from "react-select";
-import { DataMandatory } from "./Mandatory";
+import { getMandatory } from "./MandatoryService";
+import type { MandatoryData } from "./MandatoryService";
 
 interface Props {
   onSelect: (id: number | null) => void;
@@ -10,10 +12,24 @@ const MandatorySelect = ({
   onSelect,
   selectedId,
 }: Props) => {
+  const [mandatory, setMandatory] = useState<MandatoryData[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await getMandatory();
+        setMandatory(data);
+      } catch (error) {
+        console.error("Gagal mengambil data mandatory:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const normalizeCase = (v?: string) => v ?? "";
 
-  const mandatory = DataMandatory()
+  const sortedMandatory = mandatory
     .slice()
     .sort((a, b) =>
       normalizeCase(a.case)
@@ -23,7 +39,7 @@ const MandatorySelect = ({
         )
     );
 
-  const options = mandatory.map((item) => ({
+  const options = sortedMandatory.map((item) => ({
     value: item.id,
     label: item.case,
   }));
@@ -32,17 +48,12 @@ const MandatorySelect = ({
     <Select
       options={options}
       className="w-full listText"
-
-      onChange={(option) =>
-        onSelect(option?.value ?? null)
-      }
-
+      onChange={(option) => onSelect(option?.value ?? null)}
       value={
         options.find(
           (option) => option.value === selectedId
         ) || null
       }
-
       styles={{
         control: (base) => ({
           ...base,

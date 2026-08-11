@@ -1636,33 +1636,67 @@ Detail case : cara aktivasi sim card
 Solusi : info cara aktivasi di apps
 `,
 Solusi : (segment: string) => segment ==='Email' ? 
-`Hi, Kak . Saat ini udah terhubung dengan Nindy. Kak kalau nomornya beli di apps by.U, aku bantu infoin untuk cara aktivasinya Kakak bisa coba cara berikut ya Kak:
-1. Buka apps, lalu login dengan menggunakan akun yang digunakan pada saat pemesanan kartu by.U > klik tombol aktifin SIM Card,
-2. Pastiin SIM Card di HP hanya ada SIM by.U,
-3. Pastiin settingan HP jaringan internet terkoneksi ke jaringan by.U,
-4. Saat masukkan NIK dan No.KK pastikan sudah sesuai, cek secara manual kembali ya.
-5. Pastiin saat masukkan NIK dan no.KK pakai jaringan by.U aja yang ingin di aktivasi ya
-Semoga berhasil ya Kak, kalau berkendala bisa Kakak coba aktivasi via web byu.id/aktivasi dan bisa gunakan jaringan lain untuk perbandingan ya Kak.
-` :
-`Maaf udah bikin kakak ngga nyaman, buat aktivasi SIM Card by.U jika kakak membeli di apps by.U, silakan Kakak lakukan melalui aplikasi by.U. Pastiin udah login menggunakan akun email/facebook/nomor yang didaftarin saat pembelian SIM Card diawal lalu ikutin langkah berikut:
-- Sudah login menggunakan email/facebook yang didaftakan saat pembelian SIM Card by.U
-- Matikan WI-fi, cabut semua SIM Card dan masukan SIM Card by.U di SIM1 (Di HP hanya ada SIM Card by.U)
-- Nyalakan mobile data dan lakukan aktivasi kembali
-- Harusnya secara otomatis akan masuk page daftar NIK NOKK
-- Sewaktu memasukkan NIK NOKK, mohon memasukkan NIK NOKK secara manual, tidak perlu pakai scan. Pastikan datanya benar
-Kalo sudah dipastikan sesuai prosedur dan masih berkendala boleh infokan beberapa data berikut yaa :
-- Nomor by.U : 
-- Email by.U :
-- NIK dan Nomor KK :
-- Capture keterangan gagal aktivasi pada apps :
-- Serial Number yang ada dibelakang cangkang/starterpack SIM Card by.U (076XXX atau 006XXX)
+`Hi, Kak . Untuk registrasi/aktivasi nomornya kakak bisa ikuti panduan berikut :
 
-Namun jika kakak membeli di outlet atau konter aku saranin kakak melakukan aktivasi melalui SMS ketik REG NIK#NOKK# kirim ke 4444 ya kak. Jika ada kendala kakak bantu infoin ke aku data berikut :
-- Nomor by.U :  
-- Capture berhasil aktivasi via SMS
-- NIK dan NOKK
-- CP dan Email yang bisa dihubungi
-- SN barcode yang ada di cangkang SIM Card`,
+Pembelian SIM Card via aplikasi by.U atau web. Bisa ikuti cara berikut ya:
+1. Aktivasi bisa via aplikasi by.U atau web byu.id/aktivasi
+2. Login ke akun yang terdaftar, lalu pilih menu Aktivasi SIM Card.
+3. Siapkan data yang dibutuhkan, lalu klik Lanjut Aktivasi.
+   Kalau masih di bawah 17 tahun, ikuti petunjuk yang ada ya! Untuk selfie bisa ganti dengan selfie orang tua/wali kamu.
+4. Isi seluruh data yang diminta.
+5. Pastikan semua data sudah benar.
+6. Klik Submit untuk konfirmasi aktivasi.
+7. Yeay! Verifikasi berhasil. Nomor by.U kamu sekarang sudah aktif dan siap digunakan.
+
+Pembelian SIM Card di outlet dengan nomor dan paket yang sudah ada. Bisa ikuti cara berikut ya:
+1. Aktivasi bisa via aplikasi by.U atau web byu.id/registrasi atau tsel.id/registrasi
+2. Masukkan nomor by.U di menu aktivasi, lalu minta kode OTP
+3. Masukkan kode OTP yang diterima melalui SMS.
+4. Siapkan data yang dibutuhkan, lalu klik Lanjut Aktivasi.
+   Kalau masih di bawah 17 tahun, ikuti petunjuk yang ada ya! Untuk selfie bisa ganti dengan selfie orang tua/wali kamu.
+5. Isi seluruh data yang diminta.
+6. Pastikan semua data sudah benar.
+7. Klik Submit untuk konfirmasi aktivasi.
+8. Yeay! Verifikasi berhasil. Nomor by.U kamu sekarang sudah aktif dan siap digunakan. 
+
+Klo masih terkendala, Kakak bisa infoin aku data ini biar bisa aku bantu cek lebih lanjut :
+1. Nomor by.U :
+2. Email akun by.U :
+3. Nomor Identitas KTP valid :
+4. Nomor Kartu Keluarga : 
+5. Serial Number di cangkang SIM Card :
+6. CP dan email yang bisa dihubungi 😂
+` :
+`Untuk registrasi/aktivasi nomornya kakak bisa ikuti panduan berikut :
+
+Pembelian SIM Card via aplikasi by.U atau web. Bisa ikuti cara berikut ya:
+1. Aktivasi bisa via aplikasi by.U atau web byu.id/aktivasi
+2. Login ke akun yang terdaftar, lalu pilih menu Aktivasi SIM Card.
+3. Siapkan data yang dibutuhkan, lalu klik Lanjut Aktivasi.
+   Kalau masih di bawah 17 tahun, ikuti petunjuk yang ada ya! Untuk selfie bisa ganti dengan selfie orang tua/wali kamu.
+4. Isi seluruh data yang diminta.
+5. Pastikan semua data sudah benar.
+6. Klik Submit untuk konfirmasi aktivasi.
+7. Yeay! Verifikasi berhasil. Nomor by.U kamu sekarang sudah aktif dan siap digunakan.
+
+Pembelian SIM Card di outlet dengan nomor dan paket yang sudah ada. Bisa ikuti cara berikut ya:
+1. Aktivasi bisa via aplikasi by.U atau web byu.id/registrasi atau tsel.id/registrasi
+2. Masukkan nomor by.U di menu aktivasi, lalu minta kode OTP
+3. Masukkan kode OTP yang diterima melalui SMS.
+4. Siapkan data yang dibutuhkan, lalu klik Lanjut Aktivasi.
+   Kalau masih di bawah 17 tahun, ikuti petunjuk yang ada ya! Untuk selfie bisa ganti dengan selfie orang tua/wali kamu.
+5. Isi seluruh data yang diminta.
+6. Pastikan semua data sudah benar.
+7. Klik Submit untuk konfirmasi aktivasi.
+8. Yeay! Verifikasi berhasil. Nomor by.U kamu sekarang sudah aktif dan siap digunakan. 
+
+Klo masih terkendala, Kakak bisa infoin aku data ini biar bisa aku bantu cek lebih lanjut :
+1. Nomor by.U :
+2. Email akun by.U :
+3. Nomor Identitas KTP valid :
+4. Nomor Kartu Keluarga : 
+5. Serial Number di cangkang SIM Card :
+6. CP dan email yang bisa dihubungi 😂`,
 Mandatory : `
 `   
 },
