@@ -10,6 +10,9 @@ case : "Internet Lambat/Tidak bisa internet",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -126,6 +129,9 @@ case : "Tidak bisa aktivasi Error Lain",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -183,6 +189,9 @@ case : "Bugs Lain",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -270,6 +279,9 @@ case : "Bugs Ganti Sim Card",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -330,6 +342,9 @@ case : "Tidak bisa Kirim/Terima SMS",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -458,6 +473,9 @@ case : "Panggilan Telepon Masuk / Telepon Keluar",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -703,6 +721,9 @@ case : "Tarif/harga layanan Google",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -737,6 +758,9 @@ case : "Unreg hapus NIK",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -829,6 +853,9 @@ case : "Unreg hapus NIK lupa nomor",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -864,6 +891,9 @@ case : "Gagal Aktivasi eSIM Account Status Tidak Sesuai",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -915,6 +945,9 @@ case : "Sinyal lemah/tidak stabil/Tidak ada sinyal",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -1035,6 +1068,9 @@ case : "Ganti SIM Card active",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -1141,6 +1177,9 @@ case : "Miskoordinasi JNE (AWB)",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -1194,6 +1233,9 @@ case : "Miskoordinasi JNE ",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -1278,6 +1320,9 @@ case : "Penyalahgunaan NIK ",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -1330,7 +1375,10 @@ id: 17,
 case : "Pembelian paket Irenew virtual account Unpaid ",
 
 Bracket : (segment: string) =>`#Pelangganbyu
-[byU ${segment}] 
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()} 
 ID Omnix : #
 Nama Pelanggan : Pelanggan 
 Tanggal lapor : ${getCurrentDate()} 
@@ -1363,6 +1411,9 @@ case : "Permintaan Refund karena kesalahan sistem ",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -1397,6 +1448,9 @@ case : "Tidak Mendapatkan Kuota Monthversary  ",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -1447,6 +1501,9 @@ case : "SMS - Gagal Aktivasi M-Banking ",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -1500,7 +1557,10 @@ id: 21,
 case : "Pembelian paket IRENEW OVO/DANA/ShopeePay/lainnya ",
 
 Bracket : (segment: string) =>`#Pelangganbyu
-[byU ${segment}] 
+[byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()} 
 ID Omnix : #
 Nama Pelanggan : Pelanggan
 Tanggal lapor : ${getCurrentDate()} 
@@ -1567,6 +1627,9 @@ case : "Tidak Bisa Aktivasi SIM Card Legacy ",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -1627,6 +1690,9 @@ case : "Cara Aktivasi SIM card  ",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -1707,6 +1773,9 @@ case : "Tidak dapat langganan weTV",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -1758,6 +1827,9 @@ case : "Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy (indoma
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -1815,6 +1887,9 @@ case : "Verifikasi 2 langkah karena ga bisa login email/gmail ",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -1846,6 +1921,9 @@ case : "Ketidaksesuaian Penggunaan Kuota ",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -1907,6 +1985,9 @@ case : "Tidak bisa login dengan Nomor BYU / terima kode OTP pakai nomor by.U",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -1946,6 +2027,9 @@ case : "Tidak Mendapatkan Voucher Non-Telco uCoin",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -1998,6 +2082,9 @@ case : "Pergantian SIM Card Legacy ditolak GraPARI",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2064,6 +2151,9 @@ case : "Esim Sinyal hilang",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2123,6 +2213,9 @@ case : "eSIM barcode/QR tidak tersimpan ",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2175,6 +2268,9 @@ case : "Tidak bisa aktivasi eSIM issue NIK Nokk",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2229,6 +2325,9 @@ case : "Keluhan Tidak Bisa Akses Internet di Luar Negeri Roaming",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2319,6 +2418,9 @@ case : "Pulsa berkurang tiba-tiba",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2368,6 +2470,9 @@ case : "Tidak bisa aktivasi inject paket",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2388,6 +2493,9 @@ case : "Tidak bisa aktivasi NIK invalid Dukcapil/Disdukcapil",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2440,6 +2548,9 @@ case : "Tidak bisa aktivasi exceed limit (udah 3 kali percobaan)",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2458,6 +2569,9 @@ case : "Tidak bisa aktivasi maximum NIK",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2509,6 +2623,9 @@ case : "Perubahan Data Pelanggan",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2593,6 +2710,9 @@ case : "Perubahan Data pindah tangan (pindah tangan)",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2667,6 +2787,9 @@ case : "PUK",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2732,6 +2855,9 @@ case : "Tidak dapat langganan ZOOM Premium",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2786,6 +2912,9 @@ case : "Tidak dapat langganan Netflix",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2845,6 +2974,9 @@ case : "Tidak dapat langganan Vidio",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2898,6 +3030,9 @@ case : "Tidak dapat kuota Birthday reward",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -2947,6 +3082,9 @@ case : "IRENEW Voucher fisik",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3067,6 +3205,9 @@ case : "SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan / Gagal pairing",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3099,6 +3240,9 @@ id: 50,
 case : " greeting",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3126,6 +3270,9 @@ case : "Un/Binding Email",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3189,6 +3336,9 @@ case : "Pulsa terpotong karena SMS dari luar negeri",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3208,6 +3358,9 @@ case : "SIM card tidak terdeteksi",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3232,6 +3385,9 @@ case : "Kuota tiba-tiba hilang karena kesalahan by.U",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3280,6 +3436,9 @@ case : "U-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : 
 Waktu Transaksi   :  
@@ -3329,6 +3488,9 @@ case : "Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tikt
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3356,6 +3518,9 @@ case : " transfer pulsa",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3378,6 +3543,9 @@ case : "Tidak Mendapatkan Langganan Prime Video",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3430,6 +3598,9 @@ case : "cek masa aktif",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3452,6 +3623,9 @@ case : "Info Paket/ Tarif Harga paket berubah/jadi mahal/promo",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3477,6 +3651,9 @@ case : "Cara pasang eSIM",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3532,6 +3709,9 @@ case : "Gagal Registrasi 5g",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3586,6 +3766,9 @@ case : "Cek Tiket/Ticket",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3609,6 +3792,9 @@ case : "Request bikin/buat nomor 4 digit/angka",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3634,6 +3820,9 @@ id: 65,
 case : "Permintaan Hapus Profil eSIM Karena Device Hilang",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3686,6 +3875,9 @@ id: 66,
 case : "CCA UE_Handset_Data_Setting_Off",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3746,6 +3938,9 @@ id: 67,
 case : "CCA UE_Handset_Problem_4G",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3804,6 +3999,9 @@ id: 68,
 case : "CCA Radio_lambat",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3871,6 +4069,9 @@ id: 69,
 case : "CCA Neighbor_BTS_Problem",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -3940,6 +4141,9 @@ id: 70,
 case : "CCA Kapasitas_jaringan",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4005,6 +4209,9 @@ id: 71,
 case : "CCA Sinyal_tidak_stabil",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4070,6 +4277,9 @@ id: 72,
 case : "SMS broadcast",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4118,6 +4328,9 @@ id: 73,
 case : "CCA Layanan_data_tidak_tersedia",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4193,6 +4406,9 @@ id: 74,
 case : "CCA Kendala_sinyal_4G",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4258,6 +4474,9 @@ id: 75,
 case : "CCA UE_Handset_tidak_connect_ke_network",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4316,6 +4535,9 @@ id: 76,
 case : "CCA Network_browsing_lambat",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4381,6 +4603,9 @@ id: 77,
 case : "Cara membagikan kode refferal",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4406,6 +4631,9 @@ id: 78,
 case : "Paket unlimited/Mbps",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4425,6 +4653,9 @@ id: 79,
 case : "CCA Cell_Colo_Problem",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4498,6 +4729,9 @@ id: 80,
 case : "CCA BTS_Down",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4560,6 +4794,9 @@ id: 81,
 case : "CCA Red_Cell_Capacity_Solution",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4626,6 +4863,9 @@ id: 82,
 case : "CCA Kendala_Sinyal",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4691,6 +4931,9 @@ id: 83,
 case : "Beli Paket/Pulsa/SIM card",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4714,6 +4957,9 @@ id: 85,
 case : "Tidak dapat Langganan Youtube Premium",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4754,6 +5000,9 @@ id: 86,
 case : "Closing",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4775,6 +5024,9 @@ id: 87,
 case : "Pengambilan SIM card di GraPARI/Indomaret",
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${EMPTY}
 Waktu Transaksi   :  
@@ -4836,6 +5088,9 @@ case : "Keluhan sinyal di Luar Negeri Roaming",
 
 Bracket : (segment: string) =>`#Pelangganbyu
 [byU ${segment}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${getCurrentDate()}
 Nomor by.U : xxxxxx
 Email by.U : ${EMPTY}
 Waktu Transaksi   :  
