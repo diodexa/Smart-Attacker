@@ -43,6 +43,9 @@ d_deska_x@telkomsel.co.id
 22248747
 `],w=()=>((0,c.useEffect)(()=>{let e=e=>{let t={F1:0,F2:2,F3:4,F4:1,F6:3,F7:5};if(e.ctrlKey&&e.key===`F1`){e.preventDefault();let t=localStorage.getItem(`my-templates`);if(!t)return;try{let e=JSON.parse(t);C.forEach((t,n)=>{e[n]=t}),localStorage.setItem(`my-templates`,JSON.stringify(e)),window.dispatchEvent(new Event(`templates-updated`))}catch{console.error(`Invalid JSON in localStorage`)}return}if(e.key in t){e.preventDefault();let n=localStorage.getItem(`my-templates`);if(!n)return;try{let r=JSON.parse(n)[t[e.key]];r&&navigator.clipboard.writeText(r)}catch{console.error(`Invalid JSON in localStorage`)}}e.ctrlKey&&e.key==="`"&&(e.preventDefault(),[`https://sites.google.com/view/modulhappiness`,`https://byu.omnix.co.id/login`,`https://sso.identity.telkomsel.co.id/dsc/`,`https://crm.byu.id/crm/`,`https://docs.google.com/spreadsheets/d/1gvMeepRq_WNZ0iwilZn_RFz3xORem03sjh0yF0ekD14/edit?gid=645015539#gid=645015539`,`https://pidaw-keycloak.cx.byu.id/realms/Circles-OperatorX/protocol/openid-connect/auth?client_id=jc-client&redirect_uri=https%3A%2F%2Fpidaw-operatorux.cx.byu.id%2Fsignin%2F&response_type=code`,`https://docs.google.com/spreadsheets/d/1uZiJ3pb1dVJr3Wvw9-D0mOpevhUOhQ1hX2thMy02WEs/edit?usp=sharing`,`https://web.telegram.org/k/`].forEach(e=>{window.open(e,`_blank`,`noopener,noreferrer`)}))};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[]),null),T=[`Live`,`Email`,`igdm`,`Xdm`,`dmFb`,`Playstore`,`VA`],E=({Segment:e,onChange:t})=>(0,d.jsx)(`select`,{className:`mr-30 border-2 border-black text-center border-select`,value:e,onChange:e=>t(e.target.value),children:T.map(n=>(0,d.jsx)(`option`,{onClick:()=>t(n),value:n,className:`px-1 py-1 border ${e===n?`text black`:``}`,children:n},n))});const D=()=>{let[e,t]=(0,c.useState)(!1);return(0,d.jsxs)(`div`,{children:[(0,d.jsx)(`button`,{onClick:()=>{navigator.clipboard.writeText(`6285159940470`),t(!0),setTimeout(()=>t(!1),500)},className:`flex w-full items-center justify-center px-1 items-center text-center rounded-md hover:bg-yellow-200 hover:text-black transition border-1 border-solid bg-transparent `,children:`📱`}),e&&(0,d.jsxs)(`p`,{className:`absolute bg-gray-800 text-white z-100 text-sm ${e?`visible!`:`invisible`}`,children:[` `,e?`Copied`:``,` `]})]})},O=()=>{let e=`​​`;return[{id:1,case:`Internet Lambat/Tidak bisa internet`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -146,6 +149,9 @@ N-90001-Network Service Desk-Head Office-INT404
 
 `},{id:2,case:`Tidak bisa aktivasi Error Lain`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -190,6 +196,9 @@ Tanggal lapor : ${t}
 
 1x24 jam`},{id:3,case:`Bugs Lain`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -262,6 +271,9 @@ Tanggal lapor : ${t}
 Digital Life Style | K26-Layanan aplikasi tidak bisa digunakan
 `},{id:4,case:`Bugs Ganti Sim Card`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -309,6 +321,9 @@ Tanggal lapor : ${t}
 Ganti Kartu | K51-Gagal ganti kartu
 `},{id:5,case:`Tidak bisa Kirim/Terima SMS`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -424,6 +439,9 @@ K31-SMS - Tidak bisa terima
 K31-SMS - Tidak bisa kirim
  `},{id:6,case:`Panggilan Telepon Masuk / Telepon Keluar`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -656,6 +674,9 @@ Network > Voice > K33-Tidak bisa melakukan panggilan
 LAYANAN JARINGAN > Use Service > K31-Call - Tidak bisa terima call
 `},{id:7,case:`Tarif/harga layanan Google`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -678,6 +699,9 @@ Jadi, kalau harganya Rpxxxxx, Kakak harus punya pulsa sekitar (harga x 1.3098)
 
 `,Mandatory:()=>``},{id:8,case:`Unreg hapus NIK`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -758,6 +782,9 @@ Tanggal lapor : ${_()}
 
 1x24 jam`},{id:9,case:`Unreg hapus NIK lupa nomor`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -783,6 +810,9 @@ Tanggal lapor : ${_()}
 Unregistrasi Prabayar | Permintaan unregistrasi Prabayar
 1x24 jam`},{id:10,case:`Gagal Aktivasi eSIM Account Status Tidak Sesuai`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -822,6 +852,9 @@ Tanggal lapor : ${t}
 1x24 jam
 e-SIM | Gagal/error saat melakukan Registrasi`},{id:11,case:`Sinyal lemah/tidak stabil/Tidak ada sinyal`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -929,6 +962,9 @@ N-90001-Network Service Desk-Head Office-INT404
 
 `},{id:12,case:`Ganti SIM Card active`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1023,6 +1059,9 @@ Tanggal lapor : ${t}
 7. Solusi: Tiket. Mohon dibantu. tks
 `},{id:13,case:`Miskoordinasi JNE (AWB)`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1063,6 +1102,9 @@ Tanggal lapor : ${t}
 Perdana PraBayar | K12-Kendala pengiriman kartu SIM
 `},{id:14,case:`Miskoordinasi JNE `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1123,6 +1165,9 @@ Solusi : Minta data Mandatory
 
 `},{id:16,case:`Penyalahgunaan NIK `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1164,7 +1209,10 @@ Penyalahgunaan NIK
 9. Solusi: Tiket. Mohon dibantu. tks
     
 `},{id:17,case:`Pembelian paket Irenew virtual account Unpaid `,Bracket:e=>`#Pelangganbyu
-[byU ${e}] 
+[byU ${e}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()} 
 ID Omnix : #
 Nama Pelanggan : Pelanggan 
 Tanggal lapor : ${v()} 
@@ -1187,6 +1235,9 @@ Solusi : Minta data Mandatory
         
 `},{id:18,case:`Permintaan Refund karena kesalahan sistem `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1211,6 +1262,9 @@ Tanggal lapor : ${e}
 P44 - Paket darurat Permintaan refund pulsa
 `},{id:19,case:`Tidak Mendapatkan Kuota Monthversary  `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1249,6 +1303,9 @@ Tanggal lapor : ${t}
         
 `},{id:20,case:`SMS - Gagal Aktivasi M-Banking `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1289,7 +1346,10 @@ Tanggal lapor : ${t}
 8. Detail Permasalahan : SMS - Gagal Aktivasi M-Banking
 9. Solusi: Tiket. Mohon dibantu. tks
 `},{id:21,case:`Pembelian paket IRENEW OVO/DANA/ShopeePay/lainnya `,Bracket:e=>`#Pelangganbyu
-[byU ${e}] 
+[byU ${e}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()} 
 ID Omnix : #
 Nama Pelanggan : Pelanggan
 Tanggal lapor : ${v()} 
@@ -1344,6 +1404,9 @@ Kak maaf, karena pada capture Kakak status pembayarannya sedang di proses, Kakak
 
 `},{id:22,case:`Tidak Bisa Aktivasi SIM Card Legacy `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1391,6 +1454,9 @@ Tanggal lapor : ${t}
         
 `},{id:23,case:`Cara Aktivasi SIM card  `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1460,6 +1526,9 @@ Klo masih terkendala, Kakak bisa infoin aku data ini biar bisa aku bantu cek leb
 6. CP dan email yang bisa dihubungi 😂`,Mandatory:`
 `},{id:24,case:`Tidak dapat langganan weTV`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1499,6 +1568,9 @@ Tanggal lapor : ${n}
 9. Solusi: Tiket. Mohon dibantu. tks
 `},{id:25,case:`Tidak Bisa Aktivasi SIM Card Digital indikasi SIM Card SN Legacy (indomaret)`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1544,6 +1616,9 @@ Tanggal lapor : ${t}
 11. Solusi: Tiket. Mohon dibantu. tks       
 `},{id:26,case:`Verifikasi 2 langkah karena ga bisa login email/gmail `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1565,6 +1640,9 @@ Jangan lupa cek juga folder Spam/Junk, ya. Biasanya email dari Google berjudul �
 Silakan dicoba dulu ya Kak :)`,Mandatory:()=>`       
 `},{id:27,case:`Ketidaksesuaian Penggunaan Kuota `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1614,6 +1692,9 @@ Tanggal lapor : ${t}
 13. Solusi: Tiket. Mohon dibantu. tks
 `},{id:28,case:`Tidak bisa login dengan Nomor BYU / terima kode OTP pakai nomor by.U`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1643,6 +1724,9 @@ Tanggal lapor : ${t}
 11. Solusi: Tiket. Mohon dibantu. tks
 `},{id:29,case:`Tidak Mendapatkan Voucher Non-Telco uCoin`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1683,6 +1767,9 @@ Tanggal lapor : ${n}
 Aktivasi Paket | K21-Tidak Mendapatkan Voucher Non-Telco
 `},{id:30,case:`Pergantian SIM Card Legacy ditolak GraPARI`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1737,6 +1824,9 @@ Tanggal lapor : ${t}
 13. Solusi: Tiket. Mohon dibantu. tks
 `},{id:31,case:`Esim Sinyal hilang`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1784,6 +1874,9 @@ Tanggal lapor : ${t}
 e-SIM | Gagal/error saat melakukan Registrasi
 `},{id:32,case:`eSIM barcode/QR tidak tersimpan `,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1824,6 +1917,9 @@ Tanggal lapor : ${n}
 K32 - Aktivasi/download Barcode Gagal
 `},{id:33,case:`Tidak bisa aktivasi eSIM issue NIK Nokk`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1866,6 +1962,9 @@ Tanggal lapor : ${n}
 11. Solusi : tiket mohon dibantu
 `},{id:34,case:`Keluhan Tidak Bisa Akses Internet di Luar Negeri Roaming`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1944,6 +2043,9 @@ EPSLOCK | FALSE
 Baring Roam | NOBAR
 `},{id:35,case:`Pulsa berkurang tiba-tiba`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1981,6 +2083,9 @@ Tanggal lapor : ${t}
         
 `},{id:36,case:`Tidak bisa aktivasi inject paket`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -1991,6 +2096,9 @@ Solusi : hubungi pihak penjual
 `,Solusi:`Makasih udah nunggu Kak maaf kalau keterangan gabisa aktivasinya seperti itu, Kakak bisa tukerin SIM card nya di tempat Kakak beli/dapetin SIM card nya ya`,Mandatory:`      
 `},{id:37,case:`Tidak bisa aktivasi NIK invalid Dukcapil/Disdukcapil`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2033,6 +2141,9 @@ Tanggal lapor : ${t}
 10. Solusi: Tiket. Mohon dibantu. tks
 `},{id:38,case:`Tidak bisa aktivasi exceed limit (udah 3 kali percobaan)`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2042,6 +2153,9 @@ Detail case : gabisa aktivasi sim card
 Solusi : diinfoin coba besok
 `,Solusi:`Makasih udah nunggu. Kak maaf aku cek di nomor xxxxxx , hari ini udah lebih dari 3 kali nyoba aktivasi. Boleh dicoba lagi besok hari ya. Pastiin saat proses aktivasi sudah terkoneksi ke jaringan by.U - bukan wifi atau jaringan lain, dan NIK-NO.KK yang dimasukkan benar 16 angka. Kalo besok masih belum bisa, jangan coba berulang ya, silahkan konfirmasi lagi biar bisa langsung di proses :)`,Mandatory:``},{id:39,case:`Tidak bisa aktivasi maximum NIK`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2083,6 +2197,9 @@ Tanggal lapor : ${t}
 10. Solusi : Tiket. Mohon dibantu. tks
 `},{id:40,case:`Perubahan Data Pelanggan`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2155,6 +2272,9 @@ Tanggal lapor : ${t}
 8. Solusi : Tiket. Mohon dibantu. tks
 `},{id:41,case:`Perubahan Data pindah tangan (pindah tangan)`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2217,6 +2337,9 @@ Tanggal lapor : ${t}
 10. Solusi : Tiket. Mohon dibantu. tks
 `},{id:42,case:`PUK`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2271,6 +2394,9 @@ c. Kode PUK tidak akan berubah, Kakak bisa menyimpan kode PUK jika diperlukan ke
 
 `,Mandatory:``},{id:43,case:`Tidak dapat langganan ZOOM Premium`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2313,6 +2439,9 @@ Tanggal lapor : ${t}
 9. Solusi : Tiket. Mohon dibantu. Tks
 `},{id:44,case:`Tidak dapat langganan Netflix`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2360,6 +2489,9 @@ Tanggal lapor : ${t}
 10. Solusi: Tiket. Mohon dibantu. tks
 `},{id:45,case:`Tidak dapat langganan Vidio`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2401,6 +2533,9 @@ Tanggal lapor : ${t}
 10. Solusi: Tiket. Mohon dibantu. tks
 `},{id:46,case:`Tidak dapat kuota Birthday reward`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2438,6 +2573,9 @@ Tanggal lapor : ${t}
 8. Solusi: Tiket. Mohon dibantu. tks
 `},{id:47,case:`IRENEW Voucher fisik`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2531,6 +2669,9 @@ Aku tunggu datanya ya Kak :)
 
 `,Mandatory:``},{id:49,case:`SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan / Gagal pairing`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2554,6 +2695,9 @@ SIM Card Tidak Terdeteksi atau Tidak Bisa Digunakan
 3. SN Kartu Pengganti :
 4. Capture SIM Card tidak terdeteksi : `},{id:50,case:` greeting`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2568,6 +2712,9 @@ Solusi : greeting
 
 `},{id:51,case:`Un/Binding Email`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2621,6 +2768,9 @@ Tanggal lapor : ${n}
 10. Solusi : Tiket. Mohon dibantu. Tks
 `},{id:52,case:`Pulsa terpotong karena SMS dari luar negeri`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2631,6 +2781,9 @@ Solusi : info nomor SMS nya
 `,Solusi:` Maaf udah bikin Kakak nunggu ya. Aku cek di sistem untuk nomor xxxxxx ada pengurangan pulsa sebesar Rp500 untuk SMS ke nomor +41415737017. Untuk SMS ini adalah SMS verifikasi dari apps tertentu yang developernya dari luar negeri dan membebankan biaya registrasi ke pulsa customer. Ini settingan dari apps yang terisntall di HP Kakak yang otomatis menarik biaya pulsa ya, bukan settingan dari by.U 🙂
 `,Mandatory:``},{id:53,case:`SIM card tidak terdeteksi`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2646,6 +2799,9 @@ Solusi : solusi SIM card tidak terdeteksi
 5. Coba airplane mode dan ON-OFF kan mobile data.
 `,Mandatory:``},{id:54,case:`Kuota tiba-tiba hilang karena kesalahan by.U`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2682,6 +2838,9 @@ Tanggal lapor : ${t}
 8. Solusi: Tiket. Mohon dibantu. tks
 `},{id:55,case:`U-Coin Tidak Didapatkan Namun Transaksi Sudah Berhasil`,Bracket:e=>`#Pelangganbyu
 [byU ${e}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : 
 Waktu Transaksi   :  
@@ -2719,6 +2878,9 @@ Tanggal lapor : ${t}
 11. Solusi: Tiket. Mohon dibantu. tks
 `},{id:56,case:`Keluhan Tidak Ada Tombol Aktivasi SIM Card - I JOIN Via E-Commerce (Tiktok, Tokopedia, Shopee)`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
@@ -2736,6 +2898,9 @@ Kak maaf, untuk aktivasinya kalau Kakak beli di Shopee toko resmi by.U, pastiin 
 `,Mandatory:()=>`
 `},{id:57,case:` transfer pulsa`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -2747,6 +2912,9 @@ Solusi : diinfoin udah gabisa
 `:`Makasih udah nunggu. Kak untuk transfer pulsa/ send gift saat ini udah ga tersedia ya. Kakak bisa nikmatin fitur yang tersedia di aplikasi by.U saat ini ya :)
 `,Mandatory:``},{id:58,case:`Tidak Mendapatkan Langganan Prime Video`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -2787,6 +2955,9 @@ Tanggal lapor : ${t}
 11. Solusi: Tiket. Mohon dibantu. tks
 `},{id:59,case:`cek masa aktif`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -2800,6 +2971,9 @@ Kak aku cek nomor xxxxxx udah hangus karena ga terhubung jaringan lebih dari 60 
 
 `,Mandatory:``},{id:60,case:`Info Paket/ Tarif Harga paket berubah/jadi mahal/promo`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -2816,6 +2990,9 @@ Kak  aku cek nomor xxxxxx saat ini kuota internetnya udah habis, jadi gabisa int
 Maaf kak, saat ini ada penyesuaian tarif paket internet merupakan salah satu upaya by.U untuk tetap menjaga kualitas layanan kepada pelanggan. Nindy dan team akan terus tingkatin produk dan layanan by.U biar Kakak bisa selalu nyaman pakai by.U. Keep supporting us ya! :)
 `,Mandatory:``},{id:61,case:`Cara pasang eSIM`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -2862,6 +3039,9 @@ pesen eSIM by.U via aplikasi dengan langkah-langkah di bawah ini yaa:
 Silakan dicoba dulu ya Kak :)
 `,Mandatory:``},{id:62,case:`Gagal Registrasi 5g`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -2904,6 +3084,9 @@ Tanggal lapor : ${t}
 8. Solusi: Tiket. Mohon dibantu. tks
 `},{id:63,case:`Cek Tiket/Ticket`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -2915,6 +3098,9 @@ Solusi : infoin  hasil tiket
 `,Solusi:e=>e===`Email`?`Hai Kak saat ini terhubung dengan Nindy. Kak aku cek untuk ID laporan xx, masih dalam proses penanganan tim kami. Ditunggu aja dulu prosesnya ya. Semoga cepet beres :)`:`Kak aku cek untuk ID laporan xx, masih dalam proses penanganan tim kami. Ditunggu aja dulu prosesnya ya. Semoga cepet beres :)
 `,Mandatory:``},{id:64,case:`Request bikin/buat nomor 4 digit/angka`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -2932,6 +3118,9 @@ Klik "Cari Nomor"
 5. Setelah muncul pilihan nomor yang tersedia, kamu punya waktu 1 menit untuk memilih dan 5x kesempatan untuk mengganti kombinasi 4 digit angka favorit kamu. Kalo kamu sudah menggunakan 5x kesempatan, kamu baru bisa coba lagi buat bikin kombinasi 4 digit angka setelah 1x24 jam ya :)
 `,Mandatory:``},{id:65,case:`Permintaan Hapus Profil eSIM Karena Device Hilang`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -2973,6 +3162,9 @@ Tanggal lapor : ${t}
 9. Solusi: Tiket. Mohon dibantu. tks
 `},{id:66,case:`CCA UE_Handset_Data_Setting_Off`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3023,6 +3215,9 @@ N-90001-Network Service Desk-Head Office-INT404
 
 `},{id:67,case:`CCA UE_Handset_Problem_4G`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3073,6 +3268,9 @@ N-90001-Network Service Desk-Head Office-INT404
 
 `},{id:68,case:`CCA Radio_lambat`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3131,6 +3329,9 @@ N-90001-Network Service Desk-Head Office-INT404
 
 `},{id:69,case:`CCA Neighbor_BTS_Problem`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3191,6 +3392,9 @@ EPSLOCK | FALSE
 N-90001-Network Service Desk-Head Office-INT404
 `},{id:70,case:`CCA Kapasitas_jaringan`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3247,6 +3451,9 @@ EPSLOCK | FALSE
 N-90001-Network Service Desk-Head Office-INT404
 `},{id:71,case:`CCA Sinyal_tidak_stabil`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3303,6 +3510,9 @@ EPSLOCK | FALSE
 N-90001-Network Service Desk-Head Office-INT404
 `},{id:72,case:`SMS broadcast`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3340,6 +3550,9 @@ Permintaan berhenti layanan SMS Broadcast
 5. Nomor pengirim Broadcast :
 `},{id:73,case:`CCA Layanan_data_tidak_tersedia`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3406,6 +3619,9 @@ EPSLOCK | FALSE
 N-90001-Network Service Desk-Head Office-INT404
 `},{id:74,case:`CCA Kendala_sinyal_4G`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3462,6 +3678,9 @@ EPSLOCK | FALSE
 N-90001-Network Service Desk-Head Office-INT404
 `},{id:75,case:`CCA UE_Handset_tidak_connect_ke_network`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3511,6 +3730,9 @@ N-90001-Network Service Desk-Head Office-INT404
 
 `},{id:76,case:`CCA Network_browsing_lambat`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3567,6 +3789,9 @@ EPSLOCK | FALSE
 N-90001-Network Service Desk-Head Office-INT404
 `},{id:77,case:`Cara membagikan kode refferal`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3583,6 +3808,9 @@ Nah ada 2 cara buat share link referral:
 
 Oh iya! Kamu bisa kamu share referal kamu lewat Whatsapp, Line, IG direct, Twitter, Email, Linkedin, Facebook Messenger, SMS, Email, Flipboard, dan pilihan channel lainnya ya :)`,Mandatory:``},{id:78,case:`Paket unlimited/Mbps`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3592,6 +3820,9 @@ Detail case : Paket unlimited
 Solusi : edukasi ga tersedia
 `,Solusi:e=>e===`Email`?`Hi, Kak Ardi. Saat ini udah terhubung dengan Nindy. Mengenai paket unlimited atau Mbps lagi engga tersedia dulu nih atas pertimbangan tim dan buat info kedepannya masih ada paketnya atau engga Kaka bisa cek berkala siapa tau tim lagi siapin kejutan kuota yg lebih menarik buat kamu dan bisa juga beli dulu paket lainnya yg tersedia si Apps ya Kak, makasih udah antusias banget :)`:`Kak maaf, untuk paket unlimited atau Mbps lagi engga tersedia dulu nih atas pertimbangan tim dan buat info kedepannya masih ada paketnya atau engga Kaka bisa cek berkala siapa tau tim lagi siapin kejutan kuota yg lebih menarik buat kamu dan bisa juga beli dulu paket lainnya yg tersedia si Apps ya Kak, makasih udah antusias banget :)`,Mandatory:``},{id:79,case:`CCA Cell_Colo_Problem`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3656,6 +3887,9 @@ EPSLOCK | FALSE
 N-90001-Network Service Desk-Head Office-INT404
 `},{id:80,case:`CCA BTS_Down`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3709,6 +3943,9 @@ EPSLOCK | FALSE
 N-90001-Network Service Desk-Head Office-INT404
 `},{id:81,case:`CCA Red_Cell_Capacity_Solution`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3766,6 +4003,9 @@ N-90001-Network Service Desk-Head Office-INT404
 
 `},{id:82,case:`CCA Kendala_Sinyal`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3823,6 +4063,9 @@ N-90001-Network Service Desk-Head Office-INT404
 
 `},{id:83,case:`Beli Paket/Pulsa/SIM card`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3838,6 +4081,9 @@ Kak untuk beli SIM card/nomor baru bisa beli lewat apps/web by.U ya, nanti setel
 
 Kak untuk beli eSIM bisa lewat apps by.U langsung ya, pastiin pilih menu eSIM sebelum login/sign up :)`,Mandatory:``},{id:85,case:`Tidak dapat Langganan Youtube Premium`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3869,6 +4115,9 @@ Tanggal lapor : ${t}
 
 `},{id:86,case:`Closing`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3881,6 +4130,9 @@ Solusi : closing
 Nindy bakal tingkatin terus kualitas layanan by.U biar kamu seneng dan tetep setia sama by.U 💙`,Mandatory:`
 `},{id:87,case:`Pengambilan SIM card di GraPARI/Indomaret`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email akun by.U : ${e}
 Waktu Transaksi   :  
@@ -3932,6 +4184,9 @@ Tanggal lapor : ${n}
 
 `},{id:88,case:`Keluhan sinyal di Luar Negeri Roaming`,Bracket:t=>`#Pelangganbyu
 [byU ${t}]
+ID Omnix : #
+Nama Pelanggan : Pelanggan
+Tanggal lapor :${v()}
 Nomor by.U : xxxxxx
 Email by.U : ${e}
 Waktu Transaksi   :  
